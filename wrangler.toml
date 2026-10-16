@@ -16,4 +16,4 @@ enabled = true
 binding = "DB"
 database_name = "mobilitazioni"
 # Sostituisci con l'ID del tuo database (Cloudflare > Storage & Databases > D1 > mobilitazioni)
-database_id = "INCOLLA-QUI-ID-DATABASE"
+database_id = "40bbeabf-0b14-4f50-b230-b85eec13ab3e"
