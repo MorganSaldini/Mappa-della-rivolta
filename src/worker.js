@@ -5,6 +5,7 @@ import * as eventi from './eventi.js';
 import * as problema from './problema.js';
 import * as pubblico from './pubblico.js';
 import * as mod from './moderazione.js';
+import * as calendario from './calendario.js';
 import { errore, leggiSessione, stessaOrigine } from './lib.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
@@ -15,6 +16,7 @@ const PUBBLICHE = [
   ['POST', /^\/api\/(?:mobilitazioni|eventi)\/([^/]+)\/problema$/, problema.onRequestPost],
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/conferma$/, pubblico.conferma],
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/modifiche$/, pubblico.proponiModifica],
+  ['GET', /^\/api\/calendario\.ics$/, calendario.feed],
   ['POST', /^\/api\/moderazione\/accesso$/, mod.accesso],
   ['POST', /^\/api\/moderazione\/esci$/, mod.esci],
   ['GET', /^\/api\/moderazione\/io$/, mod.io],
