@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
-  <link rel="stylesheet" href="modera.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="modera.css?v=6">
 </head>
 <body>
   <header class="barra">
@@ -41,6 +41,10 @@
         <button role="tab" data-scheda="impostazioni" class="solo-admin" hidden>Impostazioni</button>
       </nav>
 
+      <div class="barra-agente" id="barra-agente">
+        <button type="button" class="bottone bottone--chiaro" id="importa-agente">🤖 Importa ora le proposte dell’agente</button>
+        <span class="tenue" id="esito-agente">L’agente cerca mobilitazioni annunciate da fonti pubbliche; il sito le importa ogni notte come “Da verificare”.</span>
+      </div>
       <div class="scheda" id="scheda-nuovi"></div>
       <div class="scheda" id="scheda-modifiche" hidden></div>
       <div class="scheda" id="scheda-problemi" hidden></div>
@@ -111,6 +115,6 @@
   </dialog>
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
-  <script src="modera.js?v=5"></script>
+  <script src="modera.js?v=6"></script>
 </body>
 </html>

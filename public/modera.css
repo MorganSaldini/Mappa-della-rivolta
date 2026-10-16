@@ -47,3 +47,5 @@ table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
 .regioni-scelta input { width: auto; min-height: auto; }
 .codice-nuovo { padding: 12px; border-radius: var(--raggio); background: #e5f5ec; border: 1px solid #9fd3b4; }
 .codice-nuovo code { font-size: 1.3rem; font-weight: 700; letter-spacing: .08em; user-select: all; }
+.barra-agente { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-bottom: 12px; padding: 10px 12px; background: #eef3fb; border: 1px solid #c9d8f0; border-radius: var(--raggio); }
+.nota-agente { background: #eef3fb; border-radius: 8px; padding: 4px 8px; font-size: .9rem; }

@@ -7,6 +7,7 @@ import * as pubblico from './pubblico.js';
 import * as mod from './moderazione.js';
 import * as calendario from './calendario.js';
 import { errore, leggiSessione, stessaOrigine } from './lib.js';
+import { importaProposte } from './agente.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -35,6 +36,7 @@ const RISERVATE = [
   ['POST', /^\/api\/admin\/impostazioni$/, mod.salvaImpostazioni, 'admin'],
   ['POST', /^\/api\/admin\/telegram-prova$/, mod.provaTelegram, 'admin'],
   ['POST', /^\/api\/admin\/pulizia$/, mod.pulizia, 'admin'],
+  ['POST', /^\/api\/moderazione\/importa-agente$/, mod.importaAgente, 'moderatore'],
 ];
 
 function trova(elenco, metodo, percorso) {
@@ -87,7 +89,7 @@ export default {
         return errore('Tabelle mancanti nel database: esegui lo script SQL di aggiornamento nella Console D1.', 500);
       }
       if (/no such column/i.test(msg)) {
-        return errore('Il database va aggiornato: esegui fase2.sql nella Console D1.', 500);
+        return errore('Il database va aggiornato: esegui gli script SQL di aggiornamento nella Console D1.', 500);
       }
       return errore('Errore interno. Riprova tra poco.', 500);
     }
@@ -96,5 +98,6 @@ export default {
   // Pulizia automatica ogni notte (eventi finiti da più giorni del limite dichiarato)
   async scheduled(event, env, ctx) {
     ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
+    ctx.waitUntil(importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e)));
   },
 };

@@ -93,6 +93,7 @@
   function apriScheda(nome) {
     document.querySelectorAll('[data-scheda]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.scheda === nome)));
     document.querySelectorAll('.scheda').forEach((s) => (s.hidden = s.id !== 'scheda-' + nome));
+    $('#barra-agente').hidden = nome !== 'nuovi';
     if (nome === 'tutti') cercaTutti();
     if (nome === 'staff') caricaStaff();
     if (nome === 'impostazioni') caricaImpostazioni();
@@ -115,6 +116,7 @@
       ${(e.organizzatori || []).length ? `<p>Promosso da: ${esc(e.organizzatori.join(', '))}</p>` : ''}
       <p>${fonte ? `🔗 <a href="${esc(fonte)}" target="_blank" rel="noopener nofollow">Apri la fonte</a>` : '<strong style="color:#9f241d">Nessuna fonte</strong>'}
         · ${e.conferme || 0} conferme · <a href="./?e=${encodeURIComponent(e.id)}" target="_blank">vedi sulla mappa</a></p>
+      ${e.note && e.note !== 'esempio' ? `<p class="nota-agente">${esc(e.note)}</p>` : ''}
       <p class="tenue">${esc(e.id)} · versione ${e.versione || 1} · aggiornato ${esc(dataIt(e.aggiornato_il))}</p>
       <div class="azioni">${azioni}</div>
     </article>`;
@@ -218,6 +220,19 @@
         caricaCoda();
       } catch (e) { alert(e.message); m.disabled = false; }
     }
+  });
+
+  // ---------- Proposte dell'agente ----------
+  $('#importa-agente').addEventListener('click', async (ev) => {
+    const b = ev.currentTarget;
+    b.disabled = true;
+    try {
+      const r = await api('/api/moderazione/importa-agente', { corpo: {} });
+      $('#esito-agente').textContent = `Nel file: ${r.lette} · nuove: ${r.nuove} · già importate: ${r.gia_importate} · doppioni saltati: ${r.doppioni}` +
+        (r.scartate.length ? ` · scartate: ${r.scartate.length} (${r.scartate.slice(0, 3).join('; ')})` : '');
+      caricaCoda();
+    } catch (e) { alert(e.message); }
+    b.disabled = false;
   });
 
   // ---------- Modifica diretta ----------

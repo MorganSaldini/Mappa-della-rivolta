@@ -1,0 +1,530 @@
+[
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Fermo dell'autotrasporto merci in Calabria (16–20 ottobre)",
+    "data": "2026-10-17",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Catanzaro",
+    "provincia": "CZ",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 38.9098,
+    "lng": 16.5877,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FEDRALOG Calabria"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "Fermo regionale di 120 ore delle imprese aderenti, 16–20 ottobre; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Fermo dell'autotrasporto merci in Sicilia (16–20 ottobre)",
+    "data": "2026-10-17",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Palermo",
+    "provincia": "PA",
+    "regione": "Sicilia",
+    "luogo": "",
+    "lat": 38.1157,
+    "lng": 13.3615,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Comitato Trasporto Siciliano"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "Fermo regionale di 120 ore, dalle 00:01 del 16 alle 24 del 20 ottobre; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero bus International Service di Roma",
+    "data": "2026-10-19",
+    "ora_inizio": "08:30",
+    "ora_fine": "12:30",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB Lavoro Privato"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, ambito locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del trasporto pubblico locale – linea TPL di Savona",
+    "data": "2026-10-19",
+    "ora_inizio": "10:15",
+    "ora_fine": "14:15",
+    "comune": "Savona",
+    "provincia": "SV",
+    "regione": "Liguria",
+    "luogo": "",
+    "lat": 44.3091,
+    "lng": 8.4772,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "UGL",
+      "FAISA-CISAL",
+      "SIAL COBAS",
+      "RSU"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, ambito locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale Arriva Udine",
+    "data": "2026-10-20",
+    "ora_inizio": "15:00",
+    "ora_fine": "23:59",
+    "comune": "Udine",
+    "provincia": "UD",
+    "regione": "Friuli-Venezia Giulia",
+    "luogo": "",
+    "lat": 46.0711,
+    "lng": 13.2346,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "ASI-AU"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "9 ore, dalle 15 alle 24, ambito locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero Ferrovie del Sud Est – esercizio e autolinee",
+    "data": "2026-10-23",
+    "ora_inizio": "19:45",
+    "ora_fine": "23:45",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "luogo": "",
+    "lat": 41.1171,
+    "lng": 16.8719,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "FAISA-CISAL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
+    "data": "2026-10-27",
+    "ora_inizio": "08:00",
+    "ora_fine": "12:00",
+    "comune": "Firenze",
+    "provincia": "FI",
+    "regione": "Toscana",
+    "luogo": "",
+    "lat": 43.7696,
+    "lng": 11.2558,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "SGB"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore su due turni: 8–12 e 20–24; tratta A1 tra Incisa e Sasso Marconi, posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero Trenitalia – Customer Operations Emilia-Romagna",
+    "data": "2026-10-28",
+    "ora_inizio": "21:00",
+    "ora_fine": null,
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "",
+    "lat": 44.4949,
+    "lng": 11.3426,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "ORSA Ferrovie"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, dalle 21 del 28 alle 21 del 29 ottobre; sedi di Bologna, Reggio Emilia AV Mediopadana, Rimini"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale Air Campania",
+    "data": "2026-10-28",
+    "ora_inizio": "08:00",
+    "ora_fine": "16:00",
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "UGL",
+      "FAISA-CISAL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "8 ore, ambito locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
+    "data": "2026-10-29",
+    "ora_inizio": "12:00",
+    "ora_fine": "16:00",
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "Aeroporto di Bologna",
+    "lat": 44.5354,
+    "lng": 11.2887,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FILCAMS-CGIL",
+      "UILT-UIL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
+    "data": "2026-10-30",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Pisa",
+    "provincia": "PI",
+    "regione": "Toscana",
+    "luogo": "Aeroporto di Pisa",
+    "lat": 43.6839,
+    "lng": 10.3927,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB Lavoro Privato"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze"
+  },
+  {
+    "tipo": "sciopero_generale",
+    "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
+    "data": "2026-10-30",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USI-CIT",
+      "USB"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "Due proclamazioni nazionali (USI-CIT e USB). USB: aereo 0–23:59, treni dalle 21 del 29 alle 20:59 del 30, autostrade dalle 22 del 29, taxi tutto il giorno"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale dei lavoratori portuali",
+    "data": "2026-10-30",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB Lavoro Privato"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore in tutti i porti; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale ENAV all'aeroporto di Bari",
+    "data": "2026-11-06",
+    "ora_inizio": "13:00",
+    "ora_fine": "17:00",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "luogo": "Aeroporto di Bari-Palese",
+    "lat": 41.1389,
+    "lng": 16.7606,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FAST-CONFSAL-AV"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale SBB Cargo Italia (trasporto merci ferroviario)",
+    "data": "2026-11-10",
+    "ora_inizio": "21:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "8 ore, dalle 21 del 10 alle 4:59 dell'11 novembre; nazionale, posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale ATM di Milano",
+    "data": "2026-11-13",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Milano",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "",
+    "lat": 45.4642,
+    "lng": 9.19,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "AL-COBAS"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore con varie modalità, ambito provinciale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale ATVO",
+    "data": "2026-11-13",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Venezia",
+    "provincia": "VE",
+    "regione": "Veneto",
+    "luogo": "",
+    "lat": 45.4408,
+    "lng": 12.3155,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "SGB",
+      "FAST Mobilità"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto pubblico locale; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMTAB di Bari",
+    "data": "2026-11-14",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "luogo": "",
+    "lat": 41.1171,
+    "lng": 16.8719,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "UGL Autoferro"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto pubblico locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale ANM di Napoli",
+    "data": "2026-11-16",
+    "ora_inizio": "11:00",
+    "ora_fine": "15:00",
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "UGL-FNA",
+      "FAISA-CISAL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, ambito locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del settore ferroviario e del trasporto pubblico locale",
+    "data": "2026-11-20",
+    "ora_inizio": "21:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "Treni e merci su rotaia dalle 21 del 20 alle 20 del 21; TPL intera giornata del 21; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale ENAV",
+    "data": "2026-11-21",
+    "ora_inizio": "13:00",
+    "ora_fine": "17:00",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "UGL-TA"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, trasporto aereo; nazionale, posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV all'aeroporto di Milano Malpensa",
+    "data": "2026-11-22",
+    "ora_inizio": "00:01",
+    "ora_fine": "23:59",
+    "comune": "Ferno",
+    "provincia": "VA",
+    "regione": "Lombardia",
+    "luogo": "Aeroporto di Milano Malpensa",
+    "lat": 45.6306,
+    "lng": 8.7281,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FAST-CONFSAL-AV"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero vigilanza Sicuritalia IVRI all'aeroporto Marco Polo",
+    "data": "2026-11-22",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Venezia",
+    "provincia": "VE",
+    "regione": "Veneto",
+    "luogo": "Aeroporto Marco Polo",
+    "lat": 45.5053,
+    "lng": 12.3519,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FISASCAT-CISL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_generale",
+    "titolo": "Sciopero generale nazionale delle categorie pubbliche e private",
+    "data": "2026-12-04",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB",
+      "ADL Varese",
+      "SGB",
+      "CIB-UNICOBAS",
+      "SBM",
+      "SGC",
+      "SI-COBAS"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "Intera giornata; treni dalle 21 del 3 alle 21 del 4; autostrade dalle 22 del 3 alle 22 del 4; TPL con modalità territoriali"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero Aviation Services negli aeroporti di Fiumicino e Ciampino",
+    "data": "2026-12-14",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Fiumicino",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Aeroporto di Roma Fiumicino",
+    "lat": 41.8003,
+    "lng": 12.2389,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FAST-CONFSAL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto aereo; anche aeroporto di Ciampino"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV all'aeroporto di Bologna",
+    "data": "2026-12-15",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "Aeroporto di Bologna",
+    "lat": 44.5354,
+    "lng": 11.2887,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "UILT-UIL"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, trasporto aereo"
+  }
+]

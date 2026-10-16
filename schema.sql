@@ -85,6 +85,10 @@ CREATE TABLE IF NOT EXISTS invii (
   creato_il TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_invii ON invii (hash, creato_il);
+CREATE TABLE IF NOT EXISTS importati (
+  chiave TEXT PRIMARY KEY,
+  creato_il TEXT
+);
 CREATE TABLE IF NOT EXISTS impostazioni (
   chiave TEXT PRIMARY KEY,
   valore TEXT

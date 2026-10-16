@@ -7,6 +7,7 @@ import {
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
 import { pubblicaEvento, avvisaAnnullato, rimuoviEvento } from './telegram.js';
+import { importaProposte } from './agente.js';
 
 async function corpo(request) {
   try { return await request.json(); } catch { return {}; }
@@ -288,3 +289,8 @@ export async function eseguiPulizia(env) {
   return r.meta?.changes ?? 0;
 }
 
+
+// Importa subito le proposte dell'agente (oltre all'importazione notturna)
+export async function importaAgente({ env }) {
+  return json({ ok: true, ...(await importaProposte(env)) });
+}

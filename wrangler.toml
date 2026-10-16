@@ -9,9 +9,9 @@ binding = "ASSETS"
 # Le richieste /api/... passano dal codice; le altre sono servite direttamente come file
 run_worker_first = ["/api/*"]
 
-# Pulizia automatica ogni notte alle 4 (ora UTC)
+# Ogni 3 ore: importa le proposte dell’agente e cancella gli eventi vecchi
 [triggers]
-crons = ["0 4 * * *"]
+crons = ["15 */3 * * *"]
 
 [observability]
 enabled = true
