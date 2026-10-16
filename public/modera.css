@@ -1,0 +1,49 @@
+.barra__chi { font-size: .9rem; display: flex; gap: 10px; align-items: center; }
+.barra__chi button { background: none; border: 1px solid #f0c8c4; color: #f0c8c4; border-radius: 8px; padding: 4px 10px; cursor: pointer; font: inherit; }
+.mod { max-width: 1000px; margin: 0 auto; padding: 16px; }
+.mod-accesso { max-width: 440px; margin: 40px auto; }
+.mod-accesso h1 { font-size: 2.4rem; text-transform: uppercase; border-left: 8px solid var(--rosso); padding-left: 12px; }
+.mod-accesso__form { display: grid; gap: 10px; }
+.mod-accesso__form input { font-family: ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
+
+.schede { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; border-bottom: 2px solid var(--inchiostro); padding-bottom: 8px; }
+.schede button {
+  border: 1.5px solid var(--bordo); background: var(--bianco); border-radius: 999px; padding: 6px 12px;
+  font: 600 .95rem var(--corpo); cursor: pointer; min-height: 40px;
+}
+.schede button[aria-selected="true"] { background: var(--inchiostro); color: #fff; border-color: var(--inchiostro); }
+.schede b { display: inline-block; min-width: 1.4em; padding: 0 5px; margin-left: 4px; border-radius: 999px; background: var(--rosso); color: #fff; font-size: .8rem; }
+.schede b:empty, .schede b.zero { background: #bbb; }
+
+.vuoto { padding: 24px; text-align: center; color: var(--tenue); background: var(--bianco); border-radius: var(--raggio); border: 1px dashed var(--bordo); }
+.scheda-ev { background: var(--bianco); border: 1px solid var(--bordo); border-left: 6px solid var(--c, #888); border-radius: var(--raggio); padding: 12px 14px; margin-bottom: 10px; }
+.scheda-ev h3 { margin: 4px 0; font: 800 1.25rem/1.15 var(--titoli); }
+.scheda-ev p { margin: 3px 0; font-size: .95rem; }
+.scheda-ev .azioni { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.scheda-ev .azioni .bottone { min-height: 38px; padding: 4px 12px; font-size: .9rem; }
+.bottone--ok { background: var(--ok); border-color: var(--ok); color: #fff; }
+.bottone--no { background: #fff; color: var(--rosso-scuro); border-color: var(--rosso-scuro); }
+.motivo { background: #fff8e1; border-radius: 8px; padding: 6px 10px; margin: 6px 0; }
+
+table.diff { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: .92rem; }
+table.diff th, table.diff td { border: 1px solid var(--bordo); padding: 5px 7px; text-align: left; vertical-align: top; }
+table.diff th { background: #f1ede6; }
+table.diff td.prima { background: #fdecea; text-decoration: line-through; color: #6b2a24; }
+table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
+.tabella-scorri { overflow-x: auto; }
+
+.mod-filtri { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.mod-filtri input { flex: 2 1 220px; }
+.mod-filtri select { flex: 1 1 150px; }
+
+.voce-cron { border-bottom: 1px solid var(--bordo); padding: 8px 0; }
+.voce-cron:last-child { border-bottom: none; }
+.voce-cron p { margin: 2px 0; font-size: .92rem; }
+.dlg__contenuto { padding: 18px; }
+
+.form-griglia { display: grid; gap: 10px; background: var(--bianco); border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 14px; margin-bottom: 16px; }
+.regioni-scelta { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 4px 10px; font-weight: 400; }
+.regioni-scelta label { display: flex; gap: 6px; align-items: center; font-weight: 400; font-size: .92rem; }
+.regioni-scelta input { width: auto; min-height: auto; }
+.codice-nuovo { padding: 12px; border-radius: var(--raggio); background: #e5f5ec; border: 1px solid #9fd3b4; }
+.codice-nuovo code { font-size: 1.3rem; font-weight: 700; letter-spacing: .08em; user-select: all; }

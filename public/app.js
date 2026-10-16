@@ -131,7 +131,11 @@
       ${org ? `<p>Promosso da: ${org}</p>` : ''}
       ${fonte ? `<p><a href="${esc(fonte)}" target="_blank" rel="noopener nofollow ugc">Fonte ↗</a></p>` : '<p class="tenue">Nessuna fonte indicata</p>'}
       <p class="tenue">${e.conferme ? e.conferme + ' conferme · ' : ''}aggiornato il ${esc(dataBreve((e.aggiornato_il || '').slice(0, 10) || e.data))}</p>
-      <button type="button" class="bottone bottone--chiaro" data-problema="${esc(e.id)}">Segnala un problema</button>
+      <div class="pop__azioni">
+        ${e.stato !== 'annullato' ? `<button type="button" class="bottone bottone--chiaro" data-conferma="${esc(e.id)}">👍 Confermo</button>` : ''}
+        <button type="button" class="bottone bottone--chiaro" data-correggi="${esc(e.id)}">✏️ Correggi</button>
+        <button type="button" class="bottone bottone--chiaro" data-problema="${esc(e.id)}">⚠️ Segnala</button>
+      </div>
     </div>`;
   }
 
@@ -212,6 +216,10 @@
     }
     const pb = ev.target.closest('[data-problema]');
     if (pb) apriProblema(pb.dataset.problema);
+    const cf = ev.target.closest('[data-conferma]');
+    if (cf) apriConferma(cf.dataset.conferma);
+    const cr = ev.target.closest('[data-correggi]');
+    if (cr) apriCorreggi(cr.dataset.correggi);
   });
 
   // ---------- Ricerca ----------
@@ -495,5 +503,98 @@
     }
   });
 
-  carica();
+  // ---------- Conferma ----------
+  let idConferma = null;
+  function apriConferma(id) {
+    const e = eventi.find((x) => x.id === id);
+    if (!e) return;
+    idConferma = id;
+    $('#errore-conferma').textContent = '';
+    $('#conferma-evento').textContent = `${e.titolo} · ${dataBreve(e.data)} · ${e.comune}`;
+    $('#dlg-conferma').showModal();
+    mostraTurnstile('ts-conferma');
+  }
+  $('#form-conferma').addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    try {
+      const r = await fetch(`/api/mobilitazioni/${encodeURIComponent(idConferma)}/conferma`, {
+        method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ sito_web: $('#form-conferma').sito_web.value, turnstile: tokenTurnstile('ts-conferma') }),
+      });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok || !d.ok) {
+        $('#errore-conferma').textContent = d.errore || 'Invio non riuscito.';
+        mostraTurnstile('ts-conferma');
+        return;
+      }
+      $('#dlg-conferma').close();
+      avvisoOk(d.gia_confermato ? 'Avevi già confermato questo evento. Grazie!'
+        : d.verificato ? 'Grazie! Con la tua conferma l’evento è ora verificato.' : 'Grazie per la conferma!');
+      carica();
+    } catch {
+      $('#errore-conferma').textContent = 'Connessione non riuscita. Riprova tra poco.';
+    }
+  });
+
+  // ---------- Correggi ----------
+  const fc = $('#form-correggi');
+  fc.tipo.innerHTML = Object.entries(TIPI).map(([k, t]) => `<option value="${k}">${t.icona} ${esc(t.nome)}</option>`).join('');
+  let idCorreggi = null;
+  function apriCorreggi(id) {
+    const e = eventi.find((x) => x.id === id);
+    if (!e) return;
+    idCorreggi = id;
+    fc.reset();
+    $('#errore-correggi').textContent = '';
+    $('#correggi-evento').textContent = `${e.comune} (${e.provincia})${e.luogo ? ' · ' + e.luogo : ''}`;
+    fc.tipo.value = e.tipo;
+    fc.titolo.value = e.titolo;
+    fc.data.value = e.data;
+    fc.ora_inizio.value = e.ora_inizio || '';
+    fc.ora_fine.value = e.ora_fine || '';
+    fc.luogo.value = e.luogo || '';
+    fc.organizzatori.value = (e.organizzatori || []).join(', ');
+    fc.fonte.value = e.fonte || '';
+    $('#dlg-correggi').showModal();
+    mostraTurnstile('ts-correggi');
+  }
+  fc.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const v = Object.fromEntries(new FormData(fc).entries());
+    if ((v.motivo || '').trim().length < 5) return ($('#errore-correggi').textContent = 'Spiega in poche parole cosa correggi e perché.');
+    const corpo = {
+      campi: {
+        tipo: v.tipo, titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
+        luogo: v.luogo, organizzatori: v.organizzatori.split(',').map((x) => x.trim()).filter(Boolean), fonte: v.fonte,
+      },
+      annullato: !!fc.annullato.checked, motivo: v.motivo, sito_web: v.sito_web, turnstile: tokenTurnstile('ts-correggi'),
+    };
+    try {
+      const r = await fetch(`/api/mobilitazioni/${encodeURIComponent(idCorreggi)}/modifiche`, {
+        method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo),
+      });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok || !d.ok) {
+        $('#errore-correggi').textContent = d.errore || 'Invio non riuscito.';
+        mostraTurnstile('ts-correggi');
+        return;
+      }
+      $('#dlg-correggi').close();
+      avvisoOk('Grazie! La correzione è arrivata ai moderatori: sarà applicata dopo un controllo.');
+    } catch {
+      $('#errore-correggi').textContent = 'Connessione non riuscita. Riprova tra poco.';
+    }
+  });
+
+  // ---------- Link diretto a un evento (?e=id) ----------
+  async function avvio() {
+    await carica();
+    const id = new URLSearchParams(location.search).get('e');
+    const m = id && markerPerId[id];
+    if (m && gruppo) {
+      $('#mappa').scrollIntoView({ block: 'center' });
+      gruppo.zoomToShowLayer ? gruppo.zoomToShowLayer(m, () => m.openPopup()) : (mappa.setView(m.getLatLng(), 14), m.openPopup());
+    }
+  }
+  avvio();
 })();

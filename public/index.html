@@ -8,13 +8,15 @@
   <meta property="og:title" content="Mappa delle mobilitazioni in Italia">
   <meta property="og:description" content="Trova la mobilitazione più vicina o segnalane una.">
   <meta property="og:locale" content="it_IT">
+  <meta property="og:url" content="https://www.paginadellarivolta.it/">
+  <link rel="canonical" href="https://www.paginadellarivolta.it/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <header class="barra">
@@ -63,7 +65,7 @@
 
     <section class="perche" aria-labelledby="titolo-perche">
       <h2 id="titolo-perche">Perché ci mobilitiamo</h2>
-      <!-- I media non ci aiutato, aiutiamoci da soli. Creaiamo una rete di comunicazione e segnalazione di eventi di protesta contro lattuale situazione mondiale. -->
+      <!-- Scrivi qui il testo del tuo appello, con i dati e le fonti. -->
       <p><em>Spazio per il testo dell'appello: le ragioni della mobilitazione, i dati che le sostengono e le fonti da cui provengono.</em></p>
     </section>
   </main>
@@ -73,7 +75,7 @@
     <p><strong>Privacy.</strong> La mappa non chiede nome, email né indirizzo e non salva il tuo indirizzo IP. La posizione di "Vicino a me" resta nel tuo browser. Gli eventi vengono cancellati <span id="giorni-cons">30</span> giorni dopo la data in cui si svolgono.</p>
     <p><strong>Fonti.</strong> Segnalazioni della community e comunicati delle organizzazioni promotrici; calendari ufficiali degli scioperi nei servizi pubblici essenziali. Ricerca dei comuni: Nominatim. Fondo mappa: © contributori OpenStreetMap.</p>
     <p id="contatto" hidden></p>
-    <p class="piede__agg">Ultimo aggiornamento: <span id="ultimo-agg">—</span> · <a href="regole.html">Regole della community</a></p>
+    <p class="piede__agg">Ultimo aggiornamento: <span id="ultimo-agg">—</span> · <a href="regole.html">Regole della community</a> · <a href="modera.html" rel="nofollow">Area moderatori</a></p>
   </footer>
 
   <!-- Modulo: aggiungi un evento -->
@@ -159,11 +161,63 @@
     </form>
   </dialog>
 
+  <!-- Conferma -->
+  <dialog id="dlg-conferma" aria-labelledby="titolo-conferma">
+    <form id="form-conferma" method="dialog" novalidate>
+      <div class="dlg__testa">
+        <h2 id="titolo-conferma">Confermi questo evento?</h2>
+        <button type="button" class="dlg__chiudi" data-chiudi aria-label="Chiudi">✕</button>
+      </div>
+      <p class="dlg__nota" id="conferma-evento"></p>
+      <p>Conferma solo se sai che l'evento si terrà davvero: per esempio hai visto il comunicato o partecipi all'organizzazione. Con abbastanza conferme e una fonte, l'evento diventa <em>Verificato</em>.</p>
+      <input class="trappola" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="turnstile" id="ts-conferma"></div>
+      <p class="dlg__errore" id="errore-conferma" role="alert"></p>
+      <div class="dlg__azioni">
+        <button type="button" class="bottone bottone--chiaro" data-chiudi>Annulla</button>
+        <button type="submit" class="bottone bottone--pieno">👍 Confermo</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Correggi -->
+  <dialog id="dlg-correggi" aria-labelledby="titolo-correggi">
+    <form id="form-correggi" method="dialog" novalidate>
+      <div class="dlg__testa">
+        <h2 id="titolo-correggi">Proponi una correzione</h2>
+        <button type="button" class="dlg__chiudi" data-chiudi aria-label="Chiudi">✕</button>
+      </div>
+      <p class="dlg__nota">Le correzioni vengono applicate dopo il controllo di un moderatore. Non scrivere nomi, telefoni o email di persone.</p>
+      <p class="tenue" id="correggi-evento"></p>
+      <label>Tipo<select name="tipo"></select></label>
+      <label>Titolo<input name="titolo" maxlength="120"></label>
+      <div class="riga">
+        <label>Data<input name="data" type="date"></label>
+        <label>Inizio<input name="ora_inizio" type="time"></label>
+        <label>Fine<input name="ora_fine" type="time"></label>
+      </div>
+      <label>Luogo (piazza, via)<input name="luogo" maxlength="120"></label>
+      <label>Organizzatori (sigle, separate da virgola)<input name="organizzatori" maxlength="300"></label>
+      <label>Link alla fonte<input name="fonte" type="url" maxlength="300" placeholder="https://…"></label>
+      <label class="spunta"><input type="checkbox" name="annullato"> L'evento è stato annullato o rinviato</label>
+      <label>Cosa correggi e perché? *
+        <textarea name="motivo" maxlength="300" rows="3" placeholder="Es. il comunicato aggiornato sposta l'inizio alle 15. Se il luogo è cambiato del tutto, scrivilo qui."></textarea>
+      </label>
+      <input class="trappola" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="turnstile" id="ts-correggi"></div>
+      <p class="dlg__errore" id="errore-correggi" role="alert"></p>
+      <div class="dlg__azioni">
+        <button type="button" class="bottone bottone--chiaro" data-chiudi>Annulla</button>
+        <button type="submit" class="bottone bottone--pieno">Invia correzione</button>
+      </div>
+    </form>
+  </dialog>
+
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
 
-  <script src="config.js?v=4"></script>
+  <script src="config.js?v=5"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
