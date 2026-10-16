@@ -1,5 +1,5 @@
 # Configurazione Cloudflare Worker (con i file della pagina in "public")
-name = "mappa-mobilitazioni"
+name = "mappadellarivolta"
 main = "src/worker.js"
 compatibility_date = "2026-06-01"
 
