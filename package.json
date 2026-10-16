@@ -2,6 +2,6 @@
   "name": "mappa-mobilitazioni",
   "private": true,
   "description": "Mappa delle mobilitazioni in Italia",
-  "scripts": { "dev": "wrangler pages dev" },
+  "scripts": { "dev": "wrangler dev", "deploy": "wrangler deploy" },
   "devDependencies": { "wrangler": "^4.151.1" }
 }

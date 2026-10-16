@@ -1,10 +1,19 @@
-# Configurazione Cloudflare Pages
+# Configurazione Cloudflare Worker (con i file della pagina in "public")
 name = "mappa-mobilitazioni"
+main = "src/worker.js"
 compatibility_date = "2026-06-01"
-pages_build_output_dir = "public"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+# Le richieste /api/... passano dal codice; le altre sono servite direttamente come file
+run_worker_first = ["/api/*"]
+
+[observability]
+enabled = true
 
 [[d1_databases]]
 binding = "DB"
 database_name = "mobilitazioni"
-# Sostituisci con l'ID del tuo database (lo trovi in Cloudflare > Storage & Databases > D1)
-database_id = "40bbeabf-0b14-4f50-b230-b85eec13ab3e"
+# Sostituisci con l'ID del tuo database (Cloudflare > Storage & Databases > D1 > mobilitazioni)
+database_id = "INCOLLA-QUI-ID-DATABASE"

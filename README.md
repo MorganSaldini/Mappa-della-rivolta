@@ -26,7 +26,7 @@ Il pannello per i moderatori arriva nella Fase 2. Fino ad allora la moderazione 
 | `public/index.html` | La pagina. Qui scrivi anche il testo "Perché ci mobilitiamo" |
 | `public/regole.html` | Regole della community |
 | `public/style.css`, `public/app.js` | Grafica e funzionamento della pagina |
-| `functions/api/...` | Il "motore" (API) che legge e scrive nel database |
+| `src/...` | Il "motore" (API) che legge e scrive nel database |
 | `schema.sql` | Crea le tabelle del database (si usa una volta sola) |
 | `esempi.sql` | I 5 eventi di esempio |
 | `wrangler.toml` | Configurazione per Cloudflare |
@@ -44,10 +44,10 @@ Servono circa 30–40 minuti. Tutto è gratuito. Le voci dei menu di Cloudflare 
 ### 2. Carica i file su GitHub
 1. Su GitHub premi **New repository**. Come nome usa `mappa-mobilitazioni`, scegli **Public** o **Private** e premi **Create repository**.
 2. Nella pagina del repository vuoto clicca **uploading an existing file**.
-3. Trascina dentro **tutto il contenuto** della cartella `mappa-mobilitazioni`, comprese le cartelle `public` e `functions`.
+3. Trascina dentro **tutto il contenuto** della cartella `mappa-mobilitazioni`, comprese le cartelle `public` e `src`.
    - Non serve caricare `node_modules` né `.wrangler`, se ci sono.
 4. Premi **Commit changes**.
-5. Controlla che il percorso `functions/api/eventi/[id]/problema.js` ci sia, con le parentesi quadre.
+5. Controlla che su GitHub ci siano le cartelle `public` e `src` e il file `wrangler.toml`.
 
 ### 3. Crea il database
 1. Su Cloudflare apri **Storage & Databases → D1 SQL Database → Create**.
@@ -61,34 +61,37 @@ Servono circa 30–40 minuti. Tutto è gratuito. Le voci dei menu di Cloudflare 
 2. Sostituisci `INCOLLA-QUI-ID-DATABASE` con il Database ID copiato al passo 3.
 3. Premi **Commit changes**.
 
-### 5. Pubblica il sito con Cloudflare Pages
-1. Su Cloudflare apri **Workers & Pages → Create** e scegli la scheda **Pages**.
-2. Scegli **Connect to Git** (Importa da Git), collega GitHub e seleziona il repository `mappa-mobilitazioni`.
-3. Impostazioni di build:
-   - Framework preset: **None**
+### 5. Pubblica il sito come Worker Cloudflare
+1. Su Cloudflare apri **Workers & Pages → Create → Import a repository** (Importa da Git).
+2. Collega GitHub e seleziona il repository `mappa-mobilitazioni`.
+3. Impostazioni:
+   - Project name: `mappa-mobilitazioni`
    - Build command: lascialo **vuoto**
-   - Build output directory: `public`
-4. Premi **Save and Deploy**.
-5. Dopo un minuto il sito è online a un indirizzo del tipo `https://mappa-mobilitazioni.pages.dev`.
+   - Deploy command: `npx wrangler deploy` (di solito è già scritto così)
+4. Premi **Deploy**.
+5. Dopo un minuto il sito è online a un indirizzo del tipo `https://mappa-mobilitazioni.<tuo-nome>.workers.dev`.
+
+Se nel registro compare *"Missing entry-point"*, su GitHub manca il file `wrangler.toml` aggiornato o la cartella `src`.
+Se compare un errore sul database (*"D1"*, *"database_id"*), controlla l'ID inserito al passo 4.
 
 **Prova:** apri l'indirizzo e controlla che si vedano la mappa e i 5 eventi di esempio. Se la mappa è vuota con il messaggio "Impossibile caricare le mobilitazioni", controlla l'ID del database nel passo 4.
 
 ### 6. Aggiungi il "sale segreto" (privacy)
 Serve a rendere anonimo il codice usato per il limite di invii.
-1. Nel progetto Pages apri **Settings → Variables and Secrets** (in produzione).
+1. Nel Worker `mappa-mobilitazioni` apri **Settings → Variables and Secrets** e premi **Add**.
 2. Aggiungi una variabile:
    - nome: `SALE_SEGRETO`
    - tipo: **Secret**
    - valore: una frase lunga e casuale, ad esempio 30 lettere e numeri a caso.
-3. Fai ripartire il sito: **Deployments → … → Retry deployment**.
+3. Premi **Deploy** per salvare: il Worker riparte da solo con il nuovo segreto.
 
 ### 7. Attiva l'anti-bot Turnstile
 1. Su Cloudflare apri **Turnstile → Add widget**.
-2. Come dominio metti il tuo indirizzo `...pages.dev` (e il tuo dominio, se ne hai uno). Come modalità scegli **Managed**.
+2. Come dominio metti il tuo indirizzo `...workers.dev` (e il tuo dominio, se ne hai uno). Come modalità scegli **Managed**.
 3. Ottieni due chiavi:
    - la **Site Key** (pubblica): su GitHub mettila in `public/config.js`, alla riga `turnstileSiteKey: '...'`;
-   - la **Secret Key**: nel progetto Pages aggiungila come Secret con nome `TURNSTILE_SECRET`.
-4. Fai ripartire il sito come al passo 6.
+   - la **Secret Key**: nel Worker aggiungila come Secret con nome `TURNSTILE_SECRET`, come al passo 6.
+4. Salvare `config.js` su GitHub ripubblica il sito da solo.
 
 Finché `TURNSTILE_SECRET` non è impostato il controllo anti-bot è spento. Va bene per le prove, non per il lancio.
 
@@ -102,7 +105,7 @@ Finché `TURNSTILE_SECRET` non è impostato il controllo anti-bot è spento. Va 
    DELETE FROM cronologia WHERE evento_id IN (SELECT id FROM eventi WHERE note = 'esempio');
    DELETE FROM eventi WHERE note = 'esempio';
    ```
-4. Facoltativo: un dominio tuo (es. `mappamobilitazioni.it`), da collegare in **Custom domains** nel progetto Pages.
+4. Facoltativo: un dominio tuo (es. `mappamobilitazioni.it`), da collegare in **Settings → Domains & Routes** del Worker.
 
 Ogni modifica che salvi su GitHub viene pubblicata da sola in circa un minuto.
 
@@ -168,6 +171,6 @@ DELETE FROM eventi     WHERE data < date('now','-30 days');
 npm install
 npx wrangler d1 execute mobilitazioni --local --file=schema.sql
 npx wrangler d1 execute mobilitazioni --local --file=esempi.sql
-npx wrangler pages dev
-# apri http://localhost:8788
+npx wrangler dev
+# apri http://localhost:8787
 ```
