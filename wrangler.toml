@@ -1,0 +1,10 @@
+# Configurazione Cloudflare Pages
+name = "mappa-mobilitazioni"
+compatibility_date = "2026-06-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mobilitazioni"
+# Sostituisci con l'ID del tuo database (lo trovi in Cloudflare > Storage & Databases > D1)
+database_id = "40bbeabf-0b14-4f50-b230-b85eec13ab3e"
