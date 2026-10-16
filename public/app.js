@@ -89,8 +89,17 @@
 
   let mappa, gruppo;
   if (window.L) {
-    mappa = L.map('mappa', { zoomControl: true, scrollWheelZoom: false }).setView([42.3, 12.6], 6);
-    mappa.fitBounds([[36.6, 6.6], [47.1, 18.5]]);
+    mappa = L.map('mappa', { zoomControl: true, scrollWheelZoom: false, minZoom: 4 });
+    // Centra sull'Italia; se la mappa non ha ancora una misura valida usa uno zoom fisso
+    const centraItalia = () => {
+      mappa.invalidateSize();
+      const box = document.getElementById('mappa');
+      if (box.offsetWidth > 100 && box.offsetHeight > 100) mappa.fitBounds([[36.6, 6.6], [47.1, 18.5]]);
+      else mappa.setView([42.3, 12.6], 5);
+      if (mappa.getZoom() < 5) mappa.setZoom(5);
+    };
+    mappa.setView([42.3, 12.6], 5);
+    window.addEventListener('load', centraItalia);
     tile().addTo(mappa);
     mappa.on('click focus', () => mappa.scrollWheelZoom.enable());
     gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 }) : L.layerGroup();
@@ -129,7 +138,7 @@
   // ---------- Caricamento eventi ----------
   async function carica() {
     try {
-      const r = await fetch('/api/eventi', { headers: { accept: 'application/json' } });
+      const r = await fetch('/api/mobilitazioni?t=' + Date.now(), { cache: 'no-store', headers: { accept: 'application/json' } });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const d = await r.json();
       eventi = (d.eventi || []).filter((e) => e.data >= oggiRoma());
@@ -426,7 +435,7 @@
     const btn = $('#invia-aggiungi');
     btn.disabled = true;
     try {
-      const r = await fetch('/api/eventi', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo) });
+      const r = await fetch('/api/mobilitazioni', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo) });
       const d = await r.json().catch(() => ({}));
       if (!r.ok || !d.ok) {
         err.textContent = d.errore || 'Invio non riuscito. Riprova tra poco.';
@@ -468,7 +477,7 @@
     const v = Object.fromEntries(new FormData(fp).entries());
     if (!v.motivo) return ($('#errore-problema').textContent = 'Scegli che cosa non va.');
     try {
-      const r = await fetch(`/api/eventi/${encodeURIComponent(idProblema)}/problema`, {
+      const r = await fetch(`/api/mobilitazioni/${encodeURIComponent(idProblema)}/problema`, {
         method: 'POST', headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ motivo: v.motivo, nota: v.nota, sito_web: v.sito_web, turnstile: tokenTurnstile('ts-problema') }),
       });
