@@ -6,7 +6,7 @@ window.CONFIG = {
   sottotitolo: 'Cortei, presidi, scioperi e assemblee in tutta Italia, segnalati da chi li organizza e da chi partecipa.',
 
   // Pulsante "Partecipa": link a un canale Telegram, a un sito o a un gruppo. Lascia '' per nasconderlo.
-  linkPartecipa: 'https://t.me/+pBL4bcWzUk82ZmY8';'https://mappa-della-rivolta.morgansaldini.workers.dev'
+  linkPartecipa: 'https://t.me/+pBL4bcWzUk82ZmY8'
   testoPartecipa: 'Unisciti al canale',
 
   // Chiave pubblica di Cloudflare Turnstile (anti-bot). Lasciala '' finché non l'hai creata.
