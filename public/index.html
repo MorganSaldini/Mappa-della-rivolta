@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mappa delle mobilitazioni in Italia</title>
+  <meta name="description" content="Cortei, presidi, scioperi e assemblee in Italia su una mappa aggiornata dalla community. Trova la mobilitazione più vicina o segnalane una.">
+  <meta property="og:title" content="Mappa delle mobilitazioni in Italia">
+  <meta property="og:description" content="Trova la mobilitazione più vicina o segnalane una.">
+  <meta property="og:locale" content="it_IT">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="barra">
+    <span class="barra__nome" id="nome-progetto">Mappa delle mobilitazioni</span>
+    <a class="barra__link" href="regole.html">Regole della community</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1 id="titolo">Mappa delle mobilitazioni</h1>
+      <p class="intro__sotto" id="sottotitolo"></p>
+      <a class="bottone bottone--pieno" id="partecipa" href="#" target="_blank" rel="noopener" hidden></a>
+    </section>
+
+    <section class="contatori" aria-label="Riepilogo">
+      <p class="contatori__totale"><strong id="totale">…</strong> mobilitazioni in programma</p>
+      <ul class="contatori__lista" id="contatori"></ul>
+    </section>
+
+    <section class="cerca" aria-label="Trova una mobilitazione">
+      <form id="form-cerca" class="cerca__form" role="search">
+        <label for="campo-cerca" class="nascosto">Comune o indirizzo</label>
+        <input id="campo-cerca" type="search" placeholder="Scrivi un comune o un indirizzo" autocomplete="off">
+        <button type="submit" class="bottone">Cerca</button>
+        <button type="button" class="bottone bottone--chiaro" id="vicino">📍 Vicino a me</button>
+      </form>
+      <p class="cerca__msg" id="msg-cerca" role="status"></p>
+    </section>
+
+    <div class="mappa-box">
+      <div id="mappa" role="region" aria-label="Mappa interattiva delle mobilitazioni. L'elenco completo è sotto la mappa."></div>
+      <div class="legenda" id="legenda" aria-hidden="true"></div>
+      <button class="bottone bottone--pieno aggiungi-flottante" id="apri-aggiungi" type="button">+ Aggiungi un luogo</button>
+      <p class="mappa-box__avviso" id="avviso-mappa" role="alert" hidden></p>
+    </div>
+
+    <section class="non-trovi">
+      <p>La tua mobilitazione non c'è sulla mappa?</p>
+      <button class="bottone bottone--pieno" type="button" id="apri-aggiungi-2">+ Aggiungi un luogo</button>
+    </section>
+
+    <section class="elenco" aria-labelledby="titolo-elenco">
+      <h2 id="titolo-elenco">Tutte le mobilitazioni</h2>
+      <div id="elenco"><p>Caricamento…</p></div>
+    </section>
+
+    <section class="perche" aria-labelledby="titolo-perche">
+      <h2 id="titolo-perche">Perché ci mobilitiamo</h2>
+      <!-- Scrivi qui il testo del tuo appello, con i dati e le fonti. -->
+      <p><em>Spazio per il testo dell'appello: le ragioni della mobilitazione, i dati che le sostengono e le fonti da cui provengono.</em></p>
+    </section>
+  </main>
+
+  <footer class="piede">
+    <p><strong>Come funziona.</strong> Chiunque può aggiungere una mobilitazione o segnalare un errore, senza registrarsi. Le nuove segnalazioni compaiono come <em>Da verificare</em> finché un moderatore volontario non le controlla. Gli eventi con più segnalazioni di problemi vengono nascosti in attesa di verifica.</p>
+    <p><strong>Privacy.</strong> La mappa non chiede nome, email né indirizzo e non salva il tuo indirizzo IP. La posizione di "Vicino a me" resta nel tuo browser. Gli eventi vengono cancellati <span id="giorni-cons">30</span> giorni dopo la data in cui si svolgono.</p>
+    <p><strong>Fonti.</strong> Segnalazioni della community e comunicati delle organizzazioni promotrici; calendari ufficiali degli scioperi nei servizi pubblici essenziali. Ricerca dei comuni: Nominatim. Fondo mappa: © contributori OpenStreetMap.</p>
+    <p id="contatto" hidden></p>
+    <p class="piede__agg">Ultimo aggiornamento: <span id="ultimo-agg">—</span> · <a href="regole.html">Regole della community</a></p>
+  </footer>
+
+  <!-- Modulo: aggiungi un evento -->
+  <dialog id="dlg-aggiungi" aria-labelledby="titolo-aggiungi">
+    <form id="form-aggiungi" method="dialog" novalidate>
+      <div class="dlg__testa">
+        <h2 id="titolo-aggiungi">Aggiungi una mobilitazione</h2>
+        <button type="button" class="dlg__chiudi" data-chiudi aria-label="Chiudi">✕</button>
+      </div>
+      <p class="dlg__nota">Non scrivere nomi, telefoni o email di persone. Indica solo iniziative pacifiche e pubbliche.</p>
+
+      <label>Tipo *
+        <select name="tipo" required></select>
+      </label>
+      <label>Titolo *
+        <input name="titolo" maxlength="120" required placeholder="Es. Corteo per il diritto alla casa">
+      </label>
+      <div class="riga">
+        <label>Data *<input name="data" type="date" required></label>
+        <label>Inizio<input name="ora_inizio" type="time"></label>
+        <label>Fine<input name="ora_fine" type="time"></label>
+      </div>
+
+      <fieldset class="posizione">
+        <legend>Dove *</legend>
+        <div class="riga">
+          <label class="cresci">Comune<input name="comune" maxlength="80" required placeholder="Es. Bologna"></label>
+          <label class="corto">Prov.<input name="provincia" maxlength="2" required placeholder="BO"></label>
+        </div>
+        <label>Regione<select name="regione" required></select></label>
+        <div class="riga">
+          <label class="cresci">Luogo (piazza, via)<input name="luogo" maxlength="120" placeholder="Es. Piazza Maggiore"></label>
+          <button type="button" class="bottone bottone--chiaro allinea-basso" id="trova-luogo">Trova sulla mappa</button>
+        </div>
+        <div id="mini-mappa" aria-label="Mappa per posizionare il punto"></div>
+        <p class="dlg__aiuto" id="aiuto-punto">Cerca il luogo oppure tocca la mappa per mettere il punto. Puoi trascinarlo per correggerlo.</p>
+      </fieldset>
+
+      <label>Organizzatori (sigle, separate da virgola)
+        <input name="organizzatori" maxlength="300" placeholder="Es. sindacato, collettivo, comitato">
+      </label>
+      <label>Link alla fonte (comunicato, locandina, post)
+        <input name="fonte" type="url" maxlength="300" placeholder="https://…">
+      </label>
+      <input class="trappola" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="doppioni" id="doppioni" hidden></div>
+      <div class="turnstile" id="ts-aggiungi"></div>
+      <p class="dlg__errore" id="errore-aggiungi" role="alert"></p>
+      <div class="dlg__azioni">
+        <button type="button" class="bottone bottone--chiaro" data-chiudi>Annulla</button>
+        <button type="submit" class="bottone bottone--pieno" id="invia-aggiungi">Invia</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Modulo: segnala un problema -->
+  <dialog id="dlg-problema" aria-labelledby="titolo-problema">
+    <form id="form-problema" method="dialog" novalidate>
+      <div class="dlg__testa">
+        <h2 id="titolo-problema">Segnala un problema</h2>
+        <button type="button" class="dlg__chiudi" data-chiudi aria-label="Chiudi">✕</button>
+      </div>
+      <p class="dlg__nota" id="problema-evento"></p>
+      <fieldset class="scelte">
+        <legend>Che cosa non va? *</legend>
+        <label><input type="radio" name="motivo" value="sbagliato"> Informazioni sbagliate (data, ora, luogo)</label>
+        <label><input type="radio" name="motivo" value="annullato"> L'evento è stato annullato o rinviato</label>
+        <label><input type="radio" name="motivo" value="doppione"> È un doppione</label>
+        <label><input type="radio" name="motivo" value="inappropriato"> Contenuto inappropriato o illegale</label>
+        <label><input type="radio" name="motivo" value="altro"> Altro</label>
+      </fieldset>
+      <label>Nota (facoltativa, max 300 caratteri)
+        <textarea name="nota" maxlength="300" rows="3" placeholder="Es. il presidio è stato spostato alle 18"></textarea>
+      </label>
+      <input class="trappola" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="turnstile" id="ts-problema"></div>
+      <p class="dlg__errore" id="errore-problema" role="alert"></p>
+      <div class="dlg__azioni">
+        <button type="button" class="bottone bottone--chiaro" data-chiudi>Annulla</button>
+        <button type="submit" class="bottone bottone--pieno">Invia segnalazione</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
