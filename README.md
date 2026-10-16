@@ -1,4 +1,8 @@
-# Mappa delle mobilitazioni in Italia — Fase 1
+# Mappa delle mobilitazioni in Italia
+
+> **Fase 2 attiva**: pannello moderatori, conferme, correzioni e bot Telegram. Per aggiornare un sito già online segui `AGGIORNAMENTO-FASE2.md`.
+
+## Fase 1
 
 Pagina web con mappa interattiva di cortei, presidi, scioperi e assemblee, aperta ai contributi della community.
 
@@ -16,7 +20,7 @@ Pagina web con mappa interattiva di cortei, presidi, scioperi e assemblee, apert
   - nessun IP salvato.
 - 5 eventi di esempio, inventati, da cancellare prima del lancio.
 
-Il pannello per i moderatori arriva nella Fase 2. Fino ad allora la moderazione si fa dalla console del database (vedi in fondo).
+Con la Fase 2 la moderazione si fa dal pannello `/modera.html`; le istruzioni SQL in fondo restano utili come riserva.
 
 ## I file
 
@@ -171,6 +175,8 @@ DELETE FROM eventi     WHERE data < date('now','-30 days');
 npm install
 npx wrangler d1 execute mobilitazioni --local --file=schema.sql
 npx wrangler d1 execute mobilitazioni --local --file=esempi.sql
+# crea un file .dev.vars con SALE_SEGRETO="..." e ADMIN_CODICE="..." (almeno 16 caratteri)
+npx wrangler d1 execute mobilitazioni --local --file=fase2.sql   # solo se il database locale è vecchio
 npx wrangler dev
-# apri http://localhost:8787
+# apri http://localhost:8787 e http://localhost:8787/modera.html
 ```
