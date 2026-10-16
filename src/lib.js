@@ -131,3 +131,88 @@ export async function scriviCronologia(db, evento, azione, attore) {
     .bind(evento.id, evento.versione, azione, attore, JSON.stringify(evento), adessoRoma())
     .run();
 }
+
+// ================= Accesso moderatori =================
+const enc = new TextEncoder();
+
+export async function sha256hex(testo) {
+  const buf = await crypto.subtle.digest('SHA-256', enc.encode(testo));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+function b64url(bytes) {
+  let s = '';
+  for (const b of bytes) s += String.fromCharCode(b);
+  return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function b64urlDecode(s) {
+  s = s.replace(/-/g, '+').replace(/_/g, '/');
+  const bin = atob(s + '='.repeat((4 - (s.length % 4)) % 4));
+  return Uint8Array.from(bin, (c) => c.charCodeAt(0));
+}
+
+async function chiaveHmac(env) {
+  return crypto.subtle.importKey('raw', enc.encode('sessioni|' + env.SALE_SEGRETO), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign', 'verify']);
+}
+
+// Hash del codice personale di un moderatore (il codice in chiaro non viene mai salvato)
+export async function hashCodice(codice, env) {
+  return sha256hex('codice|' + env.SALE_SEGRETO + '|' + String(codice).trim().toUpperCase());
+}
+
+// Codice leggibile tipo K7QM-2XRP-9VTD-HC4N (senza lettere ambigue)
+export function nuovoCodice() {
+  const alfabeto = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const r = crypto.getRandomValues(new Uint8Array(16));
+  const c = [...r].map((x) => alfabeto[x % alfabeto.length]).join('');
+  return c.match(/.{4}/g).join('-');
+}
+
+export function segretiPronti(env) {
+  return typeof env.SALE_SEGRETO === 'string' && env.SALE_SEGRETO.length >= 16;
+}
+
+const DURATA_SESSIONE = 12 * 3600; // 12 ore
+
+export async function creaCookieSessione(env, dati) {
+  const payload = { ...dati, exp: Math.floor(Date.now() / 1000) + DURATA_SESSIONE };
+  const p = b64url(enc.encode(JSON.stringify(payload)));
+  const firma = new Uint8Array(await crypto.subtle.sign('HMAC', await chiaveHmac(env), enc.encode(p)));
+  return `mod=${p}.${b64url(firma)}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=${DURATA_SESSIONE}`;
+}
+
+export const COOKIE_USCITA = 'mod=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0';
+
+// Legge e verifica la sessione. Restituisce { id, nome, ruolo, regioni } oppure null.
+export async function leggiSessione(request, env) {
+  if (!segretiPronti(env)) return null;
+  const cookie = request.headers.get('Cookie') || '';
+  const m = cookie.match(/(?:^|;\s*)mod=([A-Za-z0-9_-]+)\.([A-Za-z0-9_-]+)/);
+  if (!m) return null;
+  let valido = false;
+  try {
+    valido = await crypto.subtle.verify('HMAC', await chiaveHmac(env), b64urlDecode(m[2]), enc.encode(m[1]));
+  } catch { return null; }
+  if (!valido) return null;
+  let s;
+  try { s = JSON.parse(new TextDecoder().decode(b64urlDecode(m[1]))); } catch { return null; }
+  if (!s.exp || s.exp < Date.now() / 1000) return null;
+  if (s.id === 0 && s.ruolo === 'admin') return { id: 0, nome: 'Amministratore', ruolo: 'admin', regioni: [] };
+  // Moderatore: controlla che sia ancora attivo (una revoca ha effetto subito)
+  const st = await env.DB.prepare('SELECT id, nome, ruolo, regioni, attivo FROM staff WHERE id = ?').bind(s.id).first();
+  if (!st || !st.attivo) return null;
+  let regioni = [];
+  try { regioni = st.regioni ? JSON.parse(st.regioni) : []; } catch { regioni = []; }
+  return { id: st.id, nome: st.nome, ruolo: st.ruolo, regioni };
+}
+
+// Protezione contro richieste da altri siti: l'origine deve essere questo sito
+export function stessaOrigine(request) {
+  const o = request.headers.get('Origin');
+  if (!o) return request.method === 'GET';
+  try { return new URL(o).host === new URL(request.url).host; } catch { return false; }
+}
+
+export function attoreDi(sessione) {
+  return sessione.id === 0 ? 'admin' : `moderatore#${sessione.id}`;
+}

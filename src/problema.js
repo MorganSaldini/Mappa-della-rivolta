@@ -4,10 +4,11 @@ import {
   json, errore, adessoRoma, impostazioni, hashAnonimo, controllaLimite, verificaTurnstile,
   contieneDatiPersonali, pulisci, scriviCronologia,
 } from './lib.js';
+import { rimuoviEvento } from './telegram.js';
 
 const MOTIVI = ['sbagliato', 'annullato', 'doppione', 'inappropriato', 'altro'];
 
-export async function onRequestPost({ request, env, params }) {
+export async function onRequestPost({ request, env, ctx, params }) {
   let b;
   try {
     b = await request.json();
@@ -63,6 +64,7 @@ export async function onRequestPost({ request, env, params }) {
       'nascosto_automatico',
       'sistema'
     );
+    if (evento.telegram_msg_id && ctx) ctx.waitUntil(rimuoviEvento(env, evento));
   }
   return json({ ok: true, nascosto: nascondi });
 }

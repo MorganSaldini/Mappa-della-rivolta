@@ -1,0 +1,290 @@
+// API del pannello moderatori e amministratore. Tutto passa da controlli lato server:
+// sessione firmata, ruolo, regioni assegnate, origine della richiesta.
+import {
+  json, errore, adessoRoma, impostazioni, hashAnonimo, controllaLimite, pulisci, sha256hex,
+  hashCodice, nuovoCodice, segretiPronti, creaCookieSessione, COOKIE_USCITA, leggiSessione,
+  attoreDi, REGIONI, normalizzaRegione,
+} from './lib.js';
+import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
+import { pubblicaEvento, avvisaAnnullato, rimuoviEvento } from './telegram.js';
+
+async function corpo(request) {
+  try { return await request.json(); } catch { return {}; }
+}
+
+function puoGestire(sessione, evento) {
+  return !sessione.regioni.length || sessione.regioni.includes(evento.regione);
+}
+
+// Effetti su Telegram quando cambia lo stato
+function effettiTelegram(ctx, env, prima, dopo, sito) {
+  if (prima.stato !== 'verificato' && dopo.stato === 'verificato') ctx.waitUntil(pubblicaEvento(env, dopo, sito));
+  else if (prima.stato !== 'annullato' && dopo.stato === 'annullato') ctx.waitUntil(avvisaAnnullato(env, dopo));
+  else if (['nascosto', 'rifiutato'].includes(dopo.stato) && prima.stato !== dopo.stato) ctx.waitUntil(rimuoviEvento(env, dopo));
+}
+
+// ---------- Accesso ----------
+export async function accesso({ request, env }) {
+  if (!segretiPronti(env)) return errore('Il sito non è ancora configurato: manca il segreto SALE_SEGRETO.', 503);
+  const b = await corpo(request);
+  const codice = String(b.codice || '').trim().toUpperCase();
+  const hashDisp = await hashAnonimo(request, env);
+  if (!(await controllaLimite(env.DB, hashDisp, 'accesso', 8))) {
+    return errore('Troppi tentativi. Riprova tra un’ora.', 429);
+  }
+  if (codice.length < 12) return errore('Codice non valido.', 401);
+
+  // Amministratore: codice nel segreto ADMIN_CODICE
+  if (env.ADMIN_CODICE && env.ADMIN_CODICE.length >= 16) {
+    const a = await sha256hex('cmp|' + env.ADMIN_CODICE.trim().toUpperCase());
+    const c = await sha256hex('cmp|' + codice);
+    if (a === c) {
+      const cookie = await creaCookieSessione(env, { id: 0, ruolo: 'admin' });
+      return json({ ok: true, nome: 'Amministratore', ruolo: 'admin' }, 200, { 'set-cookie': cookie });
+    }
+  }
+  const st = await env.DB.prepare('SELECT id, nome, ruolo, attivo FROM staff WHERE codice_hash = ?')
+    .bind(await hashCodice(codice, env)).first();
+  if (!st || !st.attivo) return errore('Codice non valido.', 401);
+  await env.DB.prepare('UPDATE staff SET ultimo_accesso = ? WHERE id = ?').bind(adessoRoma(), st.id).run();
+  const cookie = await creaCookieSessione(env, { id: st.id, ruolo: st.ruolo });
+  return json({ ok: true, nome: st.nome, ruolo: st.ruolo }, 200, { 'set-cookie': cookie });
+}
+
+export function esci() {
+  return json({ ok: true }, 200, { 'set-cookie': COOKIE_USCITA });
+}
+
+export async function io({ request, env }) {
+  const s = await leggiSessione(request, env);
+  if (!s) return errore('Non hai effettuato l’accesso.', 401);
+  return json({ ok: true, ...s });
+}
+
+// ---------- Coda di lavoro ----------
+export async function coda({ env, sessione }) {
+  const filtro = sessione.regioni.length ? ` AND e.regione IN (${sessione.regioni.map(() => '?').join(',')})` : '';
+  const par = sessione.regioni;
+
+  const nuovi = (await env.DB.prepare(
+    `SELECT e.* FROM eventi e WHERE e.stato IN ('da_verificare','nascosto')${filtro} ORDER BY e.data, e.ora_inizio LIMIT 200`
+  ).bind(...par).all()).results.map(apriEvento);
+
+  const modifiche = (await env.DB.prepare(
+    `SELECT m.id, m.evento_id, m.campi, m.motivo, m.fonte, m.creato_il, e.titolo, e.comune, e.data, e.stato,
+            e.tipo, e.ora_inizio, e.ora_fine, e.provincia, e.regione, e.luogo, e.lat, e.lng, e.organizzatori AS org_attuali,
+            e.fonte AS fonte_attuale
+     FROM modifiche m JOIN eventi e ON e.id = m.evento_id
+     WHERE m.stato = 'in_attesa'${filtro} ORDER BY e.data LIMIT 200`
+  ).bind(...par).all()).results.map((m) => ({ ...m, campi: JSON.parse(m.campi || '{}') }));
+
+  const problemi = (await env.DB.prepare(
+    `SELECT p.evento_id, e.titolo, e.comune, e.data, e.stato, COUNT(*) AS n,
+            GROUP_CONCAT(p.motivo || CASE WHEN p.nota <> '' THEN ': ' || p.nota ELSE '' END, ' | ') AS dettagli
+     FROM problemi p JOIN eventi e ON e.id = p.evento_id
+     WHERE p.stato = 'aperta'${filtro} GROUP BY p.evento_id ORDER BY n DESC, e.data LIMIT 200`
+  ).bind(...par).all()).results;
+
+  return json({ ok: true, nuovi, modifiche, problemi });
+}
+
+export async function elencoEventi({ request, env, sessione }) {
+  const u = new URL(request.url);
+  const q = pulisci(u.searchParams.get('q'), 60);
+  const stato = u.searchParams.get('stato');
+  const where = [];
+  const par = [];
+  if (q) { where.push('(titolo LIKE ? OR comune LIKE ? OR id LIKE ?)'); par.push(`%${q}%`, `%${q}%`, `%${q}%`); }
+  if (STATI.includes(stato)) { where.push('stato = ?'); par.push(stato); }
+  if (sessione.regioni.length) { where.push(`regione IN (${sessione.regioni.map(() => '?').join(',')})`); par.push(...sessione.regioni); }
+  const { results } = await env.DB.prepare(
+    `SELECT * FROM eventi ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY data DESC LIMIT 150`
+  ).bind(...par).all();
+  return json({ ok: true, eventi: results.map(apriEvento) });
+}
+
+export async function cronologia({ env, sessione, params }) {
+  const e = await leggiEvento(env.DB, params.id);
+  if (!e || !puoGestire(sessione, e)) return errore('Evento non trovato.', 404);
+  const { results } = await env.DB.prepare(
+    'SELECT id, versione, azione, attore, dati, creato_il FROM cronologia WHERE evento_id = ? ORDER BY id DESC LIMIT 100'
+  ).bind(e.id).all();
+  return json({ ok: true, evento: apriEvento(e), voci: results.map((r) => ({ ...r, dati: r.dati ? apriEvento(JSON.parse(r.dati)) : null })) });
+}
+
+// ---------- Azioni su un evento ----------
+export async function azioneEvento({ request, env, ctx, sessione, params }) {
+  const b = await corpo(request);
+  const e = await leggiEvento(env.DB, params.id);
+  if (!e || !puoGestire(sessione, e)) return errore('Evento non trovato.', 404);
+  const attore = attoreDi(sessione);
+  const sito = new URL(request.url).origin;
+  const az = String(b.azione || '');
+  const cambiStato = { approva: 'verificato', rifiuta: 'rifiutato', nascondi: 'nascosto', annulla: 'annullato', rimetti: 'da_verificare' };
+
+  let nuovo;
+  if (az in cambiStato) {
+    const stato = cambiStato[az];
+    const extra = { stato };
+    if (az === 'approva' || az === 'rimetti') extra.segnalazioni_aperte = 0;
+    nuovo = await salvaVersione(env.DB, e, extra, az, attore);
+    if (az === 'approva' || az === 'rimetti' || az === 'rifiuta') {
+      await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
+    }
+  } else if (az === 'modifica') {
+    const v = validaEvento({ ...apriEvento(e), ...(b.campi || {}) }, { consentiPassato: true });
+    if (v.errore) return errore(v.errore);
+    if (!Object.keys(differenze(e, v.dati)).length) return errore('Nessuna modifica rispetto ai dati attuali.');
+    nuovo = await salvaVersione(env.DB, e, v.dati, 'modificato', attore);
+  } else if (az === 'ripristina') {
+    const versione = Number(b.versione);
+    const voce = await env.DB.prepare(
+      'SELECT dati FROM cronologia WHERE evento_id = ? AND versione = ? AND dati IS NOT NULL ORDER BY id DESC LIMIT 1'
+    ).bind(e.id, versione).first();
+    if (!voce) return errore('Versione non trovata.');
+    const vecchio = JSON.parse(voce.dati);
+    const cambi = { stato: STATI.includes(vecchio.stato) ? vecchio.stato : e.stato };
+    for (const c of CAMPI_CONTENUTO) if (c in vecchio) cambi[c] = vecchio[c];
+    nuovo = await salvaVersione(env.DB, e, cambi, `ripristinato_v${versione}`, attore);
+  } else if (az === 'chiudi_segnalazioni') {
+    await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
+    await env.DB.prepare('UPDATE eventi SET segnalazioni_aperte = 0 WHERE id = ?').bind(e.id).run();
+    return json({ ok: true });
+  } else {
+    return errore('Azione sconosciuta.');
+  }
+  nuovo.telegram_msg_id = e.telegram_msg_id;
+  effettiTelegram(ctx, env, e, nuovo, sito);
+  return json({ ok: true, evento: apriEvento(nuovo) });
+}
+
+// ---------- Proposte di modifica ----------
+export async function azioneModifica({ request, env, ctx, sessione, params }) {
+  const b = await corpo(request);
+  const m = await env.DB.prepare("SELECT * FROM modifiche WHERE id = ? AND stato = 'in_attesa'").bind(Number(params.id)).first();
+  if (!m) return errore('Proposta non trovata o già decisa.', 404);
+  const e = await leggiEvento(env.DB, m.evento_id);
+  if (!e || !puoGestire(sessione, e)) return errore('Evento non trovato.', 404);
+  const attore = attoreDi(sessione);
+
+  if (b.azione === 'rifiuta') {
+    await env.DB.prepare("UPDATE modifiche SET stato = 'rifiutata', deciso_da = ?, deciso_il = ? WHERE id = ?")
+      .bind(attore, adessoRoma(), m.id).run();
+    return json({ ok: true });
+  }
+  if (b.azione !== 'accetta') return errore('Azione sconosciuta.');
+
+  const campi = JSON.parse(m.campi || '{}');
+  const { stato, ...contenuto } = campi;
+  const v = validaEvento({ ...apriEvento(e), ...contenuto }, { consentiPassato: true });
+  if (v.errore) return errore('La proposta non è più valida: ' + v.errore);
+  const cambi = { ...v.dati };
+  if (stato === 'annullato') cambi.stato = 'annullato';
+  const nuovo = await salvaVersione(env.DB, e, cambi, `modifica_accettata#${m.id}`, attore);
+  await env.DB.prepare("UPDATE modifiche SET stato = 'accettata', deciso_da = ?, deciso_il = ? WHERE id = ?")
+    .bind(attore, adessoRoma(), m.id).run();
+  nuovo.telegram_msg_id = e.telegram_msg_id;
+  effettiTelegram(ctx, env, e, nuovo, new URL(request.url).origin);
+  return json({ ok: true, evento: apriEvento(nuovo) });
+}
+
+// ---------- Amministratore ----------
+export async function elencoStaff({ env }) {
+  const { results } = await env.DB.prepare(
+    'SELECT id, nome, ruolo, regioni, attivo, creato_il, ultimo_accesso FROM staff ORDER BY attivo DESC, nome'
+  ).all();
+  return json({ ok: true, staff: results.map((s) => ({ ...s, regioni: s.regioni ? JSON.parse(s.regioni) : [] })), regioni: REGIONI });
+}
+
+export async function azioneStaff({ request, env }) {
+  const b = await corpo(request);
+  if (b.azione === 'crea') {
+    const nome = pulisci(b.nome, 40);
+    if (nome.length < 2) return errore('Dai un nome o un soprannome al moderatore.');
+    const ruolo = b.ruolo === 'admin' ? 'admin' : 'moderatore';
+    const regioni = (Array.isArray(b.regioni) ? b.regioni : []).map(normalizzaRegione).filter(Boolean);
+    const codice = nuovoCodice();
+    await env.DB.prepare('INSERT INTO staff (nome, ruolo, regioni, codice_hash, attivo, creato_il) VALUES (?, ?, ?, ?, 1, ?)')
+      .bind(nome, ruolo, JSON.stringify(regioni), await hashCodice(codice, env), adessoRoma()).run();
+    // Il codice si vede solo adesso: nel database resta solo la sua impronta
+    return json({ ok: true, codice });
+  }
+  const id = Number(b.id);
+  if (!id) return errore('Moderatore non indicato.');
+  if (b.azione === 'revoca' || b.azione === 'riattiva') {
+    await env.DB.prepare('UPDATE staff SET attivo = ? WHERE id = ?').bind(b.azione === 'riattiva' ? 1 : 0, id).run();
+    return json({ ok: true });
+  }
+  if (b.azione === 'nuovo_codice') {
+    const codice = nuovoCodice();
+    await env.DB.prepare('UPDATE staff SET codice_hash = ? WHERE id = ?').bind(await hashCodice(codice, env), id).run();
+    return json({ ok: true, codice });
+  }
+  if (b.azione === 'regioni') {
+    const regioni = (Array.isArray(b.regioni) ? b.regioni : []).map(normalizzaRegione).filter(Boolean);
+    await env.DB.prepare('UPDATE staff SET regioni = ? WHERE id = ?').bind(JSON.stringify(regioni), id).run();
+    return json({ ok: true });
+  }
+  return errore('Azione sconosciuta.');
+}
+
+const IMPOSTAZIONI_AMMESSE = {
+  pubblicazione_immediata: (v) => (['si', 'no'].includes(v) ? v : null),
+  telegram_auto: (v) => (['si', 'no'].includes(v) ? v : null),
+  conferme_per_verifica: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
+  segnalazioni_per_nascondere: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
+  max_invii_ora: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 100 ? v : null),
+  giorni_conservazione: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 365 ? v : null),
+};
+
+export async function leggiImpostazioni({ env }) {
+  const { results } = await env.DB.prepare('SELECT chiave, valore FROM impostazioni').all();
+  return json({
+    ok: true,
+    impostazioni: Object.fromEntries(results.map((r) => [r.chiave, r.valore])),
+    telegram_configurato: !!(env.TELEGRAM_BOT_TOKEN && env.TELEGRAM_CHAT_ID),
+  });
+}
+
+export async function salvaImpostazioni({ request, env }) {
+  const b = await corpo(request);
+  for (const [k, v] of Object.entries(b || {})) {
+    const f = IMPOSTAZIONI_AMMESSE[k];
+    if (!f) continue;
+    const ok = f(String(v));
+    if (ok === null) return errore(`Valore non valido per ${k}.`);
+    await env.DB.prepare('INSERT INTO impostazioni (chiave, valore) VALUES (?, ?) ON CONFLICT(chiave) DO UPDATE SET valore = excluded.valore')
+      .bind(k, ok).run();
+  }
+  return json({ ok: true });
+}
+
+// Prova del bot Telegram: invia un messaggio di test al canale
+export async function provaTelegram({ env }) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return errore('Bot Telegram non configurato (mancano TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID).');
+  const r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    method: 'POST', headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text: '✅ Collegamento tra la mappa e il canale riuscito.' }),
+  });
+  const d = await r.json().catch(() => ({}));
+  if (!d.ok) return errore('Telegram ha risposto: ' + (d.description || 'errore sconosciuto') + '. Controlla che il bot sia amministratore del canale.');
+  return json({ ok: true });
+}
+
+// Pulizia: cancella gli eventi finiti da più di N giorni (come promesso nella nota privacy)
+export async function pulizia({ env }) {
+  return json({ ok: true, cancellati: await eseguiPulizia(env) });
+}
+
+export async function eseguiPulizia(env) {
+  const imp = await impostazioni(env.DB);
+  const limite = new Date(Date.now() - imp.giorniConservazione * 86400000).toISOString().slice(0, 10);
+  const vecchi = `SELECT id FROM eventi WHERE data < ?`;
+  for (const t of ['problemi', 'conferme', 'modifiche', 'cronologia']) {
+    await env.DB.prepare(`DELETE FROM ${t} WHERE evento_id IN (${vecchi})`).bind(limite).run();
+  }
+  const r = await env.DB.prepare('DELETE FROM eventi WHERE data < ?').bind(limite).run();
+  await env.DB.prepare('DELETE FROM invii WHERE creato_il < ?').bind(new Date(Date.now() - 2 * 86400000).toISOString()).run();
+  return r.meta?.changes ?? 0;
+}
+
