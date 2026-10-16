@@ -207,3 +207,24 @@ legend { font-weight: 700; padding: 0 4px; }
 .pop__azioni .bottone { margin-top: 0; }
 label.spunta { display: flex; align-items: center; gap: 8px; font-weight: 600; }
 label.spunta input { width: auto; min-height: auto; }
+
+/* Fase 3: filtri e calendario */
+.filtri { background: var(--bianco); border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 10px 12px; margin: 4px 0 12px; }
+.filtri__tipi { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 10px; border-radius: 999px;
+  border: 1.5px solid var(--bordo); background: var(--carta); font: 600 .88rem var(--corpo); color: var(--testo); cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--inchiostro); color: #fff; border-color: var(--inchiostro); }
+.filtri__riga { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: end; }
+.filtri__campo { flex: 1 1 160px; font-size: .88rem; }
+.filtri__campo select { min-height: 40px; padding: 6px 8px; }
+.filtri__spunta { min-height: 40px; font-size: .92rem; }
+.filtri .bottone { min-height: 40px; }
+.pop__cal { margin-top: 8px !important; font-size: .88rem; }
+.iscriviti { background: var(--bianco); border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 10px 12px; font-size: .95rem; }
+.filtri > summary { cursor: pointer; font-weight: 700; min-height: 32px; display: flex; align-items: center; gap: 8px; list-style: none; }
+.filtri > summary::-webkit-details-marker { display: none; }
+.filtri > summary::before { content: '▸'; transition: transform .15s; }
+.filtri[open] > summary::before { transform: rotate(90deg); }
+.filtri[open] > summary { margin-bottom: 8px; }

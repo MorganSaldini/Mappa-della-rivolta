@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <header class="barra">
@@ -46,6 +46,27 @@
       <p class="cerca__msg" id="msg-cerca" role="status"></p>
     </section>
 
+    <details class="filtri" id="box-filtri">
+      <summary>Filtra per tipo, data e regione <span class="tenue" id="filtro-riassunto"></span></summary>
+      <div class="filtri__tipi" id="filtro-tipi" role="group" aria-label="Tipo di mobilitazione"></div>
+      <div class="filtri__riga">
+        <label class="filtri__campo">Quando
+          <select id="filtro-periodo">
+            <option value="tutte">Tutte le date</option>
+            <option value="oggi">Oggi</option>
+            <option value="settimana">Prossimi 7 giorni</option>
+            <option value="mese">Prossimi 30 giorni</option>
+          </select>
+        </label>
+        <label class="filtri__campo">Dove
+          <select id="filtro-regione"><option value="">Tutte le regioni</option></select>
+        </label>
+        <label class="spunta filtri__spunta"><input type="checkbox" id="filtro-verificati"> Solo verificate</label>
+        <button type="button" class="bottone bottone--chiaro" id="filtro-azzera" hidden>Azzera filtri</button>
+        <span class="tenue" id="filtro-conta" role="status"></span>
+      </div>
+    </details>
+
     <div class="mappa-box">
       <div id="mappa" role="region" aria-label="Mappa interattiva delle mobilitazioni. L'elenco completo è sotto la mappa."></div>
       <div class="legenda" id="legenda" aria-hidden="true"></div>
@@ -60,6 +81,8 @@
 
     <section class="elenco" aria-labelledby="titolo-elenco">
       <h2 id="titolo-elenco">Tutte le mobilitazioni</h2>
+      <p class="iscriviti">📅 <a href="/api/calendario.ics" id="link-calendario">Iscriviti al calendario</a>: le mobilitazioni verificate compaiono da sole nel calendario del telefono e si aggiornano.
+        <a href="#" id="google-calendario">Aggiungi a Google Calendar</a></p>
       <div id="elenco"><p>Caricamento…</p></div>
     </section>
 
@@ -215,9 +238,9 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
 
-  <script src="config.js?v=5"></script>
+  <script src="config.js?v=7"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

@@ -136,6 +136,9 @@
         <button type="button" class="bottone bottone--chiaro" data-correggi="${esc(e.id)}">✏️ Correggi</button>
         <button type="button" class="bottone bottone--chiaro" data-problema="${esc(e.id)}">⚠️ Segnala</button>
       </div>
+      ${e.stato !== 'annullato' ? `<p class="pop__cal">📅 Aggiungi al calendario:
+        <a href="${esc(linkGoogle(e))}" target="_blank" rel="noopener">Google</a> ·
+        <a href="#" data-ics="${esc(e.id)}">Apple / Outlook (.ics)</a></p>` : ''}
     </div>`;
   }
 
@@ -156,12 +159,65 @@
       $('#avviso-mappa').textContent = 'Impossibile caricare le mobilitazioni in questo momento. Riprova tra poco.';
       $('#avviso-mappa').hidden = false;
     }
+    preparaFiltri();
     disegna();
   }
 
+  // ---------- Filtri ----------
+  const filtri = { tipi: new Set(), periodo: 'tutte', regione: '', soloVerificati: false };
+  function visibili() {
+    const oggi = oggiRoma();
+    const limite = { oggi: oggi, settimana: piuGiorni(oggi, 7), mese: piuGiorni(oggi, 31) }[filtri.periodo];
+    return eventi.filter((e) =>
+      (!filtri.tipi.size || filtri.tipi.has(e.tipo)) &&
+      (!limite || e.data <= limite) &&
+      (!filtri.regione || e.regione === filtri.regione) &&
+      (!filtri.soloVerificati || e.stato === 'verificato'));
+  }
+  function piuGiorni(iso, n) {
+    const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10);
+  }
+  function filtriAttivi() {
+    return filtri.tipi.size || filtri.periodo !== 'tutte' || filtri.regione || filtri.soloVerificati;
+  }
+  function preparaFiltri() {
+    $('#filtro-tipi').innerHTML = Object.entries(TIPI).map(([k, t]) =>
+      `<button type="button" class="chip" data-filtro-tipo="${k}" aria-pressed="false"><span class="pallino" style="--c:${t.colore}"></span>${t.icona} ${esc(t.nome)}</button>`).join('');
+    const regioni = [...new Set(eventi.map((e) => e.regione))].sort((a, b) => a.localeCompare(b, 'it'));
+    const sel = $('#filtro-regione');
+    const attuale = sel.value;
+    sel.innerHTML = '<option value="">Tutte le regioni</option>' + regioni.map((r) => `<option>${esc(r)}</option>`).join('');
+    sel.value = regioni.includes(attuale) ? attuale : '';
+    if (!sel.value) filtri.regione = '';
+    document.querySelectorAll('[data-filtro-tipo]').forEach((b) => b.setAttribute('aria-pressed', String(filtri.tipi.has(b.dataset.filtroTipo))));
+  }
+  document.addEventListener('click', (ev) => {
+    const c = ev.target.closest('[data-filtro-tipo]');
+    if (!c) return;
+    const k = c.dataset.filtroTipo;
+    filtri.tipi.has(k) ? filtri.tipi.delete(k) : filtri.tipi.add(k);
+    c.setAttribute('aria-pressed', String(filtri.tipi.has(k)));
+    disegna();
+  });
+  $('#filtro-periodo').addEventListener('change', (ev) => { filtri.periodo = ev.target.value; disegna(); });
+  $('#filtro-regione').addEventListener('change', (ev) => { filtri.regione = ev.target.value; disegna(); });
+  $('#filtro-verificati').addEventListener('change', (ev) => { filtri.soloVerificati = ev.target.checked; disegna(); });
+  $('#filtro-azzera').addEventListener('click', () => {
+    filtri.tipi.clear(); filtri.periodo = 'tutte'; filtri.regione = ''; filtri.soloVerificati = false;
+    $('#filtro-periodo').value = 'tutte'; $('#filtro-regione').value = ''; $('#filtro-verificati').checked = false;
+    document.querySelectorAll('[data-filtro-tipo]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+    disegna();
+  });
+
+  if (window.matchMedia && window.matchMedia('(min-width: 760px)').matches) $('#box-filtri').open = true;
+
   function disegna() {
+    const lista = visibili();
+    $('#filtro-azzera').hidden = !filtriAttivi();
+    $('#filtro-conta').textContent = filtriAttivi() ? `${lista.length} di ${eventi.length} mostrate` : '';
+    $('#filtro-riassunto').textContent = filtriAttivi() ? `· ${lista.length} di ${eventi.length} mostrate` : '';
     // Contatori
-    const attivi = eventi.filter((e) => e.stato !== 'annullato');
+    const attivi = lista.filter((e) => e.stato !== 'annullato');
     $('#totale').textContent = attivi.length;
     const conta = {};
     attivi.forEach((e) => (conta[e.tipo] = (conta[e.tipo] || 0) + 1));
@@ -173,7 +229,8 @@
     // Marker
     if (gruppo) {
       gruppo.clearLayers();
-      eventi.forEach((e) => {
+      for (const k of Object.keys(markerPerId)) delete markerPerId[k];
+      lista.forEach((e) => {
         const m = L.marker([e.lat, e.lng], { icon: icona(e), title: e.titolo, alt: e.titolo });
         m.bindPopup(() => htmlPopup(e), { maxWidth: 300 });
         markerPerId[e.id] = m;
@@ -182,12 +239,14 @@
     }
 
     // Elenco
-    if (!eventi.length) {
-      $('#elenco').innerHTML = '<p>Nessuna mobilitazione in programma per ora. Aggiungine una!</p>';
+    if (!lista.length) {
+      $('#elenco').innerHTML = eventi.length
+        ? '<p>Nessuna mobilitazione corrisponde ai filtri scelti.</p>'
+        : '<p>Nessuna mobilitazione in programma per ora. Aggiungine una!</p>';
       return;
     }
     let html = '', giorno = '';
-    eventi.forEach((e) => {
+    lista.forEach((e) => {
       const t = TIPI[e.tipo] || TIPI.altro;
       if (e.data !== giorno) { giorno = e.data; html += `<h3 class="giorno">${esc(dataLunga(e.data))}</h3>`; }
       html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
@@ -502,6 +561,69 @@
       $('#errore-problema').textContent = 'Connessione non riuscita. Riprova tra poco.';
     }
   });
+
+  // ---------- Calendario ----------
+  function piuOre(data, ora, ore) {
+    const [h, m] = ora.split(':').map(Number);
+    const d = new Date(Date.UTC(+data.slice(0, 4), +data.slice(5, 7) - 1, +data.slice(8, 10), h + ore, m));
+    return d.toISOString().slice(0, 16).replace(/[-:]/g, '').replace('T', 'T') + '00';
+  }
+  function compatto(data, ora) { return data.replace(/-/g, '') + 'T' + ora.replace(':', '') + '00'; }
+  function intervallo(e) {
+    if (!e.ora_inizio) {
+      return { tuttoIlGiorno: true, inizio: e.data.replace(/-/g, ''), fine: piuGiorni(e.data, 1).replace(/-/g, '') };
+    }
+    const fine = e.ora_fine && e.ora_fine > e.ora_inizio ? compatto(e.data, e.ora_fine) : piuOre(e.data, e.ora_inizio, 2);
+    return { tuttoIlGiorno: false, inizio: compatto(e.data, e.ora_inizio), fine };
+  }
+  function luogoTesto(e) { return [e.luogo, `${e.comune} (${e.provincia})`].filter(Boolean).join(', '); }
+  function descrizione(e) {
+    const t = TIPI[e.tipo] || TIPI.altro;
+    return [t.nome, (e.organizzatori || []).length ? 'Promosso da: ' + e.organizzatori.join(', ') : '', e.fonte ? 'Fonte: ' + e.fonte : '',
+      'Mappa: ' + location.origin + '/?e=' + encodeURIComponent(e.id)].filter(Boolean).join('\n');
+  }
+  function linkGoogle(e) {
+    const i = intervallo(e);
+    const p = new URLSearchParams({ action: 'TEMPLATE', text: e.titolo, dates: `${i.inizio}/${i.fine}`, details: descrizione(e), location: luogoTesto(e) });
+    if (!i.tuttoIlGiorno) p.set('ctz', 'Europe/Rome');
+    return 'https://calendar.google.com/calendar/render?' + p.toString();
+  }
+  function icsTesto(t) { return String(t).replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/([,;])/g, '\\$1'); }
+  function scaricaIcs(e) {
+    const i = intervallo(e);
+    const dt = (k, v) => (i.tuttoIlGiorno ? `${k};VALUE=DATE:${v}` : `${k};TZID=Europe/Rome:${v}`);
+    const righe = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Mappa delle mobilitazioni//IT', 'CALSCALE:GREGORIAN',
+      'BEGIN:VTIMEZONE', 'TZID:Europe/Rome',
+      'BEGIN:STANDARD', 'DTSTART:19701025T030000', 'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU', 'TZOFFSETFROM:+0200', 'TZOFFSETTO:+0100', 'TZNAME:CET', 'END:STANDARD',
+      'BEGIN:DAYLIGHT', 'DTSTART:19700329T020000', 'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU', 'TZOFFSETFROM:+0100', 'TZOFFSETTO:+0200', 'TZNAME:CEST', 'END:DAYLIGHT',
+      'END:VTIMEZONE',
+      'BEGIN:VEVENT', `UID:${e.id}@${location.host}`, 'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z',
+      dt('DTSTART', i.inizio), dt('DTEND', i.fine), 'SUMMARY:' + icsTesto(e.titolo), 'LOCATION:' + icsTesto(luogoTesto(e)),
+      'DESCRIPTION:' + icsTesto(descrizione(e)), `GEO:${e.lat};${e.lng}`, 'URL:' + location.origin + '/?e=' + encodeURIComponent(e.id),
+      'END:VEVENT', 'END:VCALENDAR'];
+    const blob = new Blob([righe.join('\r\n') + '\r\n'], { type: 'text/calendar;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = e.id + '.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+  document.addEventListener('click', (ev) => {
+    const c = ev.target.closest('[data-ics]');
+    if (!c) return;
+    ev.preventDefault();
+    const e = eventi.find((x) => x.id === c.dataset.ics);
+    if (e) scaricaIcs(e);
+  });
+
+  // Calendario da sottoscrivere (webcal) e Google
+  (function () {
+    const feed = location.origin + '/api/calendario.ics';
+    $('#link-calendario').href = feed.replace(/^https?:/, 'webcal:');
+    $('#google-calendario').href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(feed.replace(/^https?:/, 'webcal:'));
+    $('#google-calendario').target = '_blank';
+    $('#google-calendario').rel = 'noopener';
+  })();
 
   // ---------- Conferma ----------
   let idConferma = null;
