@@ -1,7 +1,8 @@
 // Importa le proposte scritte dall'agente Claude nel file dati/proposte.json (nel repository).
 // Ogni proposta entra come "da_verificare": la decisione resta ai moderatori.
 import proposte from '../dati/proposte.json';
-import { adessoRoma, sha256hex, slug, scriviCronologia } from './lib.js';
+import { adessoRoma, sha256hex, slug } from './lib.js';
+import { creaEvento } from './eventi.js';
 import { validaEvento } from './dati.js';
 
 export async function importaProposte(env) {
@@ -28,22 +29,9 @@ export async function importaProposte(env) {
     await env.DB.prepare('INSERT INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
     if (simile) { esito.doppioni++; continue; }
 
-    const base = `${d.data}-${slug(d.comune)}-${d.tipo}`;
-    const n = await env.DB.prepare('SELECT COUNT(*) AS n FROM eventi WHERE id LIKE ?').bind(base + '-%').first();
-    const id = `${base}-${String((n?.n || 0) + 1).padStart(2, '0')}`;
-    const adesso = adessoRoma();
     const note = 'Proposto dall’agente' + (p.note ? ': ' + String(p.note).slice(0, 200) : '');
-    const evento = {
-      id, ...d, organizzatori: JSON.stringify(d.organizzatori), stato: 'da_verificare', conferme: 0,
-      segnalazioni_aperte: 0, versione: 1, creato_il: adesso, aggiornato_il: adesso, note,
-    };
-    await env.DB.prepare(
-      `INSERT INTO eventi (id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, lat, lng,
-        posizione_approssimativa, organizzatori, fonte, stato, conferme, segnalazioni_aperte, versione, creato_il, aggiornato_il, note)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'da_verificare',0,0,1,?,?,?)`
-    ).bind(id, d.tipo, d.titolo, d.data, d.ora_inizio, d.ora_fine, d.comune, d.provincia, d.regione, d.luogo, d.lat, d.lng,
-      d.posizione_approssimativa, evento.organizzatori, d.fonte, adesso, adesso, note).run();
-    await scriviCronologia(env.DB, evento, 'proposto_da_agente', 'agente');
+    const gruppo = p.gruppo ? 'ag-' + slug(String(p.gruppo)).slice(0, 40) : null;
+    await creaEvento(env.DB, d, { gruppo, attore: 'agente', note });
     esito.nuove++;
   }
   return esito;

@@ -22,8 +22,10 @@ CREATE TABLE IF NOT EXISTS eventi (
   creato_il TEXT,
   aggiornato_il TEXT,
   note TEXT,
-  telegram_msg_id INTEGER
+  telegram_msg_id INTEGER,
+  gruppo TEXT
 );
+CREATE INDEX IF NOT EXISTS idx_eventi_gruppo ON eventi (gruppo);
 CREATE INDEX IF NOT EXISTS idx_eventi_data_stato ON eventi (data, stato);
 CREATE TABLE IF NOT EXISTS modifiche (
   id INTEGER PRIMARY KEY AUTOINCREMENT,

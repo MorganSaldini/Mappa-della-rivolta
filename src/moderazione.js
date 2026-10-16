@@ -6,7 +6,7 @@ import {
   attoreDi, REGIONI, normalizzaRegione,
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
-import { pubblicaEvento, avvisaAnnullato, rimuoviEvento } from './telegram.js';
+import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento } from './telegram.js';
 import { importaProposte } from './agente.js';
 
 async function corpo(request) {
@@ -68,7 +68,7 @@ export async function coda({ env, sessione }) {
   const par = sessione.regioni;
 
   const nuovi = (await env.DB.prepare(
-    `SELECT e.* FROM eventi e WHERE e.stato IN ('da_verificare','nascosto')${filtro} ORDER BY e.data, e.ora_inizio LIMIT 200`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.stato IN ('da_verificare','nascosto')${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
   ).bind(...par).all()).results.map(apriEvento);
 
   const modifiche = (await env.DB.prepare(
@@ -95,11 +95,11 @@ export async function elencoEventi({ request, env, sessione }) {
   const stato = u.searchParams.get('stato');
   const where = [];
   const par = [];
-  if (q) { where.push('(titolo LIKE ? OR comune LIKE ? OR id LIKE ?)'); par.push(`%${q}%`, `%${q}%`, `%${q}%`); }
-  if (STATI.includes(stato)) { where.push('stato = ?'); par.push(stato); }
-  if (sessione.regioni.length) { where.push(`regione IN (${sessione.regioni.map(() => '?').join(',')})`); par.push(...sessione.regioni); }
+  if (q) { where.push('(e.titolo LIKE ? OR e.comune LIKE ? OR e.id LIKE ?)'); par.push(`%${q}%`, `%${q}%`, `%${q}%`); }
+  if (STATI.includes(stato)) { where.push('e.stato = ?'); par.push(stato); }
+  if (sessione.regioni.length) { where.push(`e.regione IN (${sessione.regioni.map(() => '?').join(',')})`); par.push(...sessione.regioni); }
   const { results } = await env.DB.prepare(
-    `SELECT * FROM eventi ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY data DESC LIMIT 150`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY e.data DESC LIMIT 150`
   ).bind(...par).all();
   return json({ ok: true, eventi: results.map(apriEvento) });
 }
@@ -147,6 +147,22 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
     const cambi = { stato: STATI.includes(vecchio.stato) ? vecchio.stato : e.stato };
     for (const c of CAMPI_CONTENUTO) if (c in vecchio) cambi[c] = vecchio[c];
     nuovo = await salvaVersione(env.DB, e, cambi, `ripristinato_v${versione}`, attore);
+  } else if (az === 'approva_gruppo') {
+    if (!e.gruppo) return errore('Questo evento non fa parte di un gruppo di città.');
+    const { results } = await env.DB.prepare(
+      "SELECT * FROM eventi WHERE gruppo = ? AND stato IN ('da_verificare','nascosto','verificato')"
+    ).bind(e.gruppo).all();
+    const approvati = [];
+    for (const x of results) {
+      if (!puoGestire(sessione, x)) continue;
+      if (x.stato === 'verificato') { approvati.push(x); continue; }
+      const n = await salvaVersione(env.DB, x, { stato: 'verificato', segnalazioni_aperte: 0 }, 'approva_gruppo', attore);
+      await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(x.id).run();
+      n.telegram_msg_id = x.telegram_msg_id;
+      approvati.push(n);
+    }
+    ctx.waitUntil(pubblicaGruppo(env, approvati, sito));
+    return json({ ok: true, approvati: approvati.length });
   } else if (az === 'chiudi_segnalazioni') {
     await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
     await env.DB.prepare('UPDATE eventi SET segnalazioni_aperte = 0 WHERE id = ?').bind(e.id).run();

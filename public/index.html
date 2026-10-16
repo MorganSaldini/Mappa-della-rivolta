@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <header class="barra">
@@ -137,6 +137,13 @@
         <p class="dlg__aiuto" id="aiuto-punto">Cerca il luogo oppure tocca la mappa per mettere il punto. Puoi trascinarlo per correggerlo.</p>
       </fieldset>
 
+      <fieldset class="altre-citta" id="box-altre-citta">
+        <legend>Si svolge anche in altre città?</legend>
+        <p class="dlg__aiuto">Per scioperi o mobilitazioni con presidi in più città: titolo, data, organizzatori e fonte valgono per tutte. Per ogni città indica il luogo e, se diverso, l'orario.</p>
+        <div id="altre-citta"></div>
+        <button type="button" class="bottone bottone--chiaro" id="aggiungi-citta">+ Aggiungi un'altra città</button>
+      </fieldset>
+
       <label>Organizzatori (sigle, separate da virgola)
         <input name="organizzatori" maxlength="300" placeholder="Es. sindacato, collettivo, comitato">
       </label>
@@ -238,9 +245,9 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
 
-  <script src="config.js?v=7"></script>
+  <script src="config.js?v=8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

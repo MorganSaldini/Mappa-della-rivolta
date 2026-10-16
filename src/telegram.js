@@ -50,9 +50,18 @@ async function chiama(env, metodo, corpo) {
   }
 }
 
-// Pubblica un evento verificato e salva l'id del messaggio
+// Pubblica un evento verificato e salva l'id del messaggio.
+// Se fa parte di un evento in più città già pubblicato, non ripubblica: collega lo stesso messaggio.
 export async function pubblicaEvento(env, evento, sitoUrl) {
   if (evento.telegram_msg_id) return;
+  if (evento.gruppo) {
+    const gia = await env.DB.prepare('SELECT telegram_msg_id FROM eventi WHERE gruppo = ? AND telegram_msg_id IS NOT NULL LIMIT 1')
+      .bind(evento.gruppo).first();
+    if (gia) {
+      await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(gia.telegram_msg_id, evento.id).run();
+      return;
+    }
+  }
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return;
   const res = await chiama(env, 'sendMessage', {
@@ -60,6 +69,37 @@ export async function pubblicaEvento(env, evento, sitoUrl) {
   });
   if (res && res.message_id) {
     await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, evento.id).run();
+  }
+}
+
+// Un solo messaggio per un evento in più città: elenca tutte le città approvate
+export async function pubblicaGruppo(env, eventi, sitoUrl) {
+  const daPubblicare = eventi.filter((e) => !e.telegram_msg_id);
+  if (!daPubblicare.length) return;
+  const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
+  if (auto && auto.valore === 'no') return;
+  const primo = apriEvento(eventi[0]);
+  const ordinati = [...eventi].sort((a, b) => a.comune.localeCompare(b.comune, 'it'));
+  const righe = [
+    `<b>${h(NOMI_TIPI[primo.tipo] || NOMI_TIPI.altro)} · in ${eventi.length} città</b>`,
+    `<b>${h(primo.titolo)}</b>`,
+    '',
+    `🗓 ${h(dataLunga(primo.data))}`,
+  ];
+  if (primo.organizzatori.length) righe.push(`👥 ${h(primo.organizzatori.join(', '))}`);
+  righe.push('');
+  for (const e of ordinati.slice(0, 30)) {
+    const dove = [e.luogo, e.comune].filter(Boolean).join(', ');
+    const ora = e.ora_inizio ? ` – ore ${h(e.ora_inizio)}` : '';
+    righe.push(sitoUrl ? `📍 <a href="${h(sitoUrl)}/?e=${encodeURIComponent(e.id)}">${h(dove)}</a>${ora}` : `📍 ${h(dove)}${ora}`);
+  }
+  if (ordinati.length > 30) righe.push(`… e altre ${ordinati.length - 30} città`);
+  if (primo.fonte) righe.push('', `🔗 <a href="${h(primo.fonte)}">Fonte</a>`);
+  const res = await chiama(env, 'sendMessage', { text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true });
+  if (res && res.message_id) {
+    for (const e of eventi) {
+      await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, e.id).run();
+    }
   }
 }
 
@@ -75,6 +115,10 @@ export async function avvisaAnnullato(env, evento) {
 // Toglie dal canale un evento nascosto o rifiutato (Telegram lo consente entro 48 ore)
 export async function rimuoviEvento(env, evento) {
   if (!evento.telegram_msg_id) return;
-  await chiama(env, 'deleteMessage', { message_id: evento.telegram_msg_id });
+  // Se lo stesso messaggio riguarda anche altre città ancora valide, non cancellarlo: scollega solo questa
+  const altre = await env.DB.prepare(
+    "SELECT COUNT(*) AS n FROM eventi WHERE telegram_msg_id = ? AND id <> ? AND stato IN ('verificato','annullato')"
+  ).bind(evento.telegram_msg_id, evento.id).first();
+  if (!altre || !altre.n) await chiama(env, 'deleteMessage', { message_id: evento.telegram_msg_id });
   await env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(evento.id).run();
 }

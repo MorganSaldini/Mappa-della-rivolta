@@ -109,13 +109,15 @@
       <div class="etichette"><span class="etichetta" style="--c:${t[2]}">${t[0]} ${esc(t[1])}</span>
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${esc(STATI[e.stato] || e.stato)}</span>
         ${e.segnalazioni_aperte ? `<span class="etichetta" style="--c:#9f241d">⚠️ ${e.segnalazioni_aperte} segnalazioni</span>` : ''}
-        ${e.telegram_msg_id ? '<span class="etichetta" style="--c:#2a8fd6">Telegram ✓</span>' : ''}</div>
+        ${e.telegram_msg_id ? '<span class="etichetta" style="--c:#2a8fd6">Telegram ✓</span>' : ''}
+        ${e.gruppo_n > 1 ? `<span class="etichetta" style="--c:#5f5d66">🗺 ${e.gruppo_n} città</span>` : ''}</div>
       <h3>${esc(e.titolo)}</h3>
       <p><strong>${esc(dataIt(e.data))}</strong>${e.ora_inizio ? ', ore ' + esc(e.ora_inizio) : ''}${e.ora_fine ? '–' + esc(e.ora_fine) : ''}</p>
       <p>${e.luogo ? esc(e.luogo) + ', ' : ''}${esc(e.comune)} (${esc(e.provincia)}) · ${esc(e.regione)}${e.posizione_approssimativa ? ' · <em>posizione indicativa</em>' : ''}</p>
       ${(e.organizzatori || []).length ? `<p>Promosso da: ${esc(e.organizzatori.join(', '))}</p>` : ''}
       <p>${fonte ? `🔗 <a href="${esc(fonte)}" target="_blank" rel="noopener nofollow">Apri la fonte</a>` : '<strong style="color:#9f241d">Nessuna fonte</strong>'}
         · ${e.conferme || 0} conferme · <a href="./?e=${encodeURIComponent(e.id)}" target="_blank">vedi sulla mappa</a></p>
+      ${e.gruppo_n > 1 ? `<p class="nota-agente">Evento in più città: ${esc(e.gruppo_citta)}</p>` : ''}
       ${e.note && e.note !== 'esempio' ? `<p class="nota-agente">${esc(e.note)}</p>` : ''}
       <p class="tenue">${esc(e.id)} · versione ${e.versione || 1} · aggiornato ${esc(dataIt(e.aggiornato_il))}</p>
       <div class="azioni">${azioni}</div>
@@ -124,7 +126,8 @@
   function bottoniEvento(e) {
     const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
     const out = [];
-    if (e.stato !== 'verificato') out.push(b('approva', '✓ Approva', 'bottone--ok'));
+    if (e.gruppo_n > 1) out.push(b('approva_gruppo', `✓ Approva tutte le ${e.gruppo_n} città`, 'bottone--ok'));
+    if (e.stato !== 'verificato') out.push(b('approva', e.gruppo_n > 1 ? '✓ Approva solo questa' : '✓ Approva', 'bottone--ok'));
     if (e.stato !== 'annullato' && e.stato !== 'rifiutato') out.push(b('annulla', 'Segna annullato'));
     if (e.stato !== 'nascosto' && e.stato !== 'rifiutato') out.push(b('nascondi', 'Nascondi'));
     if (e.stato !== 'rifiutato') out.push(b('rifiuta', '✕ Rifiuta', 'bottone--no'));
@@ -206,7 +209,8 @@
       b.disabled = true;
       try {
         await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az } });
-        avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.' : 'Fatto.');
+        avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
+          : az === 'approva_gruppo' ? 'Approvate tutte le città: sul canale esce un solo messaggio con l’elenco.' : 'Fatto.');
         aggiorna();
       } catch (e) { alert(e.message); b.disabled = false; }
       return;

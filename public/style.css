@@ -228,3 +228,12 @@ label.spunta input { width: auto; min-height: auto; }
 .filtri > summary::before { content: '▸'; transition: transform .15s; }
 .filtri[open] > summary::before { transform: rotate(90deg); }
 .filtri[open] > summary { margin-bottom: 8px; }
+
+/* Eventi in più città */
+.citta-extra { border: 1px dashed var(--bordo); border-radius: var(--raggio); padding: 10px; margin-bottom: 8px; display: grid; gap: 8px; background: var(--carta); }
+.citta-extra__piede { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.citta-extra__stato { font-size: .88rem; color: var(--tenue); }
+.citta-extra__stato.ok { color: var(--ok); font-weight: 700; }
+.citta-extra__stato.errore { color: var(--rosso-scuro); font-weight: 700; }
+.pop__gruppo { background: #f1ede6; border-radius: 8px; padding: 6px 8px; margin-top: 6px !important; font-size: .9rem; }
+.pop__gruppo button { background: none; border: none; color: var(--rosso-scuro); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }

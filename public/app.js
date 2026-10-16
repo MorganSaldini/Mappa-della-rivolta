@@ -131,6 +131,7 @@
       ${org ? `<p>Promosso da: ${org}</p>` : ''}
       ${fonte ? `<p><a href="${esc(fonte)}" target="_blank" rel="noopener nofollow ugc">Fonte ↗</a></p>` : '<p class="tenue">Nessuna fonte indicata</p>'}
       <p class="tenue">${e.conferme ? e.conferme + ' conferme · ' : ''}aggiornato il ${esc(dataBreve((e.aggiornato_il || '').slice(0, 10) || e.data))}</p>
+      ${htmlGruppo(e)}
       <div class="pop__azioni">
         ${e.stato !== 'annullato' ? `<button type="button" class="bottone bottone--chiaro" data-conferma="${esc(e.id)}">👍 Confermo</button>` : ''}
         <button type="button" class="bottone bottone--chiaro" data-correggi="${esc(e.id)}">✏️ Correggi</button>
@@ -141,6 +142,25 @@
         <a href="#" data-ics="${esc(e.id)}">Apple / Outlook (.ics)</a></p>` : ''}
     </div>`;
   }
+
+  // ---------- Eventi in più città ----------
+  function cittaDelGruppo(e) {
+    return e.gruppo ? eventi.filter((x) => x.gruppo === e.gruppo) : [];
+  }
+  function htmlGruppo(e) {
+    const tutte = cittaDelGruppo(e);
+    if (tutte.length < 2) return '';
+    const altre = tutte.filter((x) => x.id !== e.id).map((x) => x.comune);
+    const elenco = altre.slice(0, 8).map(esc).join(', ') + (altre.length > 8 ? ` e altre ${altre.length - 8}` : '');
+    return `<p class="pop__gruppo">🗺 Si svolge in ${tutte.length} città. Anche a: ${elenco}.
+      <button type="button" data-gruppo="${esc(e.gruppo)}">Vedi tutte sulla mappa</button></p>`;
+  }
+  document.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-gruppo]');
+    if (!b || !mappa) return;
+    const punti = eventi.filter((x) => x.gruppo === b.dataset.gruppo).map((x) => [x.lat, x.lng]);
+    if (punti.length) { mappa.closePopup(); mappa.fitBounds(punti, { padding: [40, 40], maxZoom: 9 }); }
+  });
 
   // ---------- Caricamento eventi ----------
   async function carica() {
@@ -252,7 +272,7 @@
       html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
         <span class="pallino" style="--c:${t.colore}"></span>
         <span><strong class="${e.stato === 'annullato' ? 'barrato' : ''}">${esc(e.titolo)}</strong>
-        ${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${e.ora_inizio ? ' · ' + esc(orario(e)) : ''}
+        ${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${e.ora_inizio ? ' · ' + esc(orario(e)) : ''}${cittaDelGruppo(e).length > 1 ? ` · <em>in ${cittaDelGruppo(e).length} città</em>` : ''}
         ${e.stato === 'da_verificare' ? ' · <em>da verificare</em>' : ''}${e.stato === 'annullato' ? ' · <strong>annullato</strong>' : ''}</span>
       </button>`;
     });
@@ -465,6 +485,86 @@
     }
   });
 
+  // Altre città
+  const MAX_CITTA = 20;
+  function nuovaRigaCitta() {
+    const n = document.querySelectorAll('.citta-extra').length;
+    if (n >= MAX_CITTA - 1) { $('#errore-aggiungi').textContent = `Al massimo ${MAX_CITTA} città per evento.`; return; }
+    const div = document.createElement('div');
+    div.className = 'citta-extra';
+    div.innerHTML = `
+      <div class="riga">
+        <label class="cresci">Comune<input data-k="comune" maxlength="80" placeholder="Es. Torino"></label>
+        <label class="corto">Prov.<input data-k="provincia" maxlength="2" placeholder="TO"></label>
+      </div>
+      <div class="riga">
+        <label class="cresci">Luogo (piazza, via)<input data-k="luogo" maxlength="120" placeholder="Es. Piazza Castello"></label>
+        <label class="corto">Ora<input data-k="ora_inizio" type="time"></label>
+      </div>
+      <div class="citta-extra__piede">
+        <button type="button" class="bottone bottone--chiaro" data-trova-citta>Trova sulla mappa</button>
+        <span class="citta-extra__stato" role="status">Non ancora cercata</span>
+        <button type="button" class="dlg__chiudi" data-togli-citta aria-label="Togli questa città">✕</button>
+      </div>`;
+    $('#altre-citta').appendChild(div);
+    div.querySelector('[data-k="comune"]').focus();
+    div.querySelectorAll('input').forEach((i) => i.addEventListener('input', () => {
+      if (i.dataset.k === 'comune' || i.dataset.k === 'luogo') { delete div.dataset.lat; segnaStato(div, 'Non ancora cercata'); }
+    }));
+  }
+  function segnaStato(div, testo, classe = '') {
+    const st = div.querySelector('.citta-extra__stato');
+    st.textContent = testo;
+    st.className = 'citta-extra__stato ' + classe;
+  }
+  async function trovaCitta(div) {
+    const val = (k) => div.querySelector(`[data-k="${k}"]`).value.trim();
+    const comune = val('comune'), luogo = val('luogo');
+    if (!comune) { segnaStato(div, 'Scrivi il comune', 'errore'); return false; }
+    segnaStato(div, 'Cerco…');
+    try {
+      let r = await geocodifica([luogo, comune].filter(Boolean).join(', '));
+      let approx = false;
+      if (!r && luogo) { r = await geocodifica(comune); approx = true; }
+      if (!r) { segnaStato(div, 'Comune non trovato: controlla il nome', 'errore'); return false; }
+      const { prov, reg } = datiIndirizzo(r.address || {});
+      if (r.address && r.address.country_code && r.address.country_code !== 'it') { segnaStato(div, 'Deve essere in Italia', 'errore'); return false; }
+      if (prov) div.querySelector('[data-k="provincia"]').value = prov;
+      div.dataset.lat = r.lat; div.dataset.lng = r.lon; div.dataset.regione = reg || '';
+      div.dataset.approx = approx || !luogo ? '1' : '';
+      segnaStato(div, `✓ Trovato${approx || !luogo ? ' (posizione indicativa)' : ''}`, 'ok');
+      return true;
+    } catch {
+      segnaStato(div, 'Ricerca non riuscita, riprova', 'errore');
+      return false;
+    }
+  }
+  $('#aggiungi-citta').addEventListener('click', nuovaRigaCitta);
+  $('#altre-citta').addEventListener('click', (ev) => {
+    const div = ev.target.closest('.citta-extra');
+    if (!div) return;
+    if (ev.target.closest('[data-togli-citta]')) div.remove();
+    if (ev.target.closest('[data-trova-citta]')) trovaCitta(div);
+  });
+  async function raccogliAltreCitta() {
+    const righe = [...document.querySelectorAll('.citta-extra')].filter((d) => d.querySelector('[data-k="comune"]').value.trim());
+    for (const d of righe) {
+      if (!d.dataset.lat && !(await trovaCitta(d))) {
+        throw new Error(`Non trovo "${d.querySelector('[data-k="comune"]').value.trim()}": correggi il nome o toglila.`);
+      }
+      if (!d.dataset.regione) throw new Error(`Regione non riconosciuta per ${d.querySelector('[data-k="comune"]').value.trim()}.`);
+    }
+    return righe.map((d) => ({
+      comune: d.querySelector('[data-k="comune"]').value.trim(),
+      provincia: d.querySelector('[data-k="provincia"]').value.trim().toUpperCase(),
+      regione: d.dataset.regione,
+      luogo: d.querySelector('[data-k="luogo"]').value.trim(),
+      ora_inizio: d.querySelector('[data-k="ora_inizio"]').value || null,
+      lat: Number(d.dataset.lat), lng: Number(d.dataset.lng),
+      posizione_approssimativa: d.dataset.approx === '1',
+    }));
+  }
+
   fa.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     const err = $('#errore-aggiungi');
@@ -492,7 +592,15 @@
       }
     }
 
+    let luoghi = [];
+    try {
+      if (document.querySelector('.citta-extra')) err.textContent = '';
+      luoghi = await raccogliAltreCitta();
+    } catch (e) {
+      return (err.textContent = e.message);
+    }
     const corpo = {
+      luoghi,
       tipo: v.tipo, titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
       comune: v.comune, provincia: v.provincia.toUpperCase(), regione: v.regione, luogo: v.luogo,
       lat: punto.lat, lng: punto.lng, posizione_approssimativa: approssimativa,
@@ -511,10 +619,12 @@
       }
       $('#dlg-aggiungi').close();
       fa.reset();
+      $('#altre-citta').innerHTML = '';
       punto = null;
       if (puntoMarker) { miniMappa.removeLayer(puntoMarker); puntoMarker = null; }
+      const quante = (d.ids || []).length > 1 ? ` in ${d.ids.length} città` : '';
       avvisoOk(d.visibile_subito
-        ? 'Grazie! La mobilitazione è sulla mappa come "Da verificare": un moderatore la controllerà.'
+        ? `Grazie! La mobilitazione è sulla mappa${quante} come "Da verificare": un moderatore la controllerà.`
         : 'Grazie! Un moderatore controllerà la segnalazione prima di pubblicarla.');
       await carica();
       const m = markerPerId[d.id];

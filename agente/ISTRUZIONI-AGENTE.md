@@ -67,6 +67,9 @@ Usa sempre il mese e l'anno correnti e i successivi, non date passate.
   se non ce ne sono, una sola proposta a Roma (centro) con `posizione_approssimativa: true` e scrivilo nelle note.
 - Le coordinate devono cadere in Italia (lat 35.5–47.1, lng 6.6–18.6) e sulla terraferma.
 - `provincia`: sigla ufficiale di 2 lettere. `regione`: nome ufficiale (es. "Emilia-Romagna", "Valle d'Aosta").
+- **Eventi in più città** (es. sciopero nazionale con presidi in varie città): una proposta per città, tutte con lo
+  stesso campo facoltativo `"gruppo"` (testo breve, es. `"sciopero-generale-2026-11-20"`). Sul sito appariranno
+  collegate, e su Telegram uscirà un solo messaggio con l'elenco delle città.
 - `note`: massimo 200 caratteri, utili al moderatore (durata, settore, fasce di garanzia, se revocato in parte…).
 - Uno sciopero revocato o differito: non proporlo (o proponilo con la nuova data, citando la fonte aggiornata).
 
