@@ -38,6 +38,25 @@
     "note": "Fermo regionale di 120 ore, dalle 00:01 del 16 alle 24 del 20 ottobre; posizione indicativa"
   },
   {
+    "tipo": "corteo",
+    "titolo": "Manifestazione nazionale \"La Via Maestra\": lavoro, pace, ambiente, welfare, Costituzione",
+    "data": "2026-10-17",
+    "ora_inizio": "13:30",
+    "ora_fine": "19:00",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza della Repubblica",
+    "lat": 41.9025,
+    "lng": 12.4965,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "La Via Maestra"
+    ],
+    "fonte": "https://retepacedisarmo.org/evento/insieme-sulla-via-maestra-manifestazione-nazionale/",
+    "note": "Concentramento in piazza della Repubblica, corteo fino a piazza del Popolo. Oltre cento associazioni aderenti."
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero bus International Service di Roma",
     "data": "2026-10-19",
@@ -121,6 +140,25 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo nazionale per la pace \"Fuori l'Italia dalla guerra\"",
+    "data": "2026-10-24",
+    "ora_inizio": "14:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza della Repubblica",
+    "lat": 41.9025,
+    "lng": 12.4965,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Campagna Fuori l'Italia dalla guerra"
+    ],
+    "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
+    "note": "Mobilitazione dichiarata non violenta; percorso non indicato dalla fonte. Verificare promotori sul sito della campagna."
   },
   {
     "tipo": "sciopero_categoria",
@@ -223,7 +261,7 @@
       "USB Lavoro Privato"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze"
+    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze. Verificare: possibile esclusione per franchigia trasporti 30/10-5/11"
   },
   {
     "tipo": "sciopero_generale",
@@ -243,7 +281,7 @@
       "USB"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "Due proclamazioni nazionali (USI-CIT e USB). USB: aereo 0–23:59, treni dalle 21 del 29 alle 20:59 del 30, autostrade dalle 22 del 29, taxi tutto il giorno"
+    "note": "Agg. 14/10: per franchigia 30/10-5/11 USB ha escluso TPL e treni; USI-CIT esclude trasporti (fonte metropolitanadiroma.it). Restano scuola, sanità, PA, privati."
   },
   {
     "tipo": "sciopero_categoria",
@@ -262,7 +300,7 @@
       "USB Lavoro Privato"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore in tutti i porti; posizione indicativa"
+    "note": "24 ore in tutti i porti; posizione indicativa. Verificare effetto franchigia trasporti 30/10-5/11 (marittimo escluso per USI-CIT)"
   },
   {
     "tipo": "sciopero_categoria",
@@ -301,6 +339,27 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "8 ore, dalle 21 del 10 alle 4:59 dell'11 novembre; nazionale, posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale dei call center (settore CRM/BPO)",
+    "data": "2026-11-11",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "SLC-CGIL",
+      "FISTEL-CISL",
+      "UILFPC-UIL"
+    ],
+    "fonte": "https://www.uilfpc.it/news/comunicato-sciopero-crm-bpo-11nov26/",
+    "note": "Intera giornata, tutto il comparto CRM/BPO. Nessun presidio indicato; posizione indicativa (sciopero nazionale)."
   },
   {
     "tipo": "sciopero_categoria",
