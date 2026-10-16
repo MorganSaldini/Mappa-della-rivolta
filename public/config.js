@@ -10,7 +10,7 @@ window.CONFIG = {
   testoPartecipa: 'Unisciti al canale',
 
   // Chiave pubblica di Cloudflare Turnstile (anti-bot). Lasciala '' finché non l'hai creata.
-  turnstileSiteKey: '',
+  turnstileSiteKey: '0x4AAAAAAFYop4uNqrh9rvL6',
 
   // Contatto pubblico per richieste di rimozione o correzione (email del progetto o link a un modulo).
   contattoRimozioni: '',
