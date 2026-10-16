@@ -6,12 +6,12 @@ window.CONFIG = {
   sottotitolo: 'Cortei, presidi, scioperi e assemblee in tutta Italia, segnalati da chi li organizza e da chi partecipa.',
 
   // Pulsante "Partecipa": link a un canale Telegram, a un sito o a un gruppo. Lascia '' per nasconderlo.
-  linkPartecipa: '',
+  linkPartecipa: 'https://t.me/+pBL4bcWzUk82ZmY8';'https://mappa-della-rivolta.morgansaldini.workers.dev'
   testoPartecipa: 'Unisciti al canale',
 
   // Chiave pubblica di Cloudflare Turnstile (anti-bot). Lasciala '' finché non l'hai creata.
   turnstileSiteKey: '0x4AAAAAAFYop4uNqrh9rvL6',
 
   // Contatto pubblico per richieste di rimozione o correzione (email del progetto o link a un modulo).
-  contattoRimozioni: '',
+  contattoRimozioni: 'paginadellarivolta@gmail.com',
 };
