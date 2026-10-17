@@ -3,6 +3,9 @@ name = "mappadellarivolta"
 main = "src/worker.js"
 compatibility_date = "2026-06-01"
 
+# Mantiene attivo anche l’indirizzo …workers.dev
+workers_dev = true
+
 # Dominio del sito (Cloudflare crea da solo i record DNS e il certificato)
 routes = [
   { pattern = "mappadellarivolta.org", custom_domain = true },
