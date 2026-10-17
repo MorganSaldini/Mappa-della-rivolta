@@ -57,6 +57,26 @@
     "note": "Concentramento in piazza della Repubblica, corteo fino a piazza del Popolo. Oltre cento associazioni aderenti."
   },
   {
+    "tipo": "corteo",
+    "titolo": "Sciopero studentesco: ritrovo in piazzale Alpini",
+    "data": "2026-10-17",
+    "ora_inizio": "08:00",
+    "ora_fine": null,
+    "comune": "Bergamo",
+    "provincia": "BG",
+    "regione": "Lombardia",
+    "luogo": "Piazzale degli Alpini",
+    "lat": 45.6919,
+    "lng": 9.6747,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Collettivi studenteschi",
+      "FLC CGIL Bergamo"
+    ],
+    "fonte": "https://www.montagneepaesi.com/domani-17-ottobre-sciopero-studentesco-a-bergamo-flc-cgil-difendere-la-scuola-pubblica-e-difendere-il-futuro/",
+    "note": "Data e adesione FLC CGIL dalla fonte; orario e luogo da lista inviata dall'amministratore, non presenti nella fonte."
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero bus International Service di Roma",
     "data": "2026-10-19",
