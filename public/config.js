@@ -11,7 +11,7 @@ window.CONFIG = {
   testoPartecipa: 'Unisciti al canale',
 
   // Pulsante "Sostieni": link alla pagina per le donazioni (Ko-fi, Liberapay, PayPal…). Lascia '' per nasconderlo.
-  linkSostieni: '',
+  linkSostieni: 'https://paypal.me/MappaDellaRivolta',
 
   // Chiave pubblica di Cloudflare Turnstile (anti-bot).
   turnstileSiteKey: '0x4AAAAAAFYop4uNqrh9rvL6',
