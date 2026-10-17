@@ -20,7 +20,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:31",
       "gruppo": null
     },
@@ -207,7 +207,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dejk9vXIGYw/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-17T01:58:13",
       "gruppo": "g-638f960a7364"
     },
@@ -276,7 +276,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dejk9vXIGYw/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T01:58:14",
       "gruppo": "g-638f960a7364"
     },
@@ -414,7 +414,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dejk9vXIGYw/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-17T12:46:35",
       "gruppo": "g-638f960a7364"
     },
@@ -597,6 +597,52 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T18:36:59",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-18-roma-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro l’abbondanza di cortei",
+      "data": "2026-10-18",
+      "ora_inizio": "14:01",
+      "ora_fine": "21:01",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Piazza nuccitelli",
+      "lat": 41.88928,
+      "lng": 12.46314,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo"
+      ],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T21:03:57",
+      "gruppo": "g-8d406ef0b501"
+    },
+    {
+      "id": "2026-10-18-bologna-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro l’abbondanza di cortei",
+      "data": "2026-10-18",
+      "ora_inizio": "21:02",
+      "ora_fine": "21:01",
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Via centotrecento",
+      "lat": 44.49861,
+      "lng": 11.35077,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo"
+      ],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T21:03:58",
+      "gruppo": "g-8d406ef0b501"
     },
     {
       "id": "2026-10-19-volla-sciopero_categoria-01",
@@ -783,7 +829,7 @@
       ],
       "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T01:45:07",
       "gruppo": null
     },
@@ -810,6 +856,27 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T03:36:49",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-24-treviso-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Diritti per gli studenti e sanità pubblica!! REVOLUTION",
+      "data": "2026-10-24",
+      "ora_inizio": "17:30",
+      "ora_fine": "21:00",
+      "comune": "Treviso",
+      "provincia": "TV",
+      "regione": "Veneto",
+      "luogo": "Piazza dei signori",
+      "lat": 45.66569,
+      "lng": 12.24544,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T21:03:53",
       "gruppo": null
     },
     {
@@ -932,7 +999,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T01:27:43",
       "gruppo": null
     },
@@ -1072,6 +1139,29 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-17T12:46:54",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-bergamo-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero contro Carovita e Riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Bergamo",
+      "provincia": "BG",
+      "regione": "Lombardia",
+      "luogo": "Piazza Gaza",
+      "lat": 45.69525,
+      "lng": 9.67037,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/reel/DemHXskNl4b/?mdxt=eDBqeTl3d215Zjhu",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T19:29:22",
       "gruppo": null
     },
     {
@@ -1413,7 +1503,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-17T18:36:59",
+  "ultimo_aggiornamento": "2026-10-17T21:03:58",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-17T17:00:35Z"
+  "copia_del": "2026-10-17T19:13:01Z"
 }
