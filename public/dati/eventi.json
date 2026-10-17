@@ -616,9 +616,9 @@
         "Collettivo"
       ],
       "fonte": null,
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-17T21:03:57",
+      "aggiornato_il": "2026-10-17T23:21:42",
       "gruppo": "g-8d406ef0b501"
     },
     {
@@ -639,9 +639,9 @@
         "Collettivo"
       ],
       "fonte": null,
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-17T21:03:58",
+      "aggiornato_il": "2026-10-17T23:21:42",
       "gruppo": "g-8d406ef0b501"
     },
     {
@@ -736,6 +736,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:34",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-23-verona-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco",
+      "data": "2026-10-23",
+      "ora_inizio": "15:00",
+      "ora_fine": "18:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazza Cittadella",
+      "lat": 45.43699,
+      "lng": 10.99324,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete studenti Verona",
+        "Udu Verona"
+      ],
+      "fonte": "https://www.instagram.com/p/DemuV_-CK2D/?img_index=3&psln=MTV2dGhqajdmajlweA==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T22:38:54",
       "gruppo": null
     },
     {
@@ -874,9 +898,9 @@
       "posizione_approssimativa": 0,
       "organizzatori": [],
       "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-17T21:03:53",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-17T23:21:55",
       "gruppo": null
     },
     {
@@ -1091,7 +1115,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-17T01:44:43",
       "gruppo": null
     },
@@ -1159,9 +1183,9 @@
         "USB"
       ],
       "fonte": "https://www.instagram.com/reel/DemHXskNl4b/?mdxt=eDBqeTl3d215Zjhu",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-17T19:29:22",
+      "aggiornato_il": "2026-10-17T22:39:18",
       "gruppo": null
     },
     {
@@ -1503,7 +1527,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-17T21:03:58",
+  "ultimo_aggiornamento": "2026-10-17T23:21:55",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-17T19:13:01Z"
+  "copia_del": "2026-10-17T21:40:20Z"
 }
