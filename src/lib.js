@@ -63,6 +63,8 @@ export async function impostazioni(db) {
     segnalazioniPerNascondere: parseInt(o.segnalazioni_per_nascondere || '3', 10),
     maxInviiOra: parseInt(o.max_invii_ora || '5', 10),
     giorniConservazione: parseInt(o.giorni_conservazione || '30', 10),
+    // Tetto per tutto il sito: oltre questo numero di nuovi invii in un'ora si passa da soli alla "coda"
+    maxInviiOraTotali: parseInt(o.max_invii_ora_totali || '60', 10),
   };
 }
 
@@ -92,18 +94,57 @@ export async function controllaLimite(db, hash, azione, maxOra) {
   return true;
 }
 
-// Verifica Cloudflare Turnstile (anti-bot). Se il segreto non è configurato (prove in locale) si salta.
+// Verifica Cloudflare Turnstile (anti-bot).
+// Se il segreto manca, gli invii vengono RIFIUTATI: meglio un modulo fermo che un sito aperto ai bot.
+// Solo per le prove sul proprio computer si può saltare mettendo SVILUPPO=1 nel file .dev.vars.
 export async function verificaTurnstile(token, request, env) {
-  if (!env.TURNSTILE_SECRET) return true;
-  if (!token) return false;
-  const form = new FormData();
-  form.append('secret', env.TURNSTILE_SECRET);
-  form.append('response', token);
-  const ip = request.headers.get('CF-Connecting-IP');
-  if (ip) form.append('remoteip', ip);
-  const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
-  const d = await r.json();
-  return d.success === true;
+  if (!env.TURNSTILE_SECRET) {
+    if (env.SVILUPPO === '1') return true;
+    console.error('TURNSTILE_SECRET mancante: invio rifiutato');
+    return false;
+  }
+  if (!token || typeof token !== 'string' || token.length > 4096) return false;
+  try {
+    const form = new FormData();
+    form.append('secret', env.TURNSTILE_SECRET);
+    form.append('response', token);
+    const ip = request.headers.get('CF-Connecting-IP');
+    if (ip) form.append('remoteip', ip);
+    const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
+    const d = await r.json();
+    return d.success === true;
+  } catch (e) {
+    console.error('Turnstile', e);
+    return false;
+  }
+}
+
+// ================= Protezione e tenuta sotto carico =================
+
+// Intestazioni di sicurezza per le risposte delle API (le pagine statiche le prendono da public/_headers)
+export const INTESTAZIONI_SICUREZZA = {
+  'x-content-type-options': 'nosniff',
+  'referrer-policy': 'strict-origin-when-cross-origin',
+  'strict-transport-security': 'max-age=31536000',
+  'x-frame-options': 'DENY',
+  'content-security-policy': "default-src 'none'; frame-ancestors 'none'",
+};
+
+// Dimensione massima del corpo di una richiesta (un evento con 20 città sta ampiamente sotto)
+export const MAX_CORPO = 32 * 1024;
+
+// Copia in memoria dell'elenco pubblico degli eventi, condivisa tra le visite (Cache API di Cloudflare).
+// Così mille visite nello stesso minuto fanno UNA sola lettura sul database.
+export const SECONDI_CACHE_EVENTI = 60;
+export function chiaveCacheEventi(request) {
+  return new Request(new URL('/api/mobilitazioni', request.url).toString(), { method: 'GET' });
+}
+export async function svuotaCacheEventi(request) {
+  try {
+    if (typeof caches !== 'undefined') await caches.default.delete(chiaveCacheEventi(request));
+  } catch (e) {
+    console.error('Cache', e);
+  }
 }
 
 // Blocca dati personali evidenti (email e numeri di telefono) nei testi liberi

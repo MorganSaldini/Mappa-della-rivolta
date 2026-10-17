@@ -2,7 +2,7 @@
 // POST /api/mobilitazioni  → nuovo evento proposto da un visitatore
 import {
   json, errore, oggiRoma, adessoRoma, impostazioni, hashAnonimo, controllaLimite, verificaTurnstile, slug,
-  scriviCronologia,
+  scriviCronologia, chiaveCacheEventi, SECONDI_CACHE_EVENTI,
 } from './lib.js';
 import { validaEvento } from './dati.js';
 
@@ -10,7 +10,18 @@ const CAMPI_PUBBLICI =
   'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, lat, lng, ' +
   'posizione_approssimativa, organizzatori, fonte, stato, conferme, aggiornato_il, gruppo';
 
-export async function onRequestGet({ env }) {
+export async function onRequestGet({ request, env, ctx }) {
+  // 1) Se c'è una copia recente (meno di 60 secondi) la restituisce senza toccare il database
+  const chiave = chiaveCacheEventi(request);
+  const cache = typeof caches !== 'undefined' ? caches.default : null;
+  if (cache) {
+    try {
+      const copia = await cache.match(chiave);
+      if (copia) return copia;
+    } catch (e) { console.error('Cache', e); }
+  }
+
+  // 2) Altrimenti legge dal database e salva la copia per le visite successive
   const imp = await impostazioni(env.DB);
   const oggi = oggiRoma();
   const stati = imp.pubblicazioneImmediata
@@ -27,11 +38,17 @@ export async function onRequestGet({ env }) {
 
   const eventi = results.map((e) => ({ ...e, organizzatori: e.organizzatori ? JSON.parse(e.organizzatori) : [] }));
   const ultimo = eventi.reduce((m, e) => (e.aggiornato_il && e.aggiornato_il > m ? e.aggiornato_il : m), '');
-  return json(
-    { ok: true, eventi, ultimo_aggiornamento: ultimo || null, giorni_conservazione: imp.giorniConservazione },
+  const risposta = json(
+    {
+      ok: true, eventi, ultimo_aggiornamento: ultimo || null, giorni_conservazione: imp.giorniConservazione,
+      generato_il: new Date().toISOString(),
+    },
     200,
-    { 'cache-control': 'no-store' }
+    // Il browser la tiene 30 secondi; la copia condivisa del Worker 60 secondi
+    { 'cache-control': `public, max-age=30, s-maxage=${SECONDI_CACHE_EVENTI}` }
   );
+  if (cache && ctx) ctx.waitUntil(cache.put(chiave, risposta.clone()).catch((e) => console.error('Cache', e)));
+  return risposta;
 }
 
 export async function onRequestPost({ request, env }) {
@@ -83,13 +100,30 @@ export async function onRequestPost({ request, env }) {
     return errore('Hai inviato troppe segnalazioni in poco tempo. Riprova tra un’ora.', 429);
   }
 
+  // Tetto per tutto il sito: in caso di ondata di invii (spam o attacco) i nuovi eventi
+  // smettono di comparire subito e restano in coda per i moderatori.
+  let inCoda = !imp.pubblicazioneImmediata;
+  if (!inCoda) {
+    const unOraFa = new Date(Date.now() - 3600000).toISOString();
+    const tot = await env.DB
+      .prepare("SELECT COUNT(*) AS n FROM invii WHERE azione = 'nuovo_evento' AND creato_il > ?")
+      .bind(unOraFa).first();
+    if (tot && tot.n > imp.maxInviiOraTotali) {
+      await env.DB
+        .prepare("INSERT INTO impostazioni (chiave, valore) VALUES ('pubblicazione_immediata', 'no') ON CONFLICT(chiave) DO UPDATE SET valore = 'no'")
+        .run();
+      console.warn(`Troppi invii nell'ultima ora (${tot.n}): pubblicazione immediata disattivata, nuovi eventi in coda.`);
+      inCoda = true;
+    }
+  }
+
   const gruppo = validi.length > 1
     ? 'g-' + [...crypto.getRandomValues(new Uint8Array(6))].map((x) => x.toString(16).padStart(2, '0')).join('')
     : null;
   const ids = [];
   for (const d of validi) ids.push(await creaEvento(env.DB, d, { gruppo, attore: 'visitatore' }));
 
-  return json({ ok: true, id: ids[0], ids, gruppo, stato: 'da_verificare', visibile_subito: imp.pubblicazioneImmediata }, 201);
+  return json({ ok: true, id: ids[0], ids, gruppo, stato: 'da_verificare', visibile_subito: !inCoda }, 201);
 }
 
 const MAX_CITTA = 20;

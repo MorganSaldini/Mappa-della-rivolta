@@ -6,7 +6,9 @@ import * as problema from './problema.js';
 import * as pubblico from './pubblico.js';
 import * as mod from './moderazione.js';
 import * as calendario from './calendario.js';
-import { errore, leggiSessione, stessaOrigine } from './lib.js';
+import {
+  errore, leggiSessione, stessaOrigine, INTESTAZIONI_SICUREZZA, MAX_CORPO, svuotaCacheEventi,
+} from './lib.js';
 import { importaProposte } from './agente.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
@@ -50,11 +52,32 @@ function trova(elenco, metodo, percorso) {
   return percorsoTrovato ? { metodoSbagliato: true } : null;
 }
 
+// Aggiunge le intestazioni di sicurezza a ogni risposta delle API
+function conSicurezza(risposta) {
+  const r = new Response(risposta.body, risposta);
+  for (const [k, v] of Object.entries(INTESTAZIONI_SICUREZZA)) if (!r.headers.has(k)) r.headers.set(k, v);
+  return r;
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (!url.pathname.startsWith('/api')) return env.ASSETS.fetch(request);
+    const r = await gestisci(request, env, ctx, url);
+    // Dopo una modifica andata a buon fine la copia dell'elenco eventi va rifatta
+    if (request.method !== 'GET' && r.ok) ctx.waitUntil(svuotaCacheEventi(request));
+    return conSicurezza(r);
+  },
+
+  // Ogni 3 ore: pulizia degli eventi vecchi e import delle proposte dell'agente
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
+    ctx.waitUntil(importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e)));
+  },
+};
+
+async function gestisci(request, env, ctx, url) {
     const percorso = url.pathname.replace(/\/+$/, '');
-    if (!percorso.startsWith('/api')) return env.ASSETS.fetch(request);
 
     try {
       if (!env.DB) return errore('Database non collegato: controlla database_id e binding "DB" in wrangler.toml.', 500);
@@ -62,9 +85,18 @@ export default {
       // Nessuna richiesta di scrittura da altri siti
       if (request.method !== 'GET' && !stessaOrigine(request)) return errore('Richiesta non consentita.', 403);
 
+      // Corpo troppo grande: rifiutato prima di leggerlo
+      const lunghezza = parseInt(request.headers.get('content-length') || '0', 10);
+      if (lunghezza > MAX_CORPO) return errore('Richiesta troppo grande.', 413);
+
       const params = {};
       let t = trova(PUBBLICHE, request.method, percorso);
       if (t && t.rotta) {
+        // Interruttore di emergenza: con SOLO_LETTURA=1 la mappa resta visibile ma i visitatori non possono inviare.
+        // L'accesso dei moderatori resta attivo.
+        if (env.SOLO_LETTURA === '1' && request.method === 'POST' && !percorso.startsWith('/api/moderazione')) {
+          return errore('Gli invii sono sospesi per qualche ora per manutenzione. La mappa resta consultabile.', 503);
+        }
         params.id = t.id;
         return await t.rotta[2]({ request, env, ctx, params });
       }
@@ -93,11 +125,4 @@ export default {
       }
       return errore('Errore interno. Riprova tra poco.', 500);
     }
-  },
-
-  // Pulizia automatica ogni notte (eventi finiti da più giorni del limite dichiarato)
-  async scheduled(event, env, ctx) {
-    ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
-    ctx.waitUntil(importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e)));
-  },
-};
+}
