@@ -141,6 +141,23 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
+    "data": "2026-10-19",
+    "ora_inizio": "07:00",
+    "ora_fine": "15:00",
+    "comune": "Volla",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 40.879,
+    "lng": 14.342,
+    "posizione_approssimativa": true,
+    "organizzatori": [],
+    "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-ottobre-2026/1017441/",
+    "note": "TPL, sciopero 7-15 della società Vincenzo Miele Trasporti; sigla non indicata dalla fonte. Posizione indicativa (centro di Volla)"
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale Arriva Udine",
     "data": "2026-10-20",
     "ora_inizio": "15:00",
@@ -339,7 +356,7 @@
       "USB"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "Trasporti incerti: Commissione (13/10) ha chiesto di escluderli per franchigia 30/10-5/11; USB dichiara di confermarli, USI-CIT li esclude. Verificare su MIT"
+    "note": "USB il 14/10 ha escluso TPL e treni per franchigia 30/10-5/11 (metropolitanadiroma.it); USI-CIT esclude i trasporti. Resta per gli altri settori pubblici e privati"
   },
   {
     "tipo": "sciopero_categoria",
