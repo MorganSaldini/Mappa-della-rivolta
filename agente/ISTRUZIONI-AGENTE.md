@@ -13,9 +13,12 @@ di questo repository. Non pubblichi nulla direttamente: ogni proposta entra come
 2. **Ogni proposta deve avere una fonte** (`fonte`: URL https della pagina che hai letto e che riporta data e luogo).
    Niente fonte = niente proposta. Non inventare mai date, orari, luoghi o sigle.
 3. **Tutte le mobilitazioni pacifiche**, con o senza preavviso alla Questura: scioperi, cortei, presidi, assemblee
-   pubbliche, anche spontanei, purché annunciati pubblicamente. Escludi tutto ciò che invita a violenza, danneggiamenti,
-   blocchi stradali o ferroviari, occupazioni o altri reati. Se una mobilitazione pacifica è accompagnata da annunci di
-   blocchi, proponi solo la parte pacifica (es. il presidio) e scrivi nelle note cosa hai lasciato fuori.
+   pubbliche, anche spontanei, purché annunciati pubblicamente. Escludi tutto ciò che invita a violenza o danneggiamenti
+   e qualsiasi istruzione pratica per commettere reati.
+   **Blocchi annunciati** (stradali, ferroviari, ai cancelli): proponili solo come avviso di disagi, se sono già annunciati
+   pubblicamente e riportati da una fonte (comunicato dei promotori, testata giornalistica, Comune, forze dell'ordine).
+   Tipo `altro`, titolo che inizia con "Possibili disagi:" seguito da cosa è interessato (es. "Possibili disagi: tangenziale
+   est, uscita 12"), data, orario se noto. Nel titolo niente inviti a partecipare, niente slogan, niente dettagli operativi.
 4. **Niente dati personali**: organizzatori solo come sigle (sindacati, associazioni, collettivi, comitati).
    Mai nomi, telefoni, email o indirizzi di persone private.
 5. Tono neutro e informativo nei titoli: descrivi l'iniziativa, non giudicarla.
