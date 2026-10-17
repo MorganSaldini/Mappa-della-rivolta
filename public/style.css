@@ -249,3 +249,14 @@ label.spunta input { width: auto; min-height: auto; }
 .sostieni__bottone { font-size: 1.1rem; padding: 10px 22px; margin: 6px 0 4px; }
 .sostieni .tenue { color: #a9a6b0; }
 @media (max-width: 480px) { .solo-largo { display: none; } .barra__nome { font-size: .8rem; } }
+
+/* Perché ci si mobilita */
+.perche__intro { max-width: 70ch; color: var(--testo); }
+.perche__griglia { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 18px 0; }
+.perche__voce { background: var(--bianco); border: 1px solid var(--bordo); border-top: 4px solid var(--rosso); border-radius: var(--raggio); padding: 16px 18px; display: flex; flex-direction: column; }
+.perche__voce h3 { font-family: var(--titoli); font-size: 1.35rem; font-weight: 800; margin: 0 0 6px; color: var(--inchiostro); }
+.perche__voce p { margin: 0 0 10px; font-size: .97rem; }
+.perche__dato { color: var(--tenue); }
+.perche__dato b { display: block; font-family: var(--titoli); font-size: 2.1rem; line-height: 1; color: var(--rosso-scuro); }
+.perche__fonte { margin-top: auto !important; font-size: .82rem !important; color: var(--tenue); }
+.perche__nota { font-size: .92rem; color: var(--tenue); max-width: 70ch; }
