@@ -237,3 +237,15 @@ label.spunta input { width: auto; min-height: auto; }
 .citta-extra__stato.errore { color: var(--rosso-scuro); font-weight: 700; }
 .pop__gruppo { background: #f1ede6; border-radius: 8px; padding: 6px 8px; margin-top: 6px !important; font-size: .9rem; }
 .pop__gruppo button { background: none; border: none; color: var(--rosso-scuro); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+
+/* Sostieni */
+.barra__destra { display: flex; align-items: center; gap: 14px; }
+.barra__sostieni { color: #fff; background: var(--rosso); padding: 4px 10px; border-radius: 999px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.barra__sostieni:hover { filter: brightness(1.1); }
+.sostieni { margin: 0 0 32px; padding: 20px 18px; background: var(--inchiostro); color: #ece9f0; border-radius: var(--raggio); border-left: 8px solid var(--rosso); }
+.sostieni h2 { color: #fff; font-size: 1.9rem; text-transform: uppercase; }
+.sostieni p { max-width: 62ch; }
+.sostieni strong { color: #fff; }
+.sostieni__bottone { font-size: 1.1rem; padding: 10px 22px; margin: 6px 0 4px; }
+.sostieni .tenue { color: #a9a6b0; }
+@media (max-width: 480px) { .solo-largo { display: none; } .barra__nome { font-size: .8rem; } }

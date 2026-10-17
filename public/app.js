@@ -54,9 +54,16 @@
   function avvisoOk(testo) {
     const el = $('#avviso-ok');
     el.textContent = testo;
+    if (CONFIG.linkSostieni && urlSicuro(CONFIG.linkSostieni)) {
+      const a = document.createElement('a');
+      a.href = CONFIG.linkSostieni; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = ' ♥ Sostieni la mappa';
+      a.style.color = '#fff';
+      el.append(' ', a);
+    }
     el.hidden = false;
     clearTimeout(avvisoOk.t);
-    avvisoOk.t = setTimeout(() => (el.hidden = true), 6000);
+    avvisoOk.t = setTimeout(() => (el.hidden = true), 8000);
   }
 
   // ---------- Testi da config ----------
@@ -67,6 +74,11 @@
     a.href = CONFIG.linkPartecipa;
     a.textContent = CONFIG.testoPartecipa || 'Partecipa';
     a.hidden = false;
+  }
+  if (CONFIG.linkSostieni && urlSicuro(CONFIG.linkSostieni)) {
+    $('#link-sostieni').href = CONFIG.linkSostieni;
+    $('#sostieni').hidden = false;
+    $('#barra-sostieni').hidden = false;
   }
   if (CONFIG.contattoRimozioni) {
     const c = $('#contatto');

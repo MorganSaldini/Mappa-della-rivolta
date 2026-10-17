@@ -16,12 +16,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
   <header class="barra">
     <span class="barra__nome" id="nome-progetto">Mappa delle mobilitazioni</span>
-    <a class="barra__link" href="regole.html">Regole della community</a>
+    <span class="barra__destra">
+      <a class="barra__sostieni" id="barra-sostieni" href="#sostieni" hidden>♥ Sostieni</a>
+      <a class="barra__link" href="regole.html">Regole<span class="solo-largo"> della community</span></a>
+    </span>
   </header>
 
   <main>
@@ -84,6 +87,14 @@
       <p class="iscriviti">📅 <a href="/api/calendario.ics" id="link-calendario">Iscriviti al calendario</a>: le mobilitazioni verificate compaiono da sole nel calendario del telefono e si aggiornano.
         <a href="#" id="google-calendario">Aggiungi a Google Calendar</a></p>
       <div id="elenco"><p>Caricamento…</p></div>
+    </section>
+
+    <section class="sostieni" id="sostieni" aria-labelledby="titolo-sostieni" hidden>
+      <h2 id="titolo-sostieni">Questa mappa vive se la tieni viva tu</h2>
+      <p>Niente pubblicità, niente tracciamento, nessun finanziatore che decide cosa mostrare. La mappa la costruiscono e la verificano volontari, di notte e nel tempo libero, perché chiunque possa sapere dove e quando si scende in piazza.</p>
+      <p><strong>Se oggi ti è servita, restituisci il favore:</strong> anche il prezzo di un caffè paga il dominio, il lavoro di verifica e le nuove funzioni. Chi la usa la sostiene — è l'unico modo per restare liberi.</p>
+      <a class="bottone bottone--pieno sostieni__bottone" id="link-sostieni" href="#" target="_blank" rel="noopener">♥ Sostieni la mappa</a>
+      <p class="tenue sostieni__nota">Le donazioni sono volontarie e servono solo a tenere attivo il progetto.</p>
     </section>
 
     <section class="perche" aria-labelledby="titolo-perche">
@@ -246,9 +257,9 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
 
-  <script src="config.js?v=8"></script>
+  <script src="config.js?v=9"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>
