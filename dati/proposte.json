@@ -77,6 +77,25 @@
     "note": "Data e adesione FLC CGIL dalla fonte; orario e luogo da lista inviata dall'amministratore, non presenti nella fonte."
   },
   {
+    "tipo": "corteo",
+    "ora_fine": null,
+    "organizzatori": [
+      "Collettivi studenteschi"
+    ],
+    "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
+    "note": "Fonte: post Instagram indicato dall'amministratore (non leggibile in automatico: verificare aprendo il link).",
+    "titolo": "Sciopero studentesco: ritrovo in piazza Regina Margherita",
+    "data": "2026-10-17",
+    "ora_inizio": "08:30",
+    "comune": "Grottaglie",
+    "provincia": "TA",
+    "regione": "Puglia",
+    "luogo": "Piazza Regina Margherita",
+    "lat": 40.5361,
+    "lng": 17.4366,
+    "posizione_approssimativa": true
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero bus International Service di Roma",
     "data": "2026-10-19",
@@ -179,6 +198,25 @@
     ],
     "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
     "note": "Mobilitazione dichiarata non violenta; percorso non indicato dalla fonte. Verificare promotori sul sito della campagna."
+  },
+  {
+    "tipo": "corteo",
+    "ora_fine": null,
+    "organizzatori": [
+      "Collettivi studenteschi"
+    ],
+    "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
+    "note": "Fonte: post Instagram indicato dall'amministratore (non leggibile in automatico: verificare aprendo il link).",
+    "titolo": "Sciopero studentesco: ritrovo in piazza San Michele",
+    "data": "2026-10-24",
+    "ora_inizio": "08:30",
+    "comune": "Lucca",
+    "provincia": "LU",
+    "regione": "Toscana",
+    "luogo": "Piazza San Michele",
+    "lat": 43.84302,
+    "lng": 10.50296,
+    "posizione_approssimativa": false
   },
   {
     "tipo": "sciopero_categoria",
