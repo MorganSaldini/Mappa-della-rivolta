@@ -175,18 +175,67 @@
   });
 
   // ---------- Caricamento eventi ----------
-  async function carica() {
+  // Ordine dei tentativi:
+  //  1. il server (/api/mobilitazioni), con una copia condivisa di 60 secondi;
+  //  2. se il server non risponde (troppo traffico o guasto): la copia di riserva /dati/eventi.json,
+  //     un file statico aggiornato ogni mezz'ora che regge qualsiasi numero di visite;
+  //  3. se manca anche quella: l'ultima lista vista su questo dispositivo.
+  // "fresco" = true dopo un invio del visitatore, per vedere subito il risultato.
+  const MEMORIA = 'mappa-eventi-v1';
+  function ricorda(d) {
+    try { localStorage.setItem(MEMORIA, JSON.stringify({ ...d, salvato_il: new Date().toISOString() })); } catch (_) {}
+  }
+  function ricordati() {
+    try { const d = JSON.parse(localStorage.getItem(MEMORIA) || 'null'); return d && Array.isArray(d.eventi) ? d : null; } catch (_) { return null; }
+  }
+  async function scarica(url, opzioni) {
+    const ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+    const timer = ctrl ? setTimeout(() => ctrl.abort(), 8000) : null;
     try {
-      const r = await fetch('/api/mobilitazioni?t=' + Date.now(), { cache: 'no-store', headers: { accept: 'application/json' } });
+      const r = await fetch(url, { ...opzioni, headers: { accept: 'application/json' }, signal: ctrl ? ctrl.signal : undefined });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const d = await r.json();
+      if (!d || d.ok !== true || !Array.isArray(d.eventi)) throw new Error('Risposta non valida');
+      return d;
+    } finally {
+      if (timer) clearTimeout(timer);
+    }
+  }
+  function oraBreve(iso) {
+    try {
+      return new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }).format(new Date(iso));
+    } catch (_) { return ''; }
+  }
+  async function carica(fresco) {
+    let d = null;
+    let riserva = '';
+    try {
+      d = await scarica('/api/mobilitazioni', { cache: fresco ? 'reload' : 'default' });
+      ricorda(d);
+    } catch (err) {
+      try {
+        const c = await scarica('/dati/eventi.json', { cache: 'no-cache' });
+        if (c.copia_del) { d = c; riserva = 'Il sito è molto visitato: stai vedendo la copia di riserva del ' + oraBreve(c.copia_del) + '.'; }
+      } catch (_) { /* nessuna copia di riserva */ }
+      if (!d) {
+        const m = ricordati();
+        if (m) { d = m; riserva = 'Connessione al sito non riuscita: stai vedendo i dati salvati su questo dispositivo il ' + oraBreve(m.salvato_il) + '.'; }
+      }
+    }
+
+    if (d) {
       eventi = (d.eventi || []).filter((e) => e.data >= oggiRoma());
       if (d.giorni_conservazione) $('#giorni-cons').textContent = d.giorni_conservazione;
       $('#ultimo-agg').textContent = d.ultimo_aggiornamento
         ? new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(d.ultimo_aggiornamento.slice(0, 10) + 'T12:00:00Z'))
         : '—';
-      if (window.L) $('#avviso-mappa').hidden = true;
-    } catch (err) {
+      if (riserva) {
+        $('#avviso-mappa').textContent = riserva + ' Le novità più recenti potrebbero mancare.';
+        $('#avviso-mappa').hidden = false;
+      } else if (window.L) {
+        $('#avviso-mappa').hidden = true;
+      }
+    } else {
       eventi = [];
       $('#avviso-mappa').textContent = 'Impossibile caricare le mobilitazioni in questo momento. Riprova tra poco.';
       $('#avviso-mappa').hidden = false;
@@ -638,7 +687,7 @@
       avvisoOk(d.visibile_subito
         ? `Grazie! La mobilitazione è sulla mappa${quante} come "Da verificare": un moderatore la controllerà.`
         : 'Grazie! Un moderatore controllerà la segnalazione prima di pubblicarla.');
-      await carica();
+      await carica(true);
       const m = markerPerId[d.id];
       if (m && gruppo.zoomToShowLayer) gruppo.zoomToShowLayer(m, () => m.openPopup());
     } catch {
@@ -678,7 +727,7 @@
       }
       $('#dlg-problema').close();
       avvisoOk(d.gia_segnalato ? 'Avevi già segnalato questo evento. Grazie!' : 'Grazie, la segnalazione è arrivata ai moderatori.');
-      if (d.nascosto) carica();
+      if (d.nascosto) carica(true);
     } catch {
       $('#errore-problema').textContent = 'Connessione non riuscita. Riprova tra poco.';
     }
@@ -774,7 +823,7 @@
       $('#dlg-conferma').close();
       avvisoOk(d.gia_confermato ? 'Avevi già confermato questo evento. Grazie!'
         : d.verificato ? 'Grazie! Con la tua conferma l’evento è ora verificato.' : 'Grazie per la conferma!');
-      carica();
+      carica(true);
     } catch {
       $('#errore-conferma').textContent = 'Connessione non riuscita. Riprova tra poco.';
     }
