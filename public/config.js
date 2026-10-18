@@ -30,7 +30,7 @@ window.CONFIG = {
 
   // Nostr: chiave PUBBLICA del profilo Nostr del progetto (inizia con npub1…). Lascia '' finché non c'è.
   // Mai mettere qui la chiave privata (nsec…): quella va solo nei segreti di GitHub.
-  nostrChiavePubblica: '',
+  nostrChiavePubblica: 'npub12rtkp2gxxqdevpfg2ut9ssje4gvs5gxzz8jh28y0v3m6hrlu0qlsrhdgnl',
   // Relay Nostr da cui leggere gli eventi (gli stessi usati per pubblicarli).
   nostrRelay: ['wss://relay.damus.io', 'wss://nos.lol', 'wss://relay.primal.net', 'wss://relay.nostr.band', 'wss://nostr.mom'],
 };
