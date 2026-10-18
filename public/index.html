@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
   <header class="barra">
@@ -136,8 +136,28 @@
     <p><strong>Informazione.</strong> La mappa riporta mobilitazioni pacifiche annunciate pubblicamente, preavvisate o spontanee: non le organizza. Il preavviso alla Questura spetta a chi le promuove.</p>
     <p><strong>Fonti.</strong> Segnalazioni della community e comunicati delle organizzazioni promotrici; calendari ufficiali degli scioperi nei servizi pubblici essenziali. Ricerca dei comuni: Nominatim. Fondo mappa: © contributori OpenStreetMap.</p>
     <p id="contatto" hidden></p>
+    <div class="riserva" id="riserva">
+      <p><strong>Se il sito non si apre.</strong> La mappa ha copie su altri servizi e sulla rete Nostr, così resta consultabile anche se questo indirizzo cade o viene oscurato.</p>
+      <ul class="riserva__elenco" id="elenco-specchi"></ul>
+      <p><button type="button" class="bottone bottone--chiaro" id="scarica-offline">⬇ Scarica la mappa offline</button>
+        <span class="riserva__nota">Un solo file da tenere sul telefono o da passare ad altri: si apre anche senza internet.</span></p>
+    </div>
     <p class="piede__agg">Ultimo aggiornamento: <span id="ultimo-agg">—</span> · <a href="regole.html">Regole della community</a> · <a href="modera.html" rel="nofollow">Area moderatori</a></p>
   </footer>
+
+  <!-- Sugli specchi si legge soltanto: per scrivere si va sul sito principale -->
+  <dialog id="dlg-specchio" aria-labelledby="titolo-specchio">
+    <form method="dialog">
+      <div class="dlg__testa">
+        <h2 id="titolo-specchio">Questa è una copia di riserva</h2>
+      </div>
+      <p>Per aggiungere, confermare o correggere una mobilitazione usa il sito principale: lì ci sono i controlli anti-spam e i moderatori.</p>
+      <div class="dlg__azioni">
+        <button type="submit" class="bottone bottone--chiaro">Chiudi</button>
+        <a class="bottone bottone--pieno" data-principale href="https://mappadellarivolta.org/" target="_blank" rel="noopener">Vai al sito principale</a>
+      </div>
+    </form>
+  </dialog>
 
   <!-- Modulo: aggiungi un evento -->
   <dialog id="dlg-aggiungi" aria-labelledby="titolo-aggiungi">
@@ -286,6 +306,7 @@
   <script src="config.js?v=10"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
-  <script src="app.js?v=11"></script>
+  <script src="rete.js?v=1"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>

@@ -260,3 +260,9 @@ label.spunta input { width: auto; min-height: auto; }
 .perche__dato b { display: block; font-family: var(--titoli); font-size: 2.1rem; line-height: 1; color: var(--rosso-scuro); }
 .perche__fonte { margin-top: auto !important; font-size: .82rem !important; color: var(--tenue); }
 .perche__nota { font-size: .92rem; color: var(--tenue); max-width: 70ch; }
+
+/* Rete di riserva */
+.riserva { border-top: 1px solid var(--bordo); margin-top: 14px; padding-top: 12px; }
+.riserva__elenco { margin: 4px 0 10px; padding-left: 20px; }
+.riserva__elenco li { margin: 2px 0; }
+.riserva__nota { display: block; font-size: .85rem; color: var(--tenue); margin-top: 6px; }

@@ -43,6 +43,8 @@ const RISERVATE = [
   ['POST', /^\/api\/moderazione\/importa-agente$/, mod.importaAgente, 'moderatore'],
 ];
 
+const LETTURE_APERTE = /^\/api\/(mobilitazioni|eventi|calendario\.ics)\/?$/;
+
 function trova(elenco, metodo, percorso) {
   let percorsoTrovato = false;
   for (const r of elenco) {
@@ -68,7 +70,14 @@ export default {
     const r = await gestisci(request, env, ctx, url);
     // Dopo una modifica andata a buon fine la copia dell'elenco eventi va rifatta
     if (request.method !== 'GET' && r.ok) ctx.waitUntil(svuotaCacheEventi(request));
-    return conSicurezza(r);
+    const sicura = conSicurezza(r);
+    // Letture pubbliche leggibili anche dalle copie della mappa su altri siti (specchi, file offline).
+    // Solo GET e senza cookie: le scritture restano bloccate dal controllo Origin.
+    if (request.method === 'GET' && LETTURE_APERTE.test(url.pathname)) {
+      sicura.headers.set('access-control-allow-origin', '*');
+      sicura.headers.set('vary', 'Origin');
+    }
+    return sicura;
   },
 
   // Ogni ora: pulizia degli eventi vecchi, proposte dell'agente e decisioni dell'amministratore AI

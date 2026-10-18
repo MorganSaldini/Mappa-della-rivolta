@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # per far partire gli "Specchi della mappa" quando gli eventi cambiano
 
 concurrency:
   group: copia-eventi
@@ -50,6 +51,7 @@ jobs:
           echo "cambiato=si" >> "$GITHUB_OUTPUT"
 
       - name: Salva la copia nel repository
+        id: salva
         if: steps.scarica.outputs.cambiato == 'si'
         run: |
           git config user.name "copia-di-riserva"
@@ -57,7 +59,13 @@ jobs:
           git add public/dati/eventi.json
           git commit -m "Copia di riserva degli eventi"
           for i in 1 2 3; do
-            git pull --rebase --autostash && git push && exit 0
+            if git pull --rebase --autostash && git push; then echo "salvato=si" >> "$GITHUB_OUTPUT"; exit 0; fi
             sleep 10
           done
           echo "Non riesco a salvare la copia (riprovo al prossimo giro)."
+
+      - name: Aggiorna gli specchi (GitHub Pages, Codeberg, Nostr)
+        if: steps.scarica.outputs.cambiato == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run specchi.yml --ref main || echo "Specchi non avviati, riprovo al prossimo cambiamento."

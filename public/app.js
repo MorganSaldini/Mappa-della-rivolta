@@ -174,6 +174,33 @@
     if (punti.length) { mappa.closePopup(); mappa.fitBounds(punti, { padding: [40, 40], maxZoom: 9 }); }
   });
 
+  // ---------- Rete di riserva: specchi e copia offline ----------
+  (function () {
+    const ul = $('#elenco-specchi');
+    if (!ul) return;
+    const voci = [];
+    if (RETE.SPECCHIO) {
+      voci.push({ nome: 'Sito principale', url: RETE.PRINCIPALE + '/' });
+      // l'area moderatori esiste solo sul sito principale
+      document.querySelectorAll('a[href="modera.html"]').forEach((a) => { a.href = RETE.PRINCIPALE + '/modera.html'; });
+    }
+    for (const s of CONFIG.specchi || []) {
+      const u = urlSicuro(s && s.url);
+      if (u && !u.startsWith(location.origin + location.pathname.replace(/[^/]*$/, ''))) voci.push({ nome: s.nome || u, url: u });
+    }
+    if (CONFIG.nostrChiavePubblica) voci.push({ nome: 'Profilo Nostr del progetto (eventi verificati)', url: 'https://njump.me/' + encodeURIComponent(CONFIG.nostrChiavePubblica) });
+    if (CONFIG.linkPartecipa && urlSicuro(CONFIG.linkPartecipa)) voci.push({ nome: 'Canale Telegram: lì trovi sempre gli indirizzi aggiornati', url: CONFIG.linkPartecipa });
+    ul.innerHTML = voci.map((v) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener nofollow">${esc(v.nome)}</a></li>`).join('');
+    const b = $('#scarica-offline');
+    if (b) b.addEventListener('click', async () => {
+      b.disabled = true;
+      const prima = b.textContent;
+      b.textContent = 'Preparo il file…';
+      try { await RETE.scaricaOffline(eventi); } catch (err) { alert('Non sono riuscito a preparare il file: ' + err.message); }
+      b.textContent = prima; b.disabled = false;
+    });
+  })();
+
   // ---------- Caricamento eventi ----------
   // Ordine dei tentativi:
   //  1. il server (/api/mobilitazioni), con una copia condivisa di 60 secondi;
@@ -210,13 +237,27 @@
     let d = null;
     let riserva = '';
     try {
-      d = await scarica('/api/mobilitazioni', { cache: fresco ? 'reload' : 'default' });
+      d = await scarica(RETE.API + '/api/mobilitazioni', { cache: fresco ? 'reload' : 'default' });
       ricorda(d);
     } catch (err) {
       try {
-        const c = await scarica('/dati/eventi.json', { cache: 'no-cache' });
-        if (c.copia_del) { d = c; riserva = 'Il sito è molto visitato: stai vedendo la copia di riserva del ' + oraBreve(c.copia_del) + '.'; }
+        const c = await scarica('dati/eventi.json', { cache: 'no-cache' });
+        if (c.copia_del) { d = c; riserva = (RETE.SPECCHIO ? 'Il sito principale non risponde: stai vedendo la copia del ' : 'Il sito è molto visitato: stai vedendo la copia di riserva del ') + oraBreve(c.copia_del) + '.'; }
       } catch (_) { /* nessuna copia di riserva */ }
+      // Copia offline: i dati sono dentro il file
+      const inc = window.DATI_INCORPORATI;
+      if (inc && Array.isArray(inc.eventi) && (!d || (inc.copia_del || '') > (d.copia_del || ''))) {
+        d = inc; riserva = 'Stai usando la mappa offline scaricata il ' + oraBreve(inc.copia_del) + '.';
+      }
+      // Rete Nostr: eventi verificati firmati dal progetto, sparsi su relay indipendenti
+      if (!d || inc) {
+        try {
+          const n = await RETE.leggiNostr();
+          if (n && (!d || (n.ultimo_aggiornamento || '') > (d.copia_del || ''))) {
+            d = n; riserva = 'Il sito principale non risponde: stai vedendo gli eventi verificati dalla rete Nostr.';
+          }
+        } catch (_) { /* Nostr non raggiungibile o non configurato */ }
+      }
       if (!d) {
         const m = ricordati();
         if (m) { d = m; riserva = 'Connessione al sito non riuscita: stai vedendo i dati salvati su questo dispositivo il ' + oraBreve(m.salvato_il) + '.'; }
@@ -507,7 +548,7 @@
     $('#errore-aggiungi').textContent = '';
     $('#doppioni').hidden = true;
     doppioniVisti = false;
-    $('#dlg-aggiungi').showModal();
+    RETE.scrittura($('#dlg-aggiungi'));
     if (window.L && !miniMappa) {
       miniMappa = L.map('mini-mappa').setView([42.3, 12.6], 5);
       tile().addTo(miniMappa);
@@ -707,7 +748,7 @@
     fp.reset();
     $('#errore-problema').textContent = '';
     $('#problema-evento').textContent = `${e.titolo} · ${dataBreve(e.data)} · ${e.comune}`;
-    $('#dlg-problema').showModal();
+    RETE.scrittura($('#dlg-problema'));
     mostraTurnstile('ts-problema');
   }
   fp.addEventListener('submit', async (ev) => {
@@ -751,7 +792,7 @@
   function descrizione(e) {
     const t = TIPI[e.tipo] || TIPI.altro;
     return [t.nome, (e.organizzatori || []).length ? 'Promosso da: ' + e.organizzatori.join(', ') : '', e.fonte ? 'Fonte: ' + e.fonte : '',
-      'Mappa: ' + location.origin + '/?e=' + encodeURIComponent(e.id)].filter(Boolean).join('\n');
+      'Mappa: ' + RETE.PRINCIPALE + '/?e=' + encodeURIComponent(e.id)].filter(Boolean).join('\n');
   }
   function linkGoogle(e) {
     const i = intervallo(e);
@@ -768,9 +809,9 @@
       'BEGIN:STANDARD', 'DTSTART:19701025T030000', 'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU', 'TZOFFSETFROM:+0200', 'TZOFFSETTO:+0100', 'TZNAME:CET', 'END:STANDARD',
       'BEGIN:DAYLIGHT', 'DTSTART:19700329T020000', 'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU', 'TZOFFSETFROM:+0100', 'TZOFFSETTO:+0200', 'TZNAME:CEST', 'END:DAYLIGHT',
       'END:VTIMEZONE',
-      'BEGIN:VEVENT', `UID:${e.id}@${location.host}`, 'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z',
+      'BEGIN:VEVENT', `UID:${e.id}@mappadellarivolta.org`, 'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z',
       dt('DTSTART', i.inizio), dt('DTEND', i.fine), 'SUMMARY:' + icsTesto(e.titolo), 'LOCATION:' + icsTesto(luogoTesto(e)),
-      'DESCRIPTION:' + icsTesto(descrizione(e)), `GEO:${e.lat};${e.lng}`, 'URL:' + location.origin + '/?e=' + encodeURIComponent(e.id),
+      'DESCRIPTION:' + icsTesto(descrizione(e)), `GEO:${e.lat};${e.lng}`, 'URL:' + RETE.PRINCIPALE + '/?e=' + encodeURIComponent(e.id),
       'END:VEVENT', 'END:VCALENDAR'];
     const blob = new Blob([righe.join('\r\n') + '\r\n'], { type: 'text/calendar;charset=utf-8' });
     const a = document.createElement('a');
@@ -789,7 +830,7 @@
 
   // Calendario da sottoscrivere (webcal) e Google
   (function () {
-    const feed = location.origin + '/api/calendario.ics';
+    const feed = RETE.PRINCIPALE + '/api/calendario.ics';
     $('#link-calendario').href = feed.replace(/^https?:/, 'webcal:');
     $('#google-calendario').href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(feed.replace(/^https?:/, 'webcal:'));
     $('#google-calendario').target = '_blank';
@@ -804,7 +845,7 @@
     idConferma = id;
     $('#errore-conferma').textContent = '';
     $('#conferma-evento').textContent = `${e.titolo} · ${dataBreve(e.data)} · ${e.comune}`;
-    $('#dlg-conferma').showModal();
+    RETE.scrittura($('#dlg-conferma'));
     mostraTurnstile('ts-conferma');
   }
   $('#form-conferma').addEventListener('submit', async (ev) => {
@@ -848,7 +889,7 @@
     fc.luogo.value = e.luogo || '';
     fc.organizzatori.value = (e.organizzatori || []).join(', ');
     fc.fonte.value = e.fonte || '';
-    $('#dlg-correggi').showModal();
+    RETE.scrittura($('#dlg-correggi'));
     mostraTurnstile('ts-correggi');
   }
   fc.addEventListener('submit', async (ev) => {

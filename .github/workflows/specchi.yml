@@ -1,0 +1,153 @@
+# Specchi della mappa: copie su servizi diversi da Cloudflare, così la mappa resta leggibile
+# anche se il sito principale cade, finisce la quota o viene oscurato.
+#
+# Ogni parte si attiva da sola quando trova i suoi segreti (Settings → Secrets and variables → Actions):
+#   - GitHub Pages: nessun segreto, basta attivare Pages con "Source: GitHub Actions"
+#   - Nostr:        NOSTR_CHIAVE_PRIVATA (nsec1… del profilo del progetto)
+#   - Codeberg:     CODEBERG_UTENTE e CODEBERG_TOKEN
+#   - IPFS:         FILEBASE_CHIAVE, FILEBASE_SEGRETO e FILEBASE_BUCKET (bucket di tipo IPFS)
+# Senza segreti quella parte viene saltata e le altre funzionano lo stesso.
+name: Specchi della mappa
+
+on:
+  push:
+    branches: [main]
+    paths: ["public/**"]
+  workflow_dispatch: {}          # lanciato anche dalla "Copia di riserva" quando gli eventi cambiano
+  schedule:
+    - cron: "20 4 * * *"         # una volta al giorno: copia completa su IPFS
+
+concurrency:
+  group: specchi
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  pages:
+    name: GitHub Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblica.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepara la copia
+        run: bash strumenti/specchi/prepara-sito.sh _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: pubblica
+        uses: actions/deploy-pages@v4
+
+  nostr:
+    name: Eventi verificati su Nostr
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NOSTR_CHIAVE_PRIVATA: ${{ secrets.NOSTR_CHIAVE_PRIVATA }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.NOSTR_CHIAVE_PRIVATA != ''
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        if: env.NOSTR_CHIAVE_PRIVATA != ''
+        with:
+          node-version: 22
+      - name: Pubblica sui relay
+        if: env.NOSTR_CHIAVE_PRIVATA != ''
+        run: |
+          set -eu
+          cd strumenti/specchi && npm install --no-audit --no-fund --silent && cd ../..
+          # Versione precedente della copia degli eventi, per sapere cosa è stato tolto dalla mappa
+          PRIMA=$(git log -n 2 --format=%H -- public/dati/eventi.json | sed -n 2p || true)
+          if [ -n "$PRIMA" ]; then git show "$PRIMA:public/dati/eventi.json" > /tmp/prima.json || echo '{}' > /tmp/prima.json; else echo '{}' > /tmp/prima.json; fi
+          node strumenti/specchi/nostr.mjs public/dati/eventi.json /tmp/prima.json
+      - name: Nessuna chiave Nostr
+        if: env.NOSTR_CHIAVE_PRIVATA == ''
+        run: echo "Segreto NOSTR_CHIAVE_PRIVATA non impostato, salto Nostr."
+
+  codeberg:
+    name: Codeberg Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CODEBERG_UTENTE: ${{ secrets.CODEBERG_UTENTE }}
+      CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.CODEBERG_TOKEN != ''
+      - name: Pubblica su Codeberg (repository "pages")
+        if: env.CODEBERG_TOKEN != ''
+        run: |
+          set -eu
+          bash strumenti/specchi/prepara-sito.sh /tmp/pages
+          cd /tmp/pages
+          git init -q -b main
+          git config user.name "specchi-mappa"
+          git config user.email "specchi@mappadellarivolta.org"
+          git add -A
+          git commit -q -m "Copia della mappa $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q --force "https://${CODEBERG_UTENTE}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_UTENTE}/pages.git" main
+          echo "Online su https://${CODEBERG_UTENTE}.codeberg.page/"
+      - name: Nessun token Codeberg
+        if: env.CODEBERG_TOKEN == ''
+        run: echo "Segreti Codeberg non impostati, salto Codeberg."
+
+  ipfs:
+    name: IPFS (una volta al giorno)
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      FILEBASE_CHIAVE: ${{ secrets.FILEBASE_CHIAVE }}
+      FILEBASE_SEGRETO: ${{ secrets.FILEBASE_SEGRETO }}
+      FILEBASE_BUCKET: ${{ secrets.FILEBASE_BUCKET }}
+      NOSTR_CHIAVE_PRIVATA: ${{ secrets.NOSTR_CHIAVE_PRIVATA }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.FILEBASE_CHIAVE != ''
+      - uses: actions/setup-node@v4
+        if: env.FILEBASE_CHIAVE != ''
+        with:
+          node-version: 22
+      - name: Impacchetta e carica su IPFS
+        id: ipfs
+        if: env.FILEBASE_CHIAVE != ''
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.FILEBASE_CHIAVE }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.FILEBASE_SEGRETO }}
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          set -eu
+          bash strumenti/specchi/prepara-sito.sh /tmp/mappa
+          cd strumenti/specchi && npm install --no-audit --no-fund --silent && cd ../..
+          npx --prefix strumenti/specchi ipfs-car pack /tmp/mappa --no-wrap --output /tmp/mappa.car > /dev/null 2>&1
+          CID=$(npx --prefix strumenti/specchi ipfs-car roots /tmp/mappa.car 2>/dev/null | grep -Eo 'baf[a-z0-9]+' | head -1)
+          [ -n "$CID" ] || { echo "CID non trovato"; exit 1; }
+          echo "CID della copia: $CID"
+          # Stesso nome ogni giorno: Filebase sostituisce la copia vecchia con la nuova
+          aws --endpoint-url https://s3.filebase.com s3 cp /tmp/mappa.car "s3://${FILEBASE_BUCKET}/mappa.car" --metadata import=car
+          echo "cid=$CID" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Copia IPFS della mappa"
+            echo "- https://${CID}.ipfs.dweb.link/"
+            echo "- https://ipfs.io/ipfs/${CID}/"
+            echo "- ipfs://${CID}"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Annuncia il nuovo indirizzo su Nostr
+        if: env.FILEBASE_CHIAVE != '' && env.NOSTR_CHIAVE_PRIVATA != ''
+        env:
+          IPFS_CID: ${{ steps.ipfs.outputs.cid }}
+        run: node strumenti/specchi/annuncia-ipfs.mjs
+      - name: Nessun account IPFS
+        if: env.FILEBASE_CHIAVE == ''
+        run: echo "Segreti Filebase non impostati, salto IPFS."

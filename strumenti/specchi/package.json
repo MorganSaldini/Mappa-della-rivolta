@@ -1,0 +1,11 @@
+{
+  "name": "specchi-mappa",
+  "private": true,
+  "type": "module",
+  "description": "Pubblica la mappa sugli specchi (GitHub Pages, Codeberg, IPFS) e gli eventi verificati su Nostr",
+  "dependencies": {
+    "nostr-tools": "2.10.4",
+    "ws": "8.18.0",
+    "ipfs-car": "1.2.0"
+  }
+}

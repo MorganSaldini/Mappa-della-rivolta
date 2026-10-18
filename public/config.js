@@ -18,4 +18,19 @@ window.CONFIG = {
 
   // Contatto pubblico per richieste di rimozione o correzione (email del progetto o link a un modulo).
   contattoRimozioni: 'paginadellarivolta@gmail.com',
+
+  // ===== RETE DI RISERVA (se il sito principale cade o viene oscurato) =====
+  // Indirizzo del sito principale: le copie (specchi) leggono da qui e mandano qui chi vuole scrivere.
+  sitoPrincipale: 'https://mappadellarivolta.org',
+
+  // Copie della mappa su altri servizi, mostrate in fondo alla pagina. Aggiungi o togli righe.
+  specchi: [
+    { nome: 'GitHub Pages', url: 'https://morgansaldini.github.io/Mappa-della-rivolta/' },
+  ],
+
+  // Nostr: chiave PUBBLICA del profilo Nostr del progetto (inizia con npub1…). Lascia '' finché non c'è.
+  // Mai mettere qui la chiave privata (nsec…): quella va solo nei segreti di GitHub.
+  nostrChiavePubblica: '',
+  // Relay Nostr da cui leggere gli eventi (gli stessi usati per pubblicarli).
+  nostrRelay: ['wss://relay.damus.io', 'wss://nos.lol', 'wss://relay.primal.net', 'wss://relay.nostr.band', 'wss://nostr.mom'],
 };
