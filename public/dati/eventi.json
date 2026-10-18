@@ -2,6 +2,27 @@
   "ok": true,
   "eventi": [
     {
+      "id": "2026-10-19-cerignola-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero agricoltori",
+      "data": "2026-10-19",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cerignola",
+      "provincia": "FG",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.26481,
+      "lng": 15.89967,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-18T03:23:53",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-19-volla-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
@@ -96,6 +117,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-23-trento-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Contro il caro vita",
+      "data": "2026-10-23",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Trento",
+      "provincia": "TN",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Piazza del Duomo",
+      "lat": 46.06737,
+      "lng": 11.12144,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T04:00:33",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-23-verona-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo studentesco",
@@ -141,7 +183,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:35",
       "gruppo": null
     },
@@ -210,7 +252,7 @@
       ],
       "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-17T01:45:07",
       "gruppo": null
     },
@@ -380,7 +422,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-17T01:27:43",
       "gruppo": null
     },
@@ -426,7 +468,7 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-è-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T00:32:06",
       "gruppo": null
     },
@@ -539,7 +581,7 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-18T01:35:24",
       "gruppo": null
     },
@@ -905,7 +947,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-18T01:35:24",
+  "ultimo_aggiornamento": "2026-10-18T04:00:33",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-17T23:56:24Z"
+  "copia_del": "2026-10-18T04:17:42Z"
 }
