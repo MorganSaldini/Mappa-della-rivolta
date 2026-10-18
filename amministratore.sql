@@ -1,0 +1,1 @@
+ALTER TABLE eventi ADD COLUMN sospetto TEXT;
