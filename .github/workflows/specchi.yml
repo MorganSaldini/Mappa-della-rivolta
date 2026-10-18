@@ -13,7 +13,11 @@ on:
   push:
     branches: [main]
     paths: ["public/**"]
-  workflow_dispatch: {}          # lanciato anche dalla "Copia di riserva" quando gli eventi cambiano
+  workflow_dispatch:             # lanciato anche dalla "Copia di riserva" quando gli eventi cambiano
+    inputs:
+      riepilogo:
+        description: "Pubblica anche il riepilogo dei prossimi 7 giorni su Nostr (si/no)"
+        default: "no"
   schedule:
     - cron: "20 4 * * *"         # una volta al giorno: copia completa su IPFS
 
@@ -70,6 +74,8 @@ jobs:
           # Versione precedente della copia degli eventi, per sapere cosa è stato tolto dalla mappa
           PRIMA=$(git log -n 2 --format=%H -- public/dati/eventi.json | sed -n 2p || true)
           if [ -n "$PRIMA" ]; then git show "$PRIMA:public/dati/eventi.json" > /tmp/prima.json || echo '{}' > /tmp/prima.json; else echo '{}' > /tmp/prima.json; fi
+          # Riepilogo della settimana: solo nel giro programmato del mattino o se richiesto a mano
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.riepilogo }}" = "si" ]; then export RIEPILOGO=1; fi
           node strumenti/specchi/nostr.mjs public/dati/eventi.json /tmp/prima.json
       - name: Nessuna chiave Nostr
         if: env.NOSTR_CHIAVE_PRIVATA == ''
