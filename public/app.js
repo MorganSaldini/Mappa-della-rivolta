@@ -174,6 +174,16 @@
     if (punti.length) { mappa.closePopup(); mappa.fitBounds(punti, { padding: [40, 40], maxZoom: 9 }); }
   });
 
+  // ---------- Regole in breve: sempre aperte sugli schermi larghi ----------
+  (function () {
+    const box = $('#lato-regole');
+    if (!box || !window.matchMedia) return;
+    const largo = window.matchMedia('(min-width: 1200px)');
+    const aggiorna = () => { if (largo.matches) box.open = true; };
+    aggiorna();
+    if (largo.addEventListener) largo.addEventListener('change', aggiorna);
+  })();
+
   // ---------- Rete di riserva: specchi e copia offline ----------
   (function () {
     const ul = $('#elenco-specchi');

@@ -266,3 +266,28 @@ label.spunta input { width: auto; min-height: auto; }
 .riserva__elenco { margin: 4px 0 10px; padding-left: 20px; }
 .riserva__elenco li { margin: 2px 0; }
 .riserva__nota { display: block; font-size: .85rem; color: var(--tenue); margin-top: 6px; }
+
+/* Pulsante moderatori nella barra */
+.barra__moderatori { color: #fff; border: 1px solid rgba(255,255,255,.45); padding: 3px 10px; border-radius: 999px; text-decoration: none; white-space: nowrap; font-size: .85rem; }
+.barra__moderatori:hover { background: rgba(255,255,255,.12); }
+
+/* Regole in breve: a sinistra sugli schermi larghi, riquadro apribile in alto su telefono */
+.lato { max-width: 1100px; margin: 12px auto 0; padding: 0 16px; }
+.lato__box { background: var(--bianco); border: 1px solid var(--bordo); border-left: 4px solid var(--rosso); border-radius: var(--raggio); padding: 10px 14px; }
+.lato__box summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+.lato__box summary::-webkit-details-marker { display: none; }
+.lato__box summary::after { content: "▾"; color: var(--tenue); }
+.lato__box[open] summary::after { content: "▴"; }
+.lato__box h2 { font-size: 1.2rem; margin: 0; }
+.lato__regole { margin: 10px 0 6px; padding-left: 20px; font-size: .92rem; line-height: 1.4; }
+.lato__regole li { margin-bottom: 8px; }
+.lato__link { margin: 4px 0; font-size: .9rem; }
+@media (min-width: 1200px) {
+  .impianto { display: grid; grid-template-columns: 270px minmax(0, 1100px); gap: 24px; justify-content: center; padding: 0 16px; }
+  .impianto main { margin: 0; padding: 0; width: 100%; }
+  .lato { margin: 20px 0 0; padding: 0; }
+  .lato__box { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
+  .lato__box summary { cursor: default; pointer-events: none; }
+  .lato__box summary::after, .lato__box[open] summary::after { content: none; }
+}
+@media (max-width: 480px) { .barra__moderatori { padding: 2px 8px; font-size: .78rem; } }

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
   <header class="barra">
@@ -24,8 +24,27 @@
     <span class="barra__destra">
       <a class="barra__sostieni" id="barra-sostieni" href="#sostieni" hidden>♥ Sostieni</a>
       <a class="barra__link" href="regole.html">Regole<span class="solo-largo"> della community</span></a>
+      <a class="barra__moderatori" href="modera.html" rel="nofollow" aria-label="Area moderatori" title="Area moderatori">🔑<span class="solo-largo"> Moderatori</span></a>
     </span>
   </header>
+
+  <div class="impianto">
+  <aside class="lato" aria-labelledby="titolo-lato">
+    <details class="lato__box" id="lato-regole">
+      <summary><h2 id="titolo-lato">Le regole in breve</h2></summary>
+      <ol class="lato__regole">
+        <li><strong>Solo iniziative pacifiche</strong>, annunciate pubblicamente: preavvisate in Questura o spontanee.</li>
+        <li><strong>Serve una fonte</strong>: comunicato, sito del sindacato, locandina, calendario ufficiale degli scioperi.</li>
+        <li><strong>Niente dati personali</strong>: niente nomi, telefoni o email; chi organizza si indica con la sigla.</li>
+        <li><strong>Blocchi annunciati</strong> solo come avviso, con titolo «Possibili disagi:», mai come invito a partecipare.</li>
+        <li><strong>Vietati</strong> inviti a violenza o danneggiamenti, istruzioni per commettere reati, insulti e odio.</li>
+        <li><strong>Prima si verifica</strong>: le nuove segnalazioni restano «Da verificare» finché un moderatore non le controlla.</li>
+        <li><strong>Si può sempre correggere</strong>: ogni modifica resta in cronologia e si può annullare; un evento con troppe segnalazioni di problemi viene nascosto.</li>
+      </ol>
+      <p class="lato__link"><a href="regole.html">Leggi tutte le regole →</a></p>
+      <p class="lato__link"><a href="modera.html" rel="nofollow">Sei moderatore? Entra qui</a></p>
+    </details>
+  </aside>
 
   <main>
     <section class="intro">
@@ -129,6 +148,7 @@
       <p class="perche__nota">Ogni evento ha il link alla sua fonte: lì trovi le ragioni di chi lo promuove, con le sue parole. La mappa informa, non prende posizione per una sigla o per l'altra. Dati aggiornati a ottobre 2026.</p>
     </section>
   </main>
+  </div>
 
   <footer class="piede">
     <p><strong>Come funziona.</strong> Chiunque può aggiungere una mobilitazione o segnalare un errore, senza registrarsi. Le nuove segnalazioni compaiono come <em>Da verificare</em> finché un moderatore volontario non le controlla. Gli eventi con più segnalazioni di problemi vengono nascosti in attesa di verifica.</p>
@@ -307,6 +327,6 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
   <script src="rete.js?v=1"></script>
-  <script src="app.js?v=12"></script>
+  <script src="app.js?v=13"></script>
 </body>
 </html>
