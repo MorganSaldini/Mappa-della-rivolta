@@ -41,7 +41,7 @@
       ],
       "fonte": "https://gancio.cisti.org/event/presidio-solidale-con-gli-arrestati",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-18T14:46:10",
       "gruppo": null
     },
@@ -391,6 +391,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-18T10:55:30",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-19-trieste-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Salviamo i pini di Grignano",
+      "data": "2026-10-19",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "Piazza Unità d'Italia",
+      "lat": 45.65005,
+      "lng": 13.76695,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Circolo Verdeazzurro Legambiente Trieste",
+        "Gruppo Riva Massimiliano e Carlotta",
+        "Associazione Costituzione 32"
+      ],
+      "fonte": "https://forms.gle/VXngsU6kQzNNFEBV6",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-18T23:08:46",
       "gruppo": null
     },
     {
@@ -822,6 +847,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-27-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea cittadina in preparazione dello sciopero generale",
+      "data": "2026-10-27",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzo Nuovo",
+      "lat": 45.06803,
+      "lng": 7.69413,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "usb",
+        "cambiare rotta",
+        "osa"
+      ],
+      "fonte": "https://www.instagram.com/p/DeofG71jZeY/?obrf=MWNueThvOHlxZ3hrbQ==",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T23:08:53",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-27-firenze-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
@@ -1014,31 +1064,8 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-è-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 7,
+      "conferme": 8,
       "aggiornato_il": "2026-10-17T00:32:06",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-pisa-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
-      "data": "2026-10-30",
-      "ora_inizio": "00:00",
-      "ora_fine": "23:59",
-      "comune": "Pisa",
-      "provincia": "PI",
-      "regione": "Toscana",
-      "luogo": "Aeroporto di Pisa",
-      "lat": 43.6839,
-      "lng": 10.3927,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB Lavoro Privato"
-      ],
-      "fonte": "https://mit.gov.it/node/124",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-17T01:27:45",
       "gruppo": null
     },
     {
@@ -1062,6 +1089,27 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-17T01:44:43",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-bassano-del-grappa-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero Studentesco",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Bassano del Grappa",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Via S. Tommaso D’Acquino",
+      "lat": 45.75432,
+      "lng": 11.73323,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-18T22:55:54",
       "gruppo": null
     },
     {
@@ -1110,6 +1158,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-pisa-sciopero_categoria-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro Guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": "23:59",
+      "comune": "Pisa",
+      "provincia": "PI",
+      "regione": "Toscana",
+      "luogo": "Piazza XX settembre",
+      "lat": 43.6839,
+      "lng": 10.3927,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB Lavoro Privato"
+      ],
+      "fonte": "https://mit.gov.it/node/124",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T22:19:09",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-livorno-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro guerra e carovita",
@@ -1128,7 +1199,7 @@
       ],
       "fonte": "https://www.facebook.com/story.php?story_fbid=1536268788531646&id=100064456191206",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-17T18:24:33",
       "gruppo": null
     },
@@ -1482,7 +1553,7 @@
       ],
       "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-18T18:38:25",
       "gruppo": "g-8ba98c49cf13"
     },
@@ -1654,7 +1725,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-18T18:41:03",
+  "ultimo_aggiornamento": "2026-10-18T23:08:53",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-18T19:22:37Z"
+  "copia_del": "2026-10-18T21:46:26Z"
 }
