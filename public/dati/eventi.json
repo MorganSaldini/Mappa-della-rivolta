@@ -109,27 +109,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-19-bitonto-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Blocco stradale agricoltori e autotrasportatori",
-      "data": "2026-10-19",
-      "ora_inizio": "00:00",
-      "ora_fine": "23:58",
-      "comune": "Bitonto",
-      "provincia": "BA",
-      "regione": "Puglia",
-      "luogo": "",
-      "lat": 41.14103,
-      "lng": 16.68915,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-18T13:59:02",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-19-candela-presidio-01",
       "tipo": "presidio",
       "titolo": "Blocco stradale autotrasporti e agricoltori",
@@ -274,6 +253,27 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-18T13:57:44",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-19-bitonto-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale agricoltori e autotrasportatori",
+      "data": "2026-10-19",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:58",
+      "comune": "Bitonto",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.14103,
+      "lng": 16.68915,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T18:38:31",
       "gruppo": null
     },
     {
@@ -436,27 +436,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-20-candela-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Blocco stradale agricoltori e autotrasportatori",
-      "data": "2026-10-20",
-      "ora_inizio": "00:00",
-      "ora_fine": "23:58",
-      "comune": "Candela",
-      "provincia": "FG",
-      "regione": "Puglia",
-      "luogo": "",
-      "lat": 41.15018,
-      "lng": 15.52643,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-18T14:00:38",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-20-locri-presidio-01",
       "tipo": "presidio",
       "titolo": "Blocco stradale agricoltori",
@@ -520,6 +499,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-20-candela-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale agricoltori e autotrasportatori",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:58",
+      "comune": "Candela",
+      "provincia": "FG",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.15018,
+      "lng": 15.52643,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T18:38:32",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-20-udine-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Arriva Udine",
@@ -564,6 +564,53 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-21-torre-del-greco-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio contro il caro-parcheggi",
+      "data": "2026-10-21",
+      "ora_inizio": "10:30",
+      "ora_fine": null,
+      "comune": "Torre del Greco",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Palazzo Baronale, Piazza del Plebiscito 17",
+      "lat": 40.78631,
+      "lng": 14.36589,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Potere al Popolo! Torre del Greco",
+        "Assemblea Cittadina \"Parcheggiare non è un lusso\""
+      ],
+      "fonte": "https://www.ilmattino.it/AMP/napoli/torre_del_greco_caos_sosta_a_pagamento_la_protesta_al_comune_cambiare_il_dispositivo-9829521.html",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T18:37:40",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-21-lecce-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Mobilitazioni di massa in tutta Europa: come continuare la lotta",
+      "data": "2026-10-21",
+      "ora_inizio": "16:30",
+      "ora_fine": null,
+      "comune": "Lecce",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "Università del Salento, Studium 2000",
+      "lat": 40.35897,
+      "lng": 18.16641,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito comunista rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/Deo1fzeiBsE/?cplk=M2xqOGozdjNnMGE0",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-18T18:38:04",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-22-milano-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea aperta carovita (CSA Lambretta)",
@@ -581,9 +628,9 @@
         "CSA Lambretta"
       ],
       "fonte": "https://www.instagram.com/p/DeomCxKgph1/?img_index=3&obrf=MTJvZmk5dHl2N24ydw==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-18T14:08:06",
+      "aggiornato_il": "2026-10-18T16:26:32",
       "gruppo": null
     },
     {
@@ -601,13 +648,13 @@
       "lng": 10.99324,
       "posizione_approssimativa": 0,
       "organizzatori": [
-        "Rete studenti Verona",
-        "Udu Verona"
+        "Rete degli Studenti Verona",
+        "UDU - Unione degli Universitari Verona"
       ],
       "fonte": "https://www.instagram.com/p/DemuV_-CK2D/?img_index=3&psln=MTV2dGhqajdmajlweA==",
       "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-17T22:38:54",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-18T18:38:43",
       "gruppo": null
     },
     {
@@ -676,7 +723,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T04:11:53",
       "gruppo": null
     },
@@ -699,7 +746,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeE4KTqsImm/?vrfl=NDN5Y21uczV3b2ht",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-17T14:46:40",
       "gruppo": null
     },
@@ -747,7 +794,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeJnI2jDumY/?utm_source=ig_web_copy_link&srtk=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
-      "conferme": 9,
+      "conferme": 11,
       "aggiornato_il": "2026-10-17T03:36:49",
       "gruppo": null
     },
@@ -769,9 +816,9 @@
         "COA T28"
       ],
       "fonte": "https://puntello.org/event/assemblea-cittadina-call-for-action-pt-3",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-18T14:11:31",
+      "aggiornato_il": "2026-10-18T16:26:39",
       "gruppo": null
     },
     {
@@ -875,33 +922,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-torino-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero Generale",
-      "data": "2026-10-30",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Piazza castello",
-      "lat": 45.07159,
-      "lng": 7.68468,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB",
-        "USB Pubblico Impiego",
-        "USB PI",
-        "USI-CIT",
-        "USI Educazione"
-      ],
-      "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
-      "stato": "da_verificare",
-      "conferme": 2,
-      "aggiornato_il": "2026-10-18T14:44:04",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-30-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
@@ -949,6 +969,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-torino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale contro il CaroVita",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza castello",
+      "lat": 45.07159,
+      "lng": 7.68468,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
+      "stato": "verificato",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-18T16:27:36",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-milano-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero contro il CaroVita",
@@ -967,7 +1014,7 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-è-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 7,
       "aggiornato_il": "2026-10-17T00:32:06",
       "gruppo": null
     },
@@ -1042,6 +1089,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-roma-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Mobilitazione studentesca sciopero contro riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": "23:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "piazza della repubblica",
+      "lat": 41.9027,
+      "lng": 12.49642,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-18T18:38:28",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-livorno-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro guerra e carovita",
@@ -1062,6 +1130,53 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-17T18:24:33",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-padova-corteo-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Piazzale della stazione di Padova",
+      "lat": 45.41774,
+      "lng": 11.8805,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Union Sindacale di Base",
+        "Federazione di Padova"
+      ],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-18T18:41:03",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-napoli-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero Generale 30 ottobre USB",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Piazza Garibaldi",
+      "lat": 40.85218,
+      "lng": 14.26769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB Unione Sindacale di Base"
+      ],
+      "fonte": "https://www.usb.it/leggi-notizia/ora-basta-il-30-ottobre-il-personale-ata-incrocia-le-braccia-sciopero-generale-usb-1108.html",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T18:38:15",
       "gruppo": null
     },
     {
@@ -1326,6 +1441,52 @@
       "gruppo": "ag-sciopero-generale-2026-11-20"
     },
     {
+      "id": "2026-11-20-torino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale Cgil",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza castello",
+      "lat": 45.07111,
+      "lng": 7.68518,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cgil"
+      ],
+      "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
+      "stato": "verificato",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-18T16:48:42",
+      "gruppo": "g-8ba98c49cf13"
+    },
+    {
+      "id": "2026-11-20-milao-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale Cgil",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "MIlao",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza del duomo",
+      "lat": 45.46391,
+      "lng": 9.19064,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cgil"
+      ],
+      "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T18:38:25",
+      "gruppo": "g-8ba98c49cf13"
+    },
+    {
       "id": "2026-11-20-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale del settore ferroviario e del trasporto pubblico locale",
@@ -1493,7 +1654,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-18T14:46:10",
+  "ultimo_aggiornamento": "2026-10-18T18:41:03",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-18T13:09:47Z"
+  "copia_del": "2026-10-18T16:47:49Z"
 }
