@@ -10,6 +10,7 @@ import {
   errore, leggiSessione, stessaOrigine, INTESTAZIONI_SICUREZZA, MAX_CORPO, svuotaCacheEventi,
 } from './lib.js';
 import { importaProposte } from './agente.js';
+import { importaDecisioni } from './amministratore.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -69,10 +70,15 @@ export default {
     return conSicurezza(r);
   },
 
-  // Ogni 3 ore: pulizia degli eventi vecchi e import delle proposte dell'agente
+  // Ogni ora: pulizia degli eventi vecchi, proposte dell'agente e decisioni dell'amministratore AI
   async scheduled(event, env, ctx) {
     ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
-    ctx.waitUntil(importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e)));
+    // Prima le proposte dell'agente di ricerca, poi le decisioni dell'amministratore AI
+    ctx.waitUntil(
+      importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))
+        .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
+        .catch((e) => console.error('Amministratore AI', e))
+    );
   },
 };
 

@@ -3,11 +3,12 @@
 import {
   json, errore, adessoRoma, impostazioni, hashAnonimo, controllaLimite, pulisci, sha256hex,
   hashCodice, nuovoCodice, segretiPronti, creaCookieSessione, COOKIE_USCITA, leggiSessione,
-  attoreDi, REGIONI, normalizzaRegione,
+  attoreDi, REGIONI, normalizzaRegione, scriviCronologia,
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
 import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento } from './telegram.js';
 import { importaProposte } from './agente.js';
+import { importaDecisioni } from './amministratore.js';
 
 async function corpo(request) {
   try { return await request.json(); } catch { return {}; }
@@ -68,7 +69,7 @@ export async function coda({ env, sessione }) {
   const par = sessione.regioni;
 
   const nuovi = (await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.stato IN ('da_verificare','nascosto')${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.stato IN ('da_verificare','nascosto') AND e.sospetto IS NULL${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
   ).bind(...par).all()).results.map(apriEvento);
 
   const modifiche = (await env.DB.prepare(
@@ -86,7 +87,12 @@ export async function coda({ env, sessione }) {
      WHERE p.stato = 'aperta'${filtro} GROUP BY p.evento_id ORDER BY n DESC, e.data LIMIT 200`
   ).bind(...par).all()).results;
 
-  return json({ ok: true, nuovi, modifiche, problemi });
+  // Lista dei sospetti preparata dall'amministratore AI: decide un moderatore umano
+  const sospetti = (await env.DB.prepare(
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.sospetto IS NOT NULL AND e.stato NOT IN ('rifiutato')${filtro} ORDER BY e.data LIMIT 200`
+  ).bind(...par).all()).results.map(apriEvento);
+
+  return json({ ok: true, nuovi, modifiche, problemi, sospetti });
 }
 
 export async function elencoEventi({ request, env, sessione }) {
@@ -129,6 +135,8 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
     const extra = { stato };
     if (az === 'approva' || az === 'rimetti') extra.segnalazioni_aperte = 0;
     nuovo = await salvaVersione(env.DB, e, extra, az, attore);
+    // Una decisione umana chiude anche l'eventuale sospetto dell'amministratore AI
+    if (e.sospetto) await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(e.id).run();
     if (az === 'approva' || az === 'rimetti' || az === 'rifiuta') {
       await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
     }
@@ -163,6 +171,16 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
     }
     ctx.waitUntil(pubblicaGruppo(env, approvati, sito));
     return json({ ok: true, approvati: approvati.length });
+  } else if (az === 'conferma_sospetto') {
+    // Il moderatore conferma il sospetto dell'amministratore AI: l'evento viene rifiutato
+    nuovo = await salvaVersione(env.DB, e, { stato: 'rifiutato' }, 'sospetto_confermato', attore);
+    await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(e.id).run();
+    await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
+  } else if (az === 'declina_sospetto') {
+    // Il moderatore non condivide il sospetto: l'evento resta com'è e torna nella coda normale
+    await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(e.id).run();
+    await scriviCronologia(env.DB, e, 'sospetto_declinato', attore);
+    return json({ ok: true });
   } else if (az === 'chiudi_segnalazioni') {
     await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
     await env.DB.prepare('UPDATE eventi SET segnalazioni_aperte = 0 WHERE id = ?').bind(e.id).run();
@@ -307,6 +325,8 @@ export async function eseguiPulizia(env) {
 
 
 // Importa subito le proposte dell'agente (oltre all'importazione notturna)
-export async function importaAgente({ env }) {
-  return json({ ok: true, ...(await importaProposte(env)) });
+export async function importaAgente({ request, env }) {
+  const proposte = await importaProposte(env);
+  const decisioni = await importaDecisioni(env, new URL(request.url).origin);
+  return json({ ok: true, ...proposte, decisioni });
 }
