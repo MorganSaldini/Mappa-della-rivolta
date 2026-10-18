@@ -97,11 +97,11 @@
     if (nome === 'tutti') cercaTutti();
     if (nome === 'staff') caricaStaff();
     if (nome === 'impostazioni') caricaImpostazioni();
-    if (['nuovi', 'modifiche', 'problemi'].includes(nome)) caricaCoda();
+    if (['nuovi', 'modifiche', 'problemi', 'sospetti'].includes(nome)) caricaCoda();
   }
 
   // ---------- Schede evento ----------
-  function schedaEvento(e, azioni) {
+  function schedaEvento(e, azioni, extra = '') {
     const t = TIPI[e.tipo] || TIPI.altro;
     ultimi[e.id] = e;
     const fonte = e.fonte && urlSicuro(e.fonte);
@@ -110,7 +110,8 @@
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${esc(STATI[e.stato] || e.stato)}</span>
         ${e.segnalazioni_aperte ? `<span class="etichetta" style="--c:#9f241d">⚠️ ${e.segnalazioni_aperte} segnalazioni</span>` : ''}
         ${e.telegram_msg_id ? '<span class="etichetta" style="--c:#2a8fd6">Telegram ✓</span>' : ''}
-        ${e.gruppo_n > 1 ? `<span class="etichetta" style="--c:#5f5d66">🗺 ${e.gruppo_n} città</span>` : ''}</div>
+        ${e.gruppo_n > 1 ? `<span class="etichetta" style="--c:#5f5d66">🗺 ${e.gruppo_n} città</span>` : ''}
+        ${e.sospetto ? '<span class="etichetta" style="--c:#b35c00">🤖 Sospetto</span>' : ''}</div>
       <h3>${esc(e.titolo)}</h3>
       <p><strong>${esc(dataIt(e.data))}</strong>${e.ora_inizio ? ', ore ' + esc(e.ora_inizio) : ''}${e.ora_fine ? '–' + esc(e.ora_fine) : ''}</p>
       <p>${e.luogo ? esc(e.luogo) + ', ' : ''}${esc(e.comune)} (${esc(e.provincia)}) · ${esc(e.regione)}${e.posizione_approssimativa ? ' · <em>posizione indicativa</em>' : ''}</p>
@@ -119,6 +120,7 @@
         · ${e.conferme || 0} conferme · <a href="./?e=${encodeURIComponent(e.id)}" target="_blank">vedi sulla mappa</a></p>
       ${e.gruppo_n > 1 ? `<p class="nota-agente">Evento in più città: ${esc(e.gruppo_citta)}</p>` : ''}
       ${e.note && e.note !== 'esempio' ? `<p class="nota-agente">${esc(e.note)}</p>` : ''}
+      ${extra}
       <p class="tenue">${esc(e.id)} · versione ${e.versione || 1} · aggiornato ${esc(dataIt(e.aggiornato_il))}</p>
       <div class="azioni">${azioni}</div>
     </article>`;
@@ -137,12 +139,24 @@
     return out.join('');
   }
 
+  function bottoniSospetto(e) {
+    const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
+    return [
+      b('conferma_sospetto', '✕ Confermo: rifiuta', 'bottone--no'),
+      b('declina_sospetto', '✓ Non è sospetto'),
+      e.stato !== 'verificato' ? b('approva', '✓ Approva', 'bottone--ok') : '',
+      b('modifica', '✏️ Modifica'),
+      b('cronologia', '🕘 Cronologia'),
+    ].join('');
+  }
+
   // ---------- Coda ----------
   async function caricaCoda() {
     let d;
     try { d = await api('/api/moderazione/coda'); } catch (e) { return; }
     const conta = (id, n) => { $(id).textContent = n; $(id).classList.toggle('zero', !n); };
-    conta('#n-nuovi', d.nuovi.length); conta('#n-modifiche', d.modifiche.length); conta('#n-problemi', d.problemi.length);
+    const sospetti = d.sospetti || [];
+    conta('#n-nuovi', d.nuovi.length); conta('#n-modifiche', d.modifiche.length); conta('#n-problemi', d.problemi.length); conta('#n-sospetti', sospetti.length);
 
     $('#scheda-nuovi').innerHTML = d.nuovi.length
       ? '<p class="tenue">Controlla la fonte prima di approvare. Gli eventi nascosti sono stati segnalati più volte dalla community.</p>' +
@@ -165,6 +179,11 @@
           <button type="button" class="bottone bottone--chiaro" data-az="cronologia" data-id="${esc(m.evento_id)}">🕘 Cronologia</button>
         </div></article>`;
     }).join('') : '<p class="vuoto">Nessuna correzione in attesa.</p>';
+
+    $('#scheda-sospetti').innerHTML = sospetti.length
+      ? '<p class="tenue">L’amministratore AI ha trovato qualcosa che non torna. Leggi il motivo e apri le fonti, poi decidi tu: <strong>Confermo</strong> rifiuta l’evento, <strong>Non è sospetto</strong> lo rimette nella coda normale.</p>' +
+        sospetti.map((e) => schedaEvento(e, bottoniSospetto(e), `<div class="motivo motivo--ai"><strong>🤖 Perché è sospetto:</strong> ${esc(String(e.sospetto).replace(/^Amministratore AI: /, ''))}</div>`)).join('')
+      : '<p class="vuoto">Nessun sospetto da controllare. 🎉</p>';
 
     $('#scheda-problemi').innerHTML = d.problemi.length ? d.problemi.map((p) => `<article class="scheda-ev" style="--c:#9f241d">
         <h3>${esc(p.titolo)}</h3>
@@ -194,6 +213,7 @@
     rifiuta: 'Rifiutare questo evento? Sparirà dalla mappa (e dal canale Telegram, se pubblicato da meno di 48 ore).',
     nascondi: 'Nascondere questo evento dalla mappa?',
     annulla: 'Segnare l’evento come annullato? Resterà visibile barrato e, se era sul canale, verrà pubblicato un avviso.',
+    conferma_sospetto: 'Confermi il sospetto? L’evento viene rifiutato e sparisce dalla mappa (puoi sempre ripristinarlo dalla cronologia).',
   };
   function aggiorna() {
     const attiva = document.querySelector('[data-scheda][aria-selected="true"]').dataset.scheda;
@@ -210,7 +230,9 @@
       try {
         await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az } });
         avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
-          : az === 'approva_gruppo' ? 'Approvate tutte le città: sul canale esce un solo messaggio con l’elenco.' : 'Fatto.');
+          : az === 'approva_gruppo' ? 'Approvate tutte le città: sul canale esce un solo messaggio con l’elenco.'
+          : az === 'conferma_sospetto' ? 'Sospetto confermato: evento rifiutato.'
+          : az === 'declina_sospetto' ? 'Sospetto declinato: l’evento torna nella coda normale.' : 'Fatto.');
         aggiorna();
       } catch (e) { alert(e.message); b.disabled = false; }
       return;
@@ -232,8 +254,11 @@
     b.disabled = true;
     try {
       const r = await api('/api/moderazione/importa-agente', { corpo: {} });
-      $('#esito-agente').textContent = `Nel file: ${r.lette} · nuove: ${r.nuove} · già importate: ${r.gia_importate} · doppioni saltati: ${r.doppioni}` +
-        (r.scartate.length ? ` · scartate: ${r.scartate.length} (${r.scartate.slice(0, 3).join('; ')})` : '');
+      const dz = r.decisioni || {};
+      $('#esito-agente').textContent = `Proposte: nuove ${r.nuove} · già importate ${r.gia_importate} · doppioni ${r.doppioni}` +
+        (r.scartate.length ? ` · scartate ${r.scartate.length} (${r.scartate.slice(0, 3).join('; ')})` : '') +
+        ` — Decisioni AI: approvati ${dz.approvati || 0} · sospetti ${dz.sospetti || 0}` +
+        (dz.saltate && dz.saltate.length ? ` · saltate ${dz.saltate.length} (${dz.saltate.slice(0, 3).join('; ')})` : '');
       caricaCoda();
     } catch (e) { alert(e.message); }
     b.disabled = false;
