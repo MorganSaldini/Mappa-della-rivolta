@@ -167,6 +167,14 @@
     return `<p class="pop__gruppo">🗺 Si svolge in ${tutte.length} città. Anche a: ${elenco}.
       <button type="button" data-gruppo="${esc(e.gruppo)}">Vedi tutte sulla mappa</button></p>`;
   }
+  // "Vedi tutte sulla mappa" dall'elenco: inquadra tutte le città della riga
+  document.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-punti]');
+    if (!b || !mappa) return;
+    const ids = b.dataset.punti.split(',');
+    const punti = eventi.filter((x) => ids.includes(x.id)).map((x) => [x.lat, x.lng]);
+    if (punti.length) { mappa.closePopup(); mappa.fitBounds(punti, { padding: [40, 40], maxZoom: 9 }); $('#mappa').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  });
   document.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-gruppo]');
     if (!b || !mappa) return;
@@ -377,16 +385,51 @@
         : '<p>Nessuna mobilitazione in programma per ora. Aggiungine una!</p>';
       return;
     }
-    let html = '', giorno = '';
-    lista.forEach((e) => {
-      const t = TIPI[e.tipo] || TIPI.altro;
-      if (e.data !== giorno) { giorno = e.data; html += `<h3 class="giorno">${esc(dataLunga(e.data))}</h3>`; }
-      html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
-        <span class="pallino" style="--c:${t.colore}"></span>
-        <span><strong class="${e.stato === 'annullato' ? 'barrato' : ''}">${esc(e.titolo)}</strong>
-        ${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${e.ora_inizio ? ' · ' + esc(orario(e)) : ''}${cittaDelGruppo(e).length > 1 ? ` · <em>in ${cittaDelGruppo(e).length} città</em>` : ''}
-        ${e.stato === 'da_verificare' ? ' · <em>da verificare</em>' : ''}${e.stato === 'annullato' ? ' · <strong>annullato</strong>' : ''}</span>
-      </button>`;
+    // Raggruppa per giorno; nello stesso giorno, gli eventi in più città diventano una riga sola
+    const oggi = oggiRoma();
+    const domani = new Date(Date.parse(oggi + 'T12:00:00Z') + 86400000).toISOString().slice(0, 10);
+    const giorni = [];
+    for (const e of lista) {
+      let g = giorni[giorni.length - 1];
+      if (!g || g.data !== e.data) { g = { data: e.data, righe: [], perGruppo: {}, n: 0 }; giorni.push(g); }
+      g.n++;
+      // stesso gruppo (evento inserito in più città) oppure stesso tipo e stesso titolo nello stesso giorno
+      const chiave = e.gruppo || e.tipo + '|' + String(e.titolo || '').trim().toLowerCase();
+      if (!g.perGruppo[chiave]) { g.perGruppo[chiave] = { gruppo: e.gruppo || null, eventi: [] }; g.righe.push(g.perGruppo[chiave]); }
+      g.perGruppo[chiave].eventi.push(e);
+    }
+    // Aperti: oggi e domani (o il primo giorno con eventi); tutti se i filtri lasciano pochi eventi
+    const tuttiAperti = lista.length <= 12;
+    const apri = (d, i) => tuttiAperti || d === oggi || d === domani || (i === 0 && giorni[0].data > domani);
+    const stato = (e) => (e.stato === 'da_verificare' ? ' · <em>da verificare</em>' : '') + (e.stato === 'annullato' ? ' · <strong>annullato</strong>' : '');
+    const ora = (e) => (e.ora_inizio && e.ora_inizio !== '00:00' ? e.ora_inizio : '');
+
+    let html = '';
+    giorni.forEach((g, i) => {
+      html += `<details class="giorno-box"${apri(g.data, i) ? ' open' : ''}>
+        <summary class="giorno"><span>${esc(dataBreve(g.data))}</span><span class="giorno__conta">${g.n} ${g.n === 1 ? 'mobilitazione' : 'mobilitazioni'}</span></summary>`;
+      for (const r of g.righe) {
+        const e = r.eventi[0];
+        const t = TIPI[e.tipo] || TIPI.altro;
+        const titolo = `<strong class="${e.stato === 'annullato' ? 'barrato' : ''}">${esc(e.titolo)}</strong>`;
+        if (r.eventi.length === 1) {
+          html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
+            <span class="pallino" style="--c:${t.colore}"></span>
+            <span class="voce__testo">${ora(e) ? `<span class="voce__ora">${esc(ora(e))}</span>` : ''}${titolo}
+            <span class="voce__info">${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${stato(e)}</span></span>
+          </button>`;
+        } else {
+          const citta = r.eventi.map((x) => `<button type="button" class="voce__citta" data-vai="${esc(x.id)}">${esc(x.comune)} (${esc(x.provincia)})${ora(x) ? ' · ' + esc(ora(x)) : ''}${x.stato !== e.stato ? stato(x) : ''}</button>`).join('');
+          html += `<details class="voce voce--gruppo">
+            <summary><span class="pallino" style="--c:${t.colore}"></span>
+            <span class="voce__testo">${titolo}
+            <span class="voce__info">${esc(t.nome)} · <em>in ${r.eventi.length} città</em>${stato(e)}</span></span></summary>
+            <div class="voce__elenco-citta">${citta}
+              <button type="button" class="voce__citta voce__tutte" data-punti="${esc(r.eventi.map((x) => x.id).join(','))}">Vedi tutte sulla mappa</button></div>
+          </details>`;
+        }
+      }
+      html += '</details>';
     });
     $('#elenco').innerHTML = html;
   }

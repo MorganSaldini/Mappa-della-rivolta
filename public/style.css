@@ -291,3 +291,39 @@ label.spunta input { width: auto; min-height: auto; }
   .lato__box summary::after, .lato__box[open] summary::after { content: none; }
 }
 @media (max-width: 480px) { .barra__moderatori { padding: 2px 8px; font-size: .78rem; } }
+
+/* Elenco compatto: giorni a fisarmonica, eventi in più città su una riga */
+.giorno-box { margin: 0 0 8px; }
+.giorno-box > summary.giorno { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; cursor: pointer; list-style: none;
+  margin: 0; padding: 8px 12px; background: var(--bianco); border: 1px solid var(--bordo); border-radius: var(--raggio); }
+.giorno-box > summary.giorno::-webkit-details-marker { display: none; }
+.giorno-box > summary.giorno::before { content: "▸"; margin-right: 6px; color: var(--tenue); }
+.giorno-box[open] > summary.giorno::before { content: "▾"; }
+.giorno-box > summary.giorno span:first-child { flex: 1; }
+.giorno__conta { font: 600 .82rem var(--corpo); text-transform: none; letter-spacing: 0; color: var(--tenue); white-space: nowrap; }
+.giorno-box[open] > summary.giorno { margin-bottom: 6px; border-color: var(--inchiostro); }
+.voce { padding: 8px 12px; margin-bottom: 4px; }
+.voce__testo { min-width: 0; }
+.voce__ora { float: left; font-weight: 700; margin-right: 8px; color: var(--rosso-scuro); font-variant-numeric: tabular-nums; }
+.voce__info { display: block; font-size: .88rem; color: var(--tenue); }
+.voce--gruppo { display: block; padding: 0; }
+.voce--gruppo > summary { display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; padding: 8px 12px; cursor: pointer; list-style: none; }
+.voce--gruppo > summary::-webkit-details-marker { display: none; }
+.voce--gruppo > summary::after { content: "▸"; color: var(--tenue); }
+.voce--gruppo[open] > summary::after { content: "▾"; }
+.voce--gruppo .pallino { margin-top: 7px; }
+.voce__elenco-citta { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 12px 10px 34px; }
+.voce__citta { font: inherit; font-size: .88rem; padding: 4px 10px; border: 1px solid var(--bordo); border-radius: 999px; background: var(--carta); cursor: pointer; color: inherit; }
+.voce__citta:hover { border-color: var(--inchiostro); }
+.voce__tutte { background: var(--inchiostro); color: #fff; border-color: var(--inchiostro); }
+
+/* Su schermi larghi l'elenco sta a destra della mappa, con la sua barra di scorrimento */
+@media (min-width: 1000px) {
+  .mappa-elenco { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(300px, 1fr); gap: 16px; align-items: start; margin-bottom: 20px; }
+  .mappa-elenco .mappa-box { margin: 4px 0 0; }
+  .mappa-elenco .elenco { margin: 4px 0 0; height: min(70vh, 720px); min-height: 380px; display: flex; flex-direction: column; }
+  .mappa-elenco .elenco h2 { margin-bottom: 4px; font-size: 1.4rem; }
+  .mappa-elenco .iscriviti { font-size: .85rem; margin: 0 0 8px; }
+  .mappa-elenco #elenco { flex: 1; overflow-y: auto; padding-right: 4px; overscroll-behavior: contain; }
+}
+@media (max-width: 480px) { .giorno-box > summary.giorno { font-size: 1rem; padding: 7px 10px; } }
