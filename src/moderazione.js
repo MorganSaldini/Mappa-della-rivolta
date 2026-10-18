@@ -3,10 +3,10 @@
 import {
   json, errore, adessoRoma, impostazioni, hashAnonimo, controllaLimite, pulisci, sha256hex,
   hashCodice, nuovoCodice, segretiPronti, creaCookieSessione, COOKIE_USCITA, leggiSessione,
-  attoreDi, REGIONI, normalizzaRegione, scriviCronologia,
+  attoreDi, REGIONI, normalizzaRegione, scriviCronologia, oggiRoma,
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
-import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento } from './telegram.js';
+import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio } from './telegram.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
 
@@ -304,6 +304,49 @@ export async function provaTelegram({ env }) {
   const d = await r.json().catch(() => ({}));
   if (!d.ok) return errore('Telegram ha risposto: ' + (d.description || 'errore sconosciuto') + '. Controlla che il bot sia amministratore del canale.');
   return json({ ok: true });
+}
+
+// Ripubblica sul canale Telegram gli eventi futuri verificati (es. dopo aver collegato il gruppo dei commenti).
+// Prova a cancellare il vecchio post, azzera il numero salvato e pubblica di nuovo.
+// Al massimo 25 messaggi per volta, con una pausa tra l'uno e l'altro (limiti di Telegram): se ne restano, si ripreme.
+export async function ripubblicaTelegram({ request, env }) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return errore('Bot Telegram non configurato.');
+  const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
+  if (auto && auto.valore === 'no') return errore('La pubblicazione automatica su Telegram è spenta nelle impostazioni: accendila prima.');
+  const sito = new URL(request.url).origin;
+  const { results } = await env.DB.prepare(
+    "SELECT * FROM eventi WHERE stato = 'verificato' AND data >= ? ORDER BY data, ora_inizio"
+  ).bind(oggiRoma()).all();
+
+  // Un "pacchetto" = un messaggio: evento singolo, oppure tutte le città di un gruppo
+  const pacchetti = [];
+  const gruppiVisti = new Set();
+  for (const e of results) {
+    if (e.gruppo) {
+      if (gruppiVisti.has(e.gruppo)) continue;
+      gruppiVisti.add(e.gruppo);
+      pacchetti.push(results.filter((x) => x.gruppo === e.gruppo));
+    } else pacchetti.push([e]);
+  }
+
+  const MAX = 25;
+  const pausa = () => new Promise((r) => setTimeout(r, 1500));
+  const esito = { ripubblicati: 0, vecchi_non_cancellati: 0, restanti: Math.max(0, pacchetti.length - MAX) };
+  for (const p of pacchetti.slice(0, MAX)) {
+    const vecchi = [...new Set(p.map((x) => x.telegram_msg_id).filter(Boolean))];
+    for (const m of vecchi) {
+      if (!(await cancellaMessaggio(env, m))) esito.vecchi_non_cancellati++;
+    }
+    for (const x of p) {
+      await env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(x.id).run();
+      x.telegram_msg_id = null;
+    }
+    if (p.length > 1 || p[0].gruppo) await pubblicaGruppo(env, p, sito);
+    else await pubblicaEvento(env, p[0], sito);
+    esito.ripubblicati++;
+    await pausa();
+  }
+  return json({ ok: true, ...esito });
 }
 
 // Pulizia: cancella gli eventi finiti da più di N giorni (come promesso nella nota privacy)

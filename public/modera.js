@@ -394,6 +394,8 @@
         <h2>Canale Telegram</h2>
         <p>${d.telegram_configurato ? '✅ Bot configurato.' : '⚠️ Bot non configurato: mancano i segreti <code>TELEGRAM_BOT_TOKEN</code> e <code>TELEGRAM_CHAT_ID</code> nel Worker.'}</p>
         <button class="bottone" type="button" id="prova-tg" ${d.telegram_configurato ? '' : 'disabled'}>Invia un messaggio di prova</button>
+        <p>Dopo aver collegato il gruppo dei commenti, ripubblica gli eventi futuri: i nuovi post avranno il pulsante «Commenta». Il bot prova a cancellare i vecchi post; quelli più vecchi di 48 ore cancellali tu dal canale.</p>
+        <button class="bottone" type="button" id="ripubblica-tg" ${d.telegram_configurato ? '' : 'disabled'}>Ripubblica su Telegram</button>
       </div>
       <div class="form-griglia">
         <h2>Pulizia</h2>
@@ -407,6 +409,18 @@
     });
     $('#prova-tg').addEventListener('click', async () => {
       try { await api('/api/admin/telegram-prova', { corpo: {} }); avvisoOk('Messaggio inviato: controlla il canale.'); } catch (e) { alert(e.message); }
+    });
+    $('#ripubblica-tg').addEventListener('click', async (ev) => {
+      if (!confirm('Ripubblicare sul canale tutti gli eventi futuri verificati? I vecchi post verranno sostituiti da quelli nuovi.')) return;
+      const b = ev.currentTarget; b.disabled = true; b.textContent = 'Ripubblicazione in corso…';
+      try {
+        const r = await api('/api/admin/telegram-ripubblica', { corpo: {} });
+        let msg = `Messaggi ripubblicati: ${r.ripubblicati}.`;
+        if (r.vecchi_non_cancellati) msg += ` ${r.vecchi_non_cancellati} vecchi post non si sono potuti cancellare: toglili tu dal canale.`;
+        if (r.restanti) msg += ` Ne restano ${r.restanti}: premi di nuovo il pulsante.`;
+        avvisoOk(msg);
+      } catch (e) { alert(e.message); }
+      b.disabled = false; b.textContent = 'Ripubblica su Telegram';
     });
     $('#pulisci').addEventListener('click', async () => {
       if (!confirm('Cancellare definitivamente gli eventi passati da più dei giorni indicati?')) return;

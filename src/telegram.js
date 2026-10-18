@@ -122,3 +122,9 @@ export async function rimuoviEvento(env, evento) {
   if (!altre || !altre.n) await chiama(env, 'deleteMessage', { message_id: evento.telegram_msg_id });
   await env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(evento.id).run();
 }
+
+// Cancella dal canale un messaggio qualsiasi (usato dalla ripubblicazione). Restituisce true se riuscito.
+export async function cancellaMessaggio(env, messageId) {
+  if (!messageId) return false;
+  return !!(await chiama(env, 'deleteMessage', { message_id: messageId }));
+}
