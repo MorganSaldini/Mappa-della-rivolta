@@ -23,6 +23,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-18-torino-presidio-02",
+      "tipo": "presidio",
+      "titolo": "Presidio solidale con gli arrestati delle manifestazioni studentesche di venerdì",
+      "data": "2026-10-18",
+      "ora_inizio": "17:30",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Via Berruti e Ferrero 3",
+      "lat": 45.02884,
+      "lng": 7.64447,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "iniziativa popolare"
+      ],
+      "fonte": "https://gancio.cisti.org/event/presidio-solidale-con-gli-arrestati",
+      "stato": "verificato",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-18T14:46:10",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-19-cerignola-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero agricoltori",
@@ -86,6 +109,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-19-bitonto-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale agricoltori e autotrasportatori",
+      "data": "2026-10-19",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:58",
+      "comune": "Bitonto",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.14103,
+      "lng": 16.68915,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T13:59:02",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-19-candela-presidio-01",
       "tipo": "presidio",
       "titolo": "Blocco stradale autotrasporti e agricoltori",
@@ -123,7 +167,7 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-18T10:55:13",
       "gruppo": null
     },
@@ -212,6 +256,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-19-locri-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale autotrasporti e agricoltori",
+      "data": "2026-10-19",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Locri",
+      "provincia": "RC",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.23438,
+      "lng": 16.24605,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T13:57:44",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-19-volla-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
@@ -249,7 +314,7 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 6,
       "aggiornato_il": "2026-10-18T10:57:10",
       "gruppo": null
     },
@@ -371,6 +436,90 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-20-candela-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale agricoltori e autotrasportatori",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:58",
+      "comune": "Candela",
+      "provincia": "FG",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.15018,
+      "lng": 15.52643,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T14:00:38",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-locri-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale agricoltori",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:58",
+      "comune": "Locri",
+      "provincia": "RC",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.2341,
+      "lng": 16.24654,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T13:57:49",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-tarsia-scalo-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale autotrasportatori e agricolturi",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": "22:58",
+      "comune": "Tarsia scalo",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.64078,
+      "lng": 16.26446,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T13:57:55",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-bitonto-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Blocco stradale autotrasportatori e agricoltori",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Bitonto",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.14022,
+      "lng": 16.69,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T13:58:00",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-20-udine-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Arriva Udine",
@@ -412,6 +561,29 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-18T10:55:41",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-22-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea aperta carovita (CSA Lambretta)",
+      "data": "2026-10-22",
+      "ora_inizio": "17:00",
+      "ora_fine": "19:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Giardini porta venezia",
+      "lat": 45.47416,
+      "lng": 9.20397,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CSA Lambretta"
+      ],
+      "fonte": "https://www.instagram.com/p/DeomCxKgph1/?img_index=3&obrf=MTJvZmk5dHl2N24ydw==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T14:08:06",
       "gruppo": null
     },
     {
@@ -527,7 +699,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeE4KTqsImm/?vrfl=NDN5Y21uczV3b2ht",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-17T14:46:40",
       "gruppo": null
     },
@@ -575,8 +747,31 @@
       ],
       "fonte": "https://www.instagram.com/p/DeJnI2jDumY/?utm_source=ig_web_copy_link&srtk=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 9,
       "aggiornato_il": "2026-10-17T03:36:49",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-25-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea cittadina (infrastrutture della resistenza)",
+      "data": "2026-10-25",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Via dei Transiti 28, Milano",
+      "lat": 45.49127,
+      "lng": 9.21865,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "COA T28"
+      ],
+      "fonte": "https://puntello.org/event/assemblea-cittadina-call-for-action-pt-3",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T14:11:31",
       "gruppo": null
     },
     {
@@ -680,6 +875,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-torino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza castello",
+      "lat": 45.07159,
+      "lng": 7.68468,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-18T14:44:04",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
@@ -745,7 +967,7 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-è-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 5,
       "aggiornato_il": "2026-10-17T00:32:06",
       "gruppo": null
     },
@@ -791,8 +1013,32 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 3,
       "aggiornato_il": "2026-10-17T01:44:43",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-padova-sciopero_generale-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero per il diritto all'istruzione e maggiori fondi alla scuola",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Piazzale stazione",
+      "lat": 45.4169,
+      "lng": 11.88038,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Csm",
+        "collettivi studenteschi"
+      ],
+      "fonte": "https://www.instagram.com/p/Deme0TiMl6n/?dlrf=MWw2eHp5aXA4bnJhag==",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-18T11:59:23",
       "gruppo": null
     },
     {
@@ -814,7 +1060,7 @@
       ],
       "fonte": "https://www.facebook.com/story.php?story_fbid=1536268788531646&id=100064456191206",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-17T18:24:33",
       "gruppo": null
     },
@@ -1075,7 +1321,7 @@
       ],
       "fonte": "https://www.ansa.it/sito/notizie/politica/2026/10/17/landini-in-piazza-a-roma-sciopero-generale-il-20-novembre_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-18T10:55:52",
       "gruppo": "ag-sciopero-generale-2026-11-20"
     },
@@ -1247,7 +1493,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-18T10:57:10",
+  "ultimo_aggiornamento": "2026-10-18T14:46:10",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-18T09:01:06Z"
+  "copia_del": "2026-10-18T13:09:47Z"
 }
