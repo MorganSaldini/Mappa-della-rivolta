@@ -414,6 +414,8 @@
         <button class="bottone" type="button" id="prova-tg" ${d.telegram_configurato ? '' : 'disabled'}>Invia un messaggio di prova</button>
         <p>Dopo aver collegato il gruppo dei commenti, ripubblica gli eventi futuri: i nuovi post avranno il pulsante «Commenta». Il bot prova a cancellare i vecchi post; quelli più vecchi di 48 ore cancellali tu dal canale.</p>
         <button class="bottone" type="button" id="ripubblica-tg" ${d.telegram_configurato ? '' : 'disabled'}>Ripubblica su Telegram</button>
+        <p>Regole come primo commento: il bot risponde con le regole sotto ogni nuovo post del canale. Prima rendi il bot amministratore anche del gruppo di discussione, poi premi il pulsante (basta una volta).</p>
+        <button class="bottone" type="button" id="webhook-tg" ${d.telegram_configurato ? '' : 'disabled'}>Attiva regole nei commenti</button>
       </div>
       <div class="form-griglia">
         <h2>Pulizia</h2>
@@ -439,6 +441,9 @@
         avvisoOk(msg);
       } catch (e) { alert(e.message); }
       b.disabled = false; b.textContent = 'Ripubblica su Telegram';
+    });
+    $('#webhook-tg').addEventListener('click', async () => {
+      try { await api('/api/admin/telegram-webhook', { corpo: {} }); avvisoOk('Attivato: dai prossimi post il bot scriverà le regole come primo commento.'); } catch (e) { alert(e.message); }
     });
     $('#pulisci').addEventListener('click', async () => {
       if (!confirm('Cancellare definitivamente gli eventi passati da più dei giorni indicati?')) return;

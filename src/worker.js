@@ -11,6 +11,7 @@ import {
 } from './lib.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
+import { gestisciWebhook } from './telegram.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -39,6 +40,7 @@ const RISERVATE = [
   ['POST', /^\/api\/admin\/impostazioni$/, mod.salvaImpostazioni, 'admin'],
   ['POST', /^\/api\/admin\/telegram-prova$/, mod.provaTelegram, 'admin'],
   ['POST', /^\/api\/admin\/telegram-ripubblica$/, mod.ripubblicaTelegram, 'admin'],
+  ['POST', /^\/api\/admin\/telegram-webhook$/, mod.attivaRegoleCommenti, 'admin'],
   ['POST', /^\/api\/admin\/pulizia$/, mod.pulizia, 'admin'],
   ['POST', /^\/api\/moderazione\/importa-agente$/, mod.importaAgente, 'moderatore'],
 ];
@@ -67,6 +69,10 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (!url.pathname.startsWith('/api')) return env.ASSETS.fetch(request);
+    // Notifiche del bot Telegram: non arrivano da un browser, hanno un controllo proprio (chiave segreta)
+    if (url.pathname === '/api/telegram/webhook') {
+      try { return await gestisciWebhook(request, env, ctx); } catch (e) { console.error('Webhook', e); return new Response('ok'); }
+    }
     const r = await gestisci(request, env, ctx, url);
     // Dopo una modifica andata a buon fine la copia dell'elenco eventi va rifatta
     if (request.method !== 'GET' && r.ok) ctx.waitUntil(svuotaCacheEventi(request));

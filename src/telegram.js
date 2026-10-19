@@ -2,6 +2,7 @@
 // Serve il segreto TELEGRAM_BOT_TOKEN e la variabile TELEGRAM_CHAT_ID (es. @MappaDellaRivolta).
 // Se mancano, le funzioni non fanno nulla e il sito funziona lo stesso.
 import { apriEvento } from './dati.js';
+import { sha256hex, adessoRoma } from './lib.js';
 
 const NOMI_TIPI = {
   corteo: '🚩 Corteo', presidio: '✋ Presidio', sciopero_generale: '✊ Sciopero generale',
@@ -137,4 +138,96 @@ export async function rimuoviEvento(env, evento) {
 export async function cancellaMessaggio(env, messageId) {
   if (!messageId) return false;
   return !!(await chiama(env, 'deleteMessage', { message_id: messageId }));
+}
+
+// ---------- Regole come primo commento sotto ogni post del canale ----------
+// Quando il canale ha un gruppo di discussione collegato, Telegram copia ogni post nel gruppo
+// ("inoltro automatico"). Il bot riceve quella copia tramite webhook e ci risponde con le regole:
+// la risposta diventa il primo commento del post.
+// Requisiti: il bot è AMMINISTRATORE anche del gruppo di discussione e il webhook è attivato dal pannello.
+
+const SITO_REGOLE = 'https://mappadellarivolta.org/regole.html';
+
+export const REGOLE_COMMENTO = [
+  '📌 <b>Regole di questa chat</b>',
+  'Qui si coordina chi partecipa a questo evento: passaggi, punto di ritrovo, cambi d\'orario.',
+  '',
+  '❌ Niente violenza, danneggiamenti o istruzioni per commettere reati',
+  '❌ Niente organizzazione di blocchi: solo avvisi sui disagi già annunciati',
+  '❌ Niente nomi, numeri, indirizzi o foto con volti di altre persone',
+  '❌ Niente insulti, odio, spam o propaganda contro altre sigle',
+  '',
+  '👀 La chat è pubblica: gli altri vedono il tuo nome Telegram.',
+  '🛡 Chi non rispetta le regole viene rimosso. Per segnalare un messaggio: tienilo premuto → Segnala.',
+  '',
+  `<a href="${SITO_REGOLE}">Regole complete</a>`,
+].join('\n');
+
+// Chiave segreta che Telegram rimanda a ogni chiamata: ricavata dai segreti già presenti, nessun segreto nuovo
+async function chiaveWebhook(env) {
+  return sha256hex(`webhook|${env.TELEGRAM_BOT_TOKEN}|${env.SALE_SEGRETO || ''}`);
+}
+
+async function chiamaBot(env, metodo, corpo) {
+  const r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${metodo}`, {
+    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo),
+  });
+  return r.json().catch(() => ({ ok: false, description: 'risposta non valida' }));
+}
+
+// Attiva (o riattiva) il webhook verso questo sito. Chiamata dal pannello amministratore.
+export async function attivaWebhook(env, origine) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { ok: false, description: 'Bot Telegram non configurato.' };
+  return chiamaBot(env, 'setWebhook', {
+    url: `${origine}/api/telegram/webhook`,
+    secret_token: await chiaveWebhook(env),
+    allowed_updates: ['message'],
+    drop_pending_updates: true,
+  });
+}
+
+// Il post arriva dal nostro canale? (TELEGRAM_CHAT_ID può essere "@nome" oppure l'id numerico)
+function eNostroCanale(env, chat) {
+  if (!chat || chat.type !== 'channel') return false;
+  const atteso = String(env.TELEGRAM_CHAT_ID).trim();
+  if (atteso.startsWith('@')) return !!chat.username && chat.username.toLowerCase() === atteso.slice(1).toLowerCase();
+  return String(chat.id) === atteso;
+}
+
+async function rispondiConRegole(env, m) {
+  const origine = m.forward_origin || {};
+  const canale = origine.chat || m.forward_from_chat || m.sender_chat;
+  const idPost = origine.message_id || m.forward_from_message_id;
+  if (!eNostroCanale(env, canale) || !idPost) return;
+
+  // Solo i post degli eventi (non i messaggi di prova né gli avvisi di annullamento).
+  // Il numero del post viene salvato subito dopo l'invio: se non c'è ancora, si riprova tra poco.
+  const cerca = () => env.DB.prepare('SELECT 1 FROM eventi WHERE telegram_msg_id = ? LIMIT 1').bind(idPost).first();
+  let evento = await cerca();
+  if (!evento) { await new Promise((r) => setTimeout(r, 4000)); evento = await cerca(); }
+  if (!evento) return;
+
+  // Telegram può rimandare la stessa notifica: una sola risposta per post
+  const chiave = `regole-commento|${m.chat.id}|${m.message_id}`;
+  const nuovo = await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)')
+    .bind(chiave, adessoRoma()).run();
+  if (!nuovo.meta || !nuovo.meta.changes) return;
+
+  const d = await chiamaBot(env, 'sendMessage', {
+    chat_id: m.chat.id, text: REGOLE_COMMENTO, parse_mode: 'HTML',
+    reply_to_message_id: m.message_id, disable_web_page_preview: true,
+  });
+  if (!d.ok) console.error('Telegram regole commento', d.description);
+}
+
+// Punto di arrivo delle notifiche di Telegram. Risponde sempre subito 200 a Telegram.
+export async function gestisciWebhook(request, env, ctx) {
+  const ok = () => new Response('ok');
+  if (request.method !== 'POST' || !env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return new Response('', { status: 404 });
+  if (request.headers.get('X-Telegram-Bot-Api-Secret-Token') !== (await chiaveWebhook(env))) return new Response('', { status: 403 });
+  let u;
+  try { u = await request.json(); } catch { return ok(); }
+  const m = u && u.message;
+  if (m && m.is_automatic_forward && m.chat) ctx.waitUntil(rispondiConRegole(env, m).catch((e) => console.error('Webhook', e)));
+  return ok();
 }

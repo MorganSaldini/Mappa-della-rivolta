@@ -6,7 +6,7 @@ import {
   attoreDi, REGIONI, normalizzaRegione, scriviCronologia, oggiRoma,
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
-import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio } from './telegram.js';
+import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio, attivaWebhook } from './telegram.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
 
@@ -347,6 +347,13 @@ export async function ripubblicaTelegram({ request, env }) {
     await pausa();
   }
   return json({ ok: true, ...esito });
+}
+
+// Attiva le regole automatiche come primo commento dei post del canale (imposta il webhook del bot)
+export async function attivaRegoleCommenti({ request, env }) {
+  const d = await attivaWebhook(env, new URL(request.url).origin);
+  if (!d.ok) return errore('Telegram ha risposto: ' + (d.description || 'errore sconosciuto'));
+  return json({ ok: true });
 }
 
 // Pulizia: cancella gli eventi finiti da più di N giorni (come promesso nella nota privacy)
