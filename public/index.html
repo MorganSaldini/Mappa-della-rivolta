@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=14">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
   <header class="barra">
@@ -225,6 +225,17 @@
         <button type="button" class="bottone bottone--chiaro" id="aggiungi-citta">+ Aggiungi un'altra città</button>
       </fieldset>
 
+      <fieldset class="altre-citta" id="box-altre-date">
+        <legend>Si svolge in più giorni?</legend>
+        <p class="dlg__aiuto">Per scioperi di più giorni, presìdi che durano o iniziative che si ripetono. Ogni giorno compare sulla mappa come evento a sé, collegato agli altri, con gli stessi luoghi e orari.</p>
+        <div class="riga">
+          <label class="cresci">Tutti i giorni fino al (compreso)<input id="data-fino" type="date"></label>
+        </div>
+        <div id="altre-date"></div>
+        <button type="button" class="bottone bottone--chiaro" id="aggiungi-data">+ Aggiungi una data singola</button>
+        <p class="dlg__aiuto" id="riepilogo-date" role="status"></p>
+      </fieldset>
+
       <label>Organizzatori (sigle, separate da virgola)
         <input name="organizzatori" maxlength="300" placeholder="Es. sindacato, collettivo, comitato">
       </label>
@@ -330,6 +341,6 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
   <script src="rete.js?v=1"></script>
-  <script src="app.js?v=14"></script>
+  <script src="app.js?v=15"></script>
 </body>
 </html>

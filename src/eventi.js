@@ -67,27 +67,46 @@ export async function onRequestPost({ request, env }) {
   }
 
   // ---- Validazione ----
-  // Un evento può svolgersi in più città: i campi comuni (tipo, titolo, data, organizzatori, fonte)
-  // valgono per tutte; ogni città ha il suo luogo, le sue coordinate e, se diverso, il suo orario.
+  // Un evento può svolgersi in più città e in più giorni: i campi comuni (tipo, titolo, organizzatori, fonte)
+  // valgono per tutti; ogni città ha il suo luogo, le sue coordinate e, se diverso, il suo orario.
   const extra = Array.isArray(b.luoghi) ? b.luoghi : [];
   if (extra.length > MAX_CITTA - 1) return errore(`Puoi indicare al massimo ${MAX_CITTA} città per evento.`);
   const LOCALI = ['comune', 'provincia', 'regione', 'luogo', 'lat', 'lng', 'posizione_approssimativa', 'ora_inizio', 'ora_fine'];
-  const richieste = [b, ...extra.map((l) => {
+  const perCitta = [b, ...extra.map((l) => {
     const unito = { ...b };
     for (const k of LOCALI) if (k !== 'ora_inizio' && k !== 'ora_fine') unito[k] = l ? l[k] : undefined;
     if (l && l.ora_inizio) unito.ora_inizio = l.ora_inizio;
     if (l && l.ora_fine) unito.ora_fine = l.ora_fine;
     return unito;
   })];
+
+  // Può svolgersi anche in più giorni: ogni giorno diventa un evento collegato agli altri (stesso gruppo)
+  const altreDate = Array.isArray(b.date_extra) ? b.date_extra : [];
+  if (altreDate.length > MAX_DATE) return errore(`Puoi indicare al massimo ${MAX_DATE + 1} giorni per evento.`);
+  const date = [String(b.data || '')];
+  for (const d of altreDate) {
+    const x = String(d || '');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(x)) return errore('Una delle date aggiuntive non è valida.');
+    if (!date.includes(x)) date.push(x);
+  }
+  if (date.length * perCitta.length > MAX_RIGHE) {
+    return errore(`Troppe combinazioni: ${date.length} giorni × ${perCitta.length} città. Il massimo è ${MAX_RIGHE} in tutto.`);
+  }
+  const richieste = [];
+  for (const d of date) for (const c of perCitta) richieste.push({ ...c, data: d });
+
   const validi = [];
   const visti = new Set();
+  const piuCitta = perCitta.length > 1, piuDate = date.length > 1;
   for (let i = 0; i < richieste.length; i++) {
-    const v = validaEvento(richieste[i]);
+    const r = richieste[i];
+    const v = validaEvento(r);
     if (v.errore) {
-      const chi = richieste[i].comune ? `${richieste[i].comune}: ` : `Città n. ${i + 1}: `;
-      return errore(richieste.length > 1 ? chi + v.errore : v.errore);
+      const dataIt = /^\d{4}-\d{2}-\d{2}$/.test(r.data) ? r.data.split('-').reverse().slice(0, 2).join('/') : r.data;
+      const chi = [piuCitta ? (r.comune || `Città n. ${(i % perCitta.length) + 1}`) : '', piuDate ? dataIt : ''].filter(Boolean).join(', ');
+      return errore(chi ? chi + ': ' + v.errore : v.errore);
     }
-    const chiave = (v.dati.comune + '|' + (v.dati.luogo || '')).toLowerCase();
+    const chiave = (v.dati.data + '|' + v.dati.comune + '|' + (v.dati.luogo || '')).toLowerCase();
     if (visti.has(chiave)) return errore(`${v.dati.comune} compare due volte con lo stesso luogo.`);
     visti.add(chiave);
     validi.push(v.dati);
@@ -127,6 +146,8 @@ export async function onRequestPost({ request, env }) {
 }
 
 const MAX_CITTA = 20;
+const MAX_DATE = 14;   // date in più oltre alla prima (15 giorni in tutto)
+const MAX_RIGHE = 40;  // giorni × città
 
 // Inserisce un evento già validato e ne scrive la cronologia. Restituisce l'id.
 export async function creaEvento(db, d, { gruppo = null, attore = 'visitatore', note = null } = {}) {

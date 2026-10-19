@@ -79,21 +79,31 @@ export async function pubblicaGruppo(env, eventi, sitoUrl) {
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return;
   const primo = apriEvento(eventi[0]);
-  const ordinati = [...eventi].sort((a, b) => a.comune.localeCompare(b.comune, 'it'));
+  // Un gruppo può coprire più città e/o più giorni
+  const comuni = [...new Set(eventi.map((e) => e.comune))];
+  const date = [...new Set(eventi.map((e) => e.data))].sort();
+  const ordinati = [...eventi].sort((a, b) => a.data.localeCompare(b.data) || a.comune.localeCompare(b.comune, 'it'));
+  const quanto = [comuni.length > 1 ? `in ${comuni.length} città` : '', date.length > 1 ? `per ${date.length} giorni` : ''].filter(Boolean).join(' · ');
+  const consecutive = date.every((d, i) => i === 0 || Date.parse(d) - Date.parse(date[i - 1]) === 86400000);
+  const quando = date.length === 1 ? dataLunga(date[0])
+    : consecutive ? `dal ${dataLunga(date[0])} al ${dataLunga(date[date.length - 1])}`
+    : date.map((d) => dataLunga(d)).join(', ');
   const righe = [
-    `<b>${h(NOMI_TIPI[primo.tipo] || NOMI_TIPI.altro)} · in ${eventi.length} città</b>`,
+    `<b>${h(NOMI_TIPI[primo.tipo] || NOMI_TIPI.altro)}${quanto ? ' · ' + h(quanto) : ''}</b>`,
     `<b>${h(primo.titolo)}</b>`,
     '',
-    `🗓 ${h(dataLunga(primo.data))}`,
+    `🗓 ${h(quando)}`,
   ];
   if (primo.organizzatori.length) righe.push(`👥 ${h(primo.organizzatori.join(', '))}`);
   righe.push('');
+  const breve = (d) => d.split('-').reverse().slice(0, 2).join('/');
   for (const e of ordinati.slice(0, 30)) {
     const dove = [e.luogo, e.comune].filter(Boolean).join(', ');
     const ora = e.ora_inizio ? ` – ore ${h(e.ora_inizio)}` : '';
-    righe.push(sitoUrl ? `📍 <a href="${h(sitoUrl)}/?e=${encodeURIComponent(e.id)}">${h(dove)}</a>${ora}` : `📍 ${h(dove)}${ora}`);
+    const giorno = date.length > 1 ? `${breve(e.data)} · ` : '';
+    righe.push(sitoUrl ? `📍 ${giorno}<a href="${h(sitoUrl)}/?e=${encodeURIComponent(e.id)}">${h(dove)}</a>${ora}` : `📍 ${giorno}${h(dove)}${ora}`);
   }
-  if (ordinati.length > 30) righe.push(`… e altre ${ordinati.length - 30} città`);
+  if (ordinati.length > 30) righe.push(`… e altri ${ordinati.length - 30} appuntamenti`);
   if (primo.fonte) righe.push('', `🔗 <a href="${h(primo.fonte)}">Fonte</a>`);
   const res = await chiama(env, 'sendMessage', { text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true });
   if (res && res.message_id) {

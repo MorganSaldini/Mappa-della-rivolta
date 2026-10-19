@@ -162,10 +162,23 @@
   function htmlGruppo(e) {
     const tutte = cittaDelGruppo(e);
     if (tutte.length < 2) return '';
-    const altre = tutte.filter((x) => x.id !== e.id).map((x) => x.comune);
-    const elenco = altre.slice(0, 8).map(esc).join(', ') + (altre.length > 8 ? ` e altre ${altre.length - 8}` : '');
-    return `<p class="pop__gruppo">🗺 Si svolge in ${tutte.length} città. Anche a: ${elenco}.
-      <button type="button" data-gruppo="${esc(e.gruppo)}">Vedi tutte sulla mappa</button></p>`;
+    let html = '';
+    // Altre città nello stesso giorno
+    const stessoGiorno = tutte.filter((x) => x.data === e.data);
+    const comuni = [...new Set(stessoGiorno.map((x) => x.comune))];
+    if (comuni.length > 1) {
+      const altre = comuni.filter((c) => c !== e.comune);
+      const elenco = altre.slice(0, 8).map(esc).join(', ') + (altre.length > 8 ? ` e altre ${altre.length - 8}` : '');
+      html += `<p class="pop__gruppo">🗺 Si svolge in ${comuni.length} città. Anche a: ${elenco}.
+        <button type="button" data-gruppo="${esc(e.gruppo)}">Vedi tutte sulla mappa</button></p>`;
+    }
+    // Altre date dello stesso evento
+    const date = [...new Set(tutte.map((x) => x.data))].sort();
+    if (date.length > 1) {
+      const altre = date.filter((d) => d !== e.data);
+      html += `<p class="pop__gruppo">📅 Si svolge in ${date.length} giorni. Anche: ${altre.slice(0, 10).map((d) => esc(dataBreve(d))).join(', ')}${altre.length > 10 ? '…' : ''}.</p>`;
+    }
+    return html;
   }
   // "Vedi tutte sulla mappa" dall'elenco: inquadra tutte le città della riga
   document.addEventListener('click', (ev) => {
@@ -403,6 +416,7 @@
     const apri = (d, i) => tuttiAperti || d === oggi || d === domani || (i === 0 && giorni[0].data > domani);
     const stato = (e) => (e.stato === 'da_verificare' ? ' · <em>da verificare</em>' : '') + (e.stato === 'annullato' ? ' · <strong>annullato</strong>' : '');
     const ora = (e) => (e.ora_inizio && e.ora_inizio !== '00:00' ? e.ora_inizio : '');
+    const giorniGruppo = (e) => { if (!e.gruppo) return ''; const n = new Set(eventi.filter((x) => x.gruppo === e.gruppo).map((x) => x.data)).size; return n > 1 ? ` · <em>${n} giorni</em>` : ''; };
 
     let html = '';
     giorni.forEach((g, i) => {
@@ -416,14 +430,14 @@
           html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
             <span class="pallino" style="--c:${t.colore}"></span>
             <span class="voce__testo">${ora(e) ? `<span class="voce__ora">${esc(ora(e))}</span>` : ''}${titolo}
-            <span class="voce__info">${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${stato(e)}</span></span>
+            <span class="voce__info">${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${giorniGruppo(e)}${stato(e)}</span></span>
           </button>`;
         } else {
           const citta = r.eventi.map((x) => `<button type="button" class="voce__citta" data-vai="${esc(x.id)}">${esc(x.comune)} (${esc(x.provincia)})${ora(x) ? ' · ' + esc(ora(x)) : ''}${x.stato !== e.stato ? stato(x) : ''}</button>`).join('');
           html += `<details class="voce voce--gruppo">
             <summary><span class="pallino" style="--c:${t.colore}"></span>
             <span class="voce__testo">${titolo}
-            <span class="voce__info">${esc(t.nome)} · <em>in ${r.eventi.length} città</em>${stato(e)}</span></span></summary>
+            <span class="voce__info">${esc(t.nome)} · <em>in ${r.eventi.length} città</em>${giorniGruppo(e)}${stato(e)}</span></span></summary>
             <div class="voce__elenco-citta">${citta}
               <button type="button" class="voce__citta voce__tutte" data-punti="${esc(r.eventi.map((x) => x.id).join(','))}">Vedi tutte sulla mappa</button></div>
           </details>`;
@@ -720,6 +734,53 @@
     }));
   }
 
+  // Altre date
+  const MAX_GIORNI = 15, MAX_RIGHE = 40;
+  function nuovaRigaData() {
+    if (document.querySelectorAll('.data-extra').length >= MAX_GIORNI - 1) { $('#errore-aggiungi').textContent = `Al massimo ${MAX_GIORNI} giorni per evento.`; return; }
+    const div = document.createElement('div');
+    div.className = 'riga data-extra';
+    div.innerHTML = `<label class="cresci">Altra data<input type="date" data-data-extra></label>
+      <button type="button" class="dlg__chiudi allinea-basso" data-togli-data aria-label="Togli questa data">✕</button>`;
+    $('#altre-date').appendChild(div);
+    div.querySelector('input').focus();
+  }
+  // Tutte le date dell'evento, prima esclusa, in ordine e senza doppioni
+  function dateExtra() {
+    const base = fa.data.value;
+    const out = new Set();
+    const fino = $('#data-fino').value;
+    if (base && fino && fino > base) {
+      let d = new Date(base + 'T12:00:00Z');
+      for (let i = 0; i < 60; i++) {
+        d = new Date(d.getTime() + 86400000);
+        const iso = d.toISOString().slice(0, 10);
+        if (iso > fino) break;
+        out.add(iso);
+      }
+    }
+    document.querySelectorAll('[data-data-extra]').forEach((i) => { if (i.value && i.value !== base) out.add(i.value); });
+    return [...out].sort();
+  }
+  function aggiornaRiepilogoDate() {
+    const giorni = 1 + dateExtra().length;
+    const citta = 1 + [...document.querySelectorAll('.citta-extra')].filter((d) => d.querySelector('[data-k="comune"]').value.trim()).length;
+    const el = $('#riepilogo-date');
+    if (giorni < 2) { el.textContent = ''; el.className = 'dlg__aiuto'; return; }
+    const tot = giorni * citta;
+    el.textContent = `In tutto: ${giorni} giorni${citta > 1 ? ` × ${citta} città = ${tot} segnaposti` : ''}.` +
+      (giorni > MAX_GIORNI ? ` Il massimo è ${MAX_GIORNI} giorni.` : tot > MAX_RIGHE ? ` Il massimo è ${MAX_RIGHE} in tutto.` : '');
+    el.className = 'dlg__aiuto' + (giorni > MAX_GIORNI || tot > MAX_RIGHE ? ' dlg__errore' : '');
+  }
+  $('#aggiungi-data').addEventListener('click', () => { nuovaRigaData(); aggiornaRiepilogoDate(); });
+  $('#altre-date').addEventListener('click', (ev) => {
+    const r = ev.target.closest('[data-togli-data]');
+    if (r) { r.closest('.data-extra').remove(); aggiornaRiepilogoDate(); }
+  });
+  fa.addEventListener('input', (ev) => {
+    if (ev.target.matches('#data-fino, [data-data-extra], [name="data"], [data-k="comune"]')) aggiornaRiepilogoDate();
+  });
+
   fa.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     const err = $('#errore-aggiungi');
@@ -754,8 +815,11 @@
     } catch (e) {
       return (err.textContent = e.message);
     }
+    const date_extra = dateExtra();
+    if (date_extra.length + 1 > MAX_GIORNI) return (err.textContent = `Al massimo ${MAX_GIORNI} giorni per evento.`);
+    if ((date_extra.length + 1) * (luoghi.length + 1) > MAX_RIGHE) return (err.textContent = `Troppe combinazioni di giorni e città: il massimo è ${MAX_RIGHE} in tutto.`);
     const corpo = {
-      luoghi,
+      luoghi, date_extra,
       tipo: v.tipo, titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
       comune: v.comune, provincia: v.provincia.toUpperCase(), regione: v.regione, luogo: v.luogo,
       lat: punto.lat, lng: punto.lng, posizione_approssimativa: approssimativa,
@@ -775,9 +839,14 @@
       $('#dlg-aggiungi').close();
       fa.reset();
       $('#altre-citta').innerHTML = '';
+      $('#altre-date').innerHTML = '';
+      aggiornaRiepilogoDate();
       punto = null;
       if (puntoMarker) { miniMappa.removeLayer(puntoMarker); puntoMarker = null; }
-      const quante = (d.ids || []).length > 1 ? ` in ${d.ids.length} città` : '';
+      const giorniN = date_extra.length + 1, cittaN = luoghi.length + 1;
+      const quante = (d.ids || []).length > 1
+        ? ' ' + [cittaN > 1 ? `in ${cittaN} città` : '', giorniN > 1 ? `per ${giorniN} giorni` : ''].filter(Boolean).join(' e ')
+        : '';
       avvisoOk(d.visibile_subito
         ? `Grazie! La mobilitazione è sulla mappa${quante} come "Da verificare": un moderatore la controllerà.`
         : 'Grazie! Un moderatore controllerà la segnalazione prima di pubblicarla.');
