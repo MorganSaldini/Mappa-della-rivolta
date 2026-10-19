@@ -106,9 +106,33 @@
       ],
       "fonte": "https://www.instagram.com/reel/Deq8-_lE8oP/?obrf=OHNjNWFpb2F2aGFh",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-19T11:55:12",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-19-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-19",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-19-candela-presidio-01",
@@ -344,8 +368,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-19-vittoria-sciopero_generale-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero dei studenti contro la scarsità degli istituti",
+      "data": "2026-10-19",
+      "ora_inizio": "08:30",
+      "ora_fine": "14:00",
+      "comune": "Vittoria",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Piazza Calvario / Liceo Scientifico",
+      "lat": 36.94414,
+      "lng": 14.5323,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo degli studenti"
+      ],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-19T17:22:39",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-19-genova-picchetto-01",
-      "tipo": "picchetto",
+      "tipo": "presidio",
       "titolo": "Occupazione Aeroporto l’aumento della cassa integrazione straordinaria",
       "data": "2026-10-19",
       "ora_inizio": "10:00",
@@ -360,10 +407,10 @@
       "organizzatori": [
         "Fiom-Cgil"
       ],
-      "fonte": null,
-      "stato": "da_verificare",
+      "fonte": "https://www.ilfattoquotidiano.it/2026/10/19/i-lavoratori-ex-ilva-di-cornigliano-occupano-laeroporto-colombo-di-genova/8542773/#google_vignette",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-19T12:07:23",
+      "aggiornato_il": "2026-10-19T16:30:40",
       "gruppo": null
     },
     {
@@ -411,9 +458,9 @@
         "Studenti universitari"
       ],
       "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-19T11:59:24",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-19T17:23:10",
       "gruppo": null
     },
     {
@@ -439,6 +486,29 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-18T10:55:30",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-19-bergamo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "manifestazione giovani palestinesi",
+      "data": "2026-10-19",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Bergamo",
+      "provincia": "BG",
+      "regione": "Lombardia",
+      "luogo": "porta nuova",
+      "lat": 45.49517,
+      "lng": 9.64242,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "giovani palestinesi"
+      ],
+      "fonte": "https://www.instagram.com/reel/Deq9IdcMQqe/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T17:30:10",
       "gruppo": null
     },
     {
@@ -483,8 +553,29 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/reel/DepyTihIU6n/?vrfl=MWJ4azc5aGlwMzk3Nw==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-19T11:44:29",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-crema-presidio-01",
+      "tipo": "presidio",
+      "titolo": "MELONI SCUOLA",
+      "data": "2026-10-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Crema",
+      "provincia": "CR",
+      "regione": "Lombardia",
+      "luogo": "",
+      "lat": 45.3586,
+      "lng": 9.67375,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-19T19:24:07",
       "gruppo": null
     },
     {
@@ -551,6 +642,30 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-19T11:34:40",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-20-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-20-locri-presidio-01",
@@ -637,6 +752,48 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-20-cremona-corteo-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: corteo studentesco non confermato",
+      "data": "2026-10-20",
+      "ora_inizio": "08:00",
+      "ora_fine": "00:04",
+      "comune": "Cremona",
+      "provincia": "CR",
+      "regione": "Lombardia",
+      "luogo": "",
+      "lat": 45.1429,
+      "lng": 10.01846,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://cremonasera.it/cronaca/messaggi-whatsapp-su-possibili-disordini-alla-manifestazione-di-domani-questura-prefettura-e-comune-alzano-la-guardia-le-scuole-valutano-e-i-supermercato-invitano-ad-abbassare-le-serrande",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-19T19:24:05",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-grisolia-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale - partecipano studenti, commercianti locali e autotrasportatori",
+      "data": "2026-10-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Grisolia",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.74433,
+      "lng": 15.80812,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:11:09",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-20-udine-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Arriva Udine",
@@ -679,6 +836,30 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-18T10:55:41",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-21-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-21",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-21-torre-del-greco-presidio-01",
@@ -728,6 +909,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-22-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-22",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
       "id": "2026-10-22-milano-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea aperta carovita (CSA Lambretta)",
@@ -746,9 +951,33 @@
       ],
       "fonte": "https://www.instagram.com/p/DeomCxKgph1/?img_index=3&obrf=MTJvZmk5dHl2N24ydw==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-18T16:26:32",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-23-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-23",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-23-asti-corteo-01",
@@ -812,7 +1041,7 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-18T10:55:59",
       "gruppo": null
     },
@@ -841,6 +1070,30 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:35",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-24-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-24",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-24-lucca-corteo-01",
@@ -907,7 +1160,7 @@
       ],
       "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
       "stato": "verificato",
-      "conferme": 6,
+      "conferme": 7,
       "aggiornato_il": "2026-10-17T01:45:07",
       "gruppo": null
     },
@@ -953,10 +1206,10 @@
       "organizzatori": [
         "USB"
       ],
-      "fonte": null,
+      "fonte": "https://www.usb.it/leggi-notizia/24-ottobre-sciopero-generale-di-24-ore-le-modalita-nel-lavoro-pubblico-e-privato/print.html",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-19T11:48:46",
+      "aggiornato_il": "2026-10-19T15:11:53",
       "gruppo": null
     },
     {
@@ -980,6 +1233,81 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-18T16:26:39",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-25-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-25",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:51",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
+      "id": "2026-10-26-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:52",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
+      "id": "2026-10-26-cuneo-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea pubblica USB CALUSO (in vista dello sciopero generale)",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cuneo",
+      "provincia": "CN",
+      "regione": "Piemonte",
+      "luogo": "via parco della gioventù",
+      "lat": 44.3891,
+      "lng": 7.55443,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.instagram.com/p/DerceEwNWVp/?cplk=ZDJlNjhuMm5wbGU2",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-19T17:24:07",
       "gruppo": null
     },
     {
@@ -1008,6 +1336,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-27-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-27",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:52",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
       "id": "2026-10-27-firenze-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
@@ -1029,6 +1381,53 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:36",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-27-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "come si combatte la destra?",
+      "data": "2026-10-27",
+      "ora_inizio": "16:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Università degli studi di Milano",
+      "lat": 45.46011,
+      "lng": 9.19532,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/reel/DekU2m7NeQn/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-19T17:26:22",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-28-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-28",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:52",
+      "gruppo": "g-11a1beee682a"
     },
     {
       "id": "2026-10-28-napoli-sciopero_categoria-01",
@@ -1084,6 +1483,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-29-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:52",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
       "id": "2026-10-29-bologna-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
@@ -1129,7 +1552,7 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-17T01:27:43",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-roma-sciopero_categoria-01",
@@ -1179,7 +1602,7 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-18T16:27:36",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-bari-corteo-01",
@@ -1202,7 +1625,7 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-19T11:47:47",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-02",
@@ -1529,6 +1952,30 @@
       "gruppo": "g-d740f89e31c8"
     },
     {
+      "id": "2026-10-30-napoli-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Occupazione Palazzo Giusso",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Largo San Giovanni Maggiore Pignatelli",
+      "lat": 40.83588,
+      "lng": 14.24877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Collettivo Demand",
+        "Link Orientale"
+      ],
+      "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T15:10:52",
+      "gruppo": "g-11a1beee682a"
+    },
+    {
       "id": "2026-10-30-milano-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero contro il CaroVita",
@@ -1547,9 +1994,9 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-è-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 8,
+      "conferme": 9,
       "aggiornato_il": "2026-10-17T00:32:06",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-firenze-sciopero_generale-01",
@@ -1572,7 +2019,7 @@
       "stato": "verificato",
       "conferme": 6,
       "aggiornato_il": "2026-10-17T01:44:43",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-catania-corteo-01",
@@ -1593,7 +2040,7 @@
       ],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 3,
       "aggiornato_il": "2026-10-19T11:48:13",
       "gruppo": null
     },
@@ -1707,7 +2154,7 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-18T22:19:09",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-livorno-corteo-01",
@@ -1730,7 +2177,7 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-17T18:24:33",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-padova-corteo-01",
@@ -1752,9 +2199,9 @@
       ],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-18T18:41:03",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-napoli-corteo-01",
@@ -1775,8 +2222,29 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/ora-basta-il-30-ottobre-il-personale-ata-incrocia-le-braccia-sciopero-generale-usb-1108.html",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 5,
       "aggiornato_il": "2026-10-18T23:49:57",
+      "gruppo": "g-usb-sciopero-2026-10-30"
+    },
+    {
+      "id": "2026-10-30-cagliari-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Corteo contro il caro vita e contro i governi guerrafondai",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Cagliari",
+      "provincia": "CA",
+      "regione": "Sardegna",
+      "luogo": "Piazza Garibaldi",
+      "lat": 39.21915,
+      "lng": 9.12159,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DerAXougA1b/?rpxt=cWozY2JtN3g1YWZn",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-19T17:27:15",
       "gruppo": null
     },
     {
@@ -1844,7 +2312,7 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T22:39:18",
-      "gruppo": null
+      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-11-06-bari-sciopero_categoria-01",
@@ -2036,7 +2504,7 @@
       ],
       "fonte": "https://www.ansa.it/sito/notizie/politica/2026/10/17/landini-in-piazza-a-roma-sciopero-generale-il-20-novembre_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-18T10:55:52",
       "gruppo": "ag-sciopero-generale-2026-11-20"
     },
@@ -2254,7 +2722,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-19T12:07:23",
+  "ultimo_aggiornamento": "2026-10-19T19:24:07",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-19T11:10:32Z"
+  "copia_del": "2026-10-19T17:43:21Z"
 }
