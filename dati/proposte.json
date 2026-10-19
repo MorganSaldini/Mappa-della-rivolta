@@ -188,6 +188,25 @@
   },
   {
     "tipo": "corteo",
+    "titolo": "Manifestazione nazionale contro il CPR di Castel Volturno",
+    "data": "2026-10-24",
+    "ora_inizio": "13:00",
+    "ora_fine": null,
+    "comune": "Castel Volturno",
+    "provincia": "CE",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 41.0336,
+    "lng": 13.9415,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Comitato regionale campano No CPR né qui né altrove"
+    ],
+    "fonte": "https://www.meltingpot.org/2026/09/no-ai-cpr-ne-a-castel-volturno-ne-altrove-il-24-ottobre-la-manifestazione-nazionale/",
+    "note": "Manifestazione nazionale ore 13; punto di ritrovo non indicato. Adesioni annunciate: CGIL Napoli e Campania, Emergency, Libera, CNCA (anche arci.it)."
+  },
+  {
+    "tipo": "corteo",
     "ora_fine": null,
     "organizzatori": [
       "Collettivi studenteschi"
@@ -219,10 +238,12 @@
     "lng": 12.4965,
     "posizione_approssimativa": false,
     "organizzatori": [
-      "Campagna Fuori l'Italia dalla guerra"
+      "Campagna Fuori l'Italia dalla guerra",
+      "Azione Universitaria",
+      "Azione Studentesca"
     ],
     "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
-    "note": "Mobilitazione dichiarata non violenta; percorso non indicato dalla fonte. Verificare promotori sul sito della campagna."
+    "note": "Pace: non violento, percorso n.d. Stesso giorno corteo studentesco \"Sblocchiamo tutto\" ore 10:30 p.za della Libertà→p.za Risorgimento (fonte: juorno.it/studenti-mobilitazione-permanente…)"
   },
   {
     "tipo": "sciopero_categoria",
