@@ -1065,6 +1065,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-catania-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione e Corteo contro carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "00:00",
+      "ora_fine": "00:00",
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Piazza Sant’Agata",
+      "lat": 37.50118,
+      "lng": 15.08769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo scelta dei cittadini stessi s"
+      ],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-19T02:24:17",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-milano-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero contro il CaroVita",
@@ -1744,7 +1767,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-19T01:38:05",
+  "ultimo_aggiornamento": "2026-10-19T02:24:17",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-19T00:07:28Z"
+  "copia_del": "2026-10-19T05:12:00Z"
 }
