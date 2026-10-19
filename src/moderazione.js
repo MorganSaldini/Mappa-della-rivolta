@@ -6,7 +6,7 @@ import {
   attoreDi, REGIONI, normalizzaRegione, scriviCronologia, oggiRoma,
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
-import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio, attivaWebhook } from './telegram.js';
+import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio, attivaWebhook, leggiOre } from './telegram.js';
 import { pubblicaPostTrova } from './assistente.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
@@ -267,7 +267,7 @@ export async function azioneStaff({ request, env }) {
 const IMPOSTAZIONI_AMMESSE = {
   pubblicazione_immediata: (v) => (['si', 'no'].includes(v) ? v : null),
   telegram_auto: (v) => (['si', 'no'].includes(v) ? v : null),
-  telegram_ora: (v) => (/^\d{1,2}$/.test(v) && +v >= 0 && +v <= 23 ? String(+v) : null),
+  telegram_ore: (v) => { const o = leggiOre(v); return o ? o.join(',') : null; },
   conferme_per_verifica: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
   segnalazioni_per_nascondere: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
   max_invii_ora: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 100 ? v : null),

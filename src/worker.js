@@ -11,7 +11,7 @@ import {
 } from './lib.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
-import { gestisciWebhook, pubblicaCoda, oraPubblicazione, oraRoma } from './telegram.js';
+import { gestisciWebhook, pubblicaCoda, orePubblicazione, oraRoma } from './telegram.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -95,13 +95,13 @@ export default {
       importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))
         .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
         .catch((e) => console.error('Amministratore AI', e))
-        // Uscita giornaliera su Telegram: all'ora scelta pubblica gli eventi verificati in coda
+        // Uscite su Telegram: agli orari scelti (predefiniti 8, 16, 21) pubblica gli eventi verificati in coda
         .then(async () => {
-          if (oraRoma() !== (await oraPubblicazione(env))) return;
+          if (!(await orePubblicazione(env)).includes(oraRoma())) return;
           const r = await pubblicaCoda(env);
-          console.log('Telegram uscita giornaliera', JSON.stringify(r));
+          console.log('Telegram uscita', JSON.stringify(r));
         })
-        .catch((e) => console.error('Telegram uscita giornaliera', e))
+        .catch((e) => console.error('Telegram uscita', e))
     );
   },
 };

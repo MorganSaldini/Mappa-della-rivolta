@@ -18,9 +18,9 @@ binding = "ASSETS"
 # Le richieste /api/... passano dal codice; le altre sono servite direttamente come file
 run_worker_first = ["/api/*"]
 
-# Ogni ora: importa le proposte dell’agente, applica le decisioni dell’amministratore AI, cancella gli eventi vecchi
+# Ogni ora (allo scoccare): importa le proposte dell’agente, applica le decisioni dell’amministratore AI, cancella gli eventi vecchi
 [triggers]
-crons = ["15 * * * *"]
+crons = ["0 * * * *"]
 
 [observability]
 enabled = true

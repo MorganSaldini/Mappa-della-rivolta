@@ -52,17 +52,22 @@ async function chiama(env, metodo, corpo) {
   }
 }
 
-// ---------- Pubblicazione a orario fisso ----------
+// ---------- Pubblicazione a orari fissi ----------
 // I nuovi eventi verificati non escono subito: restano in coda (telegram_msg_id vuoto) e vengono pubblicati
-// tutti insieme una volta al giorno, all'ora scelta nel pannello (predefinita 18).
+// tutti insieme agli orari scelti nel pannello (predefiniti 8, 16 e 21).
 // Escono subito solo gli eventi che non possono aspettare: quelli di oggi, e quelli di domani
-// se l'uscita di oggi è già passata.
-export const ORA_PREDEFINITA = 18;
+// se l'ultima uscita di oggi è già passata.
+export const ORE_PREDEFINITE = [8, 16, 21];
 
-export async function oraPubblicazione(env) {
-  const r = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_ora'").first();
-  const n = parseInt(r && r.valore != null ? r.valore : String(ORA_PREDEFINITA), 10);
-  return n >= 0 && n <= 23 ? n : ORA_PREDEFINITA;
+export function leggiOre(testo) {
+  const ore = String(testo || '').split(/[,\s;]+/).filter(Boolean).map((x) => parseInt(x, 10));
+  if (!ore.length || ore.some((n) => !Number.isInteger(n) || n < 0 || n > 23)) return null;
+  return [...new Set(ore)].sort((a, b) => a - b).slice(0, 6);
+}
+
+export async function orePubblicazione(env) {
+  const r = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_ore'").first();
+  return (r && leggiOre(r.valore)) || ORE_PREDEFINITE;
 }
 
 export function oraRoma() {
@@ -72,7 +77,8 @@ export function oraRoma() {
 async function eUrgente(env, dataEvento) {
   const oggi = oggiRoma();
   if (dataEvento <= oggi) return true;
-  return dataEvento === aggiungiGiorni(oggi, 1) && oraRoma() >= (await oraPubblicazione(env));
+  const ore = await orePubblicazione(env);
+  return dataEvento === aggiungiGiorni(oggi, 1) && oraRoma() >= ore[ore.length - 1];
 }
 
 // Pubblica un evento verificato e salva l'id del messaggio.
@@ -270,8 +276,8 @@ export async function gestisciWebhook(request, env, ctx) {
   return ok();
 }
 
-// Uscita giornaliera: pubblica tutti gli eventi verificati ancora in coda, in ordine di data.
-// Un post per evento (gli eventi in più città restano un solo post). Chiamata dal cron all'ora scelta.
+// Uscita a orario fisso: pubblica tutti gli eventi verificati ancora in coda, in ordine di data.
+// Un post per evento (gli eventi in più città restano un solo post). Chiamata dal cron agli orari scelti.
 export async function pubblicaCoda(env, sitoUrl = 'https://mappadellarivolta.org') {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { pubblicati: 0 };
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
