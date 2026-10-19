@@ -2,7 +2,7 @@
 // Serve il segreto TELEGRAM_BOT_TOKEN e la variabile TELEGRAM_CHAT_ID (es. @MappaDellaRivolta).
 // Se mancano, le funzioni non fanno nulla e il sito funziona lo stesso.
 import { apriEvento } from './dati.js';
-import { sha256hex, adessoRoma } from './lib.js';
+import { sha256hex, adessoRoma, oggiRoma, aggiungiGiorni } from './lib.js';
 import { gestisciAssistente, pulsantiPostCanale, configuraAssistente } from './assistente.js';
 
 const NOMI_TIPI = {
@@ -52,9 +52,32 @@ async function chiama(env, metodo, corpo) {
   }
 }
 
+// ---------- Pubblicazione a orario fisso ----------
+// I nuovi eventi verificati non escono subito: restano in coda (telegram_msg_id vuoto) e vengono pubblicati
+// tutti insieme una volta al giorno, all'ora scelta nel pannello (predefinita 18).
+// Escono subito solo gli eventi che non possono aspettare: quelli di oggi, e quelli di domani
+// se l'uscita di oggi è già passata.
+export const ORA_PREDEFINITA = 18;
+
+export async function oraPubblicazione(env) {
+  const r = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_ora'").first();
+  const n = parseInt(r && r.valore != null ? r.valore : String(ORA_PREDEFINITA), 10);
+  return n >= 0 && n <= 23 ? n : ORA_PREDEFINITA;
+}
+
+export function oraRoma() {
+  return parseInt(new Intl.DateTimeFormat('en-GB', { hour: '2-digit', hourCycle: 'h23', timeZone: 'Europe/Rome' }).format(new Date()), 10);
+}
+
+async function eUrgente(env, dataEvento) {
+  const oggi = oggiRoma();
+  if (dataEvento <= oggi) return true;
+  return dataEvento === aggiungiGiorni(oggi, 1) && oraRoma() >= (await oraPubblicazione(env));
+}
+
 // Pubblica un evento verificato e salva l'id del messaggio.
 // Se fa parte di un evento in più città già pubblicato, non ripubblica: collega lo stesso messaggio.
-export async function pubblicaEvento(env, evento, sitoUrl) {
+export async function pubblicaEvento(env, evento, sitoUrl, { forza = false } = {}) {
   if (evento.telegram_msg_id) return;
   if (evento.gruppo) {
     const gia = await env.DB.prepare('SELECT telegram_msg_id FROM eventi WHERE gruppo = ? AND telegram_msg_id IS NOT NULL LIMIT 1')
@@ -66,6 +89,8 @@ export async function pubblicaEvento(env, evento, sitoUrl) {
   }
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return;
+  // Non urgente: resta in coda per l'uscita giornaliera
+  if (!forza && !(await eUrgente(env, evento.data))) return;
   const res = await chiama(env, 'sendMessage', {
     text: testoEvento(evento, sitoUrl), parse_mode: 'HTML', disable_web_page_preview: true,
     reply_markup: await pulsantiPostCanale(env).catch(() => undefined),
@@ -76,11 +101,13 @@ export async function pubblicaEvento(env, evento, sitoUrl) {
 }
 
 // Un solo messaggio per un evento in più città: elenca tutte le città approvate
-export async function pubblicaGruppo(env, eventi, sitoUrl) {
+export async function pubblicaGruppo(env, eventi, sitoUrl, { forza = false } = {}) {
   const daPubblicare = eventi.filter((e) => !e.telegram_msg_id);
   if (!daPubblicare.length) return;
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return;
+  const primaData = eventi.map((e) => e.data).sort()[0];
+  if (!forza && !(await eUrgente(env, primaData))) return;
   const primo = apriEvento(eventi[0]);
   // Un gruppo può coprire più città e/o più giorni
   const comuni = [...new Set(eventi.map((e) => e.comune))];
@@ -241,4 +268,30 @@ export async function gestisciWebhook(request, env, ctx) {
   if (m && m.is_automatic_forward && m.chat) ctx.waitUntil(rispondiConRegole(env, m).catch((e) => console.error('Webhook', e)));
   else ctx.waitUntil(gestisciAssistente(env, u, new URL(request.url).origin).catch((e) => console.error('Assistente', e)));
   return ok();
+}
+
+// Uscita giornaliera: pubblica tutti gli eventi verificati ancora in coda, in ordine di data.
+// Un post per evento (gli eventi in più città restano un solo post). Chiamata dal cron all'ora scelta.
+export async function pubblicaCoda(env, sitoUrl = 'https://mappadellarivolta.org') {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { pubblicati: 0 };
+  const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
+  if (auto && auto.valore === 'no') return { pubblicati: 0 };
+  const { results } = await env.DB.prepare(
+    "SELECT * FROM eventi WHERE stato = 'verificato' AND data >= ? AND telegram_msg_id IS NULL ORDER BY data, ora_inizio, comune"
+  ).bind(oggiRoma()).all();
+  const gruppiVisti = new Set();
+  let pubblicati = 0;
+  for (const e of results.slice(0, 60)) {
+    if (e.gruppo) {
+      if (gruppiVisti.has(e.gruppo)) continue;
+      gruppiVisti.add(e.gruppo);
+      const { results: tutti } = await env.DB.prepare("SELECT * FROM eventi WHERE gruppo = ? AND stato = 'verificato'").bind(e.gruppo).all();
+      await pubblicaGruppo(env, tutti, sitoUrl, { forza: true });
+    } else {
+      await pubblicaEvento(env, e, sitoUrl, { forza: true });
+    }
+    pubblicati++;
+    await new Promise((r) => setTimeout(r, 1200)); // pausa tra un post e l'altro (limiti di Telegram)
+  }
+  return { pubblicati, in_coda: results.length };
 }

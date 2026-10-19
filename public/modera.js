@@ -406,6 +406,7 @@
         ${num('max_invii_ora', 'Massimo invii all’ora per dispositivo')}
         ${num('giorni_conservazione', 'Giorni dopo l’evento prima della cancellazione automatica')}
         ${sn('telegram_auto', 'Pubblicare in automatico sul canale Telegram gli eventi verificati?')}
+        <label>Ora dell'uscita giornaliera su Telegram (0–23). Gli eventi verificati escono tutti insieme a quest'ora; quelli di oggi (e di domani, se l'uscita è già passata) escono subito.<input name="telegram_ora" type="number" min="0" max="23" value="${esc(i.telegram_ora ?? '18')}"></label>
         <button class="bottone bottone--pieno" type="submit">Salva impostazioni</button>
       </form>
       <div class="form-griglia">

@@ -267,6 +267,7 @@ export async function azioneStaff({ request, env }) {
 const IMPOSTAZIONI_AMMESSE = {
   pubblicazione_immediata: (v) => (['si', 'no'].includes(v) ? v : null),
   telegram_auto: (v) => (['si', 'no'].includes(v) ? v : null),
+  telegram_ora: (v) => (/^\d{1,2}$/.test(v) && +v >= 0 && +v <= 23 ? String(+v) : null),
   conferme_per_verifica: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
   segnalazioni_per_nascondere: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
   max_invii_ora: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 100 ? v : null),
@@ -342,8 +343,8 @@ export async function ripubblicaTelegram({ request, env }) {
       await env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(x.id).run();
       x.telegram_msg_id = null;
     }
-    if (p.length > 1 || p[0].gruppo) await pubblicaGruppo(env, p, sito);
-    else await pubblicaEvento(env, p[0], sito);
+    if (p.length > 1 || p[0].gruppo) await pubblicaGruppo(env, p, sito, { forza: true });
+    else await pubblicaEvento(env, p[0], sito, { forza: true });
     esito.ripubblicati++;
     await pausa();
   }
