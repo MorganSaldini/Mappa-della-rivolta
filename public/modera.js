@@ -21,6 +21,24 @@
 
   function esc(t) {
     return String(t ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  }
+
+  // Evento collegato ad altri (più città e/o più giorni): testo breve per l'etichetta e testo completo
+  function partiGruppo(e) {
+    const citta = String(e.gruppo_citta || '').split(',').map((x) => x.trim()).filter(Boolean);
+    const date = String(e.gruppo_date || '').split(',').map((x) => x.trim()).filter(Boolean).sort();
+    return { citta, date };
+  }
+  function riassuntoGruppo(e) {
+    const { citta, date } = partiGruppo(e);
+    return [citta.length > 1 ? `${citta.length} città` : '', date.length > 1 ? `${date.length} giorni` : ''].filter(Boolean).join(' · ') || `${e.gruppo_n} appuntamenti`;
+  }
+  function dettaglioGruppo(e) {
+    const { citta, date } = partiGruppo(e);
+    const giorno = (d) => d.split('-').reverse().slice(0, 2).join('/');
+    return [citta.length > 1 ? `Città: ${citta.join(', ')}.` : '', date.length > 1 ? `Giorni: ${date.map(giorno).join(', ')}.` : '']
+      .filter(Boolean).join(' ') + ` In tutto ${e.gruppo_n} appuntamenti collegati.`;
   }
   function dataIt(iso) {
     if (!iso) return '';
@@ -110,7 +128,7 @@
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${esc(STATI[e.stato] || e.stato)}</span>
         ${e.segnalazioni_aperte ? `<span class="etichetta" style="--c:#9f241d">⚠️ ${e.segnalazioni_aperte} segnalazioni</span>` : ''}
         ${e.telegram_msg_id ? '<span class="etichetta" style="--c:#2a8fd6">Telegram ✓</span>' : ''}
-        ${e.gruppo_n > 1 ? `<span class="etichetta" style="--c:#5f5d66">🗺 ${e.gruppo_n} città</span>` : ''}
+        ${e.gruppo_n > 1 ? `<span class="etichetta" style="--c:#5f5d66">🗺 ${esc(riassuntoGruppo(e))}</span>` : ''}
         ${e.sospetto ? '<span class="etichetta" style="--c:#b35c00">🤖 Sospetto</span>' : ''}</div>
       <h3>${esc(e.titolo)}</h3>
       <p><strong>${esc(dataIt(e.data))}</strong>${e.ora_inizio ? ', ore ' + esc(e.ora_inizio) : ''}${e.ora_fine ? '–' + esc(e.ora_fine) : ''}</p>
@@ -118,7 +136,7 @@
       ${(e.organizzatori || []).length ? `<p>Promosso da: ${esc(e.organizzatori.join(', '))}</p>` : ''}
       <p>${fonte ? `🔗 <a href="${esc(fonte)}" target="_blank" rel="noopener nofollow">Apri la fonte</a>` : '<strong style="color:#9f241d">Nessuna fonte</strong>'}
         · ${e.conferme || 0} conferme · <a href="./?e=${encodeURIComponent(e.id)}" target="_blank">vedi sulla mappa</a></p>
-      ${e.gruppo_n > 1 ? `<p class="nota-agente">Evento in più città: ${esc(e.gruppo_citta)}</p>` : ''}
+      ${e.gruppo_n > 1 ? `<p class="nota-agente">${esc(dettaglioGruppo(e))}</p>` : ''}
       ${e.note && e.note !== 'esempio' ? `<p class="nota-agente">${esc(e.note)}</p>` : ''}
       ${extra}
       <p class="tenue">${esc(e.id)} · versione ${e.versione || 1} · aggiornato ${esc(dataIt(e.aggiornato_il))}</p>
@@ -128,7 +146,7 @@
   function bottoniEvento(e) {
     const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
     const out = [];
-    if (e.gruppo_n > 1) out.push(b('approva_gruppo', `✓ Approva tutte le ${e.gruppo_n} città`, 'bottone--ok'));
+    if (e.gruppo_n > 1) out.push(b('approva_gruppo', `✓ Approva tutti gli appuntamenti (${e.gruppo_n})`, 'bottone--ok'));
     if (e.stato !== 'verificato') out.push(b('approva', e.gruppo_n > 1 ? '✓ Approva solo questa' : '✓ Approva', 'bottone--ok'));
     if (e.stato !== 'annullato' && e.stato !== 'rifiutato') out.push(b('annulla', 'Segna annullato'));
     if (e.stato !== 'nascosto' && e.stato !== 'rifiutato') out.push(b('nascondi', 'Nascondi'));
@@ -230,7 +248,7 @@
       try {
         await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az } });
         avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
-          : az === 'approva_gruppo' ? 'Approvate tutte le città: sul canale esce un solo messaggio con l’elenco.'
+          : az === 'approva_gruppo' ? 'Approvati tutti gli appuntamenti: sul canale esce un solo messaggio con l’elenco.'
           : az === 'conferma_sospetto' ? 'Sospetto confermato: evento rifiutato.'
           : az === 'declina_sospetto' ? 'Sospetto declinato: l’evento torna nella coda normale.' : 'Fatto.');
         aggiorna();

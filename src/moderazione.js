@@ -69,7 +69,7 @@ export async function coda({ env, sessione }) {
   const par = sessione.regioni;
 
   const nuovi = (await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.stato IN ('da_verificare','nascosto') AND e.sospetto IS NULL${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e WHERE e.stato IN ('da_verificare','nascosto') AND e.sospetto IS NULL${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
   ).bind(...par).all()).results.map(apriEvento);
 
   const modifiche = (await env.DB.prepare(
@@ -89,7 +89,7 @@ export async function coda({ env, sessione }) {
 
   // Lista dei sospetti preparata dall'amministratore AI: decide un moderatore umano
   const sospetti = (await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e WHERE e.sospetto IS NOT NULL AND e.stato NOT IN ('rifiutato')${filtro} ORDER BY e.data LIMIT 200`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e WHERE e.sospetto IS NOT NULL AND e.stato NOT IN ('rifiutato')${filtro} ORDER BY e.data LIMIT 200`
   ).bind(...par).all()).results.map(apriEvento);
 
   return json({ ok: true, nuovi, modifiche, problemi, sospetti });
@@ -105,7 +105,7 @@ export async function elencoEventi({ request, env, sessione }) {
   if (STATI.includes(stato)) { where.push('e.stato = ?'); par.push(stato); }
   if (sessione.regioni.length) { where.push(`e.regione IN (${sessione.regioni.map(() => '?').join(',')})`); par.push(...sessione.regioni); }
   const { results } = await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(g.comune, ', ') FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta FROM eventi e ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY e.data DESC LIMIT 150`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY e.data DESC LIMIT 150`
   ).bind(...par).all();
   return json({ ok: true, eventi: results.map(apriEvento) });
 }
