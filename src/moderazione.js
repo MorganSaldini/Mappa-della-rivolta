@@ -7,6 +7,7 @@ import {
 } from './lib.js';
 import { validaEvento, leggiEvento, apriEvento, differenze, salvaVersione, STATI, CAMPI_CONTENUTO } from './dati.js';
 import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancellaMessaggio, attivaWebhook } from './telegram.js';
+import { pubblicaPostTrova } from './assistente.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
 
@@ -353,7 +354,15 @@ export async function ripubblicaTelegram({ request, env }) {
 export async function attivaRegoleCommenti({ request, env }) {
   const d = await attivaWebhook(env, new URL(request.url).origin);
   if (!d.ok) return errore('Telegram ha risposto: ' + (d.description || 'errore sconosciuto'));
-  return json({ ok: true });
+  return json({ ok: true, username: d.username || null });
+}
+
+// Pubblica nel canale (e prova a fissare) il post "Trova una mobilitazione" con i pulsanti dell'assistente
+export async function pubblicaTrova({ request, env }) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return errore('Bot Telegram non configurato.');
+  const d = await pubblicaPostTrova(env, new URL(request.url).origin);
+  if (!d.ok) return errore('Telegram ha risposto: ' + (d.description || 'errore sconosciuto'));
+  return json({ ok: true, fissato: d.fissato });
 }
 
 // Pulizia: cancella gli eventi finiti da più di N giorni (come promesso nella nota privacy)

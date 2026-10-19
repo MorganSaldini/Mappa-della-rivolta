@@ -414,8 +414,10 @@
         <button class="bottone" type="button" id="prova-tg" ${d.telegram_configurato ? '' : 'disabled'}>Invia un messaggio di prova</button>
         <p>Dopo aver collegato il gruppo dei commenti, ripubblica gli eventi futuri: i nuovi post avranno il pulsante «Commenta». Il bot prova a cancellare i vecchi post; quelli più vecchi di 48 ore cancellali tu dal canale.</p>
         <button class="bottone" type="button" id="ripubblica-tg" ${d.telegram_configurato ? '' : 'disabled'}>Ripubblica su Telegram</button>
-        <p>Regole come primo commento: il bot risponde con le regole sotto ogni nuovo post del canale. Prima rendi il bot amministratore anche del gruppo di discussione, poi premi il pulsante (basta una volta).</p>
-        <button class="bottone" type="button" id="webhook-tg" ${d.telegram_configurato ? '' : 'disabled'}>Attiva regole nei commenti</button>
+        <p>Attiva il bot: regole come primo commento sotto ogni post e assistente personale (cerca per città, data, tipo). Prima rendi il bot amministratore anche del gruppo di discussione, poi premi il pulsante. Va ripremuto dopo ogni aggiornamento del bot.</p>
+        <button class="bottone" type="button" id="webhook-tg" ${d.telegram_configurato ? '' : 'disabled'}>Attiva bot (regole e assistente)</button>
+        <p>Pubblica nel canale il post «🔎 Trova una mobilitazione» con i pulsanti che aprono l'assistente, e lo fissa in alto.</p>
+        <button class="bottone" type="button" id="trova-tg" ${d.telegram_configurato ? '' : 'disabled'}>Pubblica post «Trova»</button>
       </div>
       <div class="form-griglia">
         <h2>Pulizia</h2>
@@ -443,7 +445,17 @@
       b.disabled = false; b.textContent = 'Ripubblica su Telegram';
     });
     $('#webhook-tg').addEventListener('click', async () => {
-      try { await api('/api/admin/telegram-webhook', { corpo: {} }); avvisoOk('Attivato: dai prossimi post il bot scriverà le regole come primo commento.'); } catch (e) { alert(e.message); }
+      try {
+        const r = await api('/api/admin/telegram-webhook', { corpo: {} });
+        avvisoOk('Bot attivato: regole nei commenti e assistente.' + (r.username ? ` Il bot si apre da t.me/${r.username}` : ''));
+      } catch (e) { alert(e.message); }
+    });
+    $('#trova-tg').addEventListener('click', async () => {
+      if (!confirm('Pubblicare nel canale il post «Trova una mobilitazione»?')) return;
+      try {
+        const r = await api('/api/admin/telegram-trova', { corpo: {} });
+        avvisoOk(r.fissato ? 'Post pubblicato e fissato in alto nel canale.' : 'Post pubblicato. Non sono riuscito a fissarlo: fissalo tu dal canale (tieni premuto il post → Fissa).');
+      } catch (e) { alert(e.message); }
     });
     $('#pulisci').addEventListener('click', async () => {
       if (!confirm('Cancellare definitivamente gli eventi passati da più dei giorni indicati?')) return;

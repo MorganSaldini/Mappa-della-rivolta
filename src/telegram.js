@@ -3,6 +3,7 @@
 // Se mancano, le funzioni non fanno nulla e il sito funziona lo stesso.
 import { apriEvento } from './dati.js';
 import { sha256hex, adessoRoma } from './lib.js';
+import { gestisciAssistente, pulsantiPostCanale, configuraAssistente } from './assistente.js';
 
 const NOMI_TIPI = {
   corteo: '🚩 Corteo', presidio: '✋ Presidio', sciopero_generale: '✊ Sciopero generale',
@@ -67,6 +68,7 @@ export async function pubblicaEvento(env, evento, sitoUrl) {
   if (auto && auto.valore === 'no') return;
   const res = await chiama(env, 'sendMessage', {
     text: testoEvento(evento, sitoUrl), parse_mode: 'HTML', disable_web_page_preview: true,
+    reply_markup: await pulsantiPostCanale(env).catch(() => undefined),
   });
   if (res && res.message_id) {
     await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, evento.id).run();
@@ -106,7 +108,10 @@ export async function pubblicaGruppo(env, eventi, sitoUrl) {
   }
   if (ordinati.length > 30) righe.push(`… e altri ${ordinati.length - 30} appuntamenti`);
   if (primo.fonte) righe.push('', `🔗 <a href="${h(primo.fonte)}">Fonte</a>`);
-  const res = await chiama(env, 'sendMessage', { text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true });
+  const res = await chiama(env, 'sendMessage', {
+    text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true,
+    reply_markup: await pulsantiPostCanale(env).catch(() => undefined),
+  });
   if (res && res.message_id) {
     for (const e of eventi) {
       await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, e.id).run();
@@ -178,12 +183,16 @@ async function chiamaBot(env, metodo, corpo) {
 // Attiva (o riattiva) il webhook verso questo sito. Chiamata dal pannello amministratore.
 export async function attivaWebhook(env, origine) {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { ok: false, description: 'Bot Telegram non configurato.' };
-  return chiamaBot(env, 'setWebhook', {
+  const d = await chiamaBot(env, 'setWebhook', {
     url: `${origine}/api/telegram/webhook`,
     secret_token: await chiaveWebhook(env),
-    allowed_updates: ['message'],
+    allowed_updates: ['message', 'callback_query'],
     drop_pending_updates: true,
   });
+  if (!d.ok) return d;
+  // Comandi, descrizione e nome del bot per l'assistente personale
+  const username = await configuraAssistente(env).catch(() => null);
+  return { ok: true, username };
 }
 
 // Il post arriva dal nostro canale? (TELEGRAM_CHAT_ID può essere "@nome" oppure l'id numerico)
@@ -227,7 +236,9 @@ export async function gestisciWebhook(request, env, ctx) {
   if (request.headers.get('X-Telegram-Bot-Api-Secret-Token') !== (await chiaveWebhook(env))) return new Response('', { status: 403 });
   let u;
   try { u = await request.json(); } catch { return ok(); }
-  const m = u && u.message;
+  if (!u || typeof u !== 'object') return ok();
+  const m = u.message;
   if (m && m.is_automatic_forward && m.chat) ctx.waitUntil(rispondiConRegole(env, m).catch((e) => console.error('Webhook', e)));
+  else ctx.waitUntil(gestisciAssistente(env, u, new URL(request.url).origin).catch((e) => console.error('Assistente', e)));
   return ok();
 }

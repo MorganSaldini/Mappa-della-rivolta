@@ -41,6 +41,7 @@ const RISERVATE = [
   ['POST', /^\/api\/admin\/telegram-prova$/, mod.provaTelegram, 'admin'],
   ['POST', /^\/api\/admin\/telegram-ripubblica$/, mod.ripubblicaTelegram, 'admin'],
   ['POST', /^\/api\/admin\/telegram-webhook$/, mod.attivaRegoleCommenti, 'admin'],
+  ['POST', /^\/api\/admin\/telegram-trova$/, mod.pubblicaTrova, 'admin'],
   ['POST', /^\/api\/admin\/pulizia$/, mod.pulizia, 'admin'],
   ['POST', /^\/api\/moderazione\/importa-agente$/, mod.importaAgente, 'moderatore'],
 ];
