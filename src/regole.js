@@ -28,6 +28,8 @@ const SIGLE = new Set(['CGIL', 'CISL', 'ENAV', 'AMTAB', 'ATVO', 'USB', 'CUB', 'A
 
 export function eAvvisoDisagi(e) {
   const t = String(e.titolo || '');
+  // Chi ha scritto "possibili disagi" lo ha già classificato come avviso
+  if (/possibili disagi/i.test(t)) return true;
   if (RE_OCCUPAZIONE.test(t)) return true;
   if (RE_BLOCCO.test(t) && !(String(e.tipo || '').startsWith('sciopero') && RE_FORMA_SCIOPERO.test(t))) return true;
   return false;
@@ -81,13 +83,23 @@ export async function eseguiRegole(env, salvaVersione) {
   const { results } = await env.DB.prepare(
     "SELECT * FROM eventi WHERE data >= ? AND stato IN ('verificato','da_verificare','annullato')"
   ).bind(oggi).all();
-  const esito = { nascosti: 0, avvisi: 0, senza_fonte: 0 };
+  const esito = { nascosti: 0, avvisi: 0, avvisi_senza_fonte: 0, senza_fonte: 0 };
   for (const e of results) {
     if (RE_INVITO.test(e.titolo || '')) {
       await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'regole_invito', 'regole');
       await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
         .bind('Nascosto in automatico: il titolo invita ad azioni non pubblicabili (regole ottobre 2026).', e.id).run();
       esito.nascosti++;
+      continue;
+    }
+    if (eAvvisoDisagi(e) && !e.fonte) {
+      // Un avviso di disagi senza fonte giornalistica o istituzionale non si pubblica: torna visibile
+      // appena un moderatore aggiunge la fonte e lo ripristina.
+      const cambi = eConformeAvviso(e) ? { stato: 'nascosto' } : { stato: 'nascosto', tipo: 'altro', titolo: titoloAvviso(e.titolo), organizzatori: [], ora_inizio: null, ora_fine: null };
+      await salvaVersione(env.DB, e, cambi, 'regole_avviso_senza_fonte', 'regole');
+      await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
+        .bind('Nascosto in automatico: avviso di possibili disagi senza fonte giornalistica o istituzionale (regole ottobre 2026). Aggiungi la fonte e ripristina.', e.id).run();
+      esito.avvisi_senza_fonte++;
       continue;
     }
     if (eAvvisoDisagi(e) && !eConformeAvviso(e)) {

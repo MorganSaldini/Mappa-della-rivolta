@@ -95,10 +95,11 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
     // Regole sui contenuti: mette in regola le voci di oggi e future (ogni modifica va in cronologia)
-    ctx.waitUntil(eseguiRegole(env, salvaVersione).then((r) => console.log('Regole', JSON.stringify(r))).catch((e) => console.error('Regole', e)));
-    // Prima le proposte dell'agente di ricerca, poi le decisioni dell'amministratore AI
+    // Prima le regole, poi le proposte dell'agente di ricerca, poi le decisioni dell'amministratore AI (in fila,
+    // così una decisione non trova l'evento appena cambiato dalle regole)
     ctx.waitUntil(
-      importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))
+      eseguiRegole(env, salvaVersione).then((r) => console.log('Regole', JSON.stringify(r))).catch((e) => console.error('Regole', e))
+        .then(() => importaProposte(env)).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))
         .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
         .catch((e) => console.error('Amministratore AI', e))
         // Uscite su Telegram: agli orari scelti (predefiniti 8, 16, 21) pubblica gli eventi verificati in coda
