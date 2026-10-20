@@ -3,7 +3,7 @@
 // Se mancano, le funzioni non fanno nulla e il sito funziona lo stesso.
 import { apriEvento } from './dati.js';
 import { sha256hex, adessoRoma, oggiRoma, aggiungiGiorni } from './lib.js';
-import { gestisciAssistente, pulsantiPostCanale, configuraAssistente } from './assistente.js';
+import { gestisciAssistente, rigaCercaPostCanale, configuraAssistente } from './assistente.js';
 
 const NOMI_TIPI = {
   corteo: '🚩 Corteo', presidio: '✋ Presidio', sciopero_generale: '✊ Sciopero generale',
@@ -98,8 +98,9 @@ export async function pubblicaEvento(env, evento, sitoUrl, { forza = false } = {
   // Non urgente: resta in coda per l'uscita giornaliera
   if (!forza && !(await eUrgente(env, evento.data))) return;
   const res = await chiama(env, 'sendMessage', {
-    text: testoEvento(evento, sitoUrl), parse_mode: 'HTML', disable_web_page_preview: true,
-    reply_markup: await pulsantiPostCanale(env).catch(() => undefined),
+    // Il link all'assistente va nel testo: con i pulsanti sotto il post Telegram nasconde i commenti
+    text: [testoEvento(evento, sitoUrl), await rigaCercaPostCanale(env)].filter(Boolean).join('\n'),
+    parse_mode: 'HTML', disable_web_page_preview: true,
   });
   if (res && res.message_id) {
     await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, evento.id).run();
@@ -141,9 +142,10 @@ export async function pubblicaGruppo(env, eventi, sitoUrl, { forza = false } = {
   }
   if (ordinati.length > 30) righe.push(`… e altri ${ordinati.length - 30} appuntamenti`);
   if (primo.fonte) righe.push('', `🔗 <a href="${h(primo.fonte)}">Fonte</a>`);
+  const cerca = await rigaCercaPostCanale(env);
+  if (cerca) righe.push(cerca);
   const res = await chiama(env, 'sendMessage', {
     text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true,
-    reply_markup: await pulsantiPostCanale(env).catch(() => undefined),
   });
   if (res && res.message_id) {
     for (const e of eventi) {
@@ -225,6 +227,7 @@ export async function attivaWebhook(env, origine) {
   if (!d.ok) return d;
   // Comandi, descrizione e nome del bot per l'assistente personale
   const username = await configuraAssistente(env).catch(() => null);
+  await togliPulsantiPost(env).catch((e) => console.error('Togli pulsanti', e));
   return { ok: true, username };
 }
 
@@ -300,4 +303,31 @@ export async function pubblicaCoda(env, sitoUrl = 'https://mappadellarivolta.org
     await new Promise((r) => setTimeout(r, 1200)); // pausa tra un post e l'altro (limiti di Telegram)
   }
   return { pubblicati, in_coda: results.length };
+}
+
+// Toglie i pulsanti dai post evento già pubblicati, così torna visibile la barra dei commenti.
+// Le chat restano quelle di prima: i post non vengono cancellati né ripubblicati.
+export async function togliPulsantiPost(env) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { sistemati: 0 };
+  const { results } = await env.DB.prepare(
+    'SELECT DISTINCT telegram_msg_id AS id FROM eventi WHERE telegram_msg_id IS NOT NULL LIMIT 200'
+  ).all();
+  let sistemati = 0;
+  for (const r of results) {
+    const d = await chiamaBot(env, 'editMessageReplyMarkup', {
+      chat_id: env.TELEGRAM_CHAT_ID, message_id: r.id, reply_markup: { inline_keyboard: [] },
+    });
+    if (d.ok) sistemati++;
+    await new Promise((x) => setTimeout(x, 300));
+  }
+  return { sistemati, post: results.length };
+}
+
+// Eseguita una sola volta in automatico (dal controllo orario), poi mai più
+export async function togliPulsantiPostUnaVolta(env) {
+  const chiave = 'telegram-togli-pulsanti-v1';
+  if (await env.DB.prepare('SELECT 1 FROM importati WHERE chiave = ?').bind(chiave).first()) return null;
+  const r = await togliPulsantiPost(env);
+  await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
+  return r;
 }

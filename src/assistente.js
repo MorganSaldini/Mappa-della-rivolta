@@ -68,11 +68,11 @@ export function linkAssistente(username, comando = 'menu') {
   return `https://t.me/${username}?start=${comando}`;
 }
 
-// Pulsante da mettere sotto ogni post evento del canale
-export async function pulsantiPostCanale(env) {
+// Link all'assistente da mettere nel TESTO dei post evento del canale.
+// Niente pulsanti sotto i post: Telegram, se un post del canale ha pulsanti, nasconde la barra dei commenti.
+export async function rigaCercaPostCanale(env) {
   const u = await nomeBot(env).catch(() => null);
-  if (!u) return undefined;
-  return { inline_keyboard: [[{ text: '🔎 Cerca mobilitazioni', url: linkAssistente(u) }]] };
+  return u ? `🔎 <a href="${linkAssistente(u)}">Cerca altre mobilitazioni</a>` : '';
 }
 
 function nomeCanale(env) {
