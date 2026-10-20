@@ -272,13 +272,14 @@ const IMPOSTAZIONI_AMMESSE = {
   segnalazioni_per_nascondere: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 50 ? v : null),
   max_invii_ora: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 100 ? v : null),
   giorni_conservazione: (v) => (/^\d+$/.test(v) && +v >= 1 && +v <= 365 ? v : null),
+  giorni_archivio: (v) => (/^\d+$/.test(v) && +v >= 30 && +v <= 3650 ? v : null),
 };
 
 export async function leggiImpostazioni({ env }) {
   const { results } = await env.DB.prepare('SELECT chiave, valore FROM impostazioni').all();
   return json({
     ok: true,
-    impostazioni: Object.fromEntries(results.map((r) => [r.chiave, r.valore])),
+    impostazioni: { giorni_archivio: '365', ...Object.fromEntries(results.map((r) => [r.chiave, r.valore])) },
     telegram_configurato: !!(env.TELEGRAM_BOT_TOKEN && env.TELEGRAM_CHAT_ID),
   });
 }
@@ -366,21 +367,29 @@ export async function pubblicaTrova({ request, env }) {
   return json({ ok: true, fissato: d.fissato });
 }
 
-// Pulizia: cancella gli eventi finiti da più di N giorni (come promesso nella nota privacy)
+// Pulizia (come promesso nella nota privacy):
+//  - dopo "giorni_conservazione" (30): si cancellano i dati collegati agli eventi passati (codici anonimi, conferme,
+//    segnalazioni, proposte di correzione, cronologia) e gli eventi mai verificati, rifiutati o nascosti;
+//  - gli eventi verificati o annullati restano nell'archivio fino a "giorni_archivio" (365) e poi si cancellano.
 export async function pulizia({ env }) {
   return json({ ok: true, cancellati: await eseguiPulizia(env) });
 }
 
 export async function eseguiPulizia(env) {
   const imp = await impostazioni(env.DB);
-  const limite = new Date(Date.now() - imp.giorniConservazione * 86400000).toISOString().slice(0, 10);
+  const giorni = (n) => new Date(Date.now() - n * 86400000).toISOString().slice(0, 10);
+  const limite = giorni(imp.giorniConservazione);
+  const limiteArchivio = giorni(imp.giorniArchivio);
   const vecchi = `SELECT id FROM eventi WHERE data < ?`;
   for (const t of ['problemi', 'conferme', 'modifiche', 'cronologia']) {
     await env.DB.prepare(`DELETE FROM ${t} WHERE evento_id IN (${vecchi})`).bind(limite).run();
   }
-  const r = await env.DB.prepare('DELETE FROM eventi WHERE data < ?').bind(limite).run();
+  const a = await env.DB.prepare("DELETE FROM eventi WHERE data < ? AND stato NOT IN ('verificato', 'annullato')").bind(limite).run();
+  const b = await env.DB.prepare('DELETE FROM eventi WHERE data < ?').bind(limiteArchivio).run();
+  // Nell'archivio non restano note interne (motivi dell'amministratore AI, sospetti)
+  await env.DB.prepare('UPDATE eventi SET note = NULL, sospetto = NULL WHERE data < ? AND (note IS NOT NULL OR sospetto IS NOT NULL)').bind(limite).run();
   await env.DB.prepare('DELETE FROM invii WHERE creato_il < ?').bind(new Date(Date.now() - 2 * 86400000).toISOString()).run();
-  return r.meta?.changes ?? 0;
+  return (a.meta?.changes ?? 0) + (b.meta?.changes ?? 0);
 }
 
 

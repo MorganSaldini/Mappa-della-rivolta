@@ -6,6 +6,7 @@ import * as problema from './problema.js';
 import * as pubblico from './pubblico.js';
 import * as mod from './moderazione.js';
 import * as calendario from './calendario.js';
+import * as archivio from './archivio.js';
 import {
   errore, leggiSessione, stessaOrigine, INTESTAZIONI_SICUREZZA, MAX_CORPO, svuotaCacheEventi,
 } from './lib.js';
@@ -22,6 +23,7 @@ const PUBBLICHE = [
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/conferma$/, pubblico.conferma],
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/modifiche$/, pubblico.proponiModifica],
   ['GET', /^\/api\/calendario\.ics$/, calendario.feed],
+  ['GET', /^\/api\/archivio$/, archivio.elenco],
   ['POST', /^\/api\/moderazione\/accesso$/, mod.accesso],
   ['POST', /^\/api\/moderazione\/esci$/, mod.esci],
   ['GET', /^\/api\/moderazione\/io$/, mod.io],

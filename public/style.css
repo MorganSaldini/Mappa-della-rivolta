@@ -160,6 +160,7 @@ textarea { min-height: 80px; resize: vertical; }
 .piede strong { color: #fff; }
 .piede a { color: #f0c8c4; }
 .piede__agg { color: #a9a6b0; }
+.piede__legale { font-size: .85rem; line-height: 1.5; color: #c4c1cb; }
 
 /* Finestre */
 dialog {

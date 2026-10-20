@@ -86,6 +86,8 @@
     if (href) {
       c.innerHTML = `<strong>Contatti.</strong> Per chiedere la rimozione o la correzione di un contenuto: <a href="${esc(href)}">${esc(CONFIG.contattoRimozioni)}</a>`;
       c.hidden = false;
+      // Lo stesso contatto nelle note legali
+      document.querySelectorAll('.email-legale').forEach((l) => { l.href = href; l.textContent = CONFIG.contattoRimozioni; });
     }
   }
 
@@ -298,6 +300,7 @@
     if (d) {
       eventi = (d.eventi || []).filter((e) => e.data >= oggiRoma());
       if (d.giorni_conservazione) $('#giorni-cons').textContent = d.giorni_conservazione;
+      if (d.giorni_archivio && $('#giorni-arch')) $('#giorni-arch').textContent = d.giorni_archivio;
       $('#ultimo-agg').textContent = d.ultimo_aggiornamento
         ? new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(d.ultimo_aggiornamento.slice(0, 10) + 'T12:00:00Z'))
         : '—';
@@ -1047,6 +1050,11 @@
     await carica();
     const id = new URLSearchParams(location.search).get('e');
     const m = id && markerPerId[id];
+    // Link a un evento già passato (es. da un vecchio messaggio Telegram): si apre nell'archivio
+    if (id && !m && /^\d{4}-\d{2}-\d{2}-/.test(id) && id.slice(0, 10) < oggiRoma()) {
+      location.replace('archivio.html?e=' + encodeURIComponent(id));
+      return;
+    }
     if (m && gruppo) {
       $('#mappa').scrollIntoView({ block: 'center' });
       gruppo.zoomToShowLayer ? gruppo.zoomToShowLayer(m, () => m.openPopup()) : (mappa.setView(m.getLatLng(), 14), m.openPopup());

@@ -40,7 +40,7 @@ export async function onRequestGet({ request, env, ctx }) {
   const ultimo = eventi.reduce((m, e) => (e.aggiornato_il && e.aggiornato_il > m ? e.aggiornato_il : m), '');
   const risposta = json(
     {
-      ok: true, eventi, ultimo_aggiornamento: ultimo || null, giorni_conservazione: imp.giorniConservazione,
+      ok: true, eventi, ultimo_aggiornamento: ultimo || null, giorni_conservazione: imp.giorniConservazione, giorni_archivio: imp.giorniArchivio,
       generato_il: new Date().toISOString(),
     },
     200,

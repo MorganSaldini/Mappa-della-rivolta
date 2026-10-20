@@ -63,6 +63,8 @@ export async function impostazioni(db) {
     segnalazioniPerNascondere: parseInt(o.segnalazioni_per_nascondere || '3', 10),
     maxInviiOra: parseInt(o.max_invii_ora || '5', 10),
     giorniConservazione: parseInt(o.giorni_conservazione || '30', 10),
+    // Quanto restano nell'archivio gli eventi passati verificati o annullati
+    giorniArchivio: Math.max(parseInt(o.giorni_archivio || '365', 10), parseInt(o.giorni_conservazione || '30', 10)),
     // Tetto per tutto il sito: oltre questo numero di nuovi invii in un'ora si passa da soli alla "coda"
     maxInviiOraTotali: parseInt(o.max_invii_ora_totali || '60', 10),
   };

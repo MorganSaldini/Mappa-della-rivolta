@@ -404,7 +404,8 @@
         ${num('conferme_per_verifica', 'Conferme necessarie (con fonte) per la verifica automatica')}
         ${num('segnalazioni_per_nascondere', 'Segnalazioni di problemi che nascondono un evento in automatico')}
         ${num('max_invii_ora', 'Massimo invii all’ora per dispositivo')}
-        ${num('giorni_conservazione', 'Giorni dopo l’evento prima della cancellazione automatica')}
+        ${num('giorni_conservazione', 'Giorni dopo l’evento prima di cancellare i dati collegati e gli eventi non verificati')}
+        ${num('giorni_archivio', 'Giorni in cui gli eventi verificati restano nell’archivio')}
         ${sn('telegram_auto', 'Pubblicare in automatico sul canale Telegram gli eventi verificati?')}
         <label>Orari di uscita su Telegram (ore separate da virgola, es. 8,16,21). Gli eventi verificati escono tutti insieme a questi orari, in ordine di data; quelli di oggi (e di domani, dopo l'ultima uscita) escono subito.<input name="telegram_ore" type="text" inputmode="numeric" value="${esc(i.telegram_ore ?? '8,16,21')}"></label>
         <button class="bottone bottone--pieno" type="submit">Salva impostazioni</button>
@@ -422,7 +423,7 @@
       </div>
       <div class="form-griglia">
         <h2>Pulizia</h2>
-        <p>Ogni notte il sito cancella da solo gli eventi finiti da più di ${esc(i.giorni_conservazione)} giorni. Puoi farlo anche adesso.</p>
+        <p>Ogni ora il sito cancella da solo i dati collegati agli eventi finiti da più di ${esc(i.giorni_conservazione)} giorni e gli eventi mai verificati; quelli verificati restano nell’archivio per ${esc(i.giorni_archivio || '365')} giorni. Puoi farlo anche adesso.</p>
         <button class="bottone bottone--chiaro" type="button" id="pulisci">Pulisci ora</button>
       </div>`;
     $('#form-imp').addEventListener('submit', async (ev) => {
