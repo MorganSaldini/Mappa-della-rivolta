@@ -251,7 +251,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DetX7f0IlhX/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "da_verificare",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-20T23:35:27",
       "gruppo": null
     },
@@ -989,7 +989,7 @@
     {
       "id": "2026-10-21-palma-campania-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori",
+      "titolo": "Presidio degli autotrasportatori",
       "data": "2026-10-21",
       "ora_inizio": null,
       "ora_fine": null,
@@ -1004,13 +1004,13 @@
       "fonte": "https://napoli.corriere.it/notizie/cronaca/26_ottobre_19/in-campania-sciopero-degli-autotrasportatori-tir-fermi-in-autostrada-lunghe-code-di-auto-per-l-ingresso-a-napoli-147fc89d-34e0-4bc1-aa16-ab95546d9xlk_amp.shtml",
       "stato": "verificato",
       "conferme": 3,
-      "aggiornato_il": "2026-10-20T09:57:18",
+      "aggiornato_il": "2026-10-20T23:50:42",
       "gruppo": "g-5f2d21379043"
     },
     {
       "id": "2026-10-21-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-21",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -1025,13 +1025,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:30",
+      "aggiornato_il": "2026-10-20T23:50:40",
       "gruppo": "g-35c399ac6150"
     },
     {
       "id": "2026-10-21-lucera-presidio-01",
       "tipo": "presidio",
-      "titolo": "PRESIDIO AGRICOLTORI E AUTOTRASPORTATORI: PRESIDIO IN MODO STABILE E PERMANENTE",
+      "titolo": "Presidio di agricoltori e autotrasportatori",
       "data": "2026-10-21",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -1048,7 +1048,7 @@
       "fonte": "https://www.foggiatoday.it/cronaca/protesta-autotrasporto-mattino-5-statale-17-perrotti-michele.html",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T17:45:40",
+      "aggiornato_il": "2026-10-20T23:50:35",
       "gruppo": "g-26bd907f806b"
     },
     {
@@ -1096,7 +1096,7 @@
     {
       "id": "2026-10-21-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-21",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -1111,13 +1111,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:30",
+      "aggiornato_il": "2026-10-20T23:50:43",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
       "id": "2026-10-21-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-21",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -1134,7 +1134,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:30",
+      "aggiornato_il": "2026-10-20T23:50:35",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -1186,8 +1186,8 @@
     },
     {
       "id": "2026-10-21-conegliano-presidio-01",
-      "tipo": "presidio",
-      "titolo": "corteo contro scuole e carovita",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita e per la scuola",
       "data": "2026-10-21",
       "ora_inizio": "15:00",
       "ora_fine": "00:00",
@@ -1202,13 +1202,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T21:11:33",
+      "aggiornato_il": "2026-10-20T23:50:45",
       "gruppo": "g-94b78ef4afeb"
     },
     {
       "id": "2026-10-21-milano-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Assemblea Aperta (CSS Riot Maker e Cantiere Milano",
+      "titolo": "Assemblea aperta (CSS Riot Maker e Cantiere Milano)",
       "data": "2026-10-21",
       "ora_inizio": "15:30",
       "ora_fine": "18:00",
@@ -1226,7 +1226,7 @@
       "fonte": "https://www.instagram.com/p/DepkKezRxeZ",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T17:20:27",
+      "aggiornato_il": "2026-10-20T23:50:33",
       "gruppo": null
     },
     {
@@ -1273,6 +1273,29 @@
       "stato": "verificato",
       "conferme": 6,
       "aggiornato_il": "2026-10-18T18:38:04",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-21-mirandola-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Lotte studentesche in Francia, Spagna e Italia",
+      "data": "2026-10-21",
+      "ora_inizio": "18:00",
+      "ora_fine": "20:00",
+      "comune": "Mirandola",
+      "provincia": "MO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Scrivete a https://www.instagram.com/pcr.modena/ x più info",
+      "lat": 44.88672,
+      "lng": 11.06722,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/pcr.modena/",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-20T23:46:04",
       "gruppo": null
     },
     {
@@ -1367,7 +1390,7 @@
     {
       "id": "2026-10-22-rimini-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
-      "titolo": "SCIOPERO PESCHERECCI RIVIERA",
+      "titolo": "Sciopero dei pescherecci della Riviera",
       "data": "2026-10-22",
       "ora_inizio": null,
       "ora_fine": null,
@@ -1384,7 +1407,7 @@
       "fonte": "https://www.corriereromagna.it/rimini/rimini-pescherecci-giovedi-scatta-lo-sciopero-700mila-euro-al-mese-per-il-gasolio-FJ2290896",
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T13:09:28",
+      "aggiornato_il": "2026-10-20T23:50:32",
       "gruppo": null
     },
     {
@@ -1432,7 +1455,7 @@
     {
       "id": "2026-10-22-torino-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "OCCUPIAMOCI DELL'UNIVERSITÀ: assemblea di polo campus einaudi",
+      "titolo": "Assemblea di polo al campus Einaudi",
       "data": "2026-10-22",
       "ora_inizio": null,
       "ora_fine": null,
@@ -1450,13 +1473,13 @@
       "fonte": "https://www.instagram.com/p/DeuK4fJCFuY",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T21:36:47",
+      "aggiornato_il": "2026-10-20T23:50:26",
       "gruppo": null
     },
     {
       "id": "2026-10-22-palma-campania-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori",
+      "titolo": "Presidio degli autotrasportatori",
       "data": "2026-10-22",
       "ora_inizio": null,
       "ora_fine": null,
@@ -1471,7 +1494,7 @@
       "fonte": "https://napoli.corriere.it/notizie/cronaca/26_ottobre_19/in-campania-sciopero-degli-autotrasportatori-tir-fermi-in-autostrada-lunghe-code-di-auto-per-l-ingresso-a-napoli-147fc89d-34e0-4bc1-aa16-ab95546d9xlk_amp.shtml",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T09:57:19",
+      "aggiornato_il": "2026-10-20T23:50:43",
       "gruppo": "g-5f2d21379043"
     },
     {
@@ -1498,7 +1521,7 @@
     {
       "id": "2026-10-22-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-22",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -1513,13 +1536,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:31",
+      "aggiornato_il": "2026-10-20T23:50:40",
       "gruppo": "g-35c399ac6150"
     },
     {
       "id": "2026-10-22-macerata-sciopero_generale-01",
       "tipo": "sciopero_generale",
-      "titolo": "Generazione fuoriclasse",
+      "titolo": "Sciopero studentesco \"Generazione fuoriclasse\"",
       "data": "2026-10-22",
       "ora_inizio": "08:00",
       "ora_fine": "12:00",
@@ -1534,13 +1557,13 @@
       "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
       "stato": "verificato",
       "conferme": 4,
-      "aggiornato_il": "2026-10-20T09:57:50",
+      "aggiornato_il": "2026-10-20T23:50:33",
       "gruppo": null
     },
     {
       "id": "2026-10-22-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-22",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -1555,7 +1578,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:31",
+      "aggiornato_il": "2026-10-20T23:50:43",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
@@ -1582,7 +1605,7 @@
     {
       "id": "2026-10-22-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-22",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -1599,7 +1622,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:30",
+      "aggiornato_il": "2026-10-20T23:50:36",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -1648,8 +1671,8 @@
     },
     {
       "id": "2026-10-22-conegliano-presidio-01",
-      "tipo": "presidio",
-      "titolo": "corteo contro scuole e carovita",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita e per la scuola",
       "data": "2026-10-22",
       "ora_inizio": "15:00",
       "ora_fine": "00:00",
@@ -1664,7 +1687,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T21:11:33",
+      "aggiornato_il": "2026-10-20T23:50:46",
       "gruppo": "g-94b78ef4afeb"
     },
     {
@@ -1686,7 +1709,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeuDMWDudmw/?mdxt=MWliMnNsNm9jOGQ2cQ==",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-20T20:48:31",
       "gruppo": null
     },
@@ -1873,7 +1896,7 @@
     {
       "id": "2026-10-23-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-23",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -1888,7 +1911,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:32",
+      "aggiornato_il": "2026-10-20T23:50:40",
       "gruppo": "g-35c399ac6150"
     },
     {
@@ -1980,7 +2003,7 @@
     {
       "id": "2026-10-23-manduria-corteo-01",
       "tipo": "corteo",
-      "titolo": "Caro Carburanti e Nei supermercati non c'è cibo",
+      "titolo": "Corteo contro il caro carburanti",
       "data": "2026-10-23",
       "ora_inizio": "09:00",
       "ora_fine": "13:10",
@@ -1995,13 +2018,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T14:56:12",
+      "aggiornato_il": "2026-10-20T23:50:28",
       "gruppo": "g-969474a252c2"
     },
     {
       "id": "2026-10-23-sava-corteo-01",
       "tipo": "corteo",
-      "titolo": "Caro Carburanti e Nei supermercati non c'è cibo",
+      "titolo": "Corteo contro il caro carburanti",
       "data": "2026-10-23",
       "ora_inizio": "09:00",
       "ora_fine": "13:10",
@@ -2016,13 +2039,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T14:56:12",
+      "aggiornato_il": "2026-10-20T23:50:28",
       "gruppo": "g-969474a252c2"
     },
     {
       "id": "2026-10-23-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-23",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -2037,13 +2060,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:32",
+      "aggiornato_il": "2026-10-20T23:50:44",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
       "id": "2026-10-23-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-23",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -2060,7 +2083,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:31",
+      "aggiornato_il": "2026-10-20T23:50:36",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -2133,8 +2156,8 @@
     },
     {
       "id": "2026-10-23-conegliano-presidio-01",
-      "tipo": "presidio",
-      "titolo": "corteo contro scuole e carovita",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita e per la scuola",
       "data": "2026-10-23",
       "ora_inizio": "15:00",
       "ora_fine": "00:00",
@@ -2149,7 +2172,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T21:11:33",
+      "aggiornato_il": "2026-10-20T23:50:46",
       "gruppo": "g-94b78ef4afeb"
     },
     {
@@ -2176,7 +2199,7 @@
     {
       "id": "2026-10-23-barletta-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Organizziamoci contro carovita, guerra e scuola-caserma!",
+      "titolo": "Assemblea contro carovita, guerra e \"scuola-caserma\"",
       "data": "2026-10-23",
       "ora_inizio": "17:00",
       "ora_fine": null,
@@ -2193,7 +2216,7 @@
       "fonte": "https://www.instagram.com/p/DepFJwuMwrp/?cplk=MWFvbnlpZWM5ZHJ2bg==",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T18:09:37",
+      "aggiornato_il": "2026-10-20T23:50:25",
       "gruppo": null
     },
     {
@@ -2288,7 +2311,7 @@
     {
       "id": "2026-10-24-torino-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Colazione contro guerra e datacenter (e poi si va al corteo)",
+      "titolo": "Colazione contro guerra e datacenter, prima del corteo",
       "data": "2026-10-24",
       "ora_inizio": null,
       "ora_fine": "14:30",
@@ -2306,7 +2329,7 @@
       "fonte": "https://gancio.cisti.org/event/colazione-contro-guerra-e-datacenter",
       "stato": "verificato",
       "conferme": 2,
-      "aggiornato_il": "2026-10-20T09:58:59",
+      "aggiornato_il": "2026-10-20T23:50:26",
       "gruppo": null
     },
     {
@@ -2333,7 +2356,7 @@
     {
       "id": "2026-10-24-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-24",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -2348,7 +2371,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:32",
+      "aggiornato_il": "2026-10-20T23:50:41",
       "gruppo": "g-35c399ac6150"
     },
     {
@@ -2419,7 +2442,7 @@
     {
       "id": "2026-10-24-manduria-corteo-01",
       "tipo": "corteo",
-      "titolo": "Caro Carburanti e Nei supermercati non c'è cibo",
+      "titolo": "Corteo contro il caro carburanti",
       "data": "2026-10-24",
       "ora_inizio": "09:00",
       "ora_fine": "13:10",
@@ -2434,13 +2457,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T14:56:13",
+      "aggiornato_il": "2026-10-20T23:50:29",
       "gruppo": "g-969474a252c2"
     },
     {
       "id": "2026-10-24-sava-corteo-01",
       "tipo": "corteo",
-      "titolo": "Caro Carburanti e Nei supermercati non c'è cibo",
+      "titolo": "Corteo contro il caro carburanti",
       "data": "2026-10-24",
       "ora_inizio": "09:00",
       "ora_fine": "13:10",
@@ -2455,13 +2478,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T14:56:13",
+      "aggiornato_il": "2026-10-20T23:50:29",
       "gruppo": "g-969474a252c2"
     },
     {
       "id": "2026-10-24-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-24",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -2476,13 +2499,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:32",
+      "aggiornato_il": "2026-10-20T23:50:44",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
       "id": "2026-10-24-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-24",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -2499,13 +2522,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:32",
+      "aggiornato_il": "2026-10-20T23:50:37",
       "gruppo": "g-ec25cb5bf775"
     },
     {
       "id": "2026-10-24-pesaro-presidio-01",
       "tipo": "presidio",
-      "titolo": "Quanto ci costi Giorgia! Manifestazione contro caro vita",
+      "titolo": "Manifestazione contro il caro vita",
       "data": "2026-10-24",
       "ora_inizio": "10:30",
       "ora_fine": "14:00",
@@ -2522,13 +2545,13 @@
       "fonte": "https://www.instagram.com/p/DerLd3HN45V/?vrfl=MXhjbm94cXJ2M2YyYw==",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T17:50:55",
+      "aggiornato_il": "2026-10-20T23:50:27",
       "gruppo": null
     },
     {
       "id": "2026-10-24-castel-volturno-corteo-01",
       "tipo": "corteo",
-      "titolo": "NO CPR, NÉ QUI NÉ ALTROVE",
+      "titolo": "Corteo contro i CPR (\"Né qui né altrove\")",
       "data": "2026-10-24",
       "ora_inizio": "13:00",
       "ora_fine": null,
@@ -2545,7 +2568,7 @@
       "fonte": "https://www.instagram.com/p/DeE4KTqsImm/?vrfl=NDN5Y21uczV3b2ht",
       "stato": "verificato",
       "conferme": 17,
-      "aggiornato_il": "2026-10-17T14:46:40",
+      "aggiornato_il": "2026-10-20T23:50:33",
       "gruppo": null
     },
     {
@@ -2572,7 +2595,7 @@
     {
       "id": "2026-10-24-alba-corteo-01",
       "tipo": "corteo",
-      "titolo": "Dignita e diritti per tutt*-Contro schiavitù e sfruttamento lavorativo",
+      "titolo": "Corteo per dignità e diritti, contro sfruttamento lavorativo",
       "data": "2026-10-24",
       "ora_inizio": "14:00",
       "ora_fine": null,
@@ -2592,7 +2615,7 @@
       "fonte": "https://www.gazzettadalba.it/2026/10/contro-la-schiavitu-e-lo-sfruttamento-nelle-colline-di-langhe-e-roero-in-corteo-il-24-ottobre-per-sollevare-il-velo-del-silenzio/",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T21:10:26",
+      "aggiornato_il": "2026-10-20T23:50:34",
       "gruppo": null
     },
     {
@@ -2656,7 +2679,7 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "da_verificare",
-      "conferme": 9,
+      "conferme": 10,
       "aggiornato_il": "2026-10-20T10:01:37",
       "gruppo": null
     },
@@ -2745,7 +2768,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T16:39:16",
+      "aggiornato_il": "2026-10-20T23:50:47",
       "gruppo": null
     },
     {
@@ -2793,7 +2816,7 @@
     {
       "id": "2026-10-24-padova-corteo-01",
       "tipo": "corteo",
-      "titolo": "CORTEO MOVIMENTO 17 OTTOBRE",
+      "titolo": "Corteo del Movimento 17 ottobre",
       "data": "2026-10-24",
       "ora_inizio": "15:00",
       "ora_fine": "18:00",
@@ -2810,7 +2833,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 5,
-      "aggiornato_il": "2026-10-20T17:10:19",
+      "aggiornato_il": "2026-10-20T23:50:32",
       "gruppo": null
     },
     {
@@ -2862,8 +2885,8 @@
     },
     {
       "id": "2026-10-24-conegliano-presidio-01",
-      "tipo": "presidio",
-      "titolo": "corteo contro scuole e carovita",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita e per la scuola",
       "data": "2026-10-24",
       "ora_inizio": "15:00",
       "ora_fine": "00:00",
@@ -2878,7 +2901,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T21:11:33",
+      "aggiornato_il": "2026-10-20T23:50:46",
       "gruppo": "g-94b78ef4afeb"
     },
     {
@@ -2907,7 +2930,7 @@
     {
       "id": "2026-10-24-torino-corteo-01",
       "tipo": "corteo",
-      "titolo": "TORINO CONTRO IL RIARMO",
+      "titolo": "Corteo contro il riarmo",
       "data": "2026-10-24",
       "ora_inizio": "15:00",
       "ora_fine": "18:00",
@@ -2926,13 +2949,13 @@
       "fonte": "https://www.instagram.com/p/DeJnI2jDumY/?utm_source=ig_web_copy_link&srtk=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
       "conferme": 33,
-      "aggiornato_il": "2026-10-17T03:36:49",
+      "aggiornato_il": "2026-10-20T23:50:29",
       "gruppo": null
     },
     {
       "id": "2026-10-24-montagnana-corteo-01",
       "tipo": "corteo",
-      "titolo": "MANUFESTAZIONE CONTRO IL CARO VITA",
+      "titolo": "Manifestazione contro il caro vita",
       "data": "2026-10-24",
       "ora_inizio": "15:00",
       "ora_fine": "19:00",
@@ -2949,13 +2972,13 @@
       "fonte": "https://whatsapp.com/channel/0029Vb8waEBA89MlAJZZr20W",
       "stato": "verificato",
       "conferme": 3,
-      "aggiornato_il": "2026-10-20T19:29:35",
+      "aggiornato_il": "2026-10-20T23:50:30",
       "gruppo": null
     },
     {
       "id": "2026-10-24-palermo-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Assemblea Pubblica di OSA Palermo: Organizziamo lo sciopero del 30 Ottobre nelle scuole.",
+      "titolo": "Assemblea pubblica di OSA Palermo verso lo sciopero del 30 ottobre nelle scuole",
       "data": "2026-10-24",
       "ora_inizio": "15:30",
       "ora_fine": null,
@@ -2972,7 +2995,7 @@
       "fonte": "https://www.instagram.com/p/Detc_nfNLXs/?obrf=amU4Y3czeGNscG52",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T11:46:22",
+      "aggiornato_il": "2026-10-20T23:50:25",
       "gruppo": null
     },
     {
@@ -3026,7 +3049,7 @@
     {
       "id": "2026-10-24-cagliari-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Organizzazione per il 30 Ottobre",
+      "titolo": "Assemblea studentesca verso il 30 ottobre",
       "data": "2026-10-24",
       "ora_inizio": "16:30",
       "ora_fine": null,
@@ -3043,7 +3066,7 @@
       "fonte": "https://www.instagram.com/p/Det4xartYho/",
       "stato": "da_verificare",
       "conferme": 2,
-      "aggiornato_il": "2026-10-20T18:20:55",
+      "aggiornato_il": "2026-10-20T23:50:26",
       "gruppo": null
     },
     {
@@ -3093,7 +3116,7 @@
     {
       "id": "2026-10-24-agrigento-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Assemblea permanente verso lo scioperto generale",
+      "titolo": "Assemblea permanente verso lo sciopero generale",
       "data": "2026-10-24",
       "ora_inizio": "18:00",
       "ora_fine": null,
@@ -3110,7 +3133,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T09:35:21",
+      "aggiornato_il": "2026-10-20T23:50:34",
       "gruppo": null
     },
     {
@@ -3225,7 +3248,7 @@
     {
       "id": "2026-10-25-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori, autotrasporti",
+      "titolo": "Presidio di agricoltori e autotrasportatori",
       "data": "2026-10-25",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -3240,13 +3263,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:42",
       "gruppo": "g-35c399ac6150"
     },
     {
       "id": "2026-10-25-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-25",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -3261,7 +3284,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:44",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
@@ -3288,7 +3311,7 @@
     {
       "id": "2026-10-25-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-25",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -3305,7 +3328,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:37",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -3425,7 +3448,7 @@
     {
       "id": "2026-10-26-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-26",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -3440,13 +3463,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:41",
       "gruppo": "g-35c399ac6150"
     },
     {
       "id": "2026-10-26-palermo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Autotrasportatori - Caro vita caro benzina",
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina",
       "data": "2026-10-26",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -3461,13 +3484,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:45",
       "gruppo": "g-3b6c3b667d8c"
     },
     {
       "id": "2026-10-26-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-26",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -3484,13 +3507,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:33",
+      "aggiornato_il": "2026-10-20T23:50:37",
       "gruppo": "g-ec25cb5bf775"
     },
     {
       "id": "2026-10-26-genova-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "ASSEMBLEA VERSO LO SCIOPERO GENERALE DEL 30 OTTOBRE",
+      "titolo": "Assemblea verso lo sciopero generale del 30 ottobre",
       "data": "2026-10-26",
       "ora_inizio": "17:30",
       "ora_fine": null,
@@ -3511,7 +3534,7 @@
       "fonte": "https://www.instagram.com/p/DetwWdHAclf/?obrf=Ym9va3kyY2RwcXNh",
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-20T16:58:05",
+      "aggiornato_il": "2026-10-20T23:50:32",
       "gruppo": null
     },
     {
@@ -3584,7 +3607,7 @@
     {
       "id": "2026-10-27-san-marco-argentano-presidio-01",
       "tipo": "presidio",
-      "titolo": "Agricoltori",
+      "titolo": "Presidio degli agricoltori",
       "data": "2026-10-27",
       "ora_inizio": "00:00",
       "ora_fine": null,
@@ -3599,7 +3622,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:34",
+      "aggiornato_il": "2026-10-20T23:50:41",
       "gruppo": "g-35c399ac6150"
     },
     {
@@ -3628,7 +3651,7 @@
     {
       "id": "2026-10-27-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-27",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -3645,7 +3668,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:34",
+      "aggiornato_il": "2026-10-20T23:50:38",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -3766,7 +3789,7 @@
     {
       "id": "2026-10-28-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-28",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -3783,7 +3806,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:34",
+      "aggiornato_il": "2026-10-20T23:50:38",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -3880,7 +3903,7 @@
     {
       "id": "2026-10-29-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-29",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -3897,7 +3920,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:34",
+      "aggiornato_il": "2026-10-20T23:50:38",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -3970,7 +3993,7 @@
     },
     {
       "id": "2026-10-30-sassari-sciopero_generale-01",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Corteo contro il caro vita",
       "data": "2026-10-30",
       "ora_inizio": null,
@@ -3986,7 +4009,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 5,
-      "aggiornato_il": "2026-10-20T23:35:35",
+      "aggiornato_il": "2026-10-20T23:50:47",
       "gruppo": null
     },
     {
@@ -4709,7 +4732,7 @@
     {
       "id": "2026-10-30-padova-corteo-01",
       "tipo": "sciopero_generale",
-      "titolo": "Sciopero Generale",
+      "titolo": "Sciopero generale",
       "data": "2026-10-30",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -4721,13 +4744,12 @@
       "lng": 11.8805,
       "posizione_approssimativa": 0,
       "organizzatori": [
-        "Union Sindacale di Base",
-        "Federazione di Padova"
+        "USB Padova"
       ],
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 10,
-      "aggiornato_il": "2026-10-20T23:35:35",
+      "aggiornato_il": "2026-10-20T23:50:35",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
@@ -4872,7 +4894,7 @@
     {
       "id": "2026-10-30-la-spezia-sciopero_generale-01",
       "tipo": "sciopero_generale",
-      "titolo": "Noi la guerra non la paghiamo",
+      "titolo": "Sciopero generale contro la guerra (\"Noi la guerra non la paghiamo\")",
       "data": "2026-10-30",
       "ora_inizio": "09:30",
       "ora_fine": null,
@@ -4890,7 +4912,7 @@
       "fonte": "https://www.facebook.com/share/p/1Ca4vYchEX/?mibextid=wwXIfr",
       "stato": "da_verificare",
       "conferme": 2,
-      "aggiornato_il": "2026-10-20T19:51:33",
+      "aggiornato_il": "2026-10-20T23:50:28",
       "gruppo": null
     },
     {
@@ -4943,7 +4965,7 @@
     {
       "id": "2026-10-30-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-30",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -4960,13 +4982,13 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:35",
+      "aggiornato_il": "2026-10-20T23:50:39",
       "gruppo": "g-ec25cb5bf775"
     },
     {
       "id": "2026-10-30-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
-      "titolo": "CONTRO GUERRA E CARO VITA",
+      "titolo": "Sciopero generale contro guerra e caro vita",
       "data": "2026-10-30",
       "ora_inizio": "10:00",
       "ora_fine": "23:59",
@@ -4983,7 +5005,7 @@
       "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
       "stato": "verificato",
       "conferme": 22,
-      "aggiornato_il": "2026-10-20T02:25:49",
+      "aggiornato_il": "2026-10-20T23:50:30",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
@@ -5010,7 +5032,7 @@
     {
       "id": "2026-10-30-ancona-sciopero_generale-01",
       "tipo": "sciopero_generale",
-      "titolo": "NO AL CAROVITA DI GUERRA",
+      "titolo": "Sciopero generale contro il carovita di guerra",
       "data": "2026-10-30",
       "ora_inizio": "10:30",
       "ora_fine": null,
@@ -5027,13 +5049,13 @@
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
       "conferme": 18,
-      "aggiornato_il": "2026-10-17T12:46:54",
+      "aggiornato_il": "2026-10-20T23:50:31",
       "gruppo": null
     },
     {
       "id": "2026-10-30-pescara-corteo-01",
       "tipo": "corteo",
-      "titolo": "NO AL CAROVITA",
+      "titolo": "Corteo contro il carovita",
       "data": "2026-10-30",
       "ora_inizio": "15:30",
       "ora_fine": null,
@@ -5048,7 +5070,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 10,
-      "aggiornato_il": "2026-10-20T23:35:35",
+      "aggiornato_il": "2026-10-20T23:50:31",
       "gruppo": null
     },
     {
@@ -5100,7 +5122,7 @@
     {
       "id": "2026-10-31-afragola-presidio-01",
       "tipo": "presidio",
-      "titolo": "Caro vita",
+      "titolo": "Presidio contro il caro vita",
       "data": "2026-10-31",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -5117,7 +5139,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T23:35:36",
+      "aggiornato_il": "2026-10-20T23:50:39",
       "gruppo": "g-ec25cb5bf775"
     },
     {
@@ -5882,7 +5904,7 @@
     {
       "id": "2026-11-25-torino-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Spiegazione tecnica di piazza non violenta \"CLOWN ARMY\"!",
+      "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
       "data": "2026-11-25",
       "ora_inizio": "20:30",
       "ora_fine": "22:30",
@@ -5899,7 +5921,7 @@
       "fonte": "https://gancio.cisti.org/event/arruolamento-clown-army-2",
       "stato": "verificato",
       "conferme": 2,
-      "aggiornato_il": "2026-10-20T10:03:29",
+      "aggiornato_il": "2026-10-20T23:50:27",
       "gruppo": null
     },
     {
@@ -6072,8 +6094,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-20T23:38:47",
+  "ultimo_aggiornamento": "2026-10-20T23:50:47",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-20T21:45:50Z"
+  "copia_del": "2026-10-20T21:56:47Z"
 }
