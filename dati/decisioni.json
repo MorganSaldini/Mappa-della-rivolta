@@ -1,1 +1,658 @@
-[]
+[
+  {
+    "id": "2026-10-23-barletta-assemblea-01",
+    "aggiornato_il": "2026-10-20T18:09:37",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea contro carovita, guerra e \"scuola-caserma\""
+    },
+    "motivo": "Titolo reso descrittivo: tolta la chiamata \"organizziamoci\".",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-palermo-assemblea-01",
+    "aggiornato_il": "2026-10-20T11:46:22",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea pubblica di OSA Palermo verso lo sciopero del 30 ottobre nelle scuole"
+    },
+    "motivo": "Titolo reso descrittivo: tolta la chiamata \"organizziamo\".",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-torino-assemblea-01",
+    "aggiornato_il": "2026-10-20T21:36:47",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea di polo al campus Einaudi"
+    },
+    "motivo": "Tolto lo slogan \"Occupiamoci dell'università\", ambiguo rispetto alle occupazioni.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-cagliari-assemblea-01",
+    "aggiornato_il": "2026-10-20T18:20:55",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea studentesca verso il 30 ottobre"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-torino-assemblea-01",
+    "aggiornato_il": "2026-10-20T09:58:59",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Colazione contro guerra e datacenter, prima del corteo"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-pesaro-presidio-01",
+    "aggiornato_il": "2026-10-20T17:50:55",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Manifestazione contro il caro vita"
+    },
+    "motivo": "Tolto lo slogan rivolto a una persona riconoscibile.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-25-torino-assemblea-01",
+    "aggiornato_il": "2026-10-20T10:03:29",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza"
+    },
+    "motivo": "Titolo reso neutro e senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-la-spezia-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T19:51:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale contro la guerra (\"Noi la guerra non la paghiamo\")"
+    },
+    "motivo": "Slogan messo tra virgolette dopo la descrizione.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-manduria-corteo-01",
+    "aggiornato_il": "2026-10-20T14:56:12",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro carburanti"
+    },
+    "motivo": "Tolta un'affermazione allarmante non verificata (\"nei supermercati non c'è cibo\").",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-sava-corteo-01",
+    "aggiornato_il": "2026-10-20T14:56:12",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro carburanti"
+    },
+    "motivo": "Tolta un'affermazione allarmante non verificata (\"nei supermercati non c'è cibo\").",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-manduria-corteo-01",
+    "aggiornato_il": "2026-10-20T14:56:13",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro carburanti"
+    },
+    "motivo": "Tolta un'affermazione allarmante non verificata (\"nei supermercati non c'è cibo\").",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-sava-corteo-01",
+    "aggiornato_il": "2026-10-20T14:56:13",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro carburanti"
+    },
+    "motivo": "Tolta un'affermazione allarmante non verificata (\"nei supermercati non c'è cibo\").",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-torino-corteo-01",
+    "aggiornato_il": "2026-10-17T03:36:49",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il riarmo"
+    },
+    "motivo": "Titolo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-montagnana-corteo-01",
+    "aggiornato_il": "2026-10-20T19:29:35",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Manifestazione contro il caro vita"
+    },
+    "motivo": "Titolo senza maiuscolo e refuso corretto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-firenze-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T02:25:49",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale contro guerra e caro vita"
+    },
+    "motivo": "Titolo descrittivo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-ancona-sciopero_generale-01",
+    "aggiornato_il": "2026-10-17T12:46:54",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale contro il carovita di guerra"
+    },
+    "motivo": "Titolo descrittivo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-pescara-corteo-01",
+    "aggiornato_il": "2026-10-20T23:35:35",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il carovita"
+    },
+    "motivo": "Titolo descrittivo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-padova-corteo-01",
+    "aggiornato_il": "2026-10-20T17:10:19",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo del Movimento 17 ottobre"
+    },
+    "motivo": "Titolo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-genova-assemblea-01",
+    "aggiornato_il": "2026-10-20T16:58:05",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea verso lo sciopero generale del 30 ottobre"
+    },
+    "motivo": "Titolo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-rimini-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T13:09:28",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero dei pescherecci della Riviera"
+    },
+    "motivo": "Titolo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-castel-volturno-corteo-01",
+    "aggiornato_il": "2026-10-17T14:46:40",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro i CPR (\"Né qui né altrove\")"
+    },
+    "motivo": "Titolo descrittivo, slogan tra virgolette.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-milano-assemblea-01",
+    "aggiornato_il": "2026-10-20T17:20:27",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea aperta (CSS Riot Maker e Cantiere Milano)"
+    },
+    "motivo": "Parentesi chiusa.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-macerata-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T09:57:50",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero studentesco \"Generazione fuoriclasse\""
+    },
+    "motivo": "Titolo descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-alba-corteo-01",
+    "aggiornato_il": "2026-10-20T21:10:26",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo per dignità e diritti, contro sfruttamento lavorativo"
+    },
+    "motivo": "Titolo ripulito.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-agrigento-assemblea-01",
+    "aggiornato_il": "2026-10-20T09:35:21",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea permanente verso lo sciopero generale"
+    },
+    "motivo": "Refuso corretto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-padova-corteo-01",
+    "aggiornato_il": "2026-10-20T23:35:35",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale",
+      "organizzatori": [
+        "USB Padova"
+      ]
+    },
+    "motivo": "Sigla scritta correttamente.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-lucera-presidio-01",
+    "aggiornato_il": "2026-10-20T17:45:40",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio di agricoltori e autotrasportatori"
+    },
+    "motivo": "Titolo senza maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:30",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:30",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-27-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:34",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-28-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:34",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-29-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:34",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:35",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-31-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:36",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio contro il caro vita"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:30",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-27-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:34",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli agricoltori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-san-marco-argentano-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio di agricoltori e autotrasportatori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-palma-campania-presidio-01",
+    "aggiornato_il": "2026-10-20T09:57:18",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-palma-campania-presidio-01",
+    "aggiornato_il": "2026-10-20T09:57:19",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:30",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori contro caro vita e caro benzina"
+    },
+    "motivo": "Titolo reso descrittivo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-conegliano-presidio-01",
+    "aggiornato_il": "2026-10-20T21:11:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il carovita e per la scuola",
+      "tipo": "corteo"
+    },
+    "motivo": "È un corteo, non un presidio; titolo chiarito.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-conegliano-presidio-01",
+    "aggiornato_il": "2026-10-20T21:11:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il carovita e per la scuola",
+      "tipo": "corteo"
+    },
+    "motivo": "È un corteo, non un presidio; titolo chiarito.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-conegliano-presidio-01",
+    "aggiornato_il": "2026-10-20T21:11:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il carovita e per la scuola",
+      "tipo": "corteo"
+    },
+    "motivo": "È un corteo, non un presidio; titolo chiarito.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-conegliano-presidio-01",
+    "aggiornato_il": "2026-10-20T21:11:33",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il carovita e per la scuola",
+      "tipo": "corteo"
+    },
+    "motivo": "È un corteo, non un presidio; titolo chiarito.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-sassari-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T23:35:35",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "motivo": "Il titolo indica un corteo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-castelvetrano-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T16:39:16",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "motivo": "Corteo senza sciopero proclamato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  }
+]
