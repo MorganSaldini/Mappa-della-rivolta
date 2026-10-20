@@ -1,10 +1,10 @@
 import { COL, W, H, pathItalia, xy, cssBase, rendi } from './motore.mjs';
 const S = [
- { g: 30, m: 'OTT', sig: 'USB · USI-CIT', extra: 'Con gli studenti: Cambiare Rotta, OSA e collettivi in Piemonte', citta: '18 città, da Torino a Pozzallo: Roma · Milano · Firenze · Napoli · Bergamo · Cagliari…', n: 27,
-   p: [['sciopero_generale',41.903,12.496],['sciopero_categoria',41.903,12.496],['sciopero_generale',45.072,7.685],['sciopero_generale',45.068,7.695],['sciopero_generale',45.072,7.699],['sciopero_generale',45.07,7.689],['sciopero_generale',45.039,7.674],['sciopero_generale',45.03,7.557],['sciopero_generale',45.067,7.592],['sciopero_generale',45.064,7.658],['sciopero_generale',45.063,7.685],['sciopero_generale',45.328,8.424],['sciopero_generale',45.444,8.625],['sciopero_generale',45.444,8.62],['sciopero_generale',44.923,8.618],['sciopero_generale',45.464,9.191],['sciopero_generale',43.77,11.256],['sciopero_generale',44.796,10.318],['corteo',45.417,11.88],['sciopero_generale',43.684,10.393],['corteo',43.547,10.311],['corteo',40.852,14.268],['sciopero_generale',43.543,10.314],['sciopero_generale',39.219,9.122],['sciopero_generale',43.603,13.507],['sciopero_generale',45.695,9.67],['sciopero_generale',36.723,14.838]] },
- { g: 20, m: 'NOV', sig: 'CGIL', extra: 'Lo stesso giorno: sciopero di treni e trasporto locale (CUB Trasporti, SGB Ferrovie)', citta: 'Roma · Milano · Torino', n: 4,
+ { g: 30, m: 'OTT', tipo: 'Sciopero generale', sig: 'USB · USI-CIT', extra: 'Con gli studenti: Cambiare Rotta, OSA e collettivi in Piemonte', citta: '22 città, da Trieste a Pozzallo: Roma · Milano · Torino · Napoli · Palermo · Cagliari…', n: 31,
+   p: [['sciopero_generale',41.9028,12.4964],['sciopero_categoria',41.9028,12.4964],['sciopero_generale',45.07159,7.68468],['sciopero_generale',45.06835,7.69497],['sciopero_generale',45.07162,7.6993],['sciopero_generale',45.06964,7.68908],['sciopero_generale',45.03947,7.67441],['sciopero_generale',45.02969,7.55734],['sciopero_generale',45.06718,7.5919],['sciopero_generale',45.0637,7.65753],['sciopero_generale',45.06291,7.68473],['sciopero_generale',45.32761,8.42441],['sciopero_generale',45.44419,8.62542],['sciopero_generale',45.44401,8.61979],['sciopero_generale',44.92297,8.61782],['sciopero_generale',44.4158,8.92041],['sciopero_generale',45.46391,9.19064],['sciopero_generale',44.79601,10.31803],['corteo',45.4169,11.88038],['sciopero_generale',38.12466,13.35571],['sciopero_generale',43.6839,10.3927],['corteo',43.54732,10.31137],['corteo',40.85218,14.26769],['sciopero_generale',43.54258,10.31362],['sciopero_generale',37.50118,15.08769],['sciopero_generale',39.21915,9.12159],['sciopero_generale',43.7698,11.25564],['sciopero_generale',45.64944,13.76779],['sciopero_generale',43.60296,13.50702],['sciopero_generale',45.69525,9.67037],['sciopero_generale',36.72302,14.83792]] },
+ { g: 20, m: 'NOV', tipo: 'Sciopero generale · annunciato', sig: 'CGIL', extra: 'Lo stesso giorno: sciopero di treni e trasporto locale (CUB Trasporti, SGB Ferrovie)', citta: 'Roma · Milano · Torino', n: 4,
    p: [['sciopero_generale',41.903,12.496],['sciopero_generale',45.071,7.685],['sciopero_generale',45.464,9.191],['sciopero_categoria',41.92,12.53]] },
- { g: 4, m: 'DIC', sig: 'CUB · SGB · ADL Varese · CIB-Unicobas · SBM', extra: '', citta: 'Nazionale, tutte le categorie pubbliche e private', n: 1,
+ { g: 4, m: 'DIC', tipo: 'Sciopero generale', sig: 'CUB · SGB · ADL Varese · CIB-Unicobas · SBM e altre sigle di base', extra: '', citta: 'Nazionale, tutte le categorie pubbliche e private', n: 1,
    p: [['sciopero_generale',41.903,12.496]] },
 ].map((s) => ({ ...s, p: s.p.map(([t, la, ln], i) => { const [x, y] = xy(la, ln); return { x: x + ((i * 37) % 13 - 6), y: y + ((i * 53) % 13 - 6), c: COL[t] }; }) }));
 const T0 = 2.2, D = [5.0, 4.6, 3.6], FINE = T0 + D[0] + D[1] + D[2], TOT = FINE + 3.6;
@@ -40,7 +40,7 @@ const $=(s)=>document.querySelector(s), cl=(v)=>Math.max(0,Math.min(1,v)), ease=
 window.render=(t)=>{
   $('#hook').style.opacity = t<T0-0.2?1:cl((T0-t)/0.2);
   let k=-1, st=T0, s=T0; for(let i=0;i<3;i++){ if(t>=s){k=i;st=s;} s+=D[i]; }
-  if(k>=0){ const q=S[k]; $('#data b').textContent=q.g; $('#data span').textContent=q.m; $('#sig').textContent=q.sig;
+  if(k>=0){ const q=S[k]; $('#data b').textContent=q.g; $('#data span').textContent=q.m; $('#sig').textContent=q.sig; $('#tipo').textContent=q.tipo;
     $('#lato').innerHTML=(q.n>1?'<b>'+q.n+'</b>iniziative con fonte già sulla mappa':'<b>1</b>sciopero nazionale, in tutta Italia');
     $('#citta').textContent=q.citta; $('#extra').textContent=q.extra;
     const v=ease((t-st)/0.35); $('#scena').style.opacity=v; $('#scena').style.transform='translateY('+(30*(1-v))+'px)'; }
