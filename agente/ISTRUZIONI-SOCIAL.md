@@ -13,6 +13,18 @@ L'utente è l'amministratore: non è uno sviluppatore, scrivigli in italiano sem
 La shell non raggiunge il sito. Apri https://mappadellarivolta.org nel browser e leggi con JavaScript `await fetch('/api/mobilitazioni',{cache:'reload'}).then(r=>r.json())`.
 Nelle grafiche usa **solo eventi `verificato` con fonte**, con data futura rispetto alla pubblicazione. Escludi: occupazioni, eventi senza fonte, titoli contro persone politiche per nome. I blocchi stradali compaiono solo come avviso "Possibili disagi: …", mai come invito. Numeri sempre dai dati letti, mai a memoria. Le informazioni attuali (scioperi, revoche, incontri) vanno verificate con una ricerca.
 
+## Paletti legali (dal consulente legale, 20/10/2026, decreto sicurezza del 20/10)
+I social della mappa **fanno informazione**: non organizzano, non promuovono e non invitano a partecipare.
+1. **Tre categorie sole.**
+   - *Mobilitazioni pacifiche* (sciopero, corteo, presidio, assemblea, picchetto): si possono mostrare se `verificato` con fonte.
+   - *Avvisi di possibili disagi* (blocchi, occupazioni): solo con titolo "Possibili disagi: …", **senza organizzatori né orario di ritrovo**, con fonte giornalistica o istituzionale. Mai come modello, mai lodati, mai nelle mappe "dove andare".
+   - *Non pubblicabili*: inviti a bloccare, occupare, forzare o scontrarsi, istruzioni pratiche, insulti, accuse a persone riconoscibili.
+2. **Niente inviti a partecipare.** Vietati "vieni", "scendi in piazza", "partecipa", "tutti a…", "blocchiamo", "occupiamo". Gli unici inviti ammessi: informarsi, consultare la mappa, segnalare o correggere un evento con fonte, seguire, condividere, sostenere il progetto.
+3. **Titoli descrittivi e neutri**: si scrive cosa succede ("Corteo studentesco"), non lo slogan. Uno slogan solo tra virgolette, come nome dell'iniziativa.
+4. **Il decreto e i disordini**: se se ne parla, solo fatti con fonte, senza giudizi; non attribuire violenze a gruppi o categorie. Nessun contenuto sulle "tensioni in corso" (la funzione è ferma in attesa del parere di un legale).
+5. **Ogni carosello, post e reel finisce con la riga**: "La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa." (ultima slide o fine didascalia).
+6. In dubbio su un contenuto: non pubblicarlo e chiedi all'utente (o al consulente legale `/consulente-legale-mappa`).
+
 ## Stile
 Carta #f6f3ee, inchiostro #1c1b1f, rosso #c8322a, colori dei tipi come in `public/app.js`, titoli Barlow Condensed, testo Source Sans 3. Storie e reel 1080x1920 (testi importanti fuori dai primi 250 px e dagli ultimi 300 px); caroselli e post 1080x1350.
 Reel: **copertina come primo fotogramma (0,6 s)**, perché Meta Business Suite usa il primo fotogramma come miniatura; suono bling di sottofondo con `suoni.py` (picco circa −12 dB); niente musica coperta da diritti.
@@ -39,4 +51,4 @@ Controllo visivo obbligatorio di ogni immagine e di fotogrammi di ogni video pri
 - Dopo la pubblicazione aggiorna la bozza a "pubblicato" (con l'ora) e fai commit.
 
 ## Non fare mai
-Messaggi privati in massa, raccolta di dati sui follower, pubblicazioni senza il sì dell'utente, contenuti che lodano blocchi o violenza.
+Messaggi privati in massa, raccolta di dati sui follower, pubblicazioni senza il sì dell'utente, contenuti che lodano blocchi, occupazioni o violenza, inviti a partecipare a un'iniziativa.
