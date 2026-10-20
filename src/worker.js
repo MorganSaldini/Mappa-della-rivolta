@@ -93,6 +93,16 @@ export default {
 
   // Ogni ora: pulizia degli eventi vecchi, proposte dell'agente e decisioni dell'amministratore AI
   async scheduled(event, env, ctx) {
+    // Ogni 5 minuti: regole sui contenuti + decisioni dell'amministratore AI. Allo scoccare dell'ora anche il resto.
+    const allOra = new Date(event.scheduledTime || Date.now()).getUTCMinutes() < 5;
+    if (!allOra) {
+      ctx.waitUntil(
+        eseguiRegole(env, salvaVersione).then((r) => console.log('Regole', JSON.stringify(r))).catch((e) => console.error('Regole', e))
+          .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
+          .catch((e) => console.error('Amministratore AI', e))
+      );
+      return;
+    }
     ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
     // Regole sui contenuti: mette in regola le voci di oggi e future (ogni modifica va in cronologia)
     // Prima le regole, poi le proposte dell'agente di ricerca, poi le decisioni dell'amministratore AI (in fila,

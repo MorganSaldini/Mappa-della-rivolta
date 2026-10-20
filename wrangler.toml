@@ -20,7 +20,7 @@ run_worker_first = ["/api/*"]
 
 # Ogni ora (allo scoccare): importa le proposte dell’agente, applica le decisioni dell’amministratore AI, cancella gli eventi vecchi
 [triggers]
-crons = ["0 * * * *"]
+crons = ["*/5 * * * *"]  # ogni 5 minuti: regole e decisioni AI; il resto solo allo scoccare dell'ora
 
 [observability]
 enabled = true
