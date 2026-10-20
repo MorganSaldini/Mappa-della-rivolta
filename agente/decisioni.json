@@ -1,0 +1,165 @@
+[
+  {
+    "id": "2026-10-25-piazza-del-popolo-corteo-01",
+    "aggiornato_il": "2026-10-20T00:23:11",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte indicata e nessun organizzatore; le ricerche su stampa locale (Il Giunco, MaremmaOggi, GrossetoNotizie, La Nazione) non trovano un corteo a Grosseto il 25/10. Anche l'id usa 'piazza-del-popolo' al posto del comune e l'ora di fine 22:02 è anomala.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T00:15:37",
+    "azione": "sospetto",
+    "motivo": "Probabile doppione di 2026-10-30-livorno-corteo-01 (già verificato): stessa data, Livorno, Piazza Cavour ore 9:00, stesso promotore USB; cambia solo il tipo. Fonte solo Instagram.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-matera-corteo-01",
+    "aggiornato_il": "2026-10-20T10:03:55",
+    "azione": "sospetto",
+    "motivo": "Coordinate circa 25 km a sud di Matera. ANSA conferma la protesta degli studenti del liceo Duni in piazza a Matera il 20/10: correggere posizione e aggiungere fonte, non rifiutare.",
+    "fonti_controllate": [
+      "https://www.ansa.it/basilicata/notizie/2026/10/20/studenti-del-liceo-in-piazza-a-matera-vogliamo-certezze-sul-futuro-del_7240335a-f652-4266-82fe-875cddbbd805.html"
+    ],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-livorno-assemblea-01",
+    "aggiornato_il": "2026-10-20T10:10:02",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte indicata e nessuna conferma trovata in rete di un'assemblea il 20/10 alle 21 in via Adriana 16.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T10:11:12",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore 'Autonomi' non verificabile e stessa scheda ripetuta ogni giorno dal 20 al 31/10; nessuna notizia di un presidio in via Benevento ad Afragola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-castel-san-giorgio-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T10:12:56",
+    "azione": "sospetto",
+    "motivo": "Dati incoerenti: luogo 'uscitaca', ora 19:09, tipo sciopero generale per una protesta locale, nessuna fonte. Se è un presidio all'uscita stradale va scritto come avviso 'Possibili disagi:'.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-cerignola-corteo-01",
+    "aggiornato_il": "2026-10-20T10:55:17",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte. La stampa riporta per il 20/10 solo un tavolo in Comune alle 16 con i manifestanti (il presidio al casello era il 19/10), non un corteo alle 8 in piazza Mercadante.",
+    "fonti_controllate": [
+      "https://www.insidecapitanata.it/cerignola-il-20-ottobre-tavolo-con-i-manifestanti-contro-il-carovita/"
+    ],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-fi-altro-01",
+    "aggiornato_il": "2026-10-20T11:10:11",
+    "azione": "sospetto",
+    "motivo": "Comune indicato come 'FI' (sigla di provincia), titolo generico 'occupazione', nessun istituto, organizzatore o fonte: non verificabile.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-catania-altro-01",
+    "aggiornato_il": "2026-10-20T13:30:40",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte e nessuna conferma trovata di un'iniziativa il 20/10 alle 17 in piazza Università a Catania.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-20-trento-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T13:39:20",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-20-trento-presidio-01 (stessa scuola Tambosi, stesso giorno e ora); il tipo 'sciopero generale' è errato. Nessuna fonte.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-21-milano-presidio-01",
+    "aggiornato_il": "2026-10-20T09:49:50",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte e nessuna conferma trovata di un presidio PD-AVS in piazza della Scala il 21/10 alle 18:30.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-21-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T10:11:12",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore 'Autonomi' non verificabile e stessa scheda ripetuta ogni giorno dal 20 al 31/10; nessuna notizia di un presidio in via Benevento ad Afragola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-21-pisa-assemblea-01",
+    "aggiornato_il": "2026-10-20T11:03:39",
+    "azione": "sospetto",
+    "motivo": "Le coordinate (41.74, 17.84) cadono in mare Adriatico, non a Pisa. Nessuna fonte per l'assemblea USB del 21/10 in piazza XX Settembre.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-21-battipaglia-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T13:06:57",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte. La stampa riporta il presidio dei camionisti allo stadio Pastena il 20/10, non il 21/10; il tipo corretto sarebbe 'presidio'.",
+    "fonti_controllate": [
+      "https://www.battipaglia1929.it/2026/10/20/battipaglia-la-protesta-dei-tir-si-allarga-presidio-allo-stadio-pastena-attesi-gli-studenti-per-il-corteo/"
+    ],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-22-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T10:11:12",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore 'Autonomi' non verificabile e stessa scheda ripetuta ogni giorno dal 20 al 31/10; nessuna notizia di un presidio in via Benevento ad Afragola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-22-caltanissetta-corteo-01",
+    "aggiornato_il": "2026-10-20T11:22:12",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte e nessuna conferma trovata in rete di una manifestazione il 22/10 in piazzetta Falcone-Borsellino a Caltanissetta.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-22-palermo-corteo-01",
+    "aggiornato_il": "2026-10-20T12:38:45",
+    "azione": "sospetto",
+    "motivo": "Evento reale, non rifiutare: la fonte conferma la protesta Agrisat giovedì 22/10 alle 9 davanti a Palazzo dei Normanni. Correggere titolo ('pvrotesta') in 'Protesta degli agricoltori davanti a Palazzo dei Normanni', tipo presidio.",
+    "fonti_controllate": [
+      "https://ilsicilia.it/caro-carburante-giovedi-nuova-protesta-degli-agricoltori-davanti-palazzo-dei-normanni/"
+    ],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-22-rimini-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T13:09:28",
+    "azione": "approva",
+    "motivo": "Corriere Romagna (20/10) conferma il fermo dei pescherecci riminesi giovedì 22/10, promosso dalla Cooperativa lavoratori del mare. Nessuna revoca trovata.",
+    "fonti_controllate": [
+      "https://www.corriereromagna.it/rimini/rimini-pescherecci-giovedi-scatta-lo-sciopero-700mila-euro-al-mese-per-il-gasolio-FJ2290896",
+      "https://www.ilrestodelcarlino.it/rimini/cronaca/caro-gasolio-rientra-la-protesta-a58f334a"
+    ],
+    "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-23-afragola-presidio-01",
+    "aggiornato_il": "2026-10-20T10:11:12",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore 'Autonomi' non verificabile e stessa scheda ripetuta ogni giorno dal 20 al 31/10; nessuna notizia di un presidio in via Benevento ad Afragola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-20"
+  }
+]
