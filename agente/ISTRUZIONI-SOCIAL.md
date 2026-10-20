@@ -14,15 +14,15 @@ La shell non raggiunge il sito. Apri https://mappadellarivolta.org nel browser e
 Nelle grafiche usa **solo eventi `verificato` con fonte**, con data futura rispetto alla pubblicazione. Escludi: occupazioni, eventi senza fonte, titoli contro persone politiche per nome. I blocchi stradali compaiono solo come avviso "Possibili disagi: …", mai come invito. Numeri sempre dai dati letti, mai a memoria. Le informazioni attuali (scioperi, revoche, incontri) vanno verificate con una ricerca.
 
 ## Paletti legali (dal consulente legale, 20/10/2026, decreto sicurezza del 20/10)
-I social della mappa **fanno informazione**: non organizzano, non promuovono e non invitano a partecipare.
+I social della mappa **fanno informazione**. Raccontare, annunciare e ringraziare chi partecipa a iniziative **legali e preavvisate** (scioperi proclamati, cortei e presidi preavvisati non vietati) si può: rischio basso (Cost. art. 17, 21, 40).
 1. **Tre categorie sole.**
    - *Mobilitazioni pacifiche* (sciopero, corteo, presidio, assemblea, picchetto): si possono mostrare se `verificato` con fonte.
    - *Avvisi di possibili disagi* (blocchi, occupazioni): solo con titolo "Possibili disagi: …", **senza organizzatori né orario di ritrovo**, con fonte giornalistica o istituzionale. Mai come modello, mai lodati, mai nelle mappe "dove andare".
    - *Non pubblicabili*: inviti a bloccare, occupare, forzare o scontrarsi, istruzioni pratiche, insulti, accuse a persone riconoscibili.
-2. **Niente inviti a partecipare.** Vietati "vieni", "scendi in piazza", "partecipa", "tutti a…", "blocchiamo", "occupiamo". Gli unici inviti ammessi: informarsi, consultare la mappa, segnalare o correggere un evento con fonte, seguire, condividere, sostenere il progetto.
+2. **Inviti e ringraziamenti solo per iniziative legali e preavvisate.** Mai per blocchi, occupazioni o azioni illegali ("blocchiamo", "occupiamo", "forziamo"). Ringrazia "chi ha manifestato pacificamente", mai un "grazie a tutti" generico se ci sono stati scontri, e non mostrare né commentare episodi violenti. Numeri dei partecipanti solo con fonte, dicendo chi li dà. Niente foto con volti riconoscibili (art. 9 GDPR): solo grafiche e mappe.
 3. **Titoli descrittivi e neutri**: si scrive cosa succede ("Corteo studentesco"), non lo slogan. Uno slogan solo tra virgolette, come nome dell'iniziativa.
 4. **Il decreto e i disordini**: se se ne parla, solo fatti con fonte, senza giudizi; non attribuire violenze a gruppi o categorie. Nessun contenuto sulle "tensioni in corso" (la funzione è ferma in attesa del parere di un legale).
-5. **Ogni carosello, post e reel finisce con la riga**: "La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa." (ultima slide o fine didascalia).
+5. **Ogni carosello, post e reel finisce con la riga**: "La mappa riporta informazioni pubbliche con la loro fonte." (ultima slide o fine didascalia).
 6. In dubbio su un contenuto: non pubblicarlo e chiedi all'utente (o al consulente legale `/consulente-legale-mappa`).
 
 ## Stile
@@ -51,4 +51,4 @@ Controllo visivo obbligatorio di ogni immagine e di fotogrammi di ogni video pri
 - Dopo la pubblicazione aggiorna la bozza a "pubblicato" (con l'ora) e fai commit.
 
 ## Non fare mai
-Messaggi privati in massa, raccolta di dati sui follower, pubblicazioni senza il sì dell'utente, contenuti che lodano blocchi, occupazioni o violenza, inviti a partecipare a un'iniziativa.
+Messaggi privati in massa, raccolta di dati sui follower, pubblicazioni senza il sì dell'utente, contenuti che lodano blocchi, occupazioni o violenza, inviti a iniziative illegali.

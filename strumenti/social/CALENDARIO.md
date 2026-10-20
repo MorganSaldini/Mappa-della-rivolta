@@ -3,7 +3,7 @@
 Orari di pubblicazione: **12:15** e **19:15** (ora italiana).
 Ogni riga: data · ora · formato · titolo · idea. Le bozze si salvano in `bozze/AAAA-MM-GG-HHMM.md`.
 Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
-**Prima di ogni bozza rileggi i "Paletti legali" in `agente/ISTRUZIONI-SOCIAL.md`**: niente inviti a partecipare, blocchi e occupazioni solo come "Possibili disagi", riga finale "La mappa riporta informazioni pubbliche…".
+**Prima di ogni bozza rileggi i "Paletti legali" in `agente/ISTRUZIONI-SOCIAL.md`**: inviti e ringraziamenti solo per eventi legali e preavvisati, mai per blocchi, occupazioni o azioni illegali (solo "Possibili disagi"); riga finale "La mappa riporta informazioni pubbliche con la loro fonte."
 
 | Data | Ora | Formato | Titolo | Idea |
 |---|---|---|---|---|
@@ -11,9 +11,9 @@ Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
 | 2026-10-21 | 19:15 | reel | 3 scioperi generali | Video già pronto: `reel-scioperi.mjs` + copertina come primo fotogramma + suono bling. Aggiorna i punti del 30/10, 20/11, 4/12 |
 | 2026-10-22 | 12:15 | post | La mappa oggi | Numeri aggiornati: mobilitazioni in programma, città, regioni, segnalazioni della community |
 | 2026-10-22 | 19:15 | carosello | Perché far sentire la propria voce | 1) Perché tante persone scendono in piazza? 2) Cosa chiedono le piazze (con dato e fonte ciascuno): spesa militare e riarmo, sanità pubblica, stato sociale (sussidi, assegni e pensioni), caro vita/carburante/salari, scuola e università 3) Guarda il motivo, non i pochi violenti 4) Far sentire la voce è un diritto (Cost. art. 17, 21, 40) 5) Informati, scegli tu. Distacco politico: nessun partito, governo o persona nominata |
-| 2026-10-23 | 12:15 | carosello | Le piazze di domani | Sabato 24: piazze con orario, luogo, organizzatori (base: `sabato.mjs`). Ricontrolla che gli eventi ci siano ancora |
+| 2026-10-23 | 12:15 | carosello | Domani in piazza | Sabato 24: piazze con orario, luogo, organizzatori (base: `sabato.mjs`). Ricontrolla che gli eventi ci siano ancora |
 | 2026-10-23 | 19:15 | reel | Sabato 24 in 15 secondi | Mappa che si accende sulle piazze di sabato, bling, copertina |
-| 2026-10-24 | 12:15 | post | Le piazze di oggi | Elenco informativo con fonti; invito solo a consultare la mappa |
+| 2026-10-24 | 12:15 | post | Oggi in piazza | Le piazze di oggi (solo eventi legali e preavvisati, con fonte), invito a informarsi prima di partire |
 | 2026-10-24 | 19:15 | reel | La settimana che arriva | 26 ottobre – 1 novembre, mappa animata giorno per giorno (base: `reel-settimana.mjs`) |
 | 2026-10-25 | 12:15 | carosello | Mancano 5 giorni al 30 | Sciopero generale del 30: città, sigle, studenti |
 | 2026-10-25 | 19:15 | reel | Cosa chiedono le piazze | Versione video del carosello del 22: 5 motivi (spesa militare, sanità, stato sociale con pensioni, caro vita, scuola), un dato con fonte ciascuno → "Guarda il motivo, non il rumore". Distacco politico |
@@ -26,7 +26,7 @@ Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
 | 2026-10-29 | 12:15 | carosello | Domani: tutte le piazze | Elenco completo per città |
 | 2026-10-29 | 19:15 | reel | Domani sciopero generale | Video breve con la mappa del 30 |
 | 2026-10-30 | 12:15 | post | Oggi: tutte le piazze | Mappa del giorno |
-| 2026-10-30 | 19:15 | post | Com'è andata la giornata | Numeri della giornata (solo dati della mappa) e grazie a chi ha segnalato e verificato, non "a chi c'era" |
+| 2026-10-30 | 19:15 | post | Grazie a chi c'era | Grazie a chi ha manifestato pacificamente e a chi ha segnalato e verificato; numeri della giornata solo con fonte (mappa, sindacati, giornali, Questura, dicendo chi li dà); nessun commento o immagine di eventuali episodi violenti |
 | 2026-10-31 | 12:15 | post | Perché ci chiamiamo Mappa della Rivolta | "Rivolta non vuol dire violenza" · viene da *rivoltarsi*: non restare fermi davanti a un'ingiustizia · sulla mappa solo iniziative pacifiche con fonte · Guarda il motivo, non il rumore |
 | 2026-11-01 | 12:15 | post | I numeri della settimana | Riepilogo e verso il 20 novembre |
 
