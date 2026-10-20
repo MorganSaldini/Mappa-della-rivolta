@@ -1,101 +1,6 @@
 [
   {
     "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Dussmann a Napoli",
-    "data": "2026-10-19",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Napoli",
-    "provincia": "NA",
-    "regione": "Campania",
-    "luogo": "",
-    "lat": 40.8518,
-    "lng": 14.2681,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
-    "note": "Sciopero di tutta la giornata del personale Dussmann (servizi). Sigle non indicate dalla fonte."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale ausiliario delle ASP siciliane",
-    "data": "2026-10-19",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Palermo",
-    "provincia": "PA",
-    "regione": "Sicilia",
-    "luogo": "",
-    "lat": 38.1157,
-    "lng": 13.3615,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
-    "note": "Sciopero regionale del personale ausiliario di tutte le ASP della Sicilia. Sigle e orari non indicati dalla fonte; posizione indicativa a Palermo."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero bus International Service di Roma",
-    "data": "2026-10-19",
-    "ora_inizio": "08:30",
-    "ora_fine": "12:30",
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB Lavoro Privato"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore, ambito locale"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del trasporto pubblico locale – linea TPL di Savona",
-    "data": "2026-10-19",
-    "ora_inizio": "10:15",
-    "ora_fine": "14:15",
-    "comune": "Savona",
-    "provincia": "SV",
-    "regione": "Liguria",
-    "luogo": "",
-    "lat": 44.3091,
-    "lng": 8.4772,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "UGL",
-      "FAISA-CISAL",
-      "SIAL COBAS",
-      "RSU"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore, ambito locale"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
-    "data": "2026-10-19",
-    "ora_inizio": "07:00",
-    "ora_fine": "15:00",
-    "comune": "Volla",
-    "provincia": "NA",
-    "regione": "Campania",
-    "luogo": "",
-    "lat": 40.879,
-    "lng": 14.342,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-ottobre-2026/1017441/",
-    "note": "TPL, sciopero 7-15 della società Vincenzo Miele Trasporti; sigla non indicata dalla fonte. Posizione indicativa (centro di Volla)"
-  },
-  {
-    "tipo": "sciopero_categoria",
     "titolo": "Sciopero nelle mense e servizi in appalto a Bari (Accadueo, Ariete, Ladisa Ristorazione)",
     "data": "2026-10-20",
     "ora_inizio": null,
@@ -146,6 +51,25 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "9 ore, dalle 15 alle 24, ambito locale"
+  },
+  {
+    "ora_inizio": "11:30",
+    "ora_fine": "15:30",
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMT di Genova",
+    "data": "2026-10-21",
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "lat": 44.4056,
+    "lng": 8.9463,
+    "organizzatori": [
+      "UGL Autoferro"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, trasporto pubblico locale; posizione indicativa (centro città)"
   },
   {
     "tipo": "sciopero_categoria",
@@ -571,6 +495,174 @@
     "gruppo": "sciopero-generale-2026-11-20"
   },
   {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Sistemi Territoriali",
+    "data": "2026-11-21",
+    "comune": "Adria",
+    "provincia": "RO",
+    "regione": "Veneto",
+    "lat": 45.0547,
+    "lng": 12.0566,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Linea Adria-Mestre. Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Trasporto Ferroviario Toscano",
+    "data": "2026-11-21",
+    "comune": "Arezzo",
+    "provincia": "AR",
+    "regione": "Toscana",
+    "lat": 43.4633,
+    "lng": 11.8797,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Ferrovie del Sud Est e Ferrotramviaria",
+    "data": "2026-11-21",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "lat": 41.1177,
+    "lng": 16.8697,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Ferrovie del Sud Est e Ferrotramviaria. Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: SAD",
+    "data": "2026-11-21",
+    "comune": "Bolzano",
+    "provincia": "BZ",
+    "regione": "Trentino-Alto Adige",
+    "lat": 46.4983,
+    "lng": 11.3548,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Ferrovie della Calabria",
+    "data": "2026-11-21",
+    "comune": "Catanzaro",
+    "provincia": "CZ",
+    "regione": "Calabria",
+    "lat": 38.9098,
+    "lng": 16.5877,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Ferrovie del Gargano",
+    "data": "2026-11-21",
+    "comune": "Foggia",
+    "provincia": "FG",
+    "regione": "Puglia",
+    "lat": 41.4622,
+    "lng": 15.5446,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Ferrovia Adriatico Sangritana (TUA)",
+    "data": "2026-11-21",
+    "comune": "Lanciano",
+    "provincia": "CH",
+    "regione": "Abruzzo",
+    "lat": 42.2306,
+    "lng": 14.3903,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: EAV",
+    "data": "2026-11-21",
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero nazionale del personale ENAV",
     "data": "2026-11-21",
@@ -589,6 +681,69 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "4 ore, trasporto aereo; nazionale, posizione indicativa"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: GTT",
+    "data": "2026-11-21",
+    "comune": "Torino",
+    "provincia": "TO",
+    "regione": "Piemonte",
+    "lat": 45.0703,
+    "lng": 7.6869,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Trentino Trasporti",
+    "data": "2026-11-21",
+    "comune": "Trento",
+    "provincia": "TN",
+    "regione": "Trentino-Alto Adige",
+    "lat": 46.0679,
+    "lng": 11.1211,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ferrovie locali: Ferrovia Udine-Cividale",
+    "data": "2026-11-21",
+    "comune": "Udine",
+    "provincia": "UD",
+    "regione": "Friuli-Venezia Giulia",
+    "lat": 46.0626,
+    "lng": 13.2348,
+    "organizzatori": [
+      "CUB Trasporti",
+      "SGB Ferrovie"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
+    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
   },
   {
     "tipo": "sciopero_categoria",
@@ -690,5 +845,28 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
+  },
+  {
+    "ora_inizio": "11:00",
+    "ora_fine": "15:00",
+    "luogo": "",
+    "posizione_approssimativa": true,
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale ANM di Napoli",
+    "data": "2026-12-16",
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "UGL-FNA",
+      "FAISA-CISAL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, trasporto pubblico locale (metro, funicolari, bus); posizione indicativa"
   }
 ]
