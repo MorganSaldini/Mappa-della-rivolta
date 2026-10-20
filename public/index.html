@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
   <header class="barra">
@@ -36,9 +36,9 @@
         <li><strong>Solo iniziative pacifiche</strong>, annunciate pubblicamente: preavvisate in Questura o spontanee.</li>
         <li><strong>Serve una fonte</strong>: comunicato, sito del sindacato, locandina, calendario ufficiale degli scioperi.</li>
         <li><strong>Niente dati personali</strong>: niente nomi, telefoni o email; chi organizza si indica con la sigla.</li>
-        <li><strong>Blocchi annunciati</strong> solo come avviso, con titolo «Possibili disagi:», mai come invito a partecipare.</li>
-        <li><strong>Vietati</strong> inviti a violenza o danneggiamenti, istruzioni per commettere reati, insulti e odio.</li>
-        <li><strong>Prima si verifica</strong>: le nuove segnalazioni restano «Da verificare» finché un moderatore non le controlla.</li>
+        <li><strong>Blocchi e occupazioni</strong> solo come avviso «Possibili disagi:», con fonte giornalistica o istituzionale, senza organizzatori né orario di ritrovo.</li>
+        <li><strong>Vietati</strong> inviti a bloccare, occupare, scontrarsi o danneggiare, istruzioni per commettere reati, insulti e odio.</li>
+        <li><strong>Niente «Verificato» senza fonte</strong>: le nuove segnalazioni restano «Da verificare» finché la fonte non è controllata.</li>
         <li><strong>Si può sempre correggere</strong>: ogni modifica resta in cronologia e si può annullare; un evento con troppe segnalazioni di problemi viene nascosto.</li>
       </ol>
       <p class="lato__link"><a href="regole.html">Leggi tutte le regole →</a></p>
@@ -157,7 +157,7 @@
   <footer class="piede">
     <p><strong>Come funziona.</strong> Chiunque può aggiungere una mobilitazione o segnalare un errore, senza registrarsi. Le nuove segnalazioni compaiono come <em>Da verificare</em> finché un moderatore volontario non le controlla. Gli eventi con più segnalazioni di problemi vengono nascosti in attesa di verifica.</p>
     <p><strong>Privacy.</strong> La mappa non chiede nome, email né indirizzo e non salva il tuo indirizzo IP. La posizione di "Vicino a me" resta nel tuo browser. Dopo la data, gli eventi spariscono dalla mappa: quelli verificati passano nell'<a href="archivio.html">archivio</a> per <span id="giorni-arch">365</span> giorni, gli altri e tutti i dati collegati (conferme, segnalazioni, cronologia) vengono cancellati entro <span id="giorni-cons">30</span> giorni.</p>
-    <p class="piede__legale" id="note-legali"><strong>Note legali.</strong> Questo sito è uno strumento di informazione: non organizza né convoca alcuna iniziativa. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); i blocchi stradali o ferroviari annunciati compaiono solo come avviso di possibili disagi per chi si sposta, senza inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo.</p>
+    <p class="piede__legale" id="note-legali"><strong>Note legali.</strong> <strong>La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa.</strong> Questo sito è uno strumento di informazione: non organizza né convoca alcuna iniziativa. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); blocchi e occupazioni compaiono solo come avviso di possibili disagi, con fonte giornalistica o istituzionale, senza organizzatori né inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo (<a href="regole.html#segnala-illeciti">tempi e procedura</a>).</p>
     <p><strong>Fonti.</strong> Segnalazioni della community e comunicati delle organizzazioni promotrici; calendari ufficiali degli scioperi nei servizi pubblici essenziali. Ricerca dei comuni: Nominatim. Fondo mappa: © contributori OpenStreetMap.</p>
     <p id="contatto" hidden></p>
     <div class="riserva" id="riserva">

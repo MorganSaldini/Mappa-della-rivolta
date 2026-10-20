@@ -15,13 +15,19 @@ di questo repository. Non pubblichi nulla direttamente: ogni proposta entra come
 3. **Tutte le mobilitazioni pacifiche**, con o senza preavviso alla Questura: scioperi, cortei, presidi, assemblee
    pubbliche, anche spontanei, purché annunciati pubblicamente. Escludi tutto ciò che invita a violenza o danneggiamenti
    e qualsiasi istruzione pratica per commettere reati.
-   **Blocchi annunciati** (stradali, ferroviari, ai cancelli): proponili solo come avviso di disagi, se sono già annunciati
-   pubblicamente e riportati da una fonte (comunicato dei promotori, testata giornalistica, Comune, forze dell'ordine).
-   Tipo `altro`, titolo che inizia con "Possibili disagi:" seguito da cosa è interessato (es. "Possibili disagi: tangenziale
-   est, uscita 12"), data, orario se noto. Nel titolo niente inviti a partecipare, niente slogan, niente dettagli operativi.
+   **Blocchi e occupazioni** (stradali, ferroviari, ai cancelli, scuole, università, edifici): proponili solo come avviso
+   di disagi, se sono già in corso o annunciati e riportati da una **fonte giornalistica o istituzionale** (testata,
+   Comune, Prefettura, azienda di trasporto); il volantino o il post che chiama a partecipare **non basta**.
+   Tipo `altro`, titolo che inizia con "Possibili disagi:" seguito da cosa è interessato (es. "Possibili disagi:
+   tangenziale est, uscita 12"), **nessun organizzatore e nessun orario** (il server li toglie comunque).
+   **Mai proporre** testi che invitano a bloccare, occupare, forzare o scontrarsi ("blocchiamo…", "occupiamo…"):
+   il server li rifiuta.
 4. **Niente dati personali**: organizzatori solo come sigle (sindacati, associazioni, collettivi, comitati).
    Mai nomi, telefoni, email o indirizzi di persone private.
-5. Tono neutro e informativo nei titoli: descrivi l'iniziativa, non giudicarla.
+5. Tono neutro e informativo nei titoli: descrivi l'iniziativa ("Corteo studentesco"), non giudicarla e non usare lo
+   slogan come titolo; il nome dell'iniziativa si può citare tra virgolette. Niente MAIUSCOLO gridato.
+6. La mappa **fa informazione**: non organizza, non promuove e non invita. Dopo il decreto del Consiglio dei ministri del
+   20/10/2026 sulle manifestazioni, in caso di dubbio non proporre e scrivilo nel resoconto.
 
 ## Dati del calendario ufficiale forniti da una persona
 Se nella conversazione (o in un file del repository, es. `dati/da-calendario/*.txt` o immagini) un moderatore ti fornisce

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>.testo { max-width: 70ch; padding: 24px 0 40px; } .testo li { margin-bottom: 6px; }</style>
+  <style>.testo { max-width: 70ch; padding: 24px 0 40px; } .testo li { margin-bottom: 6px; } .riquadro { border-left: 4px solid currentColor; padding: 8px 12px; margin: 16px 0; }</style>
 </head>
 <body>
   <header class="barra">
@@ -18,39 +18,49 @@
     <h1>Regole della community</h1>
     <p>Questa mappa la costruisce chi la usa. Chiunque può aggiungere una mobilitazione o segnalare un errore, senza registrarsi. Un gruppo di moderatori volontari controlla i contributi.</p>
 
-    <h2>Cosa si può segnalare</h2>
+    <p class="riquadro"><strong>La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa.</strong></p>
+
+    <h2>Le tre categorie</h2>
+    <p>Ogni segnalazione rientra in una sola di queste categorie. Le regole valgono per tutti: chi segnala, i moderatori, i referenti dei sindacati e l'amministratore automatico.</p>
+
+    <h3>1. Mobilitazioni pacifiche: si pubblicano</h3>
     <ul>
-      <li>Cortei, presidi, scioperi, picchetti, assemblee e altre iniziative <strong>pubbliche e pacifiche</strong> in Italia, sia preavvisate alla Questura sia spontanee.</li>
-      <li>Eventi con una data futura e un luogo preciso (piazza, via, cancello di un'azienda).</li>
-      <li>Organizzatori indicati come sigle: sindacati, associazioni, collettivi, comitati.</li>
-      <li>Un link alla fonte (comunicato, locandina, post) aiuta i moderatori a verificare più in fretta.</li>
+      <li>Scioperi, cortei, presidi, assemblee e picchetti <strong>pubblici e pacifici</strong> in Italia, annunciati da chi li promuove.</li>
+      <li>Con data, luogo preciso (piazza, via, cancello di un'azienda) e <strong>link alla fonte</strong>: comunicato, sito del sindacato, calendario della Commissione di Garanzia scioperi, articolo di giornale.</li>
+      <li>Chi promuove si indica solo con la sigla: sindacato, associazione, collettivo, comitato.</li>
+      <li><strong>Titoli descrittivi e neutri</strong>: si scrive che cosa succede («Corteo studentesco», «Sciopero dei trasporti»), non lo slogan. Il nome dell'iniziativa si può citare tra virgolette.</li>
     </ul>
 
-    <h2>Cosa viene rimosso</h2>
+    <h3>2. Avvisi di possibili disagi: solo come informazione</h3>
+    <p>Blocchi (stradali, ferroviari, ai cancelli) e occupazioni già in corso o annunciati si possono segnalare <strong>solo per avvisare chi si sposta o chi frequenta quel luogo</strong>.</p>
     <ul>
-      <li>Nomi, numeri di telefono, email o indirizzi di persone private.</li>
-      <li>Inviti a violenza o danneggiamenti, e istruzioni pratiche per commettere reati (come aggirare i controlli, resistere a uno sgombero, procurarsi materiali).</li>
-      <li>Insulti, contenuti d'odio, accuse a persone identificabili.</li>
-      <li>Spam, pubblicità, eventi falsi o già passati.</li>
-      <li>Modifiche che cancellano informazioni corrette senza una fonte.</li>
+      <li>Il titolo inizia con <em>«Possibili disagi:»</em> e dice che cosa è interessato (strada, stazione, edificio).</li>
+      <li>Nessun organizzatore indicato e nessun orario di ritrovo: il sistema li toglie in automatico.</li>
+      <li>Serve una <strong>fonte giornalistica o istituzionale</strong> (giornale, Comune, Prefettura, azienda di trasporto), non il volantino che chiama a partecipare.</li>
+      <li>Restano <em>Da verificare</em> finché un moderatore in carne e ossa non ha controllato la fonte. Le conferme dei visitatori e l'amministratore automatico non bastano.</li>
+      <li>In Italia bloccare strade o ferrovie e occupare edifici può costituire reato: chi partecipa ne risponde personalmente.</li>
     </ul>
 
-    <h2>Blocchi annunciati: solo come avviso di disagi</h2>
-    <p>Se un blocco stradale, ferroviario o davanti ai cancelli di un'azienda è già stato <strong>annunciato pubblicamente</strong> da chi lo promuove, o riportato da giornali, Comuni o forze dell'ordine, si può segnalare per avvisare chi deve spostarsi.</p>
+    <h3>3. Non pubblicabili: vengono rifiutati o rimossi</h3>
     <ul>
-      <li>Il titolo inizia con <em>«Possibili disagi:»</em> e indica cosa è interessato (strada, stazione, varco), con data, orario e fonte.</li>
-      <li>La mappa lo riporta come informazione sulla circolazione: non invita a partecipare e non dà indicazioni su come farlo.</li>
-      <li>In Italia bloccare strade o ferrovie può costituire reato: chi partecipa ne risponde personalmente.</li>
+      <li>Inviti a bloccare, occupare, forzare, danneggiare o scontrarsi («blocchiamo…», «occupiamo…»): il sistema li rifiuta da solo.</li>
+      <li>Istruzioni pratiche per commettere reati (aggirare i controlli, resistere a uno sgombero, procurarsi materiali).</li>
+      <li>Insulti, contenuti d'odio, accuse a persone riconoscibili.</li>
+      <li>Nomi, numeri di telefono, email, indirizzi o foto con volti riconoscibili di persone private.</li>
+      <li>Spam, pubblicità, eventi falsi o già passati, modifiche che cancellano informazioni corrette senza una fonte.</li>
     </ul>
+
+    <h2>Niente «Verificato» senza fonte</h2>
+    <p>Un evento senza link alla fonte resta <em>Da verificare</em>, sempre, anche se ha molte conferme. Sui canali esterni (Telegram, Nostr) escono solo gli eventi verificati; gli avvisi di disagi escono come avvisi, mai come invito.</p>
 
     <h2>Informazione e chat degli eventi</h2>
     <p>La mappa raccoglie informazioni pubbliche su mobilitazioni annunciate da altri: non le organizza e non ne verifica il preavviso alle autorità. Il preavviso alla Questura per le riunioni in luogo pubblico (art. 18 del Testo unico di pubblica sicurezza) spetta a chi le promuove.</p>
-    <p>Per gli eventi verificati può esserci una chat su Telegram, dove chi partecipa può coordinarsi: condividere un passaggio, ritrovarsi, avvisare di un cambio d'orario. Le chat sono spazi dei partecipanti, non del progetto. Chi partecipa a un'iniziativa lo fa sotto la propria responsabilità.</p>
+    <p>Per gli eventi verificati può esserci una chat su Telegram, dove chi è interessato può scambiarsi informazioni pratiche: un cambio d'orario, un passaggio, un aggiornamento. Le chat sono spazi dei partecipanti, non del progetto. Chi partecipa a un'iniziativa lo fa sotto la propria responsabilità.</p>
 
     <h2>Regole delle chat</h2>
     <ul>
       <li>Valgono tutte le regole della mappa: niente violenza, danneggiamenti o istruzioni per commettere reati, niente insulti né contenuti d'odio.</li>
-      <li>Sui blocchi stradali, ferroviari o ai cancelli: solo informazioni sui disagi già annunciati. Non si organizzano blocchi in chat.</li>
+      <li>Su blocchi e occupazioni: solo informazioni sui disagi già annunciati. In chat non si organizzano blocchi, occupazioni o altre azioni non pacifiche.</li>
       <li>Non pubblicare nomi, numeri, indirizzi o foto con volti riconoscibili di altre persone.</li>
       <li>Restate sull'evento: niente spam, pubblicità o propaganda di una sigla contro un'altra.</li>
       <li>I moderatori possono cancellare messaggi e allontanare chi non rispetta le regole. Se vedi un messaggio che le viola, segnalalo con la funzione «Segnala» di Telegram o avvisa un moderatore.</li>
@@ -60,7 +70,7 @@
     <h2>Come funziona la verifica</h2>
     <ul>
       <li>Una nuova segnalazione compare come <em>Da verificare</em> (segnaposto tratteggiato).</li>
-      <li>Diventa <em>Verificata</em> quando un moderatore la controlla.</li>
+      <li>Diventa <em>Verificata</em> solo se ha una fonte e un moderatore la controlla (oppure, per le mobilitazioni pacifiche con fonte, quando raccoglie abbastanza conferme).</li>
       <li>Se più persone segnalano un problema su un evento, l'evento viene nascosto finché un moderatore non decide.</li>
       <li>Ogni cambiamento resta registrato e si può annullare.</li>
     </ul>
@@ -70,8 +80,18 @@
     <p>Le chat degli eventi sono su Telegram e sono <strong>pubbliche</strong>: chi scrive è visibile con il proprio nome o username Telegram. La mappa non raccoglie questi dati, ma prima di scrivere controlla le tue impostazioni di privacy su Telegram (numero di telefono nascosto, nome che vuoi mostrare).</p>
     <p>Il bot Telegram della mappa risponde alle ricerche (per città, data o tipo) senza salvare chi scrive né cosa cerca: usa solo gli eventi già pubblici della mappa.</p>
 
+    <h2 id="segnala-illeciti">Segnalare un contenuto illegale</h2>
+    <p>Come prevede il Regolamento europeo sui servizi digitali (Digital Services Act, Reg. UE 2022/2065):</p>
+    <ol>
+      <li><strong>Come segnalare</strong>: pulsante «⚠️ Segnala» sull'evento, oppure email a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a> con il link dell'evento, il motivo e, se puoi, la norma che ritieni violata. Non serve dare il tuo nome; se vuoi una risposta, lascia un recapito.</li>
+      <li><strong>Punto di contatto</strong> per utenti e autorità: <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a> (italiano o inglese).</li>
+      <li><strong>Tempi</strong>: un evento con più segnalazioni viene nascosto in automatico. I contenuti manifestamente illeciti vengono rimossi entro 24 ore da quando li vediamo; gli altri casi vengono decisi entro 72 ore.</li>
+      <li><strong>Motivazione</strong>: ogni rimozione resta in cronologia con il motivo. Chi ha inserito l'evento può chiedere una revisione allo stesso indirizzo.</li>
+      <li>Gli ordini delle autorità vengono eseguiti nei tempi indicati nell'ordine.</li>
+    </ol>
+
     <h2 id="note-legali">Note legali</h2>
-    <p>Questo sito è uno strumento di informazione: non organizza né convoca alcuna iniziativa. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); i blocchi stradali o ferroviari annunciati compaiono solo come avviso di possibili disagi per chi si sposta, senza inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo.</p>
+    <p>Questo sito è uno strumento di informazione: non organizza né convoca alcuna iniziativa. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); blocchi e occupazioni compaiono solo come avviso di possibili disagi, con fonte giornalistica o istituzionale, senza organizzatori né inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo.</p>
     <p>Le stesse regole valgono per le chat degli eventi: i moderatori rimuovono i messaggi illeciti appena ne vengono a conoscenza.</p>
 
     <h2>Diventare moderatore</h2>

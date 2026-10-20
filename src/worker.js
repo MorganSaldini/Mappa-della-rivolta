@@ -1,3 +1,5 @@
+import { eseguiRegole } from './regole.js';
+import { salvaVersione } from './dati.js';
 // Punto di ingresso del Worker Cloudflare.
 // Le richieste a /api/... vanno alle funzioni qui sotto; tutto il resto (pagina, stile, script)
 // viene servito direttamente dalla cartella "public".
@@ -92,6 +94,8 @@ export default {
   // Ogni ora: pulizia degli eventi vecchi, proposte dell'agente e decisioni dell'amministratore AI
   async scheduled(event, env, ctx) {
     ctx.waitUntil(mod.eseguiPulizia(env).catch((e) => console.error('Pulizia', e)));
+    // Regole sui contenuti: mette in regola le voci di oggi e future (ogni modifica va in cronologia)
+    ctx.waitUntil(eseguiRegole(env, salvaVersione).then((r) => console.log('Regole', JSON.stringify(r))).catch((e) => console.error('Regole', e)));
     // Prima le proposte dell'agente di ricerca, poi le decisioni dell'amministratore AI
     ctx.waitUntil(
       importaProposte(env).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))

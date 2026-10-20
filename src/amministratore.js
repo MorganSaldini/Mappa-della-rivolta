@@ -1,3 +1,4 @@
+import { verificabile } from './regole.js';
 // Applica le decisioni dell'amministratore AI scritte nel file dati/decisioni.json del repository.
 // L'amministratore AI non ha codici d'accesso: scrive le decisioni nel repository e il sito le applica qui.
 //
@@ -62,6 +63,8 @@ export async function importaDecisioni(env, sitoUrl = SITO) {
       if (e.sospetto) { esito.saltate.push(`${id}: è nella lista sospetti, decide un moderatore`); await segna(); continue; }
       if (e.segnalazioni_aperte > 0) { esito.saltate.push(`${id}: ha segnalazioni aperte, decide un moderatore`); await segna(); continue; }
       if (!fonti.length) { esito.saltate.push(`${id}: approvazione senza fonti controllate`); await segna(); continue; }
+      const no = verificabile(e);
+      if (no) { esito.saltate.push(`${id}: ${no}`); await segna(); continue; }
 
       const nuovo = await salvaVersione(env.DB, e, { stato: 'verificato', segnalazioni_aperte: 0 }, 'approvato_da_ai', ATTORE_AI);
       await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?').bind(nota.slice(0, 1000), id).run();

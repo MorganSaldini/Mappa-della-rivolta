@@ -75,7 +75,7 @@ export function titoloPubblico(e) {
 }
 const oraValida = (o) => (o && o !== '00:00' ? o : null);
 
-const pubblicabile = (e) => e && (e.stato === 'verificato' || e.stato === 'annullato');
+const pubblicabile = (e) => e && e.fonte && (e.stato === 'verificato' || e.stato === 'annullato');
 const kindDi = (e) => (e.ora_inizio ? 31923 : 31922);
 const luogoTesto = (e) => [e.luogo, `${e.comune} (${e.provincia})`].filter(Boolean).join(', ');
 

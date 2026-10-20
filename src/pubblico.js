@@ -1,3 +1,4 @@
+import { verificabile } from './regole.js';
 // Contributi della community su un evento esistente:
 // POST /api/mobilitazioni/:id/conferma   → "Confermo" (una volta per dispositivo)
 // POST /api/mobilitazioni/:id/modifiche  → proposta di correzione, va in coda ai moderatori
@@ -38,7 +39,7 @@ export async function conferma({ request, env, ctx, params }) {
   const conferme = (evento.conferme || 0) + 1;
 
   // Verifica automatica: abbastanza conferme + una fonte
-  if (evento.stato === 'da_verificare' && evento.fonte && conferme >= imp.confermePerVerifica) {
+  if (evento.stato === 'da_verificare' && !verificabile(evento) && conferme >= imp.confermePerVerifica) {
     const nuovo = await salvaVersione(env.DB, evento, { conferme, stato: 'verificato' }, 'verificato_da_conferme', 'sistema');
     ctx.waitUntil(pubblicaEvento(env, nuovo, new URL(request.url).origin));
     return json({ ok: true, conferme, verificato: true });

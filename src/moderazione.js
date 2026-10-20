@@ -1,3 +1,4 @@
+import { verificabile } from './regole.js';
 // API del pannello moderatori e amministratore. Tutto passa da controlli lato server:
 // sessione firmata, ruolo, regioni assegnate, origine della richiesta.
 import {
@@ -131,6 +132,10 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
   const cambiStato = { approva: 'verificato', rifiuta: 'rifiutato', nascondi: 'nascosto', annulla: 'annullato', rimetti: 'da_verificare' };
 
   let nuovo;
+  if (az === 'approva') {
+    const no = verificabile(e, { umano: true });
+    if (no) return errore(no);
+  }
   if (az in cambiStato) {
     const stato = cambiStato[az];
     const extra = { stato };
@@ -162,16 +167,18 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
       "SELECT * FROM eventi WHERE gruppo = ? AND stato IN ('da_verificare','nascosto','verificato')"
     ).bind(e.gruppo).all();
     const approvati = [];
+    let saltati = 0;
     for (const x of results) {
       if (!puoGestire(sessione, x)) continue;
       if (x.stato === 'verificato') { approvati.push(x); continue; }
+      if (verificabile(x, { umano: true })) { saltati++; continue; }
       const n = await salvaVersione(env.DB, x, { stato: 'verificato', segnalazioni_aperte: 0 }, 'approva_gruppo', attore);
       await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(x.id).run();
       n.telegram_msg_id = x.telegram_msg_id;
       approvati.push(n);
     }
     ctx.waitUntil(pubblicaGruppo(env, approvati, sito));
-    return json({ ok: true, approvati: approvati.length });
+    return json({ ok: true, approvati: approvati.length, saltati });
   } else if (az === 'conferma_sospetto') {
     // Il moderatore conferma il sospetto dell'amministratore AI: l'evento viene rifiutato
     nuovo = await salvaVersione(env.DB, e, { stato: 'rifiutato' }, 'sospetto_confermato', attore);

@@ -84,7 +84,7 @@ async function eUrgente(env, dataEvento) {
 // Pubblica un evento verificato e salva l'id del messaggio.
 // Se fa parte di un evento in più città già pubblicato, non ripubblica: collega lo stesso messaggio.
 export async function pubblicaEvento(env, evento, sitoUrl, { forza = false } = {}) {
-  if (evento.telegram_msg_id) return;
+  if (evento.telegram_msg_id || !evento.fonte) return; // sui canali esterni solo eventi con fonte
   if (evento.gruppo) {
     const gia = await env.DB.prepare('SELECT telegram_msg_id FROM eventi WHERE gruppo = ? AND telegram_msg_id IS NOT NULL LIMIT 1')
       .bind(evento.gruppo).first();
@@ -108,7 +108,7 @@ export async function pubblicaEvento(env, evento, sitoUrl, { forza = false } = {
 
 // Un solo messaggio per un evento in più città: elenca tutte le città approvate
 export async function pubblicaGruppo(env, eventi, sitoUrl, { forza = false } = {}) {
-  const daPubblicare = eventi.filter((e) => !e.telegram_msg_id);
+  const daPubblicare = eventi.filter((e) => !e.telegram_msg_id && e.fonte);
   if (!daPubblicare.length) return;
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return;
@@ -283,7 +283,7 @@ export async function pubblicaCoda(env, sitoUrl = 'https://mappadellarivolta.org
   const auto = await env.DB.prepare("SELECT valore FROM impostazioni WHERE chiave = 'telegram_auto'").first();
   if (auto && auto.valore === 'no') return { pubblicati: 0 };
   const { results } = await env.DB.prepare(
-    "SELECT * FROM eventi WHERE stato = 'verificato' AND data >= ? AND telegram_msg_id IS NULL ORDER BY data, ora_inizio, comune"
+    "SELECT * FROM eventi WHERE stato = 'verificato' AND fonte IS NOT NULL AND fonte <> '' AND data >= ? AND telegram_msg_id IS NULL ORDER BY data, ora_inizio, comune"
   ).bind(oggiRoma()).all();
   const gruppiVisti = new Set();
   let pubblicati = 0;

@@ -1,4 +1,5 @@
 // Validazione e salvataggio degli eventi, condivisi da pubblico e moderazione.
+import { applicaRegole } from './regole.js';
 import {
   TIPI, normalizzaRegione, oggiRoma, aggiungiGiorni, contieneDatiPersonali, pulisci, adessoRoma, scriviCronologia,
 } from './lib.js';
@@ -68,14 +69,13 @@ export function validaEvento(b, opzioni = {}) {
     return { errore: 'Togli email e numeri di telefono: la mappa non pubblica dati personali.' };
   }
 
-  return {
-    dati: {
-      tipo, titolo, data, ora_inizio: oraInizio, ora_fine: oraFine, comune, provincia, regione, luogo,
-      lat: Math.round(lat * 1e5) / 1e5, lng: Math.round(lng * 1e5) / 1e5,
-      posizione_approssimativa: b.posizione_approssimativa ? 1 : 0,
-      organizzatori, fonte: fonte || null,
-    },
-  };
+  // Regole sui contenuti: niente inviti ad azioni non pubblicabili; blocchi e occupazioni solo come avviso
+  return applicaRegole({
+    tipo, titolo, data, ora_inizio: oraInizio, ora_fine: oraFine, comune, provincia, regione, luogo,
+    lat: Math.round(lat * 1e5) / 1e5, lng: Math.round(lng * 1e5) / 1e5,
+    posizione_approssimativa: b.posizione_approssimativa ? 1 : 0,
+    organizzatori, fonte: fonte || null,
+  });
 }
 
 export async function leggiEvento(db, id) {
