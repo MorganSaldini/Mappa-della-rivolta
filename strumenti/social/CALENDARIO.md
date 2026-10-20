@@ -15,7 +15,7 @@ Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
 | 2026-10-24 | 12:15 | post | Oggi in piazza | Le piazze di oggi, invito a informarsi prima di partire |
 | 2026-10-24 | 19:15 | reel | La settimana che arriva | 26 ottobre – 1 novembre, mappa animata giorno per giorno (base: `reel-settimana.mjs`) |
 | 2026-10-25 | 12:15 | carosello | Mancano 5 giorni al 30 | Sciopero generale del 30: città, sigle, studenti |
-| 2026-10-25 | 19:15 | reel | Cosa ci insegna il Sud | Agricoltori e autotrasportatori: lavori diversi, stesso problema → uniti e coordinati in 3 regioni → il Ministero li incontra il 27/10 (VERIFICA che sia ancora confermato) → "Uniti, organizzati, pacifici" → "Guarda il motivo, non il rumore". Valorizza l'organizzazione, MAI i blocchi come modello |
+| 2026-10-25 | 19:15 | reel | Cosa chiedono le piazze | Versione video del carosello del 22: 5 motivi (spesa militare, sanità, stato sociale con pensioni, caro vita, scuola), un dato con fonte ciascuno → "Guarda il motivo, non il rumore". Distacco politico |
 | 2026-10-26 | 12:15 | carosello | 30 ottobre: il Nord | Piazze del 30 al Nord |
 | 2026-10-26 | 19:15 | reel | La settimana in piazza | Mappa animata della settimana corrente |
 | 2026-10-27 | 12:15 | carosello | 30 ottobre: Centro, Sud e isole | Piazze del 30 al Centro-Sud |
@@ -28,5 +28,7 @@ Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
 | 2026-10-30 | 19:15 | post | Grazie a chi c'era | Ringraziamento, numeri della giornata (solo dati della mappa) |
 | 2026-10-31 | 12:15 | post | Perché ci chiamiamo Mappa della Rivolta | "Rivolta non vuol dire violenza" · viene da *rivoltarsi*: non restare fermi davanti a un'ingiustizia · sulla mappa solo iniziative pacifiche con fonte · Guarda il motivo, non il rumore |
 | 2026-11-01 | 12:15 | post | I numeri della settimana | Riepilogo e verso il 20 novembre |
+
+Già pubblicati: reel "Cosa ci insegna il Sud" (20/10 19:15, anticipato). Seguito possibile dopo l'incontro del 27/10: storia "Il Sud: com'è andato l'incontro" (solo con notizie verificate).
 
 Contenuti in attesa (senza data): reel "Trova la tua piazza in 10 secondi" — serve una registrazione dello schermo dell'utente.
