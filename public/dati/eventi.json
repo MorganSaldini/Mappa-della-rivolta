@@ -2,27 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-10-20-crema-presidio-01",
-      "tipo": "presidio",
-      "titolo": "MELONI SCUOLA",
-      "data": "2026-10-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Crema",
-      "provincia": "CR",
-      "regione": "Lombardia",
-      "luogo": "",
-      "lat": 45.3586,
-      "lng": 9.67375,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-19T19:24:07",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-20-bari-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nelle mense e servizi in appalto a Bari (Accadueo, Ariete, Ladisa Ristorazione)",
@@ -112,6 +91,27 @@
       "gruppo": "g-11a1beee682a"
     },
     {
+      "id": "2026-10-20-crema-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Possibili disagi, presidio studentesco non autorizzato",
+      "data": "2026-10-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Crema",
+      "provincia": "CR",
+      "regione": "Lombardia",
+      "luogo": "",
+      "lat": 45.3586,
+      "lng": 9.67375,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-20T00:31:29",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-20-locri-presidio-01",
       "tipo": "presidio",
       "titolo": "Possibili disagi: presidio agricoltori",
@@ -191,8 +191,29 @@
       "organizzatori": [],
       "fonte": "https://www.ilfattoquotidiano.it/2026/10/15/protesta-agricoltori-candela-foggia-puglia-reportage/8539546/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 3,
       "aggiornato_il": "2026-10-19T01:03:17",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-20-poggio-imperiale-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Possibili disagi: presidio autotrasportatori e agricoltori",
+      "data": "2026-10-20",
+      "ora_inizio": "00:00",
+      "ora_fine": null,
+      "comune": "Poggio Imperiale",
+      "provincia": "FG",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 41.85659,
+      "lng": 15.32112,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.foggiatoday.it/cronaca/protesta-carovita-casello-a-14-poggio-imperiale-interviste.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-20T01:17:21",
       "gruppo": null
     },
     {
@@ -347,9 +368,9 @@
         "Comune di Andria"
       ],
       "fonte": "https://www.comune.andria.bt.it/it/news/caro-vita-mobilitazione-cittadina-indetta-per-mercoledi-21-ottobre-ore-16-00",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-19T22:07:47",
+      "aggiornato_il": "2026-10-20T00:22:40",
       "gruppo": null
     },
     {
@@ -508,8 +529,29 @@
       "organizzatori": [],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-18T10:55:59",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-23-catania-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea pubblica: verso lo sciopero",
+      "data": "2026-10-23",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Piazza Giovanni Falcone",
+      "lat": 37.50662,
+      "lng": 15.09464,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/Demsu_GRDGA/?vrfl=ZWI2OHFycjIzdmxv",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-20T01:17:26",
       "gruppo": null
     },
     {
@@ -710,7 +752,7 @@
       "data": "2026-10-25",
       "ora_inizio": "10:00",
       "ora_fine": "22:02",
-      "comune": "Piazza del popolo",
+      "comune": "Grosseto",
       "provincia": "GR",
       "regione": "Toscana",
       "luogo": "Piazza del popolo",
@@ -721,7 +763,7 @@
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-10-19T22:03:21",
+      "aggiornato_il": "2026-10-20T00:23:11",
       "gruppo": null
     },
     {
@@ -850,7 +892,7 @@
     {
       "id": "2026-10-27-milano-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "come si combatte la destra?",
+      "titolo": "Assemblea sulle politiche della destra",
       "data": "2026-10-27",
       "ora_inizio": "16:00",
       "ora_fine": null,
@@ -867,7 +909,7 @@
       "fonte": "https://www.instagram.com/reel/DekU2m7NeQn/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
       "conferme": 3,
-      "aggiornato_il": "2026-10-19T17:26:22",
+      "aggiornato_il": "2026-10-20T02:37:36",
       "gruppo": null
     },
     {
@@ -939,9 +981,9 @@
         "partito comunista rivoluzionario"
       ],
       "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-19T21:20:52",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-20T00:34:04",
       "gruppo": null
     },
     {
@@ -1061,7 +1103,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:45",
       "gruppo": null
     },
@@ -1138,7 +1180,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeqliVjgHNx/?dlrf=Zm42NTg1NnM3Mnc0",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-19T10:32:09",
       "gruppo": "g-d740f89e31c8"
     },
@@ -1487,29 +1529,6 @@
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
-      "id": "2026-10-30-firenze-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "CONTRO GUERRA E CARO VITA",
-      "data": "2026-10-30",
-      "ora_inizio": "00:00",
-      "ora_fine": "23:59",
-      "comune": "FIRENZE",
-      "provincia": "FI",
-      "regione": "Toscana",
-      "luogo": "Piazza Bambini di Beslan",
-      "lat": 43.7698,
-      "lng": 11.25564,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "USB"
-      ],
-      "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
-      "stato": "verificato",
-      "conferme": 9,
-      "aggiornato_il": "2026-10-17T01:44:43",
-      "gruppo": "g-usb-sciopero-2026-10-30"
-    },
-    {
       "id": "2026-10-30-catania-corteo-01",
       "tipo": "sciopero_generale",
       "titolo": "Manifestazione e Corteo contro carovita",
@@ -1687,7 +1706,7 @@
       ],
       "fonte": null,
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-18T18:41:03",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -1710,7 +1729,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/ora-basta-il-30-ottobre-il-personale-ata-incrocia-le-braccia-sciopero-generale-usb-1108.html",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-18T23:49:57",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -1759,6 +1778,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-firenze-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "CONTRO GUERRA E CARO VITA",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": "23:59",
+      "comune": "FIRENZE",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Piazza Bambini di Beslan",
+      "lat": 43.7698,
+      "lng": 11.25564,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
+      "stato": "verificato",
+      "conferme": 9,
+      "aggiornato_il": "2026-10-20T02:25:49",
+      "gruppo": "g-usb-sciopero-2026-10-30"
+    },
+    {
       "id": "2026-10-30-ancona-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "NO AL CAROVITA DI GUERRA",
@@ -1777,7 +1819,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-17T12:46:54",
       "gruppo": null
     },
@@ -2256,7 +2298,7 @@
       "gruppo": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-20T00:15:37",
+  "ultimo_aggiornamento": "2026-10-20T02:37:36",
   "giorni_conservazione": 30,
-  "copia_del": "2026-10-19T22:16:22Z"
+  "copia_del": "2026-10-20T01:12:24Z"
 }
