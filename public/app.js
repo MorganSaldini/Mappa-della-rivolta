@@ -102,11 +102,13 @@
   });
 
   let mappa, gruppo;
+  let vistaScelta = false;
   if (window.L) {
     mappa = L.map('mappa', { zoomControl: true, scrollWheelZoom: false, minZoom: 4 });
     // Centra sull'Italia; se la mappa non ha ancora una misura valida usa uno zoom fisso
     const centraItalia = () => {
       mappa.invalidateSize();
+      if (vistaScelta) return; // è già aperto un evento dal link: non tornare alla vista dell'Italia
       const box = document.getElementById('mappa');
       if (box.offsetWidth > 100 && box.offsetHeight > 100) mappa.fitBounds([[36.6, 6.6], [47.1, 18.5]]);
       else mappa.setView([42.3, 12.6], 5);
@@ -1079,7 +1081,15 @@
       location.replace('archivio.html?e=' + encodeURIComponent(id));
       return;
     }
+    if (id && !m) {
+      $('#avviso-mappa').textContent = 'Questo evento non è visibile sulla mappa pubblica: può essere nascosto, rifiutato o ancora in coda di verifica.';
+      $('#avviso-mappa').hidden = false;
+    }
     if (m && gruppo) {
+      // Aspetta che la pagina abbia finito di caricarsi: al termine la mappa si ricentra sull'Italia
+      if (document.readyState !== 'complete') await new Promise((ok) => window.addEventListener('load', ok, { once: true }));
+      vistaScelta = true;
+      mappa.invalidateSize();
       $('#mappa').scrollIntoView({ block: 'center' });
       gruppo.zoomToShowLayer ? gruppo.zoomToShowLayer(m, () => m.openPopup()) : (mappa.setView(m.getLatLng(), 14), m.openPopup());
     }
