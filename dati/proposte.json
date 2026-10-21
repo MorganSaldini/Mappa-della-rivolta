@@ -1,56 +1,24 @@
 [
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nelle mense e servizi in appalto a Bari (Accadueo, Ariete, Ladisa Ristorazione)",
-    "data": "2026-10-20",
+    "tipo": "presidio",
+    "titolo": "Presidio per la sanità pubblica davanti all'ospedale di Cona",
+    "data": "2026-10-21",
     "ora_inizio": null,
     "ora_fine": null,
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 41.1171,
-    "lng": 16.8719,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
-    "note": "Sciopero di tutta la giornata del personale di Accadueo, Ariete Soc. Coop. e Ladisa Ristorazione. Sigle non indicate dalla fonte."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale del personale ZTE Italia",
-    "data": "2026-10-20",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
-    "note": "Sciopero nazionale di tutta la giornata (telecomunicazioni). Nessun luogo indicato: posizione indicativa a Roma. Sigle non indicate."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Arriva Udine",
-    "data": "2026-10-20",
-    "ora_inizio": "15:00",
-    "ora_fine": "23:59",
-    "comune": "Udine",
-    "provincia": "UD",
-    "regione": "Friuli-Venezia Giulia",
-    "luogo": "",
-    "lat": 46.0711,
-    "lng": 13.2346,
+    "comune": "Ferrara",
+    "provincia": "FE",
+    "regione": "Emilia-Romagna",
+    "luogo": "Ospedale di Cona",
+    "lat": 44.8085,
+    "lng": 11.697,
     "posizione_approssimativa": true,
     "organizzatori": [
-      "ASI-AU"
+      "RSU Ausl e AOU Ferrara",
+      "FP CGIL",
+      "UIL FPL"
     ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "9 ore, dalle 15 alle 24, ambito locale"
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Presidio con stato di agitazione del personale sanitario; orario non indicato"
   },
   {
     "ora_inizio": "11:30",
@@ -72,6 +40,44 @@
     "note": "4 ore, trasporto pubblico locale; posizione indicativa (centro città)"
   },
   {
+    "tipo": "presidio",
+    "titolo": "Manifestazione in piazza della Scala per la coesione sociale",
+    "data": "2026-10-21",
+    "ora_inizio": "18:30",
+    "ora_fine": null,
+    "comune": "Milano",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "Piazza della Scala",
+    "lat": 45.4674,
+    "lng": 9.1899,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Camera del Lavoro di Milano"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Iniziativa della Camera del Lavoro di Milano"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio dei lavoratori in appalto trasporto e montaggio mobili davanti a Ikea",
+    "data": "2026-10-21",
+    "ora_inizio": "10:00",
+    "ora_fine": "12:00",
+    "comune": "Padova",
+    "provincia": "PD",
+    "regione": "Veneto",
+    "luogo": "Davanti allo store Ikea",
+    "lat": 45.3931,
+    "lng": 11.9262,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Filt CGIL Padova"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Presidio negli appalti di trasporto e montaggio mobili; posizione indicativa dello store"
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale Italy Ecology Systema (raccolta rifiuti)",
     "data": "2026-10-21",
@@ -87,6 +93,85 @@
     "organizzatori": [],
     "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
     "note": "Sciopero di tutta la giornata nei comuni di Fossato Serralta, Sorbo San Basile, Taverna e Pentone. Sigle non indicate dalla fonte."
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio dei lavoratori ex Ilva davanti al grattacielo della Regione Piemonte",
+    "data": "2026-10-21",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Torino",
+    "provincia": "TO",
+    "regione": "Piemonte",
+    "luogo": "Grattacielo della Regione Piemonte",
+    "lat": 45.03,
+    "lng": 7.667,
+    "posizione_approssimativa": true,
+    "organizzatori": [],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "In concomitanza con il tavolo di crisi in Regione; sigle e orario non indicati dalla fonte"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nel cantiere della metropolitana di Catania (CMC Ravenna)",
+    "data": "2026-10-22",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Catania",
+    "provincia": "CT",
+    "regione": "Sicilia",
+    "luogo": "",
+    "lat": 37.5079,
+    "lng": 15.083,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILLEA CGIL",
+      "FILCA CISL",
+      "FENEAL UIL"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Sciopero dei lavoratori edili del cantiere metro; posizione indicativa"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero a singhiozzo allo stabilimento Duplomatic",
+    "data": "2026-10-22",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Legnano",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "Stabilimento Duplomatic",
+    "lat": 45.596,
+    "lng": 8.915,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "RSU",
+      "FIOM CGIL"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Metalmeccanici; in concomitanza con tavolo aziendale. Posizione indicativa (centro città)"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Sit-in dei lavoratori Eurallumina",
+    "data": "2026-10-22",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Portoscuso",
+    "provincia": "SU",
+    "regione": "Sardegna",
+    "luogo": "Polo industriale di Portovesme",
+    "lat": 39.205,
+    "lng": 8.387,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILCTEM CGIL",
+      "FEMCA CISL",
+      "UILTEC UIL"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Vertenza Eurallumina (metallurgia); orario non indicato, posizione indicativa"
   },
   {
     "tipo": "sciopero_categoria",
@@ -109,6 +194,51 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero regionale dello spettacolo dal vivo in Emilia-Romagna",
+    "data": "2026-10-23",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "",
+    "lat": 44.4949,
+    "lng": 11.3426,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "SLC CGIL",
+      "FISTEL CISL",
+      "UILCOM UIL"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Sciopero di intera giornata nei teatri e nello spettacolo dal vivo di tutta la regione; posizione indicativa"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo contro il caporalato in agricoltura",
+    "data": "2026-10-24",
+    "ora_inizio": "14:00",
+    "ora_fine": null,
+    "comune": "Alba",
+    "provincia": "CN",
+    "regione": "Piemonte",
+    "luogo": "Via Pola",
+    "lat": 44.699,
+    "lng": 8.03,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Caritas diocesana",
+      "CGIL",
+      "CISL",
+      "UIL",
+      "Libera",
+      "Arci"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "note": "Ritrovo in via Pola, arrivo in piazza Michele Ferrero"
   },
   {
     "tipo": "corteo",
@@ -168,6 +298,25 @@
     ],
     "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
     "note": "Pace: non violento, percorso n.d. Stesso giorno corteo studentesco \"Sblocchiamo tutto\" ore 10:30 p.za della Libertà→p.za Risorgimento (fonte: juorno.it/studenti-mobilitazione-permanente…)"
+  },
+  {
+    "tipo": "assemblea",
+    "titolo": "Assemblea pubblica di preparazione allo sciopero generale del 30 ottobre",
+    "data": "2026-10-26",
+    "ora_inizio": "18:00",
+    "ora_fine": null,
+    "comune": "Cuneo",
+    "provincia": "CN",
+    "regione": "Piemonte",
+    "luogo": "Il NuoVo, via Parco della Gioventù",
+    "lat": 44.39,
+    "lng": 7.548,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB Cuneo"
+    ],
+    "fonte": "https://www.targatocn.it/2026/10/20/leggi-notizia/argomenti/economia-7/articolo/lusb-verso-lo-sciopero-generale-del-30-ottobre-anche-a-cuneo-si-prepara-la-mobilitazione-1.html",
+    "note": "Assemblea pubblica Usb; posizione indicativa"
   },
   {
     "tipo": "sciopero_categoria",
@@ -254,6 +403,26 @@
     "note": "4 ore, trasporto aereo"
   },
   {
+    "tipo": "corteo",
+    "titolo": "Corteo regionale per lo sciopero generale",
+    "data": "2026-10-30",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Piazza Mancini",
+    "lat": 40.851,
+    "lng": 14.27,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.napolike.it/sciopero-generale-30-ottobre-2026-napoli",
+    "note": "Concentramento in piazza Mancini (zona Stazione Centrale) in mattinata; orario e percorso da confermare",
+    "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
     "data": "2026-10-30",
@@ -290,7 +459,8 @@
       "USB"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "USB il 14/10 ha escluso TPL e treni per franchigia 30/10-5/11 (metropolitanadiroma.it); USI-CIT esclude i trasporti. Resta per gli altri settori pubblici e privati"
+    "note": "USB il 14/10 ha escluso TPL e treni per franchigia 30/10-5/11 (metropolitanadiroma.it); USI-CIT esclude i trasporti. Resta per gli altri settori pubblici e privati",
+    "gruppo": "sciopero-generale-2026-10-30"
   },
   {
     "tipo": "sciopero_categoria",
@@ -310,6 +480,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore in tutti i porti; posizione indicativa. Verificare effetto franchigia trasporti 30/10-5/11 (marittimo escluso per USI-CIT)"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo regionale per lo sciopero generale",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Torino",
+    "provincia": "TO",
+    "regione": "Piemonte",
+    "luogo": "Piazza Palazzo di Città",
+    "lat": 45.0733,
+    "lng": 7.6813,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB Piemonte"
+    ],
+    "fonte": "https://www.targatocn.it/2026/10/20/leggi-notizia/argomenti/economia-7/articolo/lusb-verso-lo-sciopero-generale-del-30-ottobre-anche-a-cuneo-si-prepara-la-mobilitazione-1.html",
+    "note": "Manifestazione regionale Usb nel giorno dello sciopero generale; ritrovo ore 9:30",
+    "gruppo": "sciopero-generale-2026-10-30"
   },
   {
     "tipo": "sciopero_categoria",
