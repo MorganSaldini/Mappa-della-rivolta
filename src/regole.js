@@ -19,6 +19,17 @@ export const RE_INVITO = new RegExp([
   'attacchiamo\\b', 'sabotiamo\\b', 'forziamo\\b', 'contro la polizia',
 ].map((p) => `\\b${p}`).join('|'), 'i');
 
+// Sigle giudicate non affidabili dall'amministratore (elenco in agente/ISTRUZIONI-AMMINISTRATORE.md).
+// I loro eventi non si pubblicano: i nuovi invii vengono rifiutati, quelli già presenti nascosti.
+// Solo l'amministratore umano aggiunge o toglie sigle.
+export const RE_SIGLE_ESCLUSE = /movimento\s*(?:del\s*)?17\s*(?:ottobre|\/\s*10)|\bmovimento17|\bm17\b/i;
+
+export function siglaEsclusa(e) {
+  let org = e.organizzatori;
+  if (typeof org === 'string') { try { org = JSON.parse(org); } catch { org = [org]; } }
+  return RE_SIGLE_ESCLUSE.test([e.titolo, e.luogo, ...(org || [])].join(' | '));
+}
+
 // Blocchi e occupazioni (escluse forme di sciopero come il "blocco degli straordinari")
 const RE_OCCUPAZIONE = /\b(occupazion\w*|occupat[oaie]\b|occupa\b|okkupa\w*|autogestion\w*)/i;
 const RE_BLOCCO = /\bblocc(o|hi|aggio|ato|ata|ati|ate)?\b/i;
@@ -54,6 +65,9 @@ export function eConformeAvviso(e) {
 // Applica le regole ai dati di un nuovo evento o di una modifica.
 // Restituisce { errore } oppure { dati, avviso: true|false } con i dati già adattati.
 export function applicaRegole(dati) {
+  if (siglaEsclusa(dati)) {
+    return { errore: 'La mappa non pubblica gli eventi di questa sigla. Per informazioni: paginadellarivolta@gmail.com.' };
+  }
   if (RE_INVITO.test(dati.titolo) || RE_INVITO.test(dati.luogo || '')) {
     return { errore: 'La mappa non pubblica inviti a bloccare, occupare o a scontri. Puoi segnalare solo i possibili disagi, con un articolo di giornale o una fonte ufficiale.' };
   }
@@ -70,6 +84,7 @@ export function applicaRegole(dati) {
 // Può diventare "verificato"? Serve una fonte; gli avvisi di disagi li verifica solo un moderatore umano.
 export function verificabile(e, { umano = false } = {}) {
   if (!e.fonte) return 'Senza fonte un evento non può essere verificato: aggiungi prima il link alla fonte.';
+  if (siglaEsclusa(e)) return 'Questa sigla è tra quelle che la mappa non pubblica (regole dell\'amministratore).';
   if (RE_INVITO.test(e.titolo || '')) return 'Il titolo contiene un invito non pubblicabile: correggilo o rifiuta l\'evento.';
   if (eAvvisoDisagi(e) && !eConformeAvviso(e)) return 'Blocchi e occupazioni vanno pubblicati come "Possibili disagi:", senza organizzatori né orario.';
   if (eAvvisoDisagi(e) && !umano) return 'Gli avvisi di possibili disagi li verifica solo un moderatore.';
@@ -85,6 +100,13 @@ export async function eseguiRegole(env, salvaVersione) {
   ).bind(oggi).all();
   const esito = { nascosti: 0, avvisi: 0, avvisi_senza_fonte: 0, senza_fonte: 0 };
   for (const e of results) {
+    if (siglaEsclusa(e)) {
+      await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'regole_sigla_esclusa', 'regole');
+      await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
+        .bind('Nascosto in automatico: sigla che la mappa non pubblica (decisione dell\'amministratore).', e.id).run();
+      esito.sigle_escluse = (esito.sigle_escluse || 0) + 1;
+      continue;
+    }
     if (RE_INVITO.test(e.titolo || '')) {
       await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'regole_invito', 'regole');
       await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')

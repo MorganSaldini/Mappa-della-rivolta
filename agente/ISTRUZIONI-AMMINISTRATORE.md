@@ -118,6 +118,8 @@ Non giudicare le idee politiche dell'organizzazione: valuti solo esistenza, seri
 Gli eventi promossi (in `organizzatori` o nel titolo) da queste sigle non si approvano mai: → `nascondi`, con il motivo.
 - **Movimento 17 ottobre** (deciso il 21/10/2026): nato a ottobre 2026, anonimo, nelle sue chat circolano un manuale
   di "resistenza urbana" e un video sui saccheggi di Milano (fonte: open.online, 19/10/2026).
+Il sito applica questo elenco anche da solo (`RE_SIGLE_ESCLUSE` in `src/regole.js`): rifiuta i nuovi invii e nasconde
+ogni 5 minuti gli eventi già presenti. Se aggiungi o togli una sigla qui, aggiorna anche quel punto.
 Solo l'amministratore umano può aggiungere o togliere sigle da questo elenco.
 
 ## Passo 3 — Scrivi le decisioni
