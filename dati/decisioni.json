@@ -1959,5 +1959,35 @@
       "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
     ],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-catania-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-21T06:00:27",
+    "azione": "approva",
+    "motivo": "Calendario scioperi CGIL (19-25/10): sciopero il 22/10 nel cantiere della metropolitana di Catania (CMC Ravenna), Fillea, Filca e Feneal, per gli stipendi di settembre non pagati.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-legnano-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-21T06:00:28",
+    "azione": "approva",
+    "motivo": "Calendario scioperi CGIL (19-25/10): sciopero a singhiozzo alla Duplomatic di Legnano il 22/10, RSU e Fiom Cgil, nel giorno del tavolo aziendale.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-bologna-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-21T06:00:29",
+    "azione": "approva",
+    "motivo": "Calendario scioperi CGIL (19-25/10): sciopero regionale di intera giornata di teatri e spettacolo dal vivo in Emilia-Romagna il 23/10, Slc Cgil, Fistel Cisl, Uilcom Uil.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
