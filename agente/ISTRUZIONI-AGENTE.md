@@ -96,3 +96,6 @@ Usa sempre il mese e l'anno correnti e i successivi, non date passate.
 ## Resoconto finale
 Alla fine scrivi un breve resoconto in italiano: quante proposte nuove, quante tolte perché passate, elenco delle nuove
 (data, comune, titolo, fonte) e le fonti che non hai potuto leggere.
+
+## Sigle che la mappa non pubblica
+Non proporre eventi del **Movimento 17 ottobre** né della convocazione social **«Noi siamo il popolo»** (decisione dell'amministratore, 21/10/2026). Il sito li rifiuta comunque (`RE_SIGLE_ESCLUSE` in `src/regole.js`).
