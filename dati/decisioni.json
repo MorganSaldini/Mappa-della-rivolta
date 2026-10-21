@@ -1909,5 +1909,16 @@
       "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
     ],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-padova-corteo-03",
+    "aggiornato_il": "2026-10-21T11:54:35",
+    "azione": "sospetto",
+    "motivo": "Movimento 17 ottobre: sigla nuova con amministratori anonimi; la stampa (Open, 19/10) riporta materiali su azione diretta nelle sue chat e il rilancio di un video sui saccheggi di Milano. Dopo il decreto del 20/10 non si approva in automatico: decide un moderatore venerdì 23/10, solo con fonte giornalistica e se non c'è un divieto della Questura. Titolo da correggere (es. 'Manifestazione contro il carovita').",
+    "fonti_controllate": [
+      "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/",
+      "https://pagellapolitica.it/articoli/nuovo-decreto-governo-manifestazioni-cosa-prevede"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
