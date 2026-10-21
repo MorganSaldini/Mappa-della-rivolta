@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=7">
-  <link rel="stylesheet" href="modera.css?v=8">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="modera.css?v=9">
 </head>
 <body>
   <header class="barra">
@@ -37,6 +38,7 @@
         <button role="tab" data-scheda="modifiche">Correzioni <b id="n-modifiche">0</b></button>
         <button role="tab" data-scheda="problemi">Segnalazioni <b id="n-problemi">0</b></button>
         <button role="tab" data-scheda="sospetti">🤖 Sospetti <b id="n-sospetti">0</b></button>
+        <button role="tab" data-scheda="doppioni">👯 Doppioni <b id="n-doppioni">0</b></button>
         <button role="tab" data-scheda="tutti">Tutti gli eventi</button>
         <button role="tab" data-scheda="staff" class="solo-admin" hidden>Moderatori</button>
         <button role="tab" data-scheda="impostazioni" class="solo-admin" hidden>Impostazioni</button>
@@ -46,10 +48,39 @@
         <button type="button" class="bottone bottone--chiaro" id="importa-agente">🤖 Importa ora proposte e decisioni AI</button>
         <span class="tenue" id="esito-agente">L’agente cerca mobilitazioni da fonti pubbliche; l’amministratore AI le verifica. Il sito importa tutto da solo ogni ora.</span>
       </div>
+      <div class="strumenti-mod" id="strumenti-mod">
+        <form id="filtri-mod" class="mod-filtri" role="search" aria-label="Filtra gli eventi">
+          <input name="testo" type="search" placeholder="Cerca: titolo, comune, sigla o codice" aria-label="Cerca">
+          <select name="tipo" aria-label="Tipo"><option value="">Tutti i tipi</option></select>
+          <select name="regione" aria-label="Regione"><option value="">Tutte le regioni</option></select>
+          <select name="periodo" aria-label="Periodo">
+            <option value="">Tutte le date</option>
+            <option value="oggi">Oggi</option>
+            <option value="settimana">Prossimi 7 giorni</option>
+            <option value="mese">Prossimi 30 giorni</option>
+            <option value="passati">Già passati</option>
+          </select>
+          <select name="stato" aria-label="Stato">
+            <option value="">Tutti gli stati</option>
+            <option value="da_verificare">Da verificare</option>
+            <option value="verificato">Verificati</option>
+            <option value="annullato">Annullati</option>
+            <option value="nascosto">Nascosti</option>
+            <option value="rifiutato">Rifiutati</option>
+          </select>
+          <button type="button" class="bottone bottone--chiaro" id="azzera-filtri">Azzera</button>
+          <button type="button" class="bottone bottone--chiaro" id="mostra-mappa">🗺 Nascondi mappa</button>
+        </form>
+        <div class="box-mappa-mod" id="box-mappa-mod">
+          <div id="mappa-mod" class="mappa-mod" role="region" aria-label="Mappa degli eventi della sezione"></div>
+          <p class="tenue" id="conta-mappa"></p>
+        </div>
+      </div>
       <div class="scheda" id="scheda-nuovi"></div>
       <div class="scheda" id="scheda-modifiche" hidden></div>
       <div class="scheda" id="scheda-problemi" hidden></div>
       <div class="scheda" id="scheda-sospetti" hidden></div>
+      <div class="scheda" id="scheda-doppioni" hidden></div>
       <div class="scheda" id="scheda-tutti" hidden>
         <form id="form-cerca-mod" class="mod-filtri">
           <input name="q" placeholder="Cerca per titolo, comune o codice evento">
@@ -117,6 +148,7 @@
   </dialog>
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
-  <script src="modera.js?v=10"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="modera.js?v=11"></script>
 </body>
 </html>

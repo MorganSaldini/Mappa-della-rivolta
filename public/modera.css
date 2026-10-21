@@ -51,3 +51,17 @@ table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
 .nota-agente { background: #eef3fb; border-radius: 8px; padding: 4px 8px; font-size: .9rem; }
 
 .motivo--ai{border-left:4px solid #b35c00;background:#fff6ec}
+
+/* Filtri e mappa del pannello */
+.strumenti-mod { margin-bottom: 12px; }
+.mod-filtri .bottone { min-height: 40px; }
+.box-mappa-mod { margin-bottom: 8px; }
+.mappa-mod { height: 320px; border: 1px solid var(--bordo); border-radius: var(--raggio); background: #e8e4dc; }
+@media (max-width: 600px) { .mappa-mod { height: 240px; } }
+.lampeggia { outline: 3px solid var(--rosso); outline-offset: 2px; transition: outline-color .3s; }
+/* Doppioni */
+.coppia { border: 2px dashed #b35c00; border-radius: var(--raggio); padding: 10px; margin-bottom: 16px; background: #fffaf3; }
+.coppia__testa { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.coppia__eventi { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.coppia__eventi .scheda-ev { margin-bottom: 0; }
+@media (max-width: 760px) { .coppia__eventi { grid-template-columns: 1fr; } }

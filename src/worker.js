@@ -9,6 +9,7 @@ import * as pubblico from './pubblico.js';
 import * as mod from './moderazione.js';
 import * as calendario from './calendario.js';
 import * as archivio from './archivio.js';
+import * as doppioni from './doppioni.js';
 import {
   errore, leggiSessione, stessaOrigine, INTESTAZIONI_SICUREZZA, MAX_CORPO, svuotaCacheEventi,
 } from './lib.js';
@@ -48,6 +49,8 @@ const RISERVATE = [
   ['POST', /^\/api\/admin\/telegram-trova$/, mod.pubblicaTrova, 'admin'],
   ['POST', /^\/api\/admin\/pulizia$/, mod.pulizia, 'admin'],
   ['POST', /^\/api\/moderazione\/importa-agente$/, mod.importaAgente, 'moderatore'],
+  ['GET', /^\/api\/moderazione\/doppioni$/, doppioni.elenco, 'moderatore'],
+  ['POST', /^\/api\/moderazione\/doppioni$/, doppioni.azione, 'moderatore'],
 ];
 
 const LETTURE_APERTE = /^\/api\/(mobilitazioni|eventi|calendario\.ics)\/?$/;

@@ -5,6 +5,7 @@ import {
   scriviCronologia, chiaveCacheEventi, SECONDI_CACHE_EVENTI,
 } from './lib.js';
 import { validaEvento } from './dati.js';
+import { cercaSimili } from './doppioni.js';
 
 const CAMPI_PUBBLICI =
   'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, lat, lng, ' +
@@ -66,6 +67,8 @@ export async function onRequestPost({ request, env }) {
     return errore('Verifica anti-bot non riuscita. Ricarica la pagina e riprova.', 403);
   }
 
+  const imp0 = await impostazioni(env.DB);
+
   // ---- Validazione ----
   // Un evento può svolgersi in più città e in più giorni: i campi comuni (tipo, titolo, organizzatori, fonte)
   // valgono per tutti; ogni città ha il suo luogo, le sue coordinate e, se diverso, il suo orario.
@@ -112,8 +115,26 @@ export async function onRequestPost({ request, env }) {
     validi.push(v.dati);
   }
 
+  // Controllo doppioni: se c'è già un evento molto simile (stesso giorno, stesso posto) lo mostriamo
+  // e chiediamo conferma. Chi conferma che è diverso può inviare lo stesso: l'evento finisce comunque
+  // nella scheda "Doppioni" del pannello se resta molto simile.
+  const giaPresenti = [];
+  for (const d of validi.slice(0, 10)) {
+    for (const x of await cercaSimili(env.DB, d)) {
+      if (giaPresenti.some((g) => g.id === x.e.id)) continue;
+      // Degli eventi non ancora pubblici non mostriamo il contenuto
+      const pubblico = ['verificato', 'annullato'].includes(x.e.stato) || (x.e.stato === 'da_verificare' && imp0.pubblicazioneImmediata);
+      giaPresenti.push(pubblico
+        ? { id: x.e.id, titolo: x.e.titolo, data: x.e.data, ora_inizio: x.e.ora_inizio, comune: x.e.comune, luogo: x.e.luogo, stato: x.e.stato, quasi_certo: x.punteggio >= 0.8 }
+        : { id: null, titolo: 'Una segnalazione simile è già in attesa di verifica', data: x.e.data, comune: x.e.comune, stato: 'in_attesa', quasi_certo: x.punteggio >= 0.8 });
+    }
+  }
+  if (giaPresenti.length && b.confermo_diverso !== true) {
+    return json({ ok: false, doppioni: giaPresenti.slice(0, 5), errore: 'Sembra già presente sulla mappa.' }, 409);
+  }
+
   // Limite di invii: conta solo le segnalazioni valide (una per invio, anche se le città sono tante)
-  const imp = await impostazioni(env.DB);
+  const imp = imp0;
   const hash = await hashAnonimo(request, env);
   if (!(await controllaLimite(env.DB, hash, 'nuovo_evento', imp.maxInviiOra))) {
     return errore('Hai inviato troppe segnalazioni in poco tempo. Riprova tra un’ora.', 429);

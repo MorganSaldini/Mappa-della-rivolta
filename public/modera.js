@@ -108,22 +108,120 @@
 
   // ---------- Schede ----------
   document.querySelectorAll('[data-scheda]').forEach((b) => b.addEventListener('click', () => apriScheda(b.dataset.scheda)));
+  const SCHEDE_EVENTI = ['nuovi', 'modifiche', 'problemi', 'sospetti', 'doppioni', 'tutti'];
+  function schedaAttiva() {
+    const b = document.querySelector('[data-scheda][aria-selected="true"]');
+    return b ? b.dataset.scheda : 'nuovi';
+  }
   function apriScheda(nome) {
     document.querySelectorAll('[data-scheda]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.scheda === nome)));
     document.querySelectorAll('.scheda').forEach((s) => (s.hidden = s.id !== 'scheda-' + nome));
     $('#barra-agente').hidden = nome !== 'nuovi';
+    // Filtri e mappa valgono per tutte le sezioni con eventi
+    const conEventi = SCHEDE_EVENTI.includes(nome);
+    $('#strumenti-mod').hidden = !conEventi;
     if (nome === 'tutti') cercaTutti();
+    if (nome === 'doppioni') caricaDoppioni();
     if (nome === 'staff') caricaStaff();
     if (nome === 'impostazioni') caricaImpostazioni();
     if (['nuovi', 'modifiche', 'problemi', 'sospetti'].includes(nome)) caricaCoda();
   }
+
+  // ---------- Filtri (uguali per tutte le sezioni) ----------
+  const ff = $('#filtri-mod');
+  ff.tipo.insertAdjacentHTML('beforeend', Object.entries(TIPI).map(([k, t]) => `<option value="${k}">${t[0]} ${esc(t[1])}</option>`).join(''));
+  ff.regione.insertAdjacentHTML('beforeend', ['Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna', 'Friuli-Venezia Giulia', 'Lazio', 'Liguria', 'Lombardia', 'Marche', 'Molise', 'Piemonte', 'Puglia', 'Sardegna', 'Sicilia', 'Toscana', 'Trentino-Alto Adige', 'Umbria', "Valle d'Aosta", 'Veneto'].map((r) => `<option>${esc(r)}</option>`).join(''));
+  const oggiIso = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome' }).format(new Date());
+  const piuGiorni = (iso, n) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+  const normale = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  function filtriAttivi() {
+    return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value;
+  }
+  // Un elemento (evento, correzione o segnalazione) passa i filtri?
+  function passa(e) {
+    if (!e) return false;
+    const t = normale(ff.testo.value.trim());
+    if (t && !normale([e.titolo, e.comune, e.luogo, e.id || e.evento_id, (e.organizzatori || []).join(' ')].join(' ')).includes(t)) return false;
+    if (ff.tipo.value && e.tipo !== ff.tipo.value) return false;
+    if (ff.regione.value && e.regione !== ff.regione.value) return false;
+    if (ff.stato.value && e.stato !== ff.stato.value) return false;
+    const oggi = oggiIso(), p = ff.periodo.value;
+    if (p === 'passati' && !(e.data < oggi)) return false;
+    if (p && p !== 'passati') {
+      if (e.data < oggi) return false;
+      if (p === 'oggi' && e.data !== oggi) return false;
+      if (p === 'settimana' && e.data > piuGiorni(oggi, 7)) return false;
+      if (p === 'mese' && e.data > piuGiorni(oggi, 31)) return false;
+    }
+    return true;
+  }
+  const filtrati = (lista) => (lista || []).filter(passa);
+  const nienteConFiltri = (testo) => `<p class="vuoto">${filtriAttivi() ? 'Nessun risultato con questi filtri.' : testo}</p>`;
+  let rinvio;
+  ff.addEventListener('input', () => { clearTimeout(rinvio); rinvio = setTimeout(ridisegna, 150); });
+  ff.addEventListener('submit', (ev) => ev.preventDefault());
+  $('#azzera-filtri').addEventListener('click', () => { ff.reset(); ridisegna(); });
+  function ridisegna() {
+    const n = schedaAttiva();
+    if (n === 'tutti') disegnaTutti();
+    else if (n === 'doppioni') disegnaDoppioni();
+    else disegnaCoda();
+  }
+
+  // ---------- Mappa del pannello ----------
+  let mappaMod = null, livelloMod = null, mappaVisibile = true;
+  try { mappaVisibile = localStorage.getItem('mod-mappa') !== 'no'; } catch (_) { /* memoria del browser non disponibile */ }
+  function aggiornaInterruttore() {
+    $('#box-mappa-mod').hidden = !mappaVisibile;
+    $('#mostra-mappa').textContent = mappaVisibile ? '🗺 Nascondi mappa' : '🗺 Mostra mappa';
+  }
+  $('#mostra-mappa').addEventListener('click', () => {
+    mappaVisibile = !mappaVisibile;
+    try { localStorage.setItem('mod-mappa', mappaVisibile ? 'si' : 'no'); } catch (_) { /* niente */ }
+    aggiornaInterruttore();
+    if (mappaVisibile) { setTimeout(() => mappaMod && mappaMod.invalidateSize(), 50); ridisegna(); }
+  });
+  aggiornaInterruttore();
+  window.addEventListener('resize', () => { clearTimeout(rinvio); rinvio = setTimeout(ridisegna, 250); });
+  // punti: [{ id, lat, lng, tipo, titolo, data, comune, ancora }]; linee: coppie di punti da collegare (doppioni)
+  function disegnaMappa(punti, linee = []) {
+    if (!window.L || !mappaVisibile) return;
+    if (!mappaMod) {
+      mappaMod = L.map('mappa-mod', { scrollWheelZoom: false }).setView([42.3, 12.6], 5);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© contributori OpenStreetMap' }).addTo(mappaMod);
+      livelloMod = L.layerGroup().addTo(mappaMod);
+    }
+    mappaMod.invalidateSize();
+    livelloMod.clearLayers();
+    const validi = punti.filter((p) => Number.isFinite(+p.lat) && Number.isFinite(+p.lng));
+    for (const [a, b] of linee) {
+      if (Number.isFinite(+a.lat) && Number.isFinite(+b.lat)) L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#9f241d', weight: 3, dashArray: '6 6' }).addTo(livelloMod);
+    }
+    for (const p of validi) {
+      const t = TIPI[p.tipo] || TIPI.altro;
+      const m = L.circleMarker([p.lat, p.lng], { radius: 8, color: '#fff', weight: 2, fillColor: t[2], fillOpacity: 0.95 }).addTo(livelloMod);
+      m.bindPopup(`<strong>${esc(p.titolo)}</strong><br>${esc(dataIt(p.data))} · ${esc(p.comune)}<br><a href="#" data-vai-scheda="${esc(p.ancora)}">Vai alla scheda ↓</a>`);
+    }
+    $('#conta-mappa').textContent = validi.length === 1 ? '1 punto sulla mappa' : `${validi.length} punti sulla mappa`;
+    if (validi.length) mappaMod.fitBounds(validi.map((p) => [p.lat, p.lng]), { padding: [24, 24], maxZoom: 12 });
+    else mappaMod.setView([42.3, 12.6], 5);
+  }
+  document.addEventListener('click', (ev) => {
+    const l = ev.target.closest('[data-vai-scheda]');
+    if (!l) return;
+    ev.preventDefault();
+    const el = document.getElementById(l.dataset.vaiScheda);
+    if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.add('lampeggia'); setTimeout(() => el.classList.remove('lampeggia'), 1600); }
+  });
+  const punto = (e, ancora) => ({ id: e.id || e.evento_id, lat: e.lat, lng: e.lng, tipo: e.tipo, titolo: e.titolo, data: e.data, comune: e.comune, ancora });
+  const ancoraDi = (pref, id) => pref + '-' + String(id).replace(/[^a-zA-Z0-9_-]/g, '_');
 
   // ---------- Schede evento ----------
   function schedaEvento(e, azioni, extra = '') {
     const t = TIPI[e.tipo] || TIPI.altro;
     ultimi[e.id] = e;
     const fonte = e.fonte && urlSicuro(e.fonte);
-    return `<article class="scheda-ev" style="--c:${t[2]}">
+    return `<article class="scheda-ev" id="${esc(ancoraDi('ev', e.id))}" style="--c:${t[2]}">
       <div class="etichette"><span class="etichetta" style="--c:${t[2]}">${t[0]} ${esc(t[1])}</span>
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${esc(STATI[e.stato] || e.stato)}</span>
         ${e.segnalazioni_aperte ? `<span class="etichetta" style="--c:#9f241d">⚠️ ${e.segnalazioni_aperte} segnalazioni</span>` : ''}
@@ -169,23 +267,34 @@
   }
 
   // ---------- Coda ----------
+  let datiCoda = null, datiTutti = [], datiDoppioni = null;
   async function caricaCoda() {
     let d;
     try { d = await api('/api/moderazione/coda'); } catch (e) { return; }
+    datiCoda = d;
     const conta = (id, n) => { $(id).textContent = n; $(id).classList.toggle('zero', !n); };
-    const sospetti = d.sospetti || [];
-    conta('#n-nuovi', d.nuovi.length); conta('#n-modifiche', d.modifiche.length); conta('#n-problemi', d.problemi.length); conta('#n-sospetti', sospetti.length);
+    conta('#n-nuovi', d.nuovi.length); conta('#n-modifiche', d.modifiche.length); conta('#n-problemi', d.problemi.length); conta('#n-sospetti', (d.sospetti || []).length);
+    disegnaCoda();
+    contaDoppioni();
+  }
 
-    $('#scheda-nuovi').innerHTML = d.nuovi.length
+  function disegnaCoda() {
+    const d = datiCoda;
+    if (!d) return;
+    const nuovi = filtrati(d.nuovi), sospetti = filtrati(d.sospetti || []);
+    const modifiche = d.modifiche.filter((m) => passa({ ...m, organizzatori: [] }));
+    const problemi = filtrati(d.problemi.map((p) => ({ ...p, id: p.evento_id })));
+
+    $('#scheda-nuovi').innerHTML = nuovi.length
       ? '<p class="tenue">Controlla la fonte prima di approvare. Gli eventi nascosti sono stati segnalati più volte dalla community.</p>' +
-        d.nuovi.map((e) => schedaEvento(e, bottoniEvento(e))).join('')
-      : '<p class="vuoto">Nessun evento da controllare. 🎉</p>';
+        nuovi.map((e) => schedaEvento(e, bottoniEvento(e))).join('')
+      : nienteConFiltri('Nessun evento da controllare. 🎉');
 
-    $('#scheda-modifiche').innerHTML = d.modifiche.length ? d.modifiche.map((m) => {
+    $('#scheda-modifiche').innerHTML = modifiche.length ? modifiche.map((m) => {
       const attuale = { ...m, organizzatori: (() => { try { return JSON.parse(m.org_attuali || '[]'); } catch { return []; } })(), fonte: m.fonte_attuale };
       const righe = Object.entries(m.campi).map(([k, v]) =>
         `<tr><th>${esc(NOMI_CAMPI[k] || k)}</th><td class="prima">${valore(k, attuale[k])}</td><td class="dopo">${valore(k, v)}</td></tr>`).join('');
-      return `<article class="scheda-ev">
+      return `<article class="scheda-ev" id="${esc(ancoraDi('mod', m.id))}">
         <h3>${esc(m.titolo)}</h3>
         <p>${esc(dataIt(m.data))} · ${esc(m.comune)} · stato attuale: ${esc(STATI[m.stato] || m.stato)}</p>
         <div class="motivo"><strong>Motivo:</strong> ${esc(m.motivo)}</div>
@@ -196,14 +305,14 @@
           <button type="button" class="bottone bottone--no" data-mod="rifiuta" data-id="${m.id}">✕ Rifiuta</button>
           <button type="button" class="bottone bottone--chiaro" data-az="cronologia" data-id="${esc(m.evento_id)}">🕘 Cronologia</button>
         </div></article>`;
-    }).join('') : '<p class="vuoto">Nessuna correzione in attesa.</p>';
+    }).join('') : nienteConFiltri('Nessuna correzione in attesa.');
 
     $('#scheda-sospetti').innerHTML = sospetti.length
       ? '<p class="tenue">L’amministratore AI ha trovato qualcosa che non torna. Leggi il motivo e apri le fonti, poi decidi tu: <strong>Confermo</strong> rifiuta l’evento, <strong>Non è sospetto</strong> lo rimette nella coda normale.</p>' +
         sospetti.map((e) => schedaEvento(e, bottoniSospetto(e), `<div class="motivo motivo--ai"><strong>🤖 Perché è sospetto:</strong> ${esc(String(e.sospetto).replace(/^Amministratore AI: /, ''))}</div>`)).join('')
-      : '<p class="vuoto">Nessun sospetto da controllare. 🎉</p>';
+      : nienteConFiltri('Nessun sospetto da controllare. 🎉');
 
-    $('#scheda-problemi').innerHTML = d.problemi.length ? d.problemi.map((p) => `<article class="scheda-ev" style="--c:#9f241d">
+    $('#scheda-problemi').innerHTML = problemi.length ? problemi.map((p) => `<article class="scheda-ev" id="${esc(ancoraDi('pb', p.evento_id))}" style="--c:#9f241d">
         <h3>${esc(p.titolo)}</h3>
         <p>${esc(dataIt(p.data))} · ${esc(p.comune)} · stato: ${esc(STATI[p.stato] || p.stato)} · <strong>${p.n} segnalazioni</strong></p>
         <div class="motivo">${esc(String(p.dettagli || '').split(' | ').map((x) => { const [k, ...r] = x.split(': '); return (MOTIVI[k] || k) + (r.length ? ': ' + r.join(': ') : ''); }).join(' · '))}</div>
@@ -213,7 +322,13 @@
           <button type="button" class="bottone bottone--chiaro" data-az="nascondi" data-id="${esc(p.evento_id)}">Nascondi</button>
           <button type="button" class="bottone bottone--no" data-az="rifiuta" data-id="${esc(p.evento_id)}">✕ Rifiuta</button>
           <button type="button" class="bottone bottone--chiaro" data-az="cronologia" data-id="${esc(p.evento_id)}">🕘 Cronologia</button>
-        </div></article>`).join('') : '<p class="vuoto">Nessuna segnalazione aperta.</p>';
+        </div></article>`).join('') : nienteConFiltri('Nessuna segnalazione aperta.');
+
+    const n = schedaAttiva();
+    if (n === 'nuovi') disegnaMappa(nuovi.map((e) => punto(e, ancoraDi('ev', e.id))));
+    if (n === 'sospetti') disegnaMappa(sospetti.map((e) => punto(e, ancoraDi('ev', e.id))));
+    if (n === 'modifiche') disegnaMappa(modifiche.map((m) => punto({ ...m, id: m.evento_id }, ancoraDi('mod', m.id))));
+    if (n === 'problemi') disegnaMappa(problemi.map((p) => punto(p, ancoraDi('pb', p.evento_id))));
   }
 
   async function cercaTutti() {
@@ -221,10 +336,67 @@
     const q = new URLSearchParams({ q: f.q.value, stato: f.stato.value });
     try {
       const d = await api('/api/moderazione/eventi?' + q);
-      $('#elenco-tutti').innerHTML = d.eventi.length ? d.eventi.map((e) => schedaEvento(e, bottoniEvento(e))).join('') : '<p class="vuoto">Nessun evento trovato.</p>';
+      datiTutti = d.eventi;
+      disegnaTutti();
     } catch (e) { $('#elenco-tutti').innerHTML = `<p class="vuoto">${esc(e.message)}</p>`; }
   }
+  function disegnaTutti() {
+    const lista = filtrati(datiTutti);
+    $('#elenco-tutti').innerHTML = lista.length ? lista.map((e) => schedaEvento(e, bottoniEvento(e))).join('') : nienteConFiltri('Nessun evento trovato.');
+    if (schedaAttiva() === 'tutti') disegnaMappa(lista.map((e) => punto(e, ancoraDi('ev', e.id))));
+  }
   $('#form-cerca-mod').addEventListener('submit', (ev) => { ev.preventDefault(); cercaTutti(); });
+
+  // ---------- Doppioni ----------
+  async function contaDoppioni() {
+    try {
+      datiDoppioni = await api('/api/moderazione/doppioni');
+      $('#n-doppioni').textContent = datiDoppioni.totale;
+      $('#n-doppioni').classList.toggle('zero', !datiDoppioni.totale);
+      if (schedaAttiva() === 'doppioni') disegnaDoppioni();
+    } catch (_) { /* il resto del pannello funziona comunque */ }
+  }
+  async function caricaDoppioni() {
+    $('#scheda-doppioni').innerHTML = '<p class="tenue">Cerco eventi doppi…</p>';
+    await contaDoppioni();
+    if (!datiDoppioni) $('#scheda-doppioni').innerHTML = '<p class="vuoto">Impossibile cercare i doppioni in questo momento.</p>';
+  }
+  function disegnaDoppioni() {
+    if (!datiDoppioni) return;
+    const coppie = datiDoppioni.coppie.filter((c) => passa(c.a) || passa(c.b));
+    const piccola = (e, altro, chiave) => schedaEvento(e,
+      `<button type="button" class="bottone bottone--ok" data-unisci="${esc(e.id)}" data-togli="${esc(altro.id)}" data-coppia="${esc(chiave)}">✓ Tieni questo, togli l’altro</button>` +
+      `<button type="button" class="bottone bottone--chiaro" data-az="modifica" data-id="${esc(e.id)}">✏️ Modifica</button>`);
+    $('#scheda-doppioni').innerHTML = coppie.length
+      ? '<p class="tenue">Eventi dello stesso giorno, nello stesso posto e molto simili. Scegli quale <strong>tenere</strong>: prende dall’altro fonte, luogo, orari e sigle che gli mancano, e l’altro viene tolto dalla mappa (si può ripristinare dalla cronologia). Se sono davvero due eventi diversi, premi <strong>Non sono doppioni</strong> e la coppia non comparirà più.</p>' +
+        coppie.map((c, i) => {
+          const chiave = 'cp-' + i;
+          return `<section class="coppia" id="${chiave}">
+            <div class="coppia__testa"><strong>${c.punteggio >= 0.8 ? 'Quasi certamente lo stesso evento' : 'Probabile doppione'}</strong> · ${esc(c.motivi.join(', '))}
+              <button type="button" class="bottone bottone--chiaro" data-diversi="${esc(c.a.id)}" data-altro="${esc(c.b.id)}">Non sono doppioni</button></div>
+            <div class="coppia__eventi">${piccola(c.a, c.b, chiave)}${piccola(c.b, c.a, chiave)}</div>
+          </section>`;
+        }).join('') +
+        (datiDoppioni.totale > datiDoppioni.coppie.length ? `<p class="tenue">Mostrate le prime ${datiDoppioni.coppie.length} coppie su ${datiDoppioni.totale}.</p>` : '')
+      : nienteConFiltri('Nessun doppione trovato. 🎉');
+    const punti = [], linee = [];
+    coppie.forEach((c, i) => { const a = punto(c.a, 'cp-' + i), b = punto(c.b, 'cp-' + i); punti.push(a, b); linee.push([a, b]); });
+    disegnaMappa(punti, linee);
+  }
+  document.addEventListener('click', async (ev) => {
+    const u = ev.target.closest('[data-unisci]');
+    const d = ev.target.closest('[data-diversi]');
+    if (!u && !d) return;
+    const b = u || d;
+    if (u && !confirm('Tenere questo evento e togliere l’altro dalla mappa? Le informazioni mancanti vengono copiate in quello che resta.')) return;
+    b.disabled = true;
+    try {
+      await api('/api/moderazione/doppioni', { corpo: u ? { azione: 'unisci', tieni: u.dataset.unisci, togli: u.dataset.togli } : { azione: 'diversi', a: d.dataset.diversi, b: d.dataset.altro } });
+      avvisoOk(u ? 'Doppione tolto: resta un solo evento.' : 'Segnati come eventi diversi.');
+      caricaDoppioni();
+      caricaCoda();
+    } catch (e) { alert(e.message); b.disabled = false; }
+  });
 
   // ---------- Azioni ----------
   const CONFERME = {
@@ -234,8 +406,10 @@
     conferma_sospetto: 'Confermi il sospetto? L’evento viene rifiutato e sparisce dalla mappa (puoi sempre ripristinarlo dalla cronologia).',
   };
   function aggiorna() {
-    const attiva = document.querySelector('[data-scheda][aria-selected="true"]').dataset.scheda;
-    if (attiva === 'tutti') cercaTutti(); else caricaCoda();
+    const attiva = schedaAttiva();
+    if (attiva === 'tutti') cercaTutti();
+    else if (attiva === 'doppioni') { caricaDoppioni(); caricaCoda(); }
+    else caricaCoda();
   }
   document.addEventListener('click', async (ev) => {
     const b = ev.target.closest('[data-az]');

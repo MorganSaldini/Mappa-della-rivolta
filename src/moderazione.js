@@ -83,7 +83,7 @@ export async function coda({ env, sessione }) {
   ).bind(...par).all()).results.map((m) => ({ ...m, campi: JSON.parse(m.campi || '{}') }));
 
   const problemi = (await env.DB.prepare(
-    `SELECT p.evento_id, e.titolo, e.comune, e.data, e.stato, COUNT(*) AS n,
+    `SELECT p.evento_id, e.titolo, e.comune, e.data, e.stato, e.tipo, e.regione, e.lat, e.lng, COUNT(*) AS n,
             GROUP_CONCAT(p.motivo || CASE WHEN p.nota <> '' THEN ': ' || p.nota ELSE '' END, ' | ') AS dettagli
      FROM problemi p JOIN eventi e ON e.id = p.evento_id
      WHERE p.stato = 'aperta'${filtro} GROUP BY p.evento_id ORDER BY n DESC, e.data LIMIT 200`

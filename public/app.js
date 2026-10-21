@@ -618,6 +618,7 @@
     $('#errore-aggiungi').textContent = '';
     $('#doppioni').hidden = true;
     doppioniVisti = false;
+    $('#invia-aggiungi').textContent = 'Invia';
     RETE.scrittura($('#dlg-aggiungi'));
     if (window.L && !miniMappa) {
       miniMappa = L.map('mini-mappa').setView([42.3, 12.6], 5);
@@ -783,6 +784,14 @@
   fa.addEventListener('input', (ev) => {
     if (ev.target.matches('#data-fino, [data-data-extra], [name="data"], [data-k="comune"]')) aggiornaRiepilogoDate();
   });
+  // Se cambia data, comune o tipo dopo l'avviso "sembra già presente", il controllo doppioni si rifà
+  fa.addEventListener('input', (ev) => {
+    if (doppioniVisti && ev.target.matches('[name="data"], [name="comune"], [name="tipo"], [name="titolo"]')) {
+      doppioniVisti = false;
+      $('#doppioni').hidden = true;
+      $('#invia-aggiungi').textContent = 'Invia';
+    }
+  });
 
   fa.addEventListener('submit', async (ev) => {
     ev.preventDefault();
@@ -796,20 +805,6 @@
       return (err.textContent = 'Completa comune, provincia (2 lettere) e regione: usa "Trova sulla mappa".');
     }
     if (!punto) return (err.textContent = 'Metti il punto sulla mappa: usa "Trova sulla mappa" o tocca la mappa.');
-
-    // Controllo doppioni: stessa data entro 300 m, oppure stesso comune, stessa data e stesso tipo
-    if (!doppioniVisti) {
-      const simili = eventi.filter((e) => e.data === v.data &&
-        (distanzaMetri(punto, e) < 300 || (e.comune.toLowerCase() === v.comune.trim().toLowerCase() && e.tipo === v.tipo)));
-      if (simili.length) {
-        doppioniVisti = true;
-        $('#doppioni').innerHTML = '<strong>È uno di questi?</strong><ul>' +
-          simili.map((e) => `<li>${esc(e.titolo)} · ${esc(e.comune)}${e.ora_inizio ? ', ore ' + esc(e.ora_inizio) : ''}</li>`).join('') +
-          '</ul>Se sì, chiudi il modulo: è già sulla mappa. Se è un evento diverso, premi di nuovo <em>Invia</em>.';
-        $('#doppioni').hidden = false;
-        return;
-      }
-    }
 
     let luoghi = [];
     try {
@@ -828,18 +823,35 @@
       lat: punto.lat, lng: punto.lng, posizione_approssimativa: approssimativa,
       organizzatori: v.organizzatori.split(',').map((s) => s.trim()).filter(Boolean),
       fonte: v.fonte, sito_web: v.sito_web, turnstile: tokenTurnstile('ts-aggiungi'),
+      // Dopo l'avviso "sembra già presente", il secondo invio conferma che è un evento diverso
+      confermo_diverso: doppioniVisti,
     };
     const btn = $('#invia-aggiungi');
     btn.disabled = true;
     try {
       const r = await fetch('/api/mobilitazioni', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo) });
       const d = await r.json().catch(() => ({}));
+      if (r.status === 409 && Array.isArray(d.doppioni)) {
+        // Il server ha trovato eventi molto simili già inseriti (anche quelli non ancora sulla mappa)
+        doppioniVisti = true;
+        $('#doppioni').innerHTML = '<strong>Sembra già presente. È uno di questi?</strong><ul>' +
+          d.doppioni.map((x) => `<li>${x.quasi_certo ? '<strong>Quasi certamente lo stesso:</strong> ' : ''}${esc(x.titolo)} · ${esc(x.comune)}${x.luogo ? ', ' + esc(x.luogo) : ''}${x.ora_inizio ? ', ore ' + esc(x.ora_inizio) : ''}` +
+            (x.id ? ` · <a href="./?e=${encodeURIComponent(x.id)}" data-vai-doppione="${esc(x.id)}">apri</a>` : '') + '</li>').join('') +
+          '</ul>Se è lo stesso, non serve inviarlo: puoi <em>confermarlo</em> o <em>correggerlo</em> dalla sua scheda. Se è un evento diverso, premi <strong>È un evento diverso: invia</strong>.';
+        $('#doppioni').hidden = false;
+        $('#doppioni').scrollIntoView({ block: 'nearest' });
+        btn.textContent = 'È un evento diverso: invia';
+        err.textContent = '';
+        mostraTurnstile('ts-aggiungi');
+        return;
+      }
       if (!r.ok || !d.ok) {
         err.textContent = d.errore || 'Invio non riuscito. Riprova tra poco.';
         mostraTurnstile('ts-aggiungi');
         return;
       }
       $('#dlg-aggiungi').close();
+      btn.textContent = 'Invia';
       fa.reset();
       $('#altre-citta').innerHTML = '';
       $('#altre-date').innerHTML = '';
@@ -1043,6 +1055,18 @@
     } catch {
       $('#errore-correggi').textContent = 'Connessione non riuscita. Riprova tra poco.';
     }
+  });
+
+  // Dall'avviso doppioni: chiude il modulo e apre l'evento già presente
+  document.addEventListener('click', (ev) => {
+    const l = ev.target.closest('[data-vai-doppione]');
+    if (!l) return;
+    const m = markerPerId[l.dataset.vaiDoppione];
+    if (!m || !gruppo) return; // non è sulla mappa (es. filtri): segue il link
+    ev.preventDefault();
+    $('#dlg-aggiungi').close();
+    $('#mappa').scrollIntoView({ block: 'center' });
+    gruppo.zoomToShowLayer ? gruppo.zoomToShowLayer(m, () => m.openPopup()) : (mappa.setView(m.getLatLng(), 14), m.openPopup());
   });
 
   // ---------- Link diretto a un evento (?e=id) ----------
