@@ -1709,5 +1709,205 @@
     "motivo": "Evento nato il 20/10 e spostato al 21/10: tolto su richiesta dell'amministratore (senza fonte).",
     "fonti_controllate": [],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T02:20:51",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-27-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-28-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-29-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-31-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
+      "luogo": "Rotonda Santa Lucia (SS106)",
+      "organizzatori": [],
+      "ora_inizio": "",
+      "ora_fine": "",
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    },
+    "deverifica": true,
+    "motivo": "Su richiesta dell'amministratore: trasformato in avviso di possibili disagi (la stampa riporta la rotonda sulla SS106 occupata dagli agricoltori). Fonte generica, decide un moderatore.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
