@@ -1569,5 +1569,109 @@
     "motivo": "Nascosto su richiesta dell'amministratore: nessuna fonte indicata e nessuna fonte trovata nella ricerca del 21/10. Si ripristina dalla cronologia se arriva una fonte.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-bari-corteo-01",
+    "aggiornato_il": "2026-10-20T23:35:35",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-padova-corteo-01",
+    "aggiornato_il": "2026-10-20T23:50:35",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-padova-corteo-02",
+    "aggiornato_il": "2026-10-20T13:16:21",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-padova-corteo-03",
+    "aggiornato_il": "2026-10-20T15:37:19",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-bologna-corteo-01",
+    "aggiornato_il": "2026-10-20T15:49:38",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-bologna-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T15:47:53",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-ravenna-corteo-01",
+    "aggiornato_il": "2026-10-20T19:32:17",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-sassari-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T23:50:47",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "motivo": "Aggiunto su richiesta dell'amministratore il comunicato nazionale USB (9/10) che proclama lo sciopero generale del 30/10 per tutte le categorie. La piazza locale non è citata.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
