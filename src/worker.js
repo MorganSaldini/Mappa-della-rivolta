@@ -14,7 +14,7 @@ import {
 } from './lib.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
-import { gestisciWebhook, pubblicaCoda, orePubblicazione, oraRoma, togliPulsantiPostUnaVolta } from './telegram.js';
+import { gestisciWebhook, pubblicaCoda, orePubblicazione, oraRoma, togliPulsantiPostUnaVolta, regoleGruppoUnaVolta } from './telegram.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -95,6 +95,8 @@ export default {
   async scheduled(event, env, ctx) {
     // Una volta sola: toglie i vecchi pulsanti dai post del canale (nascondevano i commenti)
     ctx.waitUntil(togliPulsantiPostUnaVolta(env).then((r) => r && console.log('Pulsanti tolti', JSON.stringify(r))).catch((e) => console.error('Pulsanti', e)));
+    // Una volta sola: regole aggiornate dei commenti, fissate in alto nel gruppo di discussione
+    ctx.waitUntil(regoleGruppoUnaVolta(env).then((r) => r && console.log('Regole gruppo', JSON.stringify(r))).catch((e) => console.error('Regole gruppo', e)));
     // Ogni 5 minuti: regole sui contenuti + decisioni dell'amministratore AI. Allo scoccare dell'ora anche il resto.
     const allOra = new Date(event.scheduledTime || Date.now()).getUTCMinutes() < 5;
     if (!allOra) {

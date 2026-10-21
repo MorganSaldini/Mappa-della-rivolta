@@ -4,6 +4,8 @@
 import { apriEvento } from './dati.js';
 import { sha256hex, adessoRoma, oggiRoma, aggiungiGiorni } from './lib.js';
 import { gestisciAssistente, rigaCercaPostCanale, configuraAssistente } from './assistente.js';
+import { eAvvisoDisagi } from './regole.js';
+import { moderaCommento, idGruppoDiscussione } from './commenti.js';
 
 const NOMI_TIPI = {
   corteo: '🚩 Corteo', presidio: '✋ Presidio', sciopero_generale: '✊ Sciopero generale',
@@ -189,16 +191,29 @@ export async function cancellaMessaggio(env, messageId) {
 const SITO_REGOLE = 'https://mappadellarivolta.org/regole.html';
 
 export const REGOLE_COMMENTO = [
-  '📌 <b>Regole di questa chat</b>',
-  'Qui si coordina chi partecipa a questo evento: passaggi, punto di ritrovo, cambi d\'orario.',
+  '📌 <b>Regole dei commenti</b>',
+  'Qui si può parlare dell\'evento e mettersi d\'accordo per andarci (ritrovo, passaggi, orari). Per i dettagli ufficiali fa fede la fonte collegata.',
   '',
   '❌ Niente violenza, danneggiamenti o istruzioni per commettere reati',
-  '❌ Niente organizzazione di blocchi: solo avvisi sui disagi già annunciati',
-  '❌ Niente nomi, numeri, indirizzi o foto con volti di altre persone',
+  '❌ Niente organizzazione di blocchi o occupazioni',
+  '❌ Niente nomi, numeri, email, indirizzi o foto con volti di altre persone (per i passaggi usate i messaggi privati)',
   '❌ Niente insulti, odio, spam o propaganda contro altre sigle',
   '',
   '👀 La chat è pubblica: gli altri vedono il tuo nome Telegram.',
-  '🛡 Chi non rispetta le regole viene rimosso. Per segnalare un messaggio: tienilo premuto → Segnala.',
+  '🛡 I messaggi che violano le regole vengono rimossi dal bot o dagli amministratori. Per segnalare un messaggio: tienilo premuto → Segnala.',
+  '',
+  `<a href="${SITO_REGOLE}">Regole complete</a>`,
+].join('\n');
+
+// Sotto gli avvisi "Possibili disagi" (blocchi, occupazioni) non si coordina nulla
+export const REGOLE_COMMENTO_AVVISO = [
+  '📌 <b>Questo è un avviso di possibili disagi</b>',
+  'Serve a chi deve spostarsi. Non è un invito a partecipare.',
+  '',
+  '❌ Qui non si organizzano ritrovi, blocchi o occupazioni: questi messaggi vengono rimossi',
+  '❌ Niente nomi, numeri, email o foto con volti di altre persone',
+  '',
+  'Puoi commentare solo per aggiornare sui disagi (strada riaperta, deviazioni, orari dei mezzi).',
   '',
   `<a href="${SITO_REGOLE}">Regole complete</a>`,
 ].join('\n');
@@ -221,7 +236,7 @@ export async function attivaWebhook(env, origine) {
   const d = await chiamaBot(env, 'setWebhook', {
     url: `${origine}/api/telegram/webhook`,
     secret_token: await chiaveWebhook(env),
-    allowed_updates: ['message', 'callback_query'],
+    allowed_updates: ['message', 'edited_message', 'callback_query'],
     drop_pending_updates: true,
   });
   if (!d.ok) return d;
@@ -247,7 +262,7 @@ async function rispondiConRegole(env, m) {
 
   // Solo i post degli eventi (non i messaggi di prova né gli avvisi di annullamento).
   // Il numero del post viene salvato subito dopo l'invio: se non c'è ancora, si riprova tra poco.
-  const cerca = () => env.DB.prepare('SELECT 1 FROM eventi WHERE telegram_msg_id = ? LIMIT 1').bind(idPost).first();
+  const cerca = () => env.DB.prepare('SELECT titolo, tipo FROM eventi WHERE telegram_msg_id = ? LIMIT 1').bind(idPost).first();
   let evento = await cerca();
   if (!evento) { await new Promise((r) => setTimeout(r, 4000)); evento = await cerca(); }
   if (!evento) return;
@@ -259,7 +274,7 @@ async function rispondiConRegole(env, m) {
   if (!nuovo.meta || !nuovo.meta.changes) return;
 
   const d = await chiamaBot(env, 'sendMessage', {
-    chat_id: m.chat.id, text: REGOLE_COMMENTO, parse_mode: 'HTML',
+    chat_id: m.chat.id, text: eAvvisoDisagi(evento) ? REGOLE_COMMENTO_AVVISO : REGOLE_COMMENTO, parse_mode: 'HTML',
     reply_to_message_id: m.message_id, disable_web_page_preview: true,
   });
   if (!d.ok) console.error('Telegram regole commento', d.description);
@@ -275,7 +290,16 @@ export async function gestisciWebhook(request, env, ctx) {
   if (!u || typeof u !== 'object') return ok();
   const m = u.message;
   if (m && m.is_automatic_forward && m.chat) ctx.waitUntil(rispondiConRegole(env, m).catch((e) => console.error('Webhook', e)));
-  else ctx.waitUntil(gestisciAssistente(env, u, new URL(request.url).origin).catch((e) => console.error('Assistente', e)));
+  else if (u.edited_message) ctx.waitUntil(moderaCommento(env, u.edited_message).catch((e) => console.error('Moderazione', e)));
+  else {
+    // Prima la moderazione dei commenti; se il messaggio non era nel gruppo di discussione, risponde l'assistente
+    const origine = new URL(request.url).origin;
+    ctx.waitUntil(
+      moderaCommento(env, m)
+        .then((delGruppo) => (delGruppo ? null : gestisciAssistente(env, u, origine)))
+        .catch((e) => console.error('Webhook', e))
+    );
+  }
   return ok();
 }
 
@@ -330,4 +354,20 @@ export async function togliPulsantiPostUnaVolta(env) {
   const r = await togliPulsantiPost(env);
   await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
   return r;
+}
+
+// Una sola volta: pubblica e fissa in alto nel gruppo di discussione le regole aggiornate dei commenti
+export async function regoleGruppoUnaVolta(env) {
+  const chiave = 'telegram-regole-gruppo-v2';
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return null;
+  if (await env.DB.prepare('SELECT 1 FROM importati WHERE chiave = ?').bind(chiave).first()) return null;
+  const gruppo = await idGruppoDiscussione(env);
+  if (!gruppo) return { ok: false, description: 'gruppo di discussione non trovato' };
+  const d = await chiamaBot(env, 'sendMessage', {
+    chat_id: gruppo, text: REGOLE_COMMENTO, parse_mode: 'HTML', disable_web_page_preview: true,
+  });
+  if (!d.ok) return d;
+  await chiamaBot(env, 'pinChatMessage', { chat_id: gruppo, message_id: d.result.message_id, disable_notification: true });
+  await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
+  return { ok: true };
 }
