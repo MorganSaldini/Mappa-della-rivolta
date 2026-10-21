@@ -1673,5 +1673,25 @@
       "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
     ],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-roma-presidio-01",
+    "aggiornato_il": "2026-10-20T12:37:11",
+    "azione": "nascondi",
+    "motivo": "Promotore \"Movimento 17 ottobre\" giudicato non affidabile dall'amministratore (nato da pochi giorni, anonimo, diffonde un manuale di resistenza urbana e un video sui saccheggi).",
+    "fonti_controllate": [
+      "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-padova-corteo-01",
+    "aggiornato_il": "2026-10-20T23:50:32",
+    "azione": "nascondi",
+    "motivo": "Promotore \"Movimento 17 ottobre\" giudicato non affidabile dall'amministratore (nato da pochi giorni, anonimo, diffonde un manuale di resistenza urbana e un video sui saccheggi).",
+    "fonti_controllate": [
+      "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
