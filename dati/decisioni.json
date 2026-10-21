@@ -1920,5 +1920,44 @@
       "https://pagellapolitica.it/articoli/nuovo-decreto-governo-manifestazioni-cosa-prevede"
     ],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-firenze-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T02:46:20",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale CGIL contro il caro vita, per casa, salute e istruzione"
+    },
+    "motivo": "Titolo reso descrittivo (era solo lo slogan). Sciopero generale del 20/11 indetto dalla CGIL (Il Post, 18/10): resta verificato.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-bologna-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T02:46:20",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale CGIL contro il caro vita, per casa, salute e istruzione"
+    },
+    "motivo": "Titolo reso descrittivo (era solo lo slogan). Sciopero generale del 20/11 indetto dalla CGIL (Il Post, 18/10): resta verificato.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-pisa-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T02:46:20",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Sciopero generale CGIL contro il caro vita, per casa, salute e istruzione"
+    },
+    "motivo": "Titolo reso descrittivo (era solo lo slogan). Sciopero generale del 20/11 indetto dalla CGIL (Il Post, 18/10): resta verificato.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
