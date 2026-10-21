@@ -351,9 +351,10 @@ export async function togliPulsantiPost(env) {
 export async function togliPulsantiPostUnaVolta(env) {
   const chiave = 'telegram-togli-pulsanti-v1';
   if (await env.DB.prepare('SELECT 1 FROM importati WHERE chiave = ?').bind(chiave).first()) return null;
-  const r = await togliPulsantiPost(env);
+  // Segna PRIMA di iniziare: se il giro viene interrotto a metà (tempo scaduto) non riparte a ogni cron
+  // (prima ripartiva ogni volta e faceva migliaia di chiamate inutili a Telegram)
   await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
-  return r;
+  return togliPulsantiPost(env);
 }
 
 // Una sola volta: pubblica e fissa in alto nel gruppo di discussione le regole aggiornate dei commenti
