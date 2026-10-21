@@ -14,7 +14,9 @@ const VUOTE = new Set(('il lo la i gli le un uno una di a da in con su per tra f
   'contro per non no si se che chi come piu più tutti tutte ore giornata intera nazionale locale ' +
   // parole troppo comuni negli eventi della mappa per dire che due titoli parlano della stessa cosa
   'sciopero scioperi corteo cortei presidio presidi manifestazione manifestazioni mobilitazione assemblea ' +
-  'iniziativa protesta lavoratori lavoratrici personale settore').split(' '));
+  'iniziativa protesta lavoratori lavoratrici personale settore ' +
+  // inizio fisso degli avvisi e parole generiche delle scuole
+  'possibili disagi occupazione occupazioni autogestione liceo licei istituto scuola scuole studenti universita').split(' '));
 
 // Fonti "di elenco" usate da tanti eventi diversi (calendari ufficiali, pagine generali): non provano che due eventi siano lo stesso
 const FONTI_GENERICHE = /(^|\.)(mit\.gov\.it|cgsse\.it|scioperi\.mit\.gov\.it|funzionepubblica\.gov\.it)$/;
