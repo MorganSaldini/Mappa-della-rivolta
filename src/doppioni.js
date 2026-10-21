@@ -75,6 +75,10 @@ export function confronta(a, b) {
   const titoliSimili = s >= 0.5;
   if (titoliSimili) { p += 0.35 * s; motivi.push(`titoli simili (${Math.round(s * 100)}%)`); }
   if (a.ora_inizio && b.ora_inizio && a.ora_inizio === b.ora_inizio) { p += 0.1; motivi.push('stessa ora'); }
+  // Orari lontani (più di 2 ore) nello stesso giorno: quasi sempre due iniziative diverse
+  const minuti = (o) => { const m = /^(\d{1,2}):(\d{2})/.exec(o || ''); return m ? +m[1] * 60 + +m[2] : null; };
+  const ma = minuti(a.ora_inizio), mb = minuti(b.ora_inizio);
+  if (ma !== null && mb !== null && Math.abs(ma - mb) > 120) { p *= 0.5; motivi.push('orari diversi'); }
   const fa = fonteBase(a.fonte), fb = fonteBase(b.fonte);
   const stessaFonte = !!fa && fa === fb;
   if (stessaFonte) { p += 0.25; motivi.push('stessa fonte'); }

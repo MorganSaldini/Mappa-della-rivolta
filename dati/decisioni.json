@@ -1989,5 +1989,48 @@
       "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo"
     ],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-verona-corteo-01",
+    "aggiornato_il": "2026-10-21T13:40:06",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/",
+      "titolo": "Manifestazione contro il caro vita (convocazione social «Noi siamo il popolo»)"
+    },
+    "motivo": "Aggiunta la fonte giornalistica (StrettoWeb, 20/10) che riporta piazza e ora; titolo neutro. Promotore anonimo: resta da verificare, decide un moderatore dopo il controllo dei divieti del 23/10.",
+    "fonti_controllate": [
+      "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-l-aquila-corteo-01",
+    "aggiornato_il": "2026-10-21T14:29:39",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/",
+      "titolo": "Manifestazione contro il caro vita (convocazione social «Noi siamo il popolo»)"
+    },
+    "motivo": "Aggiunta la fonte giornalistica (StrettoWeb, 20/10) che riporta piazza e ora; titolo neutro. Promotore anonimo: resta da verificare, decide un moderatore dopo il controllo dei divieti del 23/10.",
+    "fonti_controllate": [
+      "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-potenza-altro-01",
+    "aggiornato_il": "2026-10-21T12:18:21",
+    "azione": "correggi",
+    "campi": {
+      "fonte": "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/",
+      "titolo": "Manifestazione contro il caro vita (convocazione social «Noi siamo il popolo»)",
+      "tipo": "presidio"
+    },
+    "motivo": "Aggiunta la fonte giornalistica (StrettoWeb, 20/10) che riporta piazza e ora; titolo neutro. Promotore anonimo: resta da verificare, decide un moderatore dopo il controllo dei divieti del 23/10.",
+    "fonti_controllate": [
+      "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]

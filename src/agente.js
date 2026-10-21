@@ -4,6 +4,7 @@ import proposte from '../dati/proposte.json';
 import { adessoRoma, sha256hex, slug } from './lib.js';
 import { creaEvento } from './eventi.js';
 import { validaEvento } from './dati.js';
+import { cercaSimili } from './doppioni.js';
 
 export async function importaProposte(env) {
   const elenco = Array.isArray(proposte) ? proposte : [];
@@ -22,10 +23,10 @@ export async function importaProposte(env) {
     const chiave = await sha256hex(['agente', d.fonte, d.data, d.comune.toLowerCase(), d.tipo].join('|'));
     if (await env.DB.prepare('SELECT 1 FROM importati WHERE chiave = ?').bind(chiave).first()) { esito.gia_importate++; continue; }
 
-    // Doppione di un evento già presente (stesso giorno, comune e tipo)
-    const simile = await env.DB.prepare(
-      'SELECT id FROM eventi WHERE data = ? AND lower(comune) = ? AND tipo = ? LIMIT 1'
-    ).bind(d.data, d.comune.toLowerCase(), d.tipo).first();
+    // Doppione di un evento già presente: stesso giorno e stesso posto, e simile per titolo, fonte o sigle
+    // (stesso controllo del modulo "Aggiungi" e della scheda Doppioni del pannello)
+    const simili = await cercaSimili(env.DB, d);
+    const simile = simili.length ? simili[0].e : null;
     await env.DB.prepare('INSERT INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiave, adessoRoma()).run();
     if (simile) { esito.doppioni++; continue; }
 
