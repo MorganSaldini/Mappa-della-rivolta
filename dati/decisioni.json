@@ -654,5 +654,408 @@
     "motivo": "Corteo senza sciopero proclamato.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-rimini-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:50:32",
+    "azione": "approva",
+    "motivo": "Corriere Romagna (20/10): la marineria di Rimini sciopera giovedì 22 ottobre, barche ferme in porto, annuncio della Cooperativa lavoratori del mare. Nessuna revoca trovata.",
+    "fonti_controllate": [
+      "https://www.corriereromagna.it/rimini/rimini-pescherecci-giovedi-scatta-lo-sciopero-700mila-euro-al-mese-per-il-gasolio-FJ2290896"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-alba-corteo-01",
+    "aggiornato_il": "2026-10-20T23:50:34",
+    "azione": "approva",
+    "motivo": "Gazzetta d'Alba conferma: sabato 24 ottobre, ritrovo ore 14 in via Pola ad Alba, corteo contro lo sfruttamento promosso da Caritas, Cgil, Cisl, Uil, Libera e Arci.",
+    "fonti_controllate": [
+      "https://www.gazzettadalba.it/2026/10/contro-la-schiavitu-e-lo-sfruttamento-nelle-colline-di-langhe-e-roero-in-corteo-il-24-ottobre-per-sollevare-il-velo-del-silenzio/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-l-aquila-corteo-01",
+    "aggiornato_il": "2026-10-20T13:35:16",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "presidio",
+      "titolo": "Presidio degli agricoltori contro il caro gasolio davanti all'Emiciclo",
+      "organizzatori": [
+        "Coldiretti Abruzzo"
+      ],
+      "fonte": "https://ansa.it/abruzzo/notizie/2026/10/19/caro-gasolio-agricoltori-in-piazza-coldiretti-allaquila-cia-a-roma_1441e260-a32d-41d6-9ced-a94846c97de2.html"
+    },
+    "motivo": "ANSA (19/10) conferma il sit-in di Coldiretti Abruzzo davanti all'Emiciclo il 21/10: è un presidio, non un corteo. Aggiunta la fonte; approvabile al prossimo giro.",
+    "fonti_controllate": [
+      "https://ansa.it/abruzzo/notizie/2026/10/19/caro-gasolio-agricoltori-in-piazza-coldiretti-allaquila-cia-a-roma_1441e260-a32d-41d6-9ced-a94846c97de2.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-nola-presidio-01",
+    "aggiornato_il": "2026-10-21T00:33:46",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    },
+    "motivo": "Titolo reso descrittivo. Nessuna fonte trovata sul presidio del 22/10.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-terni-altro-01",
+    "aggiornato_il": "2026-10-20T23:38:47",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Fiaccolata promossa dall'Associazione Terni Donne"
+    },
+    "motivo": "Tolto dal titolo il nome di una persona (regola: niente nomi di persone nei titoli). Fonte solo Instagram: resta da verificare.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-milano-altro-01",
+    "aggiornato_il": "2026-10-20T17:47:09",
+    "azione": "correggi",
+    "campi": {
+      "organizzatori": [
+        "Comitato Difesa Ambiente zona 5 Milano"
+      ]
+    },
+    "motivo": "La pagina della petizione conferma passeggiata il 24/10 alle 15 in via Dudovich; promotore scritto in un solo nome. Fonte solo del promotore: resta a un umano.",
+    "fonti_controllate": [
+      "https://www.change.org/p/urgente-a-rischio-centinaia-di-alberi-nel-parco-del-ticinello-a-milano"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-genova-assemblea-01",
+    "aggiornato_il": "2026-10-20T17:32:39",
+    "azione": "correggi",
+    "campi": {
+      "ora_inizio": "18:00"
+    },
+    "motivo": "La fonte (gancio) indica inizio alle 18:00, non alle 17:05. Orario corretto; resta da verificare (fonte solo dell'aggregatore).",
+    "fonti_controllate": [
+      "https://gancio.invegendo.org/event/presentazione-hub-bollettino-della-militarizzazione"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-modena-assemblea-01",
+    "aggiornato_il": "2026-10-20T21:26:40",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea pubblica \"Dalla Francia all'Italia\""
+    },
+    "motivo": "Titolo troncato completato in forma descrittiva. Fonte solo Instagram.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-roma-assemblea-01",
+    "aggiornato_il": "2026-10-20T20:48:31",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea pubblica \"Verso un nuovo 68?\""
+    },
+    "motivo": "Titolo-slogan reso descrittivo, slogan tra virgolette. Fonte solo Instagram.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-27-carrara-assemblea-01",
+    "aggiornato_il": "2026-10-20T11:37:35",
+    "azione": "correggi",
+    "campi": {
+      "organizzatori": [
+        "Studenti dell'Accademia di Belle Arti di Carrara"
+      ]
+    },
+    "motivo": "Organizzatori scritti come frase: resi come sigla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:02",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-27-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-28-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-29-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-30-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-31-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T00:38:03",
+    "azione": "sospetto",
+    "motivo": "Stampa (17/10): agricoltori occupano la rotonda sulla SS106. È un blocco: va reso avviso \"Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia\" con fonte giornalistica. Nessuna fonte per questa data.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "sospetto",
+    "motivo": "Presidio allo svincolo autostradale = possibile blocco: va reso avviso \"Possibili disagi: presidio di agricoltori e autotrasportatori allo svincolo\". Fermo Fedralog annunciato fino al 20/10, questa data non confermata.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "sospetto",
+    "motivo": "Presidio allo svincolo autostradale = possibile blocco: va reso avviso \"Possibili disagi: presidio di agricoltori e autotrasportatori allo svincolo\". Fermo Fedralog annunciato fino al 20/10, questa data non confermata.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "sospetto",
+    "motivo": "Presidio allo svincolo autostradale = possibile blocco: va reso avviso \"Possibili disagi: presidio di agricoltori e autotrasportatori allo svincolo\". Fermo Fedralog annunciato fino al 20/10, questa data non confermata.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "sospetto",
+    "motivo": "Presidio allo svincolo autostradale = possibile blocco: va reso avviso \"Possibili disagi: presidio di agricoltori e autotrasportatori allo svincolo\". Fermo Fedralog annunciato fino al 20/10, questa data non confermata.",
+    "fonti_controllate": [
+      "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-21-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:43",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-22-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:43",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-25-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-26-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:45",
+    "azione": "sospetto",
+    "motivo": "Fermo dei tir in Sicilia annunciato fino al 20/10 (Comitato trasporto siciliano) con fermo nei porti, revoca attesa dopo la firma del ministro: date successive non confermate; se prosegue va reso avviso \"Possibili disagi\".",
+    "fonti_controllate": [
+      "https://www.quotidianodiragusa.it/2026/10/16/sicilia/sciopero-autotrasportatori-caro-gasolio-navi/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/20/autotrasportatori-prosegue-la-protesta-nel-sud-italia.-salvini-subito-i-fondi-stanziati_3a6127ff-0b4c-4c40-8785-32cfb644514b.html"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-23-salerno-presidio-01",
+    "aggiornato_il": "2026-10-20T20:47:17",
+    "azione": "sospetto",
+    "motivo": "Il titolo \"Stop porto di Salerno\" indica un blocco del porto: va reso avviso \"Possibili disagi: presidio al porto di Salerno\" con fonte giornalistica. Nessuna fonte trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-roma-presidio-01",
+    "aggiornato_il": "2026-10-20T12:37:11",
+    "azione": "sospetto",
+    "motivo": "Promotore \"Movimento 17 ottobre\": nato pochi giorni fa, anonimo; la stampa riporta che nelle sue chat circolano un manuale di \"resistenza urbana\" e un video sui saccheggi di Milano. Controllo di serietà non superato.",
+    "fonti_controllate": [
+      "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/",
+      "https://www.virgilio.it/notizie/movimento-17-ottobre-annuncia-manifestazioni-ogni-sabato-in-8-citta-da-milano-a-roma-fare-come-in-francia-1790343"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-10-24-padova-corteo-01",
+    "aggiornato_il": "2026-10-20T23:50:32",
+    "azione": "sospetto",
+    "motivo": "Promotore \"Movimento 17 ottobre\": nato pochi giorni fa, anonimo; la stampa riporta che nelle sue chat circolano un manuale di \"resistenza urbana\" e un video sui saccheggi di Milano. Controllo di serietà non superato.",
+    "fonti_controllate": [
+      "https://www.open.online/2026/10/19/movimento-17-ottobre-chat-telegram-manifestazioni/",
+      "https://www.virgilio.it/notizie/movimento-17-ottobre-annuncia-manifestazioni-ogni-sabato-in-8-citta-da-milano-a-roma-fare-come-in-francia-1790343"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-roma-sciopero_generale-02",
+    "aggiornato_il": "2026-10-20T23:30:45",
+    "azione": "sospetto",
+    "motivo": "Doppione dello sciopero generale CGIL del 20/11 già verificato: 2026-11-20-roma-sciopero_generale-01.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-milano-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T23:30:45",
+    "azione": "sospetto",
+    "motivo": "Doppione dello sciopero generale CGIL del 20/11 già verificato: 2026-11-20-milao-sciopero_generale-01.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
+  },
+  {
+    "id": "2026-11-20-torino-sciopero_generale-02",
+    "aggiornato_il": "2026-10-20T23:30:45",
+    "azione": "sospetto",
+    "motivo": "Doppione dello sciopero generale CGIL del 20/11 già verificato: 2026-11-20-torino-sciopero_generale-01.",
+    "fonti_controllate": [
+      "https://www.ilpost.it/2026/10/18/cgil-indetto-sciopero-generale-20-novembre/"
+    ],
+    "deciso_il": "2026-10-21"
   }
 ]
