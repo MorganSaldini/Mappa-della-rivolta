@@ -22,12 +22,12 @@ export const RE_INVITO = new RegExp([
 // Sigle giudicate non affidabili dall'amministratore (elenco in agente/ISTRUZIONI-AMMINISTRATORE.md).
 // I loro eventi non si pubblicano: i nuovi invii vengono rifiutati, quelli già presenti nascosti.
 // Solo l'amministratore umano aggiunge o toglie sigle.
-export const RE_SIGLE_ESCLUSE = /movimento\s*(?:del\s*)?17\s*(?:ottobre|\/\s*10)|\bmovimento17|\bm17\b/i;
+export const RE_SIGLE_ESCLUSE = /movimento\s*(?:del\s*)?17\s*(?:ottobre|\/\s*10)|\bmovimento17|\bm17\b|noi\s*siamo\s*il\s*popolo|noi-siamo-il-popolo/i;
 
 export function siglaEsclusa(e) {
   let org = e.organizzatori;
   if (typeof org === 'string') { try { org = JSON.parse(org); } catch { org = [org]; } }
-  return RE_SIGLE_ESCLUSE.test([e.titolo, e.luogo, ...(org || [])].join(' | '));
+  return RE_SIGLE_ESCLUSE.test([e.titolo, e.luogo, e.gruppo, ...(org || [])].join(' | '));
 }
 
 // Blocchi e occupazioni (escluse forme di sciopero come il "blocco degli straordinari")
