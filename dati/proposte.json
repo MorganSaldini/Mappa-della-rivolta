@@ -1,225 +1,5 @@
 [
   {
-    "tipo": "presidio",
-    "titolo": "Presidio per la sanità pubblica davanti all'ospedale di Cona",
-    "data": "2026-10-21",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Ferrara",
-    "provincia": "FE",
-    "regione": "Emilia-Romagna",
-    "luogo": "Ospedale di Cona",
-    "lat": 44.8085,
-    "lng": 11.697,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "RSU Ausl e AOU Ferrara",
-      "FP CGIL",
-      "UIL FPL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Presidio con stato di agitazione del personale sanitario; orario non indicato"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Italy Ecology Systema (raccolta rifiuti)",
-    "data": "2026-10-21",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Taverna",
-    "provincia": "CZ",
-    "regione": "Calabria",
-    "luogo": "",
-    "lat": 39.0225,
-    "lng": 16.5806,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/sciopero-19-25-ottobre-2026/1020098/",
-    "note": "Sciopero di tutta la giornata nei comuni di Fossato Serralta, Sorbo San Basile, Taverna e Pentone. Sigle non indicate dalla fonte."
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori ex Ilva davanti al grattacielo della Regione Piemonte",
-    "data": "2026-10-21",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Torino",
-    "provincia": "TO",
-    "regione": "Piemonte",
-    "luogo": "Grattacielo della Regione Piemonte",
-    "lat": 45.03,
-    "lng": 7.667,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "In concomitanza con il tavolo di crisi in Regione; sigle e orario non indicati dalla fonte"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale di 8 ore nei siti Barilla",
-    "data": "2026-10-21",
-    "comune": "Parma",
-    "provincia": "PR",
-    "regione": "Emilia-Romagna",
-    "luogo": "Sede Barilla, via Mantova",
-    "lat": 44.7826,
-    "lng": 10.3725,
-    "organizzatori": [
-      "FLAI CGIL",
-      "FAI CISL",
-      "UILA UIL"
-    ],
-    "note": "8 ore in tutti i siti Barilla contro il piano di riorganizzazione; la fonte non indica presidi"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 4 ore alla Mermec-Ferrosud",
-    "data": "2026-10-21",
-    "comune": "Monopoli",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "Stabilimento Mermec",
-    "lat": 40.9474,
-    "lng": 17.2905,
-    "organizzatori": [
-      "FIOM CGIL",
-      "FIM CISL",
-      "UILM UIL"
-    ],
-    "gruppo": "mermec-ferrosud-2026-10",
-    "note": "4 ore articolate stabilimento per stabilimento dal 21 al 30/10: la fonte non indica il giorno di ogni sede"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 4 ore alla Mermec-Ferrosud",
-    "data": "2026-10-21",
-    "comune": "Matera",
-    "provincia": "MT",
-    "regione": "Basilicata",
-    "luogo": "Stabilimento Ferrosud",
-    "lat": 40.6664,
-    "lng": 16.6043,
-    "organizzatori": [
-      "FIOM CGIL",
-      "FIM CISL",
-      "UILM UIL"
-    ],
-    "gruppo": "mermec-ferrosud-2026-10",
-    "note": "4 ore articolate stabilimento per stabilimento dal 21 al 30/10: la fonte non indica il giorno di ogni sede"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale amministrativo Amos all'ospedale di Alessandria",
-    "data": "2026-10-21",
-    "comune": "Alessandria",
-    "provincia": "AL",
-    "regione": "Piemonte",
-    "luogo": "Azienda ospedaliero-universitaria, via Venezia",
-    "lat": 44.9128,
-    "lng": 8.6157,
-    "organizzatori": [
-      "FILCAMS CGIL"
-    ],
-    "gruppo": "amos-alessandria-2026-10",
-    "note": "Sciopero dal 19 al 22/10 del personale di accettazione, prenotazioni e consegna referti; orari non indicati"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 30 minuti per turno alla Barco",
-    "data": "2026-10-21",
-    "comune": "Saronno",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Stabilimento Barco",
-    "lat": 45.6255,
-    "lng": 9.0365,
-    "organizzatori": [
-      "FIOM CGIL",
-      "FIM CISL",
-      "UILM UIL",
-      "RSU"
-    ],
-    "gruppo": "barco-saronno-2026-10",
-    "note": "Fermate di 30 minuti per turno, a oltranza dal 19/10, contro il trasferimento della produzione in Cina"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori in appalto trasporto e montaggio mobili davanti a Ikea",
-    "data": "2026-10-21",
-    "ora_inizio": "10:00",
-    "ora_fine": "12:00",
-    "comune": "Padova",
-    "provincia": "PD",
-    "regione": "Veneto",
-    "luogo": "Davanti allo store Ikea",
-    "lat": 45.3931,
-    "lng": 11.9262,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Filt CGIL Padova"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Presidio negli appalti di trasporto e montaggio mobili; posizione indicativa dello store"
-  },
-  {
-    "ora_inizio": "11:30",
-    "ora_fine": "15:30",
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale AMT di Genova",
-    "data": "2026-10-21",
-    "comune": "Genova",
-    "provincia": "GE",
-    "regione": "Liguria",
-    "lat": 44.4056,
-    "lng": 8.9463,
-    "organizzatori": [
-      "UGL Autoferro"
-    ],
-    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
-    "note": "4 ore, trasporto pubblico locale; posizione indicativa (centro città)"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Manifestazione in piazza della Scala per la coesione sociale",
-    "data": "2026-10-21",
-    "ora_inizio": "18:30",
-    "ora_fine": null,
-    "comune": "Milano",
-    "provincia": "MI",
-    "regione": "Lombardia",
-    "luogo": "Piazza della Scala",
-    "lat": 45.4674,
-    "lng": 9.1899,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Camera del Lavoro di Milano"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Iniziativa della Camera del Lavoro di Milano"
-  },
-  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero nel cantiere della metropolitana di Catania (CMC Ravenna)",
     "data": "2026-10-22",
@@ -512,6 +292,28 @@
     "note": "Assemblea pubblica Usb; posizione indicativa"
   },
   {
+    "tipo": "presidio",
+    "titolo": "Presidio dei lavoratori Beko Cassinetta davanti alla Provincia di Varese",
+    "data": "2026-10-26",
+    "ora_inizio": "10:00",
+    "ora_fine": null,
+    "comune": "Varese",
+    "provincia": "VA",
+    "regione": "Lombardia",
+    "luogo": "Villa Recalcati, sede della Provincia",
+    "lat": 45.818,
+    "lng": 8.826,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Fim Cisl",
+      "Fiom Cgil",
+      "Uilm Uil",
+      "RSU Beko"
+    ],
+    "fonte": "https://www.laprovinciadivarese.it/beko-cassinetta-i-lavoratori-non-mollano-presidio-in-provincia-per-difendere-il-futuro-dello-stabilimento-412615/",
+    "note": "Presidio in concomitanza con il tavolo istituzionale sulla vertenza Beko (stabilimento di Cassinetta di Biandronno)"
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
     "data": "2026-10-27",
@@ -692,6 +494,26 @@
     ],
     "fonte": "https://www.targatocn.it/2026/10/20/leggi-notizia/argomenti/economia-7/articolo/lusb-verso-lo-sciopero-generale-del-30-ottobre-anche-a-cuneo-si-prepara-la-mobilitazione-1.html",
     "note": "Manifestazione regionale Usb nel giorno dello sciopero generale; ritrovo ore 9:30",
+    "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "La Spezia",
+    "provincia": "SP",
+    "regione": "Liguria",
+    "luogo": "Prefettura della Spezia",
+    "lat": 44.1025,
+    "lng": 9.8241,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB La Spezia"
+    ],
+    "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
+    "note": "Presidio nella giornata dello sciopero generale USB del 30/10 (salari, carovita, no economia di guerra). Indirizzo esatto non indicato dalla fonte",
     "gruppo": "sciopero-generale-2026-10-30"
   },
   {
