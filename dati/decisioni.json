@@ -161,5 +161,841 @@
     "motivo": "Nessuna fonte, organizzatore 'Autonomi' non verificabile e stessa scheda ripetuta ogni giorno dal 20 al 31/10; nessuna notizia di un presidio in via Benevento ad Afragola.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-20"
+  },
+  {
+    "id": "2026-10-22-santa-maria-capua-vetere-presidio-01",
+    "aggiornato_il": "2026-10-21T07:47:30",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-marcianise-presidio-01",
+    "aggiornato_il": "2026-10-21T07:50:18",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario (il 23/10 è già pubblicato come avviso): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario (il 23/10 è già pubblicato come avviso): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-25-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario (il 23/10 è già pubblicato come avviso): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-26-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario (il 23/10 è già pubblicato come avviso): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-27-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma mancano luogo e orario (il 23/10 è già pubblicato come avviso): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-nola-presidio-01",
+    "aggiornato_il": "2026-10-21T02:30:28",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è una strada statale (variante 7 bis): va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:43",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è il porto (molo Santa Lucia) e la stessa scheda è ripetuta per 5 giorni: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è il porto (molo Santa Lucia) e la stessa scheda è ripetuta per 5 giorni: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è il porto (molo Santa Lucia) e la stessa scheda è ripetuta per 5 giorni: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-25-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è il porto (molo Santa Lucia) e la stessa scheda è ripetuta per 5 giorni: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-26-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:45",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte su questo presidio. Le proteste dei TIR contro il caro gasolio sono reali, ma il luogo è il porto (molo Santa Lucia) e la stessa scheda è ripetuta per 5 giorni: va scritto come avviso \"Possibili disagi: presidio degli autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:31",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte; luogo allo svincolo autostradale, ore 00:00, ripetuto per 3 giorni: è un possibile blocco, va scritto come avviso \"Possibili disagi: protesta di agricoltori e autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte; luogo allo svincolo autostradale, ore 00:00, ripetuto per 3 giorni: è un possibile blocco, va scritto come avviso \"Possibili disagi: protesta di agricoltori e autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-25-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte; luogo allo svincolo autostradale, ore 00:00, ripetuto per 3 giorni: è un possibile blocco, va scritto come avviso \"Possibili disagi: protesta di agricoltori e autotrasportatori\" e verificato da un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-25-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, titolo non conforme (\"Autotrasporti_Caro Vita\"), luogo al casello autostradale, ore 00:58. Titolo corretto: \"Possibili disagi: protesta degli autotrasportatori al casello\". Gli avvisi li verifica un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-26-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, titolo non conforme (\"Autotrasporti_Caro Vita\"), luogo al casello autostradale, ore 00:58. Titolo corretto: \"Possibili disagi: protesta degli autotrasportatori al casello\". Gli avvisi li verifica un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-27-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, titolo non conforme (\"Autotrasporti_Caro Vita\"), luogo al casello autostradale, ore 00:58. Titolo corretto: \"Possibili disagi: protesta degli autotrasportatori al casello\". Gli avvisi li verifica un moderatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-25-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-26-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-27-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-28-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore \"Festa\" non riconoscibile, ora 10:28 (probabile ora di invio), stessa scheda ripetuta ogni giorno dal 22 al 30/10; non si capisce che iniziativa sia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-nola-corteo-01",
+    "aggiornato_il": "2026-10-21T12:53:44",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte e nessuna conferma trovata; titolo in maiuscolo e percorso che finisce sulla statale 7 bis. Se confermato andrebbe scritto \"Corteo studentesco\".",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-crispano-corteo-01",
+    "aggiornato_il": "2026-10-21T21:56:38",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte indicata e nessuna conferma trovata in rete del corteo del collettivo a Crispano il 22/10. Non approvabile senza link: se il moderatore trova il comunicato, aggiungerlo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-caserta-corteo-01",
+    "aggiornato_il": "2026-10-22T00:12:17",
+    "azione": "sospetto",
+    "motivo": "Titolo-slogan generico (\"Lotta contro il sistema\"), nessun organizzatore, nessuna fonte, luogo indicato come numero civico di una via: non verificabile.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-22-figline-valdarno-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T17:30:15",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte; tipo \"sciopero generale\" per un corteo studentesco, ora 17:28 (probabile ora di invio), luogo generico \"Figline\". Nessuna conferma trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-salerno-presidio-01",
+    "aggiornato_il": "2026-10-20T20:47:17",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte né organizzatore; il titolo \"Stop porto di Salerno\" annuncia un blocco del porto, non una mobilitazione descritta: non pubblicabile così.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-fermo-assemblea-01",
+    "aggiornato_il": "2026-10-21T16:16:40",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte indicata. Plausibile (iniziative \"Generazione Fuoriclasse\" già verificate a Jesi e Macerata), ma senza link non si approva; titolo da riscrivere, es. \"Assemblea studentesca 'Generazione Fuoriclasse'\".",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-23-napoli-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T02:00:00",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte; titolo con invito in prima persona (\"Scendiamo in piazza\"); tipo \"sciopero generale\" errato per un presidio/corteo in piazza Dante alle 18. Nessuna conferma trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-campobasso-presidio-01",
+    "aggiornato_il": "2026-10-21T15:44:33",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte, organizzatore né orario; nessuna conferma trovata di un presidio davanti alla Provincia di Campobasso il 24/10.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-24-montenero-val-cocchiara-altro-01",
+    "aggiornato_il": "2026-10-21T07:39:19",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte né organizzatore né luogo; titolo in maiuscolo con slogan. Nessuna conferma trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-27-carrara-assemblea-01",
+    "aggiornato_il": "2026-10-21T02:30:29",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte indicata e nessuna conferma trovata dell'incontro degli studenti dell'Accademia il 27/10 in piazza Gramsci.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22"
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-02",
+    "aggiornato_il": "2026-10-19T10:32:09",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-03",
+    "aggiornato_il": "2026-10-19T11:46:07",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-04",
+    "aggiornato_il": "2026-10-19T11:46:07",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-05",
+    "aggiornato_il": "2026-10-19T11:46:07",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-orbassano-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-grugliasco-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-06",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-07",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-vercelli-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-novara-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-novara-sciopero_generale-02",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-alessandria-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:46:08",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale degli studenti contro le riforme del governo, la guerra e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-23-torino-presidio-01",
+    "aggiornato_il": "2026-10-21T19:11:30",
+    "azione": "correggi",
+    "motivo": "Titolo: slogan tra virgolette, tolto il punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio durante il CdA dell'Università di Torino (\"Basta accordi con chi fa la guerra\")"
+    }
+  },
+  {
+    "id": "2026-10-23-avellino-corteo-01",
+    "aggiornato_il": "2026-10-22T01:08:18",
+    "azione": "correggi",
+    "motivo": "Titolo: tolti maiuscolo e punto esclamativo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Manifestazione contro il carovita ad Avellino"
+    }
+  },
+  {
+    "id": "2026-10-24-torino-assemblea-02",
+    "aggiornato_il": "2026-10-21T19:12:42",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Preconcentramento dello spezzone studentesco (università e licei) prima del corteo"
+    }
+  },
+  {
+    "id": "2026-10-24-verona-presidio-01",
+    "aggiornato_il": "2026-10-21T16:51:01",
+    "azione": "correggi",
+    "motivo": "Titolo: descrizione con lo slogan tra virgolette.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio per verità e giustizia (\"Aspettiamo la verità, vogliamo la giustizia\")"
+    }
+  },
+  {
+    "id": "2026-10-30-mestre-corteo-01",
+    "aggiornato_il": "2026-10-22T00:47:28",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il maiuscolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Corteo contro il caro vita"
+    }
+  },
+  {
+    "id": "2026-10-22-fisciano-corteo-01",
+    "aggiornato_il": "2026-10-22T00:49:36",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Corteo all'Università di Salerno contro il sottofinanziamento dell'università e il carovita"
+    }
+  },
+  {
+    "id": "2026-10-22-lucera-presidio-01",
+    "aggiornato_il": "2026-10-21T00:31:27",
+    "azione": "correggi",
+    "motivo": "Titolo dell'avviso: tolte maiuscole fuori posto e ripetizioni.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Possibili disagi: presidio permanente di agricoltori e autotrasportatori"
+    }
+  },
+  {
+    "id": "2026-10-23-corigliano-rossano-presidio-01",
+    "aggiornato_il": "2026-10-21T02:53:39",
+    "azione": "correggi",
+    "motivo": "Titolo dell'avviso: completato come nei giorni seguenti.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia"
+    }
+  },
+  {
+    "id": "2026-10-24-baiano-altro-01",
+    "aggiornato_il": "2026-10-22T01:18:54",
+    "azione": "correggi",
+    "motivo": "Titolo dell'avviso: tolta la forma \"autotrasporti_Caro Vita\".",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    }
+  },
+  {
+    "id": "2026-10-22-baiano-altro-01",
+    "aggiornato_il": "2026-10-22T00:51:43",
+    "azione": "correggi",
+    "motivo": "Titolo non conforme (\"Autotrasporti_Caro Vita\"): riscritto in forma di avviso.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    }
+  },
+  {
+    "id": "2026-10-23-baiano-altro-01",
+    "aggiornato_il": "2026-10-22T01:10:06",
+    "azione": "correggi",
+    "motivo": "Titolo non conforme (\"Autotrasporti_Caro Vita\"): riscritto in forma di avviso.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    }
+  },
+  {
+    "id": "2026-10-22-roccella-ionica-presidio-01",
+    "aggiornato_il": "2026-10-22T01:10:45",
+    "azione": "correggi",
+    "motivo": "Titolo coerente con il tipo presidio.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    }
+  },
+  {
+    "id": "2026-10-24-roccella-ionica-presidio-01",
+    "aggiornato_il": "2026-10-22T01:10:45",
+    "azione": "correggi",
+    "motivo": "Titolo coerente con il tipo presidio.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    }
+  },
+  {
+    "id": "2026-10-25-roccella-ionica-presidio-01",
+    "aggiornato_il": "2026-10-22T01:10:45",
+    "azione": "correggi",
+    "motivo": "Titolo coerente con il tipo presidio.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli autotrasportatori"
+    }
+  },
+  {
+    "id": "2026-10-23-crotone-presidio-01",
+    "aggiornato_il": "2026-10-22T00:15:24",
+    "azione": "correggi",
+    "motivo": "Organizzatori spezzati in tre voci (\"Agricoltori\", \"del\", \"Crotonese\"); titolo uniformato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli agricoltori contro caro vita e caro carburante",
+      "organizzatori": [
+        "Agricoltori del Crotonese"
+      ]
+    }
+  },
+  {
+    "id": "2026-10-24-crotone-presidio-01",
+    "aggiornato_il": "2026-10-22T00:15:24",
+    "azione": "correggi",
+    "motivo": "Organizzatori spezzati in tre voci (\"Agricoltori\", \"del\", \"Crotonese\"); titolo uniformato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli agricoltori contro caro vita e caro carburante",
+      "organizzatori": [
+        "Agricoltori del Crotonese"
+      ]
+    }
+  },
+  {
+    "id": "2026-10-25-crotone-presidio-01",
+    "aggiornato_il": "2026-10-22T00:15:24",
+    "azione": "correggi",
+    "motivo": "Organizzatori spezzati in tre voci (\"Agricoltori\", \"del\", \"Crotonese\"); titolo uniformato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio degli agricoltori contro caro vita e caro carburante",
+      "organizzatori": [
+        "Agricoltori del Crotonese"
+      ]
+    }
+  },
+  {
+    "id": "2026-10-22-pesaro-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T02:09:05",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Assemblea studentesca verso lo sciopero contro guerre e caro vita"
+    }
+  },
+  {
+    "id": "2026-10-23-urbino-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T18:09:21",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Assemblea studentesca verso lo sciopero contro guerre e caro vita"
+    }
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-01",
+    "aggiornato_il": "2026-10-18T16:27:36",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro il carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-napoli-corteo-01",
+    "aggiornato_il": "2026-10-18T23:49:57",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Corteo per lo sciopero generale USB del 30 ottobre"
+    }
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T00:15:37",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro caro vita e riarmo"
+    }
+  },
+  {
+    "id": "2026-10-30-parma-sciopero_generale-01",
+    "aggiornato_il": "2026-10-19T11:45:21",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro il riarmo e il caro vita"
+    }
+  },
+  {
+    "id": "2026-10-30-bari-corteo-01",
+    "aggiornato_il": "2026-10-21T02:46:05",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede (tipo sciopero generale).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro il riarmo e il caro vita"
+    }
+  },
+  {
+    "id": "2026-10-30-bergamo-sciopero_generale-01",
+    "aggiornato_il": "2026-10-17T22:39:18",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero contro carovita e riarmo"
+    }
+  },
+  {
+    "id": "2026-10-30-palermo-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T10:02:01",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro il carovita e il riarmo"
+    }
+  },
+  {
+    "id": "2026-10-30-bologna-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T02:45:28",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro guerra e carovita"
+    }
+  },
+  {
+    "id": "2026-10-30-bologna-corteo-01",
+    "aggiornato_il": "2026-10-21T02:45:17",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Concentramento universitario per lo sciopero generale"
+    }
+  },
+  {
+    "id": "2026-10-30-catania-corteo-01",
+    "aggiornato_il": "2026-10-20T10:06:43",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Manifestazione e corteo contro carovita, guerra e riarmo"
+    }
+  },
+  {
+    "id": "2026-10-30-pisa-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T17:53:29",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Sciopero generale contro guerra e carovita"
+    }
+  },
+  {
+    "id": "2026-10-24-bolzano-corteo-01",
+    "aggiornato_il": "2026-10-21T02:45:36",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Corteo contro il caro vita"
+    }
+  },
+  {
+    "id": "2026-10-25-castel-san-giovanni-altro-01",
+    "aggiornato_il": "2026-10-21T16:30:37",
+    "azione": "correggi",
+    "motivo": "Titolo: tolte maiuscole fuori posto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Incontro pubblico sul DDL antisemitismo"
+    }
+  },
+  {
+    "id": "2026-10-25-mantova-assemblea-01",
+    "aggiornato_il": "2026-10-22T01:25:18",
+    "azione": "correggi",
+    "motivo": "Titolo: descrive cosa succede.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Assemblea contro il caro vita e la guerra"
+    }
+  },
+  {
+    "id": "2026-10-24-pistoia-presidio-01",
+    "aggiornato_il": "2026-10-21T02:41:23",
+    "azione": "correggi",
+    "motivo": "Titolo: maiuscola iniziale.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio contro riarmo e guerra"
+    }
+  },
+  {
+    "id": "2026-10-24-piacenza-assemblea-01",
+    "aggiornato_il": "2026-10-21T02:41:18",
+    "azione": "correggi",
+    "motivo": "Titolo: slogan tra virgolette.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Assemblea pubblica \"Abbassare le armi, alzare i salari, difendere la democrazia\""
+    }
+  },
+  {
+    "id": "2026-10-23-milano-presidio-01",
+    "aggiornato_il": "2026-10-21T19:21:11",
+    "azione": "correggi",
+    "motivo": "Titolo: tolto il giudizio non verificato (\"ingiustamente\").",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Presidio di solidarietà con le persone arrestate durante i cortei"
+    }
+  },
+  {
+    "id": "2026-10-22-terni-altro-01",
+    "aggiornato_il": "2026-10-21T02:09:23",
+    "azione": "correggi",
+    "motivo": "Titolo: le regole non ammettono nomi di persone nel titolo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-22",
+    "campi": {
+      "titolo": "Fiaccolata promossa dall'Associazione Terni Donne"
+    }
   }
 ]
