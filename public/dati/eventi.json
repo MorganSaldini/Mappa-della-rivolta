@@ -1563,7 +1563,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DewzF0Io9Rx/?cplk=MTR1YTIzcWdyMXFsNQ==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-22T00:40:29",
       "gruppo": null
     },
@@ -2578,6 +2578,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-24-trapani-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per il carovita",
+      "data": "2026-10-24",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Trapani",
+      "provincia": "TP",
+      "regione": "Sicilia",
+      "luogo": "piazza vittorio trapani",
+      "lat": 38.01862,
+      "lng": 12.51694,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://vm.tiktok.com/ZGdCpabvL/",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-22T04:15:18",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-24-torino-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro il riarmo",
@@ -2740,6 +2761,27 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T01:17:16",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-24-erice-corteo-01",
+      "tipo": "corteo",
+      "titolo": "basta al carovita",
+      "data": "2026-10-24",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Erice",
+      "provincia": "TP",
+      "regione": "Sicilia",
+      "luogo": "san giuliano piazza",
+      "lat": 38.03316,
+      "lng": 12.53716,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/14nAZaNKgs7/?mibextid=wwXIfr",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-22T04:28:48",
       "gruppo": null
     },
     {
@@ -3463,6 +3505,32 @@
       "stato": "da_verificare",
       "conferme": 1,
       "aggiornato_il": "2026-10-21T15:53:23",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-26-varese-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio dei lavoratori Beko Cassinetta davanti alla Provincia di Varese",
+      "data": "2026-10-26",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Varese",
+      "provincia": "VA",
+      "regione": "Lombardia",
+      "luogo": "Villa Recalcati, sede della Provincia",
+      "lat": 45.818,
+      "lng": 8.826,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fim Cisl",
+        "Fiom Cgil",
+        "Uilm Uil",
+        "RSU Beko"
+      ],
+      "fonte": "https://www.laprovinciadivarese.it/beko-cassinetta-i-lavoratori-non-mollano-presidio-in-provincia-per-difendere-il-futuro-dello-stabilimento-412615/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-22T07:00:27",
       "gruppo": null
     },
     {
@@ -4828,7 +4896,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-21T02:45:17",
       "gruppo": null
     },
@@ -5038,6 +5106,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-la-spezia-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "La Spezia",
+      "provincia": "SP",
+      "regione": "Liguria",
+      "luogo": "Prefettura della Spezia",
+      "lat": 44.1025,
+      "lng": 9.8241,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB La Spezia"
+      ],
+      "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-22T07:00:29",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
       "id": "2026-10-30-catania-corteo-01",
       "tipo": "sciopero_generale",
       "titolo": "Manifestazione e Corteo contro carovita, guerra e riarmo",
@@ -5104,7 +5195,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-10-21T02:45:28",
       "gruppo": null
     },
@@ -6438,8 +6529,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-22T02:00:00",
+  "ultimo_aggiornamento": "2026-10-22T07:00:29",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-22T00:35:38Z"
+  "copia_del": "2026-10-22T05:18:58Z"
 }
