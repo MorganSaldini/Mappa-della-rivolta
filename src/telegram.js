@@ -117,6 +117,18 @@ export async function pubblicaGruppo(env, eventi, sitoUrl, { forza = false } = {
   if (auto && auto.valore === 'no') return;
   const primaData = eventi.map((e) => e.data).sort()[0];
   if (!forza && !(await eUrgente(env, primaData))) return;
+  const res = await chiama(env, 'sendMessage', {
+    text: await testoGruppo(env, eventi, sitoUrl), parse_mode: 'HTML', disable_web_page_preview: true,
+  });
+  if (res && res.message_id) {
+    for (const e of eventi) {
+      await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, e.id).run();
+    }
+  }
+}
+
+// Testo del messaggio unico per un evento in più città o più giorni
+async function testoGruppo(env, eventi, sitoUrl) {
   const primo = apriEvento(eventi[0]);
   // Un gruppo può coprire più città e/o più giorni
   const comuni = [...new Set(eventi.map((e) => e.comune))];
@@ -146,14 +158,7 @@ export async function pubblicaGruppo(env, eventi, sitoUrl, { forza = false } = {
   if (primo.fonte) righe.push('', `🔗 <a href="${h(primo.fonte)}">Fonte</a>`);
   const cerca = await rigaCercaPostCanale(env);
   if (cerca) righe.push(cerca);
-  const res = await chiama(env, 'sendMessage', {
-    text: righe.join('\n'), parse_mode: 'HTML', disable_web_page_preview: true,
-  });
-  if (res && res.message_id) {
-    for (const e of eventi) {
-      await env.DB.prepare('UPDATE eventi SET telegram_msg_id = ? WHERE id = ?').bind(res.message_id, e.id).run();
-    }
-  }
+  return righe.join('\n');
 }
 
 // Avvisa che un evento già pubblicato è stato annullato
@@ -165,15 +170,71 @@ export async function avvisaAnnullato(env, evento) {
   });
 }
 
-// Toglie dal canale un evento nascosto o rifiutato (Telegram lo consente entro 48 ore)
-export async function rimuoviEvento(env, evento) {
-  if (!evento.telegram_msg_id) return;
-  // Se lo stesso messaggio riguarda anche altre città ancora valide, non cancellarlo: scollega solo questa
-  const altre = await env.DB.prepare(
-    "SELECT COUNT(*) AS n FROM eventi WHERE telegram_msg_id = ? AND id <> ? AND stato IN ('verificato','annullato')"
-  ).bind(evento.telegram_msg_id, evento.id).first();
-  if (!altre || !altre.n) await chiama(env, 'deleteMessage', { message_id: evento.telegram_msg_id });
-  await env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(evento.id).run();
+// Come chiama(), ma restituisce anche il motivo dell'errore (serve a capire se il messaggio non c'è più)
+async function chiamaDettagli(env, metodo, corpo) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return { ok: false, rete: true };
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${metodo}`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, ...corpo }),
+    });
+    const d = await r.json();
+    if (!d.ok) console.error('Telegram', metodo, d.description);
+    return { ok: !!d.ok, descrizione: String(d.description || '') };
+  } catch (e) {
+    console.error('Telegram non raggiungibile', e);
+    return { ok: false, rete: true };
+  }
+}
+
+const TESTO_TOLTO = '🚫 <b>Evento tolto dalla mappa</b>\nNon rispetta le regole di pubblicazione o non è stato confermato da una fonte.';
+
+// Toglie dal canale un evento nascosto o rifiutato.
+// - Se il messaggio riguarda anche altre città ancora valide: lo riscrive senza questa.
+// - Altrimenti lo cancella. Telegram permette di cancellare solo entro 48 ore: dopo, il post viene
+//   riscritto con "Evento tolto dalla mappa" (i messaggi del bot si possono modificare sempre).
+// - Se Telegram non risponde, il collegamento resta e si riprova al giro successivo (ogni 5 minuti).
+// Restituisce: 'riscritto', 'cancellato', 'segnato', 'gia_tolto' o 'riprova'.
+export async function rimuoviEvento(env, evento, sitoUrl = 'https://mappadellarivolta.org') {
+  if (!evento.telegram_msg_id) return 'gia_tolto';
+  const msg = evento.telegram_msg_id;
+  const scollega = () => env.DB.prepare('UPDATE eventi SET telegram_msg_id = NULL WHERE id = ?').bind(evento.id).run();
+  const { results: altre } = await env.DB.prepare(
+    "SELECT * FROM eventi WHERE telegram_msg_id = ? AND id <> ? AND stato IN ('verificato','annullato')"
+  ).bind(msg, evento.id).all();
+  if (altre.length) {
+    const valide = altre.filter((e) => e.stato === 'verificato');
+    if (valide.length) {
+      const r = await chiamaDettagli(env, 'editMessageText', {
+        message_id: msg, text: await testoGruppo(env, valide, sitoUrl), parse_mode: 'HTML', disable_web_page_preview: true,
+      });
+      if (!r.ok && r.rete) return 'riprova';
+    }
+    await scollega();
+    return 'riscritto';
+  }
+  const del = await chiamaDettagli(env, 'deleteMessage', { message_id: msg });
+  if (del.ok) { await scollega(); return 'cancellato'; }
+  if (del.rete) return 'riprova';
+  // Troppo vecchio per essere cancellato (o già cancellato a mano): prova a riscriverlo
+  const ed = await chiamaDettagli(env, 'editMessageText', { message_id: msg, text: TESTO_TOLTO, parse_mode: 'HTML' });
+  if (!ed.ok && ed.rete) return 'riprova';
+  await scollega();
+  return ed.ok || /not modified/i.test(ed.descrizione) ? 'segnato' : 'gia_tolto';
+}
+
+// Ogni 5 minuti: toglie dal canale tutti gli eventi nascosti o rifiutati che hanno ancora un post,
+// qualunque sia il motivo (regole automatiche, sigle escluse, moderatori, amministratore AI).
+export async function togliNascostiDalCanale(env, sitoUrl = 'https://mappadellarivolta.org') {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return null;
+  const { results } = await env.DB.prepare(
+    "SELECT * FROM eventi WHERE stato IN ('nascosto','rifiutato') AND telegram_msg_id IS NOT NULL ORDER BY data LIMIT 40"
+  ).all();
+  if (!results.length) return null;
+  const esito = { riscritto: 0, cancellato: 0, segnato: 0, gia_tolto: 0, riprova: 0 };
+  for (const e of results) esito[await rimuoviEvento(env, e, sitoUrl)]++;
+  return esito;
 }
 
 // Cancella dal canale un messaggio qualsiasi (usato dalla ripubblicazione). Restituisce true se riuscito.

@@ -15,7 +15,7 @@ import {
 } from './lib.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
-import { gestisciWebhook, pubblicaCoda, orePubblicazione, oraRoma, togliPulsantiPostUnaVolta, regoleGruppoUnaVolta } from './telegram.js';
+import { gestisciWebhook, pubblicaCoda, orePubblicazione, oraRoma, togliPulsantiPostUnaVolta, regoleGruppoUnaVolta, togliNascostiDalCanale } from './telegram.js';
 
 // Rotte pubbliche. "/api/mobilitazioni" evita i filtri anti-tracciamento che bloccano "/api/event...";
 // "/api/eventi" resta valido per compatibilità.
@@ -107,6 +107,9 @@ export default {
         eseguiRegole(env, salvaVersione).then((r) => console.log('Regole', JSON.stringify(r))).catch((e) => console.error('Regole', e))
           .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
           .catch((e) => console.error('Amministratore AI', e))
+          // Toglie dal canale Telegram gli eventi appena nascosti o rifiutati (anche quelli nascosti dalle regole)
+          .then(() => togliNascostiDalCanale(env)).then((r) => r && console.log('Telegram rimozioni', JSON.stringify(r)))
+          .catch((e) => console.error('Telegram rimozioni', e))
       );
       return;
     }
@@ -119,6 +122,8 @@ export default {
         .then(() => importaProposte(env)).then((r) => console.log('Agente', JSON.stringify(r))).catch((e) => console.error('Agente', e))
         .then(() => importaDecisioni(env)).then((r) => console.log('Amministratore AI', JSON.stringify(r)))
         .catch((e) => console.error('Amministratore AI', e))
+        .then(() => togliNascostiDalCanale(env)).then((r) => r && console.log('Telegram rimozioni', JSON.stringify(r)))
+        .catch((e) => console.error('Telegram rimozioni', e))
         // Uscite su Telegram: agli orari scelti (predefiniti 8, 16, 21) pubblica gli eventi verificati in coda
         .then(async () => {
           if (!(await orePubblicazione(env)).includes(oraRoma())) return;
