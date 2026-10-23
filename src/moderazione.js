@@ -107,6 +107,9 @@ export async function elencoEventi({ request, env, sessione }) {
   const par = [];
   if (q) { where.push('(e.titolo LIKE ? OR e.comune LIKE ? OR e.id LIKE ?)'); par.push(`%${q}%`, `%${q}%`, `%${q}%`); }
   if (STATI.includes(stato)) { where.push('e.stato = ?'); par.push(stato); }
+  const dal = u.searchParams.get('dal'), al = u.searchParams.get('al');
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dal || '')) { where.push('e.data >= ?'); par.push(dal); }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(al || '')) { where.push('e.data <= ?'); par.push(al); }
   if (stato === 'pubblici') {
     // Stessa regola della mappa pubblica: eventi da oggi in poi, verificati o annullati,
     // più i "da verificare" se la pubblicazione immediata è attiva

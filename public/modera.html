@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=8">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="modera.css?v=11">
+  <link rel="stylesheet" href="modera.css?v=12">
 </head>
 <body>
   <header class="barra">
@@ -60,6 +60,8 @@
             <option value="mese">Prossimi 30 giorni</option>
             <option value="passati">Già passati</option>
           </select>
+          <label class="data-filtro">Dal <input name="dal" type="date" aria-label="Dalla data"></label>
+          <label class="data-filtro">Al <input name="al" type="date" aria-label="Alla data"></label>
           <select name="stato" aria-label="Stato">
             <option value="">Tutti gli stati</option>
             <option value="pubblici">👁 Visibili al pubblico</option>
@@ -167,6 +169,6 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="modera.js?v=18"></script>
+  <script src="modera.js?v=19"></script>
 </body>
 </html>

@@ -172,7 +172,7 @@
   const piuGiorni = (iso, n) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
   const normale = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   function filtriAttivi() {
-    return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value || ff.fonte.value;
+    return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value || ff.fonte.value || ff.dal.value || ff.al.value;
   }
   let pubblicazioneImmediata = true; // aggiornato a ogni caricamento della coda
   // Un elemento (evento, correzione o segnalazione) passa i filtri?
@@ -195,6 +195,8 @@
         if (ff.fonte.value === 'con' ? !ha : ha) return false;
       }
     }
+    if (ff.dal.value && e.data && e.data < ff.dal.value) return false;
+    if (ff.al.value && e.data && e.data > ff.al.value) return false;
     const oggi = oggiIso(), p = ff.periodo.value;
     if (p === 'passati' && !(e.data < oggi)) return false;
     if (p && p !== 'passati') {
@@ -388,7 +390,7 @@
 
   async function cercaTutti() {
     const f = $('#form-cerca-mod');
-    const q = new URLSearchParams({ q: f.q.value, stato: f.stato.value });
+    const q = new URLSearchParams({ q: f.q.value, stato: f.stato.value, dal: ff.dal.value, al: ff.al.value });
     try {
       const d = await api('/api/moderazione/eventi?' + q);
       datiTutti = d.eventi;
@@ -401,6 +403,8 @@
     if (schedaAttiva() === 'tutti') disegnaMappa(lista.map((e) => punto(e, ancoraDi('ev', e.id))));
   }
   $('#form-cerca-mod').addEventListener('submit', (ev) => { ev.preventDefault(); cercaTutti(); });
+  // Nella scheda "Tutti gli eventi" le date si chiedono al server (l'elenco può essere lungo)
+  for (const n of ['dal', 'al']) ff[n].addEventListener('change', () => { if (schedaAttiva() === 'tutti') cercaTutti(); });
 
   // ---------- Doppioni ----------
   async function contaDoppioni() {

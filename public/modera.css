@@ -77,3 +77,7 @@ table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
 /* Richieste e avvisi dentro la pagina */
 .dlg-chiedi { max-width: min(460px, calc(100vw - 32px)); }
 .chiedi-testo { white-space: pre-line; margin: 0; font-size: 1.05rem; line-height: 1.45; }
+
+/* Filtro per date */
+.data-filtro { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; white-space: nowrap; }
+.data-filtro input { min-width: 0; }
