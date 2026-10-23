@@ -315,7 +315,8 @@
     if (e.stato !== 'verificato') out.push(b('approva', e.gruppo_n > 1 && daApprovare > 1 ? '✓ Approva solo questo' : '✓ Approva', 'bottone--ok'));
     if (e.stato !== 'annullato' && e.stato !== 'rifiutato') out.push(b('annulla', 'Segna annullato'));
     if (e.stato !== 'nascosto' && e.stato !== 'rifiutato') out.push(b('nascondi', 'Nascondi'));
-    if (e.stato !== 'rifiutato') out.push(b('rifiuta', '✕ Rifiuta', 'bottone--no'));
+    if (e.stato !== 'rifiutato') out.push(b('rifiuta', e.gruppo_n > 1 ? '✕ Rifiuta solo questo' : '✕ Rifiuta', 'bottone--no'));
+    if (e.gruppo_n > 1) out.push(b('rifiuta_gruppo', `✕ Rifiuta tutti i collegati (${e.gruppo_n})`, 'bottone--no'));
     if (e.stato === 'rifiutato' || e.stato === 'nascosto') out.push(b('rimetti', 'Rimetti da verificare'));
     out.push(b('modifica', '✏️ Modifica'));
     out.push(b('cronologia', '🕘 Cronologia'));
@@ -475,6 +476,7 @@
     rifiuta: 'Rifiutare questo evento? Sparirà dalla mappa (e dal canale Telegram, se pubblicato da meno di 48 ore).',
     nascondi: 'Nascondere questo evento dalla mappa?',
     annulla: 'Segnare l’evento come annullato? Resterà visibile barrato e, se era sul canale, verrà pubblicato un avviso.',
+    rifiuta_gruppo: 'Rifiutare questo evento e TUTTI quelli collegati (altre città e altre date)? Spariscono dalla mappa; si possono ripristinare uno per uno dalla cronologia.',
     conferma_sospetto: 'Confermi il sospetto? L’evento viene rifiutato e sparisce dalla mappa (puoi sempre ripristinarlo dalla cronologia).',
   };
   function aggiorna() {
@@ -502,6 +504,7 @@
         }
         avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
           : az === 'approva_gruppo' ? 'Approvati tutti gli appuntamenti: sul canale esce un solo messaggio con l’elenco.'
+          : az === 'rifiuta_gruppo' ? 'Rifiutati tutti gli eventi collegati.'
           : az === 'conferma_sospetto' ? 'Sospetto confermato: evento rifiutato.'
           : az === 'declina_sospetto' ? 'Sospetto declinato: l’evento torna nella coda normale.' : 'Fatto.');
         aggiorna();

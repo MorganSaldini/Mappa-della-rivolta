@@ -235,6 +235,24 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
       creati.push(id);
     }
     return json({ ok: true, creati, saltate });
+  } else if (az === 'rifiuta_gruppo') {
+    // Rifiuta l'evento e tutti quelli collegati (stesso gruppo: altre città o altre date)
+    if (!e.gruppo) return errore('Questo evento non ha eventi collegati.');
+    const { results } = await env.DB.prepare("SELECT * FROM eventi WHERE gruppo = ? AND stato <> 'rifiutato'").bind(e.gruppo).all();
+    const rifiutati = [];
+    for (const x of results) {
+      if (!puoGestire(sessione, x)) continue;
+      const n = await salvaVersione(env.DB, x, { stato: 'rifiutato', segnalazioni_aperte: 0 }, 'rifiuta_gruppo', attore);
+      await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(x.id).run();
+      if (x.sospetto) await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(x.id).run();
+      n.telegram_msg_id = x.telegram_msg_id;
+      rifiutati.push(n);
+    }
+    // Telegram: uno dopo l'altro, così il messaggio comune si cancella una volta sola
+    ctx.waitUntil((async () => {
+      for (const n of rifiutati) if (n.telegram_msg_id) await rimuoviEvento(env, n).catch((x) => console.error('Telegram', x));
+    })());
+    return json({ ok: true, rifiutati: rifiutati.length });
   } else if (az === 'approva_gruppo') {
     if (!e.gruppo) return errore('Questo evento non fa parte di un gruppo di città.');
     const { results } = await env.DB.prepare(
