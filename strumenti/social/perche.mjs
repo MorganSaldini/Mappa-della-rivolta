@@ -23,11 +23,11 @@ const s1 = `<div class="p scuro">${testa(1)}<p class="k">Perché è nata questa 
 const s2 = `<div class="p">${testa(2)}<h1>Per anni,<br><em>divisi</em></h1>
 <p class="t">Si protestava in pochi e ognuno per conto suo, come se i problemi fossero solo di qualcuno.</p>
 <div style="margin-top:44px">${['Metalmeccanici', 'Commercianti', 'Scuola', 'Sanità', 'Trasporti', 'Agricoltori', 'Studenti'].map((c) => `<span class="chip">${c}</span>`).join('')}</div>
-<p class="t" style="font-weight:700">E così non ci vediamo.</p>
+<p class="t" style="font-weight:700">E così non ci vedevamo.</p>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
-const s3 = `<div class="p">${testa(3)}<h1 style="font-size:104px;margin-top:30px">La mappa serve<br><em>a farci vedere</em></h1>
+const s3 = `<div class="p">${testa(3)}<h1 style="font-size:100px;margin-top:30px">La soluzione:<br><em>una mappa che ci fa vedere</em></h1>
 <div style="display:grid;grid-template-columns:520px 1fr;gap:24px;flex:1;min-height:0;margin-top:14px"><div style="min-height:0;display:flex;justify-content:center">${svg}</div>
-<div style="display:flex;flex-direction:column;justify-content:center;gap:14px"><p style="font:700 34px/1.25 C">A chi pensa<br>"tanto saremo<br>quattro gatti":</p><p style="font:800 170px/.8 T;color:#c8322a">${N}</p><p style="font:700 36px/1.2 C">iniziative in arrivo, ognuna con la sua fonte</p><p style="font:400 32px/1.3 C;color:#5f5d66">in ${NC} comuni e ${NR} regioni</p></div></div>
+<div style="display:flex;flex-direction:column;justify-content:center;gap:14px"><p style="font:700 32px/1.25 C">Tutte le piazze nello stesso posto. E a chi pensa "tanto saremo quattro gatti":</p><p style="font:800 170px/.8 T;color:#c8322a">${N}</p><p style="font:700 36px/1.2 C">iniziative in arrivo, ognuna con la sua fonte</p><p style="font:400 32px/1.3 C;color:#5f5d66">in ${NC} comuni e ${NR} regioni</p></div></div>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
 const s4 = `<div class="p">${testa(4)}<h1 style="font-size:112px">Rivolta,<br>come lo stomaco<br><em>che si rivolta</em></h1>
 <p class="t">È quello che sentono tanti davanti a una situazione che non regge più.</p>
@@ -35,7 +35,7 @@ const s4 = `<div class="p">${testa(4)}<h1 style="font-size:112px">Rivolta,<br>co
 <p class="t">Sulla mappa ci sono solo iniziative pacifiche. Chi incita alla violenza o ad azioni illegali viene rimosso.</p>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
 const s5 = `<div class="p scuro">${testa(5)}<h1 style="font-size:112px">Chi c'è<br><em>dietro</em></h1>
-<p class="t" style="color:#e8e4dd">Un cuoco, non un politico né un attivista. E una community di volontari che controlla ogni voce.</p>
+<p class="t" style="color:#e8e4dd">Un lavoratore, non un politico né un attivista. E una community di volontari che controlla ogni voce.</p>
 <p class="t" style="color:#e8e4dd">Nessun partito, sindacato o collettivo: la mappa è aperta a tutti, purché rispettino la legge e la sicurezza delle persone.</p>
 <p class="t" style="color:#fff;font-weight:700">Informa, non organizza.</p>
 <p class="nota">La mappa riporta informazioni pubbliche con la loro fonte.</p>
