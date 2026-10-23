@@ -16,6 +16,7 @@ import { verificabile, haEccezione } from './regole.js';
 import decisioni from '../dati/decisioni.json';
 import { adessoRoma, sha256hex, pulisci, scriviCronologia } from './lib.js';
 import { leggiEvento, salvaVersione, validaEvento } from './dati.js';
+import { rimuoviEvento } from './telegram.js';
 
 // Campi che l'AI può correggere (data, comune e coordinate no: per quelli segnala un sospetto)
 const CORREGGIBILI = ['tipo', 'titolo', 'ora_inizio', 'ora_fine', 'luogo', 'organizzatori', 'fonte'];
@@ -106,6 +107,8 @@ export async function importaDecisioni(env, sitoUrl = SITO) {
       if (['rifiutato', 'nascosto'].includes(e.stato)) { esito.saltate.push(`${id}: già fuori dalla mappa`); await segna(); continue; }
       if (await haEccezione(env.DB, id)) { esito.saltate.push(`${id}: eccezione dell'amministratore, non si nasconde`); await segna(); continue; }
       await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'nascosto_da_ai', ATTORE_AI);
+      // Se era già uscito sul canale Telegram, il post viene tolto
+      if (e.telegram_msg_id) await rimuoviEvento(env, e).catch((err) => console.error('Telegram rimozione', err));
       await env.DB.prepare('UPDATE eventi SET note = ?, sospetto = ? WHERE id = ?').bind(nota.slice(0, 1000), nota.slice(0, 1000), id).run();
       esito.nascosti++;
     } else {

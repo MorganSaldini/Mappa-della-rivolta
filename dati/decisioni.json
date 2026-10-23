@@ -2746,5 +2746,115 @@
     "motivo": "Il titolo parla di USB Caluso (provincia di Torino) ma l'evento è a Cuneo con coordinate a Cuneo. Fonte solo Instagram, nessuna conferma web trovata: verificare il comune giusto.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-roma-corteo-06",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-milano-corteo-04",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica. In più la piazza Duomo è vietata alle manifestazioni il pomeriggio del 24/10.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-bologna-corteo-05",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-torino-corteo-04",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-padova-corteo-05",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-bari-corteo-03",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-firenze-corteo-02",
+    "aggiornato_il": "2026-10-23T10:48:55",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-genova-presidio-01",
+    "aggiornato_il": "2026-10-23T03:34:05",
+    "azione": "nascondi",
+    "motivo": "Piazza del Movimento 17 ottobre (sabato 24/10 ore 15 nelle stesse piazze annunciate dalla sigla), reinserita senza il nome con la stessa fonte delle altre. La sigla è tra quelle che la mappa non pubblica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-cagliari-presidio-01",
+    "aggiornato_il": "2026-10-23T03:36:39",
+    "azione": "sospetto",
+    "motivo": "Stesso titolo e stesso orario delle piazze del Movimento 17 ottobre, fonte solo un link di ricerca Google. Da controllare: serve una fonte giornalistica che indichi chi la promuove.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-napoli-altro-01",
+    "aggiornato_il": "2026-10-23T10:44:45",
+    "azione": "sospetto",
+    "motivo": "Sabato 24/10 ore 15, senza fonte né promotori: stesso schema delle piazze del Movimento 17 ottobre. Resta fuori finché non c'è una fonte giornalistica.",
+    "fonti_controllate": [
+      "https://www.thesocialpost.it/2026/10/23/scoppia-inferno-italia-blindata-negozi-chiusi-agenti-in-strada-cosa-succede/",
+      "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
+    ],
+    "deciso_il": "2026-10-23"
   }
 ]
