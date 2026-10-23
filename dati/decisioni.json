@@ -1659,5 +1659,932 @@
       "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
     ],
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-paola-presidio-01",
+    "aggiornato_il": "2026-10-22T09:24:09",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Paola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:12",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-sala-consilina-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Sala Consilina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-polla-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Polla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-sciacca-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T22:44:53",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per 23/10. Corriere di Sciacca: il fermo della marineria è finito il 12/10; TeleMonteKronio parla solo del sit-in del 22/10.",
+    "fonti_controllate": [
+      "https://www.corrieredisciacca.it/caro-gasolio-la-marineria-torna-in-mare-stop-alla-protesta-dopo-due-settimane/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-salerno-presidio-01",
+    "aggiornato_il": "2026-10-20T20:47:17",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per il 23/10 in via Ligea. Il presidio dei portuali al porto è stato il 16/10; il 23/10 la mobilitazione è in piazza della Libertà.",
+    "fonti_controllate": [
+      "https://www.salernoinweb.it/News/Salerno/49059-Salerno-nuova-mobilitazione-per-salvare-la-compagnia-portuale-%22A-rischio-futuro-di-centinaia-di-famiglie%22"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-firenze-corteo-01",
+    "aggiornato_il": "2026-10-22T18:00:12",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Firenze.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: Balarm (22/10) e QdS (21/10) confermano il presidio degli autotrasportatori autonomi al varco Santa Lucia del porto, ancora in corso il 22/10. È un avviso: lo verifica un moderatore. Date oltre il 22/10 non confermate.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "https://qds.it/prosegue-sciopero-protesta-autotrasportatori-tir-varco-santa-lucia-palermo/"
+    ],
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli autotrasportatori al varco Santa Lucia del porto",
+      "luogo": "Varco Santa Lucia, via Crispi",
+      "fonte": "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "ora_inizio": null
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-torre-del-greco-corteo-01",
+    "aggiornato_il": "2026-10-22T18:52:54",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Torre del Greco.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-pagliarone-corteo-01",
+    "aggiornato_il": "2026-10-22T20:34:53",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Pagliarone.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-fermo-assemblea-01",
+    "aggiornato_il": "2026-10-21T16:16:40",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Fermo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-napoli-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T02:00:00",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 23/10 a Napoli.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Casagiove.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-paola-presidio-01",
+    "aggiornato_il": "2026-10-22T09:24:09",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Paola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:12",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-ferrandina-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T11:56:00",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Ferrandina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:32",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore. Smentito: StrettoWeb (22/10) riporta che il presidio allo svincolo di Gioia Tauro è stato smantellato tra il 21 e il 22/10; nessuna nuova protesta annunciata.",
+    "fonti_controllate": [
+      "https://www.strettoweb.com/2026/10/proteste-per-il-caro-carburante-anche-a-gioia-tauro-si-torna-alla-normalita-presidio-smantellato-traffico-regolare-video/2165116/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-sala-consilina-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Sala Consilina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-polla-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Polla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-sciacca-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T23:48:56",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per 24/10. Corriere di Sciacca: il fermo della marineria è finito il 12/10; TeleMonteKronio parla solo del sit-in del 22/10.",
+    "fonti_controllate": [
+      "https://www.corrieredisciacca.it/caro-gasolio-la-marineria-torna-in-mare-stop-alla-protesta-dopo-due-settimane/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-torino-corteo-02",
+    "aggiornato_il": "2026-10-22T13:40:04",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Torino.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-milano-presidio-02",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-montenero-val-cocchiara-altro-01",
+    "aggiornato_il": "2026-10-21T07:39:19",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Montenero Val Cocchiara.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: Balarm (22/10) e QdS (21/10) confermano il presidio degli autotrasportatori autonomi al varco Santa Lucia del porto, ancora in corso il 22/10. È un avviso: lo verifica un moderatore. Date oltre il 22/10 non confermate.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "https://qds.it/prosegue-sciopero-protesta-autotrasportatori-tir-varco-santa-lucia-palermo/"
+    ],
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli autotrasportatori al varco Santa Lucia del porto",
+      "luogo": "Varco Santa Lucia, via Crispi",
+      "fonte": "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "ora_inizio": null
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-treviglio-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T08:00:52",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a treviglio.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-palermo-corteo-03",
+    "aggiornato_il": "2026-10-22T23:47:42",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Palermo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-portici-presidio-01",
+    "aggiornato_il": "2026-10-23T02:35:32",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Portici.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-napoli-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T11:41:55",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Napoli.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-palermo-corteo-04",
+    "aggiornato_il": "2026-10-22T14:20:11",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Palermo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-castelvetrano-corteo-01",
+    "aggiornato_il": "2026-10-22T19:09:14",
+    "azione": "correggi",
+    "motivo": "Fonte leggibile aggiunta: TP24 e ItacaNotizie (22/10) confermano 'Gen Z Revolution' sabato 24/10 ore 15 al Sistema delle Piazze di Castelvetrano. Nessun promotore identificato; il Comune invita alla prudenza.",
+    "fonti_controllate": [
+      "https://tp24.it/2026/10/22/economia/tir-in-strada-e-studenti-in-piazza-il-caro-vita-accende-la-protesta-in-sicilia/241099",
+      "https://itacanotizie.it/2026/10/22/gen-z-revolution-allarme-castelvetrano/",
+      "https://www.castelvetranoselinunte.it/gen-z-revolution-a-castelvetrano-il-comune-teme-disordini-e-invita-le-famiglie-alla-prudenza/"
+    ],
+    "campi": {
+      "fonte": "https://itacanotizie.it/2026/10/22/gen-z-revolution-allarme-castelvetrano/",
+      "titolo": "Manifestazione dei giovani contro il caro vita (\"Gen Z Revolution\")",
+      "organizzatori": []
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-ravenna-corteo-01",
+    "aggiornato_il": "2026-10-22T15:52:46",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (solo TikTok); stessa ora e temi dell'appello «Noi siamo il popolo» del 24/10, sigla esclusa.",
+    "fonti_controllate": [
+      "https://ameve.eu/sabato-24-ottobre-allarme-per-mobilitazioni-in-20-citta-italiane/",
+      "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-cuneo-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Cuneo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-bologna-presidio-02",
+    "aggiornato_il": "2026-10-23T00:57:54",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Bologna.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-campobasso-presidio-01",
+    "aggiornato_il": "2026-10-22T23:46:31",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Campobasso.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-erice-corteo-01",
+    "aggiornato_il": "2026-10-22T04:28:48",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Erice.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-agrigento-assemblea-02",
+    "aggiornato_il": "2026-10-22T20:33:35",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per l'assemblea in piazza Ravanusella alle 18. AgrigentoOggi riporta per il 24/10 un flash mob diverso, alle 15:30 davanti alla Prefettura.",
+    "fonti_controllate": [
+      "https://www.agrigentooggi.it/caro-vita-e-guerre-flash-mob-ad-agrigento-al-supermercato-ti-senti-rapinato/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-mondovi-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 24/10 a Mondovi.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Casagiove.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-paola-presidio-01",
+    "aggiornato_il": "2026-10-22T09:24:09",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Paola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:13",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-gioia-tauro-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-20T23:35:33",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore. Smentito: StrettoWeb (22/10) riporta che il presidio allo svincolo di Gioia Tauro è stato smantellato tra il 21 e il 22/10; nessuna nuova protesta annunciata.",
+    "fonti_controllate": [
+      "https://www.strettoweb.com/2026/10/proteste-per-il-caro-carburante-anche-a-gioia-tauro-si-torna-alla-normalita-presidio-smantellato-traffico-regolare-video/2165116/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-sala-consilina-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Sala Consilina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-polla-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Polla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per 25/10. BiNews conferma la protesta al casello A16 di Baiano solo il 20/10.",
+    "fonti_controllate": [
+      "https://www.binews.it/baiano/baiano-protesta-degli-autotrasportatori-anche-a-baiano-traffico-bloccato-a-singhiozzo-al-casello-della16/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:44",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: Balarm (22/10) e QdS (21/10) confermano il presidio degli autotrasportatori autonomi al varco Santa Lucia del porto, ancora in corso il 22/10. È un avviso: lo verifica un moderatore. Date oltre il 22/10 non confermate.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "https://qds.it/prosegue-sciopero-protesta-autotrasportatori-tir-varco-santa-lucia-palermo/"
+    ],
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli autotrasportatori al varco Santa Lucia del porto",
+      "luogo": "Varco Santa Lucia, via Crispi",
+      "fonte": "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "ora_inizio": null
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-cuneo-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Cuneo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-mondovi-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 25/10 a Mondovi.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Casagiove.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-paola-presidio-01",
+    "aggiornato_il": "2026-10-22T09:24:09",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Paola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:13",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-mondovi-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T20:53:08",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Mondovì.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-sala-consilina-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Sala Consilina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-polla-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Polla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per 26/10. BiNews conferma la protesta al casello A16 di Baiano solo il 20/10.",
+    "fonti_controllate": [
+      "https://www.binews.it/baiano/baiano-protesta-degli-autotrasportatori-anche-a-baiano-traffico-bloccato-a-singhiozzo-al-casello-della16/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-milano-presidio-02",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-jesi-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-22T16:25:07",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Jesi.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-palermo-presidio-01",
+    "aggiornato_il": "2026-10-20T23:50:45",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: Balarm (22/10) e QdS (21/10) confermano il presidio degli autotrasportatori autonomi al varco Santa Lucia del porto, ancora in corso il 22/10. È un avviso: lo verifica un moderatore. Date oltre il 22/10 non confermate.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "https://qds.it/prosegue-sciopero-protesta-autotrasportatori-tir-varco-santa-lucia-palermo/"
+    ],
+    "campi": {
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli autotrasportatori al varco Santa Lucia del porto",
+      "luogo": "Varco Santa Lucia, via Crispi",
+      "fonte": "https://www.balarm.it/news/tir-la-protesta-si-spacca-a-palermo-le-grandi-aziende-ripartono-gli-autonomi-non-mollano-170845",
+      "ora_inizio": null
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-cuneo-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Cuneo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-mondovi-altro-01",
+    "aggiornato_il": "2026-10-22T20:49:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 26/10 a Mondovi.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-casagiove-presidio-01",
+    "aggiornato_il": "2026-10-21T07:48:23",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Casagiove.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-paola-presidio-01",
+    "aggiornato_il": "2026-10-22T09:24:09",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Paola.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:13",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-sala-consilina-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Sala Consilina.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-polla-presidio-01",
+    "aggiornato_il": "2026-10-22T22:12:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Polla.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-baiano-altro-01",
+    "aggiornato_il": "2026-10-21T15:00:07",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per 27/10. BiNews conferma la protesta al casello A16 di Baiano solo il 20/10.",
+    "fonti_controllate": [
+      "https://www.binews.it/baiano/baiano-protesta-degli-autotrasportatori-anche-a-baiano-traffico-bloccato-a-singhiozzo-al-casello-della16/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-teramo-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T22:58:26",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Teramo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-teramo-sciopero_generale-02",
+    "aggiornato_il": "2026-10-22T22:58:26",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Teramo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-carrara-assemblea-01",
+    "aggiornato_il": "2026-10-21T02:30:29",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a Carrara.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-teramo-corteo-01",
+    "aggiornato_il": "2026-10-22T22:50:16",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 27/10 a teramo.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-28-santa-maria-del-cedro-presidio-01",
+    "aggiornato_il": "2026-10-22T09:26:13",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 28/10 a Santa Maria del Cedro.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-28-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 28/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-28-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 28/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-29-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 29/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-29-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 29/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-pisa-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T08:08:29",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: lo sciopero del 30/10 esiste, ma nessuna fonte conferma l'iniziativa di USB Pisa in 'piazza Gaza' (Qualitytravel cita solo lo sciopero negli aeroporti).",
+    "fonti_controllate": [
+      "https://www.qualitytravel.it/sciopero-generale-del-30-ottobre-chi-si-ferma-nei-trasporti/194034"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-cerano-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T22:24:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Cerano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-piombino-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-21T22:37:57",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: USB (22/09) conferma che il porto di Piombino aderisce allo sciopero dei portuali del 30/10. Luogo e ora non confermati.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/la-guerra-passa-dai-nostri-porti-il-ruolo-del-porto-di-piombino-nel-conflitto-e-lo-sciopero-internazionale-del-30-ottobre-1130.html"
+    ],
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/la-guerra-passa-dai-nostri-porti-il-ruolo-del-porto-di-piombino-nel-conflitto-e-lo-sciopero-internazionale-del-30-ottobre-1130.html",
+      "titolo": "Sciopero dei lavoratori portuali"
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-treviso-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-21T22:41:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Treviso.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-sesto-san-giovanni-altro-01",
+    "aggiornato_il": "2026-10-22T22:46:20",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Sesto san giovanni.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-reggio-di-calabria-corteo-01",
+    "aggiornato_il": "2026-10-22T15:35:59",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Reggio di Calabria.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-reggio-calabria-corteo-01",
+    "aggiornato_il": "2026-10-22T21:16:22",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Reggio Calabria.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-torino-corteo-02",
+    "aggiornato_il": "2026-10-22T19:35:18",
+    "azione": "correggi",
+    "motivo": "Fonte giornalistica aggiunta: Quotidiano Piemontese e ANSA (16/10) confermano che gli studenti torinesi si sono dati appuntamento allo sciopero generale del 30/10. Ora e preconcentramento a Palazzo Nuovo non confermati.",
+    "fonti_controllate": [
+      "https://www.quotidianopiemontese.it/2026/10/16/concluso-il-corteo-studentesco-a-torino-gli-studenti-si-danno-appuntamento-allo-sciopero-generale-del-30-ottobre-bloccheremo-tutto/",
+      "https://www.ansa.it/sito/notizie/cronaca/2026/10/16/studenti-torino-il-30-ottobre-bloccheremo-tutto_27f25989-f818-4d5c-bd49-59446de8a378.html"
+    ],
+    "campi": {
+      "fonte": "https://www.quotidianopiemontese.it/2026/10/16/concluso-il-corteo-studentesco-a-torino-gli-studenti-si-danno-appuntamento-allo-sciopero-generale-del-30-ottobre-bloccheremo-tutto/",
+      "titolo": "Preconcentramento dello spezzone studentesco a Palazzo Nuovo per lo sciopero generale"
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-milano-sciopero_generale-02",
+    "aggiornato_il": "2026-10-22T22:41:23",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: USB conferma sciopero generale il 30/10 con manifestazioni a Milano. Concentramento a Porta Venezia alle 9:30 non confermato.",
+    "fonti_controllate": [
+      "https://areastampa.usb.it/leggi-notizia/30-ottobre-sciopero-generale-appello-per-assemblea-cittadina-1440-1.html"
+    ],
+    "campi": {
+      "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-sciopero-generale-appello-per-assemblea-cittadina-1440-1.html",
+      "titolo": "Concentramento a Porta Venezia per lo sciopero generale"
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-pescara-corteo-01",
+    "aggiornato_il": "2026-10-22T23:48:18",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: ReteAbruzzo e Il Germe (22/10) confermano la manifestazione regionale dello sciopero generale a Pescara il 30/10 ore 10. La piazza non è confermata (tolta).",
+    "fonti_controllate": [
+      "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
+      "https://www.ilgerme.it/pane-e-rose-per-la-valle-peligna-il-collettivo-altrementi-lancia-lassemblea-contro-carovita-e-riarmo/"
+    ],
+    "campi": {
+      "fonte": "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
+      "titolo": "Manifestazione regionale per lo sciopero generale",
+      "luogo": ""
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-pescara-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T23:08:38",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-pescara-corteo-01: stessa manifestazione regionale del 30/10 ore 10 a Pescara (ReteAbruzzo). Fonte solo Instagram; piazza Italia non confermata.",
+    "fonti_controllate": [
+      "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-adelfia-presidio-01",
+    "aggiornato_il": "2026-10-21T10:29:47",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 30/10 a Adelfia.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-verbania-corteo-01",
+    "aggiornato_il": "2026-10-21T20:01:05",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte per un corteo il 30/10. Eco Risveglio (22/10) segnala un volantino falso con la stessa piazza Ranzoni.",
+    "fonti_controllate": [
+      "https://www.ecorisveglio.it/2026/10/22/rivoluzione-a-verbania-crea-allarme-sui-social-40enne-individuato/"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-31-milano-presidio-01",
+    "aggiornato_il": "2026-10-22T18:01:36",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 31/10 a milano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-31-cerano-sciopero_generale-01",
+    "aggiornato_il": "2026-10-21T22:24:14",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 31/10 a Cerano.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-31-vicenza-corteo-01",
+    "aggiornato_il": "2026-10-21T21:38:53",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 31/10 a Vicenza.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-31-vicenza-presidio-01",
+    "aggiornato_il": "2026-10-21T21:46:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 31/10 a Vicenza.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-11-01-pescara-corteo-01",
+    "aggiornato_il": "2026-10-21T18:06:37",
+    "azione": "correggi",
+    "motivo": "Fonte aggiunta: Rete8 e il Centro (22/10) confermano manifestazione contro il carovita domenica 1/11 ore 10, ma in piazza della Rinascita (non della Repubblica). Nessun promotore, convocazione social; da valutare con cautela.",
+    "fonti_controllate": [
+      "https://www.rete8.it/cronaca/pescara-preoccupazione-per-la-manifestazione-degli-sciami/",
+      "https://www.ilcentro.it/pescara/arrivano-i-maranza-a-pescara-oggi-vi-togliamo-la-pace-paura-per-la-locandina-sui-social-aa4us2r1"
+    ],
+    "campi": {
+      "fonte": "https://www.rete8.it/cronaca/pescara-preoccupazione-per-la-manifestazione-degli-sciami/",
+      "titolo": "Manifestazione contro il caro vita",
+      "luogo": "Piazza della Rinascita"
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-11-07-vicenza-corteo-01",
+    "aggiornato_il": "2026-10-21T21:38:53",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 07/11 a Vicenza.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-11-07-vicenza-presidio-01",
+    "aggiornato_il": "2026-10-21T21:46:50",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 07/11 a Vicenza.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
   }
 ]
