@@ -328,3 +328,8 @@ label.spunta input { width: auto; min-height: auto; }
   .mappa-elenco #elenco { flex: 1; overflow-y: auto; padding-right: 4px; overscroll-behavior: contain; }
 }
 @media (max-width: 480px) { .giorno-box > summary.giorno { font-size: 1rem; padding: 7px 10px; } }
+
+/* Finestra prima di PayPal */
+.dlg-sostieni { max-width: 440px; }
+.dlg-sostieni h2 { margin: 0; }
+.dlg-sostieni p { margin: 0; line-height: 1.45; }
