@@ -68,6 +68,11 @@
             <option value="nascosto">Nascosti</option>
             <option value="rifiutato">Rifiutati</option>
           </select>
+          <select name="fonte" aria-label="Fonte">
+            <option value="">Con e senza fonte</option>
+            <option value="con">🔗 Con fonte</option>
+            <option value="senza">⚠️ Senza fonte</option>
+          </select>
           <button type="button" class="bottone bottone--chiaro" id="azzera-filtri">Azzera</button>
           <button type="button" class="bottone bottone--chiaro" id="mostra-mappa">🗺 Nascondi mappa</button>
         </form>
@@ -149,6 +154,6 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="modera.js?v=11"></script>
+  <script src="modera.js?v=12"></script>
 </body>
 </html>

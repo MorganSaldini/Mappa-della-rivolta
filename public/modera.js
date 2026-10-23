@@ -135,7 +135,7 @@
   const piuGiorni = (iso, n) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
   const normale = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   function filtriAttivi() {
-    return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value;
+    return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value || ff.fonte.value;
   }
   // Un elemento (evento, correzione o segnalazione) passa i filtri?
   function passa(e) {
@@ -145,6 +145,14 @@
     if (ff.tipo.value && e.tipo !== ff.tipo.value) return false;
     if (ff.regione.value && e.regione !== ff.regione.value) return false;
     if (ff.stato.value && e.stato !== ff.stato.value) return false;
+    if (ff.fonte.value) {
+      // Fonte dell'evento (per le correzioni proposte conta la fonte attuale dell'evento)
+      const f = 'fonte_attuale' in e ? e.fonte_attuale : e.fonte;
+      if (f !== undefined) {
+        const ha = !!String(f || '').trim();
+        if (ff.fonte.value === 'con' ? !ha : ha) return false;
+      }
+    }
     const oggi = oggiIso(), p = ff.periodo.value;
     if (p === 'passati' && !(e.data < oggi)) return false;
     if (p && p !== 'passati') {
