@@ -71,8 +71,8 @@ export async function coda({ env, sessione }) {
   const par = sessione.regioni;
 
   const nuovi = (await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e WHERE e.stato IN ('da_verificare','nascosto') AND e.sospetto IS NULL${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
-  ).bind(...par).all()).results.map(apriEvento);
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e WHERE e.stato IN ('da_verificare','nascosto') AND e.sospetto IS NULL AND e.data >= ?${filtro} ORDER BY e.data, e.gruppo, e.ora_inizio LIMIT 300`
+  ).bind(oggiRoma(), ...par).all()).results.map(apriEvento);
 
   const modifiche = (await env.DB.prepare(
     `SELECT m.id, m.evento_id, m.campi, m.motivo, m.fonte, m.creato_il, e.titolo, e.comune, e.data, e.stato,
