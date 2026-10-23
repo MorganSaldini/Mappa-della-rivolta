@@ -2856,5 +2856,147 @@
       "https://www.ilpost.it/2026/10/20/gruppi-proteste-ottobre-milano-disordini/"
     ],
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-cagliari-presidio-01",
+    "aggiornato_il": "2026-10-23T03:36:39",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: la fonte è solo un link di ricerca Google. Stesso titolo, orario e assenza di promotori delle piazze del Movimento 17 ottobre: serve una fonte giornalistica che dica chi la promuove.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-paola-presidio-01",
+    "aggiornato_il": "2026-10-23T04:46:55",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: la fonte è il testo di una ricerca Google, non un link verificabile. Nessuna conferma da stampa, sindacati o enti.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-sciacca-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T04:12:41",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: la fonte (TeleMonteKronio) parla del sit-in della marineria del 22/10, non del 23/10. Tipo errato: è uno sciopero dei pescatori, non generale.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-sciacca-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T04:13:43",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: la fonte (TeleMonteKronio) parla del sit-in della marineria del 22/10, non del 24/10. Tipo errato: è uno sciopero dei pescatori, non generale.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-portici-presidio-01",
+    "aggiornato_il": "2026-10-23T04:13:22",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: fonte solo TikTok, nessuna conferma da stampa, sindacati o enti.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-agrigento-assemblea-02",
+    "aggiornato_il": "2026-10-23T03:52:22",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: fonte solo Instagram; la stampa (AgrigentoOggi) per il 24/10 riporta un flash mob diverso, alle 15:30 davanti alla Prefettura.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-palermo-presidio-01",
+    "aggiornato_il": "2026-10-23T04:09:35",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: Balarm (21/10) conferma il presidio al varco Santa Lucia, sciopero 'a oltranza' da rivalutare il 22/10: nessuna fonte per il 24/10.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/autotrasportatori-divisi-in-sicilia-riparte-la-protesta-degli-irriducibili-tir-fermi-a-palermo-170779"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-palermo-presidio-01",
+    "aggiornato_il": "2026-10-23T04:11:10",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: Balarm (21/10) conferma il presidio al varco Santa Lucia, sciopero 'a oltranza' da rivalutare il 22/10: nessuna fonte per il 25/10.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/autotrasportatori-divisi-in-sicilia-riparte-la-protesta-degli-irriducibili-tir-fermi-a-palermo-170779"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-palermo-presidio-01",
+    "aggiornato_il": "2026-10-23T04:11:10",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: Balarm (21/10) conferma il presidio al varco Santa Lucia, sciopero 'a oltranza' da rivalutare il 22/10: nessuna fonte per il 26/10.",
+    "fonti_controllate": [
+      "https://www.balarm.it/news/autotrasportatori-divisi-in-sicilia-riparte-la-protesta-degli-irriducibili-tir-fermi-a-palermo-170779"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-treviso-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T02:35:36",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-treviso-corteo-01: stessa data, ore 8:30, via Roma, stesso promotore (CSO Django).",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-01",
+    "aggiornato_il": "2026-10-22T18:52:13",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-livorno-corteo-01: stessa data, ore 9, piazza Cavour, stesso promotore (USB).",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-pescara-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T03:25:58",
+    "azione": "deverifica",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-pescara-corteo-01 (fonte ReteAbruzzo): stessa manifestazione del 30/10 ore 10. Questa ha solo Instagram e piazza non confermata.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-roma-altro-01",
+    "aggiornato_il": "2026-10-23T10:21:51",
+    "azione": "correggi",
+    "motivo": "Tolto dagli organizzatori il nome di una persona (dato personale).",
+    "campi": {
+      "organizzatori": [
+        "Coalition to Abolish the Fur Trade",
+        "CSOA Ex-Snia"
+      ]
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-firenze-assemblea-01",
+    "aggiornato_il": "2026-10-23T10:22:17",
+    "azione": "correggi",
+    "motivo": "Solo forma: tolti MAIUSCOLO e punto esclamativo, titolo dell'iniziativa tra virgolette. La pagina della fonte non contiene rivendicazioni di violenze.",
+    "campi": {
+      "titolo": "Assemblea nazionale \"In ogni caso nessun rimorso\" su guerra, antifascismo e repressione"
+    },
+    "fonti_controllate": [
+      "https://lapunta.org/event/in-ogni-caso-nessun-rimorso-assemblea-nazionale"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-firenze-assemblea-01",
+    "aggiornato_il": "2026-10-23T10:22:18",
+    "azione": "correggi",
+    "motivo": "Solo forma: tolti MAIUSCOLO e punto esclamativo, titolo dell'iniziativa tra virgolette. La pagina della fonte non contiene rivendicazioni di violenze.",
+    "campi": {
+      "titolo": "Assemblea nazionale \"In ogni caso nessun rimorso\" su guerra, antifascismo e repressione"
+    },
+    "fonti_controllate": [
+      "https://lapunta.org/event/in-ogni-caso-nessun-rimorso-assemblea-nazionale"
+    ],
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-31-nichelino-altro-01",
+    "aggiornato_il": "2026-10-23T10:32:52",
+    "azione": "correggi",
+    "motivo": "Solo forma: il titolo era un invito a firmare con punto esclamativo; ora descrive l'iniziativa.",
+    "campi": {
+      "titolo": "Adesione del Comune di Nichelino alla campagna contro la guerra \"R1PUD1A\""
+    },
+    "deciso_il": "2026-10-23"
   }
 ]
