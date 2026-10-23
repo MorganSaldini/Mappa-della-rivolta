@@ -326,10 +326,14 @@
 
   function bottoniSospetto(e) {
     const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
+    const gruppo = e.gruppo_n > 1;
+    const daApprovare = Number(e.gruppo_da_approvare || 0);
     return [
-      b('conferma_sospetto', '✕ Confermo: rifiuta', 'bottone--no'),
+      b('conferma_sospetto', gruppo ? '✕ Confermo: rifiuta solo questo' : '✕ Confermo: rifiuta', 'bottone--no'),
+      gruppo ? b('rifiuta_gruppo', `✕ Confermo: rifiuta tutti i collegati (${e.gruppo_n})`, 'bottone--no') : '',
       b('declina_sospetto', '✓ Non è sospetto'),
-      e.stato !== 'verificato' ? b('approva', '✓ Approva', 'bottone--ok') : '',
+      e.stato !== 'verificato' ? b('approva', gruppo && daApprovare > 1 ? '✓ Approva solo questo' : '✓ Approva', 'bottone--ok') : '',
+      gruppo && daApprovare > 1 ? b('approva_gruppo', `✓ Approva tutti gli appuntamenti da verificare (${daApprovare})`, 'bottone--ok') : '',
       b('modifica', '✏️ Modifica'),
       b('cronologia', '🕘 Cronologia'),
       linkCercaFonte(e),

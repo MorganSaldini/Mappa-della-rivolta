@@ -265,6 +265,7 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
       if (x.stato === 'verificato') { approvati.push(x); continue; }
       if (verificabile(x, { umano: true })) { saltati++; continue; }
       const n = await salvaVersione(env.DB, x, { stato: 'verificato', segnalazioni_aperte: 0 }, 'approva_gruppo', attore);
+      if (x.sospetto) await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(x.id).run();
       await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(x.id).run();
       n.telegram_msg_id = x.telegram_msg_id;
       approvati.push(n);
