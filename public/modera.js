@@ -77,6 +77,43 @@
     return d;
   }
 
+  // ---------- Richieste e avvisi dentro la pagina (al posto delle finestre del browser) ----------
+  function finestraDomanda() {
+    let d = document.getElementById('dlg-chiedi');
+    if (d) return d;
+    d = document.createElement('dialog');
+    d.id = 'dlg-chiedi';
+    d.className = 'dlg-chiedi';
+    d.setAttribute('aria-labelledby', 'chiedi-testo');
+    d.innerHTML = '<form method="dialog"><p id="chiedi-testo" class="chiedi-testo"></p>' +
+      '<div class="dlg__azioni"><button value="no" class="bottone bottone--chiaro" id="chiedi-no">Annulla</button>' +
+      '<button value="si" class="bottone bottone--pieno" id="chiedi-si">Conferma</button></div></form>';
+    document.body.append(d);
+    return d;
+  }
+  // Domanda sì/no: restituisce true se si conferma
+  function chiedi(testo, { si = 'Conferma', no = 'Annulla' } = {}) {
+    const d = finestraDomanda();
+    d.querySelector('#chiedi-testo').textContent = testo;
+    d.querySelector('#chiedi-si').textContent = si;
+    const bNo = d.querySelector('#chiedi-no');
+    bNo.textContent = no; bNo.hidden = false;
+    d.returnValue = '';
+    d.showModal();
+    d.querySelector('#chiedi-si').focus();
+    return new Promise((ok) => d.addEventListener('close', () => ok(d.returnValue === 'si'), { once: true }));
+  }
+  // Avviso con un solo pulsante
+  function avvisa(testo) {
+    const d = finestraDomanda();
+    d.querySelector('#chiedi-testo').textContent = testo;
+    d.querySelector('#chiedi-si').textContent = 'OK';
+    d.querySelector('#chiedi-no').hidden = true;
+    d.returnValue = '';
+    if (!d.open) d.showModal();
+    return new Promise((ok) => d.addEventListener('close', () => ok(), { once: true }));
+  }
+
   // ---------- Accesso ----------
   function mostraAccesso() {
     sessione = null;
@@ -396,14 +433,14 @@
     const d = ev.target.closest('[data-diversi]');
     if (!u && !d) return;
     const b = u || d;
-    if (u && !confirm('Tenere questo evento e togliere l’altro dalla mappa? Le informazioni mancanti vengono copiate in quello che resta.')) return;
+    if (u && !await chiedi('Tenere questo evento e togliere l’altro dalla mappa? Le informazioni mancanti vengono copiate in quello che resta.')) return;
     b.disabled = true;
     try {
       await api('/api/moderazione/doppioni', { corpo: u ? { azione: 'unisci', tieni: u.dataset.unisci, togli: u.dataset.togli } : { azione: 'diversi', a: d.dataset.diversi, b: d.dataset.altro } });
       avvisoOk(u ? 'Doppione tolto: resta un solo evento.' : 'Segnati come eventi diversi.');
       caricaDoppioni();
       caricaCoda();
-    } catch (e) { alert(e.message); b.disabled = false; }
+    } catch (e) { avvisa(e.message); b.disabled = false; }
   });
 
   // ---------- Azioni ----------
@@ -425,7 +462,7 @@
       const az = b.dataset.az, id = b.dataset.id;
       if (az === 'modifica') return apriModifica(id);
       if (az === 'cronologia') return apriCronologia(id);
-      if (CONFERME[az] && !confirm(CONFERME[az])) return;
+      if (CONFERME[az] && !await chiedi(CONFERME[az])) return;
       b.disabled = true;
       try {
         try {
@@ -433,7 +470,7 @@
         } catch (x) {
           // Sigla esclusa: l'amministratore può fare un'eccezione per questo solo evento
           if (!(az === 'approva' && x.dati && x.dati.puo_eccezione)) throw x;
-          if (!confirm(x.message + '\n\nSei l\'amministratore: vuoi approvare comunque SOLO questo evento come eccezione? Resterà scritto nella cronologia e nelle note.')) { b.disabled = false; return; }
+          if (!await chiedi(x.message + '\n\nSei l\'amministratore: vuoi approvare comunque SOLO questo evento come eccezione? Resterà scritto nella cronologia e nelle note.')) { b.disabled = false; return; }
           await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az, eccezione_sigla: true } });
         }
         avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
@@ -441,7 +478,7 @@
           : az === 'conferma_sospetto' ? 'Sospetto confermato: evento rifiutato.'
           : az === 'declina_sospetto' ? 'Sospetto declinato: l’evento torna nella coda normale.' : 'Fatto.');
         aggiorna();
-      } catch (e) { alert(e.message); b.disabled = false; }
+      } catch (e) { avvisa(e.message); b.disabled = false; }
       return;
     }
     const m = ev.target.closest('[data-mod]');
@@ -451,7 +488,7 @@
         await api(`/api/moderazione/modifiche/${m.dataset.id}`, { corpo: { azione: m.dataset.mod } });
         avvisoOk(m.dataset.mod === 'accetta' ? 'Correzione applicata.' : 'Correzione rifiutata.');
         caricaCoda();
-      } catch (e) { alert(e.message); m.disabled = false; }
+      } catch (e) { avvisa(e.message); m.disabled = false; }
     }
   });
 
@@ -467,7 +504,7 @@
         ` — Decisioni AI: approvati ${dz.approvati || 0} · sospetti ${dz.sospetti || 0}` +
         (dz.saltate && dz.saltate.length ? ` · saltate ${dz.saltate.length} (${dz.saltate.slice(0, 3).join('; ')})` : '');
       caricaCoda();
-    } catch (e) { alert(e.message); }
+    } catch (e) { avvisa(e.message); }
     b.disabled = false;
   });
 
@@ -477,7 +514,7 @@
   let idModifica = null;
   async function apriModifica(id) {
     let e = ultimi[id];
-    if (!e) { try { e = (await api(`/api/moderazione/eventi/${encodeURIComponent(id)}/cronologia`)).evento; } catch (x) { return alert(x.message); } }
+    if (!e) { try { e = (await api(`/api/moderazione/eventi/${encodeURIComponent(id)}/cronologia`)).evento; } catch (x) { return avvisa(x.message); } }
     idModifica = id;
     if (!fm.regione.options.length) {
       const reg = REGIONI.length ? REGIONI : ['Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna', 'Friuli-Venezia Giulia', 'Lazio', 'Liguria', 'Lombardia', 'Marche', 'Molise', 'Piemonte', 'Puglia', 'Sardegna', 'Sicilia', 'Toscana', 'Trentino-Alto Adige', 'Umbria', "Valle d'Aosta", 'Veneto'];
@@ -507,7 +544,7 @@
     const c = $('#nuova-data-mod'), d = c.value;
     if (!d) return c.focus();
     if (d === fm.data.value || dateExtra.includes(d)) { c.value = ''; return; }
-    if (dateExtra.length >= 14) return alert('Puoi aggiungere al massimo 14 date per volta.');
+    if (dateExtra.length >= 14) return avvisa('Puoi aggiungere al massimo 14 date per volta.');
     dateExtra.push(d); dateExtra.sort(); c.value = ''; disegnaDateMod();
   });
   $('#lista-date-mod').addEventListener('click', (ev) => {
@@ -550,7 +587,7 @@
   // ---------- Cronologia ----------
   async function apriCronologia(id) {
     let d;
-    try { d = await api(`/api/moderazione/eventi/${encodeURIComponent(id)}/cronologia`); } catch (e) { return alert(e.message); }
+    try { d = await api(`/api/moderazione/eventi/${encodeURIComponent(id)}/cronologia`); } catch (e) { return avvisa(e.message); }
     $('#titolo-cronologia').textContent = 'Cronologia: ' + d.evento.titolo;
     $('#voci-cronologia').innerHTML = d.voci.map((v) => `<div class="voce-cron">
         <p><strong>v${v.versione}</strong> · ${esc(v.azione)} · ${esc(v.attore)} · ${esc(v.creato_il ? v.creato_il.replace('T', ' ').slice(0, 16) : '')}</p>
@@ -562,13 +599,13 @@
   document.addEventListener('click', async (ev) => {
     const r = ev.target.closest('[data-ripristina]');
     if (!r) return;
-    if (!confirm(`Ripristinare la versione ${r.dataset.ripristina}? Verrà creata una nuova versione con quei dati.`)) return;
+    if (!await chiedi(`Ripristinare la versione ${r.dataset.ripristina}? Verrà creata una nuova versione con quei dati.`)) return;
     try {
       await api(`/api/moderazione/eventi/${encodeURIComponent(r.dataset.id)}`, { corpo: { azione: 'ripristina', versione: Number(r.dataset.ripristina) } });
       $('#dlg-cronologia').close();
       avvisoOk('Versione ripristinata.');
       aggiorna();
-    } catch (e) { alert(e.message); }
+    } catch (e) { avvisa(e.message); }
   });
 
   // ---------- Moderatori (admin) ----------
@@ -606,19 +643,19 @@
       try {
         const r = await api('/api/admin/staff', { corpo: { azione: 'crea', nome: f.nome.value, ruolo: f.ruolo.value, regioni } });
         caricaStaff({ nome: f.nome.value, codice: r.codice });
-      } catch (e) { alert(e.message); }
+      } catch (e) { avvisa(e.message); }
     });
   }
   document.addEventListener('click', async (ev) => {
     const b = ev.target.closest('[data-staff]');
     if (!b) return;
     const az = b.dataset.staff;
-    if (az === 'revoca' && !confirm('Revocare l’accesso? Avrà effetto subito.')) return;
-    if (az === 'nuovo_codice' && !confirm('Generare un nuovo codice? Quello vecchio smetterà di funzionare.')) return;
+    if (az === 'revoca' && !await chiedi('Revocare l’accesso? Avrà effetto subito.')) return;
+    if (az === 'nuovo_codice' && !await chiedi('Generare un nuovo codice? Quello vecchio smetterà di funzionare.')) return;
     try {
       const r = await api('/api/admin/staff', { corpo: { azione: az, id: Number(b.dataset.id) } });
       caricaStaff(r.codice ? { nome: b.dataset.nome, codice: r.codice } : null);
-    } catch (e) { alert(e.message); }
+    } catch (e) { avvisa(e.message); }
   });
 
   // ---------- Impostazioni (admin) ----------
@@ -660,13 +697,13 @@
     $('#form-imp').addEventListener('submit', async (ev) => {
       ev.preventDefault();
       try { await api('/api/admin/impostazioni', { corpo: Object.fromEntries(new FormData(ev.target).entries()) }); avvisoOk('Impostazioni salvate.'); }
-      catch (e) { alert(e.message); }
+      catch (e) { avvisa(e.message); }
     });
     $('#prova-tg').addEventListener('click', async () => {
-      try { await api('/api/admin/telegram-prova', { corpo: {} }); avvisoOk('Messaggio inviato: controlla il canale.'); } catch (e) { alert(e.message); }
+      try { await api('/api/admin/telegram-prova', { corpo: {} }); avvisoOk('Messaggio inviato: controlla il canale.'); } catch (e) { avvisa(e.message); }
     });
     $('#ripubblica-tg').addEventListener('click', async (ev) => {
-      if (!confirm('Ripubblicare sul canale tutti gli eventi futuri verificati? I vecchi post verranno sostituiti da quelli nuovi.')) return;
+      if (!await chiedi('Ripubblicare sul canale tutti gli eventi futuri verificati? I vecchi post verranno sostituiti da quelli nuovi.')) return;
       const b = ev.currentTarget; b.disabled = true; b.textContent = 'Ripubblicazione in corso…';
       try {
         const r = await api('/api/admin/telegram-ripubblica', { corpo: {} });
@@ -674,25 +711,25 @@
         if (r.vecchi_non_cancellati) msg += ` ${r.vecchi_non_cancellati} vecchi post non si sono potuti cancellare: toglili tu dal canale.`;
         if (r.restanti) msg += ` Ne restano ${r.restanti}: premi di nuovo il pulsante.`;
         avvisoOk(msg);
-      } catch (e) { alert(e.message); }
+      } catch (e) { avvisa(e.message); }
       b.disabled = false; b.textContent = 'Ripubblica su Telegram';
     });
     $('#webhook-tg').addEventListener('click', async () => {
       try {
         const r = await api('/api/admin/telegram-webhook', { corpo: {} });
         avvisoOk('Bot attivato: regole nei commenti e assistente.' + (r.username ? ` Il bot si apre da t.me/${r.username}` : ''));
-      } catch (e) { alert(e.message); }
+      } catch (e) { avvisa(e.message); }
     });
     $('#trova-tg').addEventListener('click', async () => {
-      if (!confirm('Pubblicare nel canale il post «Trova una mobilitazione»?')) return;
+      if (!await chiedi('Pubblicare nel canale il post «Trova una mobilitazione»?')) return;
       try {
         const r = await api('/api/admin/telegram-trova', { corpo: {} });
         avvisoOk(r.fissato ? 'Post pubblicato e fissato in alto nel canale.' : 'Post pubblicato. Non sono riuscito a fissarlo: fissalo tu dal canale (tieni premuto il post → Fissa).');
-      } catch (e) { alert(e.message); }
+      } catch (e) { avvisa(e.message); }
     });
     $('#pulisci').addEventListener('click', async () => {
-      if (!confirm('Cancellare definitivamente gli eventi passati da più dei giorni indicati?')) return;
-      try { const r = await api('/api/admin/pulizia', { corpo: {} }); avvisoOk(`Eventi cancellati: ${r.cancellati}.`); } catch (e) { alert(e.message); }
+      if (!await chiedi('Cancellare definitivamente gli eventi passati da più dei giorni indicati?')) return;
+      try { const r = await api('/api/admin/pulizia', { corpo: {} }); avvisoOk(`Eventi cancellati: ${r.cancellati}.`); } catch (e) { avvisa(e.message); }
     });
   }
 

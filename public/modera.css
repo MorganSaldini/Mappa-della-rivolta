@@ -73,3 +73,7 @@ table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
 .date-mod { list-style: none; padding: 0; margin: 6px 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .date-mod li { background: #eef3ee; border-radius: 999px; padding: 3px 4px 3px 10px; display: inline-flex; align-items: center; gap: 4px; }
 .date-mod button { border: 0; background: none; cursor: pointer; font-size: 15px; line-height: 1; padding: 2px 6px; }
+
+/* Richieste e avvisi dentro la pagina */
+.dlg-chiedi { max-width: min(460px, calc(100vw - 32px)); }
+.chiedi-testo { white-space: pre-line; margin: 0; font-size: 1.05rem; line-height: 1.45; }
