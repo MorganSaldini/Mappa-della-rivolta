@@ -188,9 +188,39 @@ async function chiamaDettagli(env, metodo, corpo) {
   }
 }
 
+// ---------- Messaggi nel gruppo di discussione collegati a un post del canale ----------
+// Chiavi nella tabella "importati": "tg-copia|<post>|<gruppo>|<messaggio>" (copia automatica del post)
+// e "tg-regole|<post>|<gruppo>|<messaggio>" (risposta del bot con le regole). Nessuna tabella nuova.
+async function ricordaNelGruppo(env, tipo, idPost, idGruppo, idMessaggio) {
+  await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)')
+    .bind(`${tipo}|${idPost}|${idGruppo}|${idMessaggio}`, adessoRoma()).run();
+}
+
+// Cancella dal gruppo la copia del post e la risposta del bot con le regole.
+// Restituisce quanti messaggi ha tolto. Se Telegram non risponde, li lascia segnati per il giro dopo.
+async function togliDalGruppo(env, idPost) {
+  const id = String(parseInt(idPost, 10));
+  if (id === 'NaN') return 0;
+  const { results } = await env.DB.prepare(
+    'SELECT chiave FROM importati WHERE chiave LIKE ? OR chiave LIKE ?'
+  ).bind(`tg-regole|${id}|%`, `tg-copia|${id}|%`).all();
+  let tolti = 0;
+  for (const { chiave } of results) {
+    const [, , gruppo, messaggio] = chiave.split('|');
+    const r = await chiamaDettagli(env, 'deleteMessage', { chat_id: gruppo, message_id: parseInt(messaggio, 10) });
+    if (r.rete) continue; // riprova al prossimo giro
+    if (r.ok) tolti++;
+    // Riuscito, già cancellato o troppo vecchio: non riprovare più
+    await env.DB.prepare('DELETE FROM importati WHERE chiave = ?').bind(chiave).run();
+  }
+  return tolti;
+}
+
 const TESTO_TOLTO = '🚫 <b>Evento tolto dalla mappa</b>\nNon rispetta le regole di pubblicazione o non è stato confermato da una fonte.';
 
 // Toglie dal canale un evento nascosto o rifiutato.
+// - Toglie anche, dal gruppo dei commenti, la copia del post e la risposta del bot con le regole
+//   (solo per i post usciti dopo questo aggiornamento: per i precedenti il collegamento non è salvato).
 // - Se il messaggio riguarda anche altre città ancora valide: lo riscrive senza questa.
 // - Altrimenti lo cancella. Telegram permette di cancellare solo entro 48 ore: dopo, il post viene
 //   riscritto con "Evento tolto dalla mappa" (i messaggi del bot si possono modificare sempre).
@@ -214,6 +244,8 @@ export async function rimuoviEvento(env, evento, sitoUrl = 'https://mappadellari
     await scollega();
     return 'riscritto';
   }
+  // Prima i messaggi nel gruppo dei commenti (copia del post e regole del bot), poi il post del canale
+  await togliDalGruppo(env, msg).catch((e) => console.error('Telegram gruppo', e));
   const del = await chiamaDettagli(env, 'deleteMessage', { message_id: msg });
   if (del.ok) { await scollega(); return 'cancellato'; }
   if (del.rete) return 'riprova';
@@ -328,6 +360,9 @@ async function rispondiConRegole(env, m) {
   if (!evento) { await new Promise((r) => setTimeout(r, 4000)); evento = await cerca(); }
   if (!evento) return;
 
+  // Ricorda la copia del post nel gruppo: se l'evento viene nascosto, il bot la toglie anche da lì
+  await ricordaNelGruppo(env, 'tg-copia', idPost, m.chat.id, m.message_id);
+
   // Telegram può rimandare la stessa notifica: una sola risposta per post
   const chiave = `regole-commento|${m.chat.id}|${m.message_id}`;
   const nuovo = await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)')
@@ -339,6 +374,7 @@ async function rispondiConRegole(env, m) {
     reply_to_message_id: m.message_id, disable_web_page_preview: true,
   });
   if (!d.ok) console.error('Telegram regole commento', d.description);
+  else if (d.result && d.result.message_id) await ricordaNelGruppo(env, 'tg-regole', idPost, m.chat.id, d.result.message_id);
 }
 
 // Punto di arrivo delle notifiche di Telegram. Risponde sempre subito 200 a Telegram.
