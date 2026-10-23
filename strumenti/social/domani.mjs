@@ -1,5 +1,5 @@
 // Carosello 1080x1350 "Domani in piazza" (sabato 24 ottobre 2026).
-// Dati letti da mappadellarivolta.org/api/mobilitazioni il 22/10/2026 ~22:15 UTC:
+// Dati letti da mappadellarivolta.org/api/mobilitazioni il 22/10/2026 ~22:15 UTC, aggiornati il 23/10 (copia 06:26 UTC: + Grosseto):
 // solo eventi `verificato` con fonte; esclusi possibili disagi, occupazioni, presidi degli autotrasportatori ai caselli
 // (blocchi sospesi il 21-22/10), eventi organizzati da partiti e il presidio di Verona su un caso giudiziario (vedi bozza).
 // Uso: node domani.mjs [cartella]   → domani-1.png … domani-N.png
@@ -17,6 +17,7 @@ const E = [
  [1, 'corteo', 'Casalmaggiore', '16:30', 'Piazza Garibaldi', 'Corteo per la Palestina', 'Onda Queer · Rive Gauche · Tavola della Pace Cremona e altri', 44.9864, 10.4152],
  [0, 'presidio', 'Verona', '16:30', 'Piazza San Nicolò', 'Presidio per la Palestina', 'Verona per la Palestina', 45.44, 10.9957],
  [0, 'altro', 'Este', '16:30', 'Piazza Maggiore', 'Sit-in contro il DDL caccia', 'Comitato Lasciateci respirare e altre associazioni', 45.2281, 11.6561],
+ [2, 'corteo', 'Grosseto', '8:00', 'dal liceo scientifico a piazza Duomo', 'Corteo degli studenti', 'Officina dei giovani antifascisti', 42.7635, 11.1124],
  [2, 'corteo', 'Lucca', '8:30', 'Piazza San Michele', 'Sciopero studentesco', 'FAUST · Giovane Grido Lucca', 43.843, 10.503],
  [2, 'corteo', 'Empoli', '15:30', 'Piazza Farinata degli Uberti', 'Corteo contro guerra, carovita e repressione', 'CSA Intifada', 43.7196, 10.946],
  [2, 'presidio', 'Pistoia', '17:00', 'Piazza Gavinana', 'Presidio contro riarmo e guerra', 'Rete pistoiese per la Palestina', 43.932, 10.9153],
