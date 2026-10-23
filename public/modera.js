@@ -174,6 +174,7 @@
   function filtriAttivi() {
     return ff.testo.value.trim() || ff.tipo.value || ff.regione.value || ff.periodo.value || ff.stato.value || ff.fonte.value;
   }
+  let pubblicazioneImmediata = true; // aggiornato a ogni caricamento della coda
   // Un elemento (evento, correzione o segnalazione) passa i filtri?
   function passa(e) {
     if (!e) return false;
@@ -181,7 +182,11 @@
     if (t && !normale([e.titolo, e.comune, e.luogo, e.id || e.evento_id, (e.organizzatori || []).join(' ')].join(' ')).includes(t)) return false;
     if (ff.tipo.value && e.tipo !== ff.tipo.value) return false;
     if (ff.regione.value && e.regione !== ff.regione.value) return false;
-    if (ff.stato.value && e.stato !== ff.stato.value) return false;
+    if (ff.stato.value === 'pubblici') {
+      // Come sulla mappa pubblica: da oggi in poi, verificati, annullati e (se attiva la pubblicazione immediata) da verificare
+      const vis = ['verificato', 'annullato'].concat(pubblicazioneImmediata ? ['da_verificare'] : []);
+      if (!vis.includes(e.stato) || e.data < oggiIso()) return false;
+    } else if (ff.stato.value && e.stato !== ff.stato.value) return false;
     if (ff.fonte.value) {
       // Fonte dell'evento (per le correzioni proposte conta la fonte attuale dell'evento)
       const f = 'fonte_attuale' in e ? e.fonte_attuale : e.fonte;
@@ -316,6 +321,7 @@
   async function caricaCoda() {
     let d;
     try { d = await api('/api/moderazione/coda'); } catch (e) { return; }
+    if (typeof d.pubblicazione_immediata === 'boolean') pubblicazioneImmediata = d.pubblicazione_immediata;
     datiCoda = d;
     const conta = (id, n) => { $(id).textContent = n; $(id).classList.toggle('zero', !n); };
     conta('#n-nuovi', d.nuovi.length); conta('#n-modifiche', d.modifiche.length); conta('#n-problemi', d.problemi.length); conta('#n-sospetti', (d.sospetti || []).length);

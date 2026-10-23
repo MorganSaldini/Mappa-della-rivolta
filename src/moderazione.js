@@ -95,7 +95,8 @@ export async function coda({ env, sessione }) {
     `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e WHERE e.sospetto IS NOT NULL AND e.stato NOT IN ('rifiutato')${filtro} ORDER BY e.data LIMIT 200`
   ).bind(...par).all()).results.map(apriEvento);
 
-  return json({ ok: true, nuovi, modifiche, problemi, sospetti });
+  const imp = await impostazioni(env.DB);
+  return json({ ok: true, nuovi, modifiche, problemi, sospetti, pubblicazione_immediata: !!imp.pubblicazioneImmediata });
 }
 
 export async function elencoEventi({ request, env, sessione }) {
@@ -106,9 +107,16 @@ export async function elencoEventi({ request, env, sessione }) {
   const par = [];
   if (q) { where.push('(e.titolo LIKE ? OR e.comune LIKE ? OR e.id LIKE ?)'); par.push(`%${q}%`, `%${q}%`, `%${q}%`); }
   if (STATI.includes(stato)) { where.push('e.stato = ?'); par.push(stato); }
+  if (stato === 'pubblici') {
+    // Stessa regola della mappa pubblica: eventi da oggi in poi, verificati o annullati,
+    // più i "da verificare" se la pubblicazione immediata è attiva
+    const imp = await impostazioni(env.DB);
+    const st = imp.pubblicazioneImmediata ? ['verificato', 'da_verificare', 'annullato'] : ['verificato', 'annullato'];
+    where.push(`e.stato IN (${st.map(() => '?').join(',')}) AND e.data >= ?`); par.push(...st, oggiRoma());
+  }
   if (sessione.regioni.length) { where.push(`e.regione IN (${sessione.regioni.map(() => '?').join(',')})`); par.push(...sessione.regioni); }
   const { results } = await env.DB.prepare(
-    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY e.data DESC LIMIT 150`
+    `SELECT e.*, (SELECT COUNT(*) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_n, (SELECT GROUP_CONCAT(DISTINCT g.comune) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_citta, (SELECT GROUP_CONCAT(DISTINCT g.data) FROM eventi g WHERE g.gruppo = e.gruppo) AS gruppo_date FROM eventi e ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY ${stato === 'pubblici' ? 'e.data, e.ora_inizio LIMIT 600' : 'e.data DESC LIMIT 150'}`
   ).bind(...par).all();
   return json({ ok: true, eventi: results.map(apriEvento) });
 }
