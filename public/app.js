@@ -635,7 +635,6 @@
     mostraTurnstile('ts-aggiungi');
   }
   $('#apri-aggiungi').addEventListener('click', apriAggiungi);
-  $('#apri-aggiungi-2').addEventListener('click', apriAggiungi);
 
   $('#trova-luogo').addEventListener('click', async () => {
     const q = [fa.luogo.value, fa.comune.value].map((s) => s.trim()).filter(Boolean).join(', ');
