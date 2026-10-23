@@ -87,7 +87,7 @@ export async function coda({ env, sessione }) {
     `SELECT p.evento_id, e.titolo, e.comune, e.data, e.stato, e.tipo, e.regione, e.fonte, e.lat, e.lng, COUNT(*) AS n,
             GROUP_CONCAT(p.motivo || CASE WHEN p.nota <> '' THEN ': ' || p.nota ELSE '' END, ' | ') AS dettagli
      FROM problemi p JOIN eventi e ON e.id = p.evento_id
-     WHERE p.stato = 'aperta'${filtro} GROUP BY p.evento_id ORDER BY n DESC, e.data LIMIT 200`
+     WHERE p.stato = 'aperta' AND e.stato NOT IN ('annullato','rifiutato')${filtro} GROUP BY p.evento_id ORDER BY n DESC, e.data LIMIT 200`
   ).bind(...par).all()).results;
 
   // Lista dei sospetti preparata dall'amministratore AI: decide un moderatore umano
@@ -163,13 +163,12 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
   if (az in cambiStato) {
     const stato = cambiStato[az];
     const extra = { stato };
-    if (az === 'approva' || az === 'rimetti') extra.segnalazioni_aperte = 0;
+    extra.segnalazioni_aperte = 0; // le segnalazioni vengono chiuse qui sotto
     nuovo = await salvaVersione(env.DB, e, extra, az, attore);
     // Una decisione umana chiude anche l'eventuale sospetto dell'amministratore AI
     if (e.sospetto) await env.DB.prepare('UPDATE eventi SET sospetto = NULL WHERE id = ?').bind(e.id).run();
-    if (az === 'approva' || az === 'rimetti' || az === 'rifiuta') {
-      await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
-    }
+    // Ogni decisione di un moderatore sullo stato chiude le segnalazioni aperte dell'evento
+    await env.DB.prepare("UPDATE problemi SET stato = 'chiusa' WHERE evento_id = ? AND stato = 'aperta'").bind(e.id).run();
   } else if (az === 'modifica') {
     const v = validaEvento({ ...apriEvento(e), ...(b.campi || {}) }, { consentiPassato: true });
     if (v.errore) return errore(v.errore);
