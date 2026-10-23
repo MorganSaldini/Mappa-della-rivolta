@@ -1,10 +1,10 @@
 // Reel 1080x1920 "Sabato 24 in 15 secondi": la mappa si accende ora per ora sulle piazze di sabato.
-// Stessi eventi del carosello domani.mjs (verificati con fonte, letti il 22/10/2026).
+// Stessi eventi del carosello domani.mjs (verificati con fonte, letti il 22/10/2026, + Grosseto il 23/10).
 // Uscita: out/reel-sabato.mp4 (copertina 0,6 s come primo fotogramma + bling di sottofondo).
 import fs from 'node:fs'; import { execSync } from 'node:child_process'; import { chromium } from 'playwright-core';
 import { COL, W, H, pathItalia, xy, cssBase, rendi } from './motore.mjs';
 const E = [
- ['corteo', 'Lucca', '8:30', 43.843, 10.503], ['corteo', 'Castel Volturno', '13:00', 41.0344, 13.9411],
+ ['corteo', 'Grosseto', '8:00', 42.7635, 11.1124], ['corteo', 'Lucca', '8:30', 43.843, 10.503], ['corteo', 'Castel Volturno', '13:00', 41.0344, 13.9411],
  ['corteo', 'Roma', '14:00', 41.9025, 12.4965], ['corteo', 'Alba', '14:00', 44.6944, 8.037],
  ['corteo', 'Brescia', '14:30', 45.5403, 10.2193], ['corteo', 'Torino', '15:00', 45.0703, 7.686],
  ['altro', 'Milano', '15:00', 45.4281, 9.1825], ['presidio', 'Bergamo', '15:00', 45.6942, 9.6707],
@@ -13,8 +13,8 @@ const E = [
  ['altro', 'Este', '16:30', 45.2281, 11.6561], ['assemblea', 'Cagliari', '16:30', 39.2175, 9.1172],
  ['presidio', 'Pistoia', '17:00', 43.932, 10.9153],
 ].map(([t, c, ora, la, ln], i) => { const [x, y] = xy(la, ln); return { c, ora, col: COL[t], x, y }; });
-const ORE = [...new Set(E.map((e) => e.ora))];               // 8:30 13:00 14:00 14:30 15:00 15:30 16:30 17:00
-const DUR = [1.2, 1.0, 1.2, 0.9, 1.5, 1.1, 1.5, 1.1], T0 = 1.9;
+const ORE = [...new Set(E.map((e) => e.ora))];               // 8:00 8:30 13:00 14:00 14:30 15:00 15:30 16:30 17:00
+const DUR = [0.8, 0.9, 0.9, 1.1, 0.8, 1.4, 1.0, 1.4, 1.0], T0 = 1.9;
 const FINE = T0 + DUR.reduce((a, b) => a + b, 0), TOT = FINE + 3.4;
 const citta = new Set(E.map((e) => e.c)).size;
 const dots = E.map((e, i) => `<g id="e${i}" transform="translate(${e.x},${e.y})" opacity="0"><circle r="46" fill="${e.col}" opacity=".2"/><circle r="24" fill="${e.col}" stroke="#f6f3ee" stroke-width="6"/></g>`).join('');
