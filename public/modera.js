@@ -517,7 +517,7 @@
   // ---------- Modifica diretta ----------
   const fm = $('#form-modifica');
   fm.tipo.innerHTML = Object.entries(TIPI).map(([k, t]) => `<option value="${k}">${t[0]} ${esc(t[1])}</option>`).join('');
-  let idModifica = null;
+  let idModifica = null, eventoAperto = null;
   async function apriModifica(id) {
     let e = ultimi[id];
     if (!e) { try { e = (await api(`/api/moderazione/eventi/${encodeURIComponent(id)}/cronologia`)).evento; } catch (x) { return avvisa(x.message); } }
@@ -529,6 +529,13 @@
     for (const k of ['tipo', 'titolo', 'data', 'ora_inizio', 'ora_fine', 'comune', 'provincia', 'regione', 'luogo', 'lat', 'lng', 'fonte']) fm[k].value = e[k] ?? '';
     fm.organizzatori.value = (e.organizzatori || []).join(', ');
     fm.posizione_approssimativa.checked = !!e.posizione_approssimativa;
+    // Eventi collegati (altre città o altre date): le modifiche ai campi comuni possono valere per tutti
+    eventoAperto = e;
+    const nColl = Number(e.gruppo_n || 0) - 1;
+    $('#box-tutti-collegati').hidden = !(e.gruppo && nColl > 0);
+    fm.tutti_collegati.checked = true;
+    $('#testo-tutti-collegati').textContent = nColl > 0
+      ? `Applica tipo, titolo, orari, organizzatori e fonte anche ${nColl === 1 ? "all'altro evento collegato" : `agli altri ${nColl} eventi collegati`}` : '';
     $('#errore-modifica').textContent = '';
     dateExtra = [];
     fm.querySelector('#nuova-data-mod').value = '';
@@ -578,6 +585,22 @@
       } catch (e) {
         // Se si aggiungono solo date, "nessuna modifica" non è un errore
         if (!(dateExtra.length && /Nessuna modifica/.test(e.message))) throw e;
+      }
+      if (fm.tutti_collegati.checked && !$('#box-tutti-collegati').hidden && eventoAperto) {
+        // Solo i campi comuni che sono stati davvero cambiati
+        const o = eventoAperto, comuni = {};
+        const uguale = (a, b) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
+        if (!uguale(campi.tipo, o.tipo)) comuni.tipo = campi.tipo;
+        if (!uguale(campi.titolo, o.titolo)) comuni.titolo = campi.titolo;
+        if (!uguale(campi.ora_inizio, o.ora_inizio || null)) comuni.ora_inizio = campi.ora_inizio;
+        if (!uguale(campi.ora_fine, o.ora_fine || null)) comuni.ora_fine = campi.ora_fine;
+        if (!uguale(campi.organizzatori, o.organizzatori || [])) comuni.organizzatori = campi.organizzatori;
+        if (!uguale(campi.fonte || null, o.fonte || null)) comuni.fonte = campi.fonte;
+        if (Object.keys(comuni).length) {
+          const r = await api(`/api/moderazione/eventi/${encodeURIComponent(idModifica)}`, { corpo: { azione: 'modifica_gruppo', campi: comuni } });
+          messaggi.push(`Aggiornati anche ${r.aggiornati} eventi collegati.`);
+          if (r.saltati && r.saltati.length) messaggi.push('Non aggiornati: ' + r.saltati.join('; '));
+        }
       }
       if (dateExtra.length) {
         const r = await api(`/api/moderazione/eventi/${encodeURIComponent(idModifica)}`, { corpo: { azione: 'aggiungi_date', date: dateExtra } });

@@ -145,6 +145,7 @@
       <label class="spunta"><input type="checkbox" name="posizione_approssimativa"> Posizione indicativa</label>
       <label>Organizzatori (sigle, separate da virgola)<input name="organizzatori" maxlength="300"></label>
       <label>Fonte<input name="fonte" type="url" maxlength="300"></label>
+      <label class="spunta" id="box-tutti-collegati" hidden><input type="checkbox" name="tutti_collegati" checked> <span id="testo-tutti-collegati">Applica anche agli eventi collegati</span></label>
       <p class="dlg__errore" id="errore-modifica" role="alert"></p>
       <div class="dlg__azioni">
         <button type="button" class="bottone bottone--chiaro" data-chiudi>Annulla</button>
@@ -166,6 +167,6 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="modera.js?v=16"></script>
+  <script src="modera.js?v=17"></script>
 </body>
 </html>

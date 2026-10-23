@@ -174,6 +174,25 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
     if (v.errore) return errore(v.errore);
     if (!Object.keys(differenze(e, v.dati)).length) return errore('Nessuna modifica rispetto ai dati attuali.');
     nuovo = await salvaVersione(env.DB, e, v.dati, 'modificato', attore);
+  } else if (az === 'modifica_gruppo') {
+    // Applica agli altri eventi collegati (stesso gruppo: altre città o altre date) solo i campi comuni cambiati
+    if (!e.gruppo) return errore('Questo evento non ha eventi collegati.');
+    const COMUNI = ['tipo', 'titolo', 'ora_inizio', 'ora_fine', 'organizzatori', 'fonte'];
+    const campi = {};
+    for (const k of COMUNI) if (b.campi && k in b.campi) campi[k] = b.campi[k];
+    if (!Object.keys(campi).length) return errore('Nessun campo comune da applicare.');
+    const { results } = await env.DB.prepare("SELECT * FROM eventi WHERE gruppo = ? AND id <> ? AND stato <> 'rifiutato'").bind(e.gruppo, e.id).all();
+    let aggiornati = 0;
+    const saltati = [];
+    for (const x of results) {
+      if (!puoGestire(sessione, x)) continue;
+      const v = validaEvento({ ...apriEvento(x), ...campi }, { consentiPassato: true });
+      if (v.errore) { saltati.push(`${x.comune} ${x.data}: ${v.errore}`); continue; }
+      if (!Object.keys(differenze(x, v.dati)).length) continue;
+      await salvaVersione(env.DB, x, v.dati, 'modificato_gruppo', attore);
+      aggiornati++;
+    }
+    return json({ ok: true, aggiornati, saltati });
   } else if (az === 'ripristina') {
     const versione = Number(b.versione);
     const voce = await env.DB.prepare(
