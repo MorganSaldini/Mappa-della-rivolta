@@ -293,6 +293,17 @@
       <div class="azioni">${azioni}</div>
     </article>`;
   }
+  // Link di ricerca già compilato per trovare una fonte (si apre in una nuova scheda)
+  const MESI_IT = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+  function linkCercaFonte(e) {
+    const titolo = String(e.titolo || '').replace(/^possibili disagi:\s*/i, '').replace(/[«»"!]/g, ' ').trim();
+    const [, m, g] = String(e.data || '').split('-');
+    const giorno = g ? `${Number(g)} ${MESI_IT[Number(m) - 1]}` : '';
+    const q = [titolo, e.comune && `"${e.comune}"`, giorno].filter(Boolean).join(' ');
+    return `<a class="bottone bottone--chiaro" href="https://www.google.com/search?q=${encodeURIComponent(q)}" target="_blank" rel="noopener noreferrer" title="Cerca in rete: ${esc(q)}">🔎 Cerca fonte</a>` +
+      `<a class="bottone bottone--chiaro" href="https://www.google.com/search?tbm=nws&q=${encodeURIComponent(q)}" target="_blank" rel="noopener noreferrer" title="Cerca nelle notizie: ${esc(q)}">📰 Notizie</a>`;
+  }
+
   function bottoniEvento(e) {
     const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
     const out = [];
@@ -308,6 +319,7 @@
     if (e.stato === 'rifiutato' || e.stato === 'nascosto') out.push(b('rimetti', 'Rimetti da verificare'));
     out.push(b('modifica', '✏️ Modifica'));
     out.push(b('cronologia', '🕘 Cronologia'));
+    out.push(linkCercaFonte(e));
     return out.join('');
   }
 
@@ -319,6 +331,7 @@
       e.stato !== 'verificato' ? b('approva', '✓ Approva', 'bottone--ok') : '',
       b('modifica', '✏️ Modifica'),
       b('cronologia', '🕘 Cronologia'),
+      linkCercaFonte(e),
     ].join('');
   }
 
