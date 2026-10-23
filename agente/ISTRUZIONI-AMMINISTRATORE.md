@@ -123,6 +123,8 @@ Gli eventi promossi (in `organizzatori` o nel titolo) da queste sigle non si app
 Il sito applica questo elenco anche da solo (`RE_SIGLE_ESCLUSE` in `src/regole.js`): rifiuta i nuovi invii e nasconde
 ogni 5 minuti gli eventi già presenti. Se aggiungi o togli una sigla qui, aggiorna anche quel punto.
 Solo l'amministratore umano può aggiungere o togliere sigle da questo elenco.
+L'amministratore umano può approvare **un singolo evento** di queste sigle come eccezione (fonte controllata): l'evento
+ha allora la nota "Eccezione dell'amministratore…". Non nasconderlo e non segnalarlo per la sigla.
 
 ## Passo 3 — Scrivi le decisioni
 Aggiorna `dati/decisioni.json`: un elenco JSON. **Togli** le decisioni con `deciso_il` più vecchio di 14 giorni,

@@ -1,4 +1,4 @@
-import { verificabile } from './regole.js';
+import { verificabile, siglaEsclusa, haEccezione, chiaveEccezione, RE_SIGLE_ESCLUSE } from './regole.js';
 // API del pannello moderatori e amministratore. Tutto passa da controlli lato server:
 // sessione firmata, ruolo, regioni assegnate, origine della richiesta.
 import {
@@ -134,8 +134,23 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
 
   let nuovo;
   if (az === 'approva') {
-    const no = verificabile(e, { umano: true });
-    if (no) return errore(no);
+    // Eccezione per una sigla esclusa: solo l'amministratore, solo per questo evento, con conferma esplicita
+    const eccezione = b.eccezione_sigla === true && sessione.ruolo === 'admin' && siglaEsclusa(e);
+    const no = verificabile(e, { umano: true, eccezioneSigla: eccezione || (await haEccezione(env.DB, e.id)) });
+    if (no) {
+      if (siglaEsclusa(e) && sessione.ruolo === 'admin') return json({ ok: false, errore: no, puo_eccezione: true }, 400);
+      return errore(no);
+    }
+    if (eccezione) {
+      await env.DB.prepare('INSERT OR IGNORE INTO importati (chiave, creato_il) VALUES (?, ?)').bind(chiaveEccezione(e.id), adessoRoma()).run();
+      // Lo si stacca dal gruppo della sigla, così non viene pubblicato insieme agli altri eventi esclusi
+      if (e.gruppo && RE_SIGLE_ESCLUSE.test(e.gruppo)) {
+        await env.DB.prepare('UPDATE eventi SET gruppo = NULL WHERE id = ?').bind(e.id).run();
+        e.gruppo = null;
+      }
+      await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
+        .bind('Eccezione dell\'amministratore alla regola sulle sigle escluse: fonte controllata.', e.id).run();
+    }
   }
   if (az in cambiStato) {
     const stato = cambiStato[az];

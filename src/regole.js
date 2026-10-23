@@ -24,6 +24,13 @@ export const RE_INVITO = new RegExp([
 // Solo l'amministratore umano aggiunge o toglie sigle.
 export const RE_SIGLE_ESCLUSE = /movimento\s*(?:del\s*)?17\s*(?:ottobre|\/\s*10)|\bmovimento17|\bm17\b|noi\s*siamo\s*il\s*popolo|noi-siamo-il-popolo/i;
 
+// Eccezioni decise dall'amministratore umano per un singolo evento (fonte affidabile trovata):
+// salvate nella tabella "importati" con chiave "eccezione-sigla|<id>".
+export const chiaveEccezione = (id) => 'eccezione-sigla|' + id;
+export async function haEccezione(db, id) {
+  return !!(await db.prepare('SELECT 1 FROM importati WHERE chiave = ?').bind(chiaveEccezione(id)).first());
+}
+
 export function siglaEsclusa(e) {
   let org = e.organizzatori;
   if (typeof org === 'string') { try { org = JSON.parse(org); } catch { org = [org]; } }
@@ -82,9 +89,9 @@ export function applicaRegole(dati) {
 }
 
 // Può diventare "verificato"? Serve una fonte; gli avvisi di disagi li verifica solo un moderatore umano.
-export function verificabile(e, { umano = false } = {}) {
+export function verificabile(e, { umano = false, eccezioneSigla = false } = {}) {
   if (!e.fonte) return 'Senza fonte un evento non può essere verificato: aggiungi prima il link alla fonte.';
-  if (siglaEsclusa(e)) return 'Questa sigla è tra quelle che la mappa non pubblica (regole dell\'amministratore).';
+  if (siglaEsclusa(e) && !eccezioneSigla) return 'Questa sigla è tra quelle che la mappa non pubblica (regole dell\'amministratore).';
   if (RE_INVITO.test(e.titolo || '')) return 'Il titolo contiene un invito non pubblicabile: correggilo o rifiuta l\'evento.';
   if (eAvvisoDisagi(e) && !eConformeAvviso(e)) return 'Blocchi e occupazioni vanno pubblicati come "Possibili disagi:", senza organizzatori né orario.';
   if (eAvvisoDisagi(e) && !umano) return 'Gli avvisi di possibili disagi li verifica solo un moderatore.';
@@ -100,7 +107,7 @@ export async function eseguiRegole(env, salvaVersione) {
   ).bind(oggi).all();
   const esito = { nascosti: 0, avvisi: 0, avvisi_senza_fonte: 0, senza_fonte: 0 };
   for (const e of results) {
-    if (siglaEsclusa(e)) {
+    if (siglaEsclusa(e) && !(await haEccezione(env.DB, e.id))) {
       await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'regole_sigla_esclusa', 'regole');
       await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
         .bind('Nascosto in automatico: sigla che la mappa non pubblica (decisione dell\'amministratore).', e.id).run();

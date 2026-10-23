@@ -1,4 +1,4 @@
-import { verificabile } from './regole.js';
+import { verificabile, haEccezione } from './regole.js';
 // Applica le decisioni dell'amministratore AI scritte nel file dati/decisioni.json del repository.
 // L'amministratore AI non ha codici d'accesso: scrive le decisioni nel repository e il sito le applica qui.
 //
@@ -104,6 +104,7 @@ export async function importaDecisioni(env, sitoUrl = SITO) {
       esito.deverificati++;
     } else if (azione === 'nascondi') {
       if (['rifiutato', 'nascosto'].includes(e.stato)) { esito.saltate.push(`${id}: già fuori dalla mappa`); await segna(); continue; }
+      if (await haEccezione(env.DB, id)) { esito.saltate.push(`${id}: eccezione dell'amministratore, non si nasconde`); await segna(); continue; }
       await salvaVersione(env.DB, e, { stato: 'nascosto' }, 'nascosto_da_ai', ATTORE_AI);
       await env.DB.prepare('UPDATE eventi SET note = ?, sospetto = ? WHERE id = ?').bind(nota.slice(0, 1000), nota.slice(0, 1000), id).run();
       esito.nascosti++;

@@ -73,7 +73,7 @@
     });
     const d = await r.json().catch(() => ({ ok: false, errore: 'Risposta non valida dal server.' }));
     if (r.status === 401 && !opzioni.silenzioso) mostraAccesso();
-    if (!r.ok || !d.ok) throw new Error(d.errore || 'Operazione non riuscita.');
+    if (!r.ok || !d.ok) { const x = new Error(d.errore || 'Operazione non riuscita.'); x.dati = d; throw x; }
     return d;
   }
 
@@ -428,7 +428,14 @@
       if (CONFERME[az] && !confirm(CONFERME[az])) return;
       b.disabled = true;
       try {
-        await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az } });
+        try {
+          await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az } });
+        } catch (x) {
+          // Sigla esclusa: l'amministratore può fare un'eccezione per questo solo evento
+          if (!(az === 'approva' && x.dati && x.dati.puo_eccezione)) throw x;
+          if (!confirm(x.message + '\n\nSei l\'amministratore: vuoi approvare comunque SOLO questo evento come eccezione? Resterà scritto nella cronologia e nelle note.')) { b.disabled = false; return; }
+          await api(`/api/moderazione/eventi/${encodeURIComponent(id)}`, { corpo: { azione: az, eccezione_sigla: true } });
+        }
         avvisoOk(az === 'approva' ? 'Approvato. Se il bot è attivo, è stato pubblicato sul canale.'
           : az === 'approva_gruppo' ? 'Approvati tutti gli appuntamenti: sul canale esce un solo messaggio con l’elenco.'
           : az === 'conferma_sospetto' ? 'Sospetto confermato: evento rifiutato.'
