@@ -2586,5 +2586,165 @@
     "motivo": "Su richiesta dell'amministratore: nessuna fonte verificabile (stampa, sindacato, ente) trovata per questo evento del 07/11 a Vicenza.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-amantea-corteo-01",
+    "aggiornato_il": "2026-10-22T19:41:53",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro vita"
+    },
+    "motivo": "Solo forma: il titolo non diceva che tipo di evento è.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-23-jesi-assemblea-01",
+    "aggiornato_il": "2026-10-22T01:09:10",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea \"Generazione Fuoriclasse\""
+    },
+    "motivo": "Solo forma: il titolo era solo il nome dell'iniziativa; ora descrive l'evento con il nome tra virgolette.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-empoli-corteo-01",
+    "aggiornato_il": "2026-10-22T19:11:48",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro guerra, carovita e repressione"
+    },
+    "motivo": "Solo forma: tolto il nome della città ripetuto nel titolo.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-napoli-assemblea-02",
+    "aggiornato_il": "2026-10-22T10:18:50",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea contro i CPR e la criminalizzazione del dissenso alle manifestazioni"
+    },
+    "motivo": "Solo forma: tolto il MAIUSCOLO.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-novara-altro-01",
+    "aggiornato_il": "2026-10-22T10:18:55",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Presentazione informativa \"Made in Italy, per l'industria del genocidio\""
+    },
+    "motivo": "Solo forma: tolto il MAIUSCOLO, titolo dell'iniziativa tra virgolette.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-25-torino-assemblea-01",
+    "aggiornato_il": "2026-10-22T10:37:22",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea aperta verso il TDOR e il 25 novembre",
+      "organizzatori": [
+        "Non Una di Meno",
+        "Studenti Indipendenti"
+      ]
+    },
+    "motivo": "Solo forma: tolto il MAIUSCOLO e sistemati i nomi degli organizzatori.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-firenze-assemblea-01",
+    "aggiornato_il": "2026-10-22T10:20:03",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Seminario contro la militarizzazione verso lo sciopero generale"
+    },
+    "motivo": "Solo forma: tolto il MAIUSCOLO.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-28-torino-assemblea-02",
+    "aggiornato_il": "2026-10-22T20:30:39",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Assemblea di Extinction Rebellion",
+      "organizzatori": [
+        "Extinction Rebellion"
+      ]
+    },
+    "motivo": "Solo forma: corretto il nome dell'organizzazione scritto male.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-22-somma-vesuviana-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-22T10:20:13",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "corteo",
+      "titolo": "Sciopero e corteo degli studenti dell'ITIS Majorana e del Liceo Torricelli",
+      "organizzatori": [
+        "Rappresentanti degli studenti"
+      ]
+    },
+    "motivo": "Solo forma: è uno sciopero studentesco con corteo, non uno sciopero di categoria; tolte maiuscole fuori posto.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-cassino-corteo-01",
+    "aggiornato_il": "2026-10-22T10:20:25",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo contro il caro vita e per una scuola migliore"
+    },
+    "motivo": "Solo forma: il titolo non diceva che tipo di evento è.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-livorno-presidio-01",
+    "aggiornato_il": "2026-10-22T00:18:30",
+    "azione": "correggi",
+    "campi": {
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero internazionale dei porti"
+    },
+    "motivo": "Solo forma: lo sciopero riguarda i portuali, non tutte le categorie: tipo sciopero di categoria.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-treviso-corteo-01",
+    "aggiornato_il": "2026-10-22T18:52:06",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo per lo sciopero generale contro guerra e carovita"
+    },
+    "motivo": "Solo forma: il titolo era uguale all'evento sciopero generale di Treviso; ora descrive il corteo.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-30-trento-corteo-01",
+    "aggiornato_il": "2026-10-22T11:42:53",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo studentesco"
+    },
+    "motivo": "Solo forma: iniziale maiuscola.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-11-07-gorizia-corteo-01",
+    "aggiornato_il": "2026-10-23T03:06:06",
+    "azione": "correggi",
+    "campi": {
+      "titolo": "Corteo antifascista"
+    },
+    "motivo": "Solo forma: il titolo era uno slogan; ora descrive l'evento.",
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-26-cuneo-assemblea-01",
+    "aggiornato_il": "2026-10-19T17:24:07",
+    "azione": "sospetto",
+    "motivo": "Il titolo parla di USB Caluso (provincia di Torino) ma l'evento è a Cuneo con coordinate a Cuneo. Fonte solo Instagram, nessuna conferma web trovata: verificare il comune giusto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-23"
   }
 ]
