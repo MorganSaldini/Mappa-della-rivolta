@@ -1631,5 +1631,33 @@
       "titolo": "Corteo per lo sciopero generale: diritto allo studio, carovita, spese militari"
     },
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-grosseto-corteo-01",
+    "aggiornato_il": "2026-10-23T02:54:03",
+    "azione": "correggi",
+    "motivo": "Aggiunta fonte giornalistica al posto della storia Instagram: MaremmaOggi (22/10) conferma corteo degli studenti il 24/10 alle 8 dal parcheggio dello scientifico a piazza Duomo, promosso da Officina dei giovani antifascisti.",
+    "fonti_controllate": [
+      "https://www.maremmaoggi.net/grosseto-manifestazione-studenti-24-ottobre/"
+    ],
+    "campi": {
+      "fonte": "https://www.maremmaoggi.net/grosseto-manifestazione-studenti-24-ottobre/",
+      "titolo": "Corteo degli studenti dal liceo scientifico a piazza Duomo",
+      "organizzatori": [
+        "Officina dei giovani antifascisti"
+      ]
+    },
+    "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-24-ravenna-corteo-01",
+    "aggiornato_il": "2026-10-22T15:52:46",
+    "azione": "sospetto",
+    "motivo": "Fonte solo TikTok. Stessa ora (15) e stessi temi (diritto allo studio, carburanti, stipendi, sanità) dell'appello «Noi siamo il popolo» del 24/10, sigla esclusa: probabile collegamento, decide un moderatore.",
+    "fonti_controllate": [
+      "https://ameve.eu/sabato-24-ottobre-allarme-per-mobilitazioni-in-20-citta-italiane/",
+      "https://www.strettoweb.com/2026/10/allarme-per-sabato-24-ottobre-annunciate-manifestazioni-anche-a-reggio-calabria-palermo-e-catanzaro-rischio-disordini-e-piazza-blindate-controlli-anche-sui-social-network/2164207/"
+    ],
+    "deciso_il": "2026-10-23"
   }
 ]
