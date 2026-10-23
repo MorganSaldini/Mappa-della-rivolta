@@ -65,3 +65,11 @@ table.diff td.dopo { background: #e5f5ec; color: #145c36; font-weight: 600; }
 .coppia__eventi { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .coppia__eventi .scheda-ev { margin-bottom: 0; }
 @media (max-width: 760px) { .coppia__eventi { grid-template-columns: 1fr; } }
+
+/* Altre date nella modifica */
+.altre-date-mod { border: 1px solid #d6d6d0; border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+.altre-date-mod legend { font-weight: 600; padding: 0 4px; }
+.altre-date-mod .riga { align-items: flex-end; }
+.date-mod { list-style: none; padding: 0; margin: 6px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.date-mod li { background: #eef3ee; border-radius: 999px; padding: 3px 4px 3px 10px; display: inline-flex; align-items: center; gap: 4px; }
+.date-mod button { border: 0; background: none; cursor: pointer; font-size: 15px; line-height: 1; padding: 2px 6px; }

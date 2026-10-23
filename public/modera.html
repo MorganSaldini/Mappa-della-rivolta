@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=7">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="modera.css?v=9">
+  <link rel="stylesheet" href="modera.css?v=10">
 </head>
 <body>
   <header class="barra">
@@ -120,6 +120,16 @@
         <label>Inizio<input name="ora_inizio" type="time"></label>
         <label>Fine<input name="ora_fine" type="time"></label>
       </div>
+      <fieldset class="altre-date-mod">
+        <legend>Altre date dello stesso evento</legend>
+        <p class="tenue" id="date-gruppo-mod" hidden></p>
+        <div class="riga">
+          <label class="cresci">Nuova data<input type="date" id="nuova-data-mod"></label>
+          <button type="button" class="bottone bottone--chiaro" id="aggiungi-data-mod">+ Aggiungi</button>
+        </div>
+        <ul class="date-mod" id="lista-date-mod"></ul>
+        <p class="tenue">Per ogni data si crea una copia collegata (stessi dati, stesso gruppo). Se l'evento è verificato, anche le copie lo sono.</p>
+      </fieldset>
       <div class="riga">
         <label class="cresci">Comune<input name="comune" maxlength="80"></label>
         <label class="corto">Prov.<input name="provincia" maxlength="2"></label>
@@ -154,6 +164,6 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="modera.js?v=12"></script>
+  <script src="modera.js?v=13"></script>
 </body>
 </html>

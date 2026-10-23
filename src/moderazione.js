@@ -11,6 +11,7 @@ import { pubblicaEvento, pubblicaGruppo, avvisaAnnullato, rimuoviEvento, cancell
 import { pubblicaPostTrova } from './assistente.js';
 import { importaProposte } from './agente.js';
 import { importaDecisioni } from './amministratore.js';
+import { creaEvento } from './eventi.js';
 
 async function corpo(request) {
   try { return await request.json(); } catch { return {}; }
@@ -161,6 +162,35 @@ export async function azioneEvento({ request, env, ctx, sessione, params }) {
     const cambi = { stato: STATI.includes(vecchio.stato) ? vecchio.stato : e.stato };
     for (const c of CAMPI_CONTENUTO) if (c in vecchio) cambi[c] = vecchio[c];
     nuovo = await salvaVersione(env.DB, e, cambi, `ripristinato_v${versione}`, attore);
+  } else if (az === 'aggiungi_date') {
+    // Stesso evento in altre date: una copia per data, collegata allo stesso gruppo
+    const date = [...new Set((Array.isArray(b.date) ? b.date : []).map(String))]
+      .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d) && d !== e.data);
+    if (!date.length) return errore("Indica almeno una data diversa da quella dell'evento.");
+    if (date.length > 14) return errore('Puoi aggiungere al massimo 14 date per volta.');
+    let gruppo = e.gruppo;
+    if (!gruppo) {
+      gruppo = 'g-' + [...crypto.getRandomValues(new Uint8Array(6))].map((x) => x.toString(16).padStart(2, '0')).join('');
+      await env.DB.prepare('UPDATE eventi SET gruppo = ? WHERE id = ?').bind(gruppo, e.id).run();
+    }
+    const base = apriEvento(e);
+    const creati = [], saltate = [];
+    for (const d of date.sort()) {
+      const v = validaEvento({ ...base, data: d });
+      if (v.errore) { saltate.push(`${d}: ${v.errore}`); continue; }
+      const gia = await env.DB.prepare(
+        "SELECT id FROM eventi WHERE data = ? AND comune = ? AND (gruppo = ? OR lower(titolo) = lower(?)) AND stato <> 'rifiutato' LIMIT 1"
+      ).bind(d, v.dati.comune, gruppo, v.dati.titolo).first();
+      if (gia) { saltate.push(`${d}: c'è già (${gia.id})`); continue; }
+      const id = await creaEvento(env.DB, v.dati, { gruppo, attore, note: `Data aggiunta da un moderatore a partire da ${e.id}` });
+      // Se l'evento di partenza è verificato (e la copia rispetta le regole), anche la copia nasce verificata
+      if (e.stato === 'verificato' && !verificabile({ ...v.dati, id }, { umano: true })) {
+        const x = await leggiEvento(env.DB, id);
+        await salvaVersione(env.DB, x, { stato: 'verificato' }, 'approva', attore);
+      }
+      creati.push(id);
+    }
+    return json({ ok: true, creati, saltate });
   } else if (az === 'approva_gruppo') {
     if (!e.gruppo) return errore('Questo evento non fa parte di un gruppo di città.');
     const { results } = await env.DB.prepare(

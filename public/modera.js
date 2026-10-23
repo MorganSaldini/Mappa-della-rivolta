@@ -480,8 +480,34 @@
     fm.organizzatori.value = (e.organizzatori || []).join(', ');
     fm.posizione_approssimativa.checked = !!e.posizione_approssimativa;
     $('#errore-modifica').textContent = '';
+    dateExtra = [];
+    fm.querySelector('#nuova-data-mod').value = '';
+    fm.querySelector('#nuova-data-mod').min = oggiIso();
+    disegnaDateMod();
+    const gia = String(e.gruppo_date || '').split(',').filter(Boolean).sort();
+    const pg = $('#date-gruppo-mod');
+    pg.hidden = gia.length < 2;
+    pg.textContent = gia.length > 1 ? 'Già in calendario: ' + gia.map(dataIt).join(', ') : '';
     $('#dlg-modifica').showModal();
   }
+  // Altre date: elenco da aggiungere al salvataggio
+  let dateExtra = [];
+  function disegnaDateMod() {
+    $('#lista-date-mod').innerHTML = dateExtra.map((d) =>
+      `<li>${esc(dataIt(d))}<button type="button" data-togli-data="${d}" aria-label="Togli ${esc(dataIt(d))}">✕</button></li>`).join('');
+  }
+  $('#aggiungi-data-mod').addEventListener('click', () => {
+    const c = $('#nuova-data-mod'), d = c.value;
+    if (!d) return c.focus();
+    if (d === fm.data.value || dateExtra.includes(d)) { c.value = ''; return; }
+    if (dateExtra.length >= 14) return alert('Puoi aggiungere al massimo 14 date per volta.');
+    dateExtra.push(d); dateExtra.sort(); c.value = ''; disegnaDateMod();
+  });
+  $('#lista-date-mod').addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-togli-data]');
+    if (!b) return;
+    dateExtra = dateExtra.filter((d) => d !== b.dataset.togliData); disegnaDateMod();
+  });
   fm.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     const v = Object.fromEntries(new FormData(fm).entries());
@@ -490,10 +516,26 @@
       ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null, posizione_approssimativa: fm.posizione_approssimativa.checked,
       organizzatori: v.organizzatori.split(',').map((x) => x.trim()).filter(Boolean),
     };
+    // Una data scritta nel campo ma non ancora aggiunta con "+ Aggiungi" la si aggiunge comunque
+    const inSospeso = $('#nuova-data-mod').value;
+    if (inSospeso && inSospeso !== v.data && !dateExtra.includes(inSospeso)) dateExtra.push(inSospeso);
+    delete campi[''];
+    const messaggi = [];
     try {
-      await api(`/api/moderazione/eventi/${encodeURIComponent(idModifica)}`, { corpo: { azione: 'modifica', campi } });
+      try {
+        await api(`/api/moderazione/eventi/${encodeURIComponent(idModifica)}`, { corpo: { azione: 'modifica', campi } });
+        messaggi.push('Modifica salvata.');
+      } catch (e) {
+        // Se si aggiungono solo date, "nessuna modifica" non è un errore
+        if (!(dateExtra.length && /Nessuna modifica/.test(e.message))) throw e;
+      }
+      if (dateExtra.length) {
+        const r = await api(`/api/moderazione/eventi/${encodeURIComponent(idModifica)}`, { corpo: { azione: 'aggiungi_date', date: dateExtra } });
+        messaggi.push(`${r.creati.length} ${r.creati.length === 1 ? 'data aggiunta' : 'date aggiunte'}.`);
+        if (r.saltate && r.saltate.length) messaggi.push('Saltate: ' + r.saltate.join('; '));
+      }
       $('#dlg-modifica').close();
-      avvisoOk('Modifica salvata.');
+      avvisoOk(messaggi.join(' '));
       aggiorna();
     } catch (e) { $('#errore-modifica').textContent = e.message; }
   });
