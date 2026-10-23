@@ -52,6 +52,7 @@
 
   function disegna() {
     const lista = filtrati();
+    $('#conta-scarica').textContent = lista.length === 1 ? '1 evento' : `${lista.length} eventi`;
     $('#conta').textContent = lista.length === 1 ? '1 mobilitazione' : `${lista.length} mobilitazioni`;
     let html = '', mese = '';
     for (const e of lista.slice(0, quanti)) {
@@ -76,6 +77,41 @@
     $(s).addEventListener(s === '#f-testo' ? 'input' : 'change', () => { quanti = PER_PAGINA; disegna(); }));
   $('#filtri').addEventListener('submit', (ev) => ev.preventDefault());
   $('#mostra-altri').addEventListener('click', () => { quanti += PER_PAGINA; disegna(); });
+
+  // ---------- Scarica (gratis, con offerta libera facoltativa) ----------
+  const CONFIG = window.CONFIG || {};
+  const offerta = CONFIG.linkSostieni && urlSicuro(CONFIG.linkSostieni);
+  if (offerta) { $('#link-offerta').href = offerta; $('#box-offerta').hidden = false; }
+  // Nei fogli di calcolo un testo che inizia con = + - @ verrebbe letto come formula: lo si neutralizza
+  const cella = (v) => {
+    let t = v === null || v === undefined ? '' : String(v);
+    if (/^[=+\-@\t\r]/.test(t)) t = "'" + t;
+    return /[";\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
+  };
+  function salva(nome, testo, tipo) {
+    const url = URL.createObjectURL(new Blob([testo], { type: tipo }));
+    const a = document.createElement('a');
+    a.href = url; a.download = nome; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }
+  document.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-formato]');
+    if (!b) return;
+    const lista = filtrati();
+    const oggi = new Date().toISOString().slice(0, 10);
+    if (b.dataset.formato === 'csv') {
+      const intest = ['data', 'ora_inizio', 'ora_fine', 'tipo', 'titolo', 'comune', 'provincia', 'regione', 'luogo', 'organizzatori', 'stato', 'fonte', 'id'];
+      const righe = lista.map((e) => [e.data, e.ora_inizio, e.ora_fine, (TIPI[e.tipo] || TIPI.altro)[1], e.titolo, e.comune, e.provincia,
+        e.regione, e.luogo, (e.organizzatori || []).join(' / '), e.stato, e.fonte, e.id].map(cella).join(';'));
+      // BOM + punto e virgola: Excel in italiano apre il file con le colonne giuste e gli accenti corretti
+      salva(`archivio-mobilitazioni-${oggi}.csv`, '\ufeff' + [intest.join(';'), ...righe].join('\r\n'), 'text/csv;charset=utf-8');
+    } else {
+      salva(`archivio-mobilitazioni-${oggi}.json`, JSON.stringify({
+        fonte: 'Mappa della Rivolta – https://mappadellarivolta.org/archivio.html', scaricato_il: new Date().toISOString(), eventi: lista,
+      }, null, 2), 'application/json');
+    }
+    if (offerta) $('#box-offerta').classList.add('grazie');
+  });
 
   async function avvio() {
     try {
