@@ -217,7 +217,7 @@
       ],
       "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-21T17:06:14",
       "gruppo": null
     },
@@ -861,7 +861,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dewm6R8NGOJ",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-22T18:51:37",
       "gruppo": null
     },
@@ -885,7 +885,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dewm6R8NGOJ/?cplk=MWhrbG1iM2Q2amRjZA==",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-22T19:41:29",
       "gruppo": null
     },
@@ -1820,7 +1820,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DerLd3HN45V/?vrfl=MXhjbm94cXJ2M2YyYw==",
       "stato": "verificato",
-      "conferme": 9,
+      "conferme": 11,
       "aggiornato_il": "2026-10-21T02:41:14",
       "gruppo": null
     },
@@ -1866,7 +1866,7 @@
       ],
       "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
       "stato": "verificato",
-      "conferme": 30,
+      "conferme": 31,
       "aggiornato_il": "2026-10-17T01:45:07",
       "gruppo": null
     },
@@ -2001,7 +2001,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeJnI2jDumY/?utm_source=ig_web_copy_link&srtk=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
-      "conferme": 49,
+      "conferme": 50,
       "aggiornato_il": "2026-10-20T23:50:29",
       "gruppo": null
     },
@@ -3169,7 +3169,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dewy2fAMCoN",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-23T15:26:44",
       "gruppo": null
     },
@@ -3239,6 +3239,32 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-23T15:30:20",
       "gruppo": "g-73546d9c688f"
+    },
+    {
+      "id": "2026-10-26-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea generale universitaria:\"NUOVO COORDINAMENTO! IMPORTANTE!\"",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi, Main hall",
+      "lat": 45.07388,
+      "lng": 7.70019,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "cps",
+        "assemblea palazzo nuovo",
+        "assemblea di scienze",
+        "assemblea di scienze giuridiche"
+      ],
+      "fonte": "https://www.instagram.com/p/De2Dpz-iAf2/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-23T21:43:32",
+      "gruppo": null
     },
     {
       "id": "2026-10-26-baiano-altro-01",
@@ -3327,6 +3353,30 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T15:26:49",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-26-giugliano-in-campania-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco scuole di Napoli Nord",
+      "data": "2026-10-26",
+      "ora_inizio": "09:30",
+      "ora_fine": "11:30",
+      "comune": "Giugliano in Campania",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Via Colonne 27",
+      "lat": 40.9282,
+      "lng": 14.21677,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Luisa Izzo",
+        "Giorgio Mola De Rosa"
+      ],
+      "fonte": "https://www.teleclubitalia.it/giugliano-studenti-dellarea-nord-protestano/",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-23T19:05:35",
       "gruppo": null
     },
     {
@@ -4450,7 +4500,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeqliVjgHNx/?dlrf=Zm42NTg1NnM3Mnc0",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-22T18:51:28",
       "gruppo": "g-d740f89e31c8"
     },
@@ -4761,6 +4811,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-verona-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero generale contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "07:30",
+      "ora_fine": null,
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazzale 25 aprile",
+      "lat": 45.43005,
+      "lng": 10.98202,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De1iP0hDHBY/?dlrf=MW56eDR6MHUxd2loMg==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-23T21:22:59",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-parma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il riarmo e il caro vita",
@@ -4824,7 +4897,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Deme0TiMl6n/?dlrf=MWw2eHp5aXA4bnJhag==",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 13,
       "aggiornato_il": "2026-10-18T11:59:23",
       "gruppo": null
     },
@@ -4917,7 +4990,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeThPgsCFdl/?dlrf=anY4dHhtZmJsY25n",
       "stato": "verificato",
-      "conferme": 16,
+      "conferme": 17,
       "aggiornato_il": "2026-10-22T18:52:20",
       "gruppo": null
     },
@@ -5566,7 +5639,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 33,
+      "conferme": 34,
       "aggiornato_il": "2026-10-21T01:54:28",
       "gruppo": null
     },
@@ -6777,8 +6850,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-23T18:37:26",
+  "ultimo_aggiornamento": "2026-10-23T21:43:32",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-23T16:56:39Z"
+  "copia_del": "2026-10-23T20:18:59Z"
 }
