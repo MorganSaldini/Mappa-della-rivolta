@@ -294,8 +294,12 @@
   function bottoniEvento(e) {
     const b = (az, testo, cls = 'bottone--chiaro') => `<button type="button" class="bottone ${cls}" data-az="${az}" data-id="${esc(e.id)}">${testo}</button>`;
     const out = [];
-    if (e.gruppo_n > 1) out.push(b('approva_gruppo', `✓ Approva tutti gli appuntamenti (${e.gruppo_n})`, 'bottone--ok'));
-    if (e.stato !== 'verificato') out.push(b('approva', e.gruppo_n > 1 ? '✓ Approva solo questa' : '✓ Approva', 'bottone--ok'));
+    // "Approva tutti" solo se nel gruppo c'è ancora qualcosa da approvare
+    const daApprovare = e.gruppo_da_approvare === undefined ? (e.gruppo_n > 1 ? e.gruppo_n : 0) : Number(e.gruppo_da_approvare);
+    if (e.gruppo_n > 1 && daApprovare > 0 && !(daApprovare === 1 && e.stato !== 'verificato')) {
+      out.push(b('approva_gruppo', `✓ Approva tutti gli appuntamenti da verificare (${daApprovare})`, 'bottone--ok'));
+    }
+    if (e.stato !== 'verificato') out.push(b('approva', e.gruppo_n > 1 && daApprovare > 1 ? '✓ Approva solo questo' : '✓ Approva', 'bottone--ok'));
     if (e.stato !== 'annullato' && e.stato !== 'rifiutato') out.push(b('annulla', 'Segna annullato'));
     if (e.stato !== 'nascosto' && e.stato !== 'rifiutato') out.push(b('nascondi', 'Nascondi'));
     if (e.stato !== 'rifiutato') out.push(b('rifiuta', '✕ Rifiuta', 'bottone--no'));
