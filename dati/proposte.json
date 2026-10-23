@@ -1,108 +1,25 @@
 [
   {
     "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nel cantiere della metropolitana di Catania (CMC Ravenna)",
-    "data": "2026-10-22",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Catania",
-    "provincia": "CT",
-    "regione": "Sicilia",
+    "titolo": "Sciopero Ferrovie del Sud Est – esercizio e autolinee",
+    "data": "2026-10-23",
+    "ora_inizio": "19:45",
+    "ora_fine": "23:45",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
     "luogo": "",
-    "lat": 37.5079,
-    "lng": 15.083,
+    "lat": 41.1171,
+    "lng": 16.8719,
     "posizione_approssimativa": true,
     "organizzatori": [
-      "FILLEA CGIL",
-      "FILCA CISL",
-      "FENEAL UIL"
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "FAISA-CISAL"
     ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Sciopero dei lavoratori edili del cantiere metro; posizione indicativa"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero a singhiozzo allo stabilimento Duplomatic",
-    "data": "2026-10-22",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Legnano",
-    "provincia": "MI",
-    "regione": "Lombardia",
-    "luogo": "Stabilimento Duplomatic",
-    "lat": 45.596,
-    "lng": 8.915,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "RSU",
-      "FIOM CGIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Metalmeccanici; in concomitanza con tavolo aziendale. Posizione indicativa (centro città)"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Sit-in dei lavoratori Eurallumina",
-    "data": "2026-10-22",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Portoscuso",
-    "provincia": "SU",
-    "regione": "Sardegna",
-    "luogo": "Polo industriale di Portovesme",
-    "lat": 39.205,
-    "lng": 8.387,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILCTEM CGIL",
-      "FEMCA CISL",
-      "UILTEC UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Vertenza Eurallumina (metallurgia); orario non indicato, posizione indicativa"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale amministrativo Amos all'ospedale di Alessandria",
-    "data": "2026-10-22",
-    "comune": "Alessandria",
-    "provincia": "AL",
-    "regione": "Piemonte",
-    "luogo": "Azienda ospedaliero-universitaria, via Venezia",
-    "lat": 44.9128,
-    "lng": 8.6157,
-    "organizzatori": [
-      "FILCAMS CGIL"
-    ],
-    "gruppo": "amos-alessandria-2026-10",
-    "note": "Sciopero dal 19 al 22/10 del personale di accettazione, prenotazioni e consegna referti; orari non indicati"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 30 minuti per turno alla Barco",
-    "data": "2026-10-22",
-    "comune": "Saronno",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Stabilimento Barco",
-    "lat": 45.6255,
-    "lng": 9.0365,
-    "organizzatori": [
-      "FIOM CGIL",
-      "FIM CISL",
-      "UILM UIL",
-      "RSU"
-    ],
-    "gruppo": "barco-saronno-2026-10",
-    "note": "Fermate di 30 minuti per turno, a oltranza dal 19/10, contro il trasferimento della produzione in Cina"
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
   },
   {
     "tipo": "sciopero_categoria",
@@ -126,6 +43,25 @@
     "note": "Sciopero di intera giornata nei teatri e nello spettacolo dal vivo di tutta la regione; posizione indicativa"
   },
   {
+    "ora_inizio": "09:00",
+    "ora_fine": "12:00",
+    "posizione_approssimativa": true,
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
+    "tipo": "presidio",
+    "titolo": "Presidio davanti alla Fondazione Anffas",
+    "data": "2026-10-23",
+    "comune": "Grottammare",
+    "provincia": "AP",
+    "regione": "Marche",
+    "luogo": "Fondazione Anffas",
+    "lat": 42.9897,
+    "lng": 13.8682,
+    "organizzatori": [
+      "FP CGIL"
+    ],
+    "note": "Lo sciopero di intera giornata è stato revocato; resta il presidio dalle 9 alle 12 contro tagli al personale e licenziamenti"
+  },
+  {
     "ora_inizio": null,
     "ora_fine": null,
     "posizione_approssimativa": true,
@@ -147,85 +83,6 @@
     ],
     "gruppo": "barco-saronno-2026-10",
     "note": "Fermate di 30 minuti per turno, a oltranza dal 19/10, contro il trasferimento della produzione in Cina"
-  },
-  {
-    "ora_inizio": "09:00",
-    "ora_fine": "12:00",
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla Fondazione Anffas",
-    "data": "2026-10-23",
-    "comune": "Grottammare",
-    "provincia": "AP",
-    "regione": "Marche",
-    "luogo": "Fondazione Anffas",
-    "lat": 42.9897,
-    "lng": 13.8682,
-    "organizzatori": [
-      "FP CGIL"
-    ],
-    "note": "Lo sciopero di intera giornata è stato revocato; resta il presidio dalle 9 alle 12 contro tagli al personale e licenziamenti"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero Ferrovie del Sud Est – esercizio e autolinee",
-    "data": "2026-10-23",
-    "ora_inizio": "19:45",
-    "ora_fine": "23:45",
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 41.1171,
-    "lng": 16.8719,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "FAISA-CISAL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
-  },
-  {
-    "tipo": "corteo",
-    "ora_fine": null,
-    "organizzatori": [
-      "Collettivi studenteschi"
-    ],
-    "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
-    "note": "Fonte: post Instagram indicato dall'amministratore (non leggibile in automatico: verificare aprendo il link).",
-    "titolo": "Sciopero studentesco: ritrovo in piazza San Michele",
-    "data": "2026-10-24",
-    "ora_inizio": "08:30",
-    "comune": "Lucca",
-    "provincia": "LU",
-    "regione": "Toscana",
-    "luogo": "Piazza San Michele",
-    "lat": 43.84302,
-    "lng": 10.50296,
-    "posizione_approssimativa": false
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Manifestazione nazionale contro il CPR di Castel Volturno",
-    "data": "2026-10-24",
-    "ora_inizio": "13:00",
-    "ora_fine": null,
-    "comune": "Castel Volturno",
-    "provincia": "CE",
-    "regione": "Campania",
-    "luogo": "",
-    "lat": 41.0336,
-    "lng": 13.9415,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Comitato regionale campano No CPR né qui né altrove"
-    ],
-    "fonte": "https://www.meltingpot.org/2026/09/no-ai-cpr-ne-a-castel-volturno-ne-altrove-il-24-ottobre-la-manifestazione-nazionale/",
-    "note": "Manifestazione nazionale ore 13; punto di ritrovo non indicato. Adesioni annunciate: CGIL Napoli e Campania, Emergency, Libera, CNCA (anche arci.it)."
   },
   {
     "tipo": "corteo",
@@ -250,6 +107,44 @@
     ],
     "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
     "note": "Ritrovo in via Pola, arrivo in piazza Michele Ferrero"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione nazionale contro il CPR di Castel Volturno",
+    "data": "2026-10-24",
+    "ora_inizio": "13:00",
+    "ora_fine": null,
+    "comune": "Castel Volturno",
+    "provincia": "CE",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 41.0336,
+    "lng": 13.9415,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Comitato regionale campano No CPR né qui né altrove"
+    ],
+    "fonte": "https://www.meltingpot.org/2026/09/no-ai-cpr-ne-a-castel-volturno-ne-altrove-il-24-ottobre-la-manifestazione-nazionale/",
+    "note": "Manifestazione nazionale ore 13; punto di ritrovo non indicato. Adesioni annunciate: CGIL Napoli e Campania, Emergency, Libera, CNCA (anche arci.it)."
+  },
+  {
+    "tipo": "corteo",
+    "ora_fine": null,
+    "organizzatori": [
+      "Collettivi studenteschi"
+    ],
+    "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
+    "note": "Fonte: post Instagram indicato dall'amministratore (non leggibile in automatico: verificare aprendo il link).",
+    "titolo": "Sciopero studentesco: ritrovo in piazza San Michele",
+    "data": "2026-10-24",
+    "ora_inizio": "08:30",
+    "comune": "Lucca",
+    "provincia": "LU",
+    "regione": "Toscana",
+    "luogo": "Piazza San Michele",
+    "lat": 43.84302,
+    "lng": 10.50296,
+    "posizione_approssimativa": false
   },
   {
     "tipo": "corteo",
@@ -334,6 +229,28 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero Trenitalia – Customer Operations Emilia-Romagna",
+    "data": "2026-10-28",
+    "ora_inizio": "21:00",
+    "ora_fine": null,
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "",
+    "lat": 44.4949,
+    "lng": 11.3426,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UILT-UIL",
+      "ORSA Ferrovie"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore, dalle 21 del 28 alle 21 del 29 ottobre; sedi di Bologna, Reggio Emilia AV Mediopadana, Rimini"
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale Air Campania",
     "data": "2026-10-28",
     "ora_inizio": "08:00",
@@ -357,28 +274,6 @@
   },
   {
     "tipo": "sciopero_categoria",
-    "titolo": "Sciopero Trenitalia – Customer Operations Emilia-Romagna",
-    "data": "2026-10-28",
-    "ora_inizio": "21:00",
-    "ora_fine": null,
-    "comune": "Bologna",
-    "provincia": "BO",
-    "regione": "Emilia-Romagna",
-    "luogo": "",
-    "lat": 44.4949,
-    "lng": 11.3426,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "ORSA Ferrovie"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, dalle 21 del 28 alle 21 del 29 ottobre; sedi di Bologna, Reggio Emilia AV Mediopadana, Rimini"
-  },
-  {
-    "tipo": "sciopero_categoria",
     "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
     "data": "2026-10-29",
     "ora_inizio": "12:00",
@@ -396,6 +291,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "4 ore, trasporto aereo"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "La Spezia",
+    "provincia": "SP",
+    "regione": "Liguria",
+    "luogo": "Prefettura della Spezia",
+    "lat": 44.1025,
+    "lng": 9.8241,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB La Spezia"
+    ],
+    "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
+    "note": "Presidio nella giornata dello sciopero generale USB del 30/10 (salari, carovita, no economia di guerra). Indirizzo esatto non indicato dalla fonte",
+    "gruppo": "sciopero-generale-2026-10-30"
   },
   {
     "tipo": "corteo",
@@ -416,6 +331,25 @@
     "fonte": "https://www.napolike.it/sciopero-generale-30-ottobre-2026-napoli",
     "note": "Concentramento in piazza Mancini (zona Stazione Centrale) in mattinata; orario e percorso da confermare",
     "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
+    "data": "2026-10-30",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Pisa",
+    "provincia": "PI",
+    "regione": "Toscana",
+    "luogo": "Aeroporto di Pisa",
+    "lat": 43.6839,
+    "lng": 10.3927,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB Lavoro Privato"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze. Verificare: possibile esclusione per franchigia trasporti 30/10-5/11"
   },
   {
     "tipo": "sciopero_generale",
@@ -458,23 +392,24 @@
     "note": "24 ore in tutti i porti; posizione indicativa. Verificare effetto franchigia trasporti 30/10-5/11 (marittimo escluso per USI-CIT)"
   },
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
+    "tipo": "presidio",
+    "titolo": "Appuntamento a Roma per lo sciopero generale USB",
     "data": "2026-10-30",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "comune": "Pisa",
-    "provincia": "PI",
-    "regione": "Toscana",
-    "luogo": "Aeroporto di Pisa",
-    "lat": 43.6839,
-    "lng": 10.3927,
+    "ora_inizio": "10:30",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza dei Cinquecento",
+    "lat": 41.9013,
+    "lng": 12.5005,
     "posizione_approssimativa": false,
     "organizzatori": [
-      "USB Lavoro Privato"
+      "USB"
     ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze. Verificare: possibile esclusione per franchigia trasporti 30/10-5/11"
+    "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-roma-appuntamento-ore-1030-piazza-dei-cinquecento-1634.html",
+    "note": "Appuntamento romano nel giorno dello sciopero generale USB; la fonte non dice se presidio o corteo",
+    "gruppo": "sciopero-generale-2026-10-30"
   },
   {
     "tipo": "corteo",
@@ -497,24 +432,25 @@
     "gruppo": "sciopero-generale-2026-10-30"
   },
   {
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del commercio nel giorno festivo nel Lazio",
+    "data": "2026-11-01",
+    "ora_inizio": null,
     "ora_fine": null,
-    "comune": "La Spezia",
-    "provincia": "SP",
-    "regione": "Liguria",
-    "luogo": "Prefettura della Spezia",
-    "lat": 44.1025,
-    "lng": 9.8241,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
     "posizione_approssimativa": true,
     "organizzatori": [
-      "USB La Spezia"
+      "FILCAMS CGIL",
+      "FISASCAT CISL",
+      "UILTUCS"
     ],
-    "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
-    "note": "Presidio nella giornata dello sciopero generale USB del 30/10 (salari, carovita, no economia di guerra). Indirizzo esatto non indicato dalla fonte",
-    "gruppo": "sciopero-generale-2026-10-30"
+    "fonte": "https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/",
+    "note": "Terziario e distribuzione, intera giornata, contro il lavoro nei festivi in tutto il Lazio; posizione indicativa"
   },
   {
     "tipo": "sciopero_categoria",
@@ -868,6 +804,26 @@
     "gruppo": "sciopero-ferrovie-locali-2026-11-21"
   },
   {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale ENAV",
+    "data": "2026-11-21",
+    "ora_inizio": "13:00",
+    "ora_fine": "17:00",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "UGL-TA"
+    ],
+    "fonte": "https://mit.gov.it/node/124",
+    "note": "4 ore, trasporto aereo; nazionale, posizione indicativa"
+  },
+  {
     "ora_inizio": null,
     "ora_fine": null,
     "luogo": "",
@@ -932,23 +888,22 @@
   },
   {
     "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale del personale ENAV",
-    "data": "2026-11-21",
-    "ora_inizio": "13:00",
-    "ora_fine": "17:00",
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
+    "titolo": "Sciopero ENAV all'aeroporto di Milano Malpensa",
+    "data": "2026-11-22",
+    "ora_inizio": "00:01",
+    "ora_fine": "23:59",
+    "comune": "Ferno",
+    "provincia": "VA",
+    "regione": "Lombardia",
+    "luogo": "Aeroporto di Milano Malpensa",
+    "lat": 45.6306,
+    "lng": 8.7281,
+    "posizione_approssimativa": false,
     "organizzatori": [
-      "FILT-CGIL",
-      "UGL-TA"
+      "FAST-CONFSAL-AV"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore, trasporto aereo; nazionale, posizione indicativa"
+    "note": "24 ore, trasporto aereo"
   },
   {
     "tipo": "sciopero_categoria",
@@ -965,25 +920,6 @@
     "posizione_approssimativa": false,
     "organizzatori": [
       "FISASCAT-CISL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto aereo"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ENAV all'aeroporto di Milano Malpensa",
-    "data": "2026-11-22",
-    "ora_inizio": "00:01",
-    "ora_fine": "23:59",
-    "comune": "Ferno",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Aeroporto di Milano Malpensa",
-    "lat": 45.6306,
-    "lng": 8.7281,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FAST-CONFSAL-AV"
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
