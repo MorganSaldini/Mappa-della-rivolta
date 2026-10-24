@@ -4333,7 +4333,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1eiZSIZQM/?cplk=MXZjbHJsNXg2YXJ1eQ==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-23T16:34:22",
       "gruppo": null
     },
@@ -5124,6 +5124,27 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-23T15:25:53",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-07-torino-altro-01",
+      "tipo": "altro",
+      "titolo": "caccia al maranza",
+      "data": "2026-11-07",
+      "ora_inizio": "15:30",
+      "ora_fine": "03:00",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "piazza castello",
+      "lat": 45.07034,
+      "lng": 7.68596,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T20:34:47",
       "gruppo": null
     },
     {
@@ -6010,8 +6031,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-24T17:09:57",
+  "ultimo_aggiornamento": "2026-10-24T20:34:47",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-24T16:12:09Z"
+  "copia_del": "2026-10-24T18:56:40Z"
 }
