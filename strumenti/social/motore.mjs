@@ -2,6 +2,8 @@
 import fs from 'node:fs'; import { createRequire } from 'node:module'; import { execSync } from 'node:child_process';
 import { feature } from 'topojson-client'; import { geoMercator, geoPath } from 'd3-geo'; import { chromium } from 'playwright-core';
 const require = createRequire(import.meta.url);
+// Chromium preinstallato: cerca la versione presente in /opt/pw-browsers (cambia nel tempo)
+export const CHROME = (() => { const base = '/opt/pw-browsers'; for (const d of fs.readdirSync(base).filter((x) => /^chromium-\d+$/.test(x)).sort().reverse()) for (const sub of ['chrome-linux64/chrome', 'chrome-linux/chrome']) if (fs.existsSync(`${base}/${d}/${sub}`)) return `${base}/${d}/${sub}`; return undefined; })();
 export const COL = { corteo: '#c8322a', presidio: '#d96c00', sciopero_generale: '#8e1b5e', sciopero_categoria: '#2a5db0', assemblea: '#6b4fbb', picchetto: '#0f7a6b', altro: '#55525c' };
 const topo = require('world-atlas/countries-50m.json');
 const it = { type: 'FeatureCollection', features: feature(topo, topo.objects.countries).features.filter((f) => f.id === '380') };
@@ -17,7 +19,7 @@ export const cssBase = `@font-face{font-family:T;font-weight:800;src:${font('@fo
 .lay{position:absolute;inset:0;transition:none}`;
 export async function rendi({ html, durata, fps = 30, uscita, cartella }) {
   fs.rmSync(cartella, { recursive: true, force: true }); fs.mkdirSync(cartella, { recursive: true });
-  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+  const b = await chromium.launch({ executablePath: CHROME });
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   await p.setContent(html); await p.evaluate(() => document.fonts.ready);
   const n = Math.round(durata * fps);
