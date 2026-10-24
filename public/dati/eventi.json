@@ -1163,7 +1163,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9hZCP_c6XAxUl1gIHHaGMKkEQFnoECBgQAQ&url=CAESuQEB6zswFV8Bjf9PO2cuS1BV8jTtObFrNMJvUBNzKn2udRrRm1VQCC19_LiXxLJ-6YFrXjkKTIYnLb397Rs2xfvj2KJcSc1Utdcde0TVJGJ9iPMFZVPuvv8Lx8RCH53o6Z43kh7xJXuyR3ZQTyJQ91Sbf9aAaM2cVl7t8m",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T03:23:23",
       "gruppo": null
     },
@@ -3959,6 +3959,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-reggio-emilia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Nous serons la revolution",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Polo scolastico via Makallè",
+      "lat": 44.70489,
+      "lng": 10.63655,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Coordinamento Rabun"
+      ],
+      "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T09:01:30",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-pisa-sciopero_categoria-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e carovita",
@@ -4169,6 +4192,29 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T16:34:22",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-catania-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Porto",
+      "lat": 37.498,
+      "lng": 15.092,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-del-30-ottobre-2026-0112.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T06:00:27",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
       "id": "2026-10-30-bari-corteo-01",
@@ -4407,6 +4453,52 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-firenze-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Piazza Bambine e Bambini di Beslan (Fortezza da Basso)",
+      "lat": 43.779,
+      "lng": 11.247,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T06:00:28",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
+      "id": "2026-10-30-milano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza Duca d'Aosta",
+      "lat": 45.4847,
+      "lng": 9.2035,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T06:00:29",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
       "id": "2026-10-30-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e caro vita",
@@ -4613,6 +4705,29 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-22T18:52:29",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-pozzallo-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio al porto per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": "22:00",
+      "comune": "Pozzallo",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Piazza dei Marinai, porto",
+      "lat": 36.729,
+      "lng": 14.844,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T06:00:30",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
       "id": "2026-10-30-bergamo-sciopero_generale-01",
@@ -5705,8 +5820,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-24T00:25:05",
+  "ultimo_aggiornamento": "2026-10-24T09:01:30",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-24T01:54:45Z"
+  "copia_del": "2026-10-24T07:10:45Z"
 }
