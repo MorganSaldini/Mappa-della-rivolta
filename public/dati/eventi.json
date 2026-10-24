@@ -426,7 +426,7 @@
       "organizzatori": [],
       "fonte": "https://internapoli.it/tentata-occupazione-al-cartesio-a-giugliano-la-preside-chiude-i-cancelli-e-chiama-i-carabinieri/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-22T18:51:56",
       "gruppo": "g-91ec802fb824"
     },
@@ -723,7 +723,7 @@
       "organizzatori": [],
       "fonte": "https://www.lavocedelpopolo.it/citta/brescia-in-marcia-per-l-accoglienza-1",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-21T16:55:45",
       "gruppo": null
     },
@@ -2164,7 +2164,7 @@
       ],
       "fonte": "https://www.teleclubitalia.it/giugliano-studenti-dellarea-nord-protestano/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T23:38:00",
       "gruppo": null
     },
@@ -3481,7 +3481,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjI9qi97cmXAxW48bsIHTrLNcQQFnoECBUQAQ&url=CAESngEB6zswFZ2y68XxHieWfFAt4GpEpMdmRo3C91_lPIQV7fmcDvHrdISFEvq2VbDw47nVhqNtdIAJlSq3VhaSTjynqjkQNs83uj2yNwHoXsDjx04p7u3h0FzJtGqNVnJzHil4Xgcf-NRhgTJg19Btr1Og_CgkSxCV_7WSJ1",
       "stato": "verificato",
-      "conferme": 13,
+      "conferme": 15,
       "aggiornato_il": "2026-10-23T02:35:37",
       "gruppo": null
     },
@@ -4092,7 +4092,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 9,
+      "conferme": 10,
       "aggiornato_il": "2026-10-21T02:45:24",
       "gruppo": null
     },
@@ -4119,7 +4119,7 @@
       ],
       "fonte": "https://www.radiondadurto.org/2026/10/21/sciopero-generale-venerdi-30-ottobre-lusb-lancia-un-corteo-anche-a-brescia/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-23T02:35:36",
       "gruppo": null
     },
@@ -4425,7 +4425,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/tlc-30-ottobre-sciopero-generale-usb-1154.html",
       "stato": "verificato",
-      "conferme": 31,
+      "conferme": 32,
       "aggiornato_il": "2026-10-20T23:50:30",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -4840,7 +4840,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dew907ACAzi/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-23T15:26:56",
       "gruppo": null
     },
@@ -5708,5 +5708,5 @@
   "ultimo_aggiornamento": "2026-10-24T00:25:05",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-23T23:25:15Z"
+  "copia_del": "2026-10-24T01:54:45Z"
 }
