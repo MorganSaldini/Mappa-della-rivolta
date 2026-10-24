@@ -2998,5 +2998,252 @@
       "titolo": "Adesione del Comune di Nichelino alla campagna contro la guerra \"R1PUD1A\""
     },
     "deciso_il": "2026-10-23"
+  },
+  {
+    "id": "2026-10-27-domodossola-sciopero_generale-01",
+    "aggiornato_il": "2026-10-24T00:25:05",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte né organizzatore; nessuno sciopero generale risulta proclamato per il 27/10 e le ricerche non trovano iniziative a Domodossola. Titolo incoerente ('per la guerra'); stesso luogo e data di 2026-10-27-domodossola-corteo-01.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-27-domodossola-corteo-01",
+    "aggiornato_il": "2026-10-24T00:21:04",
+    "azione": "sospetto",
+    "motivo": "Nessuna fonte né organizzatore; le ricerche (stampa locale VCO) non trovano un corteo il 27/10 alle 15 in piazza Mercato a Domodossola. Titolo in forma di slogan. Probabile doppione di 2026-10-27-domodossola-sciopero_generale-01.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-24-portici-corteo-01",
+    "aggiornato_il": "2026-10-23T15:39:00",
+    "azione": "correggi",
+    "motivo": "Titolo con parola in MAIUSCOLO: riscritto in forma descrittiva.",
+    "campi": {
+      "titolo": "Manifestazione per i diritti civici contro caro vita, caro affitti e disoccupazione giovanile"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-25-baiano-altro-01",
+    "aggiornato_il": "2026-10-23T16:57:15",
+    "azione": "correggi",
+    "motivo": "Titolo non descrittivo ('Autotrasporti_Caro Vita'): uniformato all'avviso dello stesso presidio del 24/10.",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-26-baiano-altro-01",
+    "aggiornato_il": "2026-10-23T16:57:15",
+    "azione": "correggi",
+    "motivo": "Titolo non descrittivo ('Autotrasporti_Caro Vita'): uniformato all'avviso dello stesso presidio del 24/10.",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-27-baiano-altro-01",
+    "aggiornato_il": "2026-10-23T16:57:15",
+    "azione": "correggi",
+    "motivo": "Titolo non descrittivo ('Autotrasporti_Caro Vita'): uniformato all'avviso dello stesso presidio del 24/10.",
+    "campi": {
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-26-torino-assemblea-01",
+    "aggiornato_il": "2026-10-23T21:43:32",
+    "azione": "correggi",
+    "motivo": "Titolo con MAIUSCOLO e punti esclamativi: riscritto in forma descrittiva.",
+    "campi": {
+      "titolo": "Assemblea generale universitaria per un nuovo coordinamento"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-26-brescia-altro-01",
+    "aggiornato_il": "2026-10-23T16:15:06",
+    "azione": "correggi",
+    "motivo": "Refusi nel titolo ('Inontro', 'scolastia'): corretti.",
+    "campi": {
+      "titolo": "Incontro aperto alla comunità scolastica sull'educazione sessuo-affettiva"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-26-giugliano-in-campania-corteo-01",
+    "aggiornato_il": "2026-10-23T23:38:00",
+    "azione": "correggi",
+    "motivo": "Gli organizzatori erano nomi di persone private: sostituiti con una descrizione collettiva.",
+    "campi": {
+      "organizzatori": [
+        "Studenti delle scuole di Napoli Nord"
+      ]
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-29-roma-assemblea-01",
+    "aggiornato_il": "2026-10-23T10:22:38",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO: riscritto in forma descrittiva.",
+    "campi": {
+      "titolo": "Incontro sul caso Autistici/Inventati e la repressione del dissenso"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-rimini-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T16:33:43",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO: riscritto.",
+    "campi": {
+      "titolo": "Sciopero generale del 30 ottobre"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-reggio-calabria-corteo-01",
+    "aggiornato_il": "2026-10-23T17:04:13",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO che non descrive l'evento (tipo corteo): riscritto.",
+    "campi": {
+      "titolo": "Corteo per lo sciopero generale USB"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-sassari-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T02:35:37",
+    "azione": "correggi",
+    "motivo": "Il titolo descrive un corteo/concentramento cittadino, non lo sciopero generale in sé: tipo corretto in 'corteo'.",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-cagliari-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T02:35:37",
+    "azione": "correggi",
+    "motivo": "Il titolo descrive un corteo/concentramento cittadino, non lo sciopero generale in sé: tipo corretto in 'corteo'.",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-padova-corteo-03",
+    "aggiornato_il": "2026-10-23T02:35:37",
+    "azione": "correggi",
+    "motivo": "Il titolo descrive un corteo/concentramento cittadino, non lo sciopero generale in sé: tipo corretto in 'corteo'.",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-catania-corteo-01",
+    "aggiornato_il": "2026-10-22T18:52:26",
+    "azione": "correggi",
+    "motivo": "Il titolo descrive un corteo/concentramento cittadino, non lo sciopero generale in sé: tipo corretto in 'corteo'.",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-milano-sciopero_generale-02",
+    "aggiornato_il": "2026-10-23T04:06:56",
+    "azione": "correggi",
+    "motivo": "Il titolo descrive un corteo/concentramento cittadino, non lo sciopero generale in sé: tipo corretto in 'corteo'.",
+    "campi": {
+      "tipo": "corteo"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-24-sciacca-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T17:18:29",
+    "azione": "correggi",
+    "motivo": "Sciopero di una sola categoria (pescatori), non generale: tipo corretto.",
+    "campi": {
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero della marineria di Sciacca contro il caro vita"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-verona-presidio-01",
+    "aggiornato_il": "2026-10-23T23:38:14",
+    "azione": "correggi",
+    "motivo": "Tipo presidio ma titolo da sciopero generale: titolo allineato al tipo.",
+    "campi": {
+      "titolo": "Presidio per lo sciopero generale contro il carovita"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-torino-corteo-02",
+    "aggiornato_il": "2026-10-23T03:25:45",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO: riscritto.",
+    "campi": {
+      "titolo": "Preconcentramento dello spezzone studentesco prima del corteo per lo sciopero generale"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-novara-presidio-01",
+    "aggiornato_il": "2026-10-22T08:50:44",
+    "azione": "correggi",
+    "motivo": "Titolo con MAIUSCOLO: riscritto in forma descrittiva.",
+    "campi": {
+      "titolo": "Presidio dopo il corteo per lo sciopero generale"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-11-20-torino-altro-01",
+    "aggiornato_il": "2026-10-23T10:23:17",
+    "azione": "correggi",
+    "motivo": "Titolo con nome di persona: tolto secondo le regole di scrittura.",
+    "campi": {
+      "titolo": "Proiezione di un documentario sullo sciopero della fame contro il 41bis"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-reggio-di-calabria-corteo-01",
+    "aggiornato_il": "2026-10-23T17:36:03",
+    "azione": "sospetto",
+    "motivo": "Titolo ambiguo ('Corteo per la guerra'), nessun organizzatore e fonte che è solo un'immagine Facebook; probabile doppione dell'evento USB a Reggio Calabria dello stesso giorno. Da controllare.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-24"
   }
 ]
