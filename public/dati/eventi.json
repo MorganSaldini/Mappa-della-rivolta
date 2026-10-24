@@ -562,7 +562,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
       "stato": "verificato",
-      "conferme": 14,
+      "conferme": 15,
       "aggiornato_il": "2026-10-21T15:53:03",
       "gruppo": null
     },
@@ -676,7 +676,7 @@
       ],
       "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
       "stato": "verificato",
-      "conferme": 31,
+      "conferme": 32,
       "aggiornato_il": "2026-10-17T01:45:07",
       "gruppo": null
     },
@@ -702,8 +702,32 @@
       ],
       "fonte": "https://www.gazzettadalba.it/2026/10/contro-la-schiavitu-e-lo-sfruttamento-nelle-colline-di-langhe-e-roero-in-corteo-il-24-ottobre-per-sollevare-il-velo-del-silenzio/",
       "stato": "verificato",
-      "conferme": 6,
+      "conferme": 7,
       "aggiornato_il": "2026-10-21T02:30:27",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-24-catanzaro-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Italia scende in piazza",
+      "data": "2026-10-24",
+      "ora_inizio": "14:30",
+      "ora_fine": "15:30",
+      "comune": "Catanzaro",
+      "provincia": "CZ",
+      "regione": "Calabria",
+      "luogo": "Piazza prefettura",
+      "lat": 38.82996,
+      "lng": 16.43156,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Ore 14:30 sarà comunicata la piazza dove dividerci in 3 cort",
+        "ore 15:30 piazza finale"
+      ],
+      "fonte": "https://www.instagram.com/p/De1nxn6iDRN/?srtk=MTBtNHMzdmxuZzJ3ZA==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T09:13:33",
       "gruppo": null
     },
     {
@@ -723,7 +747,7 @@
       "organizzatori": [],
       "fonte": "https://www.lavocedelpopolo.it/citta/brescia-in-marcia-per-l-accoglienza-1",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-21T16:55:45",
       "gruppo": null
     },
@@ -769,7 +793,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeJnI2jDumY/?utm_source=ig_web_copy_link&srtk=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
-      "conferme": 50,
+      "conferme": 51,
       "aggiornato_il": "2026-10-20T23:50:29",
       "gruppo": null
     },
@@ -792,7 +816,7 @@
       ],
       "fonte": "https://www.change.org/p/urgente-a-rischio-centinaia-di-alberi-nel-parco-del-ticinello-a-milano",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-21T02:32:18",
       "gruppo": null
     },
@@ -1958,7 +1982,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dewy2fAMCoN",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T15:26:44",
       "gruppo": null
     },
@@ -2095,7 +2119,7 @@
       ],
       "fonte": "https://ibb.co/DfsRykrF",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T15:26:47",
       "gruppo": null
     },
@@ -3046,6 +3070,31 @@
       "gruppo": "g-d740f89e31c8"
     },
     {
+      "id": "2026-10-30-verbania-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Contro il riarmo, le politiche razziste e repressive.",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Verbania",
+      "provincia": "VB",
+      "regione": "Piemonte",
+      "luogo": "Intra,Piazza Ranzoni, lungolago.",
+      "lat": 45.93538,
+      "lng": 8.57438,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "VB per la Palestina",
+        "non una di meno VB",
+        "USB."
+      ],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-24T12:23:11",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
@@ -3458,7 +3507,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehlkJiA3Uq/?mdxt=cWdmbDE2MndsaHU3",
       "stato": "verificato",
-      "conferme": 14,
+      "conferme": 15,
       "aggiornato_il": "2026-10-20T10:01:45",
       "gruppo": null
     },
@@ -3822,7 +3871,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 7,
+      "conferme": 8,
       "aggiornato_il": "2026-10-22T18:52:24",
       "gruppo": null
     },
@@ -3977,7 +4026,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 2,
       "aggiornato_il": "2026-10-24T09:01:30",
       "gruppo": null
     },
@@ -4115,7 +4164,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 10,
+      "conferme": 11,
       "aggiornato_il": "2026-10-21T02:45:24",
       "gruppo": null
     },
@@ -4142,7 +4191,7 @@
       ],
       "fonte": "https://www.radiondadurto.org/2026/10/21/sciopero-generale-venerdi-30-ottobre-lusb-lancia-un-corteo-anche-a-brescia/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-23T02:35:36",
       "gruppo": null
     },
@@ -4260,7 +4309,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DerR1uksKUx/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
-      "conferme": 18,
+      "conferme": 19,
       "aggiornato_il": "2026-10-22T18:52:26",
       "gruppo": null
     },
@@ -4471,7 +4520,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-24T06:00:28",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -4586,7 +4635,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 35,
+      "conferme": 36,
       "aggiornato_il": "2026-10-21T01:54:28",
       "gruppo": null
     },
@@ -4773,6 +4822,29 @@
       "stato": "verificato",
       "conferme": 8,
       "aggiornato_il": "2026-10-20T17:53:35",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-reggio-emilia-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Boicottare l'economia di guerra",
+      "data": "2026-10-30",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza del Monte",
+      "lat": 44.69855,
+      "lng": 10.63104,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea Reggiana per la Palestina"
+      ],
+      "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T09:14:30",
       "gruppo": null
     },
     {
@@ -5360,7 +5432,7 @@
       ],
       "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
     },
@@ -5820,8 +5892,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-24T09:01:30",
+  "ultimo_aggiornamento": "2026-10-24T12:23:11",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-24T07:10:45Z"
+  "copia_del": "2026-10-24T12:11:15Z"
 }
