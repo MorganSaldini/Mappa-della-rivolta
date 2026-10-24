@@ -74,7 +74,7 @@ P.push(`<div class="p dk"><div class="m" style="color:#fff"><i></i>Mappa della R
  <p style="font:600 40px/1.3 C;color:#c9c5bf;margin-top:30px">Nella tua città c'è un corteo, un presidio o un'assemblea che non vedi? Aggiungilo in 30 secondi, senza account: un volontario controlla la fonte.</p>
  <p style="font:600 34px/1.3 C;color:#c9c5bf;margin-top:auto">La mappa riporta informazioni pubbliche con la loro fonte.</p>
  <div class="f" style="border-color:#fff;margin-top:24px">mappadellarivolta.org<span>link in bio</span></div></div>`);
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [n, h] of P.entries()) {
   await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`);

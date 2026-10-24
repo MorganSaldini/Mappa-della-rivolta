@@ -5,7 +5,8 @@
 // Uso: node oggi24.mjs [cartella]   → domani-1.png … domani-N.png
 import fs from 'node:fs';
 import { COL, W, H, pathItalia, xy, cssBase } from './motore.mjs'; import { chromium } from 'playwright-core';
-const OUT = process.argv[2] || 'out/oggi24'; fs.mkdirSync(OUT, { recursive: true });
+const OUT = process.argv[2] || 'out/oggi24'; const DALLE = process.argv[3] || '12:00'; // es. node oggi24.mjs out/x 15:30
+function minuti(o) { const [h, m] = o.split(':').map(Number); return h * 60 + m; } fs.mkdirSync(OUT, { recursive: true });
 const GIORNO = 'Sabato 24 ottobre';
 // [gruppo, tipo, città, ora, luogo, titolo, organizzatori, lat, lng]
 const E = [
@@ -25,13 +26,17 @@ const E = [
  [3, 'corteo', 'Castel Volturno', '13:00', 'luogo di ritrovo: vedi la fonte', 'Corteo contro i CPR ("Né qui né altrove")', 'Comitato regionale No CPR', 41.0344, 13.9411],
  [3, 'assemblea', 'Palermo', '15:30', 'Cattedrale', 'Assemblea pubblica verso lo sciopero del 30 ottobre nelle scuole', 'OSA Palermo', 38.1141, 13.3566],
  [3, 'assemblea', 'Cagliari', '16:30', 'Giardino Sotto le Mura', 'Assemblea studentesca verso il 30 ottobre', 'Studenti Cagliari', 39.2175, 9.1172],
-].map(([g, t, c, ora, luogo, tit, org, la, ln]) => ({ g, t, c, ora, luogo, tit, org, xy: xy(la, ln) })).filter((e) => +e.ora.split(':')[0] >= 12);
-const GRUPPI = ['Piemonte e Veneto', 'Lombardia', 'Toscana', 'Lazio, Campania e isole'];
+].map(([g, t, c, ora, luogo, tit, org, la, ln]) => ({ g, t, c, ora, luogo, tit, org, xy: xy(la, ln) })).filter((e) => minuti(e.ora) >= minuti(DALLE));
+const GRUPPI0 = ['Piemonte e Veneto', 'Lombardia', 'Toscana', 'Lazio, Campania e isole'];
+// tiene solo i gruppi con eventi e rinumera; nomi ricavati dalle città rimaste
+const NOMIG = { 3: (L) => L.every((e) => ['Palermo', 'Cagliari'].includes(e.c)) ? 'Sicilia e Sardegna' : GRUPPI0[3], 0: (L) => L.every((e) => ['Verona', 'Este'].includes(e.c)) ? 'Veneto' : GRUPPI0[0] };
+const usati = GRUPPI0.map((_, i) => i).filter((i) => E.some((e) => e.g === i));
+const GRUPPI = usati.map((i) => (NOMIG[i] ? NOMIG[i](E.filter((e) => e.g === i)) : GRUPPI0[i]));
+E.forEach((e) => { e.g = usati.indexOf(e.g); });
 const NOTE = { Torino: 'Prima: colazione in piazzetta Borgo Dora e ritrovo degli studenti in piazza Arbarello.' };
 const NOMI = { corteo: 'Corteo', presidio: 'Presidio', assemblea: 'Assemblea', altro: 'Altro' };
 const citta = new Set(E.map((e) => e.c)).size;
 const minuti0 = 0;
-const minuti = (o) => { const [h, m] = o.split(':').map(Number); return h * 60 + m; };
 
 const mappa = (g) => `<svg viewBox="-20 -20 ${W + 40} ${H + 40}" style="width:100%;height:100%"><path d="${pathItalia}" fill="#fff" stroke="#1c1b1f" stroke-width="3.5" stroke-linejoin="round"/>${E.map((e) => { const on = g === -1 || e.g === g; return `<circle cx="${e.xy[0]}" cy="${e.xy[1]}" r="${on ? 36 : 22}" fill="${COL[e.t]}" opacity="${on ? .2 : .06}"/><circle cx="${e.xy[0]}" cy="${e.xy[1]}" r="${on ? 19 : 12}" fill="${on ? COL[e.t] : '#d8cfc4'}" stroke="#f6f3ee" stroke-width="5"/>`; }).join('')}</svg>`;
 const css = cssBase.replace('body{width:1080px;height:1920px', 'body{width:1080px;height:1350px') + `
@@ -56,9 +61,9 @@ P.push(`<div class="p"><div class="m"><i></i>Mappa della Rivolta</div><div class
  <div style="display:grid;grid-template-columns:1fr 330px;gap:24px;flex:1;min-height:0;margin-top:16px">
   <div style="min-height:0">${mappa(-1)}</div>
   <div style="align-self:center;display:flex;flex-direction:column;gap:20px">
-   ${GRUPPI.map((g, i) => `<div style="border-left:10px solid #c8322a;padding-left:16px"><b style="display:block;font:800 40px/1 T;text-transform:uppercase">${g}</b><span style="font:600 28px C;color:#5f5d66">${E.filter((e) => e.g === i).length} iniziative · slide ${i + 2}</span></div>`).join('')}
+   ${GRUPPI.map((g, i) => `<div style="border-left:10px solid #c8322a;padding-left:16px"><b style="display:block;font:800 40px/1 T;text-transform:uppercase">${g}</b><span style="font:600 28px C;color:#5f5d66">${((n) => n + (n === 1 ? ' iniziativa' : ' iniziative'))(E.filter((e) => e.g === i).length)} · slide ${i + 2}</span></div>`).join('')}
    <div class="leg">${tipi.map((t) => `<span><i style="background:${COL[t]}"></i>${NOMI[t]}</span>`).join('')}</div></div></div>
- <div class="f">Dal pomeriggio, in tutta Italia<span>scorri ›</span></div></div>`);
+ <div class="f">${DALLE === '12:00' ? 'Dal pomeriggio, in tutta Italia' : 'Dalle ' + DALLE + ', in tutta Italia'}<span>scorri ›</span></div></div>`);
 GRUPPI.forEach((g, i) => {
   const L = E.filter((e) => e.g === i).sort((a, b) => minuti(a.ora) - minuti(b.ora));
   P.push(`<div class="p"><div class="m"><i></i>Mappa della Rivolta</div><div class="n">${i + 2}/${tot}</div>
@@ -75,7 +80,7 @@ P.push(`<div class="p dk"><div class="m" style="color:#fff"><i></i>Mappa della R
  <p style="font:600 40px/1.3 C;color:#c9c5bf;margin-top:30px">Nella tua città c'è un corteo, un presidio o un'assemblea che non vedi? Aggiungilo in 30 secondi, senza account: un volontario controlla la fonte.</p>
  <p style="font:600 34px/1.3 C;color:#c9c5bf;margin-top:auto">La mappa riporta informazioni pubbliche con la loro fonte.</p>
  <div class="f" style="border-color:#fff;margin-top:24px">mappadellarivolta.org<span>link in bio</span></div></div>`);
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [n, h] of P.entries()) {
   await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`);

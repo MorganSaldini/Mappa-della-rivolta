@@ -11,7 +11,7 @@ h1{font:800 124px/.92 T;text-transform:uppercase;margin-top:10px}h1 em{font-styl
 .f{display:flex;justify-content:space-between;align-items:center;border-top:3px solid currentColor;padding-top:22px;font:800 46px T;margin-top:auto}.f span{font:600 28px C;opacity:.7}
 .scuro{background:#1c1b1f;color:#fff}.vino{background:#8e1b5e;color:#fff}.vino .k{color:#ffd0e2}
 .t{font:400 38px/1.32 C;margin-top:28px}.fonte{font:600 27px/1.35 C;opacity:.75;margin-top:22px}
-.r{display:flex;gap:24px;align-items:baseline;padding:13px 0;border-bottom:2px solid #d9d3c8}.r .o{flex:none;width:100px;font:800 40px T;color:#c8322a}.r b{font:800 42px T;text-transform:uppercase;width:230px;flex:none}.r span{font:400 30px C;color:#4a4850}
+.r{display:flex;gap:24px;align-items:baseline;padding:8px 0;border-bottom:2px solid #d9d3c8}.r .o{flex:none;width:100px;font:800 40px T;color:#c8322a}.r b{font:800 42px T;text-transform:uppercase;width:230px;flex:none}.r span{font:400 30px C;color:#4a4850}
 .li{display:flex;gap:26px;align-items:flex-start;margin-top:38px}.li b.n2{flex:none;width:76px;height:76px;border-radius:50%;background:#c8322a;color:#fff;font:800 48px/76px T;text-align:center}.li p{font:400 35px/1.3 C;color:#e8e4dd}.li p b{display:block;font:700 41px C;color:#fff}`;
 const testa = (i) => `<div class="m"><i></i>Mappa della Rivolta</div><div class="n">${i}/5</div>`;
 const g = []; for (const [t, la, ln] of P) { let q = g.find((x) => Math.hypot(x.la - la, x.ln - ln) < 0.3); if (!q) { q = { la, ln, n: 0 }; g.push(q); } q.n++; }
@@ -24,18 +24,18 @@ const s1 = `<div class="p">${testa(1)}<p class="k">Venerdì 30 ottobre · sciope
 const s2 = `<div class="p vino">${testa(2)}<p class="k">Che cos'è</p><h1 style="font-size:116px">Sciopero<br>generale</h1>
 <p class="t">Nazionale, per i settori <b>pubblici e privati</b>.</p>
 <p class="t">Lo hanno proclamato <b>USB</b> e <b>USI-CIT</b>. Nella scuola riguarda docenti e personale ATA.</p>
-<p class="t">Nei servizi pubblici essenziali, come trasporti e sanità, valgono le <b>fasce di garanzia</b> previste dalla legge.</p>
+<p class="t">Nei servizi pubblici essenziali, come sanità e trasporti, valgono le <b>fasce di garanzia</b>. Per bus, metro e treni la situazione cambia da città a città: controlla l'avviso della tua azienda.</p>
 <p class="fonte">Fonti: calendario scioperi del Ministero dei Trasporti · USB Scuola · L. 146/1990</p>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
 const r = (o, c, l) => `<div class="r"><div class="o">${o}</div><b>${c}</b><span>${l}</span></div>`;
 const s3 = `<div class="p">${testa(3)}<p class="k">I ritrovi nelle grandi città</p><h1 style="font-size:104px">Dove e<br><em>a che ora</em></h1>
-<div style="margin-top:22px">${r('9:30', 'Milano', 'Porta Venezia')}${r('9:30', 'Torino', 'Piazza Palazzo di Città')}${r('9:30', 'Bologna', 'Piazza Maggiore')}${r('10:00', 'Firenze', 'Piazza Bambini di Beslan')}${r('10:00', 'Pescara', 'Piazza Italia')}${r('9:00', 'Napoli', 'Piazza Garibaldi')}${r('9:30', 'Bari', 'Piazza Libertà')}${r('8:30', 'Palermo', 'Politeama')}${r('9:30', 'Cagliari', 'Piazza Garibaldi')}</div>
+<div style="margin-top:22px">${r('10:00', 'Milano', 'Piazza Duca d\'Aosta')}${r('10:30', 'Roma', 'Piazza dei Cinquecento')}${r('9:30', 'Torino', 'Piazza Palazzo di Città')}${r('9:30', 'Bologna', 'Piazza Maggiore')}${r('10:00', 'Firenze', 'Piazza Bambini di Beslan')}${r('10:00', 'Pescara', 'Piazza Italia')}${r('9:00', 'Napoli', 'Piazza Garibaldi')}${r('9:30', 'Bari', 'Piazza Libertà')}${r('8:30', 'Palermo', 'Politeama')}${r('9:30', 'Cagliari', 'Piazza Garibaldi')}</div>
 <p class="fonte">Lunedì le piazze del Nord, martedì Centro, Sud e isole.</p>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
 const s4 = `<div class="p">${testa(4)}<p class="k">Scuole e università</p><h1 style="font-size:112px">Anche gli<br><em>studenti</em></h1>
-<p class="t">Sulla mappa ci sono <b>21 iniziative studentesche</b> per il 30, da Torino a Padova, da Genova a Roma.</p>
+<p class="t">Sulla mappa ci sono <b>22 iniziative studentesche</b> per il 30, da Torino a Bari, da Genova a Padova.</p>
 <p class="t">Spezzoni nei cortei, ritrovi davanti alle università e alle scuole, cortei studenteschi a Trento e Padova.</p>
-<p class="t" style="font-size:34px;color:#4a4850">Torino · Grugliasco · Orbassano · Novara · Vercelli · Alessandria · Genova · Imperia · Milano · Trento · Padova · Bologna · Roma</p>
+<p class="t" style="font-size:34px;color:#4a4850">Torino · Grugliasco · Orbassano · Novara · Vercelli · Alessandria · Genova · Imperia · Milano · Sesto San Giovanni · Trento · Padova · Bassano del Grappa · Bologna · Bari</p>
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`;
 const li = (n, b, t) => `<div class="li"><b class="n2">${n}</b><p><b>${b}</b>${t}</p></div>`;
 const s5 = `<div class="p scuro">${testa(5)}<h1 style="font-size:120px;margin-top:40px">Prima<br><em>del 30</em></h1>
@@ -45,7 +45,7 @@ ${li(3, 'Manca la tua piazza?', 'Aggiungila in 30 secondi con il link alla fonte
 <p class="fonte" style="margin-top:44px">La mappa riporta informazioni pubbliche con la loro fonte.</p>
 <div class="f">mappadellarivolta.org<span>link in bio</span></div></div>`;
 fs.mkdirSync('out/car25', { recursive: true });
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 for (const [i, h] of [s1, s2, s3, s4, s5].entries()) {
   const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
   await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready);

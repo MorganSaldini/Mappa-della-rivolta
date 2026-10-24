@@ -38,7 +38,7 @@ const P = [
   <p class="b" style="font-size:36px;color:#c9c5bf">Informati, poi scegli tu.</p>
   <div class="f" style="border-color:#fff">mappadellarivolta.org<span>link in bio</span></div></div>`,
 ];
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [i, h] of P.entries()) { await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready); await pg.screenshot({ path: `${OUT}/verifica-${i + 1}.png` }); }
 await b.close();

@@ -20,7 +20,7 @@ svg{width:100%;flex:1;min-height:0;margin-top:20px}
 <svg viewBox="-30 -20 ${W + 60} ${H + 40}"><path d="${pathItalia}" fill="#fff" stroke="#1c1b1f" stroke-width="3.5" stroke-linejoin="round"/>${dots}</svg>
 <p class="sub"><b>${P.length}</b> in programma con fonte, da domani in poi</p><div class="leg">${leg}</div>
 </div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 console.log(await p.evaluate(() => document.querySelector('.leg').getBoundingClientRect().bottom));

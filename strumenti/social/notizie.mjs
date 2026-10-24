@@ -19,7 +19,7 @@ ${box('#c8322a','Possibili disagi · Cremona, martedì 20','Corteo studentesco n
 </div>
 <p class="f">Fonti: Il Fatto Quotidiano (19/10), collettivo Orientale Occupata, Il Post, InformaCalabria, Cremona Sera e La Quinta T (19/10).</p>
 </div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 console.log(await p.evaluate(() => [document.querySelector('.wrap').getBoundingClientRect().bottom, document.querySelector('.f').getBoundingClientRect().bottom]));

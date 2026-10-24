@@ -6,7 +6,7 @@ L'utente è l'amministratore: non è uno sviluppatore, scrivigli in italiano sem
 ## File
 - Calendario: `strumenti/social/CALENDARIO.md` (data, ora, formato, titolo, idea).
 - Generatori: `strumenti/social/` (`motore.mjs` = mappa d'Italia + font + rendering video; esempi: `genera.mjs` storie, `sabato.mjs` carosello 4:5, `grazie.mjs` post, `reel-*.mjs` reel animati, `copertine.mjs`, `suoni.py` bling di sottofondo).
-  Installa con `npm install` nella cartella. Chromium: `/opt/pw-browsers/chromium-1194/chrome-linux/chrome` (se cambia versione cerca in /opt/pw-browsers; non eseguire `playwright install`). Video con `ffmpeg`.
+  Installa con `npm install` nella cartella. Chromium: `/opt/pw-browsers/chromium-1243/chrome-linux64/chrome` (se cambia versione cerca in /opt/pw-browsers; non eseguire `playwright install`). Video con `ffmpeg`.
 - Bozze: `strumenti/social/bozze/AAAA-MM-GG-HHMM.md` (testi slide, didascalia, note dell'utente, stato: bozza / approvato / pubblicato).
 
 ## Dati veri (obbligatorio)

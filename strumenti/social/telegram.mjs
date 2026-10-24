@@ -30,7 +30,7 @@ h1{font:800 124px/.92 T;text-transform:uppercase}h1 em{font-style:normal;color:#
 <div class="sticker">metti qui lo sticker “Link”</div>
 <div class="url">t.me/MappaDellaRivolta</div>
 </div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 await p.screenshot({ path: 'out/storia-4-telegram.png' }); await b.close();

@@ -20,7 +20,7 @@ li b{flex:none;width:118px;font:800 34px T;color:#c8322a}li i{flex:none;width:20
 <ul>${li}</ul>
 <p class="how"><b>Hai la fonte?</b> Apri l'evento su mappadellarivolta.org → <b>Correggi</b> → incolla il link. Un volontario la controlla.</p>
 </div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 console.log(await p.evaluate(() => document.querySelector('.how').getBoundingClientRect().bottom));
