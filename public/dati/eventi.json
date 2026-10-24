@@ -2,6 +2,27 @@
   "ok": true,
   "eventi": [
     {
+      "id": "2026-10-24-messina-presidio-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio autotrasportatori",
+      "data": "2026-10-24",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Messina",
+      "provincia": "ME",
+      "regione": "Sicilia",
+      "luogo": "Casello autostradale Tremestieri",
+      "lat": 38.19376,
+      "lng": 15.55421,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/19qGJbXoCj/",
+      "stato": "annullato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:35:15",
+      "gruppo": "g-e11376161c35"
+    },
+    {
       "id": "2026-10-24-napoli-assemblea-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: occupazione Palazzo Giusso",
@@ -68,6 +89,27 @@
       "gruppo": "g-35c399ac6150"
     },
     {
+      "id": "2026-10-24-benevento-sciopero_categoria-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: sciopero agricoltori",
+      "data": "2026-10-24",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Benevento",
+      "provincia": "BN",
+      "regione": "Campania",
+      "luogo": "",
+      "lat": 41.12944,
+      "lng": 14.7821,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjw3baz2dKXAxUF_7sIHekfOloQFnoECBAQAQ&url=https%3A%2F%2Fwww.ilmattino.it%2Fbenevento%2Fprotesta_autotrasportatori_a_benevento_carovita_e_crisi_carburanti_i_tir_lasciano_libere_le_strade_della_provincia-9844404.ht",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T14:54:28",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-24-rende-presidio-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: presidio di Quattromiglia per il caro vita",
@@ -108,6 +150,27 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-23T17:18:07",
       "gruppo": "g-3b6c3b667d8c"
+    },
+    {
+      "id": "2026-10-24-bari-corteo-01",
+      "tipo": "corteo",
+      "titolo": "sciopero per il carovita e il disagio scolastico",
+      "data": "2026-10-24",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Bari",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "Piazza del Ferrarese",
+      "lat": 41.12693,
+      "lng": 16.87195,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwje2qL319KXAxUchP0HHSCnLjMQFnoECBAQAQ&url=https%3A%2F%2Fwww.associatedmedias.com%2Fmanifestazioni-in-tutta-italia-il-24-ottobre-dalle-proteste-contro-il-caro-vita-ai-cortei-per-la-pace-le-citta-coinvolte-e-i-moti",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:47:50",
+      "gruppo": null
     },
     {
       "id": "2026-10-24-corigliano-rossano-presidio-01",
@@ -220,8 +283,8 @@
     },
     {
       "id": "2026-10-24-roccella-ionica-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio degli autotrasportatori",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio degli autotrasportatori",
       "data": "2026-10-24",
       "ora_inizio": null,
       "ora_fine": null,
@@ -236,7 +299,7 @@
       "fonte": "https://www.facebook.com/share/p/14xw4bkPYbW/?mibextid=wwXIfr",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-22T18:51:57",
+      "aggiornato_il": "2026-10-24T14:35:08",
       "gruppo": "g-d4f35694cfa6"
     },
     {
@@ -366,27 +429,6 @@
       "gruppo": "g-e11376161c35"
     },
     {
-      "id": "2026-10-24-messina-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio autotrasportatori",
-      "data": "2026-10-24",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Messina",
-      "provincia": "ME",
-      "regione": "Sicilia",
-      "luogo": "Casello autostradale Tremestieri",
-      "lat": 38.19376,
-      "lng": 15.55421,
-      "posizione_approssimativa": 1,
-      "organizzatori": [],
-      "fonte": "https://messina.gazzettadelsud.it/articoli/cronaca/2026/10/21/caro-carburante-i-tir-dei-nebrodi-sulla-a20-protesta-a-oltranza-allo-svincolo-di-rocca-di-capri-leone-afb2eb72-fbe1-4828-8898-23aaa356f683/?fbclid=IwVERDUAVGH0RleHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHr3YKa-G7SM3Pvd39Hu4h",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-22T01:06:51",
-      "gruppo": "g-e11376161c35"
-    },
-    {
       "id": "2026-10-24-mazara-del-vallo-presidio-01",
       "tipo": "presidio",
       "titolo": "Sciopero degli autotrasportatori contro il caro vita",
@@ -500,8 +542,8 @@
     },
     {
       "id": "2026-10-24-sciacca-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero marineria di Sciacca contro caro vita",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero della marineria di Sciacca contro il caro vita",
       "data": "2026-10-24",
       "ora_inizio": "00:00",
       "ora_fine": "22:44",
@@ -516,7 +558,7 @@
       "fonte": "https://www.telemontekronio.it/articoli/protesta-della-marineria-di-sciacca-contro-il-governo-centrale-105123?fbclid=IwdGRjcAVHVNJleHRuA2FlbQIxMQBwZG9mBWZkaWQWUQxZw7aLxMuMIxj2CqXJlujPPNLkonNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR6sqyHxLPiieBGktv6uVepu-ZOdwz31-ID9mO3Vgjjp9YDIS8a5qPt7xk-pvw_aem_aDPdUCl46MOoZv",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T17:18:29",
+      "aggiornato_il": "2026-10-24T14:56:17",
       "gruppo": "g-65a04684ceef"
     },
     {
@@ -593,7 +635,7 @@
     {
       "id": "2026-10-24-portici-corteo-01",
       "tipo": "corteo",
-      "titolo": "MANIFESTAZIONE per i diritti civici, il caro vita e affitti, contro la disoccupazione giovanile e per un futuro migliore",
+      "titolo": "Manifestazione per i diritti civici contro caro vita, caro affitti e disoccupazione giovanile",
       "data": "2026-10-24",
       "ora_inizio": "10:00",
       "ora_fine": null,
@@ -608,7 +650,31 @@
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwif08aqodCXAxUEhv0HHQ3vEnkQFnoECDAQAQ&url=https%3A%2F%2Fwww.quotidianodelsud.it%2Fcampania%2Fnapoli%2Fcronache%2Fviabilita-e-trasporti%2F2026%2F10%2F22%2Fprotesta-carovita-a-napoli-prosegue-la-mobilitazione-nonos",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-23T15:39:00",
+      "aggiornato_il": "2026-10-24T14:56:03",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-24-roma-corteo-08",
+      "tipo": "corteo",
+      "titolo": "Corteo di Azione Studentesca e Azione Universitaria da piazza della Libertà a piazza Risorgimento",
+      "data": "2026-10-24",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Piazza della Libertà",
+      "lat": 41.9087,
+      "lng": 12.4731,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Azione Studentesca",
+        "Azione Universitaria"
+      ],
+      "fonte": "https://www.ilgiornale.it/video/cronache/cortei-concluso-senza-incidenti-sblocchiamo-tutto-a-roma/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T15:05:22",
       "gruppo": null
     },
     {
@@ -653,7 +719,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeE4KTqsImm/?vrfl=NDN5Y21uczV3b2ht",
       "stato": "verificato",
-      "conferme": 24,
+      "conferme": 25,
       "aggiornato_il": "2026-10-20T23:50:33",
       "gruppo": null
     },
@@ -704,6 +770,30 @@
       "stato": "verificato",
       "conferme": 7,
       "aggiornato_il": "2026-10-21T02:30:27",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-24-gravina-in-puglia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Marcia per la pace e il disarmo da Gravina ad Altamura",
+      "data": "2026-10-24",
+      "ora_inizio": "14:00",
+      "ora_fine": "18:30",
+      "comune": "Gravina in Puglia",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "Fiera San Giorgio",
+      "lat": 40.8196,
+      "lng": 16.4232,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Comitati territoriali per la pace",
+        "Rete Italiana Pace e Disarmo"
+      ],
+      "fonte": "https://www.pugliain.net/306829-mobilitazione-per-la-pace-gravina-altamura/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T15:05:25",
       "gruppo": null
     },
     {
@@ -773,6 +863,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-24-cuneo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione contro il caro carburanti",
+      "data": "2026-10-24",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Cuneo",
+      "provincia": "CN",
+      "regione": "Piemonte",
+      "luogo": "",
+      "lat": 44.3845,
+      "lng": 7.5427,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Futuro Nazionale Cuneo"
+      ],
+      "fonte": "https://www.targatocn.it/2026/10/19/leggi-notizia/argomenti/eventi/articolo/futuro-nazionale-cuneo-conferma-la-manifestazione-contro-il-caro-carburanti-del-24-ottobre-al-fia.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T15:00:27",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-24-torino-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro il riarmo",
@@ -823,7 +936,7 @@
     {
       "id": "2026-10-24-bergamo-presidio-01",
       "tipo": "presidio",
-      "titolo": "Presidio studentesco",
+      "titolo": "Presidio",
       "data": "2026-10-24",
       "ora_inizio": "15:00",
       "ora_fine": null,
@@ -837,10 +950,10 @@
       "organizzatori": [
         "UDS"
       ],
-      "fonte": "https://www.instagram.com/p/DezIh_0odea/",
+      "fonte": "https://www.instagram.com/uds_bergamo/p/DezIh_0odea/",
       "stato": "verificato",
       "conferme": 7,
-      "aggiornato_il": "2026-10-22T18:54:00",
+      "aggiornato_il": "2026-10-24T14:35:37",
       "gruppo": null
     },
     {
@@ -860,7 +973,7 @@
       "organizzatori": [],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiMva_w_c6XAxXD2gIHHegoBMIQFnoECBgQAQ&url=CAESmwEB6zswFSTctVvsXmyzvZi9qrZu3RGIomxJtEG4lIDqjkUtZtjzUiIJ5ty6sB_QZA9jStElvUWGwx_yUmmFJwLqkzVuztk2mxEEJPVKhj7elUHYYFqiPgpoSOFEXNkDYQdaD_zNoGX9t8jcjtyxBh012plt0qJ1UseTDd",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T03:34:05",
       "gruppo": null
     },
@@ -1141,7 +1254,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DesL2LnEfhU/?xtok=MXhpenRyczhleGhnaA==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-22T18:52:35",
       "gruppo": null
     },
@@ -1211,6 +1324,27 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T17:19:22",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-25-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-25",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:56:04",
+      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-25-milano-assemblea-01",
@@ -1561,27 +1695,6 @@
       "gruppo": "g-73546d9c688f"
     },
     {
-      "id": "2026-10-25-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Autotrasporti_Caro Vita",
-      "data": "2026-10-25",
-      "ora_inizio": "00:58",
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-23T16:57:15",
-      "gruppo": "g-8c761a0dbd11"
-    },
-    {
       "id": "2026-10-25-terni-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo in sostegno a Cuba (\"In marcia con Cuba\")",
@@ -1602,6 +1715,33 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-23T02:35:35",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-25-avellino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio e assemblea contro il caro vita",
+      "data": "2026-10-25",
+      "ora_inizio": "16:00",
+      "ora_fine": "20:00",
+      "comune": "Avellino",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Piazza Libertà",
+      "lat": 40.91439,
+      "lng": 14.7926,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CSI",
+        "UDS",
+        "ARCI",
+        "UGS",
+        "GC"
+      ],
+      "fonte": "https://www.instagram.com/p/De38eWUONBF/?mdxt=MTllb25uMWRpbjF5bQ==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T17:09:57",
       "gruppo": null
     },
     {
@@ -1724,6 +1864,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-26-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:56:05",
+      "gruppo": "g-8c761a0dbd11"
+    },
+    {
       "id": "2026-10-26-napoli-assemblea-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: occupazione Palazzo Giusso",
@@ -1767,7 +1928,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DerceEwNWVp/?cplk=ZDJlNjhuMm5wbGU2",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-19T17:24:07",
       "gruppo": null
     },
@@ -2012,7 +2173,7 @@
     {
       "id": "2026-10-26-brescia-altro-01",
       "tipo": "altro",
-      "titolo": "Inontro aperto alla comunità scolastia: l'educazione sessuo-affettiva non è un gioco",
+      "titolo": "Incontro aperto alla comunità scolastica sull'educazione sessuo-affettiva",
       "data": "2026-10-26",
       "ora_inizio": null,
       "ora_fine": null,
@@ -2029,7 +2190,7 @@
       "fonte": "https://lasitua.org/event/leducazione-sesso-affettiva-non-e-un-gioco-1",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T16:15:06",
+      "aggiornato_il": "2026-10-24T14:56:08",
       "gruppo": null
     },
     {
@@ -2056,7 +2217,7 @@
     {
       "id": "2026-10-26-torino-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "Assemblea generale universitaria:\"NUOVO COORDINAMENTO! IMPORTANTE!\"",
+      "titolo": "Assemblea generale universitaria per un nuovo coordinamento",
       "data": "2026-10-26",
       "ora_inizio": null,
       "ora_fine": null,
@@ -2076,29 +2237,8 @@
       "fonte": "https://www.instagram.com/p/De2Dpz-iAf2/",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T21:43:32",
+      "aggiornato_il": "2026-10-24T14:56:07",
       "gruppo": null
-    },
-    {
-      "id": "2026-10-26-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Autotrasporti_Caro Vita",
-      "data": "2026-10-26",
-      "ora_inizio": "00:58",
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-23T16:57:15",
-      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-22-somma-vesuviana-sciopero_categoria-01",
@@ -2143,7 +2283,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dewv9WhtyXH",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-21T19:18:39",
       "gruppo": null
     },
@@ -2183,13 +2323,12 @@
       "lng": 14.21677,
       "posizione_approssimativa": 0,
       "organizzatori": [
-        "Luisa Izzo",
-        "Giorgio Mola De Rosa"
+        "Studenti delle scuole di Napoli Nord"
       ],
       "fonte": "https://www.teleclubitalia.it/giugliano-studenti-dellarea-nord-protestano/",
       "stato": "verificato",
       "conferme": 3,
-      "aggiornato_il": "2026-10-23T23:38:00",
+      "aggiornato_il": "2026-10-24T14:56:09",
       "gruppo": null
     },
     {
@@ -2315,6 +2454,27 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-21T02:41:40",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-27-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-27",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:56:06",
+      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-27-domodossola-sciopero_generale-01",
@@ -2594,27 +2754,6 @@
       "gruppo": "g-73546d9c688f"
     },
     {
-      "id": "2026-10-27-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Autotrasporti_Caro Vita",
-      "data": "2026-10-27",
-      "ora_inizio": "00:58",
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-23T16:57:15",
-      "gruppo": "g-8c761a0dbd11"
-    },
-    {
       "id": "2026-10-27-firenze-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
@@ -2635,27 +2774,6 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:36",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-27-domodossola-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Diritto al cibo e alla benzina che costa di meno",
-      "data": "2026-10-27",
-      "ora_inizio": "15:00",
-      "ora_fine": "22:20",
-      "comune": "Domodossola",
-      "provincia": "VB",
-      "regione": "Piemonte",
-      "luogo": "Piazza mercato",
-      "lat": 46.11604,
-      "lng": 8.29118,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-24T00:21:04",
       "gruppo": null
     },
     {
@@ -2996,7 +3114,7 @@
     {
       "id": "2026-10-29-roma-assemblea-01",
       "tipo": "assemblea",
-      "titolo": "TERRORISMO O REPRESSIONE DEL DISSENSO? Parliamo del caso Autistici/Inventati",
+      "titolo": "Incontro sul caso Autistici/Inventati e la repressione del dissenso",
       "data": "2026-10-29",
       "ora_inizio": null,
       "ora_fine": null,
@@ -3015,7 +3133,7 @@
       "fonte": "https://roma.convoca.la/event/parliamo-del-caso-autisticiinventati",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T10:22:38",
+      "aggiornato_il": "2026-10-24T14:56:09",
       "gruppo": null
     },
     {
@@ -3513,7 +3631,7 @@
     },
     {
       "id": "2026-10-30-sassari-sciopero_generale-01",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale contro il caro vita",
       "data": "2026-10-30",
       "ora_inizio": null,
@@ -3531,7 +3649,7 @@
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjI9qi97cmXAxW48bsIHTrLNcQQFnoECBUQAQ&url=CAESngEB6zswFZ2y68XxHieWfFAt4GpEpMdmRo3C91_lPIQV7fmcDvHrdISFEvq2VbDw47nVhqNtdIAJlSq3VhaSTjynqjkQNs83uj2yNwHoXsDjx04p7u3h0FzJtGqNVnJzHil4Xgcf-NRhgTJg19Btr1Og_CgkSxCV_7WSJ1",
       "stato": "verificato",
       "conferme": 15,
-      "aggiornato_il": "2026-10-23T02:35:37",
+      "aggiornato_il": "2026-10-24T14:56:12",
       "gruppo": null
     },
     {
@@ -3646,7 +3764,7 @@
     {
       "id": "2026-10-30-rimini-sciopero_generale-01",
       "tipo": "sciopero_generale",
-      "titolo": "SCIOPERO GENERALE",
+      "titolo": "Sciopero generale del 30 ottobre",
       "data": "2026-10-30",
       "ora_inizio": null,
       "ora_fine": null,
@@ -3663,7 +3781,7 @@
       "fonte": "https://www.instagram.com/p/De1cLSUCHr8/?mdxt=ZnFiZ2o0dGU0dzVj",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T16:33:43",
+      "aggiornato_il": "2026-10-24T14:56:11",
       "gruppo": null
     },
     {
@@ -3737,7 +3855,7 @@
     {
       "id": "2026-10-30-verona-presidio-01",
       "tipo": "presidio",
-      "titolo": "Sciopero generale contro il carovita",
+      "titolo": "Presidio per lo sciopero generale contro il carovita",
       "data": "2026-10-30",
       "ora_inizio": "07:30",
       "ora_fine": null,
@@ -3754,7 +3872,7 @@
       "fonte": "https://www.instagram.com/p/De1iP0hDHBY/?dlrf=MW56eDR6MHUxd2loMg==",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-23T23:38:14",
+      "aggiornato_il": "2026-10-24T14:56:18",
       "gruppo": null
     },
     {
@@ -3777,7 +3895,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1_dbGCqlj/?srtk=c25hdDM0Z2g3Yzc0",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T23:21:57",
       "gruppo": null
     },
@@ -3828,7 +3946,7 @@
     },
     {
       "id": "2026-10-30-padova-corteo-03",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale: diritto allo studio, carovita, spese militari",
       "data": "2026-10-30",
       "ora_inizio": "08:00",
@@ -3849,7 +3967,7 @@
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
       "conferme": 22,
-      "aggiornato_il": "2026-10-23T02:35:37",
+      "aggiornato_il": "2026-10-24T14:56:14",
       "gruppo": null
     },
     {
@@ -3915,7 +4033,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DeuYCh0DW3g/?exln=MW16ZHJydDhpamJ0Mg==",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-23T15:26:55",
       "gruppo": null
     },
@@ -3980,16 +4098,16 @@
       "lng": 15.65141,
       "posizione_approssimativa": 0,
       "organizzatori": [],
-      "fonte": "https://scontent.fmxp9-1.fna.fbcdn.net/v/t39.99422-6/857961837_4570362729902828_572142892635022247_n.png?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=m3C63q7XDPAQ7kNvwEv4i3l&_nc_oc=Adr5qFBZyHyyXkaR9jbexBsAejssToNajD4gdy4AHDHaFMF",
+      "fonte": "https://www.facebook.com/photo/?fbid=1645061154080608&set=a.560245155895552",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T17:36:03",
+      "aggiornato_il": "2026-10-24T15:07:32",
       "gruppo": null
     },
     {
       "id": "2026-10-30-reggio-calabria-corteo-01",
       "tipo": "corteo",
-      "titolo": "SCIOPERO GENERALE USB",
+      "titolo": "Corteo per lo sciopero generale USB",
       "data": "2026-10-30",
       "ora_inizio": "08:30",
       "ora_fine": null,
@@ -4004,30 +4122,7 @@
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi8jNjRtNCXAxVS9bsIHUrDAOgQFnoECCEQAQ&url=https%3A%2F%2Fwww.corrieredellacalabria.it%2F2026%2F10%2F23%2Fsciopero-generale-del-30-ottobre-anche-in-calabria-blocchiamo-tutto%2F&usg=AOvVaw2xLt4RUYFBn-FGb4PDyAFL&opi=",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-23T17:04:13",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-reggio-emilia-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Nous serons la revolution",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Reggio Emilia",
-      "provincia": "RE",
-      "regione": "Emilia-Romagna",
-      "luogo": "Polo scolastico via Makallè",
-      "lat": 44.70489,
-      "lng": 10.63655,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Coordinamento Rabun"
-      ],
-      "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
-      "stato": "da_verificare",
-      "conferme": 2,
-      "aggiornato_il": "2026-10-24T09:01:30",
+      "aggiornato_il": "2026-10-24T14:56:11",
       "gruppo": null
     },
     {
@@ -4049,7 +4144,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 20,
+      "conferme": 21,
       "aggiornato_il": "2026-10-22T18:52:28",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -4139,10 +4234,10 @@
       "organizzatori": [
         "USB"
       ],
-      "fonte": "https://www.instagram.com/p/DepJoSHja1t/?dlrf=MWIxbXpud3c3cHJ4cg==",
+      "fonte": "https://www.facebook.com/share/p/1J2uRB9ZSo/",
       "stato": "verificato",
       "conferme": 16,
-      "aggiornato_il": "2026-10-22T23:48:40",
+      "aggiornato_il": "2026-10-24T14:35:53",
       "gruppo": null
     },
     {
@@ -4191,14 +4286,14 @@
       ],
       "fonte": "https://www.radiondadurto.org/2026/10/21/sciopero-generale-venerdi-30-ottobre-lusb-lancia-un-corteo-anche-a-brescia/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T02:35:36",
       "gruppo": null
     },
     {
       "id": "2026-10-30-torino-corteo-02",
       "tipo": "corteo",
-      "titolo": "PRECONCENTRAMENTO SPEZZONE STUDENTESCO prima del corteo per lo sciopero generale",
+      "titolo": "Preconcentramento dello spezzone studentesco prima del corteo per lo sciopero generale",
       "data": "2026-10-30",
       "ora_inizio": "09:00",
       "ora_fine": null,
@@ -4216,7 +4311,7 @@
       "fonte": "https://www.instagram.com/p/DezeQYLIIfK",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-23T03:25:45",
+      "aggiornato_il": "2026-10-24T14:56:19",
       "gruppo": null
     },
     {
@@ -4243,27 +4338,27 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-catania-corteo-02",
+      "id": "2026-10-30-reggio-emilia-corteo-01",
       "tipo": "corteo",
-      "titolo": "Corteo per lo sciopero generale USB",
+      "titolo": "Nous serons la revolution",
       "data": "2026-10-30",
-      "ora_inizio": "09:30",
+      "ora_inizio": "09:00",
       "ora_fine": null,
-      "comune": "Catania",
-      "provincia": "CT",
-      "regione": "Sicilia",
-      "luogo": "Porto",
-      "lat": 37.498,
-      "lng": 15.092,
-      "posizione_approssimativa": 1,
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Polo scolastico via Makallè",
+      "lat": 44.70489,
+      "lng": 10.63655,
+      "posizione_approssimativa": 0,
       "organizzatori": [
-        "USB"
+        "Coordinamento Rabun"
       ],
-      "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-del-30-ottobre-2026-0112.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-24T06:00:27",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-24T14:32:45",
+      "gruppo": null
     },
     {
       "id": "2026-10-30-bari-corteo-01",
@@ -4291,7 +4386,7 @@
     },
     {
       "id": "2026-10-30-catania-corteo-01",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Manifestazione e corteo contro carovita, guerra e riarmo",
       "data": "2026-10-30",
       "ora_inizio": "09:30",
@@ -4310,12 +4405,12 @@
       "fonte": "https://www.instagram.com/p/DerR1uksKUx/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
       "conferme": 19,
-      "aggiornato_il": "2026-10-22T18:52:26",
+      "aggiornato_il": "2026-10-24T14:56:15",
       "gruppo": null
     },
     {
       "id": "2026-10-30-cagliari-sciopero_generale-01",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale contro il caro vita e la guerra",
       "data": "2026-10-30",
       "ora_inizio": "09:30",
@@ -4333,7 +4428,7 @@
       "fonte": "https://www.instagram.com/p/DerAXougA1b/?rpxt=cWozY2JtN3g1YWZn",
       "stato": "verificato",
       "conferme": 35,
-      "aggiornato_il": "2026-10-23T02:35:37",
+      "aggiornato_il": "2026-10-24T14:56:13",
       "gruppo": null
     },
     {
@@ -4380,7 +4475,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1Ca4vYchEX/?mibextid=wwXIfr",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T16:30:49",
       "gruppo": null
     },
@@ -4449,7 +4544,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeyU55qRCOT",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-23T02:35:36",
       "gruppo": null
     },
@@ -4479,7 +4574,7 @@
     },
     {
       "id": "2026-10-30-milano-sciopero_generale-02",
-      "tipo": "sciopero_generale",
+      "tipo": "corteo",
       "titolo": "Concentramento a Porta Venezia per lo sciopero generale",
       "data": "2026-10-30",
       "ora_inizio": "09:30",
@@ -4498,53 +4593,30 @@
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-sciopero-generale-appello-per-assemblea-cittadina-1440-1.html",
       "stato": "verificato",
       "conferme": 3,
-      "aggiornato_il": "2026-10-23T04:06:56",
+      "aggiornato_il": "2026-10-24T14:56:16",
       "gruppo": null
     },
     {
-      "id": "2026-10-30-firenze-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale USB",
-      "data": "2026-10-30",
-      "ora_inizio": "10:00",
-      "ora_fine": null,
-      "comune": "Firenze",
-      "provincia": "FI",
-      "regione": "Toscana",
-      "luogo": "Piazza Bambine e Bambini di Beslan (Fortezza da Basso)",
-      "lat": 43.779,
-      "lng": 11.247,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB"
-      ],
-      "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-24T06:00:28",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
-    },
-    {
-      "id": "2026-10-30-milano-corteo-01",
+      "id": "2026-10-30-catania-corteo-02",
       "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale USB",
       "data": "2026-10-30",
-      "ora_inizio": "10:00",
+      "ora_inizio": "09:30",
       "ora_fine": null,
-      "comune": "Milano",
-      "provincia": "MI",
-      "regione": "Lombardia",
-      "luogo": "Piazza Duca d'Aosta",
-      "lat": 45.4847,
-      "lng": 9.2035,
-      "posizione_approssimativa": 0,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Porto",
+      "lat": 37.498,
+      "lng": 15.092,
+      "posizione_approssimativa": 1,
       "organizzatori": [
         "USB"
       ],
-      "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
-      "stato": "da_verificare",
+      "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-del-30-ottobre-2026-0112.html",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-24T06:00:29",
+      "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
@@ -4611,6 +4683,52 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-23T17:18:14",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-firenze-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Piazza Bambine e Bambini di Beslan (Fortezza da Basso)",
+      "lat": 43.779,
+      "lng": 11.247,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-24T14:33:06",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
+      "id": "2026-10-30-milano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza Duca d'Aosta",
+      "lat": 45.4847,
+      "lng": 9.2035,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:33:06",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
       "id": "2026-10-30-ancona-sciopero_generale-01",
@@ -4690,7 +4808,7 @@
     {
       "id": "2026-10-30-novara-presidio-01",
       "tipo": "presidio",
-      "titolo": "PRESIDIO in seguito alla manifestazione (SCIOPERO GENERALE)",
+      "titolo": "Presidio dopo il corteo per lo sciopero generale",
       "data": "2026-10-30",
       "ora_inizio": "11:45",
       "ora_fine": null,
@@ -4708,7 +4826,7 @@
       "fonte": "https://www.instagram.com/p/DexRjnxCE1L",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-22T08:50:44",
+      "aggiornato_il": "2026-10-24T14:56:19",
       "gruppo": null
     },
     {
@@ -4754,29 +4872,6 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-22T18:52:29",
       "gruppo": null
-    },
-    {
-      "id": "2026-10-30-pozzallo-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio al porto per lo sciopero generale USB",
-      "data": "2026-10-30",
-      "ora_inizio": "17:00",
-      "ora_fine": "22:00",
-      "comune": "Pozzallo",
-      "provincia": "RG",
-      "regione": "Sicilia",
-      "luogo": "Piazza dei Marinai, porto",
-      "lat": 36.729,
-      "lng": 14.844,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB"
-      ],
-      "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-24T06:00:30",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
       "id": "2026-10-30-bergamo-sciopero_generale-01",
@@ -4825,6 +4920,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-pozzallo-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio al porto per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": "22:00",
+      "comune": "Pozzallo",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Piazza dei Marinai, porto",
+      "lat": 36.729,
+      "lng": 14.844,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-24T14:33:06",
+      "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
       "id": "2026-10-30-reggio-emilia-corteo-02",
       "tipo": "corteo",
       "titolo": "Boicottare l'economia di guerra",
@@ -4842,9 +4960,9 @@
         "Assemblea Reggiana per la Palestina"
       ],
       "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-24T09:14:30",
+      "aggiornato_il": "2026-10-24T14:33:35",
       "gruppo": null
     },
     {
@@ -5274,7 +5392,7 @@
     {
       "id": "2026-11-20-torino-altro-01",
       "tipo": "altro",
-      "titolo": "Proiezione del documentario \"181 giorni contro il 41bis. Lo sciopero della fame di Alfredo Cospito\"",
+      "titolo": "Proiezione di un documentario sullo sciopero della fame contro il 41bis",
       "data": "2026-11-20",
       "ora_inizio": null,
       "ora_fine": null,
@@ -5292,7 +5410,7 @@
       "fonte": "https://gancio.cisti.org/event/proiezione-del-documentario-181-giorni-contro-il-41bis-lo-sciopero-della-fame-di-alfredo-cospito",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-23T10:23:17",
+      "aggiornato_il": "2026-10-24T14:56:20",
       "gruppo": null
     },
     {
@@ -5624,7 +5742,7 @@
       ],
       "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
     },
@@ -5892,8 +6010,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-24T12:23:11",
+  "ultimo_aggiornamento": "2026-10-24T17:09:57",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-24T12:11:15Z"
+  "copia_del": "2026-10-24T16:12:09Z"
 }
