@@ -1,90 +1,5 @@
 [
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero Ferrovie del Sud Est – esercizio e autolinee",
-    "data": "2026-10-23",
-    "ora_inizio": "19:45",
-    "ora_fine": "23:45",
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 41.1171,
-    "lng": 16.8719,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "FAISA-CISAL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore: operatori di esercizio e personale gestione operativa autolinee"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero regionale dello spettacolo dal vivo in Emilia-Romagna",
-    "data": "2026-10-23",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Bologna",
-    "provincia": "BO",
-    "regione": "Emilia-Romagna",
-    "luogo": "",
-    "lat": 44.4949,
-    "lng": 11.3426,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC CGIL",
-      "FISTEL CISL",
-      "UILCOM UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Sciopero di intera giornata nei teatri e nello spettacolo dal vivo di tutta la regione; posizione indicativa"
-  },
-  {
-    "ora_inizio": "09:00",
-    "ora_fine": "12:00",
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla Fondazione Anffas",
-    "data": "2026-10-23",
-    "comune": "Grottammare",
-    "provincia": "AP",
-    "regione": "Marche",
-    "luogo": "Fondazione Anffas",
-    "lat": 42.9897,
-    "lng": 13.8682,
-    "organizzatori": [
-      "FP CGIL"
-    ],
-    "note": "Lo sciopero di intera giornata è stato revocato; resta il presidio dalle 9 alle 12 contro tagli al personale e licenziamenti"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "posizione_approssimativa": true,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 30 minuti per turno alla Barco",
-    "data": "2026-10-23",
-    "comune": "Saronno",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Stabilimento Barco",
-    "lat": 45.6255,
-    "lng": 9.0365,
-    "organizzatori": [
-      "FIOM CGIL",
-      "FIM CISL",
-      "UILM UIL",
-      "RSU"
-    ],
-    "gruppo": "barco-saronno-2026-10",
-    "note": "Fermate di 30 minuti per turno, a oltranza dal 19/10, contro il trasferimento della produzione in Cina"
-  },
-  {
     "tipo": "corteo",
     "titolo": "Corteo contro il caporalato in agricoltura",
     "data": "2026-10-24",
@@ -293,6 +208,46 @@
     "note": "4 ore, trasporto aereo"
   },
   {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Catania",
+    "provincia": "CT",
+    "regione": "Sicilia",
+    "luogo": "Porto",
+    "lat": 37.498,
+    "lng": 15.092,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-del-30-ottobre-2026-0112.html",
+    "note": "Partenza alle 9:30 dal Porto; la fonte non indica il punto preciso",
+    "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "10:00",
+    "ora_fine": null,
+    "comune": "Firenze",
+    "provincia": "FI",
+    "regione": "Toscana",
+    "luogo": "Piazza Bambine e Bambini di Beslan (Fortezza da Basso)",
+    "lat": 43.779,
+    "lng": 11.247,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
+    "note": "Concentramento alle 10 per lo sciopero generale nazionale di 24 ore di USB",
+    "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
     "tipo": "presidio",
     "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
     "data": "2026-10-30",
@@ -310,6 +265,26 @@
     ],
     "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
     "note": "Presidio nella giornata dello sciopero generale USB del 30/10 (salari, carovita, no economia di guerra). Indirizzo esatto non indicato dalla fonte",
+    "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "10:00",
+    "ora_fine": null,
+    "comune": "Milano",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "Piazza Duca d'Aosta",
+    "lat": 45.4847,
+    "lng": 9.2035,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
+    "note": "Concentramento alle 10 per lo sciopero generale nazionale di 24 ore di USB",
     "gruppo": "sciopero-generale-2026-10-30"
   },
   {
@@ -350,6 +325,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze. Verificare: possibile esclusione per franchigia trasporti 30/10-5/11"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio al porto per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "17:00",
+    "ora_fine": "22:00",
+    "comune": "Pozzallo",
+    "provincia": "RG",
+    "regione": "Sicilia",
+    "luogo": "Piazza dei Marinai, porto",
+    "lat": 36.729,
+    "lng": 14.844,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
+    "note": "Presidio 17-22 nella giornata internazionale di mobilitazione dei portuali",
+    "gruppo": "sciopero-generale-2026-10-30"
   },
   {
     "tipo": "sciopero_generale",
