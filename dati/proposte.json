@@ -83,6 +83,65 @@
     "note": "Pace: non violento, percorso n.d. Stesso giorno corteo studentesco \"Sblocchiamo tutto\" ore 10:30 p.za della Libertà→p.za Risorgimento (fonte: juorno.it/studenti-mobilitazione-permanente…)"
   },
   {
+    "tipo": "corteo",
+    "titolo": "Corteo di Azione Studentesca e Azione Universitaria da piazza della Libertà a piazza Risorgimento",
+    "data": "2026-10-24",
+    "ora_inizio": "10:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza della Libertà",
+    "lat": 41.9087,
+    "lng": 12.4731,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Azione Studentesca",
+      "Azione Universitaria"
+    ],
+    "fonte": "https://www.ilgiornale.it/video/cronache/cortei-concluso-senza-incidenti-sblocchiamo-tutto-a-roma/",
+    "note": "Concentramento 10:00, partenza 10:30, arrivo piazza Risorgimento via Cola di Rienzo. Concluso senza incidenti (il Giornale, fanpage.it live)."
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Marcia per la pace e il disarmo da Gravina ad Altamura",
+    "data": "2026-10-24",
+    "ora_inizio": "14:00",
+    "ora_fine": "18:30",
+    "comune": "Gravina in Puglia",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "luogo": "Fiera San Giorgio",
+    "lat": 40.8196,
+    "lng": 16.4232,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Comitati territoriali per la pace",
+      "Rete Italiana Pace e Disarmo"
+    ],
+    "fonte": "https://www.pugliain.net/306829-mobilitazione-per-la-pace-gravina-altamura/",
+    "note": "Partenza 14:00 dalla Fiera San Giorgio di Gravina, arrivo verso 18:30 in piazza Matteotti ad Altamura (circa 14 km). Anche corrierepl.it e orizzontescuola.it."
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione contro il caro carburanti",
+    "data": "2026-10-24",
+    "ora_inizio": "15:00",
+    "ora_fine": null,
+    "comune": "Cuneo",
+    "provincia": "CN",
+    "regione": "Piemonte",
+    "luogo": "",
+    "lat": 44.3845,
+    "lng": 7.5427,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Futuro Nazionale Cuneo"
+    ],
+    "fonte": "https://www.targatocn.it/2026/10/19/leggi-notizia/argomenti/eventi/articolo/futuro-nazionale-cuneo-conferma-la-manifestazione-contro-il-caro-carburanti-del-24-ottobre-al-fia.html",
+    "note": "Ore 15; ritrovo e percorso concordati con le forze dell'ordine e non indicati dalla fonte (non più piazza Galimberti). Anche cuneodice.it."
+  },
+  {
     "tipo": "assemblea",
     "titolo": "Assemblea pubblica di preparazione allo sciopero generale del 30 ottobre",
     "data": "2026-10-26",
