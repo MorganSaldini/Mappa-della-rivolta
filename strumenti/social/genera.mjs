@@ -186,7 +186,7 @@ const htmlPost = `<!doctype html><html lang="it"><head><meta charset="utf-8"><st
   <div class="fondo">mappadellarivolta.org<span>link in bio</span></div>
 </div></body></html>`;
 
-const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 for (const [nome, html] of Object.entries(pagine)) {
   fs.writeFileSync(path.join(uscita, nome + '.html'), html);

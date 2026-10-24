@@ -56,7 +56,7 @@ const P = [
   <p style="font:400 28px/1.3 C;color:#a9a5ae;margin-top:40px">La mappa riporta informazioni pubbliche con la loro fonte.</p>
   ${piede('link in bio', 1)}</div>`,
 ];
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [i, h] of P.entries()) { await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready);
   const over = await pg.evaluate(() => document.querySelector('.f').getBoundingClientRect().bottom); if (over > 1290) console.log(`slide ${i + 1}: piede a ${over}px`);

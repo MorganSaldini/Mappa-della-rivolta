@@ -17,7 +17,7 @@ export const cssBase = `@font-face{font-family:T;font-weight:800;src:${font('@fo
 .lay{position:absolute;inset:0;transition:none}`;
 export async function rendi({ html, durata, fps = 30, uscita, cartella }) {
   fs.rmSync(cartella, { recursive: true, force: true }); fs.mkdirSync(cartella, { recursive: true });
-  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   await p.setContent(html); await p.evaluate(() => document.fonts.ready);
   const n = Math.round(durata * fps);

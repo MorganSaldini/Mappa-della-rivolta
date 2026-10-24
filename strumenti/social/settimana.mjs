@@ -28,7 +28,7 @@ li{display:flex;gap:26px;align-items:center;background:#fff;border:3px solid #1c
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="pag"><div class="m"><i></i>Mappa della Rivolta</div>
 <h1>Questa settimana<br><em>in piazza</em></h1><p class="sub">19 – 25 ottobre · cortei e presidi con fonte</p><ul>${righe}</ul>
 <p class="piu">…più <b>3</b> assemblee e <b>10</b> scioperi di categoria. Trova il tuo su <b>mappadellarivolta.org</b></p></div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 const h = await p.evaluate(() => document.querySelector('.piu').getBoundingClientRect().bottom);

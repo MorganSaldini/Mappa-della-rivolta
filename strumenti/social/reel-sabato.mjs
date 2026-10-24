@@ -59,7 +59,7 @@ const cover = `<!doctype html><html><head><meta charset="utf-8"><style>${cssBase
 <div style="position:absolute;left:80px;right:80px;top:300px"><p style="font:700 40px T;letter-spacing:.14em;text-transform:uppercase;color:#c8322a">Sabato 24 ottobre</p><h1 style="font:800 168px/.88 T;text-transform:uppercase;margin-top:10px">${E.length} piazze<br><span style="color:#c8322a">in 15 secondi</span></h1></div>
 <div class="m"><i></i>Mappa della Rivolta</div></body></html>`;
 fs.mkdirSync('./out', { recursive: true });
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(cover); await p.evaluate(() => document.fonts.ready); await p.screenshot({ path: './out/cover-sabato.png' }); await b.close();
 await rendi({ html, durata: TOT, uscita: './out/reel-sabato-muto.mp4', cartella: './out/f-sabato' });

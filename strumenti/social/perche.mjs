@@ -41,7 +41,7 @@ const s5 = `<div class="p scuro">${testa(5)}<h1 style="font-size:112px">Chi c'è
 <p class="nota">La mappa riporta informazioni pubbliche con la loro fonte.</p>
 <div class="f">mappadellarivolta.org<span>link in bio</span></div></div>`;
 fs.mkdirSync('out/perche', { recursive: true });
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 for (const [i, h] of [s1, s2, s3, s4, s5].entries()) {
   const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
   await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready);

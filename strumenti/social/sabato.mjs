@@ -37,7 +37,7 @@ P[String(tot)] = `<div class="p dk"><div class="m" style="color:#fff"><i></i>Map
  <p style="font:600 46px/1.3 C;color:#e8e4dd;margin-top:40px">Se sabato c'è un corteo, un presidio o un'assemblea vicino a te, aggiungilo sulla mappa in 30 secondi. Senza account.</p>
  <p style="font:600 40px/1.3 C;color:#c9c5bf;margin-top:30px">Ogni evento ha una fonte e viene controllato da volontari. Orari e luoghi possono cambiare: verifica prima di partire.</p>
  <div class="f" style="border-color:#fff">mappadellarivolta.org<span>link in bio</span></div></div>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [n, h] of Object.entries(P)) { await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready); await pg.screenshot({ path: `out24/sabato-${n}.png` }); }
 await b.close();

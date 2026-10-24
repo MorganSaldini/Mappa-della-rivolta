@@ -34,7 +34,7 @@ const s2 = `<div class="p scuro"><div class="m"><i></i>Mappa della Rivolta</div>
   ${step(2, 'Aggiungi la tua città', 'Manca un presidio o un corteo? Bastano 30 secondi, senza account.')}
   ${step(3, 'Conferma o correggi', 'Ogni conferma rende la mappa più affidabile.')}</ul>
  <div class="f" style="margin-top:auto">mappadellarivolta.org<span>link in bio</span></div></div>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [n, h] of [['post-grazie-1', s1], ['post-grazie-2', s2]]) { await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready); await pg.screenshot({ path: `out/${n}.png` }); }
 await b.close();

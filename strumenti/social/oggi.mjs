@@ -50,7 +50,7 @@ const s2 = `<div class="p dk"><div class="m" style="color:#fff"><i></i>Mappa del
  <p style="font:600 34px/1.3 C;color:#e8e4dd;margin-top:34px">Manca un evento della tua città? Aggiungilo in 30 secondi, senza account.</p>
  <p style="font:400 28px/1.3 C;color:#a9a5ae;margin-top:16px">La mappa riporta informazioni pubbliche con la loro fonte.</p>
  <div class="f" style="border-color:#fff">mappadellarivolta.org<span>link in bio</span></div></div>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (const [i, h] of [s1, s2].entries()) { await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${h}</body></html>`); await pg.evaluate(() => document.fonts.ready); await pg.screenshot({ path: `${OUT}/oggi-${i + 1}.png` }); }
 await b.close();

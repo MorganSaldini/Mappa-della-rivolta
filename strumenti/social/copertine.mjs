@@ -8,7 +8,7 @@ const C = {
  'cover-sud': `<div style="position:absolute;inset:0;background:#1c1b1f"></div>${it('#d96c00', '#2a292e', [[41.44,15.63,'#d96c00'],[41.15,15.527,'#d96c00'],[41.141,16.689,'#d96c00'],[40.264,16.707,'#d96c00'],[39.641,16.264,'#d96c00'],[38.624,16.157,'#d96c00'],[38.234,16.246,'#d96c00']], .9)}
   <div style="position:absolute;left:80px;right:80px;top:300px;color:#fff"><h1 style="font:800 156px/.9 T;text-transform:uppercase">Al Sud chi<br>lavora <span style="color:#d96c00">non ce<br>la fa più</span></h1></div>`,
 };
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 for (const [n, h] of Object.entries(C)) { await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${cssBase}</style></head><body>${h}<div class="m" style="color:${n==='cover-settimana'?'#1c1b1f':'#fff'}"><i style="background:${n==='cover-scioperi'?'#fff':'#c8322a'}"></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready); await p.screenshot({ path: `./out/${n}.png` }); }
 await b.close();

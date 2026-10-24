@@ -23,7 +23,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</st
 <ul>${righe}</ul>
 <p class="box"><b>Se devi spostarti:</b> possibili code, rallentamenti e distributori senza carburante. Controlla la viabilità prima di partire.</p>
 <p class="fonti">Fonti: Il Post (15/10), InformaCalabria (16/10) e segnalazioni sulla mappa. Gli orari possono cambiare.</p></div></body></html>`;
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
 await p.setContent(html); await p.evaluate(() => document.fonts.ready);
 console.log(await p.evaluate(() => [document.querySelector('.box').getBoundingClientRect().bottom, document.querySelector('.fonti').getBoundingClientRect().bottom]));
