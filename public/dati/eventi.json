@@ -980,7 +980,7 @@
       "organizzatori": [],
       "fonte": "https://www.facebook.com/share/p/19Y48ehoUQ/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T15:26:49",
       "gruppo": null
     },
@@ -2595,7 +2595,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Deme0TiMl6n/?dlrf=MWw2eHp5aXA4bnJhag==",
       "stato": "verificato",
-      "conferme": 13,
+      "conferme": 14,
       "aggiornato_il": "2026-10-18T11:59:23",
       "gruppo": null
     },
@@ -2667,6 +2667,30 @@
       "stato": "verificato",
       "conferme": 8,
       "aggiornato_il": "2026-10-22T18:52:24",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-padova-corteo-04",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero della scuola Cobas",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Stazione ferroviaria",
+      "lat": 45.4177,
+      "lng": 11.8806,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas Scuola Veneto",
+        "CESP"
+      ],
+      "fonte": "https://www.nordest24.it/padova-sciopero-generale-cobas-30-ottobre-2026-scuola-trasporti",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:26",
       "gruppo": null
     },
     {
@@ -3055,6 +3079,29 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-24T14:32:45",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-cagliari-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero della scuola Cobas",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Cagliari",
+      "provincia": "CA",
+      "regione": "Sardegna",
+      "luogo": "Piazza Garibaldi",
+      "lat": 39.2186,
+      "lng": 9.1185,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas Scuola"
+      ],
+      "fonte": "https://www.vocedellascuola.it/cobas-scuola-sciopero-il-30-ottobre-corteo-a-cagliari",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:25",
       "gruppo": null
     },
     {
@@ -3450,7 +3497,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 36,
+      "conferme": 37,
       "aggiornato_il": "2026-10-21T01:54:28",
       "gruppo": null
     },
@@ -4037,6 +4084,121 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:50",
       "gruppo": null
+    },
+    {
+      "id": "2026-11-20-catanzaro-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Catanzaro",
+      "provincia": "CZ",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.9098,
+      "lng": 16.5877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:26",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-cosenza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cosenza",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.2983,
+      "lng": 16.2537,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:26",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-crotone-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Crotone",
+      "provincia": "KR",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.0808,
+      "lng": 17.127,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:26",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-reggio-calabria-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Reggio Calabria",
+      "provincia": "RC",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.1113,
+      "lng": 15.6473,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:27",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-vibo-valentia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Vibo Valentia",
+      "provincia": "VV",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.6762,
+      "lng": 16.1007,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T06:00:27",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
     },
     {
       "id": "2026-11-20-roma-sciopero_generale-01",
@@ -4728,8 +4890,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-25T02:56:05",
+  "ultimo_aggiornamento": "2026-10-25T06:00:27",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-25T01:35:04Z"
+  "copia_del": "2026-10-25T06:46:27Z"
 }
