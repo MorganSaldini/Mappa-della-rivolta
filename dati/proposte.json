@@ -1,147 +1,5 @@
 [
   {
-    "tipo": "corteo",
-    "titolo": "Corteo contro il caporalato in agricoltura",
-    "data": "2026-10-24",
-    "ora_inizio": "14:00",
-    "ora_fine": null,
-    "comune": "Alba",
-    "provincia": "CN",
-    "regione": "Piemonte",
-    "luogo": "Via Pola",
-    "lat": 44.699,
-    "lng": 8.03,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Caritas diocesana",
-      "CGIL",
-      "CISL",
-      "UIL",
-      "Libera",
-      "Arci"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-19-25-ottobre-2026-vertenze-mobilitazioni-e-iniziative-cgil-v9p2i2uo",
-    "note": "Ritrovo in via Pola, arrivo in piazza Michele Ferrero"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Manifestazione nazionale contro il CPR di Castel Volturno",
-    "data": "2026-10-24",
-    "ora_inizio": "13:00",
-    "ora_fine": null,
-    "comune": "Castel Volturno",
-    "provincia": "CE",
-    "regione": "Campania",
-    "luogo": "",
-    "lat": 41.0336,
-    "lng": 13.9415,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Comitato regionale campano No CPR né qui né altrove"
-    ],
-    "fonte": "https://www.meltingpot.org/2026/09/no-ai-cpr-ne-a-castel-volturno-ne-altrove-il-24-ottobre-la-manifestazione-nazionale/",
-    "note": "Manifestazione nazionale ore 13; punto di ritrovo non indicato. Adesioni annunciate: CGIL Napoli e Campania, Emergency, Libera, CNCA (anche arci.it)."
-  },
-  {
-    "tipo": "corteo",
-    "ora_fine": null,
-    "organizzatori": [
-      "Collettivi studenteschi"
-    ],
-    "fonte": "https://www.instagram.com/p/DeeLeHvteD_/",
-    "note": "Fonte: post Instagram indicato dall'amministratore (non leggibile in automatico: verificare aprendo il link).",
-    "titolo": "Sciopero studentesco: ritrovo in piazza San Michele",
-    "data": "2026-10-24",
-    "ora_inizio": "08:30",
-    "comune": "Lucca",
-    "provincia": "LU",
-    "regione": "Toscana",
-    "luogo": "Piazza San Michele",
-    "lat": 43.84302,
-    "lng": 10.50296,
-    "posizione_approssimativa": false
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo nazionale per la pace \"Fuori l'Italia dalla guerra\"",
-    "data": "2026-10-24",
-    "ora_inizio": "14:00",
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "Piazza della Repubblica",
-    "lat": 41.9025,
-    "lng": 12.4965,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Campagna Fuori l'Italia dalla guerra",
-      "Azione Universitaria",
-      "Azione Studentesca"
-    ],
-    "fonte": "https://antimafiaduemila.com/home/ci-vediamo-a/eventi/roma-24-ottobre-fuori-litalia-dalla-guerra-corteo-nazionale-per-la-pace",
-    "note": "Pace: non violento, percorso n.d. Stesso giorno corteo studentesco \"Sblocchiamo tutto\" ore 10:30 p.za della Libertà→p.za Risorgimento (fonte: juorno.it/studenti-mobilitazione-permanente…)"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo di Azione Studentesca e Azione Universitaria da piazza della Libertà a piazza Risorgimento",
-    "data": "2026-10-24",
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "Piazza della Libertà",
-    "lat": 41.9087,
-    "lng": 12.4731,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Azione Studentesca",
-      "Azione Universitaria"
-    ],
-    "fonte": "https://www.ilgiornale.it/video/cronache/cortei-concluso-senza-incidenti-sblocchiamo-tutto-a-roma/",
-    "note": "Concentramento 10:00, partenza 10:30, arrivo piazza Risorgimento via Cola di Rienzo. Concluso senza incidenti (il Giornale, fanpage.it live)."
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Marcia per la pace e il disarmo da Gravina ad Altamura",
-    "data": "2026-10-24",
-    "ora_inizio": "14:00",
-    "ora_fine": "18:30",
-    "comune": "Gravina in Puglia",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "Fiera San Giorgio",
-    "lat": 40.8196,
-    "lng": 16.4232,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Comitati territoriali per la pace",
-      "Rete Italiana Pace e Disarmo"
-    ],
-    "fonte": "https://www.pugliain.net/306829-mobilitazione-per-la-pace-gravina-altamura/",
-    "note": "Partenza 14:00 dalla Fiera San Giorgio di Gravina, arrivo verso 18:30 in piazza Matteotti ad Altamura (circa 14 km). Anche corrierepl.it e orizzontescuola.it."
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Manifestazione contro il caro carburanti",
-    "data": "2026-10-24",
-    "ora_inizio": "15:00",
-    "ora_fine": null,
-    "comune": "Cuneo",
-    "provincia": "CN",
-    "regione": "Piemonte",
-    "luogo": "",
-    "lat": 44.3845,
-    "lng": 7.5427,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Futuro Nazionale Cuneo"
-    ],
-    "fonte": "https://www.targatocn.it/2026/10/19/leggi-notizia/argomenti/eventi/articolo/futuro-nazionale-cuneo-conferma-la-manifestazione-contro-il-caro-carburanti-del-24-ottobre-al-fia.html",
-    "note": "Ore 15; ritrovo e percorso concordati con le forze dell'ordine e non indicati dalla fonte (non più piazza Galimberti). Anche cuneodice.it."
-  },
-  {
     "tipo": "assemblea",
     "titolo": "Assemblea pubblica di preparazione allo sciopero generale del 30 ottobre",
     "data": "2026-10-26",
@@ -268,6 +126,25 @@
   },
   {
     "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero della scuola Cobas",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Cagliari",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "luogo": "Piazza Garibaldi",
+    "lat": 39.2186,
+    "lng": 9.1185,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Cobas Scuola"
+    ],
+    "fonte": "https://www.vocedellascuola.it/cobas-scuola-sciopero-il-30-ottobre-corteo-a-cagliari",
+    "note": "Sciopero del 30/10; corteo da piazza Garibaldi verso il porto fino al molo Sant'Agostino."
+  },
+  {
+    "tipo": "corteo",
     "titolo": "Corteo per lo sciopero generale USB",
     "data": "2026-10-30",
     "ora_inizio": "09:30",
@@ -365,6 +242,26 @@
     "fonte": "https://www.napolike.it/sciopero-generale-30-ottobre-2026-napoli",
     "note": "Concentramento in piazza Mancini (zona Stazione Centrale) in mattinata; orario e percorso da confermare",
     "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero della scuola Cobas",
+    "data": "2026-10-30",
+    "ora_inizio": "08:30",
+    "ora_fine": null,
+    "comune": "Padova",
+    "provincia": "PD",
+    "regione": "Veneto",
+    "luogo": "Stazione ferroviaria",
+    "lat": 45.4177,
+    "lng": 11.8806,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Cobas Scuola Veneto",
+      "CESP"
+    ],
+    "fonte": "https://www.nordest24.it/padova-sciopero-generale-cobas-30-ottobre-2026-scuola-trasporti",
+    "note": "Sciopero intera giornata personale scuola (Cobas, ADL Cobas, CLAP, SIAL Cobas); corteo dalla stazione FS alle 8:30; percorso non indicato."
   },
   {
     "tipo": "sciopero_categoria",
@@ -650,6 +547,86 @@
     "note": "4 ore, ambito locale"
   },
   {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Catanzaro",
+    "provincia": "CZ",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 38.9098,
+    "lng": 16.5877,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Calabria"
+    ],
+    "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+    "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Cosenza",
+    "provincia": "CS",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 39.2983,
+    "lng": 16.2537,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Calabria"
+    ],
+    "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+    "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Crotone",
+    "provincia": "KR",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 39.0808,
+    "lng": 17.127,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Calabria"
+    ],
+    "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+    "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Reggio Calabria",
+    "provincia": "RC",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 38.1113,
+    "lng": 15.6473,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Calabria"
+    ],
+    "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+    "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
     "tipo": "sciopero_generale",
     "titolo": "Sciopero generale nazionale CGIL",
     "data": "2026-11-20",
@@ -688,6 +665,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "Treni e merci su rotaia dalle 21 del 20 alle 20 del 21; TPL intera giornata del 21; posizione indicativa"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Vibo Valentia",
+    "provincia": "VV",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 38.6762,
+    "lng": 16.1007,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Calabria"
+    ],
+    "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+    "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
   },
   {
     "ora_inizio": null,
