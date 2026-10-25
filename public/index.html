@@ -3,24 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mappa delle mobilitazioni in Italia</title>
+  <title>Mappa della Rivolta · mobilitazioni in Italia</title>
   <meta name="description" content="Cortei, presidi, scioperi e assemblee in Italia su una mappa aggiornata dalla community. Trova la mobilitazione più vicina o segnalane una.">
-  <meta property="og:title" content="Mappa delle mobilitazioni in Italia">
+  <meta property="og:title" content="Mappa della Rivolta · mobilitazioni in Italia">
   <meta property="og:description" content="Trova la mobilitazione più vicina o segnalane una.">
   <meta property="og:locale" content="it_IT">
   <meta property="og:url" content="https://mappadellarivolta.org/">
   <link rel="canonical" href="https://mappadellarivolta.org/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/fonts/fonts.css">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=18">
+  <link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
   <header class="barra">
-    <span class="barra__nome" id="nome-progetto">Mappa delle mobilitazioni</span>
+    <span class="barra__nome" id="nome-progetto">Mappa della Rivolta</span>
     <span class="barra__destra">
       <a class="barra__sostieni" id="barra-sostieni" href="#sostieni" hidden>♥ Sostieni</a>
       <a class="barra__link" href="regole.html">Regole<span class="solo-largo"> della community</span></a>
@@ -28,34 +26,30 @@
     </span>
   </header>
 
+  <div class="striscia-sostieni" id="striscia-sostieni" hidden>
+    <p>♥ La mappa è gratuita, senza pubblicità e la tengono viva volontari. <a href="#" id="link-striscia" target="_blank" rel="noopener">Sostienila anche con un caffè</a></p>
+    <button type="button" class="striscia-sostieni__chiudi" id="chiudi-striscia" aria-label="Chiudi l'avviso">✕</button>
+  </div>
+
   <div class="impianto">
   <aside class="lato" aria-labelledby="titolo-lato">
     <details class="lato__box" id="lato-regole">
       <summary><h2 id="titolo-lato">Le regole in breve</h2></summary>
       <ol class="lato__regole">
-        <li><strong>Solo iniziative pacifiche</strong>, annunciate pubblicamente: preavvisate in Questura o spontanee.</li>
-        <li><strong>Serve una fonte</strong>: comunicato, sito del sindacato, locandina, calendario ufficiale degli scioperi.</li>
-        <li><strong>Niente dati personali</strong>: niente nomi, telefoni o email; chi organizza si indica con la sigla.</li>
-        <li><strong>Blocchi e occupazioni</strong> solo come avviso «Possibili disagi:», con fonte giornalistica o istituzionale, senza organizzatori né orario di ritrovo.</li>
-        <li><strong>Vietati</strong> inviti a bloccare, occupare, scontrarsi o danneggiare, istruzioni per commettere reati, insulti e odio.</li>
-        <li><strong>Niente «Verificato» senza fonte</strong>: le nuove segnalazioni restano «Da verificare» finché la fonte non è controllata.</li>
-        <li><strong>Si può sempre correggere</strong>: ogni modifica resta in cronologia e si può annullare; un evento con troppe segnalazioni di problemi viene nascosto.</li>
+        <li><strong>Solo iniziative pubbliche e pacifiche</strong>, con una fonte (comunicato, locandina, calendario ufficiale).</li>
+        <li><strong>Niente dati personali</strong>: chi organizza si indica con la sigla.</li>
+        <li><strong>Niente inviti</strong> a bloccare, occupare o scontrarsi: blocchi e occupazioni solo come avviso «Possibili disagi».</li>
       </ol>
-      <p class="lato__link"><a href="regole.html">Leggi tutte le regole →</a></p>
+      <p class="lato__link"><a href="regole.html">Tutte le regole</a></p>
       <p class="lato__link"><a href="modera.html" rel="nofollow">Sei moderatore? Entra qui</a></p>
     </details>
   </aside>
 
   <main>
     <section class="intro">
-      <h1 id="titolo">Mappa delle mobilitazioni</h1>
+      <h1 id="titolo">Mappa della Rivolta</h1>
       <p class="intro__sotto" id="sottotitolo"></p>
       <a class="bottone bottone--pieno" id="partecipa" href="#" target="_blank" rel="noopener" hidden></a>
-    </section>
-
-    <section class="contatori" aria-label="Riepilogo">
-      <p class="contatori__totale"><strong id="totale">…</strong> mobilitazioni in programma</p>
-      <ul class="contatori__lista" id="contatori"></ul>
     </section>
 
     <section class="cerca" aria-label="Trova una mobilitazione">
@@ -63,14 +57,19 @@
         <label for="campo-cerca" class="nascosto">Comune o indirizzo</label>
         <input id="campo-cerca" type="search" placeholder="Scrivi un comune o un indirizzo" autocomplete="off">
         <button type="submit" class="bottone">Cerca</button>
-        <button type="button" class="bottone bottone--chiaro" id="vicino">📍 Vicino a me</button>
+        <button type="button" class="bottone bottone--chiaro" id="vicino" aria-label="Vicino a me">📍<span class="solo-largo"> Vicino a me</span></button>
       </form>
       <p class="cerca__msg" id="msg-cerca" role="status"></p>
     </section>
 
+    <section class="contatori" aria-label="Tipi di mobilitazione: tocca per filtrare">
+      <p class="contatori__totale"><strong id="totale">…</strong> mobilitazioni in programma <span class="tenue solo-largo">· tocca un tipo per filtrare · tratteggiato = da verificare</span></p>
+      <div class="contatori__lista" id="contatori" role="group" aria-label="Filtra per tipo"></div>
+    </section>
+
     <details class="filtri" id="box-filtri">
-      <summary>Filtra per tipo, data e regione <span class="tenue" id="filtro-riassunto"></span></summary>
-      <div class="filtri__tipi" id="filtro-tipi" role="group" aria-label="Tipo di mobilitazione"></div>
+      <summary>Data, regione e altri filtri <span class="tenue" id="filtro-riassunto"></span></summary>
+      <div class="filtri__tipi" id="filtro-tipi" hidden></div>
       <div class="filtri__riga">
         <label class="filtri__campo">Quando
           <select id="filtro-periodo">
@@ -111,14 +110,6 @@
       <a class="bottone bottone--pieno" href="archivio.html">Apri l'archivio</a>
     </section>
 
-    <section class="sostieni" id="sostieni" aria-labelledby="titolo-sostieni" hidden>
-      <h2 id="titolo-sostieni">Questa mappa vive se la tieni viva tu</h2>
-      <p>Niente pubblicità, niente tracciamento, nessun finanziatore che decide cosa mostrare. La mappa la costruiscono e la verificano volontari, di notte e nel tempo libero, perché chiunque possa sapere dove e quando si scende in piazza.</p>
-      <p><strong>Se oggi ti è servita, restituisci il favore:</strong> anche il prezzo di un caffè paga il dominio, il lavoro di verifica e le nuove funzioni. Chi la usa la sostiene — è l'unico modo per restare liberi.</p>
-      <a class="bottone bottone--pieno sostieni__bottone" id="link-sostieni" href="#" target="_blank" rel="noopener">♥ Sostieni la mappa</a>
-      <p class="tenue sostieni__nota">Le donazioni sono volontarie e servono solo a tenere attivo il progetto. Su PayPal scegli «Amici e familiari»: arriva tutta l'offerta, senza commissioni.</p>
-    </section>
-
     <section class="perche" aria-labelledby="titolo-perche">
       <h2 id="titolo-perche">Perché ci si mobilita</h2>
       <p class="perche__intro">Dietro ogni punto sulla mappa c'è una ragione. Queste sono quelle che tornano più spesso nei comunicati di chi promuove scioperi e iniziative, con i dati pubblici che le riguardano.</p>
@@ -137,7 +128,7 @@
         </article>
         <article class="perche__voce">
           <h3>Contratti e servizi</h3>
-          <p class="perche__dato"><b>Trasporti</b> e servizi: qui si concentra la maggior parte degli scioperi in calendario</p>
+          <p class="perche__dato"><b id="n-sciopero-cat">—</b> scioperi di categoria in programma sulla mappa, soprattutto nei trasporti e nei servizi</p>
           <p>Rinnovi contrattuali, organici, appalti, turni: sono le vertenze dietro gli scioperi di categoria di bus, treni, aeroporti, porti e call center. Le motivazioni di ogni sciopero sono nel comunicato collegato all'evento.</p>
           <p class="perche__fonte">Calendario degli scioperi nei servizi pubblici essenziali e comunicati sindacali</p>
         </article>
@@ -150,13 +141,25 @@
       </div>
       <p class="perche__nota">Ogni evento ha il link alla sua fonte: lì trovi le ragioni di chi lo promuove, con le sue parole. La mappa informa, non prende posizione per una sigla o per l'altra. Dati aggiornati al 25 ottobre 2026.</p>
     </section>
+    <section class="sostieni" id="sostieni" aria-labelledby="titolo-sostieni" hidden>
+      <div>
+        <h2 id="titolo-sostieni">Questa mappa vive se la tieni viva tu</h2>
+        <p>Niente pubblicità, niente tracciamento: la costruiscono volontari nel tempo libero. Anche il prezzo di un caffè paga il dominio e il lavoro di verifica.</p>
+        <p class="tenue sostieni__nota">Donazione volontaria. Su PayPal scegli «Amici e familiari»: arriva tutta l'offerta, senza commissioni.</p>
+      </div>
+      <a class="bottone bottone--pieno sostieni__bottone" id="link-sostieni" href="#" target="_blank" rel="noopener">♥ Sostieni la mappa</a>
+    </section>
   </main>
   </div>
 
   <footer class="piede">
     <p><strong>Come funziona.</strong> Chiunque può aggiungere una mobilitazione o segnalare un errore, senza registrarsi. Le nuove segnalazioni compaiono come <em>Da verificare</em> finché un moderatore volontario non le controlla. Gli eventi con più segnalazioni di problemi vengono nascosti in attesa di verifica.</p>
     <p><strong>Privacy.</strong> La mappa non chiede nome, email né indirizzo e non salva il tuo indirizzo IP. La posizione di "Vicino a me" resta nel tuo browser. Dopo la data, gli eventi spariscono dalla mappa: quelli verificati passano nell'<a href="archivio.html">archivio</a> per <span id="giorni-arch">365</span> giorni, gli altri e tutti i dati collegati (conferme, segnalazioni, cronologia) vengono cancellati entro <span id="giorni-cons">30</span> giorni.</p>
-    <p class="piede__legale" id="note-legali"><strong>Note legali.</strong> <strong>La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa in particolare.</strong> Crede però che far sentire la propria voce in modo pacifico e non violento, nei limiti della legge, sia un diritto di tutti: riunirsi pacificamente, esprimere liberamente il proprio pensiero e scioperare sono garantiti dalla Costituzione (artt. 17, 21 e 40). Questo sito è uno strumento di informazione: non organizza, non convoca e non promuove alcuna iniziativa in particolare; sostiene soltanto il diritto di esprimersi con metodi pacifici e non violenti. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); blocchi e occupazioni compaiono solo come avviso di possibili disagi, con fonte giornalistica o istituzionale, senza organizzatori né inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo (<a href="regole.html#segnala-illeciti">tempi e procedura</a>).</p>
+    <p><strong>La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa in particolare.</strong> Crede che far sentire la propria voce in modo pacifico e non violento sia un diritto di tutti.</p>
+    <details class="piede__legale" id="note-legali">
+      <summary>Note legali complete</summary>
+      <p><strong>La mappa riporta informazioni pubbliche con la loro fonte. Non organizza, non promuove e non invita a partecipare ad alcuna iniziativa in particolare.</strong> Crede però che far sentire la propria voce in modo pacifico e non violento, nei limiti della legge, sia un diritto di tutti: riunirsi pacificamente, esprimere liberamente il proprio pensiero e scioperare sono garantiti dalla Costituzione (artt. 17, 21 e 40). Questo sito è uno strumento di informazione: non organizza, non convoca e non promuove alcuna iniziativa in particolare; sostiene soltanto il diritto di esprimersi con metodi pacifici e non violenti. Gli eventi sono segnalati da terzi o ripresi dalle fonti pubbliche indicate per ciascuno (comunicati, sindacati, stampa). Restano <em>Da verificare</em> finché un moderatore non controlla la fonte; anche <em>Verificato</em> indica soltanto che la fonte è stata riscontrata. La pubblicazione non implica approvazione né garanzia di liceità, svolgimento o esattezza. Il preavviso al Questore spetta ai promotori (art. 18 R.D. 773/1931, TULPS). Il sito riporta solo riunioni pacifiche e senz'armi (art. 17 Cost.) e non ospita contenuti che istighino a commettere reati (art. 414 c.p.); blocchi e occupazioni compaiono solo come avviso di possibili disagi, con fonte giornalistica o istituzionale, senza organizzatori né inviti a parteciparvi. Chi gestisce il sito non ha un obbligo generale di sorveglianza sui contenuti inseriti da terzi e rimuove o rende inaccessibili quelli illeciti non appena ne ha effettiva conoscenza (artt. 16-17 d.lgs. 70/2003; artt. 6 e 8 Reg. UE 2022/2065). Per segnalare un contenuto illecito (art. 16 Reg. UE 2022/2065) usa il pulsante «⚠️ Segnala» sull'evento oppure scrivi a <a class="email-legale" href="mailto:paginadellarivolta@gmail.com">paginadellarivolta@gmail.com</a>, indicando il link dell'evento e il motivo (<a href="regole.html#segnala-illeciti">tempi e procedura</a>).</p>
+    </details>
     <p><strong>Fonti.</strong> Segnalazioni della community e comunicati delle organizzazioni promotrici; calendari ufficiali degli scioperi nei servizi pubblici essenziali. Ricerca dei comuni: Nominatim. Fondo mappa: © contributori OpenStreetMap.</p>
     <p id="contatto" hidden></p>
     <div class="riserva" id="riserva">
@@ -167,6 +170,12 @@
     </div>
     <p class="piede__agg">Ultimo aggiornamento: <span id="ultimo-agg">—</span> · <a href="archivio.html">Archivio eventi passati</a> · <a href="regole.html">Regole della community</a> · <a href="modera.html" rel="nofollow">Area moderatori</a></p>
   </footer>
+
+  <nav class="barra-basso" aria-label="Scorciatoie">
+    <a href="#mappa" data-salta="mappa">🗺<span>Mappa</span></a>
+    <a href="#titolo-elenco" data-salta="elenco">📋<span>Elenco</span></a>
+    <button type="button" data-apri-aggiungi>＋<span>Aggiungi</span></button>
+  </nav>
 
   <!-- Sugli specchi si legge soltanto: per scrivere si va sul sito principale -->
   <dialog id="dlg-specchio" aria-labelledby="titolo-specchio">
@@ -337,11 +346,11 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
 
-  <script src="config.js?v=11"></script>
+  <script src="config.js?v=12"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
   <script src="rete.js?v=1"></script>
-  <script src="app.js?v=19"></script>
+  <script src="app.js?v=21"></script>
   <script src="sostieni.js?v=1"></script>
 </body>
 </html>

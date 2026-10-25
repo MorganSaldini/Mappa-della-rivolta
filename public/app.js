@@ -79,6 +79,17 @@
     $('#link-sostieni').href = CONFIG.linkSostieni;
     $('#sostieni').hidden = false;
     $('#barra-sostieni').hidden = false;
+    // Striscia in alto: si chiude e resta chiusa per 30 giorni su questo dispositivo
+    let chiusa = false;
+    try { chiusa = Number(localStorage.getItem('striscia-sostieni-chiusa') || 0) > Date.now() - 30 * 86400000; } catch (_) { /* memoria non disponibile */ }
+    if (!chiusa) {
+      $('#link-striscia').href = CONFIG.linkSostieni;
+      $('#striscia-sostieni').hidden = false;
+      $('#chiudi-striscia').addEventListener('click', () => {
+        $('#striscia-sostieni').hidden = true;
+        try { localStorage.setItem('striscia-sostieni-chiusa', String(Date.now())); } catch (_) { /* memoria non disponibile */ }
+      });
+    }
   }
   if (CONFIG.contattoRimozioni) {
     const c = $('#contatto');
@@ -374,15 +385,18 @@
     $('#filtro-azzera').hidden = !filtriAttivi();
     $('#filtro-conta').textContent = filtriAttivi() ? `${lista.length} di ${eventi.length} mostrate` : '';
     $('#filtro-riassunto').textContent = filtriAttivi() ? `· ${lista.length} di ${eventi.length} mostrate` : '';
-    // Contatori
+    // Contatori = filtro per tipo: i numeri sono di tutti gli eventi in programma (non cambiano filtrando)
     const attivi = lista.filter((e) => e.stato !== 'annullato');
     $('#totale').textContent = attivi.length;
     const conta = {};
-    attivi.forEach((e) => (conta[e.tipo] = (conta[e.tipo] || 0) + 1));
+    eventi.filter((e) => e.stato !== 'annullato').forEach((e) => (conta[e.tipo] = (conta[e.tipo] || 0) + 1));
     $('#contatori').innerHTML = Object.entries(TIPI)
       .filter(([k]) => conta[k])
-      .map(([k, t]) => `<li><span class="pallino" style="--c:${t.colore}"></span><b>${conta[k]}</b> ${esc(conta[k] === 1 ? t.nome.toLowerCase() : t.plurale)}</li>`)
+      .map(([k, t]) => `<button type="button" class="chip chip--tipo" data-filtro-tipo="${k}" aria-pressed="${filtri.tipi.has(k)}" style="--c:${t.colore}">` +
+        `<span class="chip__icona" aria-hidden="true">${t.icona}</span><b>${conta[k]}</b> ${esc(conta[k] === 1 ? t.nome.toLowerCase() : t.plurale)}</button>`)
       .join('');
+    const nCat = $('#n-sciopero-cat');
+    if (nCat) nCat.textContent = conta.sciopero_categoria || 0;
 
     // Marker
     if (gruppo) {
@@ -454,7 +468,7 @@
   }
 
   // Legenda
-  $('#legenda').innerHTML = Object.values(TIPI)
+  if ($('#legenda')) $('#legenda').innerHTML = Object.values(TIPI)
     .map((t) => `<div><span class="pallino" style="--c:${t.colore}"></span>${t.icona} ${esc(t.nome)}</div>`)
     .join('') + '<div class="tenue">tratteggiato = da verificare</div>';
 
@@ -615,6 +629,29 @@
       if (reg) fa.regione.value = reg;
     } catch { /* l'utente può compilare a mano */ }
   }
+
+  // Barra fissa in basso (telefono): scorciatoie
+  document.addEventListener('click', (ev) => {
+    if (ev.target.closest('[data-apri-aggiungi]')) { apriAggiungi(); return; }
+    const s = ev.target.closest('[data-salta]');
+    if (!s) return;
+    ev.preventDefault();
+    const dove = s.dataset.salta === 'mappa' ? $('#mappa') : $('#titolo-elenco');
+    dove.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
+  // "Perché ci si mobilita": testo breve, il resto con "Leggi di più"
+  document.querySelectorAll('.perche__voce').forEach((v) => {
+    const t = v.querySelector('p:not(.perche__dato):not(.perche__fonte)');
+    if (!t) return;
+    t.classList.add('perche__testo');
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'perche__altro'; b.textContent = 'Leggi di più'; b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', () => {
+      const aperto = t.classList.toggle('aperto');
+      b.textContent = aperto ? 'Meno' : 'Leggi di più'; b.setAttribute('aria-expanded', String(aperto));
+    });
+    t.after(b);
+  });
 
   function apriAggiungi() {
     $('#errore-aggiungi').textContent = '';

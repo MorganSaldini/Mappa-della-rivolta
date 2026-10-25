@@ -333,3 +333,107 @@ label.spunta input { width: auto; min-height: auto; }
 .dlg-sostieni { max-width: 440px; }
 .dlg-sostieni h2 { margin: 0; }
 .dlg-sostieni p { margin: 0; line-height: 1.45; }
+
+/* ===== Ritocco ottobre 2026: più semplice, prima la mappa ===== */
+/* Intro compatta */
+.intro { padding: 18px 0 8px; display: grid; gap: 6px; }
+.intro h1 { font-size: clamp(2rem, 6vw, 3.4rem); margin: 0; }
+.intro__sotto { margin: 0; }
+.intro .bottone { justify-self: start; min-height: 40px; padding: 6px 14px; }
+.cerca { margin-top: 8px; }
+.cerca__form .bottone[type="submit"] { background: var(--rosso); border-color: var(--rosso); }
+
+/* Tipi: contatori che filtrano */
+.contatori { padding: 0 0 10px; }
+.contatori__totale { font-size: 1rem; }
+.contatori__totale strong { font-size: 1.9rem; }
+.contatori__lista { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip--tipo { background: var(--bianco); border: 1.5px solid var(--bordo); border-left: 6px solid var(--c); min-height: 40px; font-size: .92rem; }
+.chip--tipo b { font-size: 1rem; }
+.chip--tipo[aria-pressed="true"] { background: var(--c); border-color: var(--c); color: #fff; }
+.chip__icona { font-size: 1rem; line-height: 1; }
+.legenda { display: none !important; }
+.filtri { padding: 6px 12px; margin: 0 0 10px; }
+.filtri > summary { font-weight: 600; color: var(--tenue); }
+
+/* Mappa più vicina al titolo su telefono */
+@media (max-width: 759px) {
+  #mappa { height: 62vh; min-height: 340px; }
+  .aggiungi-flottante { display: none; } /* su telefono c'è la barra in basso */
+}
+
+/* Barra fissa in basso, solo telefono */
+.barra-basso { display: none; }
+@media (max-width: 759px) {
+  .barra-basso {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 1500;
+    background: var(--inchiostro); padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); gap: 6px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,.25);
+  }
+  .barra-basso a, .barra-basso button {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 48px;
+    border: 0; border-radius: 10px; background: transparent; color: #fff; text-decoration: none;
+    font: 700 .8rem var(--corpo); cursor: pointer; font-size: 1.15rem;
+  }
+  .barra-basso span { font-size: .78rem; }
+  .barra-basso button { background: var(--rosso); }
+  body { padding-bottom: 72px; }
+  .avviso-ok { bottom: 84px; }
+}
+
+/* Regole in breve più corte */
+.lato__regole li { margin-bottom: 6px; }
+
+/* Sostieni discreto */
+.sostieni {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px;
+  background: var(--bianco); color: var(--testo); border: 1px solid var(--bordo); border-left: 6px solid var(--rosso); padding: 16px 18px;
+}
+.sostieni > div { flex: 1 1 320px; }
+.sostieni h2 { color: var(--inchiostro); font-size: 1.4rem; text-transform: none; margin-bottom: 4px; }
+.sostieni p { margin: 0 0 4px; }
+.sostieni .tenue { color: var(--tenue); }
+.sostieni__bottone { margin: 0; }
+
+/* Perché ci si mobilita: numeri grandi, testo breve */
+.perche__dato b { font-size: 2.6rem; }
+.perche__testo { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.perche__testo.aperto { display: block; }
+.perche__altro { align-self: flex-start; margin: -4px 0 10px; padding: 4px 0; border: 0; background: none; color: var(--rosso-scuro); font: 700 .9rem var(--corpo); text-decoration: underline; cursor: pointer; min-height: 32px; }
+
+/* Scheda evento (popup) più pulita */
+.pop h3 { font-size: 1.35rem; }
+.pop__azioni { gap: 4px; }
+.pop__azioni .bottone { flex: 1 1 auto; min-height: 38px; padding: 4px 8px; font-size: .85rem; }
+
+/* Note legali richiudibili */
+.piede__legale { max-width: 1068px; margin: 0 auto 10px; }
+.piede__legale summary { cursor: pointer; color: #fff; font-weight: 700; min-height: 32px; }
+.piede__legale p { margin-top: 6px; }
+/* Telefono: la mappa entra nella prima schermata */
+@media (max-width: 1199px) { .lato { display: none; } }
+@media (max-width: 759px) {
+  .intro { padding-top: 12px; grid-template-columns: 1fr auto; align-items: center; }
+  .intro h1 { font-size: 1.9rem; border-left-width: 6px; padding-left: 8px; }
+  .intro__sotto { display: none; }
+  .intro .bottone { grid-column: 2; grid-row: 1; font-size: .85rem; min-height: 36px; padding: 4px 10px; }
+  .cerca { margin-top: 4px; }
+  .cerca__form { flex-wrap: nowrap; gap: 6px; }
+  .cerca__form input { flex: 1 1 auto; min-width: 0; }
+  .cerca__form .bottone { flex: 0 0 auto !important; padding: 8px 12px; }
+  .cerca__msg { min-height: 0; margin: 4px 0; }
+  .contatori__totale { margin-bottom: 6px; }
+  .contatori__totale strong { font-size: 1.6rem; }
+  .contatori__lista { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 0 16px 4px; scrollbar-width: none; }
+  .contatori__lista::-webkit-scrollbar { display: none; }
+  .chip--tipo { flex: 0 0 auto; }
+}
+/* Su schermi larghi c'è spazio: testo intero, niente "Leggi di più" */
+@media (min-width: 760px) { .perche__testo { display: block; -webkit-line-clamp: unset; } .perche__altro { display: none; } }
+
+/* Striscia per le donazioni sotto la barra */
+.striscia-sostieni { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 6px 8px 6px 16px; background: #fbe9e7; border-bottom: 1px solid #f0c4be; font-size: .95rem; }
+.striscia-sostieni p { margin: 0; text-align: center; }
+.striscia-sostieni a { font-weight: 700; color: var(--rosso-scuro); }
+.striscia-sostieni__chiudi { flex: none; border: 0; background: none; font-size: 1.05rem; color: var(--tenue); cursor: pointer; min-width: 40px; min-height: 40px; }
+@media (max-width: 759px) { .striscia-sostieni { font-size: .85rem; justify-content: space-between; } }

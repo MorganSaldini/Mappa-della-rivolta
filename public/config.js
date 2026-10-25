@@ -3,7 +3,7 @@
 // Ogni riga deve avere la forma:  nome: 'valore',   (apice, valore, apice, virgola)
 window.CONFIG = {
   // Nome e sottotitolo mostrati in alto
-  nomeProgetto: 'Mappa delle mobilitazioni',
+  nomeProgetto: 'Mappa della Rivolta',
   sottotitolo: 'Cortei, presidi, scioperi e assemblee in tutta Italia, segnalati da chi li organizza e da chi partecipa.',
 
   // Pulsante "Partecipa": link a un canale Telegram, a un sito o a un gruppo. Lascia '' per nasconderlo.
