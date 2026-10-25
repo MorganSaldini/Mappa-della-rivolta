@@ -437,3 +437,6 @@ label.spunta input { width: auto; min-height: auto; }
 .striscia-sostieni a { font-weight: 700; color: var(--rosso-scuro); }
 .striscia-sostieni__chiudi { flex: none; border: 0; background: none; font-size: 1.05rem; color: var(--tenue); cursor: pointer; min-width: 40px; min-height: 40px; }
 @media (max-width: 759px) { .striscia-sostieni { font-size: .85rem; justify-content: space-between; } }
+
+/* Telefono: niente + e − sulla mappa (si ingrandisce con due dita) così non coprono la scheda dell'evento */
+@media (max-width: 759px) { #mappa .leaflet-control-zoom { display: none; } }

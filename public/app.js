@@ -131,6 +131,20 @@
     mappa.on('click focus', () => mappa.scrollWheelZoom.enable());
     gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 }) : L.layerGroup();
     mappa.addLayer(gruppo);
+    // La scheda dell'evento deve stare tutta dentro la mappa (anche aperta da un link o dopo uno zoom)
+    mappa.on('popupopen', (ev) => {
+      setTimeout(() => {
+        const el = ev.popup.getElement && ev.popup.getElement();
+        if (!el) return;
+        const a = el.getBoundingClientRect(), m = mappa.getContainer().getBoundingClientRect();
+        const sx = window.matchMedia('(max-width: 759px)').matches ? 12 : 56; // a sinistra ci sono + e −
+        let dx = 0, dy = 0;
+        if (a.right > m.right - 12) dx = a.right - (m.right - 12);
+        if (a.left - dx < m.left + sx) dx = a.left - (m.left + sx);
+        if (a.top < m.top + 12) dy = a.top - (m.top + 12);
+        if (dx || dy) mappa.panBy([dx, dy]);
+      }, 350);
+    });
   }
 
   function icona(e) {
@@ -404,7 +418,7 @@
       for (const k of Object.keys(markerPerId)) delete markerPerId[k];
       lista.forEach((e) => {
         const m = L.marker([e.lat, e.lng], { icon: icona(e), title: e.titolo, alt: e.titolo });
-        m.bindPopup(() => htmlPopup(e), { maxWidth: 300 });
+        m.bindPopup(() => htmlPopup(e), { maxWidth: Math.min(300, window.innerWidth - 110), autoPanPaddingTopLeft: [56, 16], autoPanPaddingBottomRight: [16, 16] });
         markerPerId[e.id] = m;
         gruppo.addLayer(m);
       });
