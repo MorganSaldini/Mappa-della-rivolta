@@ -1003,7 +1003,7 @@
       ],
       "fonte": "https://www.teleclubitalia.it/giugliano-studenti-dellarea-nord-protestano/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-24T14:56:09",
       "gruppo": null
     },
@@ -1047,11 +1047,14 @@
       "lat": 43.77348,
       "lng": 11.24959,
       "posizione_approssimativa": 0,
-      "organizzatori": [],
+      "organizzatori": [
+        "Movimento SAF",
+        "Collettivi studenteschi"
+      ],
       "fonte": "https://www.facebook.com/share/p/1CQbT5T3oJ/",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-25T13:24:35",
+      "aggiornato_il": "2026-10-25T20:51:39",
       "gruppo": null
     },
     {
@@ -1115,10 +1118,10 @@
       "lng": 13.3633,
       "posizione_approssimativa": 0,
       "organizzatori": [],
-      "fonte": "https://vm.tiktok.com/ZN8DyWwDG/",
-      "stato": "da_verificare",
+      "fonte": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoQEB6zswFbKGT_tknjglFRqtAYl2mn_1KV5mwzPAekQTdCuM25vLaAVriCbiSlBvdy8RYOTJTmeTD6GWkR7f2tGNjXww_AU6ardEMeIHpIt9AK34Ns5TxXoytsWVxxnId5cjW_eD51YPaDocsqarlcmWzieQDArb2jv57ekto1ESUP2WpcZxwY3pnnia_1jVoYOhvzvSw_4G0al3cxI-BL0SmQ&ved=2ahUKEw",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-25T18:56:46",
+      "aggiornato_il": "2026-10-25T20:43:13",
       "gruppo": null
     },
     {
@@ -1690,9 +1693,9 @@
         "Studenti"
       ],
       "fonte": "https://www.instagram.com/p/De65rznAanL/?xtok=MzhiOW53cm9hdnpv",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-25T15:23:50",
+      "aggiornato_il": "2026-10-25T20:43:28",
       "gruppo": null
     },
     {
@@ -1720,6 +1723,27 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:37",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-28-perugia-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero Studentesco",
+      "data": "2026-10-28",
+      "ora_inizio": "08:30",
+      "ora_fine": "23:59",
+      "comune": "Perugia",
+      "provincia": "PG",
+      "regione": "Umbria",
+      "luogo": "Piazza IV Novembre",
+      "lat": 43.11205,
+      "lng": 12.38877,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DezzQ9_x2Cd/?exln=a2dhYzU4MXdoMzI1",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:08:46",
       "gruppo": null
     },
     {
@@ -2518,9 +2542,32 @@
       ],
       "fonte": "https://www.instagram.com/p/De1cLSUCHr8/?mdxt=ZnFiZ2o0dGU0dzVj",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-24T14:56:11",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-livorno-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "06:00",
+      "ora_fine": null,
+      "comune": "Livorno",
+      "provincia": "LI",
+      "regione": "Toscana",
+      "luogo": "Rotatoria ponte genova",
+      "lat": 42.79024,
+      "lng": 10.34022,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
     },
     {
       "id": "2026-10-30-livorno-presidio-01",
@@ -2773,7 +2820,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De3thW2q6Ti/?exln=Y3AyNGEwOWUxbHhk",
       "stato": "verificato",
-      "conferme": 8,
+      "conferme": 11,
       "aggiornato_il": "2026-10-25T20:06:32",
       "gruppo": null
     },
@@ -2957,33 +3004,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-brescia-sciopero_generale-02",
-      "tipo": "sciopero_generale",
-      "titolo": "CORTEO SCIOPERO GENERALE",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": "00:00",
-      "comune": "Brescia",
-      "provincia": "BS",
-      "regione": "Lombardia",
-      "luogo": "metro San Faustino",
-      "lat": 45.54502,
-      "lng": 10.22017,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB",
-        "Bresciainpiazza",
-        "Cos",
-        "magazzino 47",
-        "cobas"
-      ],
-      "fonte": "https://www.instagram.com/p/DezyActHFFS/?psln=Ymc0NnVqbWE0Z2xh",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-25T16:01:58",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-30-perugia-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale e corteo",
@@ -3003,6 +3023,98 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T19:31:34",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-grosseto-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Grosseto",
+      "provincia": "GR",
+      "regione": "Toscana",
+      "luogo": "Piazza Rosselli",
+      "lat": 42.76393,
+      "lng": 11.11238,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
+    },
+    {
+      "id": "2026-10-30-siena-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Siena",
+      "provincia": "SI",
+      "regione": "Toscana",
+      "luogo": "Terminal bus pescaia",
+      "lat": 43.16721,
+      "lng": 11.46756,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
+    },
+    {
+      "id": "2026-10-30-pisa-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Pisa",
+      "provincia": "PI",
+      "regione": "Toscana",
+      "luogo": "Piazza Gaza (XX settembre)",
+      "lat": 43.47147,
+      "lng": 10.67979,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
+    },
+    {
+      "id": "2026-10-30-livorno-sciopero_generale-03",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Livorno",
+      "provincia": "LI",
+      "regione": "Toscana",
+      "luogo": "Piazza Cavour",
+      "lat": 43.54732,
+      "lng": 10.31137,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:15",
+      "gruppo": "g-31851000ad43"
     },
     {
       "id": "2026-10-30-pisa-sciopero_categoria-01",
@@ -3115,7 +3227,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1J2uRB9ZSo/",
       "stato": "verificato",
-      "conferme": 19,
+      "conferme": 20,
       "aggiornato_il": "2026-10-24T14:35:53",
       "gruppo": null
     },
@@ -3148,7 +3260,7 @@
       "titolo": "Sciopero generale contro riarmo e carovita",
       "data": "2026-10-30",
       "ora_inizio": "09:00",
-      "ora_fine": null,
+      "ora_fine": "00:00",
       "comune": "Brescia",
       "provincia": "BS",
       "regione": "Lombardia",
@@ -3165,8 +3277,8 @@
       ],
       "fonte": "https://www.radiondadurto.org/2026/10/21/sciopero-generale-venerdi-30-ottobre-lusb-lancia-un-corteo-anche-a-brescia/",
       "stato": "verificato",
-      "conferme": 4,
-      "aggiornato_il": "2026-10-23T02:35:36",
+      "conferme": 5,
+      "aggiornato_il": "2026-10-25T20:51:27",
       "gruppo": null
     },
     {
@@ -3851,6 +3963,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-piombino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "16:00",
+      "ora_fine": null,
+      "comune": "Piombino",
+      "provincia": "LI",
+      "regione": "Toscana",
+      "luogo": "Piazzale premuda",
+      "lat": 42.92922,
+      "lng": 10.54455,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
+    },
+    {
       "id": "2026-10-24-bolzano-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro il caro vita",
@@ -3870,6 +4005,29 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-22T18:52:29",
       "gruppo": null
+    },
+    {
+      "id": "2026-10-30-massa-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Massa",
+      "provincia": "MS",
+      "regione": "Toscana",
+      "luogo": "Piazza Garibaldi",
+      "lat": 44.20656,
+      "lng": 9.96804,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T21:53:14",
+      "gruppo": "g-31851000ad43"
     },
     {
       "id": "2026-10-30-bergamo-sciopero_generale-01",
@@ -4142,9 +4300,9 @@
         "Coordinamento collettivo per la pace Tivoli - Guidonia Monte"
       ],
       "fonte": "https://tivoli.globalist.it/eventi-cultura/2026/10/22/la-voce-dei-popoli-contro-larroganza-delle-armi-torna-la-marcia-della-pace-tra-tivoli-e-guidonia/?fbclid=IwdGRjcAVLNUpjbGNrBUsz8WV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEeS5AJ7P0B_LeuXxvHO97m7E-UaXkA1C4suVXb88rZef8yUrNm4CGK30ufKz0",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-25T20:19:09",
+      "aggiornato_il": "2026-10-25T20:44:03",
       "gruppo": null
     },
     {
@@ -5146,8 +5304,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-25T20:19:09",
+  "ultimo_aggiornamento": "2026-10-25T21:53:15",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-25T19:31:15Z"
+  "copia_del": "2026-10-25T22:00:05Z"
 }
