@@ -416,7 +416,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De38eWUONBF/?mdxt=MTllb25uMWRpbjF5bQ==",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-24T17:09:57",
       "gruppo": null
     },
@@ -2802,6 +2802,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-cosenza-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Cosenza",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "Piazza Loreto",
+      "lat": 39.30511,
+      "lng": 16.25036,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T02:56:05",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-pisa-sciopero_categoria-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e carovita",
@@ -4707,8 +4728,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-24T20:34:47",
+  "ultimo_aggiornamento": "2026-10-25T02:56:05",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-24T23:36:23Z"
+  "copia_del": "2026-10-25T01:35:04Z"
 }
