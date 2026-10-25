@@ -2,27 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-10-25-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
-      "data": "2026-10-25",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-24T14:56:04",
-      "gruppo": "g-8c761a0dbd11"
-    },
-    {
       "id": "2026-10-25-milano-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea cittadina (infrastrutture della resistenza)",
@@ -83,7 +62,7 @@
       "organizzatori": [],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiRk-KVqtCXAxXN_7sIHUk6J6MQFnoECCAQAQ&url=https%3A%2F%2Fwww.lacnews24.it%2Fcronaca%2Fanche-i-sindaci-con-agricoltori-e-autotrasportatori-a-san-marco-argentano-si-deve-intervenire-subito-lchrwzmw&usg=AOvVaw1QTK8ym",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-23T16:46:13",
       "gruppo": "g-35c399ac6150"
     },
@@ -233,6 +212,27 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-22T18:51:59",
       "gruppo": "g-d4f35694cfa6"
+    },
+    {
+      "id": "2026-10-25-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-25",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T11:44:04",
+      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-25-troina-presidio-01",
@@ -415,9 +415,9 @@
         "GC"
       ],
       "fonte": "https://www.instagram.com/p/De38eWUONBF/?mdxt=MTllb25uMWRpbjF5bQ==",
-      "stato": "da_verificare",
-      "conferme": 2,
-      "aggiornato_il": "2026-10-24T17:09:57",
+      "stato": "verificato",
+      "conferme": 3,
+      "aggiornato_il": "2026-10-25T11:43:19",
       "gruppo": null
     },
     {
@@ -538,27 +538,6 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-22T18:52:33",
       "gruppo": null
-    },
-    {
-      "id": "2026-10-26-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
-      "data": "2026-10-26",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-24T14:56:05",
-      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-26-napoli-assemblea-01",
@@ -754,6 +733,27 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-22T00:50:13",
       "gruppo": "g-5ae578a94cc3"
+    },
+    {
+      "id": "2026-10-26-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T11:44:04",
+      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-26-troina-presidio-01",
@@ -1034,6 +1034,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-26-firenze-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per una scuola migliore",
+      "data": "2026-10-26",
+      "ora_inizio": "13:00",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Piazza santa maria novella",
+      "lat": 43.77348,
+      "lng": 11.24959,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/1CQbT5T3oJ/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:35",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-26-taranto-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea studentesca verso lo sciopero del 30 ottobre (\"Soldi alla scuola non alla guerra\")",
@@ -1130,27 +1151,6 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-21T02:41:40",
       "gruppo": null
-    },
-    {
-      "id": "2026-10-27-baiano-altro-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
-      "data": "2026-10-27",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Baiano",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "Casello Autostradale",
-      "lat": 40.94202,
-      "lng": 14.61905,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.deanotizie.it/news/2026/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-24T14:56:06",
-      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-27-domodossola-sciopero_generale-01",
@@ -1319,6 +1319,27 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-22T00:50:13",
       "gruppo": "g-5ae578a94cc3"
+    },
+    {
+      "id": "2026-10-27-baiano-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: protesta degli autotrasportatori al casello",
+      "data": "2026-10-27",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Baiano",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Casello Autostradale",
+      "lat": 40.94202,
+      "lng": 14.61905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.deanotizie.it/news/2026/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T11:44:04",
+      "gruppo": "g-8c761a0dbd11"
     },
     {
       "id": "2026-10-27-troina-presidio-01",
@@ -1958,7 +1979,7 @@
       ],
       "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
       "stato": "verificato",
-      "conferme": 14,
+      "conferme": 15,
       "aggiornato_il": "2026-10-22T18:52:09",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -2576,6 +2597,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-trieste-picchetto-01",
+      "tipo": "picchetto",
+      "titolo": "Fuori dalle scuole per lo sciopero generale",
+      "data": "2026-10-30",
+      "ora_inizio": "07:45",
+      "ora_fine": "08:15",
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "",
+      "lat": 45.65442,
+      "lng": 13.77712,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi Trieste"
+      ],
+      "fonte": "https://www.instagram.com/p/De3wbpuNrT5/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:18",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-padova-sciopero_generale-01",
       "tipo": "corteo",
       "titolo": "Sciopero per il diritto all'istruzione e maggiori fondi alla scuola",
@@ -2667,30 +2711,6 @@
       "stato": "verificato",
       "conferme": 8,
       "aggiornato_il": "2026-10-22T18:52:24",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-padova-corteo-04",
-      "tipo": "corteo",
-      "titolo": "Corteo per lo sciopero della scuola Cobas",
-      "data": "2026-10-30",
-      "ora_inizio": "08:30",
-      "ora_fine": null,
-      "comune": "Padova",
-      "provincia": "PD",
-      "regione": "Veneto",
-      "luogo": "Stazione ferroviaria",
-      "lat": 45.4177,
-      "lng": 11.8806,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Cobas Scuola Veneto",
-        "CESP"
-      ],
-      "fonte": "https://www.nordest24.it/padova-sciopero-generale-cobas-30-ottobre-2026-scuola-trasporti",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:26",
       "gruppo": null
     },
     {
@@ -2826,6 +2846,53 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-padova-corteo-04",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero della scuola Cobas",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Stazione ferroviaria",
+      "lat": 45.4177,
+      "lng": 11.8806,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas Scuola Veneto",
+        "CESP"
+      ],
+      "fonte": "https://www.nordest24.it/padova-sciopero-generale-cobas-30-ottobre-2026-scuola-trasporti",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T11:44:27",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-piacenza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Piacenza",
+      "provincia": "PC",
+      "regione": "Emilia-Romagna",
+      "luogo": "Via Scalabrini (Liceo Artistico Cassinari)",
+      "lat": 45.0482,
+      "lng": 9.70099,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Controtendenza Piacenza"
+      ],
+      "fonte": "https://www.instagram.com/p/DewUUcIM2SH/?psln=dXp0d2QzdTZ0aHh4",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-25T11:44:35",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-cosenza-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero contro guerra e carovita",
@@ -2840,10 +2907,31 @@
       "lng": 16.25036,
       "posizione_approssimativa": 0,
       "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DezWnS5MTmr/?exln=aHhuMWg0aWpqeDMx",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:58",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-mestre-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Mestre",
+      "provincia": "VE",
+      "regione": "Veneto",
+      "luogo": "Piazzale Cialdini",
+      "lat": 45.49362,
+      "lng": 12.24609,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
       "fonte": null,
       "stato": "da_verificare",
       "conferme": 0,
-      "aggiornato_il": "2026-10-25T02:56:05",
+      "aggiornato_il": "2026-10-25T11:04:59",
       "gruppo": null
     },
     {
@@ -2957,7 +3045,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1J2uRB9ZSo/",
       "stato": "verificato",
-      "conferme": 16,
+      "conferme": 18,
       "aggiornato_il": "2026-10-24T14:35:53",
       "gruppo": null
     },
@@ -3054,7 +3142,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1eiZSIZQM/?cplk=MXZjbHJsNXg2YXJ1eQ==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T16:34:22",
       "gruppo": null
     },
@@ -3077,31 +3165,8 @@
       ],
       "fonte": "https://www.instagram.com/p/Dey_-eEDIgC/?xtok=bzJ1b25xNXkwcGhh",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-24T14:32:45",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-cagliari-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo per lo sciopero della scuola Cobas",
-      "data": "2026-10-30",
-      "ora_inizio": "09:30",
-      "ora_fine": null,
-      "comune": "Cagliari",
-      "provincia": "CA",
-      "regione": "Sardegna",
-      "luogo": "Piazza Garibaldi",
-      "lat": 39.2186,
-      "lng": 9.1185,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Cobas Scuola"
-      ],
-      "fonte": "https://www.vocedellascuola.it/cobas-scuola-sciopero-il-30-ottobre-corteo-a-cagliari",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:25",
       "gruppo": null
     },
     {
@@ -3195,7 +3260,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 24,
+      "conferme": 26,
       "aggiornato_il": "2026-10-22T18:52:22",
       "gruppo": null
     },
@@ -3364,6 +3429,29 @@
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
     {
+      "id": "2026-10-30-cagliari-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero della scuola Cobas",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Cagliari",
+      "provincia": "CA",
+      "regione": "Sardegna",
+      "luogo": "Piazza Garibaldi",
+      "lat": 39.2186,
+      "lng": 9.1185,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas Scuola"
+      ],
+      "fonte": "https://www.vocedellascuola.it/cobas-scuola-sciopero-il-30-ottobre-corteo-a-cagliari",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T11:44:55",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e caro vita",
@@ -3497,7 +3585,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 37,
+      "conferme": 38,
       "aggiornato_il": "2026-10-21T01:54:28",
       "gruppo": null
     },
@@ -3613,7 +3701,7 @@
       "organizzatori": [],
       "fonte": "https://vm.tiktok.com/ZN8AUCQ5M/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-22T18:52:29",
       "gruppo": null
     },
@@ -3871,27 +3959,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-11-07-torino-altro-01",
-      "tipo": "altro",
-      "titolo": "caccia al maranza",
-      "data": "2026-11-07",
-      "ora_inizio": "15:30",
-      "ora_fine": "03:00",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "piazza castello",
-      "lat": 45.07034,
-      "lng": 7.68596,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-24T20:34:47",
-      "gruppo": null
-    },
-    {
       "id": "2026-11-07-gorizia-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo antifascista",
@@ -3910,7 +3977,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dew907ACAzi/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T15:26:56",
       "gruppo": null
     },
@@ -4086,121 +4153,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-11-20-catanzaro-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale CGIL",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Catanzaro",
-      "provincia": "CZ",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 38.9098,
-      "lng": 16.5877,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CGIL Calabria"
-      ],
-      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:26",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
-    },
-    {
-      "id": "2026-11-20-cosenza-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale CGIL",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Cosenza",
-      "provincia": "CS",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 39.2983,
-      "lng": 16.2537,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CGIL Calabria"
-      ],
-      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:26",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
-    },
-    {
-      "id": "2026-11-20-crotone-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale CGIL",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Crotone",
-      "provincia": "KR",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 39.0808,
-      "lng": 17.127,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CGIL Calabria"
-      ],
-      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:26",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
-    },
-    {
-      "id": "2026-11-20-reggio-calabria-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale CGIL",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Reggio Calabria",
-      "provincia": "RC",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 38.1113,
-      "lng": 15.6473,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CGIL Calabria"
-      ],
-      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:27",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
-    },
-    {
-      "id": "2026-11-20-vibo-valentia-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione per lo sciopero generale CGIL",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Vibo Valentia",
-      "provincia": "VV",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 38.6762,
-      "lng": 16.1007,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CGIL Calabria"
-      ],
-      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T06:00:27",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
-    },
-    {
       "id": "2026-11-20-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale CGIL",
@@ -4292,6 +4244,121 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-24T14:56:20",
       "gruppo": null
+    },
+    {
+      "id": "2026-11-20-catanzaro-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Catanzaro",
+      "provincia": "CZ",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.9098,
+      "lng": 16.5877,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:01",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-cosenza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cosenza",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.2983,
+      "lng": 16.2537,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:01",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-crotone-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Crotone",
+      "provincia": "KR",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.0808,
+      "lng": 17.127,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:01",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-reggio-calabria-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Reggio Calabria",
+      "provincia": "RC",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.1113,
+      "lng": 15.6473,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T13:24:01",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
+    },
+    {
+      "id": "2026-11-20-vibo-valentia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Vibo Valentia",
+      "provincia": "VV",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 38.6762,
+      "lng": 16.1007,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL Calabria"
+      ],
+      "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-25T13:24:01",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
     },
     {
       "id": "2026-11-20-firenze-sciopero_generale-01",
@@ -4890,8 +4957,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-25T06:00:27",
+  "ultimo_aggiornamento": "2026-10-25T13:24:58",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-25T06:46:27Z"
+  "copia_del": "2026-10-25T12:30:21Z"
 }
