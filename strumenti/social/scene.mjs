@@ -1,0 +1,14 @@
+import { chromium } from 'playwright-core'; import { apri } from './cattura.mjs';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const p = await apri(b); const shot = (n) => p.screenshot({ path: `out/sc-${n}.png` });
+await p.evaluate(() => { const x = document.querySelector('#chiudi-striscia'); x && x.click(); });
+await p.waitForTimeout(400); await shot('a-home');
+await p.click('[data-filtro-tipo="sciopero_generale"]'); await p.waitForTimeout(1200); await shot('b-filtro');
+await p.click('[data-filtro-tipo="sciopero_generale"]'); await p.waitForTimeout(500);
+await p.fill('#campo-cerca', 'Bologna'); await p.click('#form-cerca button[type=submit]').catch(() => p.press('#campo-cerca', 'Enter')); await p.waitForTimeout(2500); await shot('c-cerca');
+await p.evaluate(() => document.querySelector('#box-filtri').scrollIntoView({ block: 'start' })); await p.evaluate(() => { const d = document.querySelector('#box-filtri'); if (d.tagName === 'DETAILS') d.open = true; else d.querySelector('summary,button')?.click(); }); await p.waitForTimeout(600); await p.evaluate(() => window.scrollBy(0, -80)); await shot('d-filtri');
+await p.evaluate(() => { document.querySelectorAll('details.giorno-box').forEach((d) => { d.open = /30 OTTOBRE/i.test(d.querySelector('summary').textContent); }); const d = [...document.querySelectorAll('details.giorno-box')].find((d) => d.open); document.querySelector('#titolo-elenco').scrollIntoView({ block: 'start' }); window.scrollBy(0, -70); }); await p.waitForTimeout(500); await shot('e-elenco');
+await p.evaluate(() => document.querySelector('#titolo-perche').scrollIntoView({ block: 'start' })); await p.evaluate(() => window.scrollBy(0, -70)); await p.waitForTimeout(500); await shot('f-perche');
+await p.evaluate(() => document.querySelector('a[href="archivio.html"].bottone').scrollIntoView({ block: 'center' })); await p.waitForTimeout(500); await shot('g-archivio');
+await p.evaluate(() => window.scrollTo(0, 0)); await p.click('[data-apri-aggiungi]'); await p.waitForTimeout(1500); await shot('h-aggiungi');
+await b.close();
