@@ -980,7 +980,7 @@
       "organizzatori": [],
       "fonte": "https://www.facebook.com/share/p/19Y48ehoUQ/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T15:26:49",
       "gruppo": null
     },
@@ -1651,6 +1651,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-28-pesaro-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero studentesco generale",
+      "data": "2026-10-28",
+      "ora_inizio": "07:40",
+      "ora_fine": null,
+      "comune": "Pesaro",
+      "provincia": "PU",
+      "regione": "Marche",
+      "luogo": "Liceo artistico Mengaroni",
+      "lat": 43.90981,
+      "lng": 12.91312,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fgc",
+        "Studenti"
+      ],
+      "fonte": "https://www.instagram.com/p/De65rznAanL/?xtok=MzhiOW53cm9hdnpv",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-25T15:23:50",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-28-napoli-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Air Campania",
@@ -1675,6 +1699,29 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:37",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-28-pavia-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "ASSEMBLEA PUBBLICA contro guerra, riarmo e caro vita.",
+      "data": "2026-10-28",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Pavia",
+      "provincia": "PV",
+      "regione": "Lombardia",
+      "luogo": "Via dei Mille 124, Circolo Ghinaglia",
+      "lat": 45.17677,
+      "lng": 9.14992,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "PCR Pavia"
+      ],
+      "fonte": "https://www.instagram.com/p/De6rtjbjBrr/?xtok=MTZhcG9qamh4bGRmcA==",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-25T15:12:51",
       "gruppo": null
     },
     {
@@ -1955,33 +2002,6 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-17T01:27:45",
       "gruppo": null
-    },
-    {
-      "id": "2026-10-30-torino-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero generale contro il carovita",
-      "data": "2026-10-30",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Piazza castello",
-      "lat": 45.07159,
-      "lng": 7.68468,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB",
-        "USB Pubblico Impiego",
-        "USB PI",
-        "USI-CIT",
-        "USI Educazione"
-      ],
-      "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
-      "stato": "verificato",
-      "conferme": 15,
-      "aggiornato_il": "2026-10-22T18:52:09",
-      "gruppo": "g-usb-sciopero-2026-10-30"
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-02",
@@ -2477,7 +2497,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1cLSUCHr8/?mdxt=ZnFiZ2o0dGU0dzVj",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-24T14:56:11",
       "gruppo": null
     },
@@ -2524,7 +2544,7 @@
       ],
       "fonte": "https://www.parmatoday.it/attualita/sciopero-generale-30-ottobre-2026.html",
       "stato": "verificato",
-      "conferme": 18,
+      "conferme": 19,
       "aggiornato_il": "2026-10-22T18:52:15",
       "gruppo": null
     },
@@ -2753,7 +2773,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DeuYCh0DW3g/?exln=MW16ZHJydDhpamJ0Mg==",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-23T15:26:55",
       "gruppo": null
     },
@@ -2888,50 +2908,35 @@
       ],
       "fonte": "https://www.instagram.com/p/DewUUcIM2SH/?psln=dXp0d2QzdTZ0aHh4",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-25T11:44:35",
       "gruppo": null
     },
     {
-      "id": "2026-10-30-cosenza-sciopero_generale-01",
+      "id": "2026-10-30-brescia-sciopero_generale-02",
       "tipo": "sciopero_generale",
-      "titolo": "Sciopero contro guerra e carovita",
+      "titolo": "CORTEO SCIOPERO GENERALE",
       "data": "2026-10-30",
       "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Cosenza",
-      "provincia": "CS",
-      "regione": "Calabria",
-      "luogo": "Piazza Loreto",
-      "lat": 39.30511,
-      "lng": 16.25036,
+      "ora_fine": "00:00",
+      "comune": "Brescia",
+      "provincia": "BS",
+      "regione": "Lombardia",
+      "luogo": "metro San Faustino",
+      "lat": 45.54502,
+      "lng": 10.22017,
       "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DezWnS5MTmr/?exln=aHhuMWg0aWpqeDMx",
+      "organizzatori": [
+        "USB",
+        "Bresciainpiazza",
+        "Cos",
+        "magazzino 47",
+        "cobas"
+      ],
+      "fonte": "https://www.instagram.com/p/DezyActHFFS/?psln=Ymc0NnVqbWE0Z2xh",
       "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T13:24:58",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-mestre-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero generale",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Mestre",
-      "provincia": "VE",
-      "regione": "Veneto",
-      "luogo": "Piazzale Cialdini",
-      "lat": 45.49362,
-      "lng": 12.24609,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": null,
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-25T11:04:59",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-25T16:01:58",
       "gruppo": null
     },
     {
@@ -3045,7 +3050,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1J2uRB9ZSo/",
       "stato": "verificato",
-      "conferme": 18,
+      "conferme": 19,
       "aggiornato_il": "2026-10-24T14:35:53",
       "gruppo": null
     },
@@ -3170,6 +3175,77 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-cosenza-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Cosenza",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "Piazza Loreto",
+      "lat": 39.30511,
+      "lng": 16.25036,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DezWnS5MTmr/?exln=aHhuMWg0aWpqeDMx",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T15:13:38",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-mestre-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Mestre",
+      "provincia": "VE",
+      "regione": "Veneto",
+      "luogo": "Piazzale Cialdini",
+      "lat": 45.49362,
+      "lng": 12.24609,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkwEB6zswFfdIEDFtmIcF6kCkW_Z9FHkdhoHNE5AC21nFJL6JWkc-5Q0MgNhTQMFUDzYbIKfWolJM8V5ArkjCL28x-ULOEo71O2l8SgpFXDPG_4kOxJJUEOYOPHh5dXaKh0w3runMsMlegD_3VFnnr46o3I8maOqKjdphW-StlduNLJY42E2tG5R8u9z5PBtzntF2skk&ved=2ahUKEwiv4-6QrdWXAxXulP0HH",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T15:14:23",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-torino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Gaza ( piazza palazzo di città)",
+      "lat": 45.07159,
+      "lng": 7.68468,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.facebook.com/unionesindacaledibase/posts/30-ottobre-%C3%A8-sciopero-generalelunione-sindacale-di-base-ha-proclamato-per-venerd/1551184457040871/",
+      "stato": "verificato",
+      "conferme": 15,
+      "aggiornato_il": "2026-10-25T15:14:50",
+      "gruppo": "g-usb-sciopero-2026-10-30"
+    },
+    {
       "id": "2026-10-30-bari-corteo-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il riarmo e il caro vita",
@@ -3284,7 +3360,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1Ca4vYchEX/?mibextid=wwXIfr",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-23T16:30:49",
       "gruppo": null
     },
@@ -3452,6 +3528,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-siracusa-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero e corteo contro carovita, tagli all'istruzione e riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": "12:30",
+      "comune": "Siracusa",
+      "provincia": "SR",
+      "regione": "Sicilia",
+      "luogo": "Campo Scuola Pippo di Natale",
+      "lat": 37.07671,
+      "lng": 15.28046,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA",
+        "USB",
+        "OSA Siracusa"
+      ],
+      "fonte": "https://www.instagram.com/p/DeuCsmzIAyf/?xtok=MTBucG02dnFrY2k4dg==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-25T15:14:47",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e caro vita",
@@ -3512,7 +3613,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DezIvkODb4E/?cplk=YjhlcmM3aWNweW53",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-23T17:18:14",
       "gruppo": null
     },
@@ -3558,7 +3659,7 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -3585,7 +3686,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 38,
+      "conferme": 41,
       "aggiornato_il": "2026-10-21T01:54:28",
       "gruppo": null
     },
@@ -3885,7 +3986,7 @@
       "organizzatori": [],
       "fonte": "https://www.rete8.it/cronaca/pescara-preoccupazione-per-la-manifestazione-degli-sciami/",
       "stato": "verificato",
-      "conferme": 6,
+      "conferme": 7,
       "aggiornato_il": "2026-10-23T04:07:46",
       "gruppo": null
     },
@@ -3977,7 +4078,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dew907ACAzi/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T15:26:56",
       "gruppo": null
     },
@@ -4957,8 +5058,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-25T13:24:58",
+  "ultimo_aggiornamento": "2026-10-25T16:01:58",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-25T12:30:21Z"
+  "copia_del": "2026-10-25T16:44:38Z"
 }
