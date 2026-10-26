@@ -150,6 +150,7 @@
     "luogo": "Piazza Maggiore",
     "posizione_approssimativa": false,
     "organizzatori": [
+      "USB",
       "Cobas Scuola"
     ],
     "tipo": "presidio",
@@ -161,7 +162,7 @@
     "lat": 44.4938,
     "lng": 11.343,
     "fonte": "https://www.cobasbologna.org/2026/10/sciopero-della-scuola-30-ottobre/",
-    "note": "Sciopero intera giornata di tutto il personale scolastico dell'Emilia-Romagna"
+    "note": "Confermato da Cobas Bologna e Resto del Carlino (piazza Maggiore 9:30, USB); sciopero scuola Emilia-Romagna"
   },
   {
     "tipo": "corteo",
@@ -240,6 +241,25 @@
     "lng": 8.934,
     "fonte": "https://www.lavocedigenova.it/2026/10/23/leggi-notizia/argomenti/politica-6/articolo/confermato-per-venerdi-30-ottobre-lo-sciopero-di-24-ore-del-trasporto-pubblico-locale.html",
     "note": "Rete urbana garantita 6-9 e 17:30-20:30; provinciale 6-9 e 17-20; Genova-Casella 6:30-9:30 e 17:30-20:30"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "luogo": "Varco Albertazzi, arrivo in piazza Principe alle 10",
+    "lat": 44.412,
+    "lng": 8.919,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
+    "note": "Ritrovo 9:30 Varco Albertazzi, ore 10 piazza Principe; coordinate indicative"
   },
   {
     "tipo": "presidio",
@@ -322,10 +342,10 @@
     "note": "Sciopero intera giornata personale scuola (Cobas, ADL Cobas, CLAP, SIAL Cobas); corteo dalla stazione FS alle 8:30; percorso non indicato."
   },
   {
-    "ora_inizio": null,
+    "ora_inizio": "09:00",
     "ora_fine": null,
-    "luogo": null,
-    "posizione_approssimativa": true,
+    "luogo": "Piazza Politeama",
+    "posizione_approssimativa": false,
     "organizzatori": [
       "USB"
     ],
@@ -335,10 +355,10 @@
     "comune": "Palermo",
     "provincia": "PA",
     "regione": "Sicilia",
-    "lat": 38.1157,
-    "lng": 13.3615,
-    "fonte": "https://www.juorno.it/sciopero-generale-usb-il-30-ottobre-cortei-contro-il-carovita-attenzione-alla-sicurezza/",
-    "note": "La fonte indica solo la città; luogo e orario da verificare"
+    "lat": 38.125,
+    "lng": 13.3555,
+    "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
+    "note": "Luogo e ora da Quotidiano Nazionale del 26/10; BlogSicilia non li riportava ancora"
   },
   {
     "tipo": "sciopero_categoria",
@@ -397,6 +417,25 @@
     "lng": 12.256,
     "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
     "note": "Sciopero nel porto contro il transito di armamenti; coordinate da verificare"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Ravenna",
+    "provincia": "RA",
+    "regione": "Emilia-Romagna",
+    "luogo": "Piazza del Popolo",
+    "lat": 44.4175,
+    "lng": 12.2011,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB"
+    ],
+    "fonte": "https://www.ilrestodelcarlino.it/emilia-romagna/economia/sciopero-30-ottobre-dove-perche-w29529kr",
+    "note": "Ritrovo 9 in piazza del Popolo (Carlino e QN); poi Darsena e corteo verso Marina di Porto. Distinto dal presidio Filt CGIL alla Sapir"
   },
   {
     "tipo": "sciopero_generale",
