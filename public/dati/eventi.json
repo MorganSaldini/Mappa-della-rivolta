@@ -1357,6 +1357,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-28-catania-altro-01",
+      "tipo": "altro",
+      "titolo": "Creazione materiale per lo spezzone giovanile",
+      "data": "2026-10-28",
+      "ora_inizio": "16:00",
+      "ora_fine": null,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Parco falcone borsellino Catania",
+      "lat": 37.52202,
+      "lng": 15.09458,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivi studenteschi"
+      ],
+      "fonte": "https://www.instagram.com/p/De-E_vgoEkE/?xtok=Y25menQ4eHFpY3Q1",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T21:05:57",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-28-pavia-assemblea-01",
       "tipo": "assemblea",
       "titolo": "ASSEMBLEA PUBBLICA contro guerra, riarmo e caro vita.",
@@ -1672,7 +1695,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 13,
       "aggiornato_il": "2026-10-17T01:27:43",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -2374,7 +2397,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1iP0hDHBY/?dlrf=MW56eDR6MHUxd2loMg==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-24T14:56:18",
       "gruppo": null
     },
@@ -2675,6 +2698,27 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-25T11:44:35",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-salerno-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Studenti e lavoratori contro carovita e guerra",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Piazza V.Veneto",
+      "lat": 40.67869,
+      "lng": 14.75286,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/De9XSaqIGSo/?dlrf=MWtsZTQxeXg1dmVkeQ==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-26T22:13:28",
       "gruppo": null
     },
     {
@@ -3070,6 +3114,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-reggio-emilia-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Io oggi SCIOPERO",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": "13:30",
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "piazza del monte",
+      "lat": 44.69856,
+      "lng": 10.63099,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T22:07:34",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-bari-corteo-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il riarmo e il caro vita",
@@ -3160,7 +3225,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 28,
+      "conferme": 29,
       "aggiornato_il": "2026-10-22T18:52:22",
       "gruppo": null
     },
@@ -3487,7 +3552,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -5097,8 +5162,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-26T17:59:08",
+  "ultimo_aggiornamento": "2026-10-26T22:13:28",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-26T17:16:29Z"
+  "copia_del": "2026-10-26T21:48:37Z"
 }
