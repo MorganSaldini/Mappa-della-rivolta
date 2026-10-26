@@ -3249,8 +3249,8 @@
   {
     "id": "2026-10-30-firenze-sciopero_generale-01",
     "aggiornato_il": "2026-10-20T23:50:30",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-firenze-corteo-01: stessa data, stessa piazza (Bambine e Bambini di Beslan), ore 10, stesso promotore USB. Inoltre il comune è scritto 'FIRENZE' in maiuscolo.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-firenze-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3259,8 +3259,8 @@
   {
     "id": "2026-10-30-livorno-sciopero_generale-03",
     "aggiornato_il": "2026-10-25T21:53:15",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-livorno-corteo-01 e di livorno-sciopero_generale-01: USB, piazza Cavour, ore 9. Stessa fonte Instagram di altri eventi toscani.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-livorno-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3269,8 +3269,8 @@
   {
     "id": "2026-10-30-livorno-sciopero_generale-01",
     "aggiornato_il": "2026-10-23T17:16:59",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-livorno-corteo-01 (USB, piazza Cavour, ore 9). Il 23/10 era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato: tenerne uno solo.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-livorno-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3279,8 +3279,8 @@
   {
     "id": "2026-10-30-pisa-sciopero_generale-02",
     "aggiornato_il": "2026-10-25T21:53:14",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-pisa-sciopero_generale-01 e pisa-sciopero_categoria-01 (USB, piazza Gaza/XX Settembre, ore 9). Coordinate errate: 43.4715,10.6798 è a circa 30 km da Pisa; giuste circa 43.7156,10.4017.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-pisa-sciopero_categoria-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3289,8 +3289,8 @@
   {
     "id": "2026-10-30-pisa-sciopero_generale-01",
     "aggiornato_il": "2026-10-23T17:03:51",
-    "azione": "sospetto",
-    "motivo": "Coordinate errate: 43.4715,10.6798 è a circa 30 km a sud-est di Pisa; piazza XX Settembre è circa 43.7156,10.4017. Anche doppione di pisa-sciopero_categoria-01 (stesso appuntamento USB ore 9).",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-pisa-sciopero_categoria-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3316,8 +3316,8 @@
   {
     "id": "2026-10-30-palermo-corteo-01",
     "aggiornato_il": "2026-10-26T06:00:32",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-palermo-sciopero_generale-01 (USB, piazza Politeama). QN del 26/10 indica ore 9 a piazza Politeama; l'altro evento dice 8:30: da allineare.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-palermo-sciopero_generale-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3326,8 +3326,8 @@
   {
     "id": "2026-10-30-pozzallo-sciopero_generale-01",
     "aggiornato_il": "2026-10-20T17:53:35",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-pozzallo-presidio-01: stessa data, USB, piazza dei Marinai, ore 17. L'altro evento ha fonte giornalistica (RagusaH24), questo solo Instagram.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-pozzallo-presidio-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3336,8 +3336,8 @@
   {
     "id": "2026-10-30-reggio-di-calabria-corteo-01",
     "aggiornato_il": "2026-10-24T15:07:32",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-reggio-calabria-corteo-01 (ore 8:30, stesse coordinate) con comune scritto in modo diverso. Titolo fuorviante 'Corteo per la guerra', nessun organizzatore, fonte solo foto Facebook.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-reggio-calabria-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3346,8 +3346,8 @@
   {
     "id": "2026-10-30-torino-sciopero_generale-01",
     "aggiornato_il": "2026-10-25T15:14:50",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-torino-corteo-01: USB, ore 9:30, piazza Palazzo di Città (chiamata anche piazza Gaza). L'altro ha fonte giornalistica, questo solo Facebook.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-torino-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
@@ -3356,16 +3356,16 @@
   {
     "id": "2026-10-30-treviso-sciopero_generale-01",
     "aggiornato_il": "2026-10-23T17:17:46",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-treviso-corteo-01: stesso centro sociale promotore, via Roma, ore 8:30. Era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-treviso-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [],
     "deciso_il": "2026-10-26"
   },
   {
     "id": "2026-10-30-pescara-sciopero_generale-01",
     "aggiornato_il": "2026-10-23T17:18:14",
-    "azione": "sospetto",
-    "motivo": "Doppione di 2026-10-30-pescara-corteo-01 (manifestazione regionale ore 10, piazza Italia secondo QN). Era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato.",
+    "azione": "nascondi",
+    "motivo": "Su richiesta dell'amministratore: doppione di 2026-10-30-pescara-corteo-01, che resta sulla mappa (stessa data, luogo, ora e promotore).",
     "fonti_controllate": [
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
