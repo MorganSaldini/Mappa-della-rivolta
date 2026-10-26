@@ -1,5 +1,5 @@
 // Reel 1080x1920 "Gli studenti in sciopero il 30" (pubblicazione 27/10/2026 19:15).
-// Dati letti da https://mappadellarivolta.org/api/mobilitazioni il 26/10/2026 16:28 UTC: eventi del 30/10 "verificato" con fonte,
+// Dati letti da https://mappadellarivolta.org/api/mobilitazioni il 26/10/2026 19:52 UTC: eventi del 30/10 "verificato" con fonte,
 // organizzati da collettivi studenteschi o rivolti a scuole e università. Esclusi: tipo "altro" (Nove, possibili disagi),
 // sciopero del personale della scuola (Cobas Scuola), assemblea CNR, l'evento annullato di Torino.
 // Motivi: studenti.it, 20/10/2026. Uscita: out/reel-studenti.mp4 (copertina 0,6 s come primo fotogramma + bling).
@@ -8,10 +8,10 @@ import { W, H, pathItalia, xy, cssBase, rendi, CHROME } from './motore.mjs';
 const RAW = [
  [0,'Sesto San Giovanni',45.54168,9.23833],
  [1,'Trieste',45.65442,13.77712],
- [2,'Padova',45.4169,11.88038],[2,'Bassano del Grappa',45.75432,11.73323],[2,'Bologna',44.49651,11.35255],[2,'Cesena',44.14498,12.24862],
+ [2,'Padova',45.4169,11.88038],[2,'Cesena',44.14498,12.24862],
  [3,'Trento',46.06514,11.12395],[3,'Piacenza',45.0482,9.70099],
  [4,'Torino',45.06843,7.69438],[4,'Reggio Emilia',44.70489,10.63655],
- [5,'Milano',45.47429,9.20524],[5,'Milano',45.47815,9.22685],[5,'Bari',41.12505,16.85987],[5,'Siracusa',37.07671,15.28046],
+ [5,'Milano',45.47429,9.20524],[5,'Milano',45.47815,9.22685],[5,'Bologna',44.49366,11.34305],[5,'Bari',41.12505,16.85987],[5,'Siracusa',37.07671,15.28046],
  [6,'Torino',45.06835,7.69497],[6,'Torino',45.06964,7.68908],[6,'Torino',45.03947,7.67441],[6,'Torino',45.0637,7.65753],[6,'Torino',45.06291,7.68473],[6,'Torino',45.0739,7.66811],
  [6,'Orbassano',45.02969,7.55734],[6,'Grugliasco',45.06718,7.5919],[6,'Vercelli',45.32761,8.42441],[6,'Novara',45.44419,8.62542],[6,'Novara',45.44401,8.61979],
  [6,'Alessandria',44.92297,8.61782],[6,'Genova',44.4158,8.92041],
@@ -21,7 +21,7 @@ const E = RAW.map(([d,c,la,ln],i)=>{ const [x,y]=xy(la,ln); return {d,c,x:x+((i*
 const NC = new Set(E.map(e=>e.c)).size;
 const STEP = [['ORE','7:30'],['ORE','7:45'],['ORE','8:00'],['ORE','8:30'],['ORE','9:00'],['ORE','9:30'],['E POI','']];
 const NOTE = {6:'Piemonte e Genova: davanti a scuole e università'};
-const DUR = [1.0,0.9,1.3,1.0,1.0,1.4,2.2], T0 = 2.4;
+const DUR = [1.0,0.9,1.1,1.0,1.0,1.4,2.2], T0 = 2.4;
 const FINE = T0 + DUR.reduce((a,b)=>a+b,0), MOT = 3.0, TOT = FINE + MOT + 4.0;
 const dots = E.map((e,i)=>`<g id="e${i}" transform="translate(${e.x},${e.y})" opacity="0"><circle r="38" fill="${COLS}" opacity=".2"/><circle r="19" fill="${COLS}" stroke="#f6f3ee" stroke-width="5"/></g>`).join('');
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${cssBase}
