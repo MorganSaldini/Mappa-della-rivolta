@@ -419,25 +419,6 @@
     "note": "Sciopero nel porto contro il transito di armamenti; coordinate da verificare"
   },
   {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "09:00",
-    "ora_fine": null,
-    "comune": "Ravenna",
-    "provincia": "RA",
-    "regione": "Emilia-Romagna",
-    "luogo": "Piazza del Popolo",
-    "lat": 44.4175,
-    "lng": 12.2011,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.ilrestodelcarlino.it/emilia-romagna/economia/sciopero-30-ottobre-dove-perche-w29529kr",
-    "note": "Ritrovo 9 in piazza del Popolo (Carlino e QN); poi Darsena e corteo verso Marina di Porto. Distinto dal presidio Filt CGIL alla Sapir"
-  },
-  {
     "tipo": "sciopero_generale",
     "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
     "data": "2026-10-30",

@@ -3245,5 +3245,286 @@
     "motivo": "Titolo ambiguo ('Corteo per la guerra'), nessun organizzatore e fonte che è solo un'immagine Facebook; probabile doppione dell'evento USB a Reggio Calabria dello stesso giorno. Da controllare.",
     "fonti_controllate": [],
     "deciso_il": "2026-10-24"
+  },
+  {
+    "id": "2026-10-30-firenze-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T23:50:30",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-firenze-corteo-01: stessa data, stessa piazza (Bambine e Bambini di Beslan), ore 10, stesso promotore USB. Inoltre il comune è scritto 'FIRENZE' in maiuscolo.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-03",
+    "aggiornato_il": "2026-10-25T21:53:15",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-livorno-corteo-01 e di livorno-sciopero_generale-01: USB, piazza Cavour, ore 9. Stessa fonte Instagram di altri eventi toscani.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T17:16:59",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-livorno-corteo-01 (USB, piazza Cavour, ore 9). Il 23/10 era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato: tenerne uno solo.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-pisa-sciopero_generale-02",
+    "aggiornato_il": "2026-10-25T21:53:14",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-pisa-sciopero_generale-01 e pisa-sciopero_categoria-01 (USB, piazza Gaza/XX Settembre, ore 9). Coordinate errate: 43.4715,10.6798 è a circa 30 km da Pisa; giuste circa 43.7156,10.4017.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-pisa-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T17:03:51",
+    "azione": "sospetto",
+    "motivo": "Coordinate errate: 43.4715,10.6798 è a circa 30 km a sud-est di Pisa; piazza XX Settembre è circa 43.7156,10.4017. Anche doppione di pisa-sciopero_categoria-01 (stesso appuntamento USB ore 9).",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-pisa-sciopero_categoria-01",
+    "aggiornato_il": "2026-10-22T18:52:28",
+    "azione": "correggi",
+    "motivo": "La fonte MIT non riporta un appuntamento in piazza: sostituita con QN (26/10) che conferma Pisa ore 9 piazza Gaza (XX Settembre), USB. Coordinate da verificare (circa 3 km a sud della piazza).",
+    "campi": {
+      "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
+      "luogo": "Piazza XX Settembre (piazza Gaza)",
+      "organizzatori": [
+        "USB"
+      ]
+    },
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-palermo-corteo-01",
+    "aggiornato_il": "2026-10-26T06:00:32",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-palermo-sciopero_generale-01 (USB, piazza Politeama). QN del 26/10 indica ore 9 a piazza Politeama; l'altro evento dice 8:30: da allineare.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-pozzallo-sciopero_generale-01",
+    "aggiornato_il": "2026-10-20T17:53:35",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-pozzallo-presidio-01: stessa data, USB, piazza dei Marinai, ore 17. L'altro evento ha fonte giornalistica (RagusaH24), questo solo Instagram.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-reggio-di-calabria-corteo-01",
+    "aggiornato_il": "2026-10-24T15:07:32",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-reggio-calabria-corteo-01 (ore 8:30, stesse coordinate) con comune scritto in modo diverso. Titolo fuorviante 'Corteo per la guerra', nessun organizzatore, fonte solo foto Facebook.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-torino-sciopero_generale-01",
+    "aggiornato_il": "2026-10-25T15:14:50",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-torino-corteo-01: USB, ore 9:30, piazza Palazzo di Città (chiamata anche piazza Gaza). L'altro ha fonte giornalistica, questo solo Facebook.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-treviso-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T17:17:46",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-treviso-corteo-01: stesso centro sociale promotore, via Roma, ore 8:30. Era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-pescara-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T17:18:14",
+    "azione": "sospetto",
+    "motivo": "Doppione di 2026-10-30-pescara-corteo-01 (manifestazione regionale ore 10, piazza Italia secondo QN). Era già stato tolto dalla verifica come doppione ma risulta di nuovo verificato.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-bologna-presidio-01",
+    "aggiornato_il": "2026-10-26T06:00:29",
+    "azione": "sospetto",
+    "motivo": "Probabile stesso appuntamento di 2026-10-30-bologna-sciopero_generale-01: piazza Maggiore ore 9:30. Il Carlino indica USB come organizzatore della piazza; Cobas Scuola vi aderisce. Valutare se unire.",
+    "fonti_controllate": [
+      "https://www.ilrestodelcarlino.it/emilia-romagna/economia/sciopero-30-ottobre-dove-perche-w29529kr",
+      "https://www.cobasbologna.org/2026/10/sciopero-della-scuola-30-ottobre/"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-la-spezia-sciopero_generale-01",
+    "aggiornato_il": "2026-10-23T16:30:49",
+    "azione": "sospetto",
+    "motivo": "Coordinate errate: 44.2384,9.6912 è vicino a Levanto, non alla Spezia; la Prefettura (via Vittorio Veneto 2) è circa 44.1065,9.8270. Stesso luogo e ora (9:30) di la-spezia-presidio-01: probabile doppione.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-livorno-sciopero_generale-02",
+    "aggiornato_il": "2026-10-25T21:53:14",
+    "azione": "sospetto",
+    "motivo": "Coordinate in mare (42.7902,10.3402, a sud di Livorno di circa 85 km). Ritrovo alle 6 a una rotatoria (confermato da QN): possibile blocco, da valutare come avviso di disagi da un moderatore.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-livorno-presidio-01",
+    "aggiornato_il": "2026-10-23T15:26:51",
+    "azione": "sospetto",
+    "motivo": "Coordinate in mare (42.7902,10.3402), lontane da Livorno; via Guido Donegani è nella zona portuale-industriale di Livorno, circa 43.57,10.32. Correggere la posizione.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-siena-sciopero_generale-01",
+    "aggiornato_il": "2026-10-25T21:53:14",
+    "azione": "sospetto",
+    "motivo": "Coordinate errate: 43.1672,11.4676 è a circa 18 km a sud di Siena; il terminal bus di Pescaia è circa 43.3270,11.3205. QN (26/10) conferma Siena ore 9 terminal Pescaia, USB.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-massa-sciopero_generale-01",
+    "aggiornato_il": "2026-10-25T21:53:14",
+    "azione": "sospetto",
+    "motivo": "Coordinate errate: 44.2066,9.9680 è in Lunigiana, non a Massa; piazza Garibaldi di Massa è circa 44.0360,10.1410. QN (26/10) conferma Massa ore 17 piazza Garibaldi, USB.",
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-torino-corteo-03",
+    "aggiornato_il": "2026-10-26T10:28:48",
+    "azione": "correggi",
+    "motivo": "Solo forma: titolo tutto in maiuscolo, riscritto in forma descrittiva.",
+    "campi": {
+      "titolo": "Corteo studentesco nella giornata dello sciopero generale"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-reggio-emilia-corteo-01",
+    "aggiornato_il": "2026-10-24T14:32:45",
+    "azione": "correggi",
+    "motivo": "Solo forma: il titolo era solo uno slogan; ora descrive l'evento con lo slogan tra virgolette.",
+    "campi": {
+      "titolo": "Corteo studentesco «Nous serons la révolution»"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-reggio-emilia-corteo-02",
+    "aggiornato_il": "2026-10-24T14:33:35",
+    "azione": "correggi",
+    "motivo": "Solo forma: il titolo era solo uno slogan; ora descrive l'evento con lo slogan tra virgolette.",
+    "campi": {
+      "titolo": "Corteo «Boicottare l'economia di guerra»"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-ravenna-corteo-01",
+    "aggiornato_il": "2026-10-21T02:45:24",
+    "azione": "correggi",
+    "motivo": "Solo forma: titolo reso descrittivo (corteo dalla città al porto per lo sciopero generale), confermato da Carlino e QN.",
+    "campi": {
+      "titolo": "Corteo dalla città al porto per lo sciopero generale"
+    },
+    "fonti_controllate": [
+      "https://www.ilrestodelcarlino.it/emilia-romagna/economia/sciopero-30-ottobre-dove-perche-w29529kr",
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-bassano-del-grappa-corteo-01",
+    "aggiornato_il": "2026-10-23T17:37:31",
+    "azione": "correggi",
+    "motivo": "Solo forma: maiuscola fuori posto nel titolo.",
+    "campi": {
+      "titolo": "Sciopero studentesco"
+    },
+    "fonti_controllate": [],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-verbania-sciopero_generale-01",
+    "aggiornato_il": "2026-10-24T12:23:11",
+    "azione": "correggi",
+    "motivo": "Mancava la fonte: QN (26/10) conferma Verbania ore 17 piazza Ranzoni. Titolo era uno slogan con punto finale; sigla USB senza punto. Resta da verificare.",
+    "campi": {
+      "titolo": "Manifestazione contro il riarmo e le politiche razziste e repressive",
+      "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
+      "ora_inizio": "17:00",
+      "luogo": "Piazza Ranzoni, Intra",
+      "organizzatori": [
+        "VB per la Palestina",
+        "Non una di meno VB",
+        "USB"
+      ]
+    },
+    "deverifica": true,
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-10-30-perugia-sciopero_generale-01",
+    "aggiornato_il": "2026-10-25T19:31:34",
+    "azione": "correggi",
+    "motivo": "Mancava la fonte: QN (26/10) conferma Perugia ore 8:30 piazza dei Partigiani (USB). Ora corretta da 9:00 a 8:30. Resta da verificare.",
+    "campi": {
+      "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
+      "ora_inizio": "08:30",
+      "luogo": "Piazza dei Partigiani",
+      "organizzatori": [
+        "USB"
+      ]
+    },
+    "deverifica": true,
+    "fonti_controllate": [
+      "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
+    ],
+    "deciso_il": "2026-10-26"
   }
 ]
