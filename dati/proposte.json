@@ -19,6 +19,25 @@
     "note": "Assemblea pubblica Usb; posizione indicativa"
   },
   {
+    "ora_inizio": "10:00",
+    "ora_fine": null,
+    "luogo": "Prefettura, piazza Amendola",
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Fillea CGIL Salerno"
+    ],
+    "tipo": "presidio",
+    "titolo": "Presidio degli edili davanti alla Prefettura di Salerno",
+    "data": "2026-10-26",
+    "comune": "Salerno",
+    "provincia": "SA",
+    "regione": "Campania",
+    "lat": 40.6779,
+    "lng": 14.7612,
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+    "note": "Vertenza cantiere Alta Velocità Battipaglia-Romagnano (lavoratori sospesi)"
+  },
+  {
     "tipo": "presidio",
     "titolo": "Presidio dei lavoratori Beko Cassinetta davanti alla Provincia di Varese",
     "data": "2026-10-26",
@@ -105,24 +124,44 @@
     "note": "8 ore, ambito locale"
   },
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": "Viale Mazzini, sede Mps",
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL",
+      "CISL",
+      "UIL"
+    ],
+    "tipo": "presidio",
+    "titolo": "Presidio davanti alla sede Mps per occupazione e indotto",
     "data": "2026-10-29",
-    "ora_inizio": "12:00",
-    "ora_fine": "16:00",
+    "comune": "Siena",
+    "provincia": "SI",
+    "regione": "Toscana",
+    "lat": 43.3229,
+    "lng": 11.3363,
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+    "note": "Sit-in settore credito; orario non indicato dalla fonte"
+  },
+  {
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "luogo": "Piazza Maggiore",
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Cobas Scuola"
+    ],
+    "tipo": "presidio",
+    "titolo": "Manifestazione per lo sciopero della scuola Cobas",
+    "data": "2026-10-30",
     "comune": "Bologna",
     "provincia": "BO",
     "regione": "Emilia-Romagna",
-    "luogo": "Aeroporto di Bologna",
-    "lat": 44.5354,
-    "lng": 11.2887,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FILCAMS-CGIL",
-      "UILT-UIL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore, trasporto aereo"
+    "lat": 44.4938,
+    "lng": 11.343,
+    "fonte": "https://www.cobasbologna.org/2026/10/sciopero-della-scuola-30-ottobre/",
+    "note": "Sciopero intera giornata di tutto il personale scolastico dell'Emilia-Romagna"
   },
   {
     "tipo": "corteo",
@@ -182,6 +221,25 @@
     "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
     "note": "Concentramento alle 10 per lo sciopero generale nazionale di 24 ore di USB",
     "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": null,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB Lavoro Privato Liguria"
+    ],
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero di 24 ore del trasporto pubblico locale a Genova",
+    "data": "2026-10-30",
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "lat": 44.4072,
+    "lng": 8.934,
+    "fonte": "https://www.lavocedigenova.it/2026/10/23/leggi-notizia/argomenti/politica-6/articolo/confermato-per-venerdi-30-ottobre-lo-sciopero-di-24-ore-del-trasporto-pubblico-locale.html",
+    "note": "Rete urbana garantita 6-9 e 17:30-20:30; provinciale 6-9 e 17-20; Genova-Casella 6:30-9:30 e 17:30-20:30"
   },
   {
     "tipo": "presidio",
@@ -264,6 +322,25 @@
     "note": "Sciopero intera giornata personale scuola (Cobas, ADL Cobas, CLAP, SIAL Cobas); corteo dalla stazione FS alle 8:30; percorso non indicato."
   },
   {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": null,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "USB"
+    ],
+    "tipo": "corteo",
+    "titolo": "Manifestazione per lo sciopero generale USB",
+    "data": "2026-10-30",
+    "comune": "Palermo",
+    "provincia": "PA",
+    "regione": "Sicilia",
+    "lat": 38.1157,
+    "lng": 13.3615,
+    "fonte": "https://www.juorno.it/sciopero-generale-usb-il-30-ottobre-cortei-contro-il-carovita-attenzione-alla-sicurezza/",
+    "note": "La fonte indica solo la città; luogo e orario da verificare"
+  },
+  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
     "data": "2026-10-30",
@@ -301,6 +378,25 @@
     "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
     "note": "Presidio 17-22 nella giornata internazionale di mobilitazione dei portuali",
     "gruppo": "sciopero-generale-2026-10-30"
+  },
+  {
+    "ora_inizio": "08:00",
+    "ora_fine": null,
+    "luogo": "Davanti alla Sapir, via A. Zani 7",
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Filt CGIL"
+    ],
+    "tipo": "presidio",
+    "titolo": "Sciopero e presidio dei lavoratori del porto di Ravenna",
+    "data": "2026-10-30",
+    "comune": "Ravenna",
+    "provincia": "RA",
+    "regione": "Emilia-Romagna",
+    "lat": 44.456,
+    "lng": 12.256,
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+    "note": "Sciopero nel porto contro il transito di armamenti; coordinate da verificare"
   },
   {
     "tipo": "sciopero_generale",
@@ -974,6 +1070,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
+  },
+  {
+    "ora_inizio": null,
+    "ora_fine": null,
+    "luogo": null,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Fp CGIL",
+      "Uil Fp"
+    ],
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero regionale di 24 ore della sanità ligure",
+    "data": "2026-12-04",
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "lat": 44.4072,
+    "lng": 8.934,
+    "fonte": "https://www.lanazione.it/la-spezia/cronaca/lautunno-caldo-della-sanita-cgil-5269441e",
+    "note": "Sciopero regionale sanità Liguria, 24 ore; nessun presidio indicato dalla fonte"
   },
   {
     "tipo": "sciopero_generale",
