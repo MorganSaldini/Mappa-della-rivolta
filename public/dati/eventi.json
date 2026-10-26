@@ -379,6 +379,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-26-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Contestiamo l'università azienda",
+      "data": "2026-10-26",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Corso unione sovietica 218",
+      "lat": 45.03752,
+      "lng": 7.65095,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "cps",
+        "studenti indipendenti (SI)",
+        "torino per gaza",
+        "cua",
+        "assemblea di scienze"
+      ],
+      "fonte": "https://www.instagram.com/p/De6nVG2Itbf",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-26T10:28:34",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-22-somma-vesuviana-sciopero_categoria-01",
       "tipo": "corteo",
       "titolo": "Sciopero e corteo degli studenti dell'ITIS Majorana e del Liceo Torricelli",
@@ -426,6 +453,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-26-jesi-sciopero_categoria-02",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero Studentesco",
+      "data": "2026-10-26",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Jesi",
+      "provincia": "AN",
+      "regione": "Marche",
+      "luogo": "Chiesa di San Nicolò",
+      "lat": 43.52061,
+      "lng": 13.2404,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi - Ni'Gò (Jesi)"
+      ],
+      "fonte": "https://www.instagram.com/p/DezXIvnDEDb/?vrfl=Z3RzZjYwaHN4ZTQz",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-26T07:03:57",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-26-cassino-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo contro il caro vita e per una scuola migliore",
@@ -467,6 +517,29 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-24T14:56:09",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-26-salerno-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio degli edili davanti alla Prefettura di Salerno",
+      "data": "2026-10-26",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Prefettura, piazza Amendola",
+      "lat": 40.6779,
+      "lng": 14.7612,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Fillea CGIL Salerno"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:26",
       "gruppo": null
     },
     {
@@ -960,6 +1033,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-27-trento-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Per il diritto allo studio contro il carovita",
+      "data": "2026-10-27",
+      "ora_inizio": "10:30",
+      "ora_fine": null,
+      "comune": "Trento",
+      "provincia": "TN",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Sociologia (Via Verdi 26)",
+      "lat": 46.06641,
+      "lng": 11.11971,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "UDU Trento",
+        "Centro Sociale Bruno",
+        "Collettivo Autonomo Studenti Trento"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pMgjNYGK/?exln=MW51MG9iM2pqZTBvbw==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T11:04:04",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-27-firenze-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo per il Carovita, risposta alla presenza di assessori e politici su Firenze",
@@ -1297,6 +1395,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-28-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Dalla stessa parte della barricata: ASSEMBLEA PUBBLICA DI CONVERGENZA STUDENTI E LAVORATORI",
+      "data": "2026-10-28",
+      "ora_inizio": "19:20",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Università degli studi di milano",
+      "lat": 45.46011,
+      "lng": 9.19532,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CSA Lambretta",
+        "milano in movimento"
+      ],
+      "fonte": "https://www.instagram.com/p/De6rOPYgir1",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T10:24:51",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-28-bologna-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Trenitalia – Customer Operations Emilia-Romagna",
@@ -1320,6 +1442,27 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:37",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-29-siena-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: presidio davanti alla sede Mps per occupazione e indotto",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Siena",
+      "provincia": "SI",
+      "regione": "Toscana",
+      "luogo": "Viale Mazzini, sede Mps",
+      "lat": 43.3229,
+      "lng": 11.3363,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:28",
       "gruppo": null
     },
     {
@@ -1505,6 +1648,52 @@
       "stato": "da_verificare",
       "conferme": 2,
       "aggiornato_il": "2026-10-24T12:23:11",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-genova-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero di 24 ore del trasporto pubblico locale a Genova",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "",
+      "lat": 44.4072,
+      "lng": 8.934,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB Lavoro Privato Liguria"
+      ],
+      "fonte": "https://www.lavocedigenova.it/2026/10/23/leggi-notizia/argomenti/politica-6/articolo/confermato-per-venerdi-30-ottobre-lo-sciopero-di-24-ore-del-trasporto-pubblico-locale.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:31",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-palermo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione per lo sciopero generale USB",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Palermo",
+      "provincia": "PA",
+      "regione": "Sicilia",
+      "luogo": "",
+      "lat": 38.1157,
+      "lng": 13.3615,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.juorno.it/sciopero-generale-usb-il-30-ottobre-cortei-contro-il-carovita-attenzione-alla-sicurezza/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:32",
       "gruppo": null
     },
     {
@@ -1916,7 +2105,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjI9qi97cmXAxW48bsIHTrLNcQQFnoECBUQAQ&url=CAESngEB6zswFZ2y68XxHieWfFAt4GpEpMdmRo3C91_lPIQV7fmcDvHrdISFEvq2VbDw47nVhqNtdIAJlSq3VhaSTjynqjkQNs83uj2yNwHoXsDjx04p7u3h0FzJtGqNVnJzHil4Xgcf-NRhgTJg19Btr1Og_CgkSxCV_7WSJ1",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-10-24T14:56:12",
       "gruppo": null
     },
@@ -2027,6 +2216,29 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T17:03:51",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-torino-corteo-03",
+      "tipo": "corteo",
+      "titolo": "SCIOPERO STUDENTESCO AFFIANCO DELLO SCIOPERO GENERALE: gli studenti si riuniscono poi alle 10 coi lavoratori",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza XVIII dicembre, torino",
+      "lat": 45.0739,
+      "lng": 7.66811,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CAU"
+      ],
+      "fonte": "https://www.instagram.com/p/DehuxmoxAuQ",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T10:28:48",
       "gruppo": null
     },
     {
@@ -2191,6 +2403,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-ravenna-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero e presidio dei lavoratori del porto di Ravenna",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Ravenna",
+      "provincia": "RA",
+      "regione": "Emilia-Romagna",
+      "luogo": "Davanti alla Sapir, via A. Zani 7",
+      "lat": 44.456,
+      "lng": 12.256,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Filt CGIL"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:34",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-padova-sciopero_generale-01",
       "tipo": "corteo",
       "titolo": "Sciopero per il diritto all'istruzione e maggiori fondi alla scuola",
@@ -2210,7 +2445,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Deme0TiMl6n/?dlrf=MWw2eHp5aXA4bnJhag==",
       "stato": "verificato",
-      "conferme": 14,
+      "conferme": 15,
       "aggiornato_il": "2026-10-18T11:59:23",
       "gruppo": null
     },
@@ -2618,7 +2853,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 21,
+      "conferme": 22,
       "aggiornato_il": "2026-10-22T18:52:28",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -2664,7 +2899,7 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/ora-basta-il-30-ottobre-il-personale-ata-incrocia-le-braccia-sciopero-generale-usb-1108.html",
       "stato": "verificato",
-      "conferme": 31,
+      "conferme": 32,
       "aggiornato_il": "2026-10-22T18:52:11",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -2807,7 +3042,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1eiZSIZQM/?cplk=MXZjbHJsNXg2YXJ1eQ==",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T16:34:22",
       "gruppo": null
     },
@@ -2902,6 +3137,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-bologna-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Manifestazione per lo sciopero della scuola Cobas",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza Maggiore",
+      "lat": 44.4938,
+      "lng": 11.343,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas Scuola"
+      ],
+      "fonte": "https://www.cobasbologna.org/2026/10/sciopero-della-scuola-30-ottobre/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:29",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-torino-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il carovita",
@@ -2948,7 +3206,7 @@
       ],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-10-23T15:23:41",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -3236,6 +3494,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-bassano-del-grappa-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio contro carovita, guerra e riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Bassano del Grappa",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Piazzale Trento",
+      "lat": 45.76587,
+      "lng": 11.73792,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Bassano per la Palestina"
+      ],
+      "fonte": "https://www.instagram.com/p/De7g-N7NNGS/?psln=emNpY2xvbGMxcmlz",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T08:15:49",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro guerra e caro vita",
@@ -3342,7 +3623,7 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -3766,6 +4047,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-07-verona-altro-01",
+      "tipo": "altro",
+      "titolo": "Mostra fotografica \"Just in case #2\" di Taysir Batniji",
+      "data": "2026-11-07",
+      "ora_inizio": "10:00",
+      "ora_fine": "18:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Centro di fotografia agli Scavi Scaligeri",
+      "lat": 45.44314,
+      "lng": 10.99803,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Musei civici di Verona",
+        "Il mondo di Irene",
+        "Sanitari per Gaza Verona"
+      ],
+      "fonte": "https://www.instagram.com/p/De5PhwBDocP/?img_index=2&cplk=MXZ1bmJybDN4cHF3dQ==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-26T06:17:09",
+      "gruppo": null
+    },
+    {
       "id": "2026-11-07-montale-corteo-01",
       "tipo": "corteo",
       "titolo": "Marcia popolare no inceneritori",
@@ -3976,6 +4282,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:49",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-14-verona-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo silente con il sudario per Gaza",
+      "data": "2026-11-14",
+      "ora_inizio": "14:00",
+      "ora_fine": "19:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazza Bra",
+      "lat": 45.43816,
+      "lng": 10.99331,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Laboratorio permanente del Sudario per Gaza",
+        "Carnia per la Pace"
+      ],
+      "fonte": "https://www.instagram.com/p/De5PJLUDkr5/?xtok=NnI5YXU5MHVpa2dk",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-26T06:11:55",
       "gruppo": null
     },
     {
@@ -4687,6 +5017,30 @@
       "gruppo": "g-29b479924aaa"
     },
     {
+      "id": "2026-12-04-genova-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero regionale di 24 ore della sanità ligure",
+      "data": "2026-12-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "",
+      "lat": 44.4072,
+      "lng": 8.934,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fp CGIL",
+        "Uil Fp"
+      ],
+      "fonte": "https://www.lanazione.it/la-spezia/cronaca/lautunno-caldo-della-sanita-cgil-5269441e",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-26T06:00:41",
+      "gruppo": null
+    },
+    {
       "id": "2026-12-04-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale delle categorie pubbliche e private",
@@ -4810,8 +5164,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-26T00:56:40",
+  "ultimo_aggiornamento": "2026-10-26T11:04:04",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-26T04:37:44Z"
+  "copia_del": "2026-10-26T10:58:14Z"
 }
