@@ -1,0 +1,18 @@
+# Controllo rapido: il sito risponde? (si lancia a mano da Actions → "Controlla il sito" → Run workflow)
+name: Controlla il sito
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  controlla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Prova gli indirizzi
+        run: |
+          for u in https://mappadellarivolta.org/ https://www.mappadellarivolta.org/ https://mappadellarivolta.org/api/mobilitazioni https://mappadellarivolta.morgansaldini.workers.dev/ https://mappadellarivolta.morgansaldini.workers.dev/api/mobilitazioni https://morgansaldini.github.io/Mappa-della-rivolta/; do
+            r=$(curl -s -o corpo.txt -m 25 -w "%{http_code} %{time_total}s" -A "Mozilla/5.0 controllo-mappa" "$u" || echo "ERRORE $?")
+            inizio=$(head -c 160 corpo.txt | tr '\n' ' ' | tr -d '\r')
+            echo "::notice title=$u::$r — $inizio"
+          done
