@@ -248,8 +248,9 @@
       <label>Organizzatori (sigle, separate da virgola)
         <input name="organizzatori" maxlength="300" placeholder="Es. sindacato, collettivo, comitato">
       </label>
-      <label>Link alla fonte (comunicato, locandina, post)
-        <input name="fonte" type="url" maxlength="300" placeholder="https://…">
+      <label>Link alla fonte * (comunicato, locandina, sito del sindacato, articolo)
+        <input name="fonte" type="url" maxlength="300" placeholder="https://…" required>
+        <span class="dlg__aiuto">Obbligatorio: senza un link che parla dell'evento non si può aggiungere.</span>
       </label>
       <input class="trappola" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -350,7 +351,7 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
   <script src="rete.js?v=1"></script>
-  <script src="app.js?v=22"></script>
+  <script src="app.js?v=23"></script>
   <script src="sostieni.js?v=1"></script>
 </body>
 </html>

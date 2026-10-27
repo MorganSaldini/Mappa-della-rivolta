@@ -857,6 +857,10 @@
       return (err.textContent = 'Completa comune, provincia (2 lettere) e regione: usa "Trova sulla mappa".');
     }
     if (!punto) return (err.textContent = 'Metti il punto sulla mappa: usa "Trova sulla mappa" o tocca la mappa.');
+    if (!/^https?:\/\/\S+\.\S+/i.test((v.fonte || '').trim())) {
+      fa.fonte.focus();
+      return (err.textContent = 'Serve il link a una fonte (comunicato, locandina, sito del sindacato o articolo), che inizi con https://');
+    }
 
     let luoghi = [];
     try {

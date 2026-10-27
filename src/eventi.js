@@ -109,6 +109,8 @@ export async function onRequestPost({ request, env }) {
       const chi = [piuCitta ? (r.comune || `Città n. ${(i % perCitta.length) + 1}`) : '', piuDate ? dataIt : ''].filter(Boolean).join(', ');
       return errore(chi ? chi + ': ' + v.errore : v.errore);
     }
+    // Fonte obbligatoria per ogni nuovo evento (regole di ottobre 2026)
+    if (!v.dati.fonte) return errore('Serve il link a una fonte (comunicato, locandina, sito del sindacato, calendario ufficiale o articolo): senza fonte l\'evento non si può aggiungere.');
     const chiave = (v.dati.data + '|' + v.dati.comune + '|' + (v.dati.luogo || '')).toLowerCase();
     if (visti.has(chiave)) return errore(`${v.dati.comune} compare due volte con lo stesso luogo.`);
     visti.add(chiave);

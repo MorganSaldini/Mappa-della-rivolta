@@ -67,6 +67,7 @@ export async function proponiModifica({ request, env, params }) {
   const proposta = b.campi && typeof b.campi === 'object' ? b.campi : {};
   const unione = { ...apriEvento(evento), ...proposta };
   const v = validaEvento(unione, { consentiPassato: true });
+  if (!v.errore && evento.fonte && !v.dati.fonte) return errore('Non si può togliere la fonte di un evento: se è sbagliata, metti il link giusto.');
   if (v.errore) return errore(v.errore);
   const diff = differenze(evento, v.dati);
   if (!Object.keys(diff).length && !annulla) return errore('Non hai cambiato nulla rispetto ai dati attuali.');
