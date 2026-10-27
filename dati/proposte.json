@@ -1,65 +1,5 @@
 [
   {
-    "tipo": "assemblea",
-    "titolo": "Assemblea pubblica di preparazione allo sciopero generale del 30 ottobre",
-    "data": "2026-10-26",
-    "ora_inizio": "18:00",
-    "ora_fine": null,
-    "comune": "Cuneo",
-    "provincia": "CN",
-    "regione": "Piemonte",
-    "luogo": "Il NuoVo, via Parco della Gioventù",
-    "lat": 44.39,
-    "lng": 7.548,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB Cuneo"
-    ],
-    "fonte": "https://www.targatocn.it/2026/10/20/leggi-notizia/argomenti/economia-7/articolo/lusb-verso-lo-sciopero-generale-del-30-ottobre-anche-a-cuneo-si-prepara-la-mobilitazione-1.html",
-    "note": "Assemblea pubblica Usb; posizione indicativa"
-  },
-  {
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "luogo": "Prefettura, piazza Amendola",
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Fillea CGIL Salerno"
-    ],
-    "tipo": "presidio",
-    "titolo": "Presidio degli edili davanti alla Prefettura di Salerno",
-    "data": "2026-10-26",
-    "comune": "Salerno",
-    "provincia": "SA",
-    "regione": "Campania",
-    "lat": 40.6779,
-    "lng": 14.7612,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
-    "note": "Vertenza cantiere Alta Velocità Battipaglia-Romagnano (lavoratori sospesi)"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori Beko Cassinetta davanti alla Provincia di Varese",
-    "data": "2026-10-26",
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "comune": "Varese",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Villa Recalcati, sede della Provincia",
-    "lat": 45.818,
-    "lng": 8.826,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Fim Cisl",
-      "Fiom Cgil",
-      "Uilm Uil",
-      "RSU Beko"
-    ],
-    "fonte": "https://www.laprovinciadivarese.it/beko-cassinetta-i-lavoratori-non-mollano-presidio-in-provincia-per-difendere-il-futuro-dello-stabilimento-412615/",
-    "note": "Presidio in concomitanza con il tavolo istituzionale sulla vertenza Beko (stabilimento di Cassinetta di Biandronno)"
-  },
-  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
     "data": "2026-10-27",
@@ -540,6 +480,102 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale ENAV",
+    "data": "2026-11-06",
+    "ora_inizio": "13:00",
+    "ora_fine": "17:00",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "UGL-TA"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-aerei-personale-soc-enav-8552",
+    "note": "4 ore, controllo del traffico aereo, ambito nazionale (nessun luogo: posizione a Roma centro)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
+    "data": "2026-11-06",
+    "ora_inizio": "07:00",
+    "ora_fine": "15:00",
+    "comune": "Volla",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "",
+    "lat": 40.88,
+    "lng": 14.34,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UGL Viabilità e Logistica"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-merci-personale-soc-vincenzo-miele-trasporti-di-8620",
+    "note": "8 ore, trasporto merci; posizione al centro di Volla"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMAT di Palermo",
+    "data": "2026-11-09",
+    "ora_inizio": "11:00",
+    "ora_fine": "15:00",
+    "comune": "Palermo",
+    "provincia": "PA",
+    "regione": "Sicilia",
+    "luogo": "",
+    "lat": 38.1157,
+    "lng": 13.3615,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB Trasporti"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amat-di-palermo-8618",
+    "note": "4 ore, trasporto pubblico locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero manutenzione RFI a Verona",
+    "data": "2026-11-09",
+    "ora_inizio": "09:01",
+    "ora_fine": "17:00",
+    "comune": "Verona",
+    "provincia": "VR",
+    "regione": "Veneto",
+    "luogo": "",
+    "lat": 45.4384,
+    "lng": 10.9916,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "ORSA Ferrovie"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-treni-personale-manutenzione-ed-ingegneria-soc-8615",
+    "note": "8 ore, personale manutenzione e ingegneria RFI, unità territoriale Sud di Verona"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero Busitalia Rail Service Calabria",
+    "data": "2026-11-10",
+    "ora_inizio": "09:59",
+    "ora_fine": "13:59",
+    "comune": "Cosenza",
+    "provincia": "CS",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 39.2983,
+    "lng": 16.2537,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FAISA-CISAL"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-10-mezzi-pubblici-personale-soc-busitalia-rail-service-b-u-8619",
+    "note": "4 ore, trasporto pubblico locale, business unit Calabria"
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale SBB Cargo Italia (trasporto merci ferroviario)",
     "data": "2026-11-10",
     "ora_inizio": "21:00",
@@ -740,6 +776,26 @@
     ],
     "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
     "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Rimini",
+    "provincia": "RN",
+    "regione": "Emilia-Romagna",
+    "luogo": "Arco di Augusto",
+    "lat": 44.0577,
+    "lng": 12.5703,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Rimini"
+    ],
+    "fonte": "https://www.cgilrimini.it/2026/10/26/sciopero-generale-20-novembre-cgil-rimini-corteo/",
+    "note": "Concentramento all'Arco di Augusto, corteo nel centro fino a piazza Cavour con comizi conclusivi",
     "gruppo": "sciopero-generale-2026-11-20"
   },
   {
@@ -1173,6 +1229,26 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero pulizie La Lucente all'aeroporto di Bologna",
+    "data": "2026-12-16",
+    "ora_inizio": "11:00",
+    "ora_fine": "15:00",
+    "comune": "Bologna",
+    "provincia": "BO",
+    "regione": "Emilia-Romagna",
+    "luogo": "Aeroporto Guglielmo Marconi",
+    "lat": 44.5354,
+    "lng": 11.2887,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "FILCAMS-CGIL",
+      "UILT-UIL"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-12-16-aerei-personale-soc-la-lucente-appalto-pulizie-8616",
+    "note": "4 ore, appalto pulizie aeroportuali"
   },
   {
     "ora_inizio": "11:00",
