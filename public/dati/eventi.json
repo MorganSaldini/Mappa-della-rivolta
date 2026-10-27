@@ -1738,6 +1738,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-vicenza-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Repressione. Carovita di guerra.",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Vicenza",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Piazzale della Stazione dei treni",
+      "lat": 45.54177,
+      "lng": 11.54076,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:42:27",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-padova-sciopero_generale-01",
       "tipo": "corteo",
       "titolo": "Sciopero per il diritto all'istruzione e maggiori fondi alla scuola",
@@ -2447,6 +2468,27 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-potenza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Potenza",
+      "provincia": "PZ",
+      "regione": "Basilicata",
+      "luogo": "Piazza Don Bosco",
+      "lat": 40.96641,
+      "lng": 15.82513,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T05:37:15",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-bari-corteo-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il riarmo e il caro vita",
@@ -2914,7 +2956,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DehUmKvtBiC/?srtk=NjF2emo3ZzVlenhm",
       "stato": "verificato",
-      "conferme": 43,
+      "conferme": 44,
       "aggiornato_il": "2026-10-26T17:41:52",
       "gruppo": null
     },
@@ -3313,6 +3355,53 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-06-volla-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
+      "data": "2026-11-06",
+      "ora_inizio": "07:00",
+      "ora_fine": "15:00",
+      "comune": "Volla",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "",
+      "lat": 40.88,
+      "lng": 14.34,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "UGL Viabilità e Logistica"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-merci-personale-soc-vincenzo-miele-trasporti-di-8620",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:29",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-06-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale del personale ENAV",
+      "data": "2026-11-06",
+      "ora_inizio": "13:00",
+      "ora_fine": "17:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILT-CGIL",
+        "UGL-TA"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-aerei-personale-soc-enav-8552",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:28",
+      "gruppo": null
+    },
+    {
       "id": "2026-11-06-bari-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale ENAV all'aeroporto di Bari",
@@ -3450,6 +3539,75 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T10:23:14",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-09-verona-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero manutenzione RFI a Verona",
+      "data": "2026-11-09",
+      "ora_inizio": "09:01",
+      "ora_fine": "17:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "",
+      "lat": 45.4384,
+      "lng": 10.9916,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "ORSA Ferrovie"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-treni-personale-manutenzione-ed-ingegneria-soc-8615",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:31",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-09-palermo-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale AMAT di Palermo",
+      "data": "2026-11-09",
+      "ora_inizio": "11:00",
+      "ora_fine": "15:00",
+      "comune": "Palermo",
+      "provincia": "PA",
+      "regione": "Sicilia",
+      "luogo": "",
+      "lat": 38.1157,
+      "lng": 13.3615,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CUB Trasporti"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amat-di-palermo-8618",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:30",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-10-cosenza-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero Busitalia Rail Service Calabria",
+      "data": "2026-11-10",
+      "ora_inizio": "09:59",
+      "ora_fine": "13:59",
+      "comune": "Cosenza",
+      "provincia": "CS",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.2983,
+      "lng": 16.2537,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FAISA-CISAL"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-10-mezzi-pubblici-personale-soc-busitalia-rail-service-b-u-8619",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:31",
       "gruppo": null
     },
     {
@@ -3921,6 +4079,29 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:42:35",
       "gruppo": "g-39fb7bfe7880"
+    },
+    {
+      "id": "2026-11-20-rimini-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Rimini",
+      "provincia": "RN",
+      "regione": "Emilia-Romagna",
+      "luogo": "Arco di Augusto",
+      "lat": 44.0577,
+      "lng": 12.5703,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Rimini"
+      ],
+      "fonte": "https://www.cgilrimini.it/2026/10/26/sciopero-generale-20-novembre-cgil-rimini-corteo/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:33",
+      "gruppo": "ag-sciopero-generale-2026-11-20"
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -4424,6 +4605,30 @@
       "gruppo": null
     },
     {
+      "id": "2026-12-16-bologna-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero pulizie La Lucente all'aeroporto di Bologna",
+      "data": "2026-12-16",
+      "ora_inizio": "11:00",
+      "ora_fine": "15:00",
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Aeroporto Guglielmo Marconi",
+      "lat": 44.5354,
+      "lng": 11.2887,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "FILCAMS-CGIL",
+        "UILT-UIL"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-12-16-aerei-personale-soc-la-lucente-appalto-pulizie-8616",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T07:00:37",
+      "gruppo": null
+    },
+    {
       "id": "2026-12-16-napoli-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale ANM di Napoli",
@@ -4474,8 +4679,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-27T02:20:14",
+  "ultimo_aggiornamento": "2026-10-27T07:42:27",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-27T01:23:44Z"
+  "copia_del": "2026-10-27T06:46:48Z"
 }
