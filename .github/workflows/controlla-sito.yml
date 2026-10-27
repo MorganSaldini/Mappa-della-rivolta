@@ -16,3 +16,34 @@ jobs:
             inizio=$(head -c 160 corpo.txt | tr '\n' ' ' | tr -d '\r')
             echo "::notice title=$u::$r — $inizio"
           done
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Apri il sito con un browser vero (telefono e computer)
+        run: |
+          npm i -s playwright@1.48.2 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          cat > prova.mjs <<'JS'
+          import { chromium } from 'playwright';
+          const b = await chromium.launch();
+          for (const [n, w, h] of [['telefono', 390, 844], ['computer', 1366, 768]]) {
+            const p = await b.newPage({ viewport: { width: w, height: h } });
+            const err = [];
+            p.on('pageerror', (e) => err.push('JS: ' + e.message));
+            p.on('console', (m) => m.type() === 'error' && err.push('console: ' + m.text().slice(0, 150)));
+            p.on('requestfailed', (r) => err.push('fallita: ' + r.url().slice(0, 100) + ' ' + (r.failure() || {}).errorText));
+            p.on('response', (r) => r.status() >= 400 && err.push(r.status() + ' ' + r.url().slice(0, 100)));
+            try { await p.goto('https://mappadellarivolta.org/', { waitUntil: 'load', timeout: 30000 }); } catch (e) { err.push('apertura: ' + e.message.slice(0, 150)); }
+            await p.waitForTimeout(5000);
+            const st = await p.evaluate(() => ({
+              totale: document.getElementById('totale')?.textContent,
+              marker: document.querySelectorAll('.leaflet-marker-icon').length,
+              avviso: document.getElementById('avviso-mappa')?.hidden === false ? document.getElementById('avviso-mappa').textContent.slice(0, 120) : '',
+              elenco: (document.getElementById('elenco')?.innerText || '').slice(0, 60),
+            })).catch((e) => ({ errore: e.message }));
+            console.log(`::notice title=${n}::${JSON.stringify(st)} | problemi: ${err.slice(0, 8).join(' ; ') || 'nessuno'}`);
+          }
+          await b.close();
+          JS
+          node prova.mjs
