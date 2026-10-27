@@ -279,6 +279,31 @@
       "gruppo": "g-73546d9c688f"
     },
     {
+      "id": "2026-10-27-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "ASSEMBLEA CITTADINA VERSO LO SCIOPERO GENERALE (aperta a tutti, non solo studenti!)",
+      "data": "2026-10-27",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzo Nuovo",
+      "lat": 45.06791,
+      "lng": 7.6943,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "cambiare rotta"
+      ],
+      "fonte": "https://gancio.cisti.org/event/27-ottobre-assemblea-cittadina-verso-lo-sciopero-generale",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:03:20",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-27-firenze-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero sorveglianza antincendio autostrada A1 Incisa–Sasso Marconi",
@@ -893,6 +918,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-29-calenzano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "ASSEMBLEA CONTRO L'INCENERITORE DI MONTALE",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Calenzano",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "casa del popolo di calenzano, via puccini 79",
+      "lat": 43.86176,
+      "lng": 11.16289,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "casa del popolo di calenzano"
+      ],
+      "fonte": "https://lapunta.org/event/no-inc-a-montale-assemblea-a-calenzano",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:30:22",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-29-bologna-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
@@ -919,7 +967,7 @@
     {
       "id": "2026-10-29-roma-assemblea-02",
       "tipo": "assemblea",
-      "titolo": "Assemblea pubblica: analisi sociale del sessantotto e come non far fallire le protese. Tutto ciò che possiamo imparare.",
+      "titolo": "Assemblea pubblica: analisi sociale del sessantotto e come non far fallire le proteste. Tutto ciò che possiamo imparare.",
       "data": "2026-10-29",
       "ora_inizio": "15:30",
       "ora_fine": "18:00",
@@ -936,7 +984,7 @@
       "fonte": "https://www.instagram.com/p/De92ivWOejB/?rpxt=MW9qN2ZkMGtocnBiYw==",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-10-27T12:42:30",
+      "aggiornato_il": "2026-10-27T14:31:05",
       "gruppo": null
     },
     {
@@ -986,7 +1034,7 @@
       ],
       "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
-      "conferme": 13,
+      "conferme": 14,
       "aggiornato_il": "2026-10-17T01:27:43",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -1600,6 +1648,86 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-casale-monferrato-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo sciopero generale contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Casale Monferrato",
+      "provincia": "AL",
+      "regione": "Piemonte",
+      "luogo": "Piazza giuseppe mazzini",
+      "lat": 45.1371,
+      "lng": 8.45106,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.instagram.com/p/DfAJRtzt9h9",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:03:24",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-cuneo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "SCIOPERO GENERALE: PRESIDIO E CORTEO CONTRO IL CAROVITA!",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cuneo",
+      "provincia": "CN",
+      "regione": "Piemonte",
+      "luogo": "Piazza europa",
+      "lat": 44.38401,
+      "lng": 7.54153,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB",
+        "USB Pubblico Impiego",
+        "USB PI",
+        "USI-CIT",
+        "USI Educazione"
+      ],
+      "fonte": "https://www.instagram.com/p/De_sGxXNHQW",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:03:28",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-pinerolo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "CORTEO SCIOPERO GENERALE A PINEROLO!",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Pinerolo",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Via dei rochis",
+      "lat": 44.88912,
+      "lng": 7.34681,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "collettivo buniva",
+        "collettivo curie",
+        "collettivo porporato",
+        "\"l'interscolastico\""
+      ],
+      "fonte": "https://www.instagram.com/p/DfABPOus_Xq",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T19:33:07",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-livorno-presidio-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero internazionale dei porti",
@@ -1709,7 +1837,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De1iP0hDHBY/?dlrf=MW56eDR6MHUxd2loMg==",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-24T14:56:18",
       "gruppo": null
     },
@@ -1779,53 +1907,6 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T07:42:27",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-viareggio-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo studenti e lavoratori contro guerra e carovita",
-      "data": "2026-10-30",
-      "ora_inizio": "08:00",
-      "ora_fine": "12:00",
-      "comune": "Viareggio",
-      "provincia": "LU",
-      "regione": "Toscana",
-      "luogo": "Piazza Mazzini",
-      "lat": 43.87083,
-      "lng": 10.24246,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Collettivo Picchio Rosso"
-      ],
-      "fonte": "https://www.instagram.com/p/De9txKsDMJ-/?srtk=MWRmZzFqdnYwaThtMg==",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T10:59:09",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-piombino-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo studentesco contro politiche guerrafondaie per un'istruzione libera e dignitosa",
-      "data": "2026-10-30",
-      "ora_inizio": "08:00",
-      "ora_fine": "12:30",
-      "comune": "Piombino",
-      "provincia": "LI",
-      "regione": "Toscana",
-      "luogo": "Via della Pace",
-      "lat": 42.93792,
-      "lng": 10.52132,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Collettivo Studentesco Val di Cornia",
-        "Collettivo Stidentesco CVP"
-      ],
-      "fonte": "https://www.instagram.com/p/De9x111OLjP/?dlrf=MXg4cXA0cWd5amtxaA==",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T12:09:31",
       "gruppo": null
     },
     {
@@ -1925,24 +2006,50 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-modena-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero contro caro vita e riarmo",
+      "id": "2026-10-30-viareggio-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studenti e lavoratori contro guerra e carovita",
       "data": "2026-10-30",
       "ora_inizio": "08:00",
-      "ora_fine": null,
-      "comune": "Modena",
-      "provincia": "MO",
-      "regione": "Emilia-Romagna",
-      "luogo": "Piazzale 1 maggio",
-      "lat": 44.65197,
-      "lng": 10.91952,
+      "ora_fine": "12:00",
+      "comune": "Viareggio",
+      "provincia": "LU",
+      "regione": "Toscana",
+      "luogo": "Piazza Mazzini",
+      "lat": 43.87083,
+      "lng": 10.24246,
       "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/De4m5wUI6-s/?srtk=ajhpbTVveWJkcmlm",
+      "organizzatori": [
+        "Collettivo Picchio Rosso"
+      ],
+      "fonte": "https://www.instagram.com/p/De9txKsDMJ-/?srtk=MWRmZzFqdnYwaThtMg==",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-26T17:38:40",
+      "aggiornato_il": "2026-10-27T14:27:31",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-piombino-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco contro politiche guerrafondaie per un'istruzione libera e dignitosa",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": "12:30",
+      "comune": "Piombino",
+      "provincia": "LI",
+      "regione": "Toscana",
+      "luogo": "Via della Pace",
+      "lat": 42.93792,
+      "lng": 10.52132,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo Studentesco Val di Cornia",
+        "Collettivo Stidentesco CVP"
+      ],
+      "fonte": "https://www.instagram.com/p/De9x111OLjP/?dlrf=MXg4cXA0cWd5amtxaA==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T14:27:51",
       "gruppo": null
     },
     {
@@ -1985,7 +2092,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DeuYCh0DW3g/?exln=MW16ZHJydDhpamJ0Mg==",
       "stato": "verificato",
-      "conferme": 11,
+      "conferme": 12,
       "aggiornato_il": "2026-10-23T15:26:55",
       "gruppo": null
     },
@@ -2008,7 +2115,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DewgFO3MZkm/?srtk=MXE4NmExY2s4OTcwMw==",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-23T15:26:53",
       "gruppo": null
     },
@@ -2081,94 +2188,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-salerno-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Studenti e lavoratori contro carovita e guerra",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Salerno",
-      "provincia": "SA",
-      "regione": "Campania",
-      "luogo": "Piazza V.Veneto",
-      "lat": 40.67869,
-      "lng": 14.75286,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/De9XSaqIGSo/?dlrf=MWtsZTQxeXg1dmVkeQ==",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-26T22:13:28",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-taranto-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo studentesco per lo sciopero generale “Contro guerra e carovita, organizzati si vince!”",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Taranto",
-      "provincia": "TA",
-      "regione": "Puglia",
-      "luogo": "Via di Palma",
-      "lat": 40.46983,
-      "lng": 17.25106,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "FGC"
-      ],
-      "fonte": "https://www.instagram.com/p/De9NDRaIQDS/?cplk=NGs0dWg0OXYza3dl",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T02:20:14",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-arezzo-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero Generale Contro Guerra e Carovita",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Arezzo",
-      "provincia": "AR",
-      "regione": "Toscana",
-      "luogo": "Campo di Marte Arezzo",
-      "lat": 43.45976,
-      "lng": 11.87569,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Assemblea per lo sciopero generale"
-      ],
-      "fonte": "https://www.instagram.com/p/De-MsuCsPFU/?obrf=YWhvcjBrZDBuMmhu",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-27T08:33:53",
-      "gruppo": null
-    },
-    {
-      "id": "2026-10-30-reggio-emilia-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero generale contro guerra e carovita",
-      "data": "2026-10-30",
-      "ora_inizio": "09:00",
-      "ora_fine": null,
-      "comune": "Reggio Emilia",
-      "provincia": "RE",
-      "regione": "Emilia-Romagna",
-      "luogo": "via Makallè",
-      "lat": 44.70532,
-      "lng": 10.63779,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/De_PseZDMzz/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T08:56:57",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-30-aosta-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro la guerra, il carovita e le scuole che cadono a pezzi",
@@ -2210,6 +2229,52 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T12:13:27",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-lecce-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Lecce",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Lecce",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "Porta napoli",
+      "lat": 40.36297,
+      "lng": 18.13333,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Ti ho inviato post in dm"
+      ],
+      "fonte": null,
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T15:02:38",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-aosta-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Protesta degli studenti",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Aosta",
+      "provincia": "AO",
+      "regione": "Valle d'Aosta",
+      "luogo": "Piazza Manzetti (stazione FS)",
+      "lat": 45.73461,
+      "lng": 7.32237,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA"
+      ],
+      "fonte": "https://www.gazzettamatin.com/2026/10/26/protesta-gli-studenti-osa-piazza-ad-aosta-per-lo-sciopero-del-30-ottobre/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T18:47:30",
       "gruppo": null
     },
     {
@@ -2485,7 +2550,7 @@
       "organizzatori": [],
       "fonte": "https://areastampa.usb.it/leggi-notizia/30-ottobre-sciopero-generale-in-tutta-italia-decine-di-piazze-contro-economia-di-guerra-e-carovita-1130.html",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-26T17:41:31",
       "gruppo": null
     },
@@ -2579,6 +2644,94 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:41:39",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-salerno-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Studenti e lavoratori contro carovita e guerra",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Piazza V.Veneto",
+      "lat": 40.67869,
+      "lng": 14.75286,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/De9XSaqIGSo/?dlrf=MWtsZTQxeXg1dmVkeQ==",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-27T14:28:03",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-taranto-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco per lo sciopero generale “Contro guerra e carovita, organizzati si vince!”",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Taranto",
+      "provincia": "TA",
+      "regione": "Puglia",
+      "luogo": "Via di Palma",
+      "lat": 40.46983,
+      "lng": 17.25106,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "FGC"
+      ],
+      "fonte": "https://www.instagram.com/p/De9NDRaIQDS/?cplk=NGs0dWg0OXYza3dl",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T14:28:14",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-arezzo-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale Contro Guerra e Carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Arezzo",
+      "provincia": "AR",
+      "regione": "Toscana",
+      "luogo": "Campo di Marte Arezzo",
+      "lat": 43.45976,
+      "lng": 11.87569,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea per lo sciopero generale"
+      ],
+      "fonte": "https://www.instagram.com/p/De-MsuCsPFU/?obrf=YWhvcjBrZDBuMmhu",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-27T14:28:26",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-reggio-emilia-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "via Makallè",
+      "lat": 44.70532,
+      "lng": 10.63779,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/De_PseZDMzz/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T14:28:48",
       "gruppo": null
     },
     {
@@ -3092,7 +3245,7 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -3235,7 +3388,7 @@
       "organizzatori": [],
       "fonte": "https://vm.tiktok.com/ZN8AUCQ5M/",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-22T18:52:29",
       "gruppo": null
     },
@@ -3489,9 +3642,9 @@
         "Collettivo Lunarossa"
       ],
       "fonte": "https://www.instagram.com/lunarossa_vicenza?psln=MTBvdXEyM2E4eHF0YQ==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:53:06",
+      "aggiornato_il": "2026-10-27T14:30:05",
       "gruppo": null
     },
     {
@@ -3564,6 +3717,54 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-05-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Proiezione documentario e discussione \"E tu come stai?: L'inizio della lotta del Collettivo di Fabbrica ex-GKN\"",
+      "data": "2026-11-05",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Cascina Roccafranca, Via Rubino 45",
+      "lat": 45.0411,
+      "lng": 7.62454,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cascina Roccafranca",
+        "Extinction Rebellion"
+      ],
+      "fonte": "https://gancio.cisti.org/event/proiezione-documentario-e-tu-come-stai-or-linizio-della-lotta-del-collettivo-di-fabbrica-ex-gkn",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:33:38",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-05-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Salotto di Miranda: \"MAGNITUDO G8 -una narrazione civile di Gianfranco Corona\" (Aperitivo condiviso, porta cibo!)",
+      "data": "2026-11-05",
+      "ora_inizio": "18:30",
+      "ora_fine": "21:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Salotto di miranda, Via Buscalioni 17/21 (su maps lo trovi come \"salotto di miranda\")",
+      "lat": 45.07657,
+      "lng": 7.7008,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Gianfranco Corona",
+        "aps miranda"
+      ],
+      "fonte": "https://gancio.cisti.org/event/magnitudo-g8-una-narrazione-civile-di-gianfranco-corona",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:33:41",
+      "gruppo": null
+    },
+    {
       "id": "2026-11-06-volla-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
@@ -3581,33 +3782,9 @@
         "UGL Viabilità e Logistica"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-merci-personale-soc-vincenzo-miele-trasporti-di-8620",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:29",
-      "gruppo": null
-    },
-    {
-      "id": "2026-11-06-roma-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero nazionale del personale ENAV",
-      "data": "2026-11-06",
-      "ora_inizio": "13:00",
-      "ora_fine": "17:00",
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILT-CGIL",
-        "UGL-TA"
-      ],
-      "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-aerei-personale-soc-enav-8552",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:28",
+      "aggiornato_il": "2026-10-27T14:30:16",
       "gruppo": null
     },
     {
@@ -3631,6 +3808,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:46",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-06-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale del personale ENAV",
+      "data": "2026-11-06",
+      "ora_inizio": "13:00",
+      "ora_fine": "17:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILT-CGIL",
+        "UGL-TA"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-aerei-personale-soc-enav-8552",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T14:30:25",
       "gruppo": null
     },
     {
@@ -3677,8 +3878,32 @@
       ],
       "fonte": "https://facebook.com/events/s/marcia-montale-inceneritore-vi/2219789145248742/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-23T15:25:53",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-07-montale-corteo-02",
+      "tipo": "corteo",
+      "titolo": "No Inceneritore A MONTALE: tutti in piazza! MARCIA POPOLARE",
+      "data": "2026-11-07",
+      "ora_inizio": "14:30",
+      "ora_fine": "19:30",
+      "comune": "Montale",
+      "provincia": "PT",
+      "regione": "Toscana",
+      "luogo": "piazza matteotti",
+      "lat": 43.93489,
+      "lng": 11.01575,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "no inceneritore",
+        "noncistiamo"
+      ],
+      "fonte": "https://lapunta.org/event/no-inceneritore-montale",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:30:25",
       "gruppo": null
     },
     {
@@ -3768,9 +3993,9 @@
         "ORSA Ferrovie"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-treni-personale-manutenzione-ed-ingegneria-soc-8615",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:31",
+      "aggiornato_il": "2026-10-27T14:30:31",
       "gruppo": null
     },
     {
@@ -3791,9 +4016,9 @@
         "CUB Trasporti"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amat-di-palermo-8618",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:30",
+      "aggiornato_il": "2026-10-27T14:30:49",
       "gruppo": null
     },
     {
@@ -3814,9 +4039,9 @@
         "FAISA-CISAL"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-10-mezzi-pubblici-personale-soc-busitalia-rail-service-b-u-8619",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:31",
+      "aggiornato_il": "2026-10-27T14:30:35",
       "gruppo": null
     },
     {
@@ -3866,6 +4091,29 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:45:16",
       "gruppo": null
+    },
+    {
+      "id": "2026-11-11-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
+      "data": "2026-11-11",
+      "ora_inizio": "20:30",
+      "ora_fine": "22:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Largo Maurizio Vitale 113",
+      "lat": 45.07942,
+      "lng": 7.69862,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Manituana - Laboratorio Culturale Autogestito"
+      ],
+      "fonte": "https://gancio.cisti.org/event/arruolamento-clown-army-2",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:17:56",
+      "gruppo": "g-3babbc14dce7"
     },
     {
       "id": "2026-11-13-milano-sciopero_categoria-01",
@@ -3960,7 +4208,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De5PJLUDkr5/?xtok=NnI5YXU5MHVpa2dk",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:58",
       "gruppo": null
     },
@@ -4033,7 +4281,7 @@
       ],
       "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
       "stato": "verificato",
-      "conferme": 10,
+      "conferme": 11,
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13"
     },
@@ -4307,9 +4555,9 @@
         "CGIL Rimini"
       ],
       "fonte": "https://www.cgilrimini.it/2026/10/26/sciopero-generale-20-novembre-cgil-rimini-corteo/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:33",
+      "aggiornato_il": "2026-10-27T14:30:41",
       "gruppo": "ag-sciopero-generale-2026-11-20"
     },
     {
@@ -4691,7 +4939,7 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-20T23:50:27",
-      "gruppo": null
+      "gruppo": "g-3babbc14dce7"
     },
     {
       "id": "2026-11-27-genova-altro-01",
@@ -4768,6 +5016,29 @@
       "gruppo": null
     },
     {
+      "id": "2026-12-09-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
+      "data": "2026-12-09",
+      "ora_inizio": "20:30",
+      "ora_fine": "22:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Largo Maurizio Vitale 113",
+      "lat": 45.07942,
+      "lng": 7.69862,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Manituana - Laboratorio Culturale Autogestito"
+      ],
+      "fonte": "https://gancio.cisti.org/event/arruolamento-clown-army-2",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:17:56",
+      "gruppo": "g-3babbc14dce7"
+    },
+    {
       "id": "2026-12-14-fiumicino-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Aviation Services negli aeroporti di Fiumicino e Ciampino",
@@ -4814,30 +5085,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-12-16-bologna-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero pulizie La Lucente all'aeroporto di Bologna",
-      "data": "2026-12-16",
-      "ora_inizio": "11:00",
-      "ora_fine": "15:00",
-      "comune": "Bologna",
-      "provincia": "BO",
-      "regione": "Emilia-Romagna",
-      "luogo": "Aeroporto Guglielmo Marconi",
-      "lat": 44.5354,
-      "lng": 11.2887,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "FILCAMS-CGIL",
-        "UILT-UIL"
-      ],
-      "fonte": "https://scioperiitalia.it/sciopero/2026-12-16-aerei-personale-soc-la-lucente-appalto-pulizie-8616",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T07:00:37",
-      "gruppo": null
-    },
-    {
       "id": "2026-12-16-napoli-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale ANM di Napoli",
@@ -4865,6 +5112,53 @@
       "gruppo": null
     },
     {
+      "id": "2026-12-16-bologna-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero pulizie La Lucente all'aeroporto di Bologna",
+      "data": "2026-12-16",
+      "ora_inizio": "11:00",
+      "ora_fine": "15:00",
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Aeroporto Guglielmo Marconi",
+      "lat": 44.5354,
+      "lng": 11.2887,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "FILCAMS-CGIL",
+        "UILT-UIL"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-12-16-aerei-personale-soc-la-lucente-appalto-pulizie-8616",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T14:30:45",
+      "gruppo": null
+    },
+    {
+      "id": "2026-12-23-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
+      "data": "2026-12-23",
+      "ora_inizio": "20:30",
+      "ora_fine": "22:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Largo Maurizio Vitale 113",
+      "lat": 45.07942,
+      "lng": 7.69862,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Manituana - Laboratorio Culturale Autogestito"
+      ],
+      "fonte": "https://gancio.cisti.org/event/arruolamento-clown-army-2",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-27T17:17:56",
+      "gruppo": "g-3babbc14dce7"
+    },
+    {
       "id": "2027-01-29-genova-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass (CM) genovese",
@@ -4888,8 +5182,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-27T12:43:13",
+  "ultimo_aggiornamento": "2026-10-27T19:33:07",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-27T13:07:27Z"
+  "copia_del": "2026-10-27T18:53:36Z"
 }
