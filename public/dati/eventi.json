@@ -454,6 +454,31 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-29-termoli-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio dei lavoratori Kuehne+Nagel davanti allo stabilimento",
+      "data": "2026-10-29",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Termoli",
+      "provincia": "CB",
+      "regione": "Molise",
+      "luogo": "Nucleo industriale, cancelli dello stabilimento Kuehne+Nagel",
+      "lat": 41.985,
+      "lng": 14.97,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fim Cisl Molise",
+        "Uilm Molise",
+        "Rsu"
+      ],
+      "fonte": "https://ansa.it/molise/notizie/2026/10/27/termoli-alla-kuehnenagel-sciopero-a-oltranza-dopo-annuncio-chiusura_e99ca003-ebfc-4791-9af6-99c83d4036fe.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T08:59:59",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-29-bologna-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero personale Lucente all'aeroporto di Bologna",
@@ -1402,29 +1427,6 @@
       "gruppo": null
     },
     {
-      "id": "2026-10-30-schio-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo studentesco",
-      "data": "2026-10-30",
-      "ora_inizio": "08:00",
-      "ora_fine": "13:30",
-      "comune": "Schio",
-      "provincia": "VI",
-      "regione": "Veneto",
-      "luogo": "Centro studi Schio",
-      "lat": 45.72336,
-      "lng": 11.35515,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CSM alto vicentino"
-      ],
-      "fonte": "https://www.instagram.com/p/Det6HBFDazP/?srtk=YmduMmR1eHp2cTlv",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-27T23:52:19",
-      "gruppo": null
-    },
-    {
       "id": "2026-10-30-padova-sciopero_generale-01",
       "tipo": "corteo",
       "titolo": "Sciopero per il diritto all'istruzione e maggiori fondi alla scuola",
@@ -1568,6 +1570,53 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-schio-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco per una scuola pubblica, inclusiva, accessibile e dotata di infrastrutture adatte",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": "13:30",
+      "comune": "Schio",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Centro studi Schio",
+      "lat": 45.72336,
+      "lng": 11.35515,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CSM alto vicentino"
+      ],
+      "fonte": "https://www.instagram.com/p/Det6HBFDazP/?srtk=YmduMmR1eHp2cTlv",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-28T09:01:15",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-vicenza-sciopero_generale-03",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero contro il carovita e l'economia di guerra. NO alla repressione del dissenso!",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Vicenza",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Piazzale della stazione ferroviaria",
+      "lat": 45.54187,
+      "lng": 11.54082,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo Lunarossa",
+        "CO Juna"
+      ],
+      "fonte": "https://www.instagram.com/lunarossa_vicenza?vrfl=MTBvdXEyM2E4eHF0YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T09:07:46",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-palermo-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il carovita e il riarmo",
@@ -1586,7 +1635,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeThPgsCFdl/?dlrf=anY4dHhtZmJsY25n",
       "stato": "verificato",
-      "conferme": 18,
+      "conferme": 19,
       "aggiornato_il": "2026-10-22T18:52:20",
       "gruppo": null
     },
@@ -1700,6 +1749,27 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-25T11:44:35",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-lecco-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro carovita, repressione, genocidio",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Lecco",
+      "provincia": "LC",
+      "regione": "Lombardia",
+      "luogo": "Piazza Diaz",
+      "lat": 45.85564,
+      "lng": 9.39293,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://lecconotizie.com/lecco-citta/lecco-sciopero-generale-il-30-ottobre-corteo-contro-guerre-e-riarmo/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T09:06:27",
       "gruppo": null
     },
     {
@@ -2653,6 +2723,32 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-reggio-emilia-presidio-01",
+      "tipo": "presidio",
+      "titolo": "PRESIDIO dei lavoratori e degli studenti contro il carovita e per opporci al riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": "13:30",
+      "comune": "Reggio Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "piazza del monte",
+      "lat": 44.69856,
+      "lng": 10.63099,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "attivista Karin Silvi",
+        "fronte comunista",
+        "giovani comunisti",
+        "comitati e lavoratori autonomi"
+      ],
+      "fonte": "https://www.instagram.com/p/De9-kTLx_EP/?rpxt=bXljNWhjcWNnOW5p",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T09:07:51",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-potenza-corteo-01",
       "tipo": "corteo",
       "titolo": "Manifestazione contro il carovita",
@@ -2690,7 +2786,7 @@
       "organizzatori": [],
       "fonte": "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
       "stato": "verificato",
-      "conferme": 14,
+      "conferme": 15,
       "aggiornato_il": "2026-10-23T04:07:28",
       "gruppo": null
     },
@@ -2739,29 +2835,6 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
-    },
-    {
-      "id": "2026-10-30-cropani-presidio-01",
-      "tipo": "presidio",
-      "titolo": "SCIOPERO GENERALE ABBASSATE LE ARMI, ALZATE I SALARI” indetto dall’Unione Sindacale di Base",
-      "data": "2026-10-30",
-      "ora_inizio": "10:30",
-      "ora_fine": "16:00",
-      "comune": "Cropani",
-      "provincia": "CZ",
-      "regione": "Calabria",
-      "luogo": "Bella piazza, viale Gramsci statale 106",
-      "lat": 38.9247,
-      "lng": 16.81223,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB"
-      ],
-      "fonte": "https://www.catanzaroinforma.it/inprovincia/2026/10/27/cropani-venerdi-mobilitazione-contro-la-guerra-e-il-caro-vita/430913/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T23:16:29",
-      "gruppo": null
     },
     {
       "id": "2026-10-30-ancona-sciopero_generale-01",
@@ -2837,6 +2910,29 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T16:34:32",
       "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
+      "id": "2026-10-30-cropani-presidio-01",
+      "tipo": "presidio",
+      "titolo": "\"SCIOPERO GENERALE ABBASSATE LE ARMI, ALZATE I SALARI” indetto dall’Unione Sindacale di Base",
+      "data": "2026-10-30",
+      "ora_inizio": "10:30",
+      "ora_fine": "16:00",
+      "comune": "Cropani",
+      "provincia": "CZ",
+      "regione": "Calabria",
+      "luogo": "Bella piazza, viale Gramsci statale 106",
+      "lat": 38.9247,
+      "lng": 16.81223,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.catanzaroinforma.it/inprovincia/2026/10/27/cropani-venerdi-mobilitazione-contro-la-guerra-e-il-caro-vita/430913/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T09:09:14",
+      "gruppo": null
     },
     {
       "id": "2026-10-30-novara-presidio-01",
@@ -3042,7 +3138,7 @@
       ],
       "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-27T10:34:00",
       "gruppo": null
     },
@@ -3141,7 +3237,7 @@
     {
       "id": "2026-10-31-vicenza-corteo-02",
       "tipo": "corteo",
-      "titolo": "Repressione. Carovita di guerra",
+      "titolo": "CORTEO contro carovita, economia di guerra e repressione!",
       "data": "2026-10-31",
       "ora_inizio": "15:00",
       "ora_fine": null,
@@ -3155,10 +3251,10 @@
       "organizzatori": [
         "Collettivo Lunarossa"
       ],
-      "fonte": "https://www.instagram.com/lunarossa_vicenza?psln=MTBvdXEyM2E4eHF0YQ==",
+      "fonte": "https://www.instagram.com/lunarossa_vicenza/p/De9ftIoDtkQ/?img_index=4",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-27T14:30:05",
+      "aggiornato_il": "2026-10-28T09:06:19",
       "gruppo": null
     },
     {
@@ -3582,6 +3678,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-11-milano-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Manifestazione dei tassisti a Milano",
+      "data": "2026-11-11",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "",
+      "lat": 45.4642,
+      "lng": 9.19,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Agci",
+        "Ati Taxi",
+        "Associazione Tutela Legale Taxi",
+        "Claai",
+        "Consultaxi"
+      ],
+      "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T06:00:28",
+      "gruppo": "ag-taxi-mobilitazione-2026"
+    },
+    {
       "id": "2026-11-11-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale dei call center (settore CRM/BPO)",
@@ -3752,6 +3875,33 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:50",
       "gruppo": null
+    },
+    {
+      "id": "2026-11-17-napoli-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Manifestazione dei tassisti a Napoli",
+      "data": "2026-11-17",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "",
+      "lat": 40.8518,
+      "lng": 14.2681,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Agci",
+        "Ati Taxi",
+        "Associazione Tutela Legale Taxi",
+        "Claai",
+        "Consultaxi"
+      ],
+      "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T06:00:29",
+      "gruppo": "ag-taxi-mobilitazione-2026"
     },
     {
       "id": "2026-11-20-roma-sciopero_generale-01",
@@ -4433,6 +4583,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-25-firenze-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Manifestazione dei tassisti a Firenze",
+      "data": "2026-11-25",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "",
+      "lat": 43.7696,
+      "lng": 11.2558,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Agci",
+        "Ati Taxi",
+        "Associazione Tutela Legale Taxi",
+        "Claai",
+        "Consultaxi"
+      ],
+      "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T06:00:32",
+      "gruppo": "ag-taxi-mobilitazione-2026"
+    },
+    {
       "id": "2026-11-25-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
@@ -4576,6 +4753,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-12-15-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale dei taxi con manifestazione a Roma",
+      "data": "2026-12-15",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Agci",
+        "Ati Taxi",
+        "Associazione Tutela Legale Taxi",
+        "Claai",
+        "Consultaxi"
+      ],
+      "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T06:00:33",
+      "gruppo": "ag-taxi-mobilitazione-2026"
+    },
+    {
       "id": "2026-12-15-bologna-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero ENAV all'aeroporto di Bologna",
@@ -4696,8 +4900,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-27T23:52:19",
+  "ultimo_aggiornamento": "2026-10-28T09:09:14",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-28T02:07:02Z"
+  "copia_del": "2026-10-28T08:22:10Z"
 }
