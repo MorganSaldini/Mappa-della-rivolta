@@ -317,7 +317,7 @@
       "organizzatori": [],
       "fonte": "https://orientaleoccupata.substack.com/p/orientale-occupata",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-21T00:31:06",
       "gruppo": "g-11a1beee682a"
     },
@@ -1313,6 +1313,27 @@
       "gruppo": "g-31851000ad43"
     },
     {
+      "id": "2026-10-30-montevarchi-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco",
+      "data": "2026-10-30",
+      "ora_inizio": "07:30",
+      "ora_fine": "12:00",
+      "comune": "Montevarchi",
+      "provincia": "AR",
+      "regione": "Toscana",
+      "luogo": "via giacomo matteotti",
+      "lat": 43.53044,
+      "lng": 11.57608,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfAqA_njjcI/?srtk=bXBwa3A1YTlpMTNo",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-28T17:34:27",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-parma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il riarmo e il caro vita",
@@ -1422,8 +1443,58 @@
       ],
       "fonte": "https://www.instagram.com/p/De3wbpuNrT5/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-25T13:24:18",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-trento-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo studentesco universitario",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Trento",
+      "provincia": "TN",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Via Giuseppe Verdi",
+      "lat": 46.06661,
+      "lng": 11.1183,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "UDU Trento"
+      ],
+      "fonte": "https://www.instagram.com/p/DfCVPHms6t0",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T18:43:03",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-modena-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero contro carovita e riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Modena",
+      "provincia": "MO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazzale Primo Maggio Modena",
+      "lat": 44.65228,
+      "lng": 10.91839,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Giovani di Modena Palestina",
+        "Consulta Popolare Modena",
+        "Kamo Modena",
+        "S.I COBAS Modena",
+        "Giovani Kanaglie"
+      ],
+      "fonte": "https://www.instagram.com/p/De4m5wUI6-s/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T19:49:21",
       "gruppo": null
     },
     {
@@ -1495,7 +1566,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De3thW2q6Ti/?exln=Y3AyNGEwOWUxbHhk",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 14,
       "aggiornato_il": "2026-10-25T20:06:32",
       "gruppo": null
     },
@@ -1725,7 +1796,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DeuYCh0DW3g/?exln=MW16ZHJydDhpamJ0Mg==",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 13,
       "aggiornato_il": "2026-10-23T15:26:55",
       "gruppo": null
     },
@@ -1858,7 +1929,7 @@
       "organizzatori": [],
       "fonte": "https://lecconotizie.com/lecco-citta/lecco-sciopero-generale-il-30-ottobre-corteo-contro-guerre-e-riarmo/",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-28T09:06:27",
       "gruppo": null
     },
@@ -2024,7 +2095,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DezeQYLIIfK",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-24T14:56:19",
       "gruppo": null
     },
@@ -2384,7 +2455,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjunranltuXAxXA3QIHHW-ECgIQvOMEKAB6BAgcEAE&url=CAESxgEB6zswFbn-4PVIovIGUqQ48X8KEfA5JRh-YohaInyGRQ3d2DHFeeVTFCLyijFyW80NSjx7QtBII9_PPHdC-cPNji7o3KsBNuzV2LXMle8R4gerQKPcs5jJD8fI_0ydeX_UiCv1P6ADNutGkkCst4VNDWxZf_LwF",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-27T22:48:14",
       "gruppo": null
     },
@@ -2806,7 +2877,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De9A3ahMSr5",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:16",
       "gruppo": null
     },
@@ -2876,7 +2947,7 @@
       "organizzatori": [],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjTp-baltuXAxU7hP0HHVwvIKsQFnoECCEQAQ&url=https%3A%2F%2Fwww.trmtv.it%2Fattualita%2F2026_10_26%2F581524.html&usg=AOvVaw2x8ZCnuV97Nxz-NtNRbkNm&opi=89978449",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-27T22:49:49",
       "gruppo": null
     },
@@ -2897,7 +2968,7 @@
       "organizzatori": [],
       "fonte": "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
       "stato": "verificato",
-      "conferme": 16,
+      "conferme": 17,
       "aggiornato_il": "2026-10-23T04:07:28",
       "gruppo": null
     },
@@ -2943,9 +3014,32 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
+    },
+    {
+      "id": "2026-10-30-bolzano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione Studentesca",
+      "data": "2026-10-30",
+      "ora_inizio": "10:30",
+      "ora_fine": null,
+      "comune": "Bolzano",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Piazza Mazzini, Bolzano",
+      "lat": 46.50187,
+      "lng": 11.33978,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "STC"
+      ],
+      "fonte": "https://www.altoadige.it/cronaca/bolzano-attesa-per-le-manifestazioni-di-venerdi-una-non-e-autorizzata-fcyu03p6",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T17:08:04",
+      "gruppo": null
     },
     {
       "id": "2026-10-30-ancona-sciopero_generale-01",
@@ -2995,7 +3089,7 @@
       ],
       "fonte": "https://www.flcgil.it/ricerca/precari/insieme-per-la-stabilizzazione-del-personale-precario-assemblea-del-personale-cnr-venerdi-30-ottobre.flc",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-22T19:21:35",
       "gruppo": null
     },
@@ -3067,6 +3161,29 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-24T14:56:19",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-fermo-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio Studentesco",
+      "data": "2026-10-30",
+      "ora_inizio": "15:15",
+      "ora_fine": null,
+      "comune": "Fermo",
+      "provincia": "FM",
+      "regione": "Marche",
+      "luogo": "Piazzale Azzolino",
+      "lat": 43.16244,
+      "lng": 13.71724,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi - Noisette"
+      ],
+      "fonte": "https://www.instagram.com/p/DezXIvnDEDb/?vrfl=Z3RzZjYwaHN4ZTQz",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-28T20:55:59",
       "gruppo": null
     },
     {
@@ -5011,8 +5128,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-28T15:12:48",
+  "ultimo_aggiornamento": "2026-10-28T20:55:59",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-28T15:23:24Z"
+  "copia_del": "2026-10-28T20:30:20Z"
 }
