@@ -152,7 +152,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De65rznAanL/?xtok=MzhiOW53cm9hdnpv",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-25T20:43:28",
       "gruppo": null
     },
@@ -225,7 +225,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De6rtjbjBrr/?xtok=MTZhcG9qamh4bGRmcA==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 4,
       "aggiornato_il": "2026-10-25T15:12:51",
       "gruppo": null
     },
@@ -892,7 +892,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeqliVjgHNx/?dlrf=Zm42NTg1NnM3Mnc0",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-22T18:51:34",
       "gruppo": "g-d740f89e31c8"
     },
@@ -961,7 +961,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjI9qi97cmXAxW48bsIHTrLNcQQFnoECBUQAQ&url=CAESngEB6zswFZ2y68XxHieWfFAt4GpEpMdmRo3C91_lPIQV7fmcDvHrdISFEvq2VbDw47nVhqNtdIAJlSq3VhaSTjynqjkQNs83uj2yNwHoXsDjx04p7u3h0FzJtGqNVnJzHil4Xgcf-NRhgTJg19Btr1Og_CgkSxCV_7WSJ1",
       "stato": "verificato",
-      "conferme": 16,
+      "conferme": 17,
       "aggiornato_il": "2026-10-24T14:56:12",
       "gruppo": null
     },
@@ -1617,6 +1617,75 @@
       "gruppo": null
     },
     {
+      "id": "2026-10-30-valdagno-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Corteo contro il carovita, cambiamento climatico e riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Valdagno",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "Ospedale San Lorenzo",
+      "lat": 45.6469,
+      "lng": 11.30815,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Valleagno per la Palestina"
+      ],
+      "fonte": "https://www.instagram.com/valleagnoperlapalestina?rpxt=OXUxNnVpbXlreWg3",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T10:29:39",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-alessandria-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Contro scuole fatiscenti e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Alessandria",
+      "provincia": "AL",
+      "regione": "Piemonte",
+      "luogo": "Piazzetta della lega",
+      "lat": 44.91376,
+      "lng": 8.61387,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Coordinamento studentesco AL"
+      ],
+      "fonte": "https://www.instagram.com/p/De3kCp6sQvU/?cplk=OXF2aThweGZnNDd1",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T15:08:24",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-alessandria-sciopero_generale-03",
+      "tipo": "sciopero_generale",
+      "titolo": "Contro il carovita, salari, diritto alla salute, contro l'economia di guerra, welfare pubblico, contro la repressione",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Alessandria",
+      "provincia": "AL",
+      "regione": "Piemonte",
+      "luogo": "Piazzetta della lega",
+      "lat": 44.91376,
+      "lng": 8.61387,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "AdlCobas.al"
+      ],
+      "fonte": "https://www.instagram.com/p/De_vQddFYQj/?exln=YWt5dGRoOTQ1OTg2",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-28T15:12:48",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-palermo-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il carovita e il riarmo",
@@ -1749,6 +1818,27 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-25T11:44:35",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-pavia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro carovita e riarmo",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Pavia",
+      "provincia": "PV",
+      "regione": "Lombardia",
+      "luogo": "Piazza Vittoria",
+      "lat": 45.18555,
+      "lng": 9.15445,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfAu3EkRWHI/?vrfl=MWd1ajUxaWNkcGRkMg==",
+      "stato": "verificato",
+      "conferme": 7,
+      "aggiornato_il": "2026-10-28T14:00:16",
       "gruppo": null
     },
     {
@@ -2091,7 +2181,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?dlrf=MWFzMWlsNHoyd3Vpeg==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-26T17:28:35",
       "gruppo": "g-31851000ad43"
     },
@@ -2271,7 +2361,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwizlbiSltuXAxXkzQIHHdkGOWIQFnoECBwQAQ&url=https%3A%2F%2Fwww.crotoneok.it%2Fsciopero-generale-del-30-ottobre-corteo-a-crotone&usg=AOvVaw2sqtIwDDetMbdbA4fx6-PE&opi=89978449",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-27T22:47:10",
       "gruppo": null
     },
@@ -2294,7 +2384,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjunranltuXAxXA3QIHHW-ECgIQvOMEKAB6BAgcEAE&url=CAESxgEB6zswFbn-4PVIovIGUqQ48X8KEfA5JRh-YohaInyGRQ3d2DHFeeVTFCLyijFyW80NSjx7QtBII9_PPHdC-cPNji7o3KsBNuzV2LXMle8R4gerQKPcs5jJD8fI_0ydeX_UiCv1P6ADNutGkkCst4VNDWxZf_LwF",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-27T22:48:14",
       "gruppo": null
     },
@@ -2319,6 +2409,27 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:48:36",
+      "gruppo": null
+    },
+    {
+      "id": "2026-10-30-matera-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Matera",
+      "provincia": "MT",
+      "regione": "Basilicata",
+      "luogo": "Via Rosselli",
+      "lat": 40.67266,
+      "lng": 16.60603,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfANXEesNK9/?cplk=dWUxZjhvNjM4YWZy",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-28T12:33:37",
       "gruppo": null
     },
     {
@@ -2624,7 +2735,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DeuCsmzIAyf/?xtok=MTBucG02dnFrY2k4dg==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-25T15:14:47",
       "gruppo": null
     },
@@ -2786,7 +2897,7 @@
       "organizzatori": [],
       "fonte": "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-10-23T04:07:28",
       "gruppo": null
     },
@@ -2832,7 +2943,7 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30"
     },
@@ -3067,7 +3178,7 @@
       ],
       "fonte": "https://www.instagram.com/reel/DemHXskNl4b/?mdxt=eDBqeTl3d215Zjhu",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 13,
       "aggiornato_il": "2026-10-22T18:52:19",
       "gruppo": "g-usb-sciopero-2026-10-30"
     },
@@ -4151,7 +4262,7 @@
       ],
       "fonte": "https://www.ildiariodellavoro.it/manifestazione-cgil-landini-sciopero-generale-per-il-20-novembre/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-21T17:06:06",
       "gruppo": "g-39fb7bfe7880"
     },
@@ -4900,8 +5011,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-28T09:09:14",
+  "ultimo_aggiornamento": "2026-10-28T15:12:48",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-28T08:22:10Z"
+  "copia_del": "2026-10-28T15:23:24Z"
 }
