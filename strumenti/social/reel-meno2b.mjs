@@ -5,16 +5,16 @@ const TOTN = raw.reduce((a, e) => a + e[5], 0), NC = raw.length;
 const E = raw.map(([d, t, c, la, ln, n]) => { const [x, y] = xy(la, ln); return { d, c, n, x, y }; });
 const box = (la1, ln1, la2, ln2) => { const [x1, y1] = xy(la1, ln1), [x2, y2] = xy(la2, ln2); return [x1, y1, x2 - x1, y2 - y1]; };
 const Z = [
- ['Nord-Ovest', box(46.6, 6.5, 43.6, 10.9), [['Milano', '10:00', "Piazza Duca d'Aosta"], ['Torino', '9:30', 'Piazza Palazzo di Città']]],
- ['Nord-Est', box(47.1, 9.9, 43.8, 14.0), [['Bologna', '9:30', 'Piazza Maggiore'], ['Venezia-Mestre', '9:00', 'Piazzale Cialdini']]],
- ['Centro', box(44.2, 9.8, 41.2, 14.9), [['Roma', '10:30', 'Piazza dei Cinquecento'], ['Firenze', '10:00', 'Piazza Bambini di Beslan']]],
- ['Sud', box(41.9, 13.6, 37.8, 18.7), [['Napoli', '9:00', 'Piazza Garibaldi'], ['Bari', '9:30', 'Piazza Libertà']]],
- ['Isole', box(41.4, 7.9, 36.5, 15.8), [['Palermo', '8:30', 'Politeama'], ['Cagliari', '9:30', 'Piazza Garibaldi']]],
+ ['Nord-Ovest', box(46.6, 6.5, 43.6, 10.9), [['Aosta', '9:00', 'Piazza Manzetti'], ['Milano', '10:00', "Piazza Duca d'Aosta"], ['Torino', '9:30', 'P.za Palazzo di Città'], ['Genova', '9:30', 'Varco Albertazzi']]],
+ ['Nord-Est', box(47.1, 9.9, 43.8, 14.0), [['Trento', '8:30', 'Piazza Fiera'], ['Venezia-Mestre', '9:00', 'Piazzale Cialdini'], ['Trieste', '9:00', 'Varco 4, Porto'], ['Bologna', '9:30', 'Piazza Maggiore']]],
+ ['Centro', box(44.2, 9.8, 41.2, 14.9), [['Firenze', '10:00', 'P.za Bambini di Beslan'], ['Ancona', '10:30', 'Piazza Ugo Bassi'], ['Perugia', '9:00', 'Piazza Partigiani'], ['Pescara', '10:00', 'manifestazione regionale'], ['Roma', '10:30', 'Piazza dei Cinquecento']]],
+ ['Sud', box(41.9, 13.6, 37.8, 18.7), [['Napoli', '9:00', 'Piazza Garibaldi'], ['Bari', '9:30', 'Piazza Libertà', -40], ['Potenza', '9:30', 'Piazza Don Bosco', 70], ['Cosenza', '9:00', 'Piazza Loreto']]],
+ ['Isole', box(41.4, 7.9, 36.5, 15.8), [['Cagliari', '9:30', 'Piazza Garibaldi'], ['Palermo', '8:30', 'Politeama']]],
 ];
-const LUOGHI = { Milano: [45.4847, 9.2035], Torino: [45.0733, 7.6813], Bologna: [44.4937, 11.343], 'Venezia-Mestre': [45.4936, 12.2461], Roma: [41.9009, 12.5019], Firenze: [43.7768, 11.249], Napoli: [40.8522, 14.2677], Bari: [41.125, 16.8599], Palermo: [38.1247, 13.3557], Cagliari: [39.2192, 9.1216] };
+const LUOGHI = { Aosta: [45.7346, 7.3224], Milano: [45.4847, 9.2035], Torino: [45.0733, 7.6813], Genova: [44.412, 8.919], Trento: [46.0651, 11.124], 'Venezia-Mestre': [45.4936, 12.2461], Trieste: [45.6494, 13.7678], Bologna: [44.4937, 11.343], Firenze: [43.779, 11.247], Ancona: [43.603, 13.507], Perugia: [43.1055, 12.3877], Pescara: [42.4646, 14.2145], Roma: [41.9013, 12.5005], Napoli: [40.8522, 14.2677], Bari: [41.125, 16.8599], Potenza: [40.9664, 15.8251], Cosenza: [39.3051, 16.2504], Palermo: [38.1247, 13.3557], Cagliari: [39.2192, 9.1216] };
 const CITTA = Z.map((z, i) => E.filter((e) => e.d === i).sort((a, b) => b.n - a.n).slice(0, 5).map((e) => e.c));
 const FULL = [0, 0, W, H];
-const T1 = 1.7, DZ = 1.45, T2 = T1 + DZ * Z.length, T3 = T2 + 2.3, TOT = T3 + 2.9;
+const T1 = 1.7, DZ = 1.95, T2 = T1 + DZ * Z.length, T3 = T2 + 2.3, TOT = T3 + 2.9;
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${cssBase}
 body{background:#f6f3ee}#map{position:absolute;left:60px;top:400px;width:960px;height:1110px}
 #meno{position:absolute;left:0;right:0;top:420px;text-align:center;font:800 640px/.8 T;color:#8e1b5e}
@@ -22,7 +22,7 @@ body{background:#f6f3ee}#map{position:absolute;left:60px;top:400px;width:960px;h
 #head{position:absolute;left:80px;right:80px;top:250px;display:flex;justify-content:space-between;align-items:flex-end}
 #zona{font:800 120px/.85 T;text-transform:uppercase;color:#8e1b5e}#conta{text-align:right;font:600 32px/1.1 C;color:#5f5d66}#conta b{display:block;font:800 100px/.9 T;color:#1c1b1f}
 #citta{position:absolute;left:80px;right:80px;top:1520px;font:800 50px/1.2 T;text-transform:uppercase;text-align:center}
-.lb{position:absolute;white-space:nowrap}.lb b{display:block;font:800 46px/1 T;text-transform:uppercase;color:#1c1b1f;background:#f6f3eecc;padding:2px 8px}.lb span{display:block;font:600 30px/1.2 C;color:#5f5d66;background:#f6f3eecc;padding:0 8px}.lb i{position:absolute;width:20px;height:20px;border-radius:50%;background:#1c1b1f;border:4px solid #fff}
+.lb{position:absolute;white-space:nowrap}.lb b{display:block;font:800 40px/1 T;text-transform:uppercase;color:#1c1b1f;background:#f6f3eecc;padding:2px 8px}.lb span{display:block;font:600 25px/1.2 C;color:#5f5d66;background:#f6f3eecc;padding:0 8px}.lb i{position:absolute;width:20px;height:20px;border-radius:50%;background:#1c1b1f;border:4px solid #fff}
 #storia{position:absolute;inset:0;background:#f6f3ee;padding:300px 80px;opacity:0}#storia .a{font:800 200px/.85 T;color:#8e1b5e}#storia p{font:600 50px/1.3 C;margin-top:40px}#storia .f{font:600 30px C;color:#5f5d66;margin-top:50px}
 #fine{position:absolute;inset:0;background:#1c1b1f;color:#fff;padding:280px 80px;opacity:0}#fine h1{font:800 150px/.88 T;text-transform:uppercase}#fine h1 em{font-style:normal;color:#ff8fb8}
 #fine .seg{font:800 64px/1.1 T;margin-top:60px}#fine .seg span{color:#ff8fb8}#fine p{font:600 40px/1.3 C;color:#e8e4dd;margin-top:30px}#fine .url{font:800 80px T;color:#fff;margin-top:50px}#fine .nota{font:600 30px C;color:#c9c5bf;margin-top:40px}
@@ -56,8 +56,8 @@ window.render=(t)=>{
    const v=e.d<k?1:ease((u-0.25-(E.filter(x=>x.d===k).indexOf(e))*0.02)/0.25); g.setAttribute('opacity',v>0?1:0);
    const [h,d]=g.querySelectorAll('circle'); const rp=(10+Math.sqrt(e.n)*7)*Math.max(0.01,v); h.setAttribute('r',rp*1.9/scl); d.setAttribute('r',rp/scl); d.setAttribute('stroke-width',4/scl); });
  if(inZ){ $('#zona').textContent=Z[k][0]; $('#conta').innerHTML='<b>'+n+'</b>piazze su '+TOTN;
-   const lv=cl((u-0.4)/0.15); $('#labs').innerHTML=Z[k][2].map(([c,o,p])=>{const [px,py]=scr(...L[c]); const right=px>560; const lx=right?px-24:px+24;
-     return '<div class="lb" style="opacity:'+lv+';top:'+(py-40)+'px;'+(right?'right:'+(1080-lx)+'px;text-align:right':'left:'+lx+'px')+'"><b>'+c+' '+o+'</b><span>'+p+'</span></div><div class="lb" style="opacity:'+lv+';left:'+(px-14)+'px;top:'+(py-14)+'px"><i></i></div>';}).join('');
+   const lv=(j)=>cl((u-0.38-j*0.06)/0.12); $('#labs').innerHTML=Z[k][2].map(([c,o,p,dy=0],j)=>{const [px,py]=scr(...L[c]); const right=px>560; const lx=right?px-24:px+24;
+     return '<div class="lb" style="opacity:'+lv(j)+';top:'+(py-40+dy)+'px;'+(right?'right:'+(1080-lx)+'px;text-align:right':'left:'+lx+'px')+'"><b>'+c+' '+o+'</b><span>'+p+'</span></div><div class="lb" style="opacity:'+lv(j)+';left:'+(px-14)+'px;top:'+(py-14)+'px"><i></i></div>';}).join('');
    $('#citta').textContent=C[k].join(' · '); $('#citta').style.opacity=cl((u-0.3)/0.15); } else { $('#labs').innerHTML=''; $('#citta').textContent=''; }
  $('#storia').style.opacity=cl((t-T2)/0.3)*(1-cl((t-T3)/0.3)); $('#fine').style.opacity=cl((t-T3)/0.3);
  document.querySelector('.m').style.color=t>T3+0.15?'#fff':'#1c1b1f';
