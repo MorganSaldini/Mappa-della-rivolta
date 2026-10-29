@@ -27,7 +27,7 @@ I social della mappa **fanno informazione**. Raccontare, annunciare e ringraziar
 
 ## Stile
 Carta #f6f3ee, inchiostro #1c1b1f, rosso #c8322a, colori dei tipi come in `public/app.js`, titoli Barlow Condensed, testo Source Sans 3. Storie e reel 1080x1920 (testi importanti fuori dai primi 250 px e dagli ultimi 300 px); caroselli e post 1080x1350.
-Reel: **copertina come primo fotogramma (0,6 s)**, perché Meta Business Suite usa il primo fotogramma come miniatura; suono bling di sottofondo con `suoni.py` (picco circa −12 dB); niente musica coperta da diritti.
+Reel: **copertina come primo fotogramma (0,6 s)**, perché Meta Business Suite usa il primo fotogramma come miniatura; suono bling di sottofondo con `suoni.py` (picco circa −21 dB, molto di sottofondo); niente musica coperta da diritti.
 Tono informativo e rispettoso; distacco politico (nessun partito, governo o persona attaccata). Niente dati personali, volti riconoscibili, inviti a violenza, blocchi, occupazioni o danneggiamenti.
 Controllo visivo obbligatorio di ogni immagine e di fotogrammi di ogni video prima di mandarli.
 

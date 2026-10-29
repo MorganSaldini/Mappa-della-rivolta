@@ -22,6 +22,6 @@ for i, t0 in enumerate(tempi):
 if fin is not None:
     s = accordo(); i0 = int(fin*SR); a[i0:i0+len(s)] += 0.6*s
 a = a[:int(SR*durata)]
-a = a/max(1e-9, np.abs(a).max())*0.25          # circa -12 dB: resta di sottofondo
+a = a/max(1e-9, np.abs(a).max())*0.09          # circa -21 dB: bling molto di sottofondo (richiesta utente 29/10)
 d = (np.stack([a, a], 1)*32767).astype(np.int16)
 with wave.open(out, 'wb') as w: w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(d.tobytes())
