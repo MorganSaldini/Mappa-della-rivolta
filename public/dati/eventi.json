@@ -254,6 +254,29 @@
       "gruppo": "g-d740f89e31c8"
     },
     {
+      "id": "2026-10-30-salerno-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio dei lavoratori Fonderie Pisano",
+      "data": "2026-10-30",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Fonderie Pisano, località Fratte",
+      "lat": 40.6985,
+      "lng": 14.7705,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fiom Cgil Salerno"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T06:00:31",
+      "gruppo": null
+    },
+    {
       "id": "2026-10-30-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale dei lavoratori portuali",
@@ -1147,7 +1170,7 @@
       ],
       "fonte": "https://www.instagram.com/p/De4m5wUI6-s/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-28T19:49:21",
       "gruppo": null
     },
@@ -3121,6 +3144,32 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-04-napoli-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Sede della Regione Campania",
+      "lat": 40.8338,
+      "lng": 14.2482,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "RSU Mibex",
+        "FIOM",
+        "UILM",
+        "UGLM"
+      ],
+      "fonte": "https://www.nanotv.it/2026/10/28/somma-vesuviana-crisi-mibex-impianti-fermi-entro-il-10-novembre-rsu-fiom-uilm-e-uglm-proclamano-8-ore-di-sciopero-per-il-4-novembre-con-presidio-in-regione-campania/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T06:00:33",
+      "gruppo": null
+    },
+    {
       "id": "2026-11-05-torino-assemblea-02",
       "tipo": "assemblea",
       "titolo": "Proiezione documentario e discussione \"E tu come stai?: L'inizio della lotta del Collettivo di Fabbrica ex-GKN\"",
@@ -3380,6 +3429,33 @@
       "gruppo": null
     },
     {
+      "id": "2026-11-09-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale del personale Italo",
+      "data": "2026-11-09",
+      "ora_inizio": "09:01",
+      "ora_fine": "16:59",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILT-CGIL",
+        "FIT-CISL",
+        "UGL Ferrovieri",
+        "FAST-Confsal",
+        "ORSA Trasporti"
+      ],
+      "fonte": "https://www.quotidianomotori.com/mobilita-urbana/scioperi-novembre-2026-treni-aerei-tpl-calendario/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T06:00:35",
+      "gruppo": null
+    },
+    {
       "id": "2026-11-09-verona-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero manutenzione RFI a Verona",
@@ -3469,6 +3545,32 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:47",
+      "gruppo": null
+    },
+    {
+      "id": "2026-11-11-taormina-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero dei dipendenti del Comune di Taormina",
+      "data": "2026-11-11",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Taormina",
+      "provincia": "ME",
+      "regione": "Sicilia",
+      "luogo": "",
+      "lat": 37.8516,
+      "lng": 15.2853,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "UIL FPL",
+        "FP CGIL",
+        "CSA",
+        "UGL"
+      ],
+      "fonte": "https://www.vaitaormina.com/taormina-i-sindacati-l11-novembre-2026-sciopero-del-personale-dipendente-del-comune/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T06:00:38",
       "gruppo": null
     },
     {
@@ -4717,8 +4819,8 @@
       "gruppo": "g-29b479924aaa"
     }
   ],
-  "ultimo_aggiornamento": "2026-10-29T00:48:18",
+  "ultimo_aggiornamento": "2026-10-29T06:00:38",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-29T00:19:06Z"
+  "copia_del": "2026-10-29T06:21:59Z"
 }
