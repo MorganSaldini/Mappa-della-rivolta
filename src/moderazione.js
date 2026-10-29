@@ -484,6 +484,8 @@ export async function eseguiPulizia(env) {
   for (const t of ['problemi', 'conferme', 'modifiche', 'cronologia']) {
     await env.DB.prepare(`DELETE FROM ${t} WHERE evento_id IN (${vecchi})`).bind(limite).run();
   }
+  // Contatori "Ci sarò": via insieme all'evento passato
+  await env.DB.prepare(`DELETE FROM presenze WHERE evento_id IN (${vecchi}) OR evento_id NOT IN (SELECT id FROM eventi)`).bind(limite).run().catch(() => {});
   const a = await env.DB.prepare("DELETE FROM eventi WHERE data < ? AND stato NOT IN ('verificato', 'annullato')").bind(limite).run();
   const b = await env.DB.prepare('DELETE FROM eventi WHERE data < ?').bind(limiteArchivio).run();
   // Nell'archivio non restano note interne (motivi dell'amministratore AI, sospetti)

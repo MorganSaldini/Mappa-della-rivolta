@@ -1,4 +1,5 @@
 import { eseguiRegole } from './regole.js';
+import { ciSaro } from './presenze.js';
 import { salvaVersione } from './dati.js';
 // Punto di ingresso del Worker Cloudflare.
 // Le richieste a /api/... vanno alle funzioni qui sotto; tutto il resto (pagina, stile, script)
@@ -24,6 +25,7 @@ const PUBBLICHE = [
   ['POST', /^\/api\/(?:mobilitazioni|eventi)$/, eventi.onRequestPost],
   ['POST', /^\/api\/(?:mobilitazioni|eventi)\/([^/]+)\/problema$/, problema.onRequestPost],
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/conferma$/, pubblico.conferma],
+  ['POST', /^\/api\/mobilitazioni\/([^/]+)\/ci-saro$/, ciSaro],
   ['POST', /^\/api\/mobilitazioni\/([^/]+)\/modifiche$/, pubblico.proponiModifica],
   ['GET', /^\/api\/calendario\.ics$/, calendario.feed],
   ['GET', /^\/api\/archivio$/, archivio.elenco],

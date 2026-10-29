@@ -440,3 +440,9 @@ label.spunta input { width: auto; min-height: auto; }
 
 /* Telefono: niente + e − sulla mappa (si ingrandisce con due dita) così non coprono la scheda dell'evento */
 @media (max-width: 759px) { #mappa .leaflet-control-zoom { display: none; } }
+
+/* Ci sarò */
+.pop__cisaro { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; align-items: center; margin: 8px 0 2px; padding: 8px; background: #f6f3ee; border-radius: 8px; }
+.pop__cisaro .bottone { grid-row: span 2; min-height: 40px; margin: 0; }
+.pop__cisaro span { font-size: .92rem; }
+.pop__cisaro small { font-size: .78rem; }

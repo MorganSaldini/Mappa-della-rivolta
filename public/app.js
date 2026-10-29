@@ -173,6 +173,7 @@
       ${fonte ? `<p><a href="${esc(fonte)}" target="_blank" rel="noopener nofollow ugc">Fonte ↗</a></p>` : '<p class="tenue">Nessuna fonte indicata</p>'}
       <p class="tenue">${e.conferme ? e.conferme + ' conferme · ' : ''}aggiornato il ${esc(dataBreve((e.aggiornato_il || '').slice(0, 10) || e.data))}</p>
       ${htmlGruppo(e)}
+      ${e.stato !== 'annullato' ? htmlCiSaro(e) : ''}
       <div class="pop__azioni">
         ${e.stato !== 'annullato' ? `<button type="button" class="bottone bottone--chiaro" data-conferma="${esc(e.id)}">👍 Confermo</button>` : ''}
         <button type="button" class="bottone bottone--chiaro" data-correggi="${esc(e.id)}">✏️ Correggi</button>
@@ -183,6 +184,41 @@
         <a href="#" data-ics="${esc(e.id)}">Apple / Outlook (.ics)</a></p>` : ''}
     </div>`;
   }
+
+  // ---------- "Ci sarò": contatore anonimo (sul server solo il totale) ----------
+  function mieiCiSaro() { try { return new Set(JSON.parse(localStorage.getItem('ci-saro') || '[]')); } catch (_) { return new Set(); } }
+  function salvaCiSaro(set) { try { localStorage.setItem('ci-saro', JSON.stringify([...set].slice(-300))); } catch (_) { /* memoria non disponibile */ } }
+  function htmlCiSaro(e) {
+    const mio = mieiCiSaro().has(e.id), n = Number(e.ci_saro || 0);
+    return `<div class="pop__cisaro">
+      <button type="button" class="bottone ${mio ? 'bottone--pieno' : 'bottone--chiaro'}" data-ci-saro="${esc(e.id)}" aria-pressed="${mio}">🙋 ${mio ? 'Ci sarò ✓' : 'Ci sarò'}</button>
+      <span>${n ? `<b>${n}</b> ${n === 1 ? 'persona pensa' : 'persone pensano'} di esserci` : 'Fai sapere che ci sarai'}</span>
+      <small class="tenue">Conta solo il totale: nessun dato su di te.</small>
+    </div>`;
+  }
+  document.addEventListener('click', async (ev) => {
+    const b = ev.target.closest('[data-ci-saro]');
+    if (!b) return;
+    if (RETE.SPECCHIO) { RETE.scrittura($('#dlg-aggiungi')); return; }
+    const id = b.dataset.ciSaro, miei = mieiCiSaro(), togli = miei.has(id);
+    b.disabled = true;
+    try {
+      const r = await fetch(`/api/mobilitazioni/${encodeURIComponent(id)}/ci-saro`, {
+        method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ togli }),
+      });
+      const d = await r.json();
+      if (!d.ok) throw new Error(d.errore || 'Non riuscito');
+      togli ? miei.delete(id) : miei.add(id);
+      salvaCiSaro(miei);
+      const e = eventi.find((x) => x.id === id);
+      if (e) e.ci_saro = d.ci_saro;
+      const box = b.closest('.pop__cisaro');
+      if (e && box) box.outerHTML = htmlCiSaro(e);
+    } catch (x) {
+      b.disabled = false;
+      avvisoOk('Non sono riuscito a segnarlo: riprova tra poco.');
+    }
+  });
 
   // ---------- Eventi in più città ----------
   function cittaDelGruppo(e) {

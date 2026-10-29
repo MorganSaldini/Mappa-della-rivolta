@@ -6,6 +6,7 @@ import {
 } from './lib.js';
 import { validaEvento } from './dati.js';
 import { cercaSimili } from './doppioni.js';
+import { preparaPresenze } from './presenze.js';
 
 const CAMPI_PUBBLICI =
   'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, lat, lng, ' +
@@ -28,9 +29,10 @@ export async function onRequestGet({ request, env, ctx }) {
   const stati = imp.pubblicazioneImmediata
     ? ['verificato', 'da_verificare', 'annullato']
     : ['verificato', 'annullato'];
+  await preparaPresenze(env.DB);
   const { results } = await env.DB
     .prepare(
-      `SELECT ${CAMPI_PUBBLICI} FROM eventi
+      `SELECT ${CAMPI_PUBBLICI}, (SELECT n FROM presenze p WHERE p.evento_id = eventi.id) AS ci_saro FROM eventi
        WHERE data >= ? AND stato IN (${stati.map(() => '?').join(',')})
        ORDER BY data, ora_inizio`
     )
