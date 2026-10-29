@@ -2,6 +2,72 @@
   "ok": true,
   "eventi": [
     {
+      "id": "2026-10-29-torino-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: assemblea sullo stato dell'occupazione del campus einaudi",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "palazzina Einaudi, campus einaudi",
+      "lat": 45.07288,
+      "lng": 7.69775,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfDix-aCGJO",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T08:02:31",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-29-torino-altro-02",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: collegamento con le altre università occupate e informazioni quotidiane",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "campus einaudi occupato",
+      "lat": 45.07328,
+      "lng": 7.69807,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfDix-aCGJO/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T08:06:15",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-29-torino-altro-03",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: pranzo Sociale al Campus Einaudi occupato",
+      "data": "2026-10-29",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Fronte palazzina Einaudi",
+      "lat": 45.07314,
+      "lng": 7.69826,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfDix-aCGJO/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T08:07:28",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-10-29-napoli-assemblea-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: occupazione Palazzo Giusso",
@@ -20,7 +86,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-21T00:31:06",
-      "gruppo": "g-11a1beee682a"
+      "gruppo": "g-11a1beee682a",
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-rende-presidio-01",
@@ -41,7 +108,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T16:28:46",
-      "gruppo": "g-4aaa385124a2"
+      "gruppo": "g-4aaa385124a2",
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-corigliano-rossano-presidio-01",
@@ -62,7 +130,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T00:21:36",
-      "gruppo": "g-e43bb13a2317"
+      "gruppo": "g-e43bb13a2317",
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-crotone-presidio-01",
@@ -83,7 +152,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T00:17:32",
-      "gruppo": "g-1d705f7be065"
+      "gruppo": "g-1d705f7be065",
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-roma-assemblea-01",
@@ -108,7 +178,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-24T14:56:09",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-siena-altro-01",
@@ -129,7 +200,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:17:01",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-calenzano-assemblea-01",
@@ -152,7 +224,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:30:22",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-termoli-presidio-01",
@@ -177,7 +250,32 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T08:59:59",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-29-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Informazione: nuovi fascismi e tecnologie del controllo",
+      "data": "2026-10-29",
+      "ora_inizio": "11:00",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "campus einaudi",
+      "lat": 45.07325,
+      "lng": 7.69776,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CPS"
+      ],
+      "fonte": "https://www.instagram.com/p/DfDix-aCGJO/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T08:04:57",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-bologna-sciopero_categoria-01",
@@ -201,7 +299,8 @@
       "stato": "annullato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T18:50:10",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-29-roma-assemblea-02",
@@ -224,7 +323,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-27T14:31:05",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-03",
@@ -251,7 +351,8 @@
       "stato": "annullato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T15:23:35",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-salerno-presidio-01",
@@ -274,7 +375,8 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T06:00:31",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-roma-sciopero_categoria-01",
@@ -297,7 +399,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-17T01:27:45",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-02",
@@ -324,7 +427,8 @@
       "stato": "verificato",
       "conferme": 9,
       "aggiornato_il": "2026-10-22T18:51:11",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-04",
@@ -351,7 +455,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-22T18:51:15",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-05",
@@ -378,7 +483,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T18:51:18",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-orbassano-sciopero_generale-01",
@@ -405,7 +511,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-22T18:51:21",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-grugliasco-sciopero_generale-01",
@@ -432,7 +539,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T18:51:23",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-06",
@@ -459,7 +567,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-22T18:51:25",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-07",
@@ -486,7 +595,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T18:51:27",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-vercelli-sciopero_generale-01",
@@ -513,7 +623,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-22T18:51:28",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-novara-sciopero_generale-01",
@@ -540,7 +651,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T18:51:30",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-novara-sciopero_generale-02",
@@ -567,7 +679,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T02:35:36",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-alessandria-sciopero_generale-01",
@@ -594,7 +707,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-22T18:51:34",
-      "gruppo": "g-d740f89e31c8"
+      "gruppo": "g-d740f89e31c8",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-napoli-assemblea-01",
@@ -615,7 +729,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-21T00:31:06",
-      "gruppo": "g-11a1beee682a"
+      "gruppo": "g-11a1beee682a",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-genova-sciopero_generale-01",
@@ -640,7 +755,8 @@
       "stato": "verificato",
       "conferme": 15,
       "aggiornato_il": "2026-10-20T10:01:45",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-sassari-sciopero_generale-01",
@@ -663,7 +779,8 @@
       "stato": "verificato",
       "conferme": 17,
       "aggiornato_il": "2026-10-24T14:56:12",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-rende-presidio-01",
@@ -684,7 +801,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T16:28:46",
-      "gruppo": "g-4aaa385124a2"
+      "gruppo": "g-4aaa385124a2",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-genova-altro-01",
@@ -707,7 +825,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-21T02:46:00",
-      "gruppo": "g-29b479924aaa"
+      "gruppo": "g-29b479924aaa",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-corigliano-rossano-presidio-01",
@@ -728,7 +847,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T00:21:36",
-      "gruppo": "g-e43bb13a2317"
+      "gruppo": "g-e43bb13a2317",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-crotone-presidio-01",
@@ -749,7 +869,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T00:16:47",
-      "gruppo": "g-1d705f7be065"
+      "gruppo": "g-1d705f7be065",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pisa-sciopero_generale-01",
@@ -772,7 +893,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:40:43",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-genova-sciopero_categoria-01",
@@ -795,7 +917,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:17:18",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-palermo-corteo-01",
@@ -818,7 +941,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:17:28",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-corteo-03",
@@ -841,7 +965,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:51:45",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-nove-presidio-01",
@@ -862,7 +987,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:21:39",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-siena-sciopero_generale-02",
@@ -883,7 +1009,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T12:42:40",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-casale-monferrato-corteo-01",
@@ -910,7 +1037,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:03:24",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-cuneo-corteo-01",
@@ -937,7 +1065,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:03:28",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pinerolo-corteo-01",
@@ -963,7 +1092,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T19:33:07",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-livorno-presidio-01",
@@ -987,7 +1117,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-23T15:26:51",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-livorno-sciopero_generale-02",
@@ -1010,7 +1141,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:35",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-parma-sciopero_generale-01",
@@ -1033,7 +1165,8 @@
       "stato": "verificato",
       "conferme": 22,
       "aggiornato_il": "2026-10-22T18:52:15",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-piombino-sciopero_categoria-01",
@@ -1054,7 +1187,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T04:06:51",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-verona-presidio-01",
@@ -1075,9 +1209,10 @@
       ],
       "fonte": "https://www.instagram.com/p/De1iP0hDHBY/?dlrf=MW56eDR6MHUxd2loMg==",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-24T14:56:18",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-sesto-san-giovanni-corteo-01",
@@ -1101,7 +1236,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-23T23:21:57",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-montevarchi-corteo-01",
@@ -1122,7 +1258,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-29T00:30:50",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-trieste-picchetto-01",
@@ -1145,7 +1282,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-25T13:24:18",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-modena-sciopero_generale-02",
@@ -1172,7 +1310,33 @@
       "stato": "da_verificare",
       "conferme": 1,
       "aggiornato_il": "2026-10-28T19:49:21",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-pistoia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "IN PIAZZA PER LA SCUOLA PUBBLICA, I SERVIZI SOCIALI E CONTRO L'AUMENTO DELLE SPESE MILITARI",
+      "data": "2026-10-30",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Pistoia",
+      "provincia": "PT",
+      "regione": "Toscana",
+      "luogo": "Piazza Mazzini",
+      "lat": 43.93581,
+      "lng": 10.91142,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cobas",
+        "Studenti"
+      ],
+      "fonte": "https://www.reportpistoia.com/venerdi-a-pistoia-corteo-di-cobas-scuola/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T11:38:33",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-padova-sciopero_generale-01",
@@ -1196,7 +1360,8 @@
       "stato": "verificato",
       "conferme": 17,
       "aggiornato_il": "2026-10-18T11:59:23",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-padova-corteo-03",
@@ -1222,7 +1387,8 @@
       "stato": "verificato",
       "conferme": 23,
       "aggiornato_il": "2026-10-24T14:56:14",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 2
     },
     {
       "id": "2026-10-30-cesena-corteo-01",
@@ -1245,7 +1411,8 @@
       "stato": "verificato",
       "conferme": 14,
       "aggiornato_il": "2026-10-25T20:06:32",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-ravenna-presidio-01",
@@ -1268,7 +1435,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:22:15",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-viareggio-corteo-01",
@@ -1289,9 +1457,10 @@
       ],
       "fonte": "https://www.instagram.com/p/De9txKsDMJ-/?srtk=MWRmZzFqdnYwaThtMg==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-27T14:27:31",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-piombino-corteo-01",
@@ -1315,7 +1484,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:27:51",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-schio-corteo-01",
@@ -1338,7 +1508,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-28T09:01:15",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-vicenza-sciopero_generale-03",
@@ -1362,7 +1533,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T09:07:46",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-trento-corteo-02",
@@ -1383,9 +1555,58 @@
       ],
       "fonte": "https://www.instagram.com/p/DfCVPHms6t0",
       "stato": "verificato",
-      "conferme": 13,
+      "conferme": 15,
       "aggiornato_il": "2026-10-29T00:48:18",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-10-30-faenza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Faenza",
+      "provincia": "RA",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza del Popolo",
+      "lat": 44.28517,
+      "lng": 11.88282,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Osa Faenza"
+      ],
+      "fonte": "https://www.ravennawebtv.it/sciopero-del-30-ottobre-studenti-in-corteo-anche-a-faenza/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T11:31:44",
+      "gruppo": null,
+      "ci_saro": 0
+    },
+    {
+      "id": "2026-10-30-catania-altro-01",
+      "tipo": "altro",
+      "titolo": "Preconcentramento spezzone giovanile",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": "09:30",
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Piazza dante",
+      "lat": 37.50417,
+      "lng": 15.08099,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivi studenteschi"
+      ],
+      "fonte": "https://t.me/pfsk8",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-29T12:28:36",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-palermo-sciopero_generale-01",
@@ -1408,7 +1629,8 @@
       "stato": "verificato",
       "conferme": 19,
       "aggiornato_il": "2026-10-22T18:52:20",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-treviso-corteo-01",
@@ -1429,9 +1651,10 @@
       ],
       "fonte": "https://www.instagram.com/p/DewgFO3MZkm/?srtk=MXE4NmExY2s4OTcwMw==",
       "stato": "verificato",
-      "conferme": 6,
+      "conferme": 7,
       "aggiornato_il": "2026-10-23T15:26:53",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-reggio-calabria-corteo-01",
@@ -1450,9 +1673,10 @@
       "organizzatori": [],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi8jNjRtNCXAxVS9bsIHUrDAOgQFnoECCEQAQ&url=https%3A%2F%2Fwww.corrieredellacalabria.it%2F2026%2F10%2F23%2Fsciopero-generale-del-30-ottobre-anche-in-calabria-blocchiamo-tutto%2F&usg=AOvVaw2xLt4RUYFBn-FGb4PDyAFL&opi=",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-24T14:56:11",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-padova-corteo-04",
@@ -1476,7 +1700,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-25T11:44:27",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-piacenza-corteo-01",
@@ -1499,7 +1724,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-25T11:44:35",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-valdagno-sciopero_generale-01",
@@ -1522,7 +1748,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:32:05",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pavia-corteo-01",
@@ -1546,7 +1773,8 @@
       "stato": "verificato",
       "conferme": 8,
       "aggiornato_il": "2026-10-29T00:37:52",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-alessandria-sciopero_generale-02",
@@ -1569,7 +1797,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:32:29",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-alessandria-sciopero_generale-03",
@@ -1592,7 +1821,78 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:32:49",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-bari-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": "15:00",
+      "comune": "Bari",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "Piazza del ferrarese",
+      "lat": 41.12693,
+      "lng": 16.87195,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://crusc-gepas.perlapa.gov.it/detail/bbe12437-6686-4f56-a4a3-3b7dd8c7c79e",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-29T10:16:21",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-trieste-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero studentesco regionale",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "varco 4 punto franco nuovo",
+      "lat": 45.63562,
+      "lng": 13.76513,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DewHWeNoAWl/?psln=cTNpem9vMHl1bGw3",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T11:40:42",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-bergamo-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Student3 in piazza contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Bergamo",
+      "provincia": "BG",
+      "regione": "Lombardia",
+      "luogo": "Piazzale Marconi",
+      "lat": 45.6907,
+      "lng": 9.67462,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "UDS Bergamo",
+        "Collettivo Cento Passi",
+        "Collettivo La Storia Siamo Noi"
+      ],
+      "fonte": "https://www.instagram.com/p/DfAqyh6leim/?srtk=a294cjhkc2tzbnFk",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T11:48:27",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-trieste-sciopero_generale-01",
@@ -1615,7 +1915,8 @@
       "stato": "verificato",
       "conferme": 22,
       "aggiornato_il": "2026-10-24T14:35:53",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-ravenna-corteo-01",
@@ -1638,7 +1939,8 @@
       "stato": "verificato",
       "conferme": 11,
       "aggiornato_il": "2026-10-26T17:37:48",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-brescia-sciopero_generale-01",
@@ -1665,7 +1967,8 @@
       "stato": "verificato",
       "conferme": 7,
       "aggiornato_il": "2026-10-25T20:51:27",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-corteo-02",
@@ -1689,7 +1992,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-24T14:56:19",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-rimini-corteo-01",
@@ -1712,7 +2016,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-23T16:34:22",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-reggio-emilia-corteo-01",
@@ -1735,7 +2040,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-26T17:51:46",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-cosenza-sciopero_generale-01",
@@ -1754,9 +2060,10 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DezWnS5MTmr/?exln=aHhuMWg0aWpqeDMx",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-25T15:13:38",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-mestre-sciopero_generale-01",
@@ -1779,7 +2086,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-29T00:39:27",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-perugia-sciopero_generale-01",
@@ -1800,7 +2108,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:41:31",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-grosseto-sciopero_generale-01",
@@ -1823,7 +2132,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:34",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-siena-sciopero_generale-01",
@@ -1846,7 +2156,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:28:35",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-livorno-sciopero_generale-03",
@@ -1869,7 +2180,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:35",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-ravenna-corteo-02",
@@ -1892,7 +2204,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:41:39",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-salerno-sciopero_generale-01",
@@ -1911,9 +2224,10 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/De9XSaqIGSo/?dlrf=MWtsZTQxeXg1dmVkeQ==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-27T14:28:03",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-taranto-corteo-01",
@@ -1936,7 +2250,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:28:14",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-arezzo-sciopero_generale-01",
@@ -1959,7 +2274,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-27T14:28:26",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-reggio-emilia-sciopero_generale-01",
@@ -1980,7 +2296,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:28:48",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-aosta-sciopero_generale-01",
@@ -2003,7 +2320,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-27T22:46:46",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-crotone-corteo-01",
@@ -2026,7 +2344,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-27T22:47:10",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-lecce-sciopero_generale-01",
@@ -2049,7 +2368,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-27T22:48:14",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-aosta-corteo-01",
@@ -2072,7 +2392,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:48:36",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-lecco-corteo-01",
@@ -2093,7 +2414,32 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-29T00:33:01",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-grosseto-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro il carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Grosseto",
+      "provincia": "GR",
+      "regione": "Toscana",
+      "luogo": "Piazza Rosselli",
+      "lat": 42.76393,
+      "lng": 11.11238,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "ADL COBAS"
+      ],
+      "fonte": "https://www.instagram.com/p/De3pIpmMRzJ/?rpxt=MWFzMWlsNHoyd3Vpeg==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T11:19:34",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-catania-corteo-01",
@@ -2117,7 +2463,8 @@
       "stato": "verificato",
       "conferme": 20,
       "aggiornato_il": "2026-10-24T14:56:15",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-cagliari-sciopero_generale-01",
@@ -2140,7 +2487,8 @@
       "stato": "verificato",
       "conferme": 36,
       "aggiornato_il": "2026-10-24T14:56:13",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-bologna-sciopero_generale-01",
@@ -2164,7 +2512,8 @@
       "stato": "verificato",
       "conferme": 31,
       "aggiornato_il": "2026-10-22T18:52:22",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-la-spezia-sciopero_generale-01",
@@ -2188,7 +2537,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-27T22:52:07",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-torino-corteo-01",
@@ -2211,7 +2561,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-21T20:26:39",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-la-spezia-presidio-01",
@@ -2234,7 +2585,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-22T08:38:40",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-imperia-presidio-01",
@@ -2257,7 +2609,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-23T02:35:36",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-novara-corteo-01",
@@ -2281,7 +2634,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-23T02:35:36",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-milano-sciopero_generale-02",
@@ -2305,7 +2659,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-24T14:56:16",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-catania-corteo-02",
@@ -2328,7 +2683,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-24T14:33:06",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-cagliari-corteo-01",
@@ -2351,7 +2707,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T11:44:55",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-siracusa-sciopero_generale-01",
@@ -2376,7 +2733,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-25T15:14:47",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-prato-sciopero_generale-01",
@@ -2399,7 +2757,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-27T22:49:13",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-bologna-presidio-01",
@@ -2422,7 +2781,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:26:04",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-milano-corteo-02",
@@ -2447,7 +2807,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:16",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-genova-corteo-01",
@@ -2470,7 +2831,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:41:47",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-reggio-emilia-presidio-01",
@@ -2496,7 +2858,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T09:07:51",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-potenza-corteo-01",
@@ -2515,9 +2878,10 @@
       "organizzatori": [],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjTp-baltuXAxU7hP0HHVwvIKsQFnoECCEQAQ&url=https%3A%2F%2Fwww.trmtv.it%2Fattualita%2F2026_10_26%2F581524.html&usg=AOvVaw2x8ZCnuV97Nxz-NtNRbkNm&opi=89978449",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-27T22:49:49",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-matera-corteo-01",
@@ -2536,9 +2900,10 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfANXEesNK9/?cplk=dWUxZjhvNjM4YWZy",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-29T00:33:43",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pescara-corteo-01",
@@ -2557,9 +2922,10 @@
       "organizzatori": [],
       "fonte": "https://www.reteabruzzo.com/2026/10/22/contro-il-carovita-e-la-corsa-al-riarmo-la-valle-peligna-si-mobilita-per-lo-sciopero-generale/",
       "stato": "verificato",
-      "conferme": 17,
+      "conferme": 18,
       "aggiornato_il": "2026-10-23T04:07:28",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-firenze-corteo-01",
@@ -2582,7 +2948,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-24T14:33:06",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-milano-corteo-01",
@@ -2605,7 +2972,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-24T14:33:06",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-bolzano-corteo-01",
@@ -2628,7 +2996,8 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T17:08:04",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-ancona-sciopero_generale-01",
@@ -2655,7 +3024,8 @@
       "stato": "verificato",
       "conferme": 46,
       "aggiornato_il": "2026-10-26T17:41:52",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-roma-assemblea-01",
@@ -2680,7 +3050,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-22T19:21:35",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-roma-presidio-01",
@@ -2703,7 +3074,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T16:34:32",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-cropani-presidio-01",
@@ -2726,7 +3098,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T09:09:14",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-roma-sciopero_generale-02",
@@ -2749,7 +3122,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:39:40",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-novara-presidio-01",
@@ -2773,7 +3147,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-24T14:56:19",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-ferrara-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro guerra e carovita - Organizzati si vince",
+      "data": "2026-10-30",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Ferrara",
+      "provincia": "FE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza della Cattedrale",
+      "lat": 44.8358,
+      "lng": 11.61949,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/De9f3f5O6zK/?xtok=MTc2eXFraXpkenU5cg==",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-10-29T10:06:58",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-fermo-presidio-01",
@@ -2794,9 +3191,10 @@
       ],
       "fonte": "https://www.instagram.com/p/DezXIvnDEDb/?vrfl=Z3RzZjYwaHN4ZTQz",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-28T20:55:59",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-mestre-corteo-01",
@@ -2819,7 +3217,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-26T17:43:03",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-24-bolzano-corteo-01",
@@ -2840,7 +3239,8 @@
       "stato": "verificato",
       "conferme": 6,
       "aggiornato_il": "2026-10-22T18:52:29",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-piombino-sciopero_generale-01",
@@ -2863,7 +3263,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:34",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-lucca-presidio-01",
@@ -2886,7 +3287,56 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-27T12:43:13",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 0
+    },
+    {
+      "id": "2026-10-30-bergamo-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "SCIOPERO GENERALE",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": "19:00",
+      "comune": "Bergamo",
+      "provincia": "BG",
+      "regione": "Lombardia",
+      "luogo": "Largo Porta Nuova",
+      "lat": 45.69413,
+      "lng": 9.67126,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Unione Sindacale di Base"
+      ],
+      "fonte": "https://www.instagram.com/p/Der2SbUjewj/?utm_source=ig_web_copy_link&vrfl=MWQ1ZGUxMzBkMA==&srtk=MWQ1ZGUxMzBkMA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T12:02:43",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-monza-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Monza",
+      "provincia": "MB",
+      "regione": "Lombardia",
+      "luogo": "Piazza castello",
+      "lat": 45.5787,
+      "lng": 9.27512,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo Foa Boccaccio"
+      ],
+      "fonte": "https://www.facebook.com/share/p/19E6CwmYQe/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T13:41:29",
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pozzallo-sciopero_generale-01",
@@ -2909,7 +3359,8 @@
       "stato": "verificato",
       "conferme": 9,
       "aggiornato_il": "2026-10-26T17:36:41",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-pozzallo-presidio-01",
@@ -2932,7 +3383,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-24T14:33:06",
-      "gruppo": "ag-sciopero-generale-2026-10-30"
+      "gruppo": "ag-sciopero-generale-2026-10-30",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-verbania-sciopero_generale-01",
@@ -2957,7 +3409,8 @@
       "stato": "verificato",
       "conferme": 5,
       "aggiornato_il": "2026-10-27T10:34:00",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-massa-sciopero_generale-01",
@@ -2980,7 +3433,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:35",
-      "gruppo": "g-31851000ad43"
+      "gruppo": "g-31851000ad43",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-reggio-emilia-corteo-02",
@@ -3003,7 +3457,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-26T17:37:31",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-31-corigliano-rossano-presidio-01",
@@ -3024,7 +3479,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-22T00:08:44",
-      "gruppo": "g-e43bb13a2317"
+      "gruppo": "g-e43bb13a2317",
+      "ci_saro": null
     },
     {
       "id": "2026-10-31-nichelino-altro-01",
@@ -3049,7 +3505,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T17:16:36",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-10-31-vicenza-corteo-02",
@@ -3072,7 +3529,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-28T09:06:19",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-01-roma-sciopero_categoria-01",
@@ -3097,7 +3555,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T16:34:56",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-02-torre-del-greco-assemblea-01",
@@ -3120,7 +3579,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T10:23:10",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-01-pescara-corteo-01",
@@ -3141,7 +3601,8 @@
       "stato": "verificato",
       "conferme": 7,
       "aggiornato_il": "2026-10-29T00:45:36",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-04-napoli-presidio-01",
@@ -3167,7 +3628,8 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T06:00:33",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-05-torino-assemblea-02",
@@ -3191,7 +3653,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:33:38",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-05-torino-assemblea-01",
@@ -3215,7 +3678,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:33:41",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-06-volla-sciopero_categoria-01",
@@ -3238,7 +3702,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:16",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-06-bari-sciopero_categoria-01",
@@ -3261,7 +3726,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:46",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-06-roma-sciopero_categoria-01",
@@ -3285,7 +3751,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:25",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-verona-altro-01",
@@ -3310,7 +3777,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:29:00",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-montale-corteo-01",
@@ -3333,7 +3801,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-23T15:25:53",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-montale-corteo-02",
@@ -3357,7 +3826,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:56:02",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-tivoli-corteo-01",
@@ -3380,7 +3850,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T20:44:03",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-gorizia-corteo-01",
@@ -3403,7 +3874,8 @@
       "stato": "verificato",
       "conferme": 4,
       "aggiornato_il": "2026-10-23T15:26:56",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-08-torino-altro-01",
@@ -3426,7 +3898,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T10:23:14",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-09-roma-sciopero_categoria-01",
@@ -3453,7 +3926,8 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T06:00:35",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-09-verona-sciopero_categoria-01",
@@ -3476,7 +3950,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:31",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-09-palermo-sciopero_categoria-01",
@@ -3499,7 +3974,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:49",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-10-cosenza-sciopero_categoria-01",
@@ -3522,7 +3998,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:35",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-10-roma-sciopero_categoria-01",
@@ -3545,7 +4022,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:47",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-11-taormina-sciopero_categoria-01",
@@ -3571,7 +4049,8 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T06:00:38",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-11-roma-sciopero_categoria-01",
@@ -3596,7 +4075,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:45:16",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-11-milano-presidio-01",
@@ -3623,7 +4103,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
-      "gruppo": "ag-taxi-mobilitazione-2026"
+      "gruppo": "ag-taxi-mobilitazione-2026",
+      "ci_saro": null
     },
     {
       "id": "2026-11-11-torino-assemblea-01",
@@ -3646,7 +4127,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
-      "gruppo": "g-3babbc14dce7"
+      "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
     },
     {
       "id": "2026-11-13-milano-sciopero_categoria-01",
@@ -3669,7 +4151,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:47",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-13-venezia-sciopero_categoria-01",
@@ -3693,7 +4176,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:48",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-14-bari-sciopero_categoria-01",
@@ -3719,7 +4203,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:49",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-14-verona-corteo-01",
@@ -3743,7 +4228,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:58",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-16-napoli-sciopero_categoria-01",
@@ -3770,7 +4256,8 @@
       "stato": "annullato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:44:21",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-17-napoli-presidio-01",
@@ -3797,7 +4284,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
-      "gruppo": "ag-taxi-mobilitazione-2026"
+      "gruppo": "ag-taxi-mobilitazione-2026",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-roma-sciopero_generale-01",
@@ -3820,7 +4308,8 @@
       "stato": "verificato",
       "conferme": 8,
       "aggiornato_il": "2026-10-18T10:55:52",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-torino-sciopero_generale-01",
@@ -3843,7 +4332,8 @@
       "stato": "verificato",
       "conferme": 11,
       "aggiornato_il": "2026-10-18T16:48:42",
-      "gruppo": "g-8ba98c49cf13"
+      "gruppo": "g-8ba98c49cf13",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -3866,7 +4356,8 @@
       "stato": "verificato",
       "conferme": 13,
       "aggiornato_il": "2026-10-19T00:50:30",
-      "gruppo": "g-8ba98c49cf13"
+      "gruppo": "g-8ba98c49cf13",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -3890,7 +4381,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-24T14:56:20",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-catanzaro-corteo-01",
@@ -3913,7 +4405,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-cosenza-corteo-01",
@@ -3936,7 +4429,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-crotone-corteo-01",
@@ -3959,7 +4453,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-reggio-calabria-corteo-01",
@@ -3982,7 +4477,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-vibo-valentia-corteo-01",
@@ -4005,7 +4501,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-25T13:24:01",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
@@ -4026,7 +4523,8 @@
       "stato": "annullato",
       "conferme": 10,
       "aggiornato_il": "2026-10-26T17:38:06",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-firenze-sciopero_generale-01",
@@ -4049,7 +4547,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-21T17:06:06",
-      "gruppo": "g-39fb7bfe7880"
+      "gruppo": "g-39fb7bfe7880",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -4072,7 +4571,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-21T17:06:07",
-      "gruppo": "g-39fb7bfe7880"
+      "gruppo": "g-39fb7bfe7880",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -4095,7 +4595,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:42:35",
-      "gruppo": "g-39fb7bfe7880"
+      "gruppo": "g-39fb7bfe7880",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -4118,7 +4619,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:41",
-      "gruppo": "ag-sciopero-generale-2026-11-20"
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -4142,7 +4644,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:51",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-adria-sciopero_categoria-01",
@@ -4166,7 +4669,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:14",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-arezzo-sciopero_categoria-01",
@@ -4190,7 +4694,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-20T10:02:14",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-bari-sciopero_categoria-01",
@@ -4214,7 +4719,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:14",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-bolzano-sciopero_categoria-01",
@@ -4238,7 +4744,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:14",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-catanzaro-sciopero_categoria-01",
@@ -4262,7 +4769,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:14",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-foggia-sciopero_categoria-01",
@@ -4286,7 +4794,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-lanciano-sciopero_categoria-01",
@@ -4310,7 +4819,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-napoli-sciopero_categoria-01",
@@ -4334,7 +4844,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-torino-sciopero_categoria-01",
@@ -4358,7 +4869,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-trento-sciopero_categoria-01",
@@ -4382,7 +4894,8 @@
       "stato": "verificato",
       "conferme": 3,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-udine-sciopero_categoria-01",
@@ -4406,7 +4919,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21"
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "ci_saro": null
     },
     {
       "id": "2026-11-21-roma-sciopero_categoria-01",
@@ -4430,7 +4944,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:52",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-22-venezia-sciopero_categoria-01",
@@ -4453,7 +4968,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:53",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-22-ferno-sciopero_categoria-01",
@@ -4476,7 +4992,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:53",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-25-firenze-presidio-01",
@@ -4503,7 +5020,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
-      "gruppo": "ag-taxi-mobilitazione-2026"
+      "gruppo": "ag-taxi-mobilitazione-2026",
+      "ci_saro": null
     },
     {
       "id": "2026-11-25-torino-assemblea-01",
@@ -4526,7 +5044,8 @@
       "stato": "verificato",
       "conferme": 2,
       "aggiornato_il": "2026-10-20T23:50:27",
-      "gruppo": "g-3babbc14dce7"
+      "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
     },
     {
       "id": "2026-11-27-genova-altro-01",
@@ -4549,7 +5068,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-21T02:46:00",
-      "gruppo": "g-29b479924aaa"
+      "gruppo": "g-29b479924aaa",
+      "ci_saro": null
     },
     {
       "id": "2026-11-28-roma-corteo-01",
@@ -4572,7 +5092,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:47:28",
-      "gruppo": "g-dfbff6e9740c"
+      "gruppo": "g-dfbff6e9740c",
+      "ci_saro": null
     },
     {
       "id": "2026-12-04-roma-sciopero_generale-01",
@@ -4599,7 +5120,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:55",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-04-genova-sciopero_categoria-01",
@@ -4623,7 +5145,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:30:15",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-12-09-torino-assemblea-01",
@@ -4646,7 +5169,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
-      "gruppo": "g-3babbc14dce7"
+      "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
     },
     {
       "id": "2026-12-14-fiumicino-sciopero_categoria-01",
@@ -4669,7 +5193,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:57",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-15-roma-sciopero_categoria-01",
@@ -4696,7 +5221,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:35",
-      "gruppo": "ag-taxi-mobilitazione-2026"
+      "gruppo": "ag-taxi-mobilitazione-2026",
+      "ci_saro": null
     },
     {
       "id": "2026-12-15-bologna-sciopero_categoria-01",
@@ -4719,7 +5245,8 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:57",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-16-napoli-sciopero_categoria-01",
@@ -4746,7 +5273,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:03:39",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-16-bologna-sciopero_categoria-01",
@@ -4770,7 +5298,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:45",
-      "gruppo": null
+      "gruppo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-23-torino-assemblea-01",
@@ -4793,7 +5322,8 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
-      "gruppo": "g-3babbc14dce7"
+      "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
     },
     {
       "id": "2027-01-29-genova-altro-01",
@@ -4816,11 +5346,12 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-21T02:46:00",
-      "gruppo": "g-29b479924aaa"
+      "gruppo": "g-29b479924aaa",
+      "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-29T06:00:38",
+  "ultimo_aggiornamento": "2026-10-29T13:41:29",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-29T06:21:59Z"
+  "copia_del": "2026-10-29T13:37:31Z"
 }
