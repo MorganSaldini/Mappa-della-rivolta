@@ -21,7 +21,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T08:02:31",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-29-torino-altro-02",
@@ -400,7 +400,7 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-17T01:27:45",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-02",
@@ -891,7 +891,7 @@
       ],
       "fonte": "https://www.facebook.com/usb.pisa/po",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-10-26T17:40:43",
       "gruppo": null,
       "ci_saro": null
@@ -966,7 +966,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:51:45",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-nove-presidio-01",
@@ -1038,7 +1038,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:03:24",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-cuneo-corteo-01",
@@ -1237,7 +1237,7 @@
       "conferme": 5,
       "aggiornato_il": "2026-10-23T23:21:57",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-montevarchi-corteo-01",
@@ -1308,10 +1308,10 @@
       ],
       "fonte": "https://www.instagram.com/p/De4m5wUI6-s/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-28T19:49:21",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-10-30-pistoia-corteo-01",
@@ -1555,7 +1555,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DfCVPHms6t0",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-10-29T00:48:18",
       "gruppo": null,
       "ci_saro": 1
@@ -1609,6 +1609,28 @@
       "ci_saro": null
     },
     {
+      "id": "2026-10-30-termoli-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Termoli",
+      "provincia": "CB",
+      "regione": "Molise",
+      "luogo": "Piazza donatori di sangue",
+      "lat": 41.99836,
+      "lng": 14.99351,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.informamolise.com/post/il-movimento-4-settembre-sostiene-la-protesta-nazionale-indetta-dal-sindacato-usb",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T18:55:26",
+      "gruppo": "g-d511eb4e6c50",
+      "ci_saro": null
+    },
+    {
       "id": "2026-10-30-palermo-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale contro il carovita e il riarmo",
@@ -1654,7 +1676,7 @@
       "conferme": 7,
       "aggiornato_il": "2026-10-23T15:26:53",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-reggio-calabria-corteo-01",
@@ -1771,10 +1793,10 @@
       ],
       "fonte": "https://www.instagram.com/p/DfAu3EkRWHI/?vrfl=MWd1ajUxaWNkcGRkMg==",
       "stato": "verificato",
-      "conferme": 8,
+      "conferme": 9,
       "aggiornato_il": "2026-10-29T00:37:52",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-alessandria-sciopero_generale-02",
@@ -1841,10 +1863,10 @@
       "organizzatori": [],
       "fonte": "https://crusc-gepas.perlapa.gov.it/detail/bbe12437-6686-4f56-a4a3-3b7dd8c7c79e",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-29T10:16:21",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-trieste-sciopero_generale-02",
@@ -1892,6 +1914,28 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T11:48:27",
       "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-10-30-campobasso-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro guerra e carovita",
+      "data": "2026-10-30",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Campobasso",
+      "provincia": "CB",
+      "regione": "Molise",
+      "luogo": "Piazza san Francesco",
+      "lat": 41.56134,
+      "lng": 14.66912,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.informamolise.com/post/il-movimento-4-settembre-sostiene-la-protesta-nazionale-indetta-dal-sindacato-usb",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-29T18:55:26",
+      "gruppo": "g-d511eb4e6c50",
       "ci_saro": null
     },
     {
@@ -1968,7 +2012,7 @@
       "conferme": 7,
       "aggiornato_il": "2026-10-25T20:51:27",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-torino-corteo-02",
@@ -2017,7 +2061,7 @@
       "conferme": 5,
       "aggiornato_il": "2026-10-23T16:34:22",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-reggio-emilia-corteo-01",
@@ -2109,7 +2153,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:41:31",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-grosseto-sciopero_generale-01",
@@ -2181,7 +2225,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:28:35",
       "gruppo": "g-31851000ad43",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-ravenna-corteo-02",
@@ -2275,7 +2319,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-27T14:28:26",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-reggio-emilia-sciopero_generale-01",
@@ -2321,7 +2365,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-27T22:46:46",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-crotone-corteo-01",
@@ -2366,10 +2410,10 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjunranltuXAxXA3QIHHW-ECgIQvOMEKAB6BAgcEAE&url=CAESxgEB6zswFbn-4PVIovIGUqQ48X8KEfA5JRh-YohaInyGRQ3d2DHFeeVTFCLyijFyW80NSjx7QtBII9_PPHdC-cPNji7o3KsBNuzV2LXMle8R4gerQKPcs5jJD8fI_0ydeX_UiCv1P6ADNutGkkCst4VNDWxZf_LwF",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-27T22:48:14",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-aosta-corteo-01",
@@ -2393,7 +2437,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:48:36",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-lecco-corteo-01",
@@ -2513,7 +2557,7 @@
       "conferme": 31,
       "aggiornato_il": "2026-10-22T18:52:22",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-10-30-la-spezia-sciopero_generale-01",
@@ -2660,7 +2704,7 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-24T14:56:16",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-catania-corteo-02",
@@ -2755,7 +2799,7 @@
       ],
       "fonte": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiivvnGltuXAxUzyAIHHbKVPT8QFnoECC4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDe9X9CuIPw7%2F&usg=AOvVaw00Xj7dT3OzrgSOVdX1ELee&opi=89978449",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-27T22:49:13",
       "gruppo": null,
       "ci_saro": null
@@ -2808,7 +2852,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:16",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-genova-corteo-01",
@@ -2946,10 +2990,10 @@
       ],
       "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-milano-corteo-01",
@@ -2970,10 +3014,10 @@
       ],
       "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-24T14:33:06",
       "gruppo": "ag-sciopero-generale-2026-10-30",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-bolzano-corteo-01",
@@ -3075,7 +3119,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T16:34:32",
       "gruppo": "ag-sciopero-generale-2026-10-30",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-cropani-presidio-01",
@@ -3312,7 +3356,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T12:02:43",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-10-30-monza-corteo-01",
@@ -3410,7 +3454,7 @@
       "conferme": 5,
       "aggiornato_il": "2026-10-27T10:34:00",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-massa-sciopero_generale-01",
@@ -3603,6 +3647,30 @@
       "aggiornato_il": "2026-10-29T00:45:36",
       "gruppo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-02-galatina-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Come si combatte la destra?",
+      "data": "2026-11-02",
+      "ora_inizio": "15:00",
+      "ora_fine": "17:00",
+      "comune": "Galatina",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "piazza Dante Alighieri",
+      "lat": 40.17521,
+      "lng": 18.16821,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/DfFQKalteSB/",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-10-29T15:58:17",
+      "gruppo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-04-napoli-presidio-01",
@@ -5350,8 +5418,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-29T13:41:29",
+  "ultimo_aggiornamento": "2026-10-29T18:55:26",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-29T13:37:31Z"
+  "copia_del": "2026-10-29T19:31:13Z"
 }
