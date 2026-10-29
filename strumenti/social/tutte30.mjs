@@ -6,7 +6,7 @@ const reg = []; for (const r of R) { let g = reg.find((x) => x.n === r[0]); if (
 const slides = []; let cur = [], peso = 0;
 for (const g of reg) { const w = g.c.length + 0.6; if (peso + w > 14.6 && cur.length) { slides.push(cur); cur = []; peso = 0; } cur.push(g); peso += w; }
 if (cur.length) slides.push(cur);
-const tot = slides.length + 2;
+const tot = slides.length + 3;
 const css = cssBase + `*{box-sizing:border-box;margin:0}body{width:1080px;height:auto;font-family:C;color:#1c1b1f;background:#f6f3ee;overflow:hidden}
 .p{position:relative;width:1080px;height:1350px;padding:70px;display:flex;flex-direction:column}
 .m{position:static;top:auto;left:auto;font:700 32px T;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:14px}.m i{width:20px;height:20px;border-radius:50%;background:#c8322a}
@@ -25,6 +25,10 @@ S.push(`<div class="p vino" style="background:#8e1b5e;color:#fff">${testa(1)}<p 
 slides.forEach((gs, i) => S.push(`<div class="p">${testa(i + 2)}<p class="k" style="margin-top:28px">Venerdì 30 ottobre</p>
 ${gs.map((g) => `<p class="rg">${SHORT[g.n] || g.n}</p>${g.c.map(([, c, o, l]) => `<div class="r"><div class="o">${o}</div><b>${c}</b><span>${l}</span></div>`).join('')}`).join('')}
 <div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`));
+S.push(`<div class="p" style="background:#8e1b5e;color:#fff">${testa(tot - 1)}<h1 style="font-size:150px;margin-top:60px">Domani,<br><span style="color:#ffd0e2">in piazza.<br>Insieme.</span></h1>
+<p class="t" style="font-size:44px;font-weight:700;margin-top:40px">Siamo tutti nella stessa barca: lavoratori, studenti, pensionati, chi cerca casa e chi non arriva a fine mese.</p>
+<p class="t">Scendi in piazza nella tua città, porta chi ti sta vicino e restate uniti. In pace: la forza di una piazza sono le persone, non lo scontro.</p>
+<div class="f">mappadellarivolta.org<span>scorri ›</span></div></div>`);
 S.push(`<div class="p scuro">${testa(tot)}<h1 style="font-size:112px;margin-top:40px">Prima<br><em style="color:#ff8fb8">di partire</em></h1>
 <p class="t" style="color:#e8e4dd">Orari e luoghi possono cambiare: apri l'evento sulla mappa e controlla la fonte.</p>
 <p class="t" style="color:#e8e4dd"><b style="color:#fff">Trasporti:</b> il Ministero ha disposto il rinvio dello sciopero. FS, Trenord, ATAC e ATM annunciano servizio regolare; l'USB conferma lo sciopero. Possibili disagi: controlla gli avvisi della tua azienda.</p>
