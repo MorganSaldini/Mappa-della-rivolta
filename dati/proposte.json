@@ -1,50 +1,5 @@
 [
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero Trenitalia – Customer Operations Emilia-Romagna",
-    "data": "2026-10-28",
-    "ora_inizio": "21:00",
-    "ora_fine": null,
-    "comune": "Bologna",
-    "provincia": "BO",
-    "regione": "Emilia-Romagna",
-    "luogo": "",
-    "lat": 44.4949,
-    "lng": 11.3426,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "ORSA Ferrovie"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, dalle 21 del 28 alle 21 del 29 ottobre; sedi di Bologna, Reggio Emilia AV Mediopadana, Rimini"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Air Campania",
-    "data": "2026-10-28",
-    "ora_inizio": "08:00",
-    "ora_fine": "16:00",
-    "comune": "Napoli",
-    "provincia": "NA",
-    "regione": "Campania",
-    "luogo": "",
-    "lat": 40.8518,
-    "lng": 14.2681,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "UGL",
-      "FAISA-CISAL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "8 ore, ambito locale"
-  },
-  {
     "ora_inizio": null,
     "ora_fine": null,
     "luogo": "Viale Mazzini, sede Mps",
@@ -421,6 +376,25 @@
     "gruppo": "sciopero-generale-2026-10-30"
   },
   {
+    "tipo": "presidio",
+    "titolo": "Presidio dei lavoratori Fonderie Pisano",
+    "data": "2026-10-30",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Salerno",
+    "provincia": "SA",
+    "regione": "Campania",
+    "luogo": "Fonderie Pisano, località Fratte",
+    "lat": 40.6985,
+    "lng": 14.7705,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Fiom Cgil Salerno"
+    ],
+    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
+    "note": "Presidio dal 27 al 31 ottobre al sito di Fratte; orari non indicati dalla fonte."
+  },
+  {
     "tipo": "corteo",
     "titolo": "Corteo regionale per lo sciopero generale",
     "data": "2026-10-30",
@@ -460,6 +434,28 @@
     ],
     "fonte": "https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/",
     "note": "Terziario e distribuzione, intera giornata, contro il lavoro nei festivi in tutto il Lazio; posizione indicativa"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
+    "data": "2026-11-04",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Sede della Regione Campania",
+    "lat": 40.8338,
+    "lng": 14.2482,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "RSU Mibex",
+      "FIOM",
+      "UILM",
+      "UGLM"
+    ],
+    "fonte": "https://www.nanotv.it/2026/10/28/somma-vesuviana-crisi-mibex-impianti-fermi-entro-il-10-novembre-rsu-fiom-uilm-e-uglm-proclamano-8-ore-di-sciopero-per-il-4-novembre-con-presidio-in-regione-campania/",
+    "note": "Sciopero di 8 ore dello stabilimento di Somma Vesuviana; la fonte non precisa quale sede regionale né l'orario."
   },
   {
     "tipo": "sciopero_categoria",
@@ -537,6 +533,29 @@
     ],
     "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amat-di-palermo-8618",
     "note": "4 ore, trasporto pubblico locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale Italo",
+    "data": "2026-11-09",
+    "ora_inizio": "09:01",
+    "ora_fine": "16:59",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UGL Ferrovieri",
+      "FAST-Confsal",
+      "ORSA Trasporti"
+    ],
+    "fonte": "https://www.quotidianomotori.com/mobilita-urbana/scioperi-novembre-2026-treni-aerei-tpl-calendario/",
+    "note": "Sciopero di 8 ore del personale Italo-NTV; confermato anche da napolitan.it (28/10). Posizione indicativa (sciopero nazionale)."
   },
   {
     "tipo": "sciopero_categoria",
@@ -654,6 +673,28 @@
     ],
     "fonte": "https://www.uilfpc.it/news/comunicato-sciopero-crm-bpo-11nov26/",
     "note": "Intera giornata, tutto il comparto CRM/BPO. Nessun presidio indicato; posizione indicativa (sciopero nazionale)."
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero dei dipendenti del Comune di Taormina",
+    "data": "2026-11-11",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Taormina",
+    "provincia": "ME",
+    "regione": "Sicilia",
+    "luogo": "",
+    "lat": 37.8516,
+    "lng": 15.2853,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UIL FPL",
+      "FP CGIL",
+      "CSA",
+      "UGL"
+    ],
+    "fonte": "https://www.vaitaormina.com/taormina-i-sindacati-l11-novembre-2026-sciopero-del-personale-dipendente-del-comune/",
+    "note": "Intera giornata; contro il trasferimento del personale comunale a società partecipate. Nessun presidio indicato."
   },
   {
     "tipo": "sciopero_categoria",
