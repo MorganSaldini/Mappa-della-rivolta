@@ -347,13 +347,14 @@
   }
 
   // ---------- Filtri ----------
-  const filtri = { tipi: new Set(), periodo: 'tutte', regione: '', soloVerificati: false };
+  const filtri = { tipi: new Set(), periodo: 'tutte', giorno: '', regione: '', soloVerificati: false };
   function visibili() {
     const oggi = oggiRoma();
     const limite = { oggi: oggi, settimana: piuGiorni(oggi, 7), mese: piuGiorni(oggi, 31) }[filtri.periodo];
     return eventi.filter((e) =>
       (!filtri.tipi.size || filtri.tipi.has(e.tipo)) &&
       (!limite || e.data <= limite) &&
+      (filtri.periodo !== 'giorno' || !filtri.giorno || e.data === filtri.giorno) &&
       (!filtri.regione || e.regione === filtri.regione) &&
       (!filtri.soloVerificati || e.stato === 'verificato'));
   }
@@ -382,11 +383,24 @@
     c.setAttribute('aria-pressed', String(filtri.tipi.has(k)));
     disegna();
   });
-  $('#filtro-periodo').addEventListener('change', (ev) => { filtri.periodo = ev.target.value; disegna(); });
+  $('#filtro-periodo').addEventListener('change', (ev) => {
+    filtri.periodo = ev.target.value;
+    const g = $('#filtro-giorno');
+    $('#box-giorno').hidden = filtri.periodo !== 'giorno';
+    if (filtri.periodo === 'giorno') {
+      g.min = oggiRoma();
+      if (!g.value) g.value = oggiRoma();
+      filtri.giorno = g.value;
+      g.focus();
+    }
+    disegna();
+  });
+  $('#filtro-giorno').addEventListener('change', (ev) => { filtri.giorno = ev.target.value; disegna(); });
   $('#filtro-regione').addEventListener('change', (ev) => { filtri.regione = ev.target.value; disegna(); });
   $('#filtro-verificati').addEventListener('change', (ev) => { filtri.soloVerificati = ev.target.checked; disegna(); });
   $('#filtro-azzera').addEventListener('click', () => {
-    filtri.tipi.clear(); filtri.periodo = 'tutte'; filtri.regione = ''; filtri.soloVerificati = false;
+    filtri.tipi.clear(); filtri.periodo = 'tutte'; filtri.giorno = ''; filtri.regione = ''; filtri.soloVerificati = false;
+    $('#box-giorno').hidden = true; $('#filtro-giorno').value = '';
     $('#filtro-periodo').value = 'tutte'; $('#filtro-regione').value = ''; $('#filtro-verificati').checked = false;
     document.querySelectorAll('[data-filtro-tipo]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
     disegna();
