@@ -51,7 +51,7 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-17T01:27:45",
       "gruppo": null,
-      "ci_saro": 2
+      "ci_saro": 1
     },
     {
       "id": "2026-10-30-torino-sciopero_generale-02",
@@ -1253,7 +1253,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-30T17:21:08",
       "gruppo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-10-30-palermo-sciopero_generale-01",
@@ -2087,7 +2087,7 @@
       "organizzatori": [],
       "fonte": "https://crusc-gepas.perlapa.gov.it/detail/bbe12437-6686-4f56-a4a3-3b7dd8c7c79e",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-10-30T01:38:21",
       "gruppo": null,
       "ci_saro": 4
@@ -2912,7 +2912,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/De9f3f5O6zK/?xtok=MTc2eXFraXpkenU5cg==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-10-30T01:31:10",
       "gruppo": null,
       "ci_saro": 2
@@ -3278,6 +3278,28 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-10-31-avellino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "BASTA CAROVITA, GUERRE E REPRESSIONE! STUDENTI E AGRICOLTORI UNITI PER IL NOSTRO FUTURO",
+      "data": "2026-10-31",
+      "ora_inizio": "18:00",
+      "ora_fine": "23:57",
+      "comune": "Avellino",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "San Ciro",
+      "lat": 40.91259,
+      "lng": 14.78046,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/cs_irpino?vrfl=MzR0cXd0eTdzZnh0",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-30T21:58:39",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-01-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del commercio nel giorno festivo nel Lazio",
@@ -3368,10 +3390,10 @@
       ],
       "fonte": "https://www.instagram.com/p/DfFQKalteSB/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-10-30T01:35:18",
       "gruppo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-04-napoli-presidio-01",
@@ -3595,6 +3617,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:56:02",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-udine-corteo-01",
+      "tipo": "corteo",
+      "titolo": "corteo contro carovita caro bollette",
+      "data": "2026-11-07",
+      "ora_inizio": "15:00",
+      "ora_fine": "18:30",
+      "comune": "Udine",
+      "provincia": "UD",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "Piazza primo maggio",
+      "lat": 46.06619,
+      "lng": 13.23744,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Udine in piazza (Italia in piazza)"
+      ],
+      "fonte": "https://www.instagram.com/udineinpiazza?obrf=ajBocmk0Z2ZyeXNz",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-30T22:03:56",
       "gruppo": null,
       "ci_saro": null
     },
@@ -5119,8 +5165,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-30T17:21:08",
+  "ultimo_aggiornamento": "2026-10-30T22:03:56",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-30T16:39:38Z"
+  "copia_del": "2026-10-30T21:25:34Z"
 }
