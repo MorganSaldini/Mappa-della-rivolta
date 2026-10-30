@@ -129,7 +129,9 @@
     window.addEventListener('load', centraItalia);
     tile().addTo(mappa);
     mappa.on('click focus', () => mappa.scrollWheelZoom.enable());
-    gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 }) : L.layerGroup();
+    gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45, removeOutsideVisibleBounds: false }) : L.layerGroup();
+    // removeOutsideVisibleBounds: false → spostando la mappa per far vedere la scheda, il segnaposto non viene tolto
+    // (prima, da telefono, la scheda si apriva e si richiudeva subito)
     mappa.addLayer(gruppo);
     // La scheda dell'evento deve stare tutta dentro la mappa (anche aperta da un link o dopo uno zoom)
     mappa.on('popupopen', (ev) => {
