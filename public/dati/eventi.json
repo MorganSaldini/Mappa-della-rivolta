@@ -122,6 +122,32 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-02-saronno-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero e presidio dei lavoratori Barco davanti ai cancelli",
+      "data": "2026-11-02",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Saronno",
+      "provincia": "VA",
+      "regione": "Lombardia",
+      "luogo": "Stabilimento Barco, via Banfi",
+      "lat": 45.6255,
+      "lng": 9.0365,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fim Cisl dei Laghi",
+        "Fiom Cgil Varese",
+        "Uilm Uil Varese"
+      ],
+      "fonte": "https://ilsaronno.it/2026/10/30/saronno-barco-lunedi-sciopero-di-otto-ore-contro-i-71-posti-di-lavoro-a-rischio",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-31T06:00:26",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-02-torre-del-greco-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea Coordinamento \"Pro Palestina\" a Torre del Greco",
@@ -1607,6 +1633,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-23-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale dei lavoratori del gruppo Iren",
+      "data": "2026-11-23",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Filctem Cgil",
+        "Femca Cisl",
+        "Flaei Cisl",
+        "Uiltec Uil"
+      ],
+      "fonte": "https://www.adnkronos.com/economia/scioperi-novembre-calendario-date_5woOoWREizgG7m0j0qlibD",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-31T06:00:34",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-firenze-presidio-01",
       "tipo": "presidio",
       "titolo": "Manifestazione dei tassisti a Firenze",
@@ -1961,8 +2014,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-30T22:03:56",
+  "ultimo_aggiornamento": "2026-10-31T06:00:34",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-31T00:59:11Z"
+  "copia_del": "2026-10-31T06:54:03Z"
 }
