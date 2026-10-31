@@ -25,6 +25,18 @@ I social della mappa **fanno informazione**. Raccontare, annunciare e ringraziar
 5. **Ogni carosello, post e reel finisce con la riga**: "La mappa riporta informazioni pubbliche con la loro fonte." (ultima slide o fine didascalia).
 6. In dubbio su un contenuto: non pubblicarlo e chiedi all'utente (o al consulente legale `/consulente-legale-mappa`).
 
+## Numeri delle piazze
+- Cerca **prima** le stime di chi organizza: comunicati e social dei sindacati promotori (USB, CGIL, Cobas, CUB…), dei collettivi studenteschi, testate di movimento. Poi le agenzie (ANSA), la Questura e i Ministeri.
+- La stima degli organizzatori va in grande. Le altre stime si possono mettere accanto, in piccolo, e ognuna dice chi la dà: "2 milioni secondo i promotori · 30mila a Milano secondo l'ANSA". Se due stime sono molto diverse lo si può far notare, senza dire che una delle due è falsa.
+- Mai un numero senza chi lo dà. Mai un numero preso dalla scritta di un video o di un post senza averne trovato la fonte.
+- **Controlla la data del comunicato**: lo stesso titolo ("2 milioni in piazza") può riferirsi a uno sciopero di un anno prima (es. CGIL 3/10/2025).
+
+## Voce (non deve sembrare gestita da un'IA)
+- Scrivi come una persona che era in piazza: frasi corte, "noi", parole di tutti i giorni. Niente "Ecco…", "in diretta", "una sola rete", "insieme" ripetuto, trattini lunghi, elenchi con le emoji, slogan da agenzia.
+- Le foto della community vengono prima della grafica. Sfoca i volti senza scriverlo sull'immagine.
+- Le fonti vanno in una riga piccola o nella didascalia, non in ogni slide. Unica riga sempre presente, a fine contenuto: "La mappa riporta informazioni pubbliche con la loro fonte."
+- Cambia impaginazione da un giorno all'altro (non sempre numero gigante + frase + fonte). Al massimo 3 hashtag.
+
 ## Stile
 Carta #f6f3ee, inchiostro #1c1b1f, rosso #c8322a, colori dei tipi come in `public/app.js`, titoli Barlow Condensed, testo Source Sans 3. Storie e reel 1080x1920 (testi importanti fuori dai primi 250 px e dagli ultimi 300 px); caroselli e post 1080x1350.
 Reel: **copertina come primo fotogramma (0,6 s)**, perché Meta Business Suite usa il primo fotogramma come miniatura; suono bling di sottofondo con `suoni.py` (picco circa −21 dB, molto di sottofondo); niente musica coperta da diritti.
