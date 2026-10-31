@@ -1,420 +1,5 @@
 [
   {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "Viale Mazzini, sede Mps",
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "CGIL",
-      "CISL",
-      "UIL"
-    ],
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla sede Mps per occupazione e indotto",
-    "data": "2026-10-29",
-    "comune": "Siena",
-    "provincia": "SI",
-    "regione": "Toscana",
-    "lat": 43.3229,
-    "lng": 11.3363,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
-    "note": "Sit-in settore credito; orario non indicato dalla fonte"
-  },
-  {
-    "ora_inizio": "09:00",
-    "ora_fine": null,
-    "luogo": "Nucleo industriale, cancelli dello stabilimento Kuehne+Nagel",
-    "posizione_approssimativa": true,
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori Kuehne+Nagel davanti allo stabilimento",
-    "data": "2026-10-29",
-    "comune": "Termoli",
-    "provincia": "CB",
-    "regione": "Molise",
-    "lat": 41.985,
-    "lng": 14.97,
-    "organizzatori": [
-      "Fim Cisl Molise",
-      "Uilm Molise",
-      "Rsu"
-    ],
-    "fonte": "https://ansa.it/molise/notizie/2026/10/27/termoli-alla-kuehnenagel-sciopero-a-oltranza-dopo-annuncio-chiusura_e99ca003-ebfc-4791-9af6-99c83d4036fe.html",
-    "note": "Presidio con conferenza stampa; sciopero a oltranza (8 ore per turno) dal 27/10 contro la chiusura annunciata a marzo 2027; posizione indicativa"
-  },
-  {
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "luogo": "Piazza Maggiore",
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB",
-      "Cobas Scuola"
-    ],
-    "tipo": "presidio",
-    "titolo": "Manifestazione per lo sciopero della scuola Cobas",
-    "data": "2026-10-30",
-    "comune": "Bologna",
-    "provincia": "BO",
-    "regione": "Emilia-Romagna",
-    "lat": 44.4938,
-    "lng": 11.343,
-    "fonte": "https://www.cobasbologna.org/2026/10/sciopero-della-scuola-30-ottobre/",
-    "note": "Confermato da Cobas Bologna e Resto del Carlino (piazza Maggiore 9:30, USB); sciopero scuola Emilia-Romagna"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero della scuola Cobas",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "comune": "Cagliari",
-    "provincia": "CA",
-    "regione": "Sardegna",
-    "luogo": "Piazza Garibaldi",
-    "lat": 39.2186,
-    "lng": 9.1185,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Cobas Scuola"
-    ],
-    "fonte": "https://www.vocedellascuola.it/cobas-scuola-sciopero-il-30-ottobre-corteo-a-cagliari",
-    "note": "Sciopero del 30/10; corteo da piazza Garibaldi verso il porto fino al molo Sant'Agostino."
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "comune": "Catania",
-    "provincia": "CT",
-    "regione": "Sicilia",
-    "luogo": "Porto",
-    "lat": 37.498,
-    "lng": 15.092,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-del-30-ottobre-2026-0112.html",
-    "note": "Partenza alle 9:30 dal Porto; la fonte non indica il punto preciso",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Manifestazione per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "comune": "Firenze",
-    "provincia": "FI",
-    "regione": "Toscana",
-    "luogo": "Piazza Bambine e Bambini di Beslan (Fortezza da Basso)",
-    "lat": 43.779,
-    "lng": 11.247,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.usb.it/leggi-notizia/usb-firenze-sostiene-le-occupazioni-delle-scuole-fiorentine-30-ottobre-sciopero-generale-con-manifestazione-a-firenze-concentramento-ore-1000-piazza-bambine-e-bambini-di-beslan-fortezza-0843.html",
-    "note": "Concentramento alle 10 per lo sciopero generale nazionale di 24 ore di USB",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": null,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB Lavoro Privato Liguria"
-    ],
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 24 ore del trasporto pubblico locale a Genova",
-    "data": "2026-10-30",
-    "comune": "Genova",
-    "provincia": "GE",
-    "regione": "Liguria",
-    "lat": 44.4072,
-    "lng": 8.934,
-    "fonte": "https://www.lavocedigenova.it/2026/10/23/leggi-notizia/argomenti/politica-6/articolo/confermato-per-venerdi-30-ottobre-lo-sciopero-di-24-ore-del-trasporto-pubblico-locale.html",
-    "note": "Rete urbana garantita 6-9 e 17:30-20:30; provinciale 6-9 e 17-20; Genova-Casella 6:30-9:30 e 17:30-20:30"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "comune": "Genova",
-    "provincia": "GE",
-    "regione": "Liguria",
-    "luogo": "Varco Albertazzi, arrivo in piazza Principe alle 10",
-    "lat": 44.412,
-    "lng": 8.919,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
-    "note": "Ritrovo 9:30 Varco Albertazzi, ore 10 piazza Principe; coordinate indicative"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla Prefettura per lo sciopero generale",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "comune": "La Spezia",
-    "provincia": "SP",
-    "regione": "Liguria",
-    "luogo": "Prefettura della Spezia",
-    "lat": 44.1025,
-    "lng": 9.8241,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB La Spezia"
-    ],
-    "fonte": "https://liguria.usb.it/leggi-notizia/sciopero-generale-30-ottobre-2026-la-spezia-presidio-davanti-alla-prefettura-ore-930-1233.html",
-    "note": "Presidio nella giornata dello sciopero generale USB del 30/10 (salari, carovita, no economia di guerra). Indirizzo esatto non indicato dalla fonte",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "comune": "Milano",
-    "provincia": "MI",
-    "regione": "Lombardia",
-    "luogo": "Piazza Duca d'Aosta",
-    "lat": 45.4847,
-    "lng": 9.2035,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://lombardia.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-milano-concentramento-in-piazza-duca-daosta-alle-ore-10-1643.html",
-    "note": "Concentramento alle 10 per lo sciopero generale nazionale di 24 ore di USB",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo regionale per lo sciopero generale",
-    "data": "2026-10-30",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Napoli",
-    "provincia": "NA",
-    "regione": "Campania",
-    "luogo": "Piazza Mancini",
-    "lat": 40.851,
-    "lng": 14.27,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.napolike.it/sciopero-generale-30-ottobre-2026-napoli",
-    "note": "Concentramento in piazza Mancini (zona Stazione Centrale) in mattinata; orario e percorso da confermare",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo per lo sciopero della scuola Cobas",
-    "data": "2026-10-30",
-    "ora_inizio": "08:30",
-    "ora_fine": null,
-    "comune": "Padova",
-    "provincia": "PD",
-    "regione": "Veneto",
-    "luogo": "Stazione ferroviaria",
-    "lat": 45.4177,
-    "lng": 11.8806,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Cobas Scuola Veneto",
-      "CESP"
-    ],
-    "fonte": "https://www.nordest24.it/padova-sciopero-generale-cobas-30-ottobre-2026-scuola-trasporti",
-    "note": "Sciopero intera giornata personale scuola (Cobas, ADL Cobas, CLAP, SIAL Cobas); corteo dalla stazione FS alle 8:30; percorso non indicato."
-  },
-  {
-    "ora_inizio": "09:00",
-    "ora_fine": null,
-    "luogo": "Piazza Politeama",
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "tipo": "corteo",
-    "titolo": "Manifestazione per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "comune": "Palermo",
-    "provincia": "PA",
-    "regione": "Sicilia",
-    "lat": 38.125,
-    "lng": 13.3555,
-    "fonte": "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1",
-    "note": "Luogo e ora da Quotidiano Nazionale del 26/10; BlogSicilia non li riportava ancora"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero negli aeroporti di Pisa e Firenze",
-    "data": "2026-10-30",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "comune": "Pisa",
-    "provincia": "PI",
-    "regione": "Toscana",
-    "luogo": "Aeroporto di Pisa",
-    "lat": 43.6839,
-    "lng": 10.3927,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB Lavoro Privato"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore: Toscana Aeroporti, GH Toscana e Consulta, anche ad aeroporto di Firenze. Verificare: possibile esclusione per franchigia trasporti 30/10-5/11"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio al porto per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "17:00",
-    "ora_fine": "22:00",
-    "comune": "Pozzallo",
-    "provincia": "RG",
-    "regione": "Sicilia",
-    "luogo": "Piazza dei Marinai, porto",
-    "lat": 36.729,
-    "lng": 14.844,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.ragusah24.it/2026/10/22/sciopero-generale-del-30-ottobre-lusb-chiama-alla-mobilitazione/",
-    "note": "Presidio 17-22 nella giornata internazionale di mobilitazione dei portuali",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "ora_inizio": "08:00",
-    "ora_fine": null,
-    "luogo": "Davanti alla Sapir, via A. Zani 7",
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Filt CGIL"
-    ],
-    "tipo": "presidio",
-    "titolo": "Sciopero e presidio dei lavoratori del porto di Ravenna",
-    "data": "2026-10-30",
-    "comune": "Ravenna",
-    "provincia": "RA",
-    "regione": "Emilia-Romagna",
-    "lat": 44.456,
-    "lng": 12.256,
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
-    "note": "Sciopero nel porto contro il transito di armamenti; coordinate da verificare"
-  },
-  {
-    "tipo": "sciopero_generale",
-    "titolo": "Sciopero generale nazionale dei settori pubblici e privati",
-    "data": "2026-10-30",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USI-CIT",
-      "USB"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "USB il 14/10 ha escluso TPL e treni per franchigia 30/10-5/11 (metropolitanadiroma.it); USI-CIT esclude i trasporti. Resta per gli altri settori pubblici e privati",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale dei lavoratori portuali",
-    "data": "2026-10-30",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "USB Lavoro Privato"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore in tutti i porti; posizione indicativa. Verificare effetto franchigia trasporti 30/10-5/11 (marittimo escluso per USI-CIT)"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Appuntamento a Roma per lo sciopero generale USB",
-    "data": "2026-10-30",
-    "ora_inizio": "10:30",
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "Piazza dei Cinquecento",
-    "lat": 41.9013,
-    "lng": 12.5005,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB"
-    ],
-    "fonte": "https://www.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-roma-appuntamento-ore-1030-piazza-dei-cinquecento-1634.html",
-    "note": "Appuntamento romano nel giorno dello sciopero generale USB; la fonte non dice se presidio o corteo",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori Fonderie Pisano",
-    "data": "2026-10-30",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Salerno",
-    "provincia": "SA",
-    "regione": "Campania",
-    "luogo": "Fonderie Pisano, località Fratte",
-    "lat": 40.6985,
-    "lng": 14.7705,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Fiom Cgil Salerno"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-26-ottobre-1-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-ta9k14sn",
-    "note": "Presidio dal 27 al 31 ottobre al sito di Fratte; orari non indicati dalla fonte."
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo regionale per lo sciopero generale",
-    "data": "2026-10-30",
-    "ora_inizio": "09:30",
-    "ora_fine": null,
-    "comune": "Torino",
-    "provincia": "TO",
-    "regione": "Piemonte",
-    "luogo": "Piazza Palazzo di Città",
-    "lat": 45.0733,
-    "lng": 7.6813,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB Piemonte"
-    ],
-    "fonte": "https://www.targatocn.it/2026/10/20/leggi-notizia/argomenti/economia-7/articolo/lusb-verso-lo-sciopero-generale-del-30-ottobre-anche-a-cuneo-si-prepara-la-mobilitazione-1.html",
-    "note": "Manifestazione regionale Usb nel giorno dello sciopero generale; ritrovo ore 9:30",
-    "gruppo": "sciopero-generale-2026-10-30"
-  },
-  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero del commercio nel giorno festivo nel Lazio",
     "data": "2026-11-01",
@@ -434,6 +19,27 @@
     ],
     "fonte": "https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/",
     "note": "Terziario e distribuzione, intera giornata, contro il lavoro nei festivi in tutto il Lazio; posizione indicativa"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Sciopero e presidio dei lavoratori Barco davanti ai cancelli",
+    "data": "2026-11-02",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Saronno",
+    "provincia": "VA",
+    "regione": "Lombardia",
+    "luogo": "Stabilimento Barco, via Banfi",
+    "lat": 45.6255,
+    "lng": 9.0365,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Fim Cisl dei Laghi",
+      "Fiom Cgil Varese",
+      "Uilm Uil Varese"
+    ],
+    "fonte": "https://ilsaronno.it/2026/10/30/saronno-barco-lunedi-sciopero-di-otto-ore-contro-i-71-posti-di-lavoro-a-rischio",
+    "note": "Sciopero di 8 ore per 71 posti a rischio; assemblea alle 10 e conferenza stampa; orario del presidio non indicato; posizione indicativa"
   },
   {
     "tipo": "presidio",
@@ -1267,6 +873,28 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale dei lavoratori del gruppo Iren",
+    "data": "2026-11-23",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Filctem Cgil",
+      "Femca Cisl",
+      "Flaei Cisl",
+      "Uiltec Uil"
+    ],
+    "fonte": "https://www.adnkronos.com/economia/scioperi-novembre-calendario-date_5woOoWREizgG7m0j0qlibD",
+    "note": "Settore energia/utility, ambito nazionale; orari non indicati dalla fonte; nessun luogo: posizione a Roma centro"
   },
   {
     "ora_inizio": null,
