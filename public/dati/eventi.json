@@ -866,7 +866,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:58",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-16-napoli-sciopero_categoria-01",
@@ -2017,5 +2017,5 @@
   "ultimo_aggiornamento": "2026-10-31T06:00:34",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-31T17:54:35Z"
+  "copia_del": "2026-10-31T21:24:24Z"
 }
