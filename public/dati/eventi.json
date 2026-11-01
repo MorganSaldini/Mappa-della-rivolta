@@ -521,6 +521,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-09-genova-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale AMT di Genova",
+      "data": "2026-11-09",
+      "ora_inizio": "11:30",
+      "ora_fine": "15:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "",
+      "lat": 44.4072,
+      "lng": 8.934,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CUB Trasporti"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amt-di-genova-8624",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T07:00:28",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-10-cosenza-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Busitalia Rail Service Calabria",
@@ -1466,6 +1490,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-21-verona-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero manutenzione RFI a Verona",
+      "data": "2026-11-21",
+      "ora_inizio": "09:01",
+      "ora_fine": "17:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "",
+      "lat": 45.4384,
+      "lng": 10.9916,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "ORSA Ferrovie"
+      ],
+      "fonte": "https://scioperiitalia.it/sciopero/2026-11-21-treni-personale-manutenzione-ed-ingegneria-soc-8625",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T07:00:33",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-21-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale del personale ENAV",
@@ -1920,8 +1968,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-10-31T06:00:34",
+  "ultimo_aggiornamento": "2026-11-01T07:00:33",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-01T00:23:39Z"
+  "copia_del": "2026-11-01T06:44:25Z"
 }
