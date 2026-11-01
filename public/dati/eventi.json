@@ -28,32 +28,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-02-saronno-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Sciopero e presidio dei lavoratori Barco davanti ai cancelli",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Saronno",
-      "provincia": "VA",
-      "regione": "Lombardia",
-      "luogo": "Stabilimento Barco, via Banfi",
-      "lat": 45.6255,
-      "lng": 9.0365,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "Fim Cisl dei Laghi",
-        "Fiom Cgil Varese",
-        "Uilm Uil Varese"
-      ],
-      "fonte": "https://ilsaronno.it/2026/10/30/saronno-barco-lunedi-sciopero-di-otto-ore-contro-i-71-posti-di-lavoro-a-rischio",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-31T06:00:26",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-02-torre-del-greco-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea Coordinamento \"Pro Palestina\" a Torre del Greco",
@@ -74,6 +48,32 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-23T10:23:10",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-02-saronno-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero e presidio dei lavoratori Barco davanti ai cancelli",
+      "data": "2026-11-02",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Saronno",
+      "provincia": "VA",
+      "regione": "Lombardia",
+      "luogo": "Stabilimento Barco, via Banfi",
+      "lat": 45.6255,
+      "lng": 9.0365,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Fim Cisl dei Laghi",
+        "Fiom Cgil Varese",
+        "Uilm Uil Varese"
+      ],
+      "fonte": "https://ilsaronno.it/2026/10/30/saronno-barco-lunedi-sciopero-di-otto-ore-contro-i-71-posti-di-lavoro-a-rischio",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T15:10:55",
       "gruppo": null,
       "ci_saro": null
     },
@@ -349,30 +349,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-07-udine-corteo-01",
-      "tipo": "corteo",
-      "titolo": "corteo contro carovita caro bollette",
-      "data": "2026-11-07",
-      "ora_inizio": "15:00",
-      "ora_fine": "18:30",
-      "comune": "Udine",
-      "provincia": "UD",
-      "regione": "Friuli-Venezia Giulia",
-      "luogo": "Piazza primo maggio",
-      "lat": 46.06619,
-      "lng": 13.23744,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Udine in piazza (Italia in piazza)"
-      ],
-      "fonte": "https://www.instagram.com/udineinpiazza?obrf=ajBocmk0Z2ZyeXNz",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-30T22:03:56",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-07-tivoli-corteo-01",
       "tipo": "corteo",
       "titolo": "Marcia per la pace, contro la guerra e l'indifferenza",
@@ -393,6 +369,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-25T20:44:03",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-udine-corteo-01",
+      "tipo": "corteo",
+      "titolo": "corteo contro carovita caro bollette",
+      "data": "2026-11-07",
+      "ora_inizio": "15:00",
+      "ora_fine": "18:30",
+      "comune": "Udine",
+      "provincia": "UD",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "Piazza primo maggio",
+      "lat": 46.06619,
+      "lng": 13.23744,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Udine in piazza (Italia in piazza)"
+      ],
+      "fonte": "https://www.instagram.com/udineinpiazza?obrf=ajBocmk0Z2ZyeXNz",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T15:11:06",
       "gruppo": null,
       "ci_saro": null
     },
@@ -538,9 +538,9 @@
         "CUB Trasporti"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amt-di-genova-8624",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-01T07:00:28",
+      "aggiornato_il": "2026-11-01T15:11:11",
       "gruppo": null,
       "ci_saro": null
     },
@@ -771,7 +771,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:49",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-14-verona-corteo-01",
@@ -1136,10 +1136,10 @@
       ],
       "fonte": "https://www.ildiariodellavoro.it/manifestazione-cgil-landini-sciopero-generale-per-il-20-novembre/",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 5,
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
-      "ci_saro": 1
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -1212,6 +1212,31 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:51",
       "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-21-napoli-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero ferrovie locali: EAV",
+      "data": "2026-11-21",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Napoli",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "",
+      "lat": 40.8518,
+      "lng": 14.2681,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CUB Trasporti",
+        "SGB Ferrovie"
+      ],
+      "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
+      "stato": "annullato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T15:11:37",
+      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
       "ci_saro": null
     },
     {
@@ -1390,31 +1415,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-21-napoli-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero ferrovie locali: EAV",
-      "data": "2026-11-21",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Napoli",
-      "provincia": "NA",
-      "regione": "Campania",
-      "luogo": "",
-      "lat": 40.8518,
-      "lng": 14.2681,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CUB Trasporti",
-        "SGB Ferrovie"
-      ],
-      "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-20T10:02:15",
-      "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-21-torino-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero ferrovie locali: GTT",
@@ -1507,9 +1507,9 @@
         "ORSA Ferrovie"
       ],
       "fonte": "https://scioperiitalia.it/sciopero/2026-11-21-treni-personale-manutenzione-ed-ingegneria-soc-8625",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-01T07:00:33",
+      "aggiornato_il": "2026-11-01T15:11:14",
       "gruppo": null,
       "ci_saro": null
     },
@@ -1607,9 +1607,9 @@
         "Uiltec Uil"
       ],
       "fonte": "https://www.adnkronos.com/economia/scioperi-novembre-calendario-date_5woOoWREizgG7m0j0qlibD",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-31T06:00:34",
+      "aggiornato_il": "2026-11-01T15:11:19",
       "gruppo": null,
       "ci_saro": null
     },
@@ -1764,7 +1764,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:30:15",
       "gruppo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-12-09-torino-assemblea-01",
@@ -1888,9 +1888,9 @@
         "FAISA-CISAL"
       ],
       "fonte": "https://scioperiitalia.it/prossimi-scioperi",
-      "stato": "verificato",
+      "stato": "annullato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-20T10:03:39",
+      "aggiornato_il": "2026-11-01T15:11:41",
       "gruppo": null,
       "ci_saro": null
     },
@@ -1968,8 +1968,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-01T07:00:33",
+  "ultimo_aggiornamento": "2026-11-01T15:11:41",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-01T06:44:25Z"
+  "copia_del": "2026-11-01T14:13:45Z"
 }
