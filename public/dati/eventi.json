@@ -124,30 +124,6 @@
       "ci_saro": 3
     },
     {
-      "id": "2026-11-04-torino-assemblea-02",
-      "tipo": "assemblea",
-      "titolo": "Assemblea cittadina verso TDOR e 25 Novembre",
-      "data": "2026-11-04",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Spazio Popolare Neruda",
-      "lat": 45.08421,
-      "lng": 7.67534,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "liberi cittadini"
-      ],
-      "fonte": "https://gancio.cisti.org/event/assemblea-cittadina-verso-tdor-e-25-novembre",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-01T20:07:02",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-04-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
@@ -175,6 +151,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-04-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Assemblea cittadina verso TDOR e 25 Novembre",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Spazio Popolare Neruda",
+      "lat": 45.08421,
+      "lng": 7.67534,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "liberi cittadini"
+      ],
+      "fonte": "https://gancio.cisti.org/event/assemblea-cittadina-verso-tdor-e-25-novembre",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:19:14",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-04-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea Plenaria Food Not Bombs: cibo contro la guerra",
@@ -193,9 +193,9 @@
         "csoa manituana"
       ],
       "fonte": "https://gancio.cisti.org/event/assemblea-plenaria-food-not-bombs-1",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-01T20:05:11",
+      "aggiornato_il": "2026-11-01T20:19:17",
       "gruppo": null,
       "ci_saro": null
     },
@@ -225,6 +225,54 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-05-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Giovedì del Mutuo Soccorso",
+      "data": "2026-11-05",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Spazio di Mutuo Soccorso, P.za Stuparich 18",
+      "lat": 45.48351,
+      "lng": 9.14401,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "collettivo InCostruzione"
+      ],
+      "fonte": "https://puntello.org/event/aperitivo-con-abitare-in-via-padova",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:36:54",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-05-firenze-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea pubblica no vannacci q2",
+      "data": "2026-11-05",
+      "ora_inizio": "17:22",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Via Novelli Firenze, Via Novelli",
+      "lat": 43.77619,
+      "lng": 11.29361,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "coverciano antifascista"
+      ],
+      "fonte": "https://lapunta.org/event/assemblea-pubblica-no-vannacci-q2",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:26:41",
+      "gruppo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-05-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Salotto di Miranda: \"MAGNITUDO G8 -una narrazione civile di Gianfranco Corona\" (Aperitivo condiviso, porta cibo!)",
@@ -246,6 +294,54 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:33:41",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-05-torino-assemblea-03",
+      "tipo": "assemblea",
+      "titolo": "NO CPR: Presentazione del libro di Sunjay Gookooluk “Diario di un invisibile\"",
+      "data": "2026-11-05",
+      "ora_inizio": "18:30",
+      "ora_fine": "22:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Csoa Gabrio",
+      "lat": 45.05914,
+      "lng": 7.64905,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "NO CPR"
+      ],
+      "fonte": "https://gancio.cisti.org/event/presentazione-del-libro-di-sunjay-gookooluk-diario-di-un-invisibile",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:19:21",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-05-chivasso-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "L'INVASIONE DEI DATA CENTER: INFORMIAMOCI!",
+      "data": "2026-11-05",
+      "ora_inizio": "20:30",
+      "ora_fine": null,
+      "comune": "Chivasso",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Sala \"I Care\" di via Mazzè 41",
+      "lat": 45.19772,
+      "lng": 7.8995,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "NO DATA CENTER"
+      ],
+      "fonte": "https://gancio.cisti.org/event/linvasione-dei-data-center-informiamoci",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:19:24",
       "gruppo": null,
       "ci_saro": null
     },
@@ -319,6 +415,79 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:25",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-06-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea pubblica - no datacenter Lucento",
+      "data": "2026-11-06",
+      "ora_inizio": "20:45",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Bocciofila Paracchi, via Nole 72",
+      "lat": 45.09161,
+      "lng": 7.65579,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "no datacenter Lucento"
+      ],
+      "fonte": "https://gancio.cisti.org/event/assemblea-pubblica-no-datacenter-lucento",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:19:29",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Azione: Food Not Bombs! Recuperiamo e cuciniamo il cibo!",
+      "data": "2026-11-07",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Manituana, Largo Maurizio Vitale 113",
+      "lat": 45.07978,
+      "lng": 7.69865,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Food Not Bombs"
+      ],
+      "fonte": "https://gancio.cisti.org/event/azione-food-not-bombs-3",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:19:32",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-pistoia-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Gestione dei rifiuti senza inceneritori",
+      "data": "2026-11-07",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Pistoia",
+      "provincia": "PT",
+      "regione": "Toscana",
+      "luogo": "sala soci coop pistoia, viale adua angolo via macallè",
+      "lat": 43.93099,
+      "lng": 10.90145,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "no inceneritore",
+        "noncistiamo"
+      ],
+      "fonte": "https://lapunta.org/event/gestione-dei-rifiuti-senza-inceneritori",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:26:44",
       "gruppo": null,
       "ci_saro": null
     },
@@ -490,6 +659,30 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-10-23T10:23:14",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-08-firenze-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "CHI HA PAURA DELLA GEN Z? presentazione del n.32 della rivista JACOBIN ITALIA",
+      "data": "2026-11-08",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Circolo Arci Fra Lavoratori di Porta a Prato, via delle Porte Nuove 33",
+      "lat": 43.78049,
+      "lng": 11.23891,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Circolo Arci Fra Lavoratori di Porta a Prato"
+      ],
+      "fonte": "https://lapunta.org/event/chi-ha-paura-della-gen-z-presentazione-del-n32-della-rivista-jacobin-italia",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:36:58",
       "gruppo": null,
       "ci_saro": null
     },
@@ -904,6 +1097,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-18-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Colazione antisfratto: CONTRO OGNI SGOMBERO, CONTRO OGNI SFRATTO",
+      "data": "2026-11-18",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "SPAZIO ANARCHICO BRUZZI MALATESTA, VIA TORRICELLI 19",
+      "lat": 45.44449,
+      "lng": 9.17692,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "SPAZIO ANARCHICO BRUZZI MALATESTA"
+      ],
+      "fonte": "https://puntello.org/event/colazione-antisfratto",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:37:02",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale CGIL",
@@ -946,10 +1163,10 @@
       ],
       "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
       "stato": "verificato",
-      "conferme": 11,
+      "conferme": 12,
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
-      "ci_saro": 0
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -1164,7 +1381,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-21T17:06:06",
       "gruppo": "g-39fb7bfe7880",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -1584,6 +1801,30 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:52",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-22-milano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "OneShot QueeRolə - Oltre spazi e ruoli normati",
+      "data": "2026-11-22",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "LOCK - Laboratorio Occupato Kasciavìt, Via San Faustino 62",
+      "lat": 45.47649,
+      "lng": 9.24159,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "LOCK - Laboratorio Occupato Kasciavìt"
+      ],
+      "fonte": "https://puntello.org/event/oneshot-queerol-oltre-spazi-e-ruoli-normati",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:37:06",
       "gruppo": null,
       "ci_saro": null
     },
@@ -2017,8 +2258,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-01T20:07:02",
+  "ultimo_aggiornamento": "2026-11-01T20:37:06",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-01T19:07:51Z"
+  "copia_del": "2026-11-01T22:59:21Z"
 }
