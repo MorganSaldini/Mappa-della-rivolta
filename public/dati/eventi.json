@@ -124,6 +124,30 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-04-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Assemblea cittadina verso TDOR e 25 Novembre",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Spazio Popolare Neruda",
+      "lat": 45.08421,
+      "lng": 7.67534,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "liberi cittadini"
+      ],
+      "fonte": "https://gancio.cisti.org/event/assemblea-cittadina-verso-tdor-e-25-novembre",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:07:02",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-04-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
@@ -147,6 +171,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-30T01:36:22",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea Plenaria Food Not Bombs: cibo contro la guerra",
+      "data": "2026-11-04",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Manituana",
+      "lat": 45.07979,
+      "lng": 7.69868,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Food Not Bombs",
+        "csoa manituana"
+      ],
+      "fonte": "https://gancio.cisti.org/event/assemblea-plenaria-food-not-bombs-1",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-01T20:05:11",
       "gruppo": null,
       "ci_saro": null
     },
@@ -924,7 +973,7 @@
       "conferme": 13,
       "aggiornato_il": "2026-10-19T00:50:30",
       "gruppo": "g-8ba98c49cf13",
-      "ci_saro": 1
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -1968,8 +2017,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-01T15:11:41",
+  "ultimo_aggiornamento": "2026-11-01T20:07:02",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-01T14:13:45Z"
+  "copia_del": "2026-11-01T19:07:51Z"
 }
