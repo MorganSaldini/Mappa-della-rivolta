@@ -97,10 +97,11 @@
     "posizione_approssimativa": true,
     "organizzatori": [
       "FILT-CGIL",
-      "UGL-TA"
+      "UGL-TA",
+      "USB Lavoro Privato"
     ],
     "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-aerei-personale-soc-enav-8552",
-    "note": "4 ore, controllo del traffico aereo, ambito nazionale (nessun luogo: posizione a Roma centro)"
+    "note": "ENAV 4 ore (13-17), traffico aereo nazionale; anche personale navigante easyJet 24 ore (USB). Nessun luogo: Roma centro"
   },
   {
     "tipo": "sciopero_categoria",
@@ -120,6 +121,25 @@
     ],
     "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-merci-personale-soc-vincenzo-miele-trasporti-di-8620",
     "note": "8 ore, trasporto merci; posizione al centro di Volla"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMT di Genova",
+    "data": "2026-11-09",
+    "ora_inizio": "11:30",
+    "ora_fine": "15:30",
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "luogo": "",
+    "lat": 44.4072,
+    "lng": 8.934,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB Trasporti"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-09-mezzi-pubblici-personale-soc-amt-di-genova-8624",
+    "note": "4 ore, trasporto pubblico locale AMT Genova; proclamato il 28/10/2026"
   },
   {
     "tipo": "sciopero_categoria",
@@ -838,6 +858,25 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero manutenzione RFI a Verona",
+    "data": "2026-11-21",
+    "ora_inizio": "09:01",
+    "ora_fine": "17:00",
+    "comune": "Verona",
+    "provincia": "VR",
+    "regione": "Veneto",
+    "luogo": "",
+    "lat": 45.4384,
+    "lng": 10.9916,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "ORSA Ferrovie"
+    ],
+    "fonte": "https://scioperiitalia.it/sciopero/2026-11-21-treni-personale-manutenzione-ed-ingegneria-soc-8625",
+    "note": "8 ore, personale manutenzione e ingegneria RFI, unità territoriale Sud di Verona; proclamato il 28/10/2026"
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero ENAV all'aeroporto di Milano Malpensa",
     "data": "2026-11-22",
     "ora_inizio": "00:01",
@@ -975,10 +1014,11 @@
       "CIB-UNICOBAS",
       "SBM",
       "SGC",
-      "SI-COBAS"
+      "SI-COBAS",
+      "USI 1912"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "Intera giornata; treni dalle 21 del 3 alle 21 del 4; autostrade dalle 22 del 3 alle 22 del 4; TPL con modalità territoriali"
+    "note": "Intera giornata; treni 21 del 3-21 del 4; autostrade 22 del 3-22 del 4. Anche USI 1912: precari e atipici, escluso trasporti"
   },
   {
     "tipo": "sciopero_categoria",
