@@ -2,100 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-10-31-corigliano-rossano-presidio-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: presidio degli agricoltori alla rotonda Santa Lucia",
-      "data": "2026-10-31",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Corigliano-Rossano",
-      "provincia": "CS",
-      "regione": "Calabria",
-      "luogo": "Rotonda Santa Lucia (SS106)",
-      "lat": 39.64889,
-      "lng": 16.52064,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/lautotrasporto-protesta-in-sei-regioni/",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-22T00:08:44",
-      "gruppo": "g-e43bb13a2317",
-      "ci_saro": null
-    },
-    {
-      "id": "2026-10-31-nichelino-altro-01",
-      "tipo": "altro",
-      "titolo": "Adesione del Comune di Nichelino alla campagna contro la guerra \"R1PUD1A\"",
-      "data": "2026-10-31",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Nichelino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Comune di Nichelino",
-      "lat": 44.99512,
-      "lng": 7.64749,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "R1PUD1A la guerra",
-        "EMERGENCY ONG ETS",
-        "Nichelino ONS"
-      ],
-      "fonte": "https://www.torinoggi.it/2026/09/28/leggi-notizia/argomenti/nichelino-1/articolo/nichelino-aderisce-a-r1pud1a-la-guerra-di-emergency.html",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-23T17:16:36",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-10-31-vicenza-corteo-02",
-      "tipo": "corteo",
-      "titolo": "CORTEO contro carovita, economia di guerra e repressione!",
-      "data": "2026-10-31",
-      "ora_inizio": "15:00",
-      "ora_fine": null,
-      "comune": "Vicenza",
-      "provincia": "VI",
-      "regione": "Veneto",
-      "luogo": "Piazza San Lorenzo",
-      "lat": 45.5485,
-      "lng": 11.54215,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Collettivo Lunarossa"
-      ],
-      "fonte": "https://www.instagram.com/lunarossa_vicenza/p/De9ftIoDtkQ/?img_index=4",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-28T09:06:19",
-      "gruppo": null,
-      "ci_saro": 2
-    },
-    {
-      "id": "2026-10-31-avellino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "BASTA CAROVITA, GUERRE E REPRESSIONE! STUDENTI E AGRICOLTORI UNITI PER IL NOSTRO FUTURO",
-      "data": "2026-10-31",
-      "ora_inizio": "18:00",
-      "ora_fine": "23:57",
-      "comune": "Avellino",
-      "provincia": "AV",
-      "regione": "Campania",
-      "luogo": "San Ciro",
-      "lat": 40.91259,
-      "lng": 14.78046,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/cs_irpino?vrfl=MzR0cXd0eTdzZnh0",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-30T21:58:39",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-01-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del commercio nel giorno festivo nel Lazio",
@@ -970,7 +876,7 @@
       "conferme": 11,
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -2017,5 +1923,5 @@
   "ultimo_aggiornamento": "2026-10-31T06:00:34",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-10-31T21:24:24Z"
+  "copia_del": "2026-11-01T00:23:39Z"
 }
