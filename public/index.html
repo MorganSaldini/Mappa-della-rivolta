@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="vendor/leaflet/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="style.css?v=22">
+  <link rel="stylesheet" href="style.css?v=23">
 </head>
 <body>
   <header class="barra">
@@ -207,6 +207,13 @@
       <label>Tipo *
         <select name="tipo" required></select>
       </label>
+      <div class="box-sottotipo" hidden>
+        <label><span class="etichetta-sottotipo">Che tipo di iniziativa?</span>
+          <select name="sottotipo_scelta"></select>
+        </label>
+        <input name="sottotipo_libero" maxlength="40" placeholder="Es. flash mob, biciclettata, concerto" hidden aria-label="Tipo di iniziativa (scrivi tu)">
+        <span class="dlg__aiuto aiuto-sottotipo"></span>
+      </div>
       <label>Titolo *
         <input name="titolo" maxlength="120" required placeholder="Es. Corteo per il diritto alla casa">
       </label>
@@ -326,6 +333,13 @@
       <p class="dlg__nota">Le correzioni vengono applicate dopo il controllo di un moderatore. Non scrivere nomi, telefoni o email di persone.</p>
       <p class="tenue" id="correggi-evento"></p>
       <label>Tipo<select name="tipo"></select></label>
+      <div class="box-sottotipo" hidden>
+        <label><span class="etichetta-sottotipo">Che tipo di iniziativa?</span>
+          <select name="sottotipo_scelta"></select>
+        </label>
+        <input name="sottotipo_libero" maxlength="40" placeholder="Es. flash mob, biciclettata, concerto" hidden aria-label="Tipo di iniziativa (scrivi tu)">
+        <span class="dlg__aiuto aiuto-sottotipo"></span>
+      </div>
       <label>Titolo<input name="titolo" maxlength="120"></label>
       <div class="riga">
         <label>Data<input name="data" type="date"></label>
@@ -355,7 +369,7 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/leaflet/leaflet.markercluster.js"></script>
   <script src="rete.js?v=1"></script>
-  <script src="app.js?v=26"></script>
+  <script src="app.js?v=27"></script>
   <script src="sostieni.js?v=1"></script>
 </body>
 </html>

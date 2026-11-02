@@ -446,3 +446,6 @@ label.spunta input { width: auto; min-height: auto; }
 .pop__cisaro .bottone { grid-row: span 2; min-height: 40px; margin: 0; }
 .pop__cisaro span { font-size: .92rem; }
 .pop__cisaro small { font-size: .78rem; }
+
+/* Sottotipo nei moduli */
+.box-sottotipo { display: grid; gap: 6px; padding: 8px 10px; background: var(--carta); border-radius: var(--raggio); }

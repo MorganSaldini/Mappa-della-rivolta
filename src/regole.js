@@ -63,6 +63,15 @@ export function titoloAvviso(titolo) {
   return (PREFISSO + t).slice(0, 120);
 }
 
+// Occupazione o blocco? Dal sottotipo scelto o dal titolo
+export function sottotipoDisagi(e) {
+  if (['Occupazione', 'Blocco'].includes(e.sottotipo)) return e.sottotipo;
+  const t = String(e.titolo || '');
+  if (RE_OCCUPAZIONE.test(t) || /okkup|occup/i.test(t)) return 'Occupazione';
+  if (/blocc/i.test(t)) return 'Blocco';
+  return null;
+}
+
 export function eConformeAvviso(e) {
   let org = e.organizzatori;
   if (typeof org === 'string') { try { org = JSON.parse(org); } catch { org = []; } }
@@ -84,7 +93,7 @@ export function applicaRegole(dati) {
   }
   return {
     avviso: true,
-    dati: { ...dati, tipo: 'altro', titolo: titoloAvviso(dati.titolo), organizzatori: [], ora_inizio: null, ora_fine: null },
+    dati: { ...dati, tipo: 'altro', titolo: titoloAvviso(dati.titolo), organizzatori: [], ora_inizio: null, ora_fine: null, sottotipo: sottotipoDisagi(dati) },
   };
 }
 
@@ -124,7 +133,7 @@ export async function eseguiRegole(env, salvaVersione) {
     if (eAvvisoDisagi(e) && !e.fonte) {
       // Un avviso di disagi senza fonte giornalistica o istituzionale non si pubblica: torna visibile
       // appena un moderatore aggiunge la fonte e lo ripristina.
-      const cambi = eConformeAvviso(e) ? { stato: 'nascosto' } : { stato: 'nascosto', tipo: 'altro', titolo: titoloAvviso(e.titolo), organizzatori: [], ora_inizio: null, ora_fine: null };
+      const cambi = eConformeAvviso(e) ? { stato: 'nascosto' } : { stato: 'nascosto', tipo: 'altro', titolo: titoloAvviso(e.titolo), organizzatori: [], ora_inizio: null, ora_fine: null, sottotipo: sottotipoDisagi(e) };
       await salvaVersione(env.DB, e, cambi, 'regole_avviso_senza_fonte', 'regole');
       await env.DB.prepare('UPDATE eventi SET note = ? WHERE id = ?')
         .bind('Nascosto in automatico: avviso di possibili disagi senza fonte giornalistica o istituzionale (regole ottobre 2026). Aggiungi la fonte e ripristina.', e.id).run();
@@ -132,7 +141,7 @@ export async function eseguiRegole(env, salvaVersione) {
       continue;
     }
     if (eAvvisoDisagi(e) && !eConformeAvviso(e)) {
-      const cambi = { tipo: 'altro', titolo: titoloAvviso(e.titolo), organizzatori: [], ora_inizio: null, ora_fine: null };
+      const cambi = { tipo: 'altro', titolo: titoloAvviso(e.titolo), organizzatori: [], ora_inizio: null, ora_fine: null, sottotipo: sottotipoDisagi(e) };
       if (e.stato === 'verificato') cambi.stato = 'da_verificare';
       await salvaVersione(env.DB, e, cambi, 'regole_avviso_disagi', 'regole');
       esito.avvisi++;

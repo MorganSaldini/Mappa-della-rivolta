@@ -116,6 +116,8 @@
         <button type="button" class="dlg__chiudi" data-chiudi aria-label="Chiudi">✕</button>
       </div>
       <label>Tipo<select name="tipo"></select></label>
+      <label>Sottotipo <span class="tenue">(per altre iniziative e possibili disagi)</span><input name="sottotipo" maxlength="40" list="lista-sottotipi" placeholder="Es. Rassegna stampa, Occupazione, Blocco">
+        <datalist id="lista-sottotipi"><option>Rassegna stampa</option><option>Lezione informativa</option><option>Volantinaggio o banchetto</option><option>Raccolta firme</option><option>Proiezione o presentazione</option><option>Occupazione</option><option>Blocco</option></datalist></label>
       <label>Titolo<input name="titolo" maxlength="120"></label>
       <div class="riga">
         <label>Data<input name="data" type="date"></label>
@@ -167,6 +169,6 @@
 
   <div class="avviso-ok" id="avviso-ok" role="status" hidden></div>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="modera.js?v=22"></script>
+  <script src="modera.js?v=23"></script>
 </body>
 </html>

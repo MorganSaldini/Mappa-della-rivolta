@@ -11,7 +11,15 @@
     picchetto: { nome: 'Picchetto', plurale: 'picchetti', colore: '#0f7a6b', icona: '🏭' },
     assemblea: { nome: 'Assemblea', plurale: 'assemblee', colore: '#6b4fbb', icona: '🗣️' },
     altro: { nome: 'Altra iniziativa', plurale: 'altre iniziative', colore: '#55525c', icona: '📣' },
+    // Categoria a sé sulla mappa; nel database è tipo "altro" con titolo "Possibili disagi: …"
+    disagi: { nome: 'Possibili disagi', plurale: 'possibili disagi', colore: '#a15c00', icona: '⚠️' },
   };
+  const SOTTOTIPI = {
+    altro: ['Rassegna stampa', 'Lezione informativa', 'Volantinaggio o banchetto', 'Raccolta firme', 'Proiezione o presentazione'],
+    disagi: ['Occupazione', 'Blocco'],
+  };
+  const tipoDi = (e) => (e.tipo === 'altro' && /^possibili disagi/i.test(e.titolo || '') ? 'disagi' : e.tipo);
+  const nomeTipo = (e) => { const t = TIPI[tipoDi(e)] || TIPI.altro; return t.nome + (e.sottotipo && tipoDi(e) !== 'disagi' ? ' · ' + e.sottotipo : e.sottotipo && tipoDi(e) === 'disagi' ? ' · ' + e.sottotipo.toLowerCase() : ''); };
   const REGIONI = [
     'Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna', 'Friuli-Venezia Giulia', 'Lazio',
     'Liguria', 'Lombardia', 'Marche', 'Molise', 'Piemonte', 'Puglia', 'Sardegna', 'Sicilia', 'Toscana',
@@ -150,7 +158,7 @@
   }
 
   function icona(e) {
-    const t = TIPI[e.tipo] || TIPI.altro;
+    const t = TIPI[tipoDi(e)] || TIPI.altro;
     return L.divIcon({
       className: '',
       html: `<div class="mk mk--${esc(e.stato)}" style="--c:${t.colore}"><span>${t.icona}</span></div>`,
@@ -159,13 +167,13 @@
   }
 
   function htmlPopup(e) {
-    const t = TIPI[e.tipo] || TIPI.altro;
+    const t = TIPI[tipoDi(e)] || TIPI.altro;
     const statoTesto = { verificato: '✓ Verificato', da_verificare: 'Da verificare', annullato: 'Annullato' }[e.stato] || '';
     const fonte = e.fonte && urlSicuro(e.fonte);
     const org = (e.organizzatori || []).map(esc).join(', ');
     return `<div class="pop">
       <div class="etichette">
-        <span class="etichetta" style="--c:${t.colore}">${t.icona} ${esc(t.nome)}</span>
+        <span class="etichetta" style="--c:${t.colore}">${t.icona} ${esc(nomeTipo(e))}</span>
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${statoTesto}</span>
       </div>
       <h3 class="${e.stato === 'annullato' ? 'barrato' : ''}">${esc(e.titolo)}</h3>
@@ -390,7 +398,7 @@
     const oggi = oggiRoma();
     const limite = { oggi: oggi, settimana: piuGiorni(oggi, 7), mese: piuGiorni(oggi, 31) }[filtri.periodo];
     return eventi.filter((e) =>
-      (!filtri.tipi.size || filtri.tipi.has(e.tipo)) &&
+      (!filtri.tipi.size || filtri.tipi.has(tipoDi(e))) &&
       (!limite || e.data <= limite) &&
       (filtri.periodo !== 'giorno' || !filtri.giorno || e.data === filtri.giorno) &&
       (!filtri.regione || e.regione === filtri.regione) &&
@@ -455,7 +463,7 @@
     const attivi = lista.filter((e) => e.stato !== 'annullato');
     $('#totale').textContent = attivi.length;
     const conta = {};
-    eventi.filter((e) => e.stato !== 'annullato').forEach((e) => (conta[e.tipo] = (conta[e.tipo] || 0) + 1));
+    eventi.filter((e) => e.stato !== 'annullato').forEach((e) => (conta[tipoDi(e)] = (conta[tipoDi(e)] || 0) + 1));
     $('#contatori').innerHTML = Object.entries(TIPI)
       .filter(([k]) => conta[k])
       .map(([k, t]) => `<button type="button" class="chip chip--tipo" data-filtro-tipo="${k}" aria-pressed="${filtri.tipi.has(k)}" style="--c:${t.colore}">` +
@@ -509,20 +517,20 @@
         <summary class="giorno"><span>${esc(dataBreve(g.data))}</span><span class="giorno__conta">${g.n} ${g.n === 1 ? 'mobilitazione' : 'mobilitazioni'}</span></summary>`;
       for (const r of g.righe) {
         const e = r.eventi[0];
-        const t = TIPI[e.tipo] || TIPI.altro;
+        const t = TIPI[tipoDi(e)] || TIPI.altro;
         const titolo = `<strong class="${e.stato === 'annullato' ? 'barrato' : ''}">${esc(e.titolo)}</strong>`;
         if (r.eventi.length === 1) {
           html += `<button type="button" class="voce" data-vai="${esc(e.id)}">
             <span class="pallino" style="--c:${t.colore}"></span>
             <span class="voce__testo">${ora(e) ? `<span class="voce__ora">${esc(ora(e))}</span>` : ''}${titolo}
-            <span class="voce__info">${esc(t.nome)} · ${esc(e.comune)} (${esc(e.provincia)})${giorniGruppo(e)}${stato(e)}</span></span>
+            <span class="voce__info">${esc(nomeTipo(e))} · ${esc(e.comune)} (${esc(e.provincia)})${giorniGruppo(e)}${stato(e)}</span></span>
           </button>`;
         } else {
           const citta = r.eventi.map((x) => `<button type="button" class="voce__citta" data-vai="${esc(x.id)}">${esc(x.comune)} (${esc(x.provincia)})${ora(x) ? ' · ' + esc(ora(x)) : ''}${x.stato !== e.stato ? stato(x) : ''}</button>`).join('');
           html += `<details class="voce voce--gruppo">
             <summary><span class="pallino" style="--c:${t.colore}"></span>
             <span class="voce__testo">${titolo}
-            <span class="voce__info">${esc(t.nome)} · <em>in ${r.eventi.length} città</em>${giorniGruppo(e)}${stato(e)}</span></span></summary>
+            <span class="voce__info">${esc(nomeTipo(e))} · <em>in ${r.eventi.length} città</em>${giorniGruppo(e)}${stato(e)}</span></span></summary>
             <div class="voce__elenco-citta">${citta}
               <button type="button" class="voce__citta voce__tutte" data-punti="${esc(r.eventi.map((x) => x.id).join(','))}">Vedi tutte sulla mappa</button></div>
           </details>`;
@@ -643,11 +651,38 @@
     });
   });
 
+  // ---------- Sottotipo (altre iniziative, possibili disagi) ----------
+  function preparaSottotipo(form) {
+    const box = form.querySelector('.box-sottotipo'), sel = box.querySelector('select'), libero = box.querySelector('input');
+    const aiuto = box.querySelector('.aiuto-sottotipo');
+    function aggiorna(valore) {
+      const tipo = form.tipo.value, lista = SOTTOTIPI[tipo];
+      box.hidden = !lista;
+      if (!lista) { sel.innerHTML = ''; libero.hidden = true; libero.value = ''; return; }
+      sel.innerHTML = (tipo === 'disagi' ? '<option value="">Scegli…</option>' : '<option value="">Nessuno in particolare</option>') +
+        lista.map((x) => `<option>${esc(x)}</option>`).join('') + (tipo === 'altro' ? '<option value="__altro">Altro: scrivi tu…</option>' : '');
+      box.querySelector('.etichetta-sottotipo').textContent = tipo === 'disagi' ? 'Di che disagio si tratta? *' : 'Che tipo di iniziativa?';
+      aiuto.textContent = tipo === 'disagi'
+        ? 'Solo come avviso per chi si sposta: serve una fonte giornalistica o istituzionale, niente organizzatori né orario di ritrovo.'
+        : 'Se non è nell\'elenco, scegli «Altro» e scrivilo: resterà tra le altre iniziative.';
+      if (valore && lista.includes(valore)) { sel.value = valore; libero.hidden = true; libero.value = ''; }
+      else if (valore && tipo === 'altro') { sel.value = '__altro'; libero.hidden = false; libero.value = valore; }
+      else { sel.value = ''; libero.hidden = true; libero.value = ''; }
+    }
+    form.tipo.addEventListener('change', () => aggiorna(''));
+    sel.addEventListener('change', () => { libero.hidden = sel.value !== '__altro'; if (!libero.hidden) libero.focus(); });
+    return {
+      aggiorna,
+      valore: () => (sel.value === '__altro' ? libero.value.trim() : sel.value) || null,
+    };
+  }
+
   // ---------- Modulo: aggiungi ----------
   const fa = $('#form-aggiungi');
   fa.tipo.innerHTML = '<option value="">Scegli…</option>' +
     Object.entries(TIPI).map(([k, t]) => `<option value="${k}">${t.icona} ${esc(t.nome)}</option>`).join('');
   fa.regione.innerHTML = '<option value="">Scegli…</option>' + REGIONI.map((r) => `<option>${esc(r)}</option>`).join('');
+  const stAggiungi = preparaSottotipo(fa);
   fa.data.min = oggiRoma();
 
   let miniMappa, puntoMarker, punto = null, approssimativa = false, doppioniVisti = false;
@@ -903,6 +938,7 @@
     err.textContent = '';
     const v = Object.fromEntries(new FormData(fa).entries());
     if (!v.tipo) return (err.textContent = 'Scegli il tipo di mobilitazione.');
+    if (v.tipo === 'disagi' && !stAggiungi.valore()) return (err.textContent = 'Scegli se si tratta di occupazione o di blocco.');
     if ((v.titolo || '').trim().length < 5) return (err.textContent = 'Scrivi un titolo di almeno 5 caratteri.');
     if (!v.data) return (err.textContent = 'Indica la data.');
     if (!v.comune.trim() || !/^[A-Za-z]{2}$/.test(v.provincia.trim()) || !v.regione) {
@@ -926,7 +962,7 @@
     if ((date_extra.length + 1) * (luoghi.length + 1) > MAX_RIGHE) return (err.textContent = `Troppe combinazioni di giorni e città: il massimo è ${MAX_RIGHE} in tutto.`);
     const corpo = {
       luoghi, date_extra,
-      tipo: v.tipo, titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
+      tipo: v.tipo, sottotipo: stAggiungi.valore(), titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
       comune: v.comune, provincia: v.provincia.toUpperCase(), regione: v.regione, luogo: v.luogo,
       lat: punto.lat, lng: punto.lng, posizione_approssimativa: approssimativa,
       organizzatori: v.organizzatori.split(',').map((s) => s.trim()).filter(Boolean),
@@ -1035,7 +1071,7 @@
   }
   function luogoTesto(e) { return [e.luogo, `${e.comune} (${e.provincia})`].filter(Boolean).join(', '); }
   function descrizione(e) {
-    const t = TIPI[e.tipo] || TIPI.altro;
+    const t = TIPI[tipoDi(e)] || TIPI.altro;
     return [t.nome, (e.organizzatori || []).length ? 'Promosso da: ' + e.organizzatori.join(', ') : '', e.fonte ? 'Fonte: ' + e.fonte : '',
       'Mappa: ' + RETE.PRINCIPALE + '/?e=' + encodeURIComponent(e.id)].filter(Boolean).join('\n');
   }
@@ -1118,6 +1154,7 @@
   // ---------- Correggi ----------
   const fc = $('#form-correggi');
   fc.tipo.innerHTML = Object.entries(TIPI).map(([k, t]) => `<option value="${k}">${t.icona} ${esc(t.nome)}</option>`).join('');
+  const stCorreggi = preparaSottotipo(fc);
   let idCorreggi = null;
   function apriCorreggi(id) {
     const e = eventi.find((x) => x.id === id);
@@ -1126,7 +1163,8 @@
     fc.reset();
     $('#errore-correggi').textContent = '';
     $('#correggi-evento').textContent = `${e.comune} (${e.provincia})${e.luogo ? ' · ' + e.luogo : ''}`;
-    fc.tipo.value = e.tipo;
+    fc.tipo.value = tipoDi(e);
+    stCorreggi.aggiorna(e.sottotipo || '');
     fc.titolo.value = e.titolo;
     fc.data.value = e.data;
     fc.ora_inizio.value = e.ora_inizio || '';
@@ -1143,7 +1181,7 @@
     if ((v.motivo || '').trim().length < 5) return ($('#errore-correggi').textContent = 'Spiega in poche parole cosa correggi e perché.');
     const corpo = {
       campi: {
-        tipo: v.tipo, titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
+        tipo: v.tipo, sottotipo: stCorreggi.valore(), titolo: v.titolo, data: v.data, ora_inizio: v.ora_inizio || null, ora_fine: v.ora_fine || null,
         luogo: v.luogo, organizzatori: v.organizzatori.split(',').map((x) => x.trim()).filter(Boolean), fonte: v.fonte,
       },
       annullato: !!fc.annullato.checked, motivo: v.motivo, sito_web: v.sito_web, turnstile: tokenTurnstile('ts-correggi'),

@@ -26,7 +26,11 @@ di questo repository. Non pubblichi nulla direttamente: ogni proposta entra come
    Mai nomi, telefoni, email o indirizzi di persone private.
 5. Tono neutro e informativo nei titoli: descrivi l'iniziativa ("Corteo studentesco"), non giudicarla e non usare lo
    slogan come titolo; il nome dell'iniziativa si può citare tra virgolette. Niente MAIUSCOLO gridato.
-6. La mappa **fa informazione**: non organizza, non promuove e non invita. Dopo il decreto del Consiglio dei ministri del
+6. **Sottotipo** (facoltativo): per `tipo` = `altro` puoi aggiungere `"sottotipo"` scegliendo tra "Rassegna stampa",
+   "Lezione informativa", "Volantinaggio o banchetto", "Raccolta firme", "Proiezione o presentazione" (o un'altra parola breve).
+   Per blocchi e occupazioni usa `"tipo": "disagi"` con `"sottotipo": "Occupazione"` o `"Blocco"`: il sito mette da solo
+   il prefisso "Possibili disagi:" e toglie organizzatori e orario.
+7. La mappa **fa informazione**: non organizza, non promuove e non invita. Dopo il decreto del Consiglio dei ministri del
    20/10/2026 sulle manifestazioni, in caso di dubbio non proporre e scrivilo nel resoconto.
 
 ## Dati del calendario ufficiale forniti da una persona

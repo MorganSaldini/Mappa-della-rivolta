@@ -7,15 +7,45 @@ import {
 // Campi di contenuto che si possono proporre, modificare e ripristinare
 export const CAMPI_CONTENUTO = [
   'tipo', 'titolo', 'data', 'ora_inizio', 'ora_fine', 'comune', 'provincia', 'regione', 'luogo',
-  'lat', 'lng', 'posizione_approssimativa', 'organizzatori', 'fonte',
+  'lat', 'lng', 'posizione_approssimativa', 'organizzatori', 'fonte', 'sottotipo',
 ];
+
+// Sottotipi proposti per "Altra iniziativa" (si può scriverne uno personalizzato) e per "Possibili disagi"
+export const SOTTOTIPI_ALTRO = ['Rassegna stampa', 'Lezione informativa', 'Volantinaggio o banchetto', 'Raccolta firme', 'Proiezione o presentazione'];
+export const SOTTOTIPI_DISAGI = ['Occupazione', 'Blocco'];
+
+// La colonna "sottotipo" si aggiunge da sola al database la prima volta (una volta per avvio)
+let colonnePronte = false;
+export async function preparaColonne(db) {
+  if (colonnePronte) return;
+  const { results } = await db.prepare('PRAGMA table_info(eventi)').all();
+  if (!results.some((c) => c.name === 'sottotipo')) await db.prepare('ALTER TABLE eventi ADD COLUMN sottotipo TEXT').run();
+  colonnePronte = true;
+}
 
 export const STATI = ['da_verificare', 'verificato', 'annullato', 'nascosto', 'rifiutato'];
 
 // Controlla un evento completo. opzioni.consentiPassato: per i moderatori che correggono eventi già svolti.
 // Restituisce { errore } oppure { dati } con i campi puliti (organizzatori come array).
 export function validaEvento(b, opzioni = {}) {
-  const tipo = String(b.tipo || '');
+  let tipo = String(b.tipo || '');
+  let sottotipo = pulisci(b.sottotipo, 40) || null;
+  let titoloBase = b.titolo;
+  // "Possibili disagi" è una categoria a sé sulla mappa; nel database resta tipo "altro" con titolo "Possibili disagi: …"
+  if (tipo === 'disagi') {
+    const s = SOTTOTIPI_DISAGI.find((x) => x.toLowerCase() === String(sottotipo || '').toLowerCase());
+    if (!s) return { errore: 'Per i possibili disagi scegli se si tratta di occupazione o di blocco.' };
+    sottotipo = s;
+    let t = String(titoloBase || '').replace(/^\s*possibili disagi\s*[:,.-]?\s*/i, '').trim();
+    const parola = s === 'Occupazione' ? /occup|okkup|autogest/i : /blocc/i;
+    if (!parola.test(t)) t = s.toLowerCase() + ' ' + t;
+    titoloBase = 'Possibili disagi: ' + t;
+    tipo = 'altro';
+  } else if (tipo !== 'altro') {
+    sottotipo = null;
+  }
+  if (sottotipo && (contieneDatiPersonali(sottotipo) || /https?:|www\./i.test(sottotipo))) return { errore: 'Il tipo di iniziativa non può contenere link, email o telefoni.' };
+  b = { ...b, titolo: titoloBase };
   if (!TIPI.includes(tipo)) return { errore: 'Scegli il tipo di mobilitazione.' };
 
   const titolo = pulisci(b.titolo, 120);
@@ -74,7 +104,7 @@ export function validaEvento(b, opzioni = {}) {
     tipo, titolo, data, ora_inizio: oraInizio, ora_fine: oraFine, comune, provincia, regione, luogo,
     lat: Math.round(lat * 1e5) / 1e5, lng: Math.round(lng * 1e5) / 1e5,
     posizione_approssimativa: b.posizione_approssimativa ? 1 : 0,
-    organizzatori, fonte: fonte || null,
+    organizzatori, fonte: fonte || null, sottotipo,
   });
 }
 
@@ -120,13 +150,13 @@ export async function salvaVersione(db, evento, cambi, azione, attore) {
     .prepare(
       `UPDATE eventi SET tipo=?, titolo=?, data=?, ora_inizio=?, ora_fine=?, comune=?, provincia=?, regione=?, luogo=?,
         lat=?, lng=?, posizione_approssimativa=?, organizzatori=?, fonte=?, stato=?, conferme=?, segnalazioni_aperte=?,
-        versione=?, aggiornato_il=? WHERE id=?`
+        versione=?, aggiornato_il=?, sottotipo=? WHERE id=?`
     )
     .bind(
       nuovo.tipo, nuovo.titolo, nuovo.data, nuovo.ora_inizio, nuovo.ora_fine, nuovo.comune, nuovo.provincia,
       nuovo.regione, nuovo.luogo, nuovo.lat, nuovo.lng, nuovo.posizione_approssimativa || 0, nuovo.organizzatori,
       nuovo.fonte, nuovo.stato, nuovo.conferme || 0, nuovo.segnalazioni_aperte || 0, nuovo.versione,
-      nuovo.aggiornato_il, nuovo.id
+      nuovo.aggiornato_il, nuovo.sottotipo || null, nuovo.id
     )
     .run();
   await scriviCronologia(db, nuovo, azione, attore);

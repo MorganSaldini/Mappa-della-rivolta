@@ -10,7 +10,7 @@ import { preparaPresenze } from './presenze.js';
 
 const CAMPI_PUBBLICI =
   'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, lat, lng, ' +
-  'posizione_approssimativa, organizzatori, fonte, stato, conferme, aggiornato_il, gruppo';
+  'posizione_approssimativa, organizzatori, fonte, stato, conferme, aggiornato_il, gruppo, sottotipo';
 
 export async function onRequestGet({ request, env, ctx }) {
   // 1) Se c'è una copia recente (meno di 60 secondi) la restituisce senza toccare il database
@@ -189,12 +189,12 @@ export async function creaEvento(db, d, { gruppo = null, attore = 'visitatore', 
     .prepare(
       `INSERT INTO eventi (id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo,
         lat, lng, posizione_approssimativa, organizzatori, fonte, stato, conferme, segnalazioni_aperte,
-        versione, creato_il, aggiornato_il, note, gruppo)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'da_verificare',0,0,1,?,?,?,?)`
+        versione, creato_il, aggiornato_il, note, gruppo, sottotipo)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'da_verificare',0,0,1,?,?,?,?,?)`
     )
     .bind(
       id, d.tipo, d.titolo, d.data, d.ora_inizio, d.ora_fine, d.comune, d.provincia, d.regione, d.luogo,
-      d.lat, d.lng, d.posizione_approssimativa || 0, evento.organizzatori, evento.fonte, adesso, adesso, note, gruppo
+      d.lat, d.lng, d.posizione_approssimativa || 0, evento.organizzatori, evento.fonte, adesso, adesso, note, gruppo, d.sottotipo || null
     )
     .run();
   await scriviCronologia(db, evento, 'creato', attore);

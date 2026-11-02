@@ -1,5 +1,6 @@
 import { eseguiRegole } from './regole.js';
 import { ciSaro } from './presenze.js';
+import { preparaColonne } from './dati.js';
 import { salvaVersione } from './dati.js';
 // Punto di ingresso del Worker Cloudflare.
 // Le richieste a /api/... vanno alle funzioni qui sotto; tutto il resto (pagina, stile, script)
@@ -98,6 +99,7 @@ export default {
 
   // Ogni ora: pulizia degli eventi vecchi, proposte dell'agente e decisioni dell'amministratore AI
   async scheduled(event, env, ctx) {
+    await preparaColonne(env.DB).catch((e) => console.error('Colonne', e));
     // Una volta sola: toglie i vecchi pulsanti dai post del canale (nascondevano i commenti)
     ctx.waitUntil(togliPulsantiPostUnaVolta(env).then((r) => r && console.log('Pulsanti tolti', JSON.stringify(r))).catch((e) => console.error('Pulsanti', e)));
     // Una volta sola: regole aggiornate dei commenti, fissate in alto nel gruppo di discussione
@@ -142,6 +144,7 @@ async function gestisci(request, env, ctx, url) {
 
     try {
       if (!env.DB) return errore('Database non collegato: controlla database_id e binding "DB" in wrangler.toml.', 500);
+      await preparaColonne(env.DB);
 
       // Nessuna richiesta di scrittura da altri siti
       if (request.method !== 'GET' && !stessaOrigine(request)) return errore('Richiesta non consentita.', 403);

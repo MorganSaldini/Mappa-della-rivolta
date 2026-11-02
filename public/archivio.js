@@ -7,8 +7,9 @@
   const TIPI = {
     corteo: ['#c8322a', 'Corteo'], presidio: ['#d96c00', 'Presidio'], sciopero_generale: ['#8e1b5e', 'Sciopero generale'],
     sciopero_categoria: ['#2a5db0', 'Sciopero di categoria'], picchetto: ['#0f7a6b', 'Picchetto'],
-    assemblea: ['#6b4fbb', 'Assemblea'], altro: ['#55525c', 'Altra iniziativa'],
+    assemblea: ['#6b4fbb', 'Assemblea'], altro: ['#55525c', 'Altra iniziativa'], disagi: ['#a15c00', 'Possibili disagi'],
   };
+  const tipoDi = (e) => (e.tipo === 'altro' && /^possibili disagi/i.test(e.titolo || '') ? 'disagi' : e.tipo);
   const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
   const PER_PAGINA = 150;
 
@@ -25,7 +26,8 @@
   const normale = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
   function voce(e) {
-    const [col, nome] = TIPI[e.tipo] || TIPI.altro;
+    const [col, nome0] = TIPI[tipoDi(e)] || TIPI.altro;
+    const nome = nome0 + (e.sottotipo ? ' · ' + e.sottotipo : '');
     const [, m, g] = e.data.split('-');
     const fonte = e.fonte && urlSicuro(e.fonte);
     const annullato = e.stato === 'annullato';
@@ -46,7 +48,7 @@
     const testo = normale($('#f-testo').value.trim());
     const mese = $('#f-mese').value, tipo = $('#f-tipo').value, regione = $('#f-regione').value;
     return eventi.filter((e) =>
-      (!mese || e.data.startsWith(mese)) && (!tipo || e.tipo === tipo) && (!regione || e.regione === regione) &&
+      (!mese || e.data.startsWith(mese)) && (!tipo || tipoDi(e) === tipo) && (!regione || e.regione === regione) &&
       (!testo || normale([e.titolo, e.comune, e.luogo, (e.organizzatori || []).join(' ')].join(' ')).includes(testo)));
   }
 
@@ -67,7 +69,7 @@
   function preparaFiltri() {
     const mesi = [...new Set(eventi.map((e) => e.data.slice(0, 7)))];
     $('#f-mese').insertAdjacentHTML('beforeend', mesi.map((m) => `<option value="${esc(m)}">${esc(nomeMese(m))}</option>`).join(''));
-    const tipi = Object.keys(TIPI).filter((t) => eventi.some((e) => e.tipo === t));
+    const tipi = Object.keys(TIPI).filter((t) => eventi.some((e) => tipoDi(e) === t));
     $('#f-tipo').insertAdjacentHTML('beforeend', tipi.map((t) => `<option value="${t}">${esc(TIPI[t][1])}</option>`).join(''));
     const regioni = [...new Set(eventi.map((e) => e.regione))].sort((a, b) => a.localeCompare(b, 'it'));
     $('#f-regione').insertAdjacentHTML('beforeend', regioni.map((r) => `<option>${esc(r)}</option>`).join(''));
@@ -101,7 +103,7 @@
     const oggi = new Date().toISOString().slice(0, 10);
     if (b.dataset.formato === 'csv') {
       const intest = ['data', 'ora_inizio', 'ora_fine', 'tipo', 'titolo', 'comune', 'provincia', 'regione', 'luogo', 'organizzatori', 'stato', 'fonte', 'id'];
-      const righe = lista.map((e) => [e.data, e.ora_inizio, e.ora_fine, (TIPI[e.tipo] || TIPI.altro)[1], e.titolo, e.comune, e.provincia,
+      const righe = lista.map((e) => [e.data, e.ora_inizio, e.ora_fine, (TIPI[tipoDi(e)] || TIPI.altro)[1] + (e.sottotipo ? ' · ' + e.sottotipo : ''), e.titolo, e.comune, e.provincia,
         e.regione, e.luogo, (e.organizzatori || []).join(' / '), e.stato, e.fonte, e.id].map(cella).join(';'));
       // BOM + punto e virgola: Excel in italiano apre il file con le colonne giuste e gli accenti corretti
       salva(`archivio-mobilitazioni-${oggi}.csv`, '\ufeff' + [intest.join(';'), ...righe].join('\r\n'), 'text/csv;charset=utf-8');

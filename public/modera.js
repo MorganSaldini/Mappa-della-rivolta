@@ -7,12 +7,14 @@
     corteo: ['🚩', 'Corteo', '#c8322a'], presidio: ['✋', 'Presidio', '#d96c00'],
     sciopero_generale: ['✊', 'Sciopero generale', '#8e1b5e'], sciopero_categoria: ['🛠️', 'Sciopero di categoria', '#2a5db0'],
     picchetto: ['🏭', 'Picchetto', '#0f7a6b'], assemblea: ['🗣️', 'Assemblea', '#6b4fbb'], altro: ['📣', 'Altra iniziativa', '#55525c'],
+    disagi: ['⚠️', 'Possibili disagi', '#a15c00'],
   };
+  const tipoDi = (e) => (e && e.tipo === 'altro' && /^possibili disagi/i.test(e.titolo || '') ? 'disagi' : e && e.tipo);
   const STATI = { da_verificare: 'Da verificare', verificato: '✓ Verificato', annullato: 'Annullato', nascosto: 'Nascosto', rifiutato: 'Rifiutato' };
   const NOMI_CAMPI = {
     tipo: 'Tipo', titolo: 'Titolo', data: 'Data', ora_inizio: 'Inizio', ora_fine: 'Fine', comune: 'Comune', provincia: 'Provincia',
     regione: 'Regione', luogo: 'Luogo', lat: 'Latitudine', lng: 'Longitudine', posizione_approssimativa: 'Posizione indicativa',
-    organizzatori: 'Organizzatori', fonte: 'Fonte', stato: 'Stato',
+    organizzatori: 'Organizzatori', fonte: 'Fonte', stato: 'Stato', sottotipo: 'Sottotipo',
   };
   const MOTIVI = { sbagliato: 'Informazioni sbagliate', annullato: 'Annullato/rinviato', doppione: 'Doppione', inappropriato: 'Inappropriato', altro: 'Altro' };
   let REGIONI = [];
@@ -180,7 +182,7 @@
     if (!e) return false;
     const t = normale(ff.testo.value.trim());
     if (t && !normale([e.titolo, e.comune, e.luogo, e.id || e.evento_id, (e.organizzatori || []).join(' ')].join(' ')).includes(t)) return false;
-    if (ff.tipo.value && e.tipo !== ff.tipo.value) return false;
+    if (ff.tipo.value && tipoDi(e) !== ff.tipo.value) return false;
     if (ff.regione.value && e.regione !== ff.regione.value) return false;
     if (ff.stato.value === 'pubblici') {
       // Come sulla mappa pubblica: da oggi in poi, verificati, annullati e (se attiva la pubblicazione immediata) da verificare
@@ -270,11 +272,11 @@
 
   // ---------- Schede evento ----------
   function schedaEvento(e, azioni, extra = '') {
-    const t = TIPI[e.tipo] || TIPI.altro;
+    const t = TIPI[tipoDi(e)] || TIPI.altro;
     ultimi[e.id] = e;
     const fonte = e.fonte && urlSicuro(e.fonte);
     return `<article class="scheda-ev" id="${esc(ancoraDi('ev', e.id))}" style="--c:${t[2]}">
-      <div class="etichette"><span class="etichetta" style="--c:${t[2]}">${t[0]} ${esc(t[1])}</span>
+      <div class="etichette"><span class="etichetta" style="--c:${t[2]}">${t[0]} ${esc(t[1])}${e.sottotipo ? ' · ' + esc(e.sottotipo) : ''}</span>
         <span class="etichetta etichetta--stato etichetta--${esc(e.stato)}">${esc(STATI[e.stato] || e.stato)}</span>
         ${e.segnalazioni_aperte ? `<span class="etichetta" style="--c:#9f241d">⚠️ ${e.segnalazioni_aperte} segnalazioni</span>` : ''}
         ${e.telegram_msg_id ? '<span class="etichetta" style="--c:#2a8fd6">Telegram ✓</span>' : ''}
@@ -555,6 +557,8 @@
       fm.regione.innerHTML = reg.map((r) => `<option>${esc(r)}</option>`).join('');
     }
     for (const k of ['tipo', 'titolo', 'data', 'ora_inizio', 'ora_fine', 'comune', 'provincia', 'regione', 'luogo', 'lat', 'lng', 'fonte']) fm[k].value = e[k] ?? '';
+    fm.tipo.value = tipoDi(e);
+    fm.sottotipo.value = e.sottotipo || '';
     fm.organizzatori.value = (e.organizzatori || []).join(', ');
     fm.posizione_approssimativa.checked = !!e.posizione_approssimativa;
     // Eventi collegati (altre città o altre date): le modifiche ai campi comuni possono valere per tutti

@@ -4,7 +4,7 @@
 import { json, oggiRoma, aggiungiGiorni, impostazioni } from './lib.js';
 
 const CAMPI =
-  'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, organizzatori, fonte, stato, gruppo';
+  'id, tipo, titolo, data, ora_inizio, ora_fine, comune, provincia, regione, luogo, organizzatori, fonte, stato, gruppo, sottotipo';
 const SECONDI_CACHE = 600; // la lista cambia una volta al giorno: copia condivisa di 10 minuti
 
 export async function elenco({ request, env, ctx }) {
