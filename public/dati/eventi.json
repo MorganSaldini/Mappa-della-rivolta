@@ -184,9 +184,9 @@
       "posizione_approssimativa": 0,
       "organizzatori": [],
       "fonte": "https://www.rete8.it/cronaca/pescara-preoccupazione-per-la-manifestazione-degli-sciami/",
-      "stato": "verificato",
+      "stato": "annullato",
       "conferme": 8,
-      "aggiornato_il": "2026-10-29T00:45:36",
+      "aggiornato_il": "2026-11-02T16:11:57",
       "gruppo": null,
       "ci_saro": 1
     },
@@ -215,6 +215,54 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-02-trieste-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Fiori e Collera - Per altre due giovani vite spezzate nel Porto Vecchio di Trieste",
+      "data": "2026-11-02",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:00",
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "Piazza Libertà",
+      "lat": 45.65679,
+      "lng": 13.77251,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Presidio spontaneo nato dal basso da privati cittadini"
+      ],
+      "fonte": "https://www.triesteprima.it/cronaca/porto-vecchio-morti-manifestazione.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:49",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-presidio-02",
+      "tipo": "presidio",
+      "titolo": "Presidio al rettorato: prandi non scappare! Esigiamo risposte!",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "via verdi 15, Cortile del rettorato UniTO",
+      "lat": 45.0694,
+      "lng": 7.68892,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfPr2YrIHGp/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:51",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-03-torino-presidio-01",
       "tipo": "presidio",
       "titolo": "CICLABILE UMANA: vogliamo più sicurezza sulla strada!",
@@ -236,6 +284,30 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:39:28",
       "gruppo": "g-2917f3998712",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Assemblea di palazzo nuovo + aperitivo condiviso x studenti universitari!",
+      "data": "2026-11-03",
+      "ora_inizio": "16:30",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzo Nuovo, Via sant'ottavio 20",
+      "lat": 45.06798,
+      "lng": 7.69421,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea palazzo nuovo"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQBQDtNjlh",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T20:46:37",
+      "gruppo": "g-d8373ce26231",
       "ci_saro": null
     },
     {
@@ -509,6 +581,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-05-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-11-05",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:42",
+      "gruppo": "g-eaf2ac60a0ee",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-06-volla-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
@@ -531,6 +627,30 @@
       "aggiornato_il": "2026-10-27T14:30:16",
       "gruppo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-06-cassino-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per il carovita",
+      "data": "2026-11-06",
+      "ora_inizio": "09:30",
+      "ora_fine": "13:00",
+      "comune": "Cassino",
+      "provincia": "FR",
+      "regione": "Lazio",
+      "luogo": "Piazza Labriola",
+      "lat": 41.49153,
+      "lng": 13.83075,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo"
+      ],
+      "fonte": "https://laziotv.it/cassino/domani-il-corteo-degli-studenti-i-negozianti-blindano-le-vetrine/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T16:09:20",
+      "gruppo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-06-bari-sciopero_categoria-01",
@@ -580,6 +700,30 @@
       "aggiornato_il": "2026-10-27T14:30:25",
       "gruppo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-06-torino-assemblea-02",
+      "tipo": "assemblea",
+      "titolo": "Assemblea di palazzo nuovo + aperitivo condiviso x studenti universitari!",
+      "data": "2026-11-06",
+      "ora_inizio": "16:30",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzo Nuovo, Via sant'ottavio 20",
+      "lat": 45.06798,
+      "lng": 7.69421,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea palazzo nuovo"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQBQDtNjlh",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-02T20:46:37",
+      "gruppo": "g-d8373ce26231",
+      "ci_saro": 2
     },
     {
       "id": "2026-11-06-torino-altro-01",
@@ -650,6 +794,54 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:32",
+      "gruppo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-torino-corteo-03",
+      "tipo": "corteo",
+      "titolo": "Italia in piazza: uniti contro riarmo, carovita, precariato ed i tagli a educazione e sanità!",
+      "data": "2026-11-07",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07084,
+      "lng": 7.68645,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "blocchiamo tutto torino"
+      ],
+      "fonte": "https://i.ibb.co/ynsc0JpL/Whats-App-Image-2026-11-02-at-13-00-57.jpg",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-02T13:03:36",
+      "gruppo": null,
+      "ci_saro": 4
+    },
+    {
+      "id": "2026-11-07-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio antimilitarista: Giornate dei Senza patria",
+      "data": "2026-11-07",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "In via Roma, di fronte all’ingresso di Galleria San Federico, dove ha sede il DAP – Distretto Aerospaziale Piemontese",
+      "lat": 45.06884,
+      "lng": 7.68322,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Anarres"
+      ],
+      "fonte": "https://gancio.cisti.org/event/giornate-dei-senzapatria",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T13:49:02",
       "gruppo": null,
       "ci_saro": null
     },
@@ -729,6 +921,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-07-cremona-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione cittadina studenti e lavoratori",
+      "data": "2026-11-07",
+      "ora_inizio": "14:00",
+      "ora_fine": "18:00",
+      "comune": "Cremona",
+      "provincia": "CR",
+      "regione": "Lombardia",
+      "luogo": "Via mantova",
+      "lat": 45.13761,
+      "lng": 10.03671,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Arci"
+      ],
+      "fonte": "https://www.instagram.com/p/De_-U-LCJ7y/?xtok=ZmRqcGcxY3lhcGs2",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T12:36:20",
+      "gruppo": null,
+      "ci_saro": 2
+    },
+    {
       "id": "2026-11-07-montale-corteo-02",
       "tipo": "corteo",
       "titolo": "No Inceneritore A MONTALE: tutti in piazza! MARCIA POPOLARE",
@@ -799,7 +1015,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:06",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-11-07-gorizia-corteo-01",
@@ -847,7 +1063,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T10:23:14",
       "gruppo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-08-firenze-assemblea-01",
@@ -1151,6 +1367,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-12-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-11-12",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:42",
+      "gruppo": "g-eaf2ac60a0ee",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-13-milano-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale ATM di Milano",
@@ -1356,6 +1596,30 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-19-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-11-19",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:43",
+      "gruppo": "g-eaf2ac60a0ee",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale CGIL",
@@ -1398,10 +1662,10 @@
       ],
       "fonte": "https://www.cgil.it/la-cgil/aree-politiche/segreteria-generale/in-100mila-a-roma",
       "stato": "verificato",
-      "conferme": 12,
+      "conferme": 13,
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -1595,6 +1859,30 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-mantova-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo CGIL contro carovita e guerre",
+      "data": "2026-11-20",
+      "ora_inizio": "08:45",
+      "ora_fine": null,
+      "comune": "Mantova",
+      "provincia": "MN",
+      "regione": "Lombardia",
+      "luogo": "Piazzale Gramsci",
+      "lat": 45.15158,
+      "lng": 10.78182,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.instagram.com/cgilmantova/p/De_XfDTobt3/",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-02T12:36:28",
+      "gruppo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-20-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale CGIL contro il caro vita, per casa, salute e istruzione",
@@ -1637,10 +1925,10 @@
       ],
       "fonte": "https://www.ildiariodellavoro.it/manifestazione-cgil-landini-sciopero-generale-per-il-20-novembre/",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -1664,6 +1952,52 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:42:35",
       "gruppo": "g-39fb7bfe7880",
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-brescia-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale contro il carovita",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Brescia",
+      "provincia": "BS",
+      "regione": "Lombardia",
+      "luogo": "Via San Faustino",
+      "lat": 45.54161,
+      "lng": 10.21945,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.cgil.it/campagne-e-iniziative/sciopero-generale-20-novembre-2026-materiali-grafici-qldcqxmp",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T12:36:31",
+      "gruppo": null,
+      "ci_saro": 2
+    },
+    {
+      "id": "2026-11-20-pesaro-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Pesaro",
+      "provincia": "PU",
+      "regione": "Marche",
+      "luogo": "Piazzale Lazzarini",
+      "lat": 43.8837,
+      "lng": 12.94813,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/1CGuxAYSQ1/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T16:11:43",
+      "gruppo": null,
       "ci_saro": null
     },
     {
@@ -1987,7 +2321,7 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-21-udine-sciopero_categoria-01",
@@ -2188,7 +2522,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
       "gruppo": "ag-taxi-mobilitazione-2026",
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-25-torino-assemblea-01",
@@ -2212,6 +2546,30 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-20T23:50:27",
       "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-26-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-11-26",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:43",
+      "gruppo": "g-eaf2ac60a0ee",
       "ci_saro": null
     },
     {
@@ -2261,6 +2619,30 @@
       "aggiornato_il": "2026-10-29T00:47:28",
       "gruppo": "g-dfbff6e9740c",
       "ci_saro": 1
+    },
+    {
+      "id": "2026-12-03-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-12-03",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:43",
+      "gruppo": "g-eaf2ac60a0ee",
+      "ci_saro": null
     },
     {
       "id": "2026-12-04-roma-sciopero_generale-01",
@@ -2337,6 +2719,30 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
       "gruppo": "g-3babbc14dce7",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-12-10-milano-altro-01",
+      "tipo": "altro",
+      "titolo": "Critical Mass Milano",
+      "data": "2026-12-10",
+      "ora_inizio": "22:05",
+      "ora_fine": "00:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza mercanti",
+      "lat": 45.46463,
+      "lng": 9.18769,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Autonomi"
+      ],
+      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T17:20:43",
+      "gruppo": "g-eaf2ac60a0ee",
       "ci_saro": null
     },
     {
@@ -2517,8 +2923,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-02T09:48:44",
+  "ultimo_aggiornamento": "2026-11-02T20:46:37",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-02T09:53:06Z"
+  "copia_del": "2026-11-02T20:14:29Z"
 }
