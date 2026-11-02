@@ -2,32 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-01-roma-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero del commercio nel giorno festivo nel Lazio",
-      "data": "2026-11-01",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILCAMS CGIL",
-        "FISASCAT CISL",
-        "UILTUCS"
-      ],
-      "fonte": "https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-23T16:34:56",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-02-torre-del-greco-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea Coordinamento \"Pro Palestina\" a Torre del Greco",
@@ -2261,5 +2235,5 @@
   "ultimo_aggiornamento": "2026-11-01T20:37:06",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-01T22:59:21Z"
+  "copia_del": "2026-11-02T02:20:50Z"
 }
