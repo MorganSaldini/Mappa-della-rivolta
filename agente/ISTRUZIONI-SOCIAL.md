@@ -38,6 +38,7 @@ I social della mappa **fanno informazione**. Raccontare, annunciare e ringraziar
 - Cambia impaginazione da un giorno all'altro (non sempre numero gigante + frase + fonte). Al massimo 3 hashtag.
 
 ## Stile
+- Video con il telefono (catture del sito, `registra2.mjs` + `componi4.py`): sfondo di un colore diverso dal sito (rosso #c8322a o scuro), così il telefono si stacca dallo sfondo. Durata circa 20 s, zoom sui tocchi, cronometro solo se il tempo mostrato è vero. Quando il sito avrà la mappa satellitare, usa quella nelle catture al posto dello sfondo disegnato (`tile2.mjs`).
 Carta #f6f3ee, inchiostro #1c1b1f, rosso #c8322a, colori dei tipi come in `public/app.js`, titoli Barlow Condensed, testo Source Sans 3. Storie e reel 1080x1920 (testi importanti fuori dai primi 250 px e dagli ultimi 300 px); caroselli e post 1080x1350.
 Reel: **copertina come primo fotogramma (0,6 s)**, perché Meta Business Suite usa il primo fotogramma come miniatura; suono bling di sottofondo con `suoni.py` (picco circa −21 dB, molto di sottofondo); niente musica coperta da diritti.
 Tono informativo e rispettoso; distacco politico (nessun partito, governo o persona attaccata). Niente dati personali, volti riconoscibili, inviti a violenza, blocchi, occupazioni o danneggiamenti.
