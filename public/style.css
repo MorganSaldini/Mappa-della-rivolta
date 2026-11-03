@@ -449,3 +449,12 @@ label.spunta input { width: auto; min-height: auto; }
 
 /* Sottotipo nei moduli */
 .box-sottotipo { display: grid; gap: 6px; padding: 8px 10px; background: var(--carta); border-radius: var(--raggio); }
+
+/* Scelta del fondo mappa: satellite / stradale */
+.fondo-scelta { display: flex; background: #fff; border-radius: 8px; overflow: hidden; }
+.fondo-scelta button { border: 0; background: #fff; padding: 6px 10px; font: 700 .85rem var(--corpo); color: var(--inchiostro); cursor: pointer; min-height: 36px; }
+.fondo-scelta button + button { border-left: 1px solid var(--bordo); }
+.fondo-scelta button[aria-pressed="true"] { background: var(--inchiostro); color: #fff; }
+.fondo-avviso { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 1000; background: rgba(28,27,31,.88); color: #fff; padding: 6px 12px; border-radius: 999px; font-size: .88rem; white-space: nowrap; pointer-events: none; }
+/* Sul satellite i gruppi di segnaposti si vedono meglio con un bordo bianco */
+.fondo-satellite .marker-cluster div { box-shadow: 0 0 0 2px #fff; }

@@ -135,7 +135,56 @@
     };
     mappa.setView([42.3, 12.6], 5);
     window.addEventListener('load', centraItalia);
-    tile().addTo(mappa);
+    // Fondo: satellite EOX (Sentinel-2, 10 m) con nomi e confini; quando l'immagine diventa troppo sgranata
+    // (ingrandendo oltre la città) si passa da soli alla mappa stradale, e si torna al satellite allontanandosi.
+    const stradale = tile();
+    const SAT_ATTR = '<a href="https://cloudless.eox.at" target="_blank" rel="noopener">EOxCloudless</a> by EOX IT Services GmbH (contiene dati Copernicus Sentinel modificati 2024)';
+    const satellite = L.layerGroup([
+      L.tileLayer('https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg', { maxZoom: 19, maxNativeZoom: 15, attribution: SAT_ATTR }),
+      L.tileLayer('https://tiles.maps.eox.at/wmts/1.0.0/overlay_bright_3857/default/g/{z}/{y}/{x}.png', {
+        maxZoom: 19, maxNativeZoom: 15, attribution: 'nomi e confini © <a href="https://www.openstreetmap.org/copyright">contributori OpenStreetMap</a>',
+      }),
+    ]);
+    const ZOOM_MAX_SATELLITE = 13; // oltre, 10 m per pixel non bastano a vedere strade e piazze
+    let sceltaFondo = 'satellite'; // 'satellite' = automatico; 'mappa' = sempre stradale (scelto da chi guarda)
+    try { if (localStorage.getItem('fondo-mappa') === 'mappa') sceltaFondo = 'mappa'; } catch (_) { /* memoria non disponibile */ }
+    let erroriSat = 0;
+    satellite.eachLayer((l) => l.on('tileerror', () => { if (++erroriSat === 8) { sceltaFondo = 'mappa'; aggiornaFondo(); } }));
+    const controlloFondo = L.control({ position: 'topright' });
+    controlloFondo.onAdd = () => {
+      const d = L.DomUtil.create('div', 'fondo-scelta leaflet-bar');
+      d.innerHTML = '<button type="button" data-fondo="satellite">🛰 Satellite</button><button type="button" data-fondo="mappa">🗺 Mappa</button>';
+      L.DomEvent.disableClickPropagation(d);
+      d.addEventListener('click', (ev) => {
+        const b = ev.target.closest('[data-fondo]');
+        if (!b) return;
+        sceltaFondo = b.dataset.fondo;
+        try { localStorage.setItem('fondo-mappa', sceltaFondo); } catch (_) { /* memoria non disponibile */ }
+        if (sceltaFondo === 'satellite' && mappa.getZoom() > ZOOM_MAX_SATELLITE) avvisoFondo('Troppo vicino per il satellite: allontanati un po\' per vederlo.');
+        aggiornaFondo();
+      });
+      return d;
+    };
+    function avvisoFondo(testo) {
+      const el = document.querySelector('.fondo-avviso') || L.DomUtil.create('div', 'fondo-avviso', mappa.getContainer());
+      el.textContent = testo; el.hidden = false;
+      clearTimeout(avvisoFondo.t); avvisoFondo.t = setTimeout(() => { el.hidden = true; }, 3500);
+    }
+    let fondoAttuale = null;
+    function aggiornaFondo() {
+      const vuole = sceltaFondo === 'satellite' && mappa.getZoom() <= ZOOM_MAX_SATELLITE ? 'satellite' : 'mappa';
+      if (vuole !== fondoAttuale) {
+        if (fondoAttuale === 'satellite' && sceltaFondo === 'satellite') avvisoFondo('Più da vicino si vede meglio la mappa stradale');
+        mappa.removeLayer(vuole === 'satellite' ? stradale : satellite);
+        (vuole === 'satellite' ? satellite : stradale).addTo(mappa);
+        fondoAttuale = vuole;
+        mappa.getContainer().classList.toggle('fondo-satellite', vuole === 'satellite');
+      }
+      document.querySelectorAll('.fondo-scelta [data-fondo]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.fondo === sceltaFondo)));
+    }
+    controlloFondo.addTo(mappa);
+    mappa.on('zoomend', aggiornaFondo);
+    aggiornaFondo();
     mappa.on('click focus', () => mappa.scrollWheelZoom.enable());
     gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45, removeOutsideVisibleBounds: false }) : L.layerGroup();
     // removeOutsideVisibleBounds: false → spostando la mappa per far vedere la scheda, il segnaposto non viene tolto
