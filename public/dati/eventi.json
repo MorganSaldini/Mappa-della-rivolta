@@ -2,232 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-03-torino-presidio-02",
-      "tipo": "presidio",
-      "titolo": "Presidio al rettorato: prandi non scappare! Esigiamo risposte!",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "via verdi 15, Cortile del rettorato UniTO",
-      "lat": 45.0694,
-      "lng": 7.68892,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfPr2YrIHGp/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T17:20:51",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-altro-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: pranzo sociale al campus einaudi occupato",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07313,
-      "lng": 7.69809,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T21:40:13",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-03-torino-assemblea-03",
-      "tipo": "assemblea",
-      "titolo": "Dibattito sull'università neoliberale con \"studenti indipendenti\"",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07498,
-      "lng": 7.69904,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps",
-        "SI (studenti indipendenti)"
-      ],
-      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T21:40:14",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-assemblea-04",
-      "tipo": "assemblea",
-      "titolo": "Dibattito su data center: interesse e proprietà di chi? Con ecologia politica e comitato no datacenter caselle",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07339,
-      "lng": 7.69838,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "ecologia politica",
-        "comitato no datacenter caselle",
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T21:40:15",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-assemblea-05",
-      "tipo": "assemblea",
-      "titolo": "Voci, corpi, e linguaggi della fabbrica: a cura di operai ex FIAT",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi",
-      "lat": 45.07314,
-      "lng": 7.69869,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T21:40:18",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-altro-02",
-      "tipo": "altro",
-      "titolo": "Cena condivisa + a seguire cineforum!",
-      "data": "2026-11-03",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07274,
-      "lng": 7.69791,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T21:40:20",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "CICLABILE UMANA: vogliamo più sicurezza sulla strada!",
-      "data": "2026-11-03",
-      "ora_inizio": "07:45",
-      "ora_fine": "08:30",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "via balbo",
-      "lat": 45.07214,
-      "lng": 7.69697,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "ciclabile umana"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNEpaqiLVq",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:39:28",
-      "gruppo": "g-2917f3998712",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-assemblea-02",
-      "tipo": "assemblea",
-      "titolo": "Assemblea di palazzo nuovo + aperitivo condiviso x studenti universitari!",
-      "data": "2026-11-03",
-      "ora_inizio": "16:30",
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Palazzo Nuovo, Via sant'ottavio 20",
-      "lat": 45.06798,
-      "lng": 7.69421,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea palazzo nuovo"
-      ],
-      "fonte": "https://www.instagram.com/p/DfQBQDtNjlh",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T20:46:37",
-      "gruppo": "g-d8373ce26231",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-03-torino-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Sportello pubblico per l'autodeterminazione di genere",
-      "data": "2026-11-03",
-      "ora_inizio": "18:30",
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Via Martinetto 5h, CDP Estella",
-      "lat": 45.0841,
-      "lng": 7.65711,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "potere al popolo"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNEpaqiLVq",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:42:55",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-04-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
@@ -434,6 +208,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-05-ferrara-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio contro raduno MAGA, Nucleo Anti Maranza e infiltrazioni mafiose",
+      "data": "2026-11-05",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Ferrara",
+      "provincia": "FE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza cattedrale",
+      "lat": 44.8358,
+      "lng": 11.61949,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete per la pace Ferrara"
+      ],
+      "fonte": "https://www.facebook.com/story.php?story_fbid=1569912385175364&id=reteperlapaceferrara&seo_visit=1#",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-03T19:41:57",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-05-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Salotto di Miranda: \"MAGNITUDO G8 -una narrazione civile di Gianfranco Corona\" (Aperitivo condiviso, porta cibo!)",
@@ -633,7 +432,7 @@
       "aggiornato_il": "2026-11-02T16:09:20",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 0
     },
     {
       "id": "2026-11-06-bari-sciopero_categoria-01",
@@ -809,7 +608,7 @@
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 7
+      "ci_saro": 8
     },
     {
       "id": "2026-11-07-torino-presidio-01",
@@ -958,11 +757,11 @@
       ],
       "fonte": "https://www.instagram.com/p/De_-U-LCJ7y/?xtok=ZmRqcGcxY3lhcGs2",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-02T12:36:20",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-07-montale-corteo-02",
@@ -2039,7 +1838,7 @@
       "aggiornato_il": "2026-10-26T17:42:35",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-brescia-sciopero_generale-01",
@@ -3053,6 +2852,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-12-22-cassino-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: occupazione Rosso natale",
+      "data": "2026-12-22",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Cassino",
+      "provincia": "FR",
+      "regione": "Lazio",
+      "luogo": "Liceo scientifico",
+      "lat": 41.46724,
+      "lng": 13.82895,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/liceo_pellecchiacassino?xtok=aDVzYTNrZWtmMDAw",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T22:22:51",
+      "gruppo": null,
+      "sottotipo": "Occupazione",
+      "ci_saro": 0
+    },
+    {
       "id": "2026-12-23-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
@@ -3103,8 +2925,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-03T16:36:55",
+  "ultimo_aggiornamento": "2026-11-03T22:22:51",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-03T17:42:53Z"
+  "copia_del": "2026-11-03T23:12:22Z"
 }
