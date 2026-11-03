@@ -394,11 +394,12 @@
 
   // ---------- Filtri ----------
   const filtri = { tipi: new Set(), periodo: 'tutte', giorno: '', regione: '', soloVerificati: false };
-  function visibili() {
+  // ignoraTipi: per i numeri sui pulsanti dei tipi (contano gli eventi con gli altri filtri, data/regione/verificate)
+  function visibili({ ignoraTipi = false } = {}) {
     const oggi = oggiRoma();
     const limite = { oggi: oggi, settimana: piuGiorni(oggi, 7), mese: piuGiorni(oggi, 31) }[filtri.periodo];
     return eventi.filter((e) =>
-      (!filtri.tipi.size || filtri.tipi.has(tipoDi(e))) &&
+      (ignoraTipi || !filtri.tipi.size || filtri.tipi.has(tipoDi(e))) &&
       (!limite || e.data <= limite) &&
       (filtri.periodo !== 'giorno' || !filtri.giorno || e.data === filtri.giorno) &&
       (!filtri.regione || e.regione === filtri.regione) &&
@@ -459,18 +460,19 @@
     $('#filtro-azzera').hidden = !filtriAttivi();
     $('#filtro-conta').textContent = filtriAttivi() ? `${lista.length} di ${eventi.length} mostrate` : '';
     $('#filtro-riassunto').textContent = filtriAttivi() ? `· ${lista.length} di ${eventi.length} mostrate` : '';
-    // Contatori = filtro per tipo: i numeri sono di tutti gli eventi in programma (non cambiano filtrando)
+    // Contatori = filtro per tipo: i numeri seguono gli altri filtri (data, regione, solo verificate),
+    // così sommati danno il totale in alto quando nessun tipo è selezionato
     const attivi = lista.filter((e) => e.stato !== 'annullato');
     $('#totale').textContent = attivi.length;
     const conta = {};
-    eventi.filter((e) => e.stato !== 'annullato').forEach((e) => (conta[tipoDi(e)] = (conta[tipoDi(e)] || 0) + 1));
+    visibili({ ignoraTipi: true }).filter((e) => e.stato !== 'annullato').forEach((e) => (conta[tipoDi(e)] = (conta[tipoDi(e)] || 0) + 1));
     $('#contatori').innerHTML = Object.entries(TIPI)
-      .filter(([k]) => conta[k])
+      .filter(([k]) => conta[k] || filtri.tipi.has(k))
       .map(([k, t]) => `<button type="button" class="chip chip--tipo" data-filtro-tipo="${k}" aria-pressed="${filtri.tipi.has(k)}" style="--c:${t.colore}">` +
-        `<span class="chip__icona" aria-hidden="true">${t.icona}</span><b>${conta[k]}</b> ${esc(conta[k] === 1 ? t.nome.toLowerCase() : t.plurale)}</button>`)
+        `<span class="chip__icona" aria-hidden="true">${t.icona}</span><b>${conta[k] || 0}</b> ${esc((conta[k] || 0) === 1 ? t.nome.toLowerCase() : t.plurale)}</button>`)
       .join('');
-    const nCat = $('#n-sciopero-cat');
-    if (nCat) nCat.textContent = conta.sciopero_categoria || 0;
+    const nCat = $('#n-sciopero-cat'); // "Perché ci si mobilita": sempre il totale in programma, senza filtri
+    if (nCat) nCat.textContent = eventi.filter((e) => e.stato !== 'annullato' && e.tipo === 'sciopero_categoria').length;
 
     // Marker
     if (gruppo) {
