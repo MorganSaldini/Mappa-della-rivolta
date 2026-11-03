@@ -228,6 +228,32 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-04-san-paolo-d-argon-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Sciopero e presidio dei lavoratori della Fondazione JobsAcademy",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "San Paolo d'Argon",
+      "provincia": "BG",
+      "regione": "Lombardia",
+      "luogo": "Sede della Fondazione JobsAcademy",
+      "lat": 45.6889,
+      "lng": 9.8031,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "NiDIL CGIL Bergamo",
+        "FP CGIL Bergamo"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-2-8-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-qu90vs3p",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T06:00:25",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-04-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
@@ -509,6 +535,57 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-06-portici-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero dei lavoratori TMP Srl",
+      "data": "2026-11-06",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Portici",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "",
+      "lat": 40.8197,
+      "lng": 14.3411,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Filcams CGIL",
+        "Fisascat CISL"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-2-8-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-qu90vs3p",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T06:00:25",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-06-roma-sciopero_categoria-02",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale del personale navigante easyJet",
+      "data": "2026-11-06",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB Lavoro Privato"
+      ],
+      "fonte": "https://www.quotidianomotori.com/mobilita-urbana/scioperi-novembre-2026-treni-aerei-tpl-calendario/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T06:00:25",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-06-volla-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Vincenzo Miele Trasporti",
@@ -732,7 +809,7 @@
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 6
     },
     {
       "id": "2026-11-07-torino-presidio-01",
@@ -781,6 +858,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:26:44",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-reggio-nell-emilia-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Manifestazione contro il carovita davanti alla Prefettura",
+      "data": "2026-11-07",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Reggio nell'Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "Prefettura, Corso Garibaldi",
+      "lat": 44.6976,
+      "lng": 10.6305,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Reggio Emilia"
+      ],
+      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-2-8-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-qu90vs3p",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T06:00:25",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -1962,7 +2064,7 @@
       "aggiornato_il": "2026-11-02T12:36:31",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-pesaro-corteo-01",
@@ -2763,6 +2865,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-12-12-roma-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione nazionale USB contro carovita e riarmo",
+      "data": "2026-12-12",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB"
+      ],
+      "fonte": "https://www.ilfattoquotidiano.it/2026/11/01/usb-manifestazione-12-dicembre-roma-notizie/8557106/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-03T06:00:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-14-fiumicino-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Aviation Services negli aeroporti di Fiumicino e Ciampino",
@@ -2947,8 +3074,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-02T21:47:49",
+  "ultimo_aggiornamento": "2026-11-03T06:00:26",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-03T02:35:44Z"
+  "copia_del": "2026-11-03T09:59:39Z"
 }
