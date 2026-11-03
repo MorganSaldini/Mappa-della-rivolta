@@ -1,0 +1,14 @@
+import fs from 'node:fs'; import { createRequire } from 'node:module'; import { geoMercator, geoPath } from 'd3-geo'; import { feature } from 'topojson-client';
+const require = createRequire(import.meta.url);
+const topo = require('world-atlas/countries-50m.json'); const land = feature(topo, topo.objects.countries);
+const reg = JSON.parse(fs.readFileSync('/tmp/lav/geo/package/countries/it/it-all.geo.json'));
+const C = [['Milano',45.464,9.19,1],['Torino',45.07,7.686,1],['Genova',44.405,8.946,1],['Venezia',45.438,12.327,1],['Bologna',44.494,11.343,1],['Firenze',43.77,11.255,1],['Roma',41.893,12.483,1],['Napoli',40.852,14.268,1],['Bari',41.117,16.872,1],['Palermo',38.116,13.361,1],['Cagliari',39.223,9.121,1],['Trieste',45.65,13.777,1],['Trento',46.067,11.121,1],['Ancona',43.616,13.519,1],['Perugia',43.112,12.389,1],['Pescara',42.465,14.214,1],['Catanzaro',38.91,16.587,1],['Potenza',40.64,15.805,1],['Aosta',45.737,7.315,1],['Campobasso',41.561,14.668,1],['Catania',37.502,15.087,1],
+['Modena',44.647,10.925,0],['Reggio Emilia',44.698,10.631,0],['Parma',44.801,10.328,0],['Ferrara',44.836,11.62,0],['Ravenna',44.418,12.204,0],['Forlì',44.222,12.041,0],['Rimini',44.06,12.566,0],['Imola',44.353,11.715,0],['Piacenza',45.052,9.693,0],['Cesena',44.139,12.243,0],['Verona',45.438,10.992,0],['Padova',45.406,11.877,0],['Mantova',45.156,10.791,0],['Cremona',45.133,10.022,0],['Brescia',45.541,10.211,0],['Prato',43.881,11.097,0],['Pistoia',43.933,10.917,0],['Lucca',43.843,10.505,0],['Pisa',43.716,10.402,0],['Livorno',43.548,10.311,0],['Rovigo',45.07,11.79,0],['Vicenza',45.548,11.549,0],['La Spezia',44.107,9.824,0],['Massa',44.035,10.139,0],['Arezzo',43.463,11.88,0],['Pesaro',43.91,12.913,0],['Bergamo',45.698,9.677,0]];
+export function tileSvg(z, x, y) {
+  const n = 2 ** z, k = 256 * n / (2 * Math.PI);
+  const proj = geoMercator().scale(k).translate([256 * n / 2 - x * 256, 256 * n / 2 - y * 256]); const path = geoPath(proj);
+  const d = land.features.map((f) => path(f) || '').join(''); const r = reg.features.map((f) => path(f) || '').join('');
+  const lab = z >= 7 ? C.filter((c) => c[3] || z >= 8).map(([nm, la, ln, big]) => { const [px, py] = proj([ln, la]); if (px < -200 || px > 456 || py < -40 || py > 296) return ''; const fs = big ? 15 : 12;
+    return `<circle cx="${px}" cy="${py}" r="${big ? 3.5 : 2.5}" fill="#6d665c"/><text x="${px + 6}" y="${py - 5}" font-family="DejaVu Sans,Arial" font-size="${fs}" font-weight="${big ? 700 : 400}" fill="#4a453e" stroke="#f4f1ea" stroke-width="3" paint-order="stroke">${nm}</text>`; }).join('') : '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="256" height="256" fill="#cfe0e6"/><path d="${d}" fill="#f4f1ea" stroke="#b9c7cc" stroke-width="1"/><path d="${r}" fill="none" stroke="#c9b9a6" stroke-width="${z >= 8 ? 1.6 : 1}" stroke-dasharray="5 3"/>${lab}</svg>`;
+}
