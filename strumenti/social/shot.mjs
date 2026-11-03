@@ -1,0 +1,21 @@
+import { chromium } from 'playwright-core'; import { apri } from './cattura.mjs';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--lang=it-IT'] });
+const p = await apri(b);
+await p.screenshot({ path: 'out/s-home.png' });
+await p.evaluate(() => { document.querySelector('#box-filtri').open = true; });
+await p.selectOption('#filtro-periodo', 'giorno'); await p.fill('#filtro-giorno', '2026-11-20'); await p.dispatchEvent('#filtro-giorno', 'change'); await p.waitForTimeout(800);
+await p.screenshot({ path: 'out/s-giorno.png' });
+await p.evaluate(() => { document.querySelector('#box-filtri').open = false; }); await p.waitForTimeout(300);
+const m = await p.$$('.leaflet-marker-icon, .leaflet-interactive'); console.log('marker', m.length);
+if (m.length) { await m[Math.min(2, m.length - 1)].click({ force: true }); await p.waitForTimeout(800); }
+await p.screenshot({ path: 'out/s-pop.png' });
+await p.keyboard.press('Escape');
+await p.evaluate(() => document.querySelector('#apri-aggiungi').click()); await p.waitForTimeout(500);
+await p.selectOption('#form-aggiungi select[name=tipo]', 'altro'); await p.waitForTimeout(300);
+await p.screenshot({ path: 'out/s-altro.png' });
+const opts = await p.$$eval('#form-aggiungi select[name=sottotipo_scelta] option', (o) => o.map((x) => x.textContent)); console.log(opts);
+await p.selectOption('#form-aggiungi select[name=tipo]', 'disagi'); await p.waitForTimeout(300);
+await p.screenshot({ path: 'out/s-disagi.png' });
+await p.evaluate(() => document.querySelector('#form-aggiungi input[name=fonte]').scrollIntoView({ block: 'center' })); await p.waitForTimeout(300);
+await p.screenshot({ path: 'out/s-fonte.png' });
+await b.close();

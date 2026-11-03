@@ -1,0 +1,10 @@
+import { chromium } from 'playwright-core'; import { apri } from './cattura.mjs';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const p = await apri(b);
+await p.evaluate(() => { document.querySelector('#box-filtri').open = true; });
+await p.selectOption('#filtro-periodo', 'giorno'); await p.fill('#filtro-giorno', '2026-11-20'); await p.dispatchEvent('#filtro-giorno', 'change'); await p.waitForTimeout(800);
+await p.evaluate(() => { document.querySelector('#box-filtri').open = false; }); await p.waitForTimeout(300);
+await p.evaluate((id) => { const x = document.createElement('button'); x.dataset.vai = id; document.body.appendChild(x); x.click(); }, '2026-11-20-bologna-sciopero_generale-01'); await p.waitForTimeout(2500); await p.evaluate(() => window.scrollTo(0, document.querySelector('.leaflet-popup')?.getBoundingClientRect().top + window.scrollY - 200));await p.waitForTimeout(500);
+console.log('popup', !!(await p.$('.leaflet-popup')), await p.$$eval('.pop__cisaro', (x) => x.length));
+await p.screenshot({ path: 'out/s-pop.png' });
+await b.close();
