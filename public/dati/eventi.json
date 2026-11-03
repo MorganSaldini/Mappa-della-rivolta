@@ -2,243 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-02-torre-del-greco-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Assemblea Coordinamento \"Pro Palestina\" a Torre del Greco",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torre del Greco",
-      "provincia": "NA",
-      "regione": "Campania",
-      "luogo": "Corso Garibaldi 28, Torre del Greco",
-      "lat": 40.78533,
-      "lng": 14.36458,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "coordinamento Pro Palestina di Torre del Greco"
-      ],
-      "fonte": "https://jamme.la/event/assemblea-coordinamento-pro-palestina-torre-del-greco-33",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-23T10:23:10",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-saronno-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Sciopero e presidio dei lavoratori Barco davanti ai cancelli",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Saronno",
-      "provincia": "VA",
-      "regione": "Lombardia",
-      "luogo": "Stabilimento Barco, via Banfi",
-      "lat": 45.6255,
-      "lng": 9.0365,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "Fim Cisl dei Laghi",
-        "Fiom Cgil Varese",
-        "Uilm Uil Varese"
-      ],
-      "fonte": "https://ilsaronno.it/2026/10/30/saronno-barco-lunedi-sciopero-di-otto-ore-contro-i-71-posti-di-lavoro-a-rischio",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-01T15:10:55",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-torino-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Laboratorio fanzine con la rivista \"LA RIVOLTA\" (IG: @rivista.larivolta)",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato",
-      "lat": 45.07319,
-      "lng": 7.69788,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNu6jfCMwx",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:02:46",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-torino-altro-01",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: pranzo sociale al campus einaudi occupato",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07328,
-      "lng": 7.69783,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DfNu6jfCMwx",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:36:54",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-torino-altro-02",
-      "tipo": "altro",
-      "titolo": "Laboratorio di serigrafia on GILA (laboratorio di arti grafiche autogestito)",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07357,
-      "lng": 7.69871,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps",
-        "GILA"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNu6jfCMwx",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:36:55",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-torino-assemblea-02",
-      "tipo": "assemblea",
-      "titolo": "Assemblea tematica sul riarmo",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Palazzina einaudi",
-      "lat": 45.07269,
-      "lng": 7.69793,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "assemblea cps"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNu6jfCMwx",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:36:57",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-02-torino-altro-03",
-      "tipo": "altro",
-      "titolo": "Possibili disagi: cena benefit campus occupato + karaoke! Studenti venite numerosi",
-      "data": "2026-11-02",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Campus Einaudi Occupato, lungo dora siena",
-      "lat": 45.07321,
-      "lng": 7.69836,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DfNu6jfCMwx",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T09:36:58",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-01-pescara-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione contro il caro vita",
-      "data": "2026-11-02",
-      "ora_inizio": "10:00",
-      "ora_fine": null,
-      "comune": "Pescara",
-      "provincia": "PE",
-      "regione": "Abruzzo",
-      "luogo": "Stazione di Pescara Porta Nuova",
-      "lat": 42.46992,
-      "lng": 14.20591,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.rete8.it/cronaca/pescara-preoccupazione-per-la-manifestazione-degli-sciami/",
-      "stato": "annullato",
-      "conferme": 8,
-      "aggiornato_il": "2026-11-02T16:11:57",
-      "gruppo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-02-galatina-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Come si combatte la destra?",
-      "data": "2026-11-02",
-      "ora_inizio": "15:00",
-      "ora_fine": "17:00",
-      "comune": "Galatina",
-      "provincia": "LE",
-      "regione": "Puglia",
-      "luogo": "piazza Dante Alighieri",
-      "lat": 40.17521,
-      "lng": 18.16821,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Partito Comunista Rivoluzionario"
-      ],
-      "fonte": "https://www.instagram.com/p/DfFQKalteSB/",
-      "stato": "verificato",
-      "conferme": 3,
-      "aggiornato_il": "2026-10-30T01:35:18",
-      "gruppo": null,
-      "ci_saro": 3
-    },
-    {
-      "id": "2026-11-02-trieste-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Fiori e Collera - Per altre due giovani vite spezzate nel Porto Vecchio di Trieste",
-      "data": "2026-11-02",
-      "ora_inizio": "18:30",
-      "ora_fine": "20:00",
-      "comune": "Trieste",
-      "provincia": "TS",
-      "regione": "Friuli-Venezia Giulia",
-      "luogo": "Piazza Libertà",
-      "lat": 45.65679,
-      "lng": 13.77251,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Presidio spontaneo nato dal basso da privati cittadini"
-      ],
-      "fonte": "https://www.triesteprima.it/cronaca/porto-vecchio-morti-manifestazione.html",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T17:20:49",
-      "gruppo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-03-torino-presidio-02",
       "tipo": "presidio",
       "titolo": "Presidio al rettorato: prandi non scappare! Esigiamo risposte!",
@@ -260,6 +23,133 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:51",
       "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-altro-01",
+      "tipo": "altro",
+      "titolo": "Possibili disagi: pranzo sociale al campus einaudi occupato",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07313,
+      "lng": 7.69809,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T21:40:13",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-03-torino-assemblea-03",
+      "tipo": "assemblea",
+      "titolo": "Dibattito sull'università neoliberale con \"studenti indipendenti\"",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07498,
+      "lng": 7.69904,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps",
+        "SI (studenti indipendenti)"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T21:40:14",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-assemblea-04",
+      "tipo": "assemblea",
+      "titolo": "Dibattito su data center: interesse e proprietà di chi? Con ecologia politica e comitato no datacenter caselle",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07339,
+      "lng": 7.69838,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "ecologia politica",
+        "comitato no datacenter caselle",
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T21:40:15",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-assemblea-05",
+      "tipo": "assemblea",
+      "titolo": "Voci, corpi, e linguaggi della fabbrica: a cura di operai ex FIAT",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi",
+      "lat": 45.07314,
+      "lng": 7.69869,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T21:40:18",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-03-torino-altro-02",
+      "tipo": "altro",
+      "titolo": "Cena condivisa + a seguire cineforum!",
+      "data": "2026-11-03",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07274,
+      "lng": 7.69791,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfQHQoxiK2C",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-02T21:40:20",
+      "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -284,6 +174,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:39:28",
       "gruppo": "g-2917f3998712",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -308,6 +199,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T20:46:37",
       "gruppo": "g-d8373ce26231",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -332,6 +224,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:42:55",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -359,6 +252,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-30T01:36:22",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -383,6 +277,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:14",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -408,6 +303,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:17",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -433,6 +329,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:33:38",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -457,6 +354,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:36:54",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -481,6 +379,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:45:07",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -505,6 +404,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:26:41",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -530,6 +430,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:33:41",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -554,6 +455,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:21",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -578,6 +480,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:24",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -602,6 +505,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:42",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -626,6 +530,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:16",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -650,6 +555,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T16:09:20",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -674,6 +580,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:46",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -699,6 +606,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:25",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -723,6 +631,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-11-02T20:46:37",
       "gruppo": "g-d8373ce26231",
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -747,6 +656,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:48:44",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -771,6 +681,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:29",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -795,6 +706,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:19:32",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -819,6 +731,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 4
     },
     {
@@ -843,6 +756,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T13:49:02",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -868,6 +782,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:26:44",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -894,6 +809,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:29:00",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -918,6 +834,7 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-23T15:25:53",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -942,6 +859,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T12:36:20",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -967,6 +885,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:56:02",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -991,6 +910,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T20:44:03",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1015,6 +935,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:06",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -1039,6 +960,7 @@
       "conferme": 4,
       "aggiornato_il": "2026-10-23T15:26:56",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1063,6 +985,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-23T10:23:14",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1087,6 +1010,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:36:58",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1111,6 +1035,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:31",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1139,6 +1064,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-30T01:37:08",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1163,6 +1089,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:49",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1187,6 +1114,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:11",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1211,6 +1139,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:39:28",
       "gruppo": "g-2917f3998712",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1235,6 +1164,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:35",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1259,6 +1189,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:47",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1285,6 +1216,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:45:16",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1313,6 +1245,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
       "gruppo": "ag-taxi-mobilitazione-2026",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1340,6 +1273,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-30T01:37:13",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1364,6 +1298,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
       "gruppo": "g-3babbc14dce7",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1388,6 +1323,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:42",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1412,6 +1348,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:47",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1437,6 +1374,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:48",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1464,6 +1402,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:49",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1489,7 +1428,8 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-26T17:37:58",
       "gruppo": null,
-      "ci_saro": 1
+      "sottotipo": null,
+      "ci_saro": 2
     },
     {
       "id": "2026-11-16-napoli-sciopero_categoria-01",
@@ -1517,6 +1457,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:44:21",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1545,6 +1486,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
       "gruppo": "ag-taxi-mobilitazione-2026",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1569,6 +1511,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:39:29",
       "gruppo": "g-2917f3998712",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1593,6 +1536,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:37:02",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1617,6 +1561,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1641,6 +1586,7 @@
       "conferme": 8,
       "aggiornato_il": "2026-10-18T10:55:52",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1665,6 +1611,7 @@
       "conferme": 13,
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -1689,6 +1636,7 @@
       "conferme": 14,
       "aggiornato_il": "2026-10-19T00:50:30",
       "gruppo": "g-8ba98c49cf13",
+      "sottotipo": null,
       "ci_saro": 3
     },
     {
@@ -1714,6 +1662,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-24T14:56:20",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1738,6 +1687,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1762,6 +1712,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1786,6 +1737,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1810,6 +1762,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1834,6 +1787,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -1856,7 +1810,34 @@
       "conferme": 11,
       "aggiornato_il": "2026-10-26T17:38:06",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-verona-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero studentesco internazionale",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": "14:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazzale XXV Aprile",
+      "lat": 45.43005,
+      "lng": 10.98202,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi Verona",
+        "UDU - Unione degli Universitari Verona"
+      ],
+      "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-02T21:47:49",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-mantova-corteo-01",
@@ -1880,6 +1861,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-11-02T12:36:28",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1904,6 +1886,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-21T17:06:06",
       "gruppo": "g-39fb7bfe7880",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1928,7 +1911,8 @@
       "conferme": 6,
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
-      "ci_saro": 5
+      "sottotipo": null,
+      "ci_saro": 6
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -1952,6 +1936,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-26T17:42:35",
       "gruppo": "g-39fb7bfe7880",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -1976,6 +1961,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T12:36:31",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -1998,6 +1984,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T16:11:43",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2022,6 +2009,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:41",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2046,6 +2034,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:02:43",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2071,6 +2060,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:51",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2096,6 +2086,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:37",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2121,6 +2112,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2146,6 +2138,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2171,6 +2164,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2196,6 +2190,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2221,6 +2216,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2246,6 +2242,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2271,6 +2268,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2296,6 +2294,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2321,6 +2320,7 @@
       "conferme": 3,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -2346,6 +2346,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2370,6 +2371,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:14",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2395,6 +2397,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:52",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2419,6 +2422,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T20:37:06",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2443,6 +2447,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:53",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2467,6 +2472,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:53",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2494,6 +2500,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:19",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2522,6 +2529,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:34",
       "gruppo": "ag-taxi-mobilitazione-2026",
+      "sottotipo": null,
       "ci_saro": 0
     },
     {
@@ -2546,6 +2554,7 @@
       "conferme": 2,
       "aggiornato_il": "2026-10-20T23:50:27",
       "gruppo": "g-3babbc14dce7",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2570,6 +2579,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2594,6 +2604,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-21T02:46:00",
       "gruppo": "g-29b479924aaa",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2618,6 +2629,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:47:28",
       "gruppo": "g-dfbff6e9740c",
+      "sottotipo": null,
       "ci_saro": 1
     },
     {
@@ -2642,6 +2654,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2670,6 +2683,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:55",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2695,6 +2709,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-26T17:30:15",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": 2
     },
     {
@@ -2719,6 +2734,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
       "gruppo": "g-3babbc14dce7",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2743,6 +2759,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2767,6 +2784,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-17T01:27:57",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2795,6 +2813,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-29T00:37:35",
       "gruppo": "ag-taxi-mobilitazione-2026",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2819,6 +2838,7 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-17T01:27:57",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2847,6 +2867,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-01T15:11:41",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2872,6 +2893,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T14:30:45",
       "gruppo": null,
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2896,6 +2918,7 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-27T17:17:56",
       "gruppo": "g-3babbc14dce7",
+      "sottotipo": null,
       "ci_saro": null
     },
     {
@@ -2920,11 +2943,12 @@
       "conferme": 0,
       "aggiornato_il": "2026-10-21T02:46:00",
       "gruppo": "g-29b479924aaa",
+      "sottotipo": null,
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-02T20:46:37",
+  "ultimo_aggiornamento": "2026-11-02T21:47:49",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-02T20:14:29Z"
+  "copia_del": "2026-11-03T02:35:44Z"
 }
