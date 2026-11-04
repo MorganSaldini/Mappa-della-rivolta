@@ -81,6 +81,160 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-04-torino-altro-01",
+      "tipo": "altro",
+      "titolo": "Laboratorio di cianotipia",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07335,
+      "lng": 7.6985,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:13:19",
+      "gruppo": null,
+      "sottotipo": "Laboratorio",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-altro-02",
+      "tipo": "altro",
+      "titolo": "Incontro sul tema della repressione con docenti unito",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07331,
+      "lng": 7.69794,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:13:24",
+      "gruppo": null,
+      "sottotipo": "Lezione informativa",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-assemblea-03",
+      "tipo": "assemblea",
+      "titolo": "antispecismo e sfruttamento animale: dibattito con volontar di Rifugio Futura",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzina einaudi occupata",
+      "lat": 45.0729,
+      "lng": 7.69785,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:17:24",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-altro-03",
+      "tipo": "altro",
+      "titolo": "Incontro sull'ex ilva di taranto! NE PARLIAMO CON FIOM!",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzina einaudi occupata",
+      "lat": 45.07295,
+      "lng": 7.69798,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "FIOM",
+        "Assemblea cps"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:24:56",
+      "gruppo": null,
+      "sottotipo": "Proiezione o presentazione",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-altro-04",
+      "tipo": "altro",
+      "titolo": "Dibattito sul giornalismo con Matteo Gracis e la redazione de l'indipendente",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Campus Einaudi Occupato, lungo dora siena",
+      "lat": 45.07338,
+      "lng": 7.69813,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps",
+        "redazione dell'indipendente"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:25:07",
+      "gruppo": null,
+      "sottotipo": "Lezione informativa",
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-04-torino-altro-05",
+      "tipo": "altro",
+      "titolo": "Cena condivisa + a seguire LIVE E DJSET!",
+      "data": "2026-11-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzina einaudi",
+      "lat": 45.0731,
+      "lng": 7.69842,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea cps",
+        "cosmo",
+        "ivreatronic"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS0VeCiMOC",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:25:09",
+      "gruppo": null,
+      "sottotipo": "Cena sociale e concerto",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-04-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea Plenaria Food Not Bombs: cibo contro la guerra",
@@ -206,31 +360,6 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
-    },
-    {
-      "id": "2026-11-05-ferrara-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio contro raduno MAGA, Nucleo Anti Maranza e infiltrazioni mafiose",
-      "data": "2026-11-05",
-      "ora_inizio": "18:00",
-      "ora_fine": null,
-      "comune": "Ferrara",
-      "provincia": "FE",
-      "regione": "Emilia-Romagna",
-      "luogo": "Piazza cattedrale",
-      "lat": 44.8358,
-      "lng": 11.61949,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Rete per la pace Ferrara"
-      ],
-      "fonte": "https://www.facebook.com/story.php?story_fbid=1569912385175364&id=reteperlapaceferrara&seo_visit=1#",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-11-03T19:41:57",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
     },
     {
       "id": "2026-11-05-torino-assemblea-01",
@@ -504,11 +633,34 @@
       ],
       "fonte": "https://www.instagram.com/p/DfQBQDtNjlh",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-02T20:46:37",
       "gruppo": "g-d8373ce26231",
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-06-trieste-presidio-01",
+      "tipo": "presidio",
+      "titolo": "ANCORA FIORI, ANCORA COLLERA",
+      "data": "2026-11-06",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:00",
+      "comune": "TRIESTE",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "PIAZZA DELLA LIBERTà",
+      "lat": 45.65675,
+      "lng": 13.77232,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://ilmanifesto.it/trieste-magazzino-diroccato-in-fiamme-due-ragazzi-morti",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:25:53",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-06-torino-altro-01",
@@ -608,7 +760,7 @@
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 8
+      "ci_saro": 9
     },
     {
       "id": "2026-11-07-torino-presidio-01",
@@ -858,7 +1010,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Dew907ACAzi/",
       "stato": "verificato",
-      "conferme": 5,
+      "conferme": 6,
       "aggiornato_il": "2026-10-23T15:26:56",
       "gruppo": null,
       "sottotipo": null,
@@ -1279,6 +1431,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-13-monza-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale Net (gruppo ATM) a Monza e Brianza",
+      "data": "2026-11-13",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Monza",
+      "provincia": "MB",
+      "regione": "Lombardia",
+      "luogo": "",
+      "lat": 45.5845,
+      "lng": 9.2744,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T11:57:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-14-bari-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale AMTAB di Bari",
@@ -1331,6 +1506,29 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-16-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale delle cooperative della sanità pubblica e privata",
+      "data": "2026-11-16",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T06:00:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-16-napoli-sciopero_categoria-01",
@@ -1466,31 +1664,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-20-trieste-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero generale",
-      "data": "2026-11-20",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Trieste",
-      "provincia": "TS",
-      "regione": "Friuli-Venezia Giulia",
-      "luogo": "",
-      "lat": 45.65239,
-      "lng": 13.77435,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "CGIL Trieste"
-      ],
-      "fonte": "https://www.instagram.com/p/DfRWYaRCHMD/?exln=ZTg2dzhtYnA2NGF0",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-04T00:32:14",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-20-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale CGIL",
@@ -1538,7 +1711,7 @@
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -1668,7 +1841,7 @@
     },
     {
       "id": "2026-11-20-reggio-calabria-corteo-01",
-      "tipo": "corteo",
+      "tipo": "sciopero_generale",
       "titolo": "Manifestazione per lo sciopero generale CGIL",
       "data": "2026-11-20",
       "ora_inizio": null,
@@ -1686,7 +1859,7 @@
       "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-25T13:24:01",
+      "aggiornato_il": "2026-11-04T12:27:56",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
       "ci_saro": 1
@@ -1713,6 +1886,31 @@
       "conferme": 1,
       "aggiornato_il": "2026-10-25T13:24:01",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-trieste-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "",
+      "lat": 45.65239,
+      "lng": 13.77435,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Trieste"
+      ],
+      "fonte": "https://www.instagram.com/p/DfRWYaRCHMD/?exln=ZTg2dzhtYnA2NGF0",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T12:26:47",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -1813,7 +2011,7 @@
       "aggiornato_il": "2026-10-21T17:06:06",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -1959,6 +2157,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-02T09:02:43",
+      "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-bologna-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza dei Martiri",
+      "lat": 44.5027,
+      "lng": 11.3404,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Bologna"
+      ],
+      "fonte": "https://www.cgilbo.it/tutte-le-news/20-novembre-tutte-le-ragioni-dello-sciopero-generale.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
       "ci_saro": null
@@ -2950,8 +3173,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-04T00:32:14",
+  "ultimo_aggiornamento": "2026-11-04T12:27:56",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-04T03:10:11Z"
+  "copia_del": "2026-11-04T11:28:55Z"
 }
