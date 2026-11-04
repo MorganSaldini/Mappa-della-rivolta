@@ -337,6 +337,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-05-lecce-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Presentazione partito comunista rivoluzionario",
+      "data": "2026-11-05",
+      "ora_inizio": "16:30",
+      "ora_fine": null,
+      "comune": "Lecce",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "",
+      "lat": 40.35905,
+      "lng": 18.16618,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito comunista rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/DfRgga_tw4E/?psln=dGp0emo4dmMweXFn",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T13:02:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-05-firenze-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea pubblica no vannacci q2",
@@ -633,11 +658,38 @@
       ],
       "fonte": "https://www.instagram.com/p/DfQBQDtNjlh",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-11-02T20:46:37",
       "gruppo": "g-d8373ce26231",
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-06-perugia-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea pubblica \"Fuori Eurochocolate da Perugia\"",
+      "data": "2026-11-06",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Perugia",
+      "provincia": "PG",
+      "regione": "Umbria",
+      "luogo": "Piazza Puletti (di fronte a piazza Grimana), Perugia",
+      "lat": 43.11485,
+      "lng": 12.39,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "associazioni del territorio",
+        "collettivi studenteschi",
+        "produttori locali"
+      ],
+      "fonte": "https://www.instagram.com/p/DfS8u3QNkHe/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T18:02:51",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-06-trieste-presidio-01",
@@ -866,6 +918,56 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-07-bologna-corteo-03",
+      "tipo": "corteo",
+      "titolo": "Italia in piazza: uniti contro riarmo, carovita, precariato ed i tagli a educazione e sanità!",
+      "data": "2026-11-07",
+      "ora_inizio": "14:00",
+      "ora_fine": null,
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza del Nettuno",
+      "lat": 44.49445,
+      "lng": 11.34264,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Bologna in piazza"
+      ],
+      "fonte": "https://www.instagram.com/p/DfPC1UsOdhj/?dlrf=d3R1anRoZ2pwamN3",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-04T13:04:50",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-lecco-corteo-01",
+      "tipo": "corteo",
+      "titolo": "L'antifascismo costa caro",
+      "data": "2026-11-07",
+      "ora_inizio": "14:00",
+      "ora_fine": null,
+      "comune": "Lecco",
+      "provincia": "LC",
+      "regione": "Lombardia",
+      "luogo": "Piazza V Alpini",
+      "lat": 45.85577,
+      "lng": 9.41054,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Brigata Francesca Ciceri"
+      ],
+      "fonte": "https://www.instagram.com/p/De4pMCpAxsz/?utm_source=ig_web_copy_link",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-04T14:55:14",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-07-montale-corteo-01",
       "tipo": "corteo",
       "titolo": "Marcia popolare no inceneritori",
@@ -913,7 +1015,7 @@
       "aggiornato_il": "2026-11-02T12:36:20",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-07-montale-corteo-02",
@@ -937,6 +1039,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-10-27T22:56:02",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-07-firenze-corteo-03",
+      "tipo": "corteo",
+      "titolo": "corteo firenze in piazza",
+      "data": "2026-11-07",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "",
+      "lat": 43.7758,
+      "lng": 11.24843,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "firenze in piazza"
+      ],
+      "fonte": "https://www.instagram.com/p/DfUNK1wNyAs/?psln=cnI4cDhldnd2YTVk",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T13:36:13",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -1982,7 +2109,7 @@
       ],
       "fonte": "https://www.instagram.com/cgilmantova/p/De_XfDTobt3/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-02T12:36:28",
       "gruppo": null,
       "sottotipo": null,
@@ -2729,7 +2856,7 @@
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-27-genova-altro-01",
@@ -3173,8 +3300,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-04T12:27:56",
+  "ultimo_aggiornamento": "2026-11-04T18:02:51",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-04T11:28:55Z"
+  "copia_del": "2026-11-04T18:48:49Z"
 }
