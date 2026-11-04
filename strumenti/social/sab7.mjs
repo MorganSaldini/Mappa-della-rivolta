@@ -11,13 +11,17 @@ const S = [
 `<div style="position:absolute;inset:0;padding:170px 80px 0"><p class="k">Sabato 7 novembre</p><p style="font:800 140px/.86 T;text-transform:uppercase;margin-top:16px">9 città<br><span style="color:#c8322a">in piazza.</span></p>${mappa}</div>`,
 `<div style="position:absolute;inset:0;padding:160px 80px 0"><p class="k" style="margin-bottom:18px">Dove e a che ora</p>${G.map(([g, cs]) => `<div style="border-top:3px solid #1c1b1f;padding:14px 0 10px"><p style="font:700 30px T;letter-spacing:.08em;text-transform:uppercase;color:#c8322a">${g}</p>${cs.map((c) => `<p style="font:600 34px/1.35 C"><b style="font:800 40px T;text-transform:uppercase">${c}</b> · ${D[c]}</p>`).join('')}</div>`).join('')}
 <p style="font:600 30px/1.35 C;color:#5f5d66;margin-top:26px">Prima di partire controlla la scheda sulla mappa: orari e luoghi possono cambiare.</p></div>`,
+`<div style="position:absolute;inset:0;background:#c8322a;color:#fff;padding:190px 80px 0"><p class="k" style="color:#ffd5d1">Mancano 16 giorni al 20 novembre</p><p style="font:800 150px/.86 T;text-transform:uppercase;margin-top:16px">Non<br>molliamo<br>adesso.</p>
+<p style="font:600 42px/1.35 C;margin-top:40px">Il 30 eravamo tantissimi. Sabato si torna in piazza in 9 città, e da qui al 20 sulla mappa ci sono già altre 22 iniziative in 12 città.</p>
+<p style="font:800 56px/1.05 T;text-transform:uppercase;margin-top:44px">Venerdì 20:<br>sciopero generale CGIL.</p>
+<p style="font:600 40px/1.35 C;margin-top:30px">Trova la piazza più vicina, porta qualcuno con te. Sempre in pace.</p></div>`,
 `<div style="position:absolute;inset:0;background:#1c1b1f;color:#fff;padding:220px 80px 0"><p class="k" style="color:#ff8f86">La tua città non c'è?</p><p style="font:800 130px/.88 T;text-transform:uppercase;margin-top:16px">Aggiungila<br>sulla mappa.</p>
 <p style="font:600 42px/1.35 C;margin-top:36px">Basta il link a un comunicato o a una locandina. Senza account.</p><p style="font:800 70px T;margin-top:40px">mappadellarivolta.org</p>
 <div style="display:inline-flex;align-items:center;gap:22px;margin-top:44px;background:#fff;color:#1c1b1f;padding:20px 34px;border-radius:60px;font:800 50px T"><span style="background:#c8322a;color:#fff;border-radius:40px;padding:4px 22px;font-size:38px">+ Segui</span>@mappadellarivolta</div>
 <p style="position:absolute;left:80px;right:80px;bottom:60px;font:600 24px/1.35 C;color:#c9c5bf">Fonti: CGIL Reggio Emilia, CremonaOggi, La Voce di Genova, Italia in piazza Marche e schede della mappa. La mappa riporta informazioni pubbliche con la loro fonte.</p></div>`];
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
 const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
-for (let i = 0; i < S.length; i++) { await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${S[i]}<div class="m" style="color:${i === 2 ? '#fff' : '#1c1b1f'}"><i></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready);
+for (let i = 0; i < S.length; i++) { await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${S[i]}<div class="m" style="color:${i >= 2 ? '#fff' : '#1c1b1f'}"><i style="${i === 2 ? 'background:#fff' : ''}"></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready);
   const f = await p.evaluate(() => [...document.querySelectorAll('p,svg')].some((e) => e.getBoundingClientRect().bottom > 1352)); if (f) console.log('FUORI', i + 1);
   await p.screenshot({ path: `out/sab-0${i + 1}.png` }); }
 await b.close();
