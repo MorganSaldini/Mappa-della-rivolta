@@ -1,0 +1,23 @@
+import { chromium } from 'playwright-core'; import { cssBase, pathItalia, xy, W, H } from './motore.mjs';
+const css = cssBase.replace('height:1920px', 'height:1350px') + `.m{top:70px}.k{font:700 34px T;letter-spacing:.12em;text-transform:uppercase;color:#c8322a}`;
+const P = [['Torino', 45.071, 7.685, 'r', 'piazza Castello'], ['Genova', 44.407, 8.934, 'r', '15:00, piazza De Ferrari'], ['Udine', 46.063, 13.235, 'l', '15:00, piazza Primo Maggio'], ['Ancona', 43.617, 13.518, 'l', '16:00, piazza Cavour'],
+ ['Cremona', 45.133, 10.022, 'r', '14:00, ex Foro Boario'], ['Reggio Emilia', 44.698, 10.631, 'r', '9:30, Prefettura'], ['Gorizia', 45.94, 13.62, 'l', '15:30, parco della Rimembranza'], ['Montale', 43.935, 11.016, 'r', '14:00, piazza Matteotti'], ['Tivoli', 41.953, 12.724, 'l', '15:00, piazza della Queva']];
+const [x0, y0] = xy(47.2, 6.5), [x1, y1] = xy(41.7, 14.4);
+const mappa = `<svg viewBox="${x0} ${y0} ${x1 - x0} ${y1 - y0}" style="position:absolute;left:50%;transform:translateX(-50%);top:540px;height:760px;overflow:visible;width:${Math.round(760 * (x1 - x0) / (y1 - y0))}px"><path d="${pathItalia}" fill="#fff" stroke="#1c1b1f" stroke-width="1.2"/>
+${P.map(([c, la, ln, s]) => { const [x, y] = xy(la, ln); const dy = c === 'Reggio Emilia' ? 7 : c === 'Cremona' ? -4 : c === 'Gorizia' ? -2 : c === 'Udine' ? -6 : 0; return `<circle cx="${x}" cy="${y}" r="5.5" fill="#c8322a" stroke="#fff" stroke-width="1.6"/><text x="${s === 'r' ? x + 9 : x - 9}" y="${y + 4 + dy}" text-anchor="${s === 'r' ? 'start' : 'end'}" font-family="T" font-weight="800" font-size="17" fill="#1c1b1f" style="text-transform:uppercase" stroke="#f6f3ee" stroke-width="3" paint-order="stroke">${c.toUpperCase()}</text>`; }).join('')}</svg>`;
+const G = [['Contro carovita e riarmo', ['Torino', 'Genova', 'Udine', 'Ancona', 'Cremona', 'Reggio Emilia']], ['Per la pace', ['Tivoli']], ['Contro l\'inceneritore', ['Montale']], ['Corteo antifascista', ['Gorizia']]];
+const D = Object.fromEntries(P.map((p) => [p[0], p[4]]));
+const S = [
+`<div style="position:absolute;inset:0;padding:170px 80px 0"><p class="k">Sabato 7 novembre</p><p style="font:800 140px/.86 T;text-transform:uppercase;margin-top:16px">9 città<br><span style="color:#c8322a">in piazza.</span></p>${mappa}</div>`,
+`<div style="position:absolute;inset:0;padding:160px 80px 0"><p class="k" style="margin-bottom:18px">Dove e a che ora</p>${G.map(([g, cs]) => `<div style="border-top:3px solid #1c1b1f;padding:14px 0 10px"><p style="font:700 30px T;letter-spacing:.08em;text-transform:uppercase;color:#c8322a">${g}</p>${cs.map((c) => `<p style="font:600 34px/1.35 C"><b style="font:800 40px T;text-transform:uppercase">${c}</b> · ${D[c]}</p>`).join('')}</div>`).join('')}
+<p style="font:600 30px/1.35 C;color:#5f5d66;margin-top:26px">Prima di partire controlla la scheda sulla mappa: orari e luoghi possono cambiare.</p></div>`,
+`<div style="position:absolute;inset:0;background:#1c1b1f;color:#fff;padding:220px 80px 0"><p class="k" style="color:#ff8f86">La tua città non c'è?</p><p style="font:800 130px/.88 T;text-transform:uppercase;margin-top:16px">Aggiungila<br>sulla mappa.</p>
+<p style="font:600 42px/1.35 C;margin-top:36px">Basta il link a un comunicato o a una locandina. Senza account.</p><p style="font:800 70px T;margin-top:40px">mappadellarivolta.org</p>
+<div style="display:inline-flex;align-items:center;gap:22px;margin-top:44px;background:#fff;color:#1c1b1f;padding:20px 34px;border-radius:60px;font:800 50px T"><span style="background:#c8322a;color:#fff;border-radius:40px;padding:4px 22px;font-size:38px">+ Segui</span>@mappadellarivolta</div>
+<p style="position:absolute;left:80px;right:80px;bottom:60px;font:600 24px/1.35 C;color:#c9c5bf">Fonti: CGIL Reggio Emilia, CremonaOggi, La Voce di Genova, Italia in piazza Marche e schede della mappa. La mappa riporta informazioni pubbliche con la loro fonte.</p></div>`];
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
+for (let i = 0; i < S.length; i++) { await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${S[i]}<div class="m" style="color:${i === 2 ? '#fff' : '#1c1b1f'}"><i></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready);
+  const f = await p.evaluate(() => [...document.querySelectorAll('p,svg')].some((e) => e.getBoundingClientRect().bottom > 1352)); if (f) console.log('FUORI', i + 1);
+  await p.screenshot({ path: `out/sab-0${i + 1}.png` }); }
+await b.close();
