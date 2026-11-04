@@ -1466,6 +1466,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-trieste-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Trieste",
+      "provincia": "TS",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "",
+      "lat": 45.65239,
+      "lng": 13.77435,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Trieste"
+      ],
+      "fonte": "https://www.instagram.com/p/DfRWYaRCHMD/?exln=ZTg2dzhtYnA2NGF0",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-04T00:32:14",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-roma-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale nazionale CGIL",
@@ -2925,8 +2950,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-03T22:22:51",
+  "ultimo_aggiornamento": "2026-11-04T00:32:14",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-03T23:12:22Z"
+  "copia_del": "2026-11-04T03:10:11Z"
 }
