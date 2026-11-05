@@ -128,6 +128,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-05-avellino-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovira e il riarmo",
+      "data": "2026-11-05",
+      "ora_inizio": "18:29",
+      "ora_fine": "21:30",
+      "comune": "Avellino",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Piazza San Ciro",
+      "lat": 40.91254,
+      "lng": 14.78045,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo Studentesco Irpino"
+      ],
+      "fonte": "https://www.instagram.com/cs_irpino?srtk=MzR0cXd0eTdzZnh0",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-05T06:32:02",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-05-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Salotto di Miranda: \"MAGNITUDO G8 -una narrazione civile di Gianfranco Corona\" (Aperitivo condiviso, porta cibo!)",
@@ -785,6 +810,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-07-genova-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il carovita",
+      "data": "2026-11-07",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Piazza De Ferrari",
+      "lat": 44.4071,
+      "lng": 8.9339,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Comitato Italia in Piazza"
+      ],
+      "fonte": "https://www.primocanale.it/cronaca/73211-scioperi-novembre-calendario-date-orari-genova.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-05T06:00:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-07-tivoli-corteo-01",
       "tipo": "corteo",
       "titolo": "Marcia per la pace, contro la guerra e l'indifferenza",
@@ -857,7 +907,7 @@
       "aggiornato_il": "2026-11-04T23:32:41",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-07-gorizia-corteo-01",
@@ -1853,6 +1903,31 @@
       "conferme": 2,
       "aggiornato_il": "2026-11-02T12:36:28",
       "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-trento-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Trento",
+      "provincia": "TN",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Via Verdi",
+      "lat": 46.0664,
+      "lng": 11.1199,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL Trentino"
+      ],
+      "fonte": "https://www.vitatrentina.it/2026/11/04/sciopero-generale-proclamato-dalla-cgil-venerdi-20-novembre/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-05T06:00:31",
+      "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
       "ci_saro": 1
     },
@@ -3066,8 +3141,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-04T23:33:54",
+  "ultimo_aggiornamento": "2026-11-05T06:32:02",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-05T00:18:06Z"
+  "copia_del": "2026-11-05T07:17:13Z"
 }
