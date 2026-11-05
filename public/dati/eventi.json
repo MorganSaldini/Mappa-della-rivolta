@@ -649,9 +649,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:44",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1128,9 +1128,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:44",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1203,9 +1203,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:44",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1355,9 +1355,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:44",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1430,9 +1430,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:44",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1564,9 +1564,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:45",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1614,9 +1614,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:45",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1738,9 +1738,9 @@
         "Associazione cantiere sanbernardo"
       ],
       "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-05T13:24:12",
+      "aggiornato_il": "2026-11-05T19:00:45",
       "gruppo": "g-e52be23d2395",
       "sottotipo": "Mostra fotografica+concerto",
       "ci_saro": null
@@ -1956,6 +1956,35 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-19-bologna-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Presidio in sostegno delle attrici e donne contro la violenza maschile",
+      "data": "2026-11-19",
+      "ora_inizio": "09:00",
+      "ora_fine": "12:00",
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza dei Tribunali, 4",
+      "lat": 44.49455,
+      "lng": 11.34167,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Amleta",
+        "Casa delle donne di Parma",
+        "Scum",
+        "Dieci Teatranti",
+        "Non una di meno Bologna"
+      ],
+      "fonte": "https://www.instagram.com/p/DfPJpFSEpXi/?cplk=aW55ZHk3aWlzbHIz",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-05T19:43:30",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-19-milano-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass Milano",
@@ -2053,7 +2082,7 @@
       "aggiornato_il": "2026-10-19T00:50:30",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 6
+      "ci_saro": 7
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -2299,7 +2328,7 @@
       ],
       "fonte": "https://www.instagram.com/cgilmantova/p/De_XfDTobt3/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-02T12:36:28",
       "gruppo": null,
       "sottotipo": null,
@@ -3136,7 +3165,7 @@
       "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -4125,8 +4154,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-05T13:24:12",
+  "ultimo_aggiornamento": "2026-11-05T19:43:30",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-05T15:45:01Z"
+  "copia_del": "2026-11-05T21:55:02Z"
 }
