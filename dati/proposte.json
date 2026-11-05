@@ -1,47 +1,5 @@
 [
   {
-    "tipo": "presidio",
-    "titolo": "Sciopero e presidio dei lavoratori Mibex davanti alla Regione Campania",
-    "data": "2026-11-04",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Napoli",
-    "provincia": "NA",
-    "regione": "Campania",
-    "luogo": "Sede della Regione Campania",
-    "lat": 40.8338,
-    "lng": 14.2482,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "RSU Mibex",
-      "FIOM",
-      "UILM",
-      "UGLM"
-    ],
-    "fonte": "https://www.nanotv.it/2026/10/28/somma-vesuviana-crisi-mibex-impianti-fermi-entro-il-10-novembre-rsu-fiom-uilm-e-uglm-proclamano-8-ore-di-sciopero-per-il-4-novembre-con-presidio-in-regione-campania/",
-    "note": "Sciopero di 8 ore dello stabilimento di Somma Vesuviana; la fonte non precisa quale sede regionale né l'orario."
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Sciopero e presidio dei lavoratori della Fondazione JobsAcademy",
-    "data": "2026-11-04",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "San Paolo d'Argon",
-    "provincia": "BG",
-    "regione": "Lombardia",
-    "luogo": "Sede della Fondazione JobsAcademy",
-    "lat": 45.6889,
-    "lng": 9.8031,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "NiDIL CGIL Bergamo",
-      "FP CGIL Bergamo"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-2-8-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-qu90vs3p",
-    "note": "Sciopero e presidio per stipendi arretrati e futuro dell'attività formativa; orario non indicato, coordinate del centro paese"
-  },
-  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale ENAV all'aeroporto di Bari",
     "data": "2026-11-06",
@@ -117,6 +75,25 @@
     ],
     "fonte": "https://scioperiitalia.it/sciopero/2026-11-06-merci-personale-soc-vincenzo-miele-trasporti-di-8620",
     "note": "8 ore, trasporto merci; posizione al centro di Volla"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo contro il carovita",
+    "data": "2026-11-07",
+    "ora_inizio": "15:00",
+    "ora_fine": null,
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "luogo": "Piazza De Ferrari",
+    "lat": 44.4071,
+    "lng": 8.9339,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Comitato Italia in Piazza"
+    ],
+    "fonte": "https://www.primocanale.it/cronaca/73211-scioperi-novembre-calendario-date-orari-genova.html",
+    "note": "Percorso: via San Lorenzo, piazza Caricamento, via Gramsci, fino alla metro Principe. Promotore coordinamento locale, non sindacale"
   },
   {
     "tipo": "presidio",
@@ -654,6 +631,26 @@
     ],
     "fonte": "https://www.ansa.it/sito/notizie/politica/2026/10/17/landini-in-piazza-a-roma-sciopero-generale-il-20-novembre_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html",
     "note": "Annunciato il 17/10; durata e piazze non ancora note: posizione indicativa a Roma. Stesso giorno sciopero studentesco (UdS, Link, Rete della Conoscenza).",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Trento",
+    "provincia": "TN",
+    "regione": "Trentino-Alto Adige",
+    "luogo": "Via Verdi",
+    "lat": 46.0664,
+    "lng": 11.1199,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Trentino"
+    ],
+    "fonte": "https://www.vitatrentina.it/2026/11/04/sciopero-generale-proclamato-dalla-cgil-venerdi-20-novembre/",
+    "note": "Concentramento in via Verdi, corteo nel centro storico; sciopero generale di 24 ore «Il futuro è adesso» (anche ladige.it)",
     "gruppo": "sciopero-generale-2026-11-20"
   },
   {
