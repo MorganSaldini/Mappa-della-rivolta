@@ -1538,7 +1538,30 @@
       "aggiornato_il": "2026-11-06T12:30:35",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
+    },
+    {
+      "id": "2026-11-14-parma-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Contromanifestazione al \"corteo per la remigrazione\"",
+      "data": "2026-11-14",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Parma",
+      "provincia": "PR",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazzale Santa Croce",
+      "lat": 44.80415,
+      "lng": 10.31395,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-06T21:54:45",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-16-roma-sciopero_categoria-01",
@@ -3869,8 +3892,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-06T16:16:49",
+  "ultimo_aggiornamento": "2026-11-06T21:54:45",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-06T17:23:52Z"
+  "copia_del": "2026-11-06T22:19:29Z"
 }
