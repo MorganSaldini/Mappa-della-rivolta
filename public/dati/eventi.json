@@ -304,6 +304,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-07-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale dei dipendenti MARR Service (autotrasporto)",
+      "data": "2026-11-07",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Roma (sciopero nazionale, nessun luogo indicato)",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-06T06:00:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-07-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Azione: Food Not Bombs! Recuperiamo e cuciniamo il cibo!",
@@ -457,6 +480,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-07-firenze-presidio-01",
+      "tipo": "presidio",
+      "titolo": "contro l'inaugurazione di una nuova sede di Futuro Nazionale",
+      "data": "2026-11-07",
+      "ora_inizio": "11:30",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "via novelli 57",
+      "lat": 43.7735,
+      "lng": 11.29887,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfKttBggCSC/?mdxt=MW5zOHkxdDFzaWVyNA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-06T07:37:24",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-07-bologna-corteo-03",
       "tipo": "corteo",
       "titolo": "Italia in piazza: uniti contro riarmo, carovita, precariato ed i tagli a educazione e sanità!",
@@ -529,7 +575,7 @@
       "aggiornato_il": "2026-11-02T12:36:20",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-07-lecco-corteo-01",
@@ -555,6 +601,31 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
+    },
+    {
+      "id": "2026-11-07-lecce-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro carovita e per diritto allo studio, alla sanità e a un lavoro dignitoso",
+      "data": "2026-11-07",
+      "ora_inizio": "14:30",
+      "ora_fine": null,
+      "comune": "lecce",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "Porta Napoli",
+      "lat": 40.35645,
+      "lng": 18.16855,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Italia In Piazza"
+      ],
+      "fonte": "https://www.instagram.com/reel/DfR-qKbO0C2/?rpxt=dzl5cWc2eHpiZDB5",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-06T09:49:13",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-montale-corteo-02",
@@ -1550,7 +1621,7 @@
       "aggiornato_il": "2026-11-01T20:37:02",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-19-bologna-presidio-01",
@@ -2010,7 +2081,7 @@
       "aggiornato_il": "2026-11-05T10:22:40",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-bologna-corteo-02",
@@ -2892,7 +2963,7 @@
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-21-bolzano-sciopero_categoria-01",
@@ -3751,8 +3822,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-05T19:43:30",
+  "ultimo_aggiornamento": "2026-11-06T09:49:13",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-06T02:14:43Z"
+  "copia_del": "2026-11-06T09:46:16Z"
 }
