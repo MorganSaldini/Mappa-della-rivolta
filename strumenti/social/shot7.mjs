@@ -1,0 +1,14 @@
+import { chromium } from 'playwright-core'; import { apri } from './cattura2.mjs';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--lang=it-IT'] });
+const p = await apri(b);
+await p.evaluate(() => { document.querySelector('#box-filtri').open = true; });
+await p.selectOption('#filtro-periodo', 'giorno'); await p.fill('#filtro-giorno', '2026-11-07'); await p.dispatchEvent('#filtro-giorno', 'change'); await p.waitForTimeout(800);
+await p.evaluate(() => { document.querySelector('#box-filtri').open = false; }); await p.waitForTimeout(300);
+await p.evaluate(() => { window.__mappa.setView([44.6, 11.0], 6, { animate: false }); const r = document.querySelector('#mappa').getBoundingClientRect(); window.scrollBy(0, r.top - 120); }); await p.waitForTimeout(2000);
+await p.screenshot({ path: 'out/w-mappa7.png' });
+await p.evaluate(() => { const x = document.createElement('button'); x.dataset.vai = '2026-11-07-udine-corteo-01'; document.body.appendChild(x); x.click(); }); await p.waitForTimeout(2500);
+await p.screenshot({ path: 'out/w-pop7.png' });
+await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+await p.evaluate(() => document.querySelector('button[data-apri-aggiungi]').click()); await p.waitForTimeout(800);
+await p.screenshot({ path: 'out/w-agg.png' });
+await b.close();
