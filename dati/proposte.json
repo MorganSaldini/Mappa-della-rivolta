@@ -116,6 +116,23 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale dei dipendenti MARR Service (autotrasporto)",
+    "data": "2026-11-07",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma (sciopero nazionale, nessun luogo indicato)",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [],
+    "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
+    "note": "Sciopero nazionale autotrasporto dal 6 all'11 novembre 2026; orari e sigle non indicati dalla fonte. Posizione a Roma perché nazionale senza luogo."
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale AMT di Genova",
     "data": "2026-11-09",
     "ora_inizio": "11:30",
