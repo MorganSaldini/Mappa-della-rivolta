@@ -49,7 +49,7 @@
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 10
+      "ci_saro": 12
     },
     {
       "id": "2026-11-07-torino-presidio-01",
@@ -198,7 +198,7 @@
       "aggiornato_il": "2026-11-06T12:26:15",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-07-montale-corteo-01",
@@ -468,7 +468,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ5eqUjAw_/?dlrf=MXkyMGQ1ZmVnN21ldA==",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-06T16:16:49",
       "gruppo": null,
       "sottotipo": null,
@@ -2967,6 +2967,56 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-22-firenze-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale Toscana Aeroporti all'aeroporto di Firenze",
+      "data": "2026-11-22",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Aeroporto Amerigo Vespucci",
+      "lat": 43.81,
+      "lng": 11.2051,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB Lavoro Privato"
+      ],
+      "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-07T06:00:31",
+      "gruppo": "ag-toscana-aeroporti-2026-11-22",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-22-pisa-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale Toscana Aeroporti all'aeroporto di Pisa",
+      "data": "2026-11-22",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Pisa",
+      "provincia": "PI",
+      "regione": "Toscana",
+      "luogo": "Aeroporto Galileo Galilei",
+      "lat": 43.6839,
+      "lng": 10.3927,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "USB Lavoro Privato"
+      ],
+      "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-07T06:00:31",
+      "gruppo": "ag-toscana-aeroporti-2026-11-22",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-22-venezia-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero vigilanza Sicuritalia IVRI all'aeroporto Marco Polo",
@@ -3565,8 +3615,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-06T21:54:45",
+  "ultimo_aggiornamento": "2026-11-07T06:00:31",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-07T02:18:23Z"
+  "copia_del": "2026-11-07T09:09:59Z"
 }
