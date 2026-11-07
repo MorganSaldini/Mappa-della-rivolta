@@ -1891,7 +1891,7 @@
       "aggiornato_il": "2026-11-04T23:33:54",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-venezia-sciopero_generale-01",
@@ -2445,7 +2445,7 @@
       "aggiornato_il": "2026-11-06T12:33:20",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-udine-corteo-01",
@@ -2554,7 +2554,7 @@
       "aggiornato_il": "2026-11-07T16:33:56",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -3671,5 +3671,5 @@
   "ultimo_aggiornamento": "2026-11-07T16:33:56",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-07T15:53:08Z"
+  "copia_del": "2026-11-07T20:08:27Z"
 }
