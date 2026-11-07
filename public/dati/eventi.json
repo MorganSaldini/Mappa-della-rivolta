@@ -49,7 +49,7 @@
       "aggiornato_il": "2026-11-02T13:03:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 12
+      "ci_saro": 14
     },
     {
       "id": "2026-11-07-torino-presidio-01",
@@ -123,7 +123,7 @@
       "aggiornato_il": "2026-11-01T20:26:44",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-07-reggio-nell-emilia-presidio-01",
@@ -260,7 +260,7 @@
       "comune": "Bologna",
       "provincia": "BO",
       "regione": "Emilia-Romagna",
-      "luogo": "Piazza del Nettuno",
+      "luogo": "Piazza della pace",
       "lat": 44.49445,
       "lng": 11.34264,
       "posizione_approssimativa": 0,
@@ -270,7 +270,7 @@
       "fonte": "https://www.24emilia.com/bologna-nuovo-corteo-7-novembre-cresce-tensione-timore-scontri/",
       "stato": "verificato",
       "conferme": 2,
-      "aggiornato_il": "2026-11-06T12:37:32",
+      "aggiornato_il": "2026-11-07T14:38:56",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
@@ -445,31 +445,8 @@
       ],
       "fonte": "https://www.primocanale.it/cronaca/73211-scioperi-novembre-calendario-date-orari-genova.html",
       "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-06T12:29:15",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-07-padova-corteo-03",
-      "tipo": "corteo",
-      "titolo": "Parata contro vendita dell'ex maxello",
-      "data": "2026-11-07",
-      "ora_inizio": "15:30",
-      "ora_fine": "18:00",
-      "comune": "Padova",
-      "provincia": "PD",
-      "regione": "Veneto",
-      "luogo": "Piazza Eremitani",
-      "lat": 45.41033,
-      "lng": 11.87937,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DfZ5eqUjAw_/?dlrf=MXkyMGQ1ZmVnN21ldA==",
-      "stato": "da_verificare",
       "conferme": 1,
-      "aggiornato_il": "2026-11-06T16:16:49",
+      "aggiornato_il": "2026-11-06T12:29:15",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -498,6 +475,29 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
+    },
+    {
+      "id": "2026-11-07-padova-corteo-03",
+      "tipo": "corteo",
+      "titolo": "Parata contro vendita dell'ex maxello",
+      "data": "2026-11-07",
+      "ora_inizio": "15:30",
+      "ora_fine": "18:00",
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Piazza Eremitani",
+      "lat": 45.41033,
+      "lng": 11.87937,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfZ5eqUjAw_/?dlrf=MXkyMGQ1ZmVnN21ldA==",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-07T14:37:59",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-07-pisa-altro-01",
@@ -1214,6 +1214,31 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-14-milano-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Italia in Piazza - Contro il carovita",
+      "data": "2026-11-14",
+      "ora_inizio": "14:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza Leonardo Da Vinci",
+      "lat": 45.46996,
+      "lng": 9.18594,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Italia in Piazza"
+      ],
+      "fonte": "https://www.instagram.com/p/DfaaBHeACnl/?img_index=1",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-07T14:38:10",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-14-parma-corteo-02",
       "tipo": "corteo",
       "titolo": "Contromanifestazione al \"corteo per la remigrazione\"",
@@ -1229,9 +1254,9 @@
       "posizione_approssimativa": 0,
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-06T21:54:45",
+      "aggiornato_il": "2026-11-07T14:38:17",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -1713,9 +1738,9 @@
         "CGIL"
       ],
       "fonte": "https://www.cgilreggioemilia.it/2026/sciopero-generale-nazionale-venerdi-20-novembre/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-06T12:47:55",
+      "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -1878,17 +1903,17 @@
       "comune": "Venezia",
       "provincia": "VE",
       "regione": "Veneto",
-      "luogo": "Piazzale favaretti",
+      "luogo": "Mestre FS",
       "lat": 45.48246,
       "lng": 12.23168,
       "posizione_approssimativa": 0,
       "organizzatori": [
-        "CGIL"
+        "CGIL Venezia"
       ],
       "fonte": "https://www.cgil.veneto.it/20-novembre-sciopero-generale/",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-04T23:31:41",
+      "aggiornato_il": "2026-11-07T14:39:04",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -2220,11 +2245,11 @@
       ],
       "fonte": "https://www.instagram.com/p/DcgL-PtIG1J/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-06T12:33:00",
       "gruppo": "g-170bb72f0d2e",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-pescara-corteo-01",
@@ -2252,7 +2277,7 @@
       "aggiornato_il": "2026-11-06T12:33:00",
       "gruppo": "g-170bb72f0d2e",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-perugia-corteo-01",
@@ -2499,6 +2524,34 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-06T12:32:27",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-bari-corteo-01",
+      "tipo": "corteo",
+      "titolo": "20 NOVEMBRE - YOUTH STRIKE",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": "12:00",
+      "comune": "Bari",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "Piazza Massari",
+      "lat": 41.12759,
+      "lng": 16.86456,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "UNIONE DEGLI STUDENTI",
+        "UNIONE DEGLI UNIVERSITARI",
+        "RETE PUGLIA",
+        "CGIL"
+      ],
+      "fonte": "https://www.instagram.com/p/DfakWGhO_Pa/?dlrf=MTRzMnFtZzh6YjNmaw==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-07T16:33:56",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
@@ -2967,6 +3020,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-22-venezia-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero vigilanza Sicuritalia IVRI all'aeroporto Marco Polo",
+      "data": "2026-11-22",
+      "ora_inizio": "00:00",
+      "ora_fine": "23:59",
+      "comune": "Venezia",
+      "provincia": "VE",
+      "regione": "Veneto",
+      "luogo": "Aeroporto Marco Polo",
+      "lat": 45.5053,
+      "lng": 12.3519,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "FISASCAT-CISL"
+      ],
+      "fonte": "https://mit.gov.it/node/124",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-10-17T01:27:53",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-22-firenze-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero del personale Toscana Aeroporti all'aeroporto di Firenze",
@@ -2984,9 +3062,9 @@
         "USB Lavoro Privato"
       ],
       "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-07T06:00:31",
+      "aggiornato_il": "2026-11-07T14:38:45",
       "gruppo": "ag-toscana-aeroporti-2026-11-22",
       "sottotipo": null,
       "ci_saro": null
@@ -3009,35 +3087,10 @@
         "USB Lavoro Privato"
       ],
       "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-07T06:00:31",
-      "gruppo": "ag-toscana-aeroporti-2026-11-22",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-22-venezia-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero vigilanza Sicuritalia IVRI all'aeroporto Marco Polo",
-      "data": "2026-11-22",
-      "ora_inizio": "00:00",
-      "ora_fine": "23:59",
-      "comune": "Venezia",
-      "provincia": "VE",
-      "regione": "Veneto",
-      "luogo": "Aeroporto Marco Polo",
-      "lat": 45.5053,
-      "lng": 12.3519,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "FISASCAT-CISL"
-      ],
-      "fonte": "https://mit.gov.it/node/124",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-10-17T01:27:53",
-      "gruppo": null,
+      "aggiornato_il": "2026-11-07T14:38:46",
+      "gruppo": "ag-toscana-aeroporti-2026-11-22",
       "sottotipo": null,
       "ci_saro": null
     },
@@ -3615,8 +3668,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-07T06:00:31",
+  "ultimo_aggiornamento": "2026-11-07T16:33:56",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-07T09:09:59Z"
+  "copia_del": "2026-11-07T15:53:08Z"
 }
