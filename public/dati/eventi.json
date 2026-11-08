@@ -77,6 +77,60 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-09-torino-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea IMPORTANTE di palazzo nuovo x studenti universitari (argomenti: guerra, rettrice, occ. campus)",
+      "data": "2026-11-09",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Atrio di palazzo nuovo",
+      "lat": 45.06807,
+      "lng": 7.69437,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemblea palazzo nuovo"
+      ],
+      "fonte": "https://gancio.cisti.org/event/occupiamoci-di-palazzo-nuovo-assemblea-serata",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T15:37:25",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-09-torino-altro-01",
+      "tipo": "altro",
+      "titolo": "Concerto serata assemblea palazzo nuovo \"SENZA PERMESSO!\"",
+      "data": "2026-11-09",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Palazzo Nuovo (per eventuali cambi guarda @assemblea.pn su ig)",
+      "lat": 45.06813,
+      "lng": 7.69451,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "assemlbea palazzo nuovo",
+        "SIDERURGICI",
+        "READIA",
+        "ASIANOIA",
+        "OMINI"
+      ],
+      "fonte": "https://gancio.cisti.org/event/concerto-assemblea-pn-senza-permesso-siderurgici-readia-asianoia-e-omini-in-chiusura-dj-ikigai",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T15:37:28",
+      "gruppo": null,
+      "sottotipo": "concerto",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-09-verona-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero manutenzione RFI a Verona",
@@ -1379,7 +1433,7 @@
       "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-mantova-corteo-01",
@@ -3507,8 +3561,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-08T13:12:18",
+  "ultimo_aggiornamento": "2026-11-08T15:37:28",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-08T13:12:47Z"
+  "copia_del": "2026-11-08T18:27:47Z"
 }
