@@ -178,7 +178,7 @@
       "aggiornato_il": "2026-11-01T15:11:11",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-09-rionero-in-vulture-assemblea-01",
@@ -277,6 +277,33 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-10-siracusa-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "ASSEMBLEA PUBBLICA CON OSA NAZIONALE",
+      "data": "2026-11-10",
+      "ora_inizio": "17:30",
+      "ora_fine": "20:00",
+      "comune": "Siracusa",
+      "provincia": "SR",
+      "regione": "Sicilia",
+      "luogo": "Via S. Pietro 26",
+      "lat": 37.06298,
+      "lng": 15.2947,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA Siracusa",
+        "OSA Nazionale",
+        "OSA"
+      ],
+      "fonte": "https://www.instagram.com/p/DfaeUNnoPGf/?dlrf=MXdsbGN1MzZ0aW5tMw==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T11:50:28",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-10-pisa-altro-01",
@@ -788,11 +815,11 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-07T14:38:17",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-11-16-roma-sciopero_categoria-01",
@@ -1254,6 +1281,32 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-verona-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco internazionale",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": "13:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazzale XXV Aprile",
+      "lat": 45.43005,
+      "lng": 10.98202,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi Verona",
+        "UDU - Unione degli Universitari Verona"
+      ],
+      "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-08T08:36:06",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 2
+    },
+    {
       "id": "2026-11-20-ferrara-corteo-02",
       "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale CGIL",
@@ -1549,7 +1602,7 @@
       "aggiornato_il": "2026-11-07T14:39:04",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-trento-corteo-01",
@@ -1798,7 +1851,7 @@
       "aggiornato_il": "2026-11-06T12:33:12",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 0
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-palermo-corteo-01",
@@ -2363,6 +2416,31 @@
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
       "ci_saro": 3
+    },
+    {
+      "id": "2026-11-20-ascoli-piceno-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale Cgil",
+      "data": "2026-11-20",
+      "ora_inizio": "10:00",
+      "ora_fine": "13:00",
+      "comune": "Ascoli Piceno",
+      "provincia": "AP",
+      "regione": "Marche",
+      "luogo": "Piazza Matteotti",
+      "lat": 42.85403,
+      "lng": 13.58461,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Cgil"
+      ],
+      "fonte": "https://www.facebook.com/watch/?v=1836877494009466&vanity=cgil.ascolipiceno#",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T13:12:18",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -3429,8 +3507,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-08T06:00:29",
+  "ultimo_aggiornamento": "2026-11-08T13:12:18",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-08T05:50:12Z"
+  "copia_del": "2026-11-08T13:12:47Z"
 }
