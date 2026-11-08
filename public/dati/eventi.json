@@ -575,6 +575,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-11-bolzano-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea Studentesca in vista dello Sciopero del 20 Novembre",
+      "data": "2026-11-11",
+      "ora_inizio": "20:15",
+      "ora_fine": null,
+      "comune": "Bolzano",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Via Dalmazia 77",
+      "lat": 46.49189,
+      "lng": 11.33384,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfdFSv4jdKu/?dlrf=dWk0cnpqMW02YXR6",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T19:37:43",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-11-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
@@ -848,6 +871,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-07T14:38:10",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-14-bolzano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione “RIVOLTA DEGLI ALBERI”",
+      "data": "2026-11-14",
+      "ora_inizio": "15:00",
+      "ora_fine": null,
+      "comune": "Bolzano",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Parco della Stazione",
+      "lat": 46.49696,
+      "lng": 11.3569,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Spazio Autogestito 77"
+      ],
+      "fonte": "https://www.instagram.com/p/DfVFd5ktnp5/?rpxt=MWptbXBtNGc5YXNwdA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T19:58:50",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -2497,6 +2545,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-bolzano-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale e Demo",
+      "data": "2026-11-20",
+      "ora_inizio": "10:30",
+      "ora_fine": null,
+      "comune": "Bolzano",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "luogo": "Piazza della Vittoria",
+      "lat": 46.49982,
+      "lng": 11.34538,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfW6PXBiKtw/?mdxt=aHY1dDdoejBlZnhw",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-08T19:45:57",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale del settore ferroviario e del trasporto pubblico locale",
@@ -3561,8 +3632,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-08T15:37:28",
+  "ultimo_aggiornamento": "2026-11-08T19:58:50",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-08T18:27:47Z"
+  "copia_del": "2026-11-08T22:24:43Z"
 }
