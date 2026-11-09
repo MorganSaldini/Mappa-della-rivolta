@@ -849,6 +849,34 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-11-16-roma-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblee sindacali nelle scuole contro i tagli agli organici",
+      "data": "2026-11-16",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Scuole di tutta Italia",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CISL Scuola",
+        "UIL Scuola RUA",
+        "SNALS Confsal",
+        "ANIEF"
+      ],
+      "fonte": "https://lespresso.it/c/attualita/2026/11/5/scuola-sciopero-sit-in-quando-legge-di-bilancio-tagli-personale/65758",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-09T06:00:31",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-16-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale delle cooperative della sanità pubblica e privata",
@@ -2467,7 +2495,7 @@
       "aggiornato_il": "2026-11-08T13:12:18",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-bolzano-sciopero_generale-01",
@@ -3557,8 +3585,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-08T19:58:50",
+  "ultimo_aggiornamento": "2026-11-09T06:00:31",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-09T01:54:40Z"
+  "copia_del": "2026-11-09T09:37:18Z"
 }
