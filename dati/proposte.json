@@ -39,6 +39,30 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale Italo",
+    "data": "2026-11-09",
+    "ora_inizio": "09:01",
+    "ora_fine": "16:59",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma (sciopero nazionale)",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "FIT-CISL",
+      "UGL Ferrovieri",
+      "FAST-Confsal",
+      "ORSA Trasporti",
+      "UILTrasporti"
+    ],
+    "fonte": "https://www.studenti.it/scioperi-novembre-2026-date-trasporti-scuola.html",
+    "note": "Treni Italo, sciopero nazionale 09:01-16:59; UILTrasporti per il personale di bordo 02:00-23:59. Posizione indicativa a Roma."
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero manutenzione RFI a Verona",
     "data": "2026-11-09",
     "ora_inizio": "09:01",
@@ -338,6 +362,28 @@
     "organizzatori": [],
     "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
     "note": "Sciopero nazionale; sigle, orari e piazze non indicati dalla fonte: da verificare. Posizione indicativa a Roma"
+  },
+  {
+    "tipo": "assemblea",
+    "titolo": "Assemblee sindacali nelle scuole contro i tagli agli organici",
+    "data": "2026-11-16",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Scuole di tutta Italia",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CISL Scuola",
+      "UIL Scuola RUA",
+      "SNALS Confsal",
+      "ANIEF"
+    ],
+    "fonte": "https://lespresso.it/c/attualita/2026/11/5/scuola-sciopero-sit-in-quando-legge-di-bilancio-tagli-personale/65758",
+    "note": "Assemblee in orario di servizio nelle scuole di tutta Italia sulla legge di bilancio. Posizione indicativa a Roma."
   },
   {
     "ora_inizio": null,
