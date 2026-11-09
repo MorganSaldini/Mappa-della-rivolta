@@ -595,7 +595,7 @@
       "aggiornato_il": "2026-11-02T17:20:42",
       "gruppo": "g-eaf2ac60a0ee",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-13-milano-sciopero_categoria-01",
@@ -672,6 +672,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-13-perugia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo \"Fuori Eurochocolate da Perugia!\"",
+      "data": "2026-11-13",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Perugia",
+      "provincia": "PG",
+      "regione": "Umbria",
+      "luogo": "Piazza Grimana, Perugia",
+      "lat": 43.11485,
+      "lng": 12.39,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "associazioni del territorio",
+        "collettivi studenteschi",
+        "produttori locali"
+      ],
+      "fonte": "https://www.instagram.com/p/DfcgmJ2jd5l/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-09T17:26:49",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-13-pisa-altro-01",
       "tipo": "altro",
       "titolo": "Mostra fotografica benefit Gaza",
@@ -725,6 +752,33 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-14-perugia-altro-01",
+      "tipo": "altro",
+      "titolo": "Costruiamo la città che vogliamo",
+      "data": "2026-11-14",
+      "ora_inizio": "10:00",
+      "ora_fine": "20:00",
+      "comune": "Perugia",
+      "provincia": "PG",
+      "regione": "Umbria",
+      "luogo": "Piazza Grimana, Perugia",
+      "lat": 43.11485,
+      "lng": 12.39,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "associazioni del territorio",
+        "collettivi studenteschi",
+        "produttori locali"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhA4dfjYzU/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-09T17:45:12",
+      "gruppo": null,
+      "sottotipo": "Banchetti, cibo, musica, sport popolare",
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-14-verona-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo silenzioso con il sudario per Gaza",
@@ -769,11 +823,11 @@
       ],
       "fonte": "https://www.instagram.com/bresciainpiazza17/p/DfW1BlttJhn/",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-06T12:30:35",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-14-milano-corteo-02",
@@ -794,11 +848,11 @@
       ],
       "fonte": "https://www.instagram.com/p/DfaaBHeACnl/?img_index=1",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-07T14:38:10",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-11-14-bolzano-corteo-01",
@@ -842,7 +896,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-07T14:38:17",
       "gruppo": null,
       "sottotipo": null,
@@ -1109,7 +1163,7 @@
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -1134,7 +1188,7 @@
       "aggiornato_il": "2026-10-19T00:50:30",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 7
+      "ci_saro": 8
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -1355,7 +1409,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-08T08:36:06",
       "gruppo": null,
       "sottotipo": null,
@@ -1434,7 +1488,7 @@
       "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-mantova-corteo-01",
@@ -1508,6 +1562,29 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-08T06:00:27",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-ragusa-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Ragusa",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Viale Europa",
+      "lat": 36.92989,
+      "lng": 14.71258,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DfbAl3MIzNK/?vrfl=cHd4M3VpbTc5bHpz",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-09T15:28:34",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -1605,7 +1682,7 @@
       ],
       "fonte": "https://www.cgil.it/campagne-e-iniziative/sciopero-generale-20-novembre-2026-materiali-grafici-qldcqxmp",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-02T12:36:31",
       "gruppo": null,
       "sottotipo": null,
@@ -1653,11 +1730,11 @@
       ],
       "fonte": "https://www.cgil.veneto.it/20-novembre-sciopero-generale/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-07T14:39:04",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-trento-corteo-01",
@@ -2018,7 +2095,7 @@
       "aggiornato_il": "2026-11-06T12:33:00",
       "gruppo": "g-170bb72f0d2e",
       "sottotipo": null,
-      "ci_saro": 0
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-perugia-corteo-01",
@@ -2154,7 +2231,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DcgL-PtIG1J/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-06T12:33:20",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
@@ -2186,7 +2263,7 @@
       "aggiornato_il": "2026-11-06T12:33:20",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-udine-corteo-01",
@@ -2214,7 +2291,7 @@
       "aggiornato_il": "2026-11-06T12:33:20",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-lucca-corteo-01",
@@ -2320,7 +2397,7 @@
       "aggiornato_il": "2026-11-08T06:00:26",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-monza-corteo-01",
@@ -2366,7 +2443,7 @@
       ],
       "fonte": "https://www.fpcgilemiliaromagna.it/sciopero-generale-20-novembre-2026-emilia-romagna/",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-08T06:00:27",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
@@ -2394,6 +2471,88 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-08T06:00:28",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-avellino-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Studenti e lavoratori uniti contro guerra e carovita",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Avellino",
+      "provincia": "AV",
+      "regione": "Campania",
+      "luogo": "Via De Conciliis",
+      "lat": 40.91385,
+      "lng": 14.78262,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL",
+        "Collettivo Studentesco Irpino",
+        "Giovani Comunisti/e",
+        "UDS"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhRRsZju7p/?srtk=MXhxbXFlbjEwMWs4Ng==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-09T13:46:33",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-pescara-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Pescara Youth Strike",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": "13:15",
+      "comune": "Pescara",
+      "provincia": "PE",
+      "regione": "Abruzzo",
+      "luogo": "Stazione Porta nuova",
+      "lat": 42.45761,
+      "lng": 14.21238,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Unione degli studenti Pescara",
+        "Unione degli studenti Abruzzo",
+        "Studenti indipendenti Ud'A"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhyyWvAb47/?vrfl=Y3d3eXR6NnBsMzlt",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-09T18:05:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-agrigento-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero Studentesco + Sciopero Generale della CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Agrigento",
+      "provincia": "AG",
+      "regione": "Sicilia",
+      "luogo": "Piazza Cavour agrigento",
+      "lat": 37.30783,
+      "lng": 13.58897,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Unione degli Studenti Agrigento",
+        "Rete degli Studenti Medi Agrigento",
+        "CGIL Agrigento"
+      ],
+      "fonte": "https://www.agrigentonotizie.it/cronaca/corteo-studenti-lavoratori-cgil-20-novembre.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-09T20:43:15",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -3585,8 +3744,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-09T06:00:31",
+  "ultimo_aggiornamento": "2026-11-09T20:43:15",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-09T09:37:18Z"
+  "copia_del": "2026-11-09T20:38:31Z"
 }
