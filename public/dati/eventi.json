@@ -2,81 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-08-torino-altro-01",
-      "tipo": "altro",
-      "titolo": "\"OLTRE BARRIERA\": la nuova rubrica di narrativa periferica di OST Barriera. Un nuovo modo di narrare le periferie.",
-      "data": "2026-11-08",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Via Pietracqua 9, OST Barriera",
-      "lat": 45.09125,
-      "lng": 7.70833,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "OST Barriera"
-      ],
-      "fonte": "https://gancio.cisti.org/event/oltre-barriera-rubrica-di-narrativa-periferica",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-10-23T10:23:14",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-08-firenze-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "CHI HA PAURA DELLA GEN Z? presentazione del n.32 della rivista JACOBIN ITALIA",
-      "data": "2026-11-08",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Firenze",
-      "provincia": "FI",
-      "regione": "Toscana",
-      "luogo": "Circolo Arci Fra Lavoratori di Porta a Prato, via delle Porte Nuove 33",
-      "lat": 43.78049,
-      "lng": 11.23891,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Circolo Arci Fra Lavoratori di Porta a Prato"
-      ],
-      "fonte": "https://lapunta.org/event/chi-ha-paura-della-gen-z-presentazione-del-n32-della-rivista-jacobin-italia",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-01T20:36:58",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-08-pisa-altro-01",
-      "tipo": "altro",
-      "titolo": "Mostra fotografica benefit Gaza",
-      "data": "2026-11-08",
-      "ora_inizio": "19:00",
-      "ora_fine": "00:00",
-      "comune": "Pisa",
-      "provincia": "PI",
-      "regione": "Toscana",
-      "luogo": "Via Pietro gori",
-      "lat": 43.71325,
-      "lng": 10.40289,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Associazione cantiere sanbernardo"
-      ],
-      "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-05T19:00:44",
-      "gruppo": "g-e52be23d2395",
-      "sottotipo": "Mostra fotografica+concerto",
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-09-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea IMPORTANTE di palazzo nuovo x studenti universitari (argomenti: guerra, rettrice, occ. campus)",
@@ -1156,7 +1081,7 @@
       "aggiornato_il": "2026-10-18T16:48:42",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -3635,5 +3560,5 @@
   "ultimo_aggiornamento": "2026-11-08T19:58:50",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-08T22:24:43Z"
+  "copia_del": "2026-11-09T01:54:40Z"
 }
