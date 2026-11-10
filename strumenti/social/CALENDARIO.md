@@ -5,6 +5,41 @@ Ogni riga: data · ora · formato · titolo · idea. Le bozze si salvano in `boz
 Se l'utente cambia un contenuto, aggiorna questa tabella e fai commit.
 **Prima di ogni bozza rileggi i "Paletti legali" in `agente/ISTRUZIONI-SOCIAL.md`**: inviti e ringraziamenti solo per eventi legali e preavvisati, mai per blocchi, occupazioni o azioni illegali (solo "Possibili disagi"); riga finale "La mappa riporta informazioni pubbliche con la loro fonte."
 
+## Schema settimanale (dal 10/11/2026)
+Ogni giorno: **carosello alle 12:15** e **reel alle 19:15**. In una settimana: 7 caroselli e 7 reel, ognuno con **2 temi Mappa, 3 temi Eventi, 2 temi Curiosità/Cose da sapere**. Lo stesso giorno carosello e reel hanno temi diversi.
+
+| Giorno | Carosello 12:15 | Reel 19:15 |
+|---|---|---|
+| Lunedì | EVENTI: la settimana in piazza (agenda lun-dom) | MAPPA: la mappa cresce (contatore città/eventi, prima e dopo) |
+| Martedì | CURIOSITÀ: cose da sapere (diritti, scioperare, manifestare) | EVENTI: l'appuntamento più grande della settimana |
+| Mercoledì | MAPPA: la mappa in numeri / conto alla rovescia | CURIOSITÀ: lo sapevi? (storia, una lotta che ha vinto) |
+| Giovedì | EVENTI: focus su una data o una città | MAPPA: come si usa (catture del sito, satellite quando c'è) |
+| Venerdì | EVENTI: il weekend in piazza, ora per ora | CURIOSITÀ: prima di partire (consigli pratici, numeri utili) |
+| Sabato | CURIOSITÀ: storia e dati (da reato a diritto, cosa chiedono le piazze) | EVENTI: oggi in piazza, con le foto della community |
+| Domenica | MAPPA: novità del sito o grazie alla community | EVENTI: com'è andata (foto, fatti con fonte) |
+
+Regole fisse: numeri dei partecipanti solo con chi li dà (promotori prima); foto solo della community o libere da diritti, volti sfocati, niente simboli di partito; voce umana (vedi `agente/ISTRUZIONI-SOCIAL.md`); chiusura con Segui/condividi e riga sulle fonti.
+Settimana di uno sciopero generale: il giorno dello sciopero e quello dopo diventano EVENTI anche se lo schema dice altro.
+
+## Settimana 10-16 novembre (verso il 20)
+| Data | Ora | Formato | Tema | Titolo | Idea |
+|---|---|---|---|---|---|
+| 2026-11-10 | 12:15 | carosello | Curiosità | Manifestare: i tuoi diritti | Preavviso in Questura (chi lo fa), cosa si può portare, documenti, fotografare in piazza, numeri utili. VERIFICARE ogni punto con fonte |
+| 2026-11-10 | 19:15 | reel | Eventi | Sabato 14 in piazza | Milano, Brescia, Verona sulla mappa + avviso disagi trasporti della settimana |
+| 2026-11-11 | 12:15 | carosello | Mappa | −9 al 20 novembre | Contatore città aggiornato, mappa, elenco per zona, "la tua c'è?" |
+| 2026-11-11 | 19:15 | reel | Curiosità | Lo sapevi? Uno sciopero che ha vinto | Una conquista ottenuta scioperando (verificare data e fonte), foto d'epoca libere |
+| 2026-11-12 | 12:15 | carosello | Eventi | 20 novembre: le piazze principali | Città più grandi con orario e luogo di ritrovo, sigle promotrici, Youth Strike |
+| 2026-11-12 | 19:15 | reel | Mappa | Trova la tua piazza del 20 | Catture del sito: filtro "un giorno preciso" 20/11, scheda, "Ci sarò" |
+| 2026-11-13 | 12:15 | carosello | Eventi | Sabato 14 ora per ora | Linea del tempo su foto, appello ad aggiungere le piazze mancanti |
+| 2026-11-13 | 19:15 | reel | Curiosità | Prima di partire | Consigli pratici in 20 s: controlla la scheda, resta col gruppo, 112, HubForDefenders, foto senza volti |
+| 2026-11-14 | 12:15 | carosello | Curiosità | Gli scioperi generali che hanno cambiato le cose | Storia con date e fonti, foto d'epoca libere |
+| 2026-11-14 | 19:15 | reel | Eventi | Oggi in piazza | Foto della community di sabato 14 (chiederle nelle storie) |
+| 2026-11-15 | 12:15 | carosello | Mappa | Una settimana di mappa | Quante iniziative e città aggiunte dalla community, grazie, novità del sito |
+| 2026-11-15 | 19:15 | reel | Eventi | Com'è andato sabato | Fatti con fonte, foto della community, verso il 20 |
+| 2026-11-16 | 12:15 | carosello | Eventi | La settimana dello sciopero | Agenda 16-22 novembre: 20 sciopero generale, scuola, trasporti (orari garantiti con fonte) |
+| 2026-11-16 | 19:15 | reel | Mappa | −4: la mappa cresce | Contatore città del 20 dal 4/11 a oggi |
+
+## Storico
 | Data | Ora | Formato | Titolo | Idea |
 |---|---|---|---|---|
 | 2026-10-21 | 12:15 | carosello | Come verifichiamo un evento | Chi segnala → controllo della fonte → moderatore → mappa; come segnalare un errore. Risponde a chi chiede "per cosa manifestate?" |
