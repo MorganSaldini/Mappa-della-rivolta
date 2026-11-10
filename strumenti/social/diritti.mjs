@@ -1,0 +1,29 @@
+import fs from 'node:fs'; import { chromium } from 'playwright-core'; import { cssBase } from './motore.mjs';
+const im = (f) => 'data:image/jpeg;base64,' + fs.readFileSync(f).toString('base64');
+const css = cssBase.replace('height:1920px', 'height:1350px') + `.m{top:70px}.k{font:700 34px T;letter-spacing:.12em;text-transform:uppercase;color:#c8322a}
+.q{position:absolute;inset:0;padding:180px 80px 0}.big{font:800 300px/.8 T;color:#c8322a;opacity:.14;position:absolute;right:50px;top:140px}
+.q h2{font:800 140px/.88 T;text-transform:uppercase;margin-top:30px;position:relative}.q p.t{font:600 52px/1.35 C;margin-top:44px;position:relative}.q .f{position:absolute;left:80px;right:80px;bottom:70px;font:600 26px/1.35 C;color:#5f5d66}`;
+const Q = [['È un diritto', 'Non serve<br>il permesso.', 'Riunirsi in pace e senza armi è garantito dalla Costituzione. Chi organizza avvisa la Questura almeno 3 giorni prima: tu non devi chiedere niente a nessuno.', 'Art. 17 Costituzione · Amnesty International Italia'],
+ ['Documento', 'Portalo<br>con te.', 'Non c\'è l\'obbligo di averlo in tasca, ma se non dai le tue generalità o non puoi dimostrarle possono accompagnarti in Questura per identificarti.', 'Amnesty International Italia, guida al diritto di protesta'],
+ ['Volto', 'Tienilo<br>scoperto.', 'In una manifestazione è vietato coprirsi il volto in modo da non essere riconoscibili, anche con caschi.', 'Art. 5, legge 152/1975'],
+ ['Zaino', 'Cosa sì,<br>cosa no.', 'Sì: acqua, cellulare carico, i numeri utili scritti su un foglio. No: oggetti che possono sembrare armi, fumogeni e petardi.', 'Amnesty International Italia'],
+ ['Foto e video', 'Puoi filmare.<br>Pubblica<br>con cura.', 'Fotografare e filmare la piazza si può, anche le forze dell\'ordine. Per pubblicare persone riconoscibili serve il loro consenso: sfoca i volti.', 'Amnesty International Italia · GDPR'],
+ ['Il nuovo decreto', 'Esserci<br>non è reato.', 'Il decreto sicurezza 190/2026 punisce la violenza organizzata, non chi partecipa a un corteo dove altri creano incidenti. Se succede, allontanati. Fino a 12 ore di fermo solo con elementi concreti, come oggetti che possono offendere o precedenti specifici.', 'D.L. 190/2026 (GU 22/10/2026), sintesi deQuo e ANSA'],
+ ['Se ti fermano', 'Resta<br>calmo.', 'Non opporti sul posto: potrai contestare dopo. Hai diritto a sapere il motivo, a un avvocato e ad avvisare una persona di fiducia. Non firmare niente che non capisci.', 'Amnesty International Italia']];
+const S = [
+`<div style="position:absolute;inset:0;background:#1c1b1f;color:#fff;overflow:hidden"><img src="${im('cr7/amnesty.jpg')}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%"><div style="position:absolute;inset:0;background:linear-gradient(#000e,#000a 40%,#0000 62%)"></div>
+<div style="position:absolute;left:80px;right:80px;top:160px"><p style="display:inline-block;font:800 38px T;text-transform:uppercase;background:#c8322a;padding:6px 18px;transform:rotate(-2deg)">Prima del 20 novembre</p><p style="font:800 150px/.86 T;text-transform:uppercase;margin-top:24px">Vai in piazza?<br><span style="color:#ff8f86">7 cose da sapere.</span></p></div>
+<p style="position:absolute;right:30px;top:1300px;font:600 20px C;color:#fffa">Cremona, 7 novembre · foto della community</p></div>`,
+...Q.map(([k, h, t, f], i) => `<div class="q" style="background:${i % 2 ? '#fff' : '#f6f3ee'}"><span class="big">${i + 1}</span><p class="k">${i + 1} · ${k}</p><h2>${h}</h2><p class="t">${t}</p><p class="f">Fonte: ${f}</p></div>`),
+`<div style="position:absolute;inset:0;background:#c8322a;color:#fff;padding:180px 80px 0"><p class="k" style="color:#ffd5d1">Numeri utili</p><p style="font:800 96px/.95 T;text-transform:uppercase;margin-top:14px">Emergenze 112</p><p style="font:600 38px/1.3 C;margin-top:14px">Assistenza legale in piazza:<br><b style="font:800 56px T">HubForDefenders +39 353 495 3606</b></p>
+<p style="font:800 76px/.95 T;text-transform:uppercase;margin-top:50px">Condividi con chi va in piazza il 20.</p>
+<div style="display:inline-flex;align-items:center;gap:22px;margin-top:34px;background:#fff;color:#1c1b1f;padding:18px 32px;border-radius:60px;font:800 46px T"><span style="background:#c8322a;color:#fff;border-radius:40px;padding:4px 20px;font-size:36px">+ Segui</span>@mappadellarivolta</div>
+<p style="font:600 28px C;margin-top:24px">♥ Gratis e senza pubblicità: se puoi, sostienila con un caffè.</p>
+<p style="position:absolute;left:80px;right:80px;bottom:46px;font:600 22px/1.4 C;color:#ffe1de">Informazioni generali, non consulenza legale. Fonti: Costituzione; legge 152/1975; D.L. 190/2026; Amnesty International Italia, guida al diritto di protesta. La mappa riporta informazioni pubbliche con la loro fonte.</p></div>`];
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
+for (let i = 0; i < S.length; i++) { const d = i === 0 || i === S.length - 1; await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${S[i]}<div class="m" style="color:${d ? '#fff' : '#1c1b1f'}"><i style="${i === S.length - 1 ? 'background:#fff' : ''}"></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready);
+  const f = await p.evaluate(() => { const t = document.querySelector('p.t'), fr = document.querySelector('.f'); return t && fr ? t.getBoundingClientRect().bottom > fr.getBoundingClientRect().top - 10 : false; }); if (f) console.log('SOVRAPP', i + 1);
+  const o = await p.evaluate(() => Math.max(...[...document.querySelectorAll('p')].map((e) => e.getBoundingClientRect().bottom))); if (o > 1345) console.log('FUORI', i + 1);
+  await p.screenshot({ path: `out/dir-${String(i + 1).padStart(2, '0')}.png` }); }
+await b.close();
