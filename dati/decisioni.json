@@ -3526,5 +3526,502 @@
       "https://www.quotidiano.net/cronaca/sciopero-generale-venerdi-30-ottobre-manifestazioni-quali-citta-e-ora-jlg7ryc1"
     ],
     "deciso_il": "2026-10-26"
+  },
+  {
+    "id": "2026-11-10-bari-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:25",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11 (sito ufficiale): sit-in lavoratori Amtab il 10/11 davanti alla sede del Comune di Bari, Filt Cgil, Fit Cisl, Uiltrasporti. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-10-grottammare-sciopero_categoria-01",
+    "aggiornato_il": "2026-11-10T06:00:26",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero di intera giornata FP CGIL all'Anffas di Grottammare (AP) il 10/11. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-10-taranto-sciopero_categoria-01",
+    "aggiornato_il": "2026-11-10T06:00:26",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero di intera giornata Kyma Ambiente a Taranto il 10/11, Fp Cgil, Nidil Cgil, Fit Cisl, Uiltrasporti. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-10-campi-bisenzio-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:25",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: presidio 10/11 dalle 10.30 alle 12 alla Chiesa dell'Autostrada, uscita Firenze Nord (Campi Bisenzio), con sciopero autostradale regionale Filt, Fit, Uiltrasporti Toscana.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-10-messina-sciopero_categoria-01",
+    "aggiornato_il": "2026-11-10T06:00:26",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero di 4 ore, dalle 16 alle 20, del personale ATM Messina il 10/11, Filt Cgil e Fit Cisl. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-11-bari-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:26",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero nazionale call center CRM/BPO dell'11/11 (Slc, Fistel, Uilfpc) con mobilitazioni territoriali a Bari. Luogo e ora non indicati: posizione indicativa.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-11-catanzaro-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:27",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero nazionale call center CRM/BPO dell'11/11 (Slc, Fistel, Uilfpc) con mobilitazioni territoriali a Catanzaro. Luogo e ora non indicati: posizione indicativa.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-11-palermo-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:27",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero nazionale call center CRM/BPO dell'11/11 (Slc, Fistel, Uilfpc) con mobilitazioni territoriali a Palermo. Luogo e ora non indicati: posizione indicativa.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-11-torino-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:27",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sciopero nazionale call center CRM/BPO dell'11/11 (Slc, Fistel, Uilfpc) con mobilitazioni territoriali a Torino. Luogo e ora non indicati: posizione indicativa.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-12-bari-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:27",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: mobilitazione regionale sanità pubblica e privata il 12/11 davanti alla Prefettura di Bari, FP CGIL, CISL FP e UIL FPL Puglia. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-12-bergamo-corteo-01",
+    "aggiornato_il": "2026-11-10T06:00:28",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: sit-in e corteo dei vigili del fuoco il 12/11 alle 10 dal comando di via Codussi alla Prefettura di Bergamo, Fp Cgil VVF, Fns Cisl, Uil Fp VVF.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-14-bologna-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:28",
+    "azione": "approva",
+    "motivo": "Calendario CGIL 9-15/11: presidio farmacie private il 14/11 in piazza del Nettuno a Bologna dalle 13 alle 15, Filcams Cgil Bologna. Nessuna revoca indicata.",
+    "fonti_controllate": [
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-11-cagliari-presidio-01",
+    "aggiornato_il": "2026-11-10T06:00:26",
+    "azione": "approva",
+    "motivo": "Sardinia Post (9/11): sit-in l'11/11 in piazza Palazzo davanti alla Prefettura di Cagliari dalle 10.30 alle 13, Slc, Fistel, Uilfpc; il calendario CGIL conferma le mobilitazioni a Cagliari.",
+    "fonti_controllate": [
+      "https://sardiniapost.it/economia/call-center-a-rischio-un-lavoratore-su-tre-in-sardegna-i-sindacati-proclamano-lo-sciopero",
+      "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7"
+    ],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-12-22-cassino-altro-01",
+    "aggiornato_il": "2026-11-03T22:22:51",
+    "azione": "sospetto",
+    "motivo": "Avviso di occupazione: solo un moderatore umano può verificarlo. La fonte è il profilo Instagram di una scuola, non una fonte giornalistica o istituzionale; nessuna conferma trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10"
+  },
+  {
+    "id": "2026-11-10-siracusa-assemblea-01",
+    "aggiornato_il": "2026-11-08T11:50:28",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO riscritto. Resta da verificare: fonte solo Instagram.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Assemblea pubblica con OSA nazionale"
+    }
+  },
+  {
+    "id": "2026-11-13-perugia-corteo-01",
+    "aggiornato_il": "2026-11-09T17:26:49",
+    "azione": "correggi",
+    "motivo": "Tolto il punto esclamativo dallo slogan. Resta da verificare: fonte solo Instagram, organizzatori generici.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo \"Fuori Eurochocolate da Perugia\""
+    }
+  },
+  {
+    "id": "2026-11-14-bolzano-corteo-01",
+    "aggiornato_il": "2026-11-08T19:58:50",
+    "azione": "correggi",
+    "motivo": "Nome dell'iniziativa in MAIUSCOLO riscritto. Resta da verificare: fonte solo Instagram.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo \"Rivolta degli alberi\""
+    }
+  },
+  {
+    "id": "2026-11-20-bari-corteo-01",
+    "aggiornato_il": "2026-11-07T16:33:56",
+    "azione": "correggi",
+    "motivo": "Titolo e organizzatori in MAIUSCOLO riscritti. Resta da verificare: fonte solo Instagram, nessuna conferma di stampa trovata.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\"",
+      "organizzatori": [
+        "Unione degli Studenti",
+        "Unione degli Universitari",
+        "Rete Puglia",
+        "CGIL"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-20-bolzano-sciopero_generale-01",
+    "aggiornato_il": "2026-11-08T19:45:57",
+    "azione": "correggi",
+    "motivo": "Manifestazione locale in piazza della Vittoria: tipo corteo e titolo descrittivo. Resta da verificare: fonte solo Instagram, nessun organizzatore.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale"
+    }
+  },
+  {
+    "id": "2026-11-10-torino-presidio-01",
+    "aggiornato_il": "2026-11-02T09:39:28",
+    "azione": "correggi",
+    "motivo": "Titolo con MAIUSCOLO, punto esclamativo e prima persona plurale riscritto in forma descrittiva.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Presidio \"Ciclabile umana\" per la sicurezza stradale",
+      "organizzatori": [
+        "Ciclabile Umana"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-17-torino-presidio-01",
+    "aggiornato_il": "2026-11-02T09:39:29",
+    "azione": "correggi",
+    "motivo": "Titolo con MAIUSCOLO, punto esclamativo e prima persona plurale riscritto in forma descrittiva.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Presidio \"Ciclabile umana\" per la sicurezza stradale",
+      "organizzatori": [
+        "Ciclabile Umana"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-milano-assemblea-01",
+    "aggiornato_il": "2026-11-01T20:37:02",
+    "azione": "correggi",
+    "motivo": "Titolo, organizzatori e luogo in MAIUSCOLO riscritti.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Colazione antisfratto contro sfratti e sgomberi",
+      "organizzatori": [
+        "Spazio anarchico Bruzzi Malatesta"
+      ],
+      "luogo": "Spazio anarchico Bruzzi Malatesta, via Torricelli 19"
+    }
+  },
+  {
+    "id": "2026-11-20-venezia-sciopero_generale-01",
+    "aggiornato_il": "2026-11-07T14:39:04",
+    "azione": "correggi",
+    "motivo": "Titolo di una sola parola, non descrittivo: riscritto.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Sciopero generale CGIL contro il carovita"
+    }
+  },
+  {
+    "id": "2026-11-20-reggio-calabria-corteo-01",
+    "aggiornato_il": "2026-11-04T12:27:56",
+    "azione": "correggi",
+    "motivo": "Manifestazione locale per lo sciopero CGIL: tipo corretto in corteo, come le altre quattro piazze calabresi dello stesso comunicato.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "tipo": "corteo"
+    }
+  },
+  {
+    "id": "2026-11-28-roma-corteo-01",
+    "aggiornato_il": "2026-10-29T00:47:28",
+    "azione": "correggi",
+    "motivo": "La fonte era un link di reindirizzamento di Google: sostituito con l'indirizzo diretto contenuto nel link stesso.",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "fonte": "https://nonunadimeno.wordpress.com/2026/10/24/20-25-28-nov-2026-in-tutta-italia-la-settimana-degli-stati-generali-dellautodeterminazione/"
+    }
+  },
+  {
+    "id": "2026-11-20-roma-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:11",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-milano-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:11",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-bologna-corteo-02",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-napoli-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-salerno-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-bergamo-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-la-spezia-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-siracusa-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-palermo-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:12",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-l-aquila-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-teramo-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-pescara-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-perugia-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-siena-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-pisa-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-ferrara-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:00",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-padova-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:20",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-trieste-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:20",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-udine-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:20",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
+  },
+  {
+    "id": "2026-11-20-lucca-corteo-01",
+    "aggiornato_il": "2026-11-06T12:33:20",
+    "azione": "correggi",
+    "motivo": "Titolo in MAIUSCOLO con nome della rete riscritto in forma descrittiva (gli organizzatori restano nel loro campo).",
+    "fonti_controllate": [],
+    "deciso_il": "2026-11-10",
+    "campi": {
+      "titolo": "Corteo per lo sciopero studentesco \"Youth Strike\""
+    }
   }
 ]
