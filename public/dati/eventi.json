@@ -2,266 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-10-bari-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Sit-in dei lavoratori Amtab davanti al Comune di Bari",
-      "data": "2026-11-10",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Bari",
-      "provincia": "BA",
-      "regione": "Puglia",
-      "luogo": "Sede del Comune (Palazzo di Città)",
-      "lat": 41.1269,
-      "lng": 16.87,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "FILT-CGIL",
-        "FIT-CISL",
-        "UILTRASPORTI"
-      ],
-      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:37",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-grottammare-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero dei lavoratori Anffas di Grottammare",
-      "data": "2026-11-10",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Grottammare",
-      "provincia": "AP",
-      "regione": "Marche",
-      "luogo": "",
-      "lat": 42.989,
-      "lng": 13.864,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FP-CGIL"
-      ],
-      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:38",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-taranto-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero dei lavoratori di Kyma Ambiente",
-      "data": "2026-11-10",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Taranto",
-      "provincia": "TA",
-      "regione": "Puglia",
-      "luogo": "",
-      "lat": 40.4644,
-      "lng": 17.247,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FP-CGIL",
-        "NIDIL-CGIL",
-        "FIT-CISL",
-        "UILTRASPORTI"
-      ],
-      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:39",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-torino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio \"Ciclabile umana\" per la sicurezza stradale",
-      "data": "2026-11-10",
-      "ora_inizio": "07:45",
-      "ora_fine": "08:30",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "via balbo",
-      "lat": 45.07214,
-      "lng": 7.69697,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Ciclabile Umana"
-      ],
-      "fonte": "https://www.instagram.com/p/DfNEpaqiLVq",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:45",
-      "gruppo": "g-2917f3998712",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-cosenza-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero Busitalia Rail Service Calabria",
-      "data": "2026-11-10",
-      "ora_inizio": "09:59",
-      "ora_fine": "13:59",
-      "comune": "Cosenza",
-      "provincia": "CS",
-      "regione": "Calabria",
-      "luogo": "",
-      "lat": 39.2983,
-      "lng": 16.2537,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FAISA-CISAL"
-      ],
-      "fonte": "https://scioperiitalia.it/sciopero/2026-11-10-mezzi-pubblici-personale-soc-busitalia-rail-service-b-u-8619",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-27T14:30:35",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-campi-bisenzio-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Presidio dei lavoratori autostradali per la sicurezza",
-      "data": "2026-11-10",
-      "ora_inizio": "10:30",
-      "ora_fine": "12:00",
-      "comune": "Campi Bisenzio",
-      "provincia": "FI",
-      "regione": "Toscana",
-      "luogo": "Chiesa dell'Autostrada del Sole, uscita Firenze Nord",
-      "lat": 43.81,
-      "lng": 11.183,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "FILT-CGIL Toscana",
-        "FIT-CISL Toscana",
-        "UILTRASPORTI Toscana"
-      ],
-      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:39",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-messina-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero di 4 ore del personale ATM di Messina",
-      "data": "2026-11-10",
-      "ora_inizio": "16:00",
-      "ora_fine": "20:00",
-      "comune": "Messina",
-      "provincia": "ME",
-      "regione": "Sicilia",
-      "luogo": "",
-      "lat": 38.1938,
-      "lng": 15.554,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILT-CGIL",
-        "FIT-CISL"
-      ],
-      "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:40",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-siracusa-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Assemblea pubblica con OSA nazionale",
-      "data": "2026-11-10",
-      "ora_inizio": "17:30",
-      "ora_fine": "20:00",
-      "comune": "Siracusa",
-      "provincia": "SR",
-      "regione": "Sicilia",
-      "luogo": "Via S. Pietro 26",
-      "lat": 37.06298,
-      "lng": 15.2947,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "OSA Siracusa",
-        "OSA Nazionale",
-        "OSA"
-      ],
-      "fonte": "https://www.instagram.com/p/DfaeUNnoPGf/?dlrf=MXdsbGN1MzZ0aW5tMw==",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:43",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-10-pisa-altro-01",
-      "tipo": "altro",
-      "titolo": "Mostra fotografica benefit Gaza",
-      "data": "2026-11-10",
-      "ora_inizio": "19:00",
-      "ora_fine": "00:00",
-      "comune": "Pisa",
-      "provincia": "PI",
-      "regione": "Toscana",
-      "luogo": "Via Pietro gori",
-      "lat": 43.71325,
-      "lng": 10.40289,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Associazione cantiere sanbernardo"
-      ],
-      "fonte": "https://www.instagram.com/p/DfWj3wbs_Ds/?mdxt=MXdjNnk5cDlrMWMyZg==",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-05T19:00:44",
-      "gruppo": "g-e52be23d2395",
-      "sottotipo": "Mostra fotografica+concerto",
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-10-roma-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero del personale SBB Cargo Italia (trasporto merci ferroviario)",
-      "data": "2026-11-10",
-      "ora_inizio": "21:00",
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILT-CGIL"
-      ],
-      "fonte": "https://mit.gov.it/node/124",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-17T01:27:47",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-11-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale dei call center (settore CRM/BPO)",
@@ -921,6 +661,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-14-piacenza-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Staffetta Antifascista - Voci Infrangibili contro ogni fascismo",
+      "data": "2026-11-14",
+      "ora_inizio": "10:30",
+      "ora_fine": null,
+      "comune": "Piacenza",
+      "provincia": "PC",
+      "regione": "Emilia-Romagna",
+      "luogo": "Stazione FS 🚉",
+      "lat": 45.0516,
+      "lng": 9.70468,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Coro Infrangibile"
+      ],
+      "fonte": "https://www.facebook.com/share/p/19pMHm1ViR/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-10T22:13:01",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-14-bologna-presidio-01",
       "tipo": "presidio",
       "titolo": "Presidio dei lavoratori delle farmacie private",
@@ -994,7 +759,7 @@
       "aggiornato_il": "2026-11-06T12:30:35",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-14-milano-corteo-02",
@@ -1728,7 +1493,7 @@
       "aggiornato_il": "2026-11-10T02:21:57",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-mantova-corteo-01",
@@ -2697,6 +2462,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-verbania-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Studenti e insegnanti scioperano per CaroVita, No guerra, soldi alla Scuola pubblica.",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Verbania",
+      "provincia": "VB",
+      "regione": "Piemonte",
+      "luogo": "Intra Piazza Ranzoni lungolago",
+      "lat": 45.93556,
+      "lng": 8.57467,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.verbaniamilleventi.org/si-prepara-lo-sciopero-generale-del-20-novembre/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-10T21:16:39",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-rimini-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale CGIL",
@@ -2769,7 +2557,7 @@
       "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-forli-presidio-01",
@@ -3984,8 +3772,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-10T20:03:43",
+  "ultimo_aggiornamento": "2026-11-10T22:13:01",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-10T19:37:38Z"
+  "copia_del": "2026-11-11T00:33:59Z"
 }
