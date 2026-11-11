@@ -277,6 +277,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-11-torino-presidio-02",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-11",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:20",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-11-pisa-altro-01",
       "tipo": "altro",
       "titolo": "Mostra fotografica benefit Gaza",
@@ -430,6 +457,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-12-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-12",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:20",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-12-pisa-altro-01",
       "tipo": "altro",
       "titolo": "Mostra fotografica benefit Gaza",
@@ -549,6 +603,58 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-04T11:57:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-13-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-13",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:20",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-13-roma-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Studenti e Lavoratori Uniti per un nuovo 68'",
+      "data": "2026-11-13",
+      "ora_inizio": "17:30",
+      "ora_fine": "19:45",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Via Goito 35B",
+      "lat": 41.9056,
+      "lng": 12.50085,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhGI7aOy_r/?xtok=NjNmd2NzNW5yM2Vo",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T21:36:26",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -711,31 +817,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-14-roma-corteo-02",
-      "tipo": "corteo",
-      "titolo": "Climate Pride - Rete per la Giustizia Climatica Planetaria",
-      "data": "2026-11-14",
-      "ora_inizio": "14:00",
-      "ora_fine": "23:00",
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "Piazza Vittorio Emanuele II",
-      "lat": 41.89458,
-      "lng": 12.50432,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Climate Pride piattaforma di oltre 100 associazioni"
-      ],
-      "fonte": "https://www.instagram.com/climatepride/",
-      "stato": "da_verificare",
-      "conferme": 2,
-      "aggiornato_il": "2026-11-11T10:41:50",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-14-verona-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo silenzioso con il sudario per Gaza",
@@ -812,6 +893,31 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-14-roma-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Climate Pride - Rete per la Giustizia Climatica Planetaria",
+      "data": "2026-11-14",
+      "ora_inizio": "14:00",
+      "ora_fine": "23:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Piazza Vittorio Emanuele II",
+      "lat": 41.89458,
+      "lng": 12.50432,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Climate Pride piattaforma di oltre 100 associazioni"
+      ],
+      "fonte": "https://www.instagram.com/climatepride/",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-11T17:50:09",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-14-parma-corteo-02",
       "tipo": "corteo",
       "titolo": "Contromanifestazione al \"corteo per la remigrazione\"",
@@ -856,6 +962,60 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-11T01:51:38",
       "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-14-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-14",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:20",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-15-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-15",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:20",
+      "gruppo": "g-1d4d14d64c5a",
       "sottotipo": null,
       "ci_saro": null
     },
@@ -965,6 +1125,33 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-16-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-16",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:21",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-17-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Manifestazione dei tassisti a Napoli",
@@ -1019,6 +1206,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-17-torino-presidio-02",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-17",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:21",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-18-milano-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Colazione antisfratto contro sfratti e sgomberi",
@@ -1042,6 +1256,33 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-18-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-18",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:21",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-19-bologna-presidio-01",
@@ -1069,6 +1310,33 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-06T12:31:02",
       "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-19-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-19",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:21",
+      "gruppo": "g-1d4d14d64c5a",
       "sottotipo": null,
       "ci_saro": null
     },
@@ -1439,11 +1707,11 @@
       ],
       "fonte": "https://www.facebook.com/share/p/1DuwJRteT7/ + https://www.instagram.com/p/DfCMR4GDbDY/?img_index=2&vrfl=NWpicncwd2NrY2Rh",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-11T13:54:49",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-reggio-emilia-sciopero_generale-01",
@@ -1544,33 +1812,6 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
-    },
-    {
-      "id": "2026-11-20-salerno-corteo-02",
-      "tipo": "corteo",
-      "titolo": "Contro le guerre",
-      "data": "2026-11-20",
-      "ora_inizio": "09:00",
-      "ora_fine": "15:00",
-      "comune": "Salerno",
-      "provincia": "SA",
-      "regione": "Campania",
-      "luogo": "Piazza Vittorio Veneto",
-      "lat": 40.67509,
-      "lng": 14.77215,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Link Coordinamento Universitario",
-        "Unione degli Studenti",
-        "Rete della Conoscenza"
-      ],
-      "fonte": "https://www.instagram.com/p/DfmMnKWKHyA",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-11T15:08:05",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -2244,7 +2485,7 @@
       "aggiornato_il": "2026-11-10T19:10:52",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-trieste-corteo-01",
@@ -2429,26 +2670,28 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-20-pavia-corteo-01",
+      "id": "2026-11-20-salerno-corteo-02",
       "tipo": "corteo",
-      "titolo": "Corteo per Sciopero generale CGIL",
+      "titolo": "Contro le guerre",
       "data": "2026-11-20",
-      "ora_inizio": "09:30",
-      "ora_fine": null,
-      "comune": "Pavia",
-      "provincia": "PV",
-      "regione": "Lombardia",
-      "luogo": "Piazzale della stazione",
-      "lat": 45.1888,
-      "lng": 9.1449,
+      "ora_inizio": "09:00",
+      "ora_fine": "15:00",
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Piazza Vittorio Veneto",
+      "lat": 40.67509,
+      "lng": 14.77215,
       "posizione_approssimativa": 0,
       "organizzatori": [
-        "CGIL"
+        "Link Coordinamento Universitario",
+        "Unione degli Studenti",
+        "Rete della Conoscenza"
       ],
-      "fonte": "https://www.instagram.com/p/DfigcSnjOn_/?img_index=2&rpxt=MW83c2pyMnByYXdzcw%3D%3D",
-      "stato": "da_verificare",
+      "fonte": "https://www.instagram.com/p/DfmMnKWKHyA",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-11T12:02:29",
+      "aggiornato_il": "2026-11-11T17:51:49",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -2682,7 +2925,7 @@
       "aggiornato_il": "2026-11-11T01:55:27",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-pescara-corteo-02",
@@ -2762,6 +3005,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-pavia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per Sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Pavia",
+      "provincia": "PV",
+      "regione": "Lombardia",
+      "luogo": "Piazzale della stazione",
+      "lat": 45.1888,
+      "lng": 9.1449,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.instagram.com/p/DfigcSnjOn_/?img_index=2&rpxt=MW83c2pyMnByYXdzcw%3D%3D",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:51:28",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-ascoli-piceno-corteo-01",
       "tipo": "corteo",
       "titolo": "Sciopero generale Cgil",
@@ -2802,12 +3070,39 @@
       "posizione_approssimativa": 0,
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfW6PXBiKtw/?mdxt=aHY1dDdoejBlZnhw",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:44",
+      "aggiornato_il": "2026-11-11T17:51:20",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-torino-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Casa del popolo in piazza",
+      "data": "2026-11-20",
+      "ora_inizio": "16:03",
+      "ora_fine": "19:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Castello",
+      "lat": 45.07067,
+      "lng": 7.68623,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Assemblea di collettivi",
+        "sindacati di base",
+        "realtà del territorio contro il riarmo e per la giistizia so"
+      ],
+      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T17:49:21",
+      "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -3585,9 +3880,9 @@
         "CISL Medici"
       ],
       "fonte": "https://www.ilpoliticoweb.it/sanita-piazza-5-dicembre-manovra/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-11T06:00:26",
+      "aggiornato_il": "2026-11-11T17:51:02",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -3903,8 +4198,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-11T15:08:05",
+  "ultimo_aggiornamento": "2026-11-11T21:36:26",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-11T15:03:42Z"
+  "copia_del": "2026-11-11T21:51:18Z"
 }
