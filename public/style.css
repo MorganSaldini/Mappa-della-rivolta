@@ -476,7 +476,7 @@ label.spunta input { width: auto; min-height: auto; }
 /* ===== Sfondo: corteo visto dal drone (illustrazione in sfondo-drone.js) ===== */
 body { background: transparent; }
 html { background: var(--carta); }
-#sfondo-drone { position: fixed; inset: 0; z-index: -2; display: block; }
+#sfondo-drone { position: fixed; inset: 0; z-index: -2; display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; filter: blur(1.5px) saturate(.9); transform: scale(1.03); pointer-events: none; }
 .sfondo-velo {
   position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background: linear-gradient(to bottom, rgba(246,243,238,.12) 0, rgba(246,243,238,.50) 40vh, rgba(246,243,238,.80) 100%);
