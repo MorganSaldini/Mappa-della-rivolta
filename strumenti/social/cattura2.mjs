@@ -20,4 +20,4 @@ export async function apri(b, { w = 390, h = 844 } = {}) {
     return r.abort(); });
   await ctx.addInitScript(() => { let _L; Object.defineProperty(window, 'L', { configurable: true, get() { return _L; }, set(v) { _L = v; try { v.Map.addInitHook(function () { window.__mappa = this; }); } catch (e) {} } }); }); const p = await ctx.newPage(); await p.goto('http://localhost:8765/index.html'); await p.waitForTimeout(2500); return p;
 }
-if (process.argv[2] === 'prova') { const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' }); const p = await apri(b); await p.screenshot({ path: 'out/sito-1.png' }); await p.screenshot({ path: 'out/sito-full.png', fullPage: true }); console.log(await p.evaluate(() => document.body.scrollHeight)); await b.close(); }
+if (process.argv[2] === 'prova') { const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' }); const p = await apri(b); await p.screenshot({ path: 'out/sito-1.png' }); await p.screenshot({ path: 'out/sito-full.png', fullPage: true }); console.log(await p.evaluate(() => document.body.scrollHeight)); await b.close(); }
