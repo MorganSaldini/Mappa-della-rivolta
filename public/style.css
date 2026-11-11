@@ -472,3 +472,18 @@ label.spunta input { width: auto; min-height: auto; }
 @media (prefers-reduced-motion: reduce) { .mk--oggi::after { animation: none; opacity: .4; transform: scale(1.1); } }
 /* Apertura e chiusura morbida dei giorni nell'elenco */
 .giorno-box > summary { transition: background-color .2s ease; }
+
+/* ===== Sfondo: corteo visto dal drone (illustrazione in sfondo-drone.js) ===== */
+body { background: transparent; }
+html { background: var(--carta); }
+#sfondo-drone { position: fixed; inset: 0; z-index: -2; display: block; }
+.sfondo-velo {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(246,243,238,.12) 0, rgba(246,243,238,.50) 40vh, rgba(246,243,238,.80) 100%);
+}
+/* Testi della parte alta leggibili sopra il corteo */
+.intro { background: rgba(255,255,255,.82); border-radius: var(--raggio); padding: 14px 16px; margin-top: 14px; backdrop-filter: blur(3px); }
+.cerca, .contatori, .filtri { background: rgba(255,255,255,.88); border-radius: var(--raggio); padding: 10px 12px; }
+.contatori, .cerca { margin-top: 8px; }
+.elenco, .perche, .non-trovi, .sostieni, .lato__box { background: rgba(255,255,255,.92); }
+.perche { border-radius: var(--raggio); padding: 14px 16px; }
