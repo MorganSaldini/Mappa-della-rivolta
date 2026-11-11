@@ -184,6 +184,7 @@
     }
     controlloFondo.addTo(mappa);
     mappa.on('zoomend', aggiornaFondo);
+    mappa.on('zoomend', () => setTimeout(() => document.dispatchEvent(new CustomEvent('mappa:zoom')), 30));
     aggiornaFondo();
     mappa.on('click focus', () => mappa.scrollWheelZoom.enable());
     gruppo = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45, removeOutsideVisibleBounds: false }) : L.layerGroup();
@@ -210,7 +211,7 @@
     const t = TIPI[tipoDi(e)] || TIPI.altro;
     return L.divIcon({
       className: '',
-      html: `<div class="mk mk--${esc(e.stato)}" style="--c:${t.colore}"><span>${t.icona}</span></div>`,
+      html: `<div class="mk mk--${esc(e.stato)}${e.data === oggiRoma() && e.stato !== 'annullato' ? ' mk--oggi' : ''}" style="--c:${t.colore}"><span>${t.icona}</span></div>`,
       iconSize: [34, 34], iconAnchor: [5, 34], popupAnchor: [12, -32],
     });
   }
@@ -590,6 +591,7 @@
       html += '</details>';
     });
     $('#elenco').innerHTML = html;
+    document.dispatchEvent(new CustomEvent('mappa:disegnata'));
   }
 
   // Legenda
