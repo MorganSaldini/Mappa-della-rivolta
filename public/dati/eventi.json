@@ -191,7 +191,7 @@
       "aggiornato_il": "2026-11-10T19:10:41",
       "gruppo": "ag-sciopero-call-center-2026-11-11",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-11-matera-presidio-01",
@@ -683,7 +683,7 @@
       "aggiornato_il": "2026-11-11T01:51:12",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-14-bologna-presidio-01",
@@ -706,6 +706,31 @@
       "stato": "verificato",
       "conferme": 0,
       "aggiornato_il": "2026-11-10T19:10:42",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-14-roma-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Climate Pride - Rete per la Giustizia Climatica Planetaria",
+      "data": "2026-11-14",
+      "ora_inizio": "14:00",
+      "ora_fine": "23:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Piazza Vittorio Emanuele II",
+      "lat": 41.89458,
+      "lng": 12.50432,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Climate Pride piattaforma di oltre 100 associazioni"
+      ],
+      "fonte": "https://www.instagram.com/climatepride/",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-11T10:41:50",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -803,11 +828,11 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-11-07T14:38:17",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-14-bolzano-corteo-01",
@@ -1396,6 +1421,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-20-macerata-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Manifestazione provinciale per lo sciopero generale del 20 novembre",
+      "data": "2026-11-20",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Macerata",
+      "provincia": "MC",
+      "regione": "Marche",
+      "luogo": "Piazza Annessione",
+      "lat": 43.30115,
+      "lng": 13.4469,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.facebook.com/share/p/1DuwJRteT7/ + https://www.instagram.com/p/DfCMR4GDbDY/?img_index=2&vrfl=NWpicncwd2NrY2Rh",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T13:54:49",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-reggio-emilia-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero Generale Nazionale",
@@ -1494,6 +1544,33 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-20-salerno-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Contro le guerre",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": "15:00",
+      "comune": "Salerno",
+      "provincia": "SA",
+      "regione": "Campania",
+      "luogo": "Piazza Vittorio Veneto",
+      "lat": 40.67509,
+      "lng": 14.77215,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Link Coordinamento Universitario",
+        "Unione degli Studenti",
+        "Rete della Conoscenza"
+      ],
+      "fonte": "https://www.instagram.com/p/DfmMnKWKHyA",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T15:08:05",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-milao-sciopero_generale-01",
@@ -1747,7 +1824,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-bologna-corteo-02",
@@ -2352,6 +2429,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-pavia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per Sciopero generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Pavia",
+      "provincia": "PV",
+      "regione": "Lombardia",
+      "luogo": "Piazzale della stazione",
+      "lat": 45.1888,
+      "lng": 9.1449,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.instagram.com/p/DfigcSnjOn_/?img_index=2&rpxt=MW83c2pyMnByYXdzcw%3D%3D",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-11T12:02:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-rimini-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale CGIL",
@@ -2607,7 +2709,7 @@
       "aggiornato_il": "2026-11-11T01:48:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-agrigento-corteo-01",
@@ -3350,7 +3452,7 @@
       "aggiornato_il": "2026-11-10T19:10:46",
       "gruppo": "g-dfbff6e9740c",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-12-03-milano-altro-01",
@@ -3801,8 +3903,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-11T06:00:26",
+  "ultimo_aggiornamento": "2026-11-11T15:08:05",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-11T07:00:23Z"
+  "copia_del": "2026-11-11T15:03:42Z"
 }
