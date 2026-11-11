@@ -1,147 +1,6 @@
 [
   {
     "tipo": "presidio",
-    "titolo": "Sit-in dei lavoratori Amtab davanti al Comune di Bari",
-    "data": "2026-11-10",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "Sede del Comune (Palazzo di Città)",
-    "lat": 41.1269,
-    "lng": 16.87,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILTRASPORTI"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "TPL Amtab: criticità organizzative e relazioni sindacali. Orario non indicato."
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori autostradali per la sicurezza",
-    "data": "2026-11-10",
-    "ora_inizio": "10:30",
-    "ora_fine": "12:00",
-    "comune": "Campi Bisenzio",
-    "provincia": "FI",
-    "regione": "Toscana",
-    "luogo": "Chiesa dell'Autostrada del Sole, uscita Firenze Nord",
-    "lat": 43.81,
-    "lng": 11.183,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FILT-CGIL Toscana",
-      "FIT-CISL Toscana",
-      "UILTRASPORTI Toscana"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sciopero di 4 ore nel settore autostradale in Toscana dopo la morte di un operatore sulla A11."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero Busitalia Rail Service Calabria",
-    "data": "2026-11-10",
-    "ora_inizio": "09:59",
-    "ora_fine": "13:59",
-    "comune": "Cosenza",
-    "provincia": "CS",
-    "regione": "Calabria",
-    "luogo": "",
-    "lat": 39.2983,
-    "lng": 16.2537,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FAISA-CISAL"
-    ],
-    "fonte": "https://scioperiitalia.it/sciopero/2026-11-10-mezzi-pubblici-personale-soc-busitalia-rail-service-b-u-8619",
-    "note": "4 ore, trasporto pubblico locale, business unit Calabria"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero dei lavoratori Anffas di Grottammare",
-    "data": "2026-11-10",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Grottammare",
-    "provincia": "AP",
-    "regione": "Marche",
-    "luogo": "",
-    "lat": 42.989,
-    "lng": 13.864,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FP-CGIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sanità/assistenza, intera giornata, contro il licenziamento del rappresentante sindacale aziendale."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero di 4 ore del personale ATM di Messina",
-    "data": "2026-11-10",
-    "ora_inizio": "16:00",
-    "ora_fine": "20:00",
-    "comune": "Messina",
-    "provincia": "ME",
-    "regione": "Sicilia",
-    "luogo": "",
-    "lat": 38.1938,
-    "lng": 15.554,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "TPL, 4 ore dopo l'aggressione a un conducente; chiesta più sicurezza per autisti e lavoratori."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale SBB Cargo Italia (trasporto merci ferroviario)",
-    "data": "2026-11-10",
-    "ora_inizio": "21:00",
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "8 ore, dalle 21 del 10 alle 4:59 dell'11 novembre; nazionale, posizione indicativa"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero dei lavoratori di Kyma Ambiente",
-    "data": "2026-11-10",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Taranto",
-    "provincia": "TA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 40.4644,
-    "lng": 17.247,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FP-CGIL",
-      "NIDIL-CGIL",
-      "FIT-CISL",
-      "UILTRASPORTI"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Igiene ambientale, intera giornata, dopo mancato accordo in Prefettura sulla crisi aziendale."
-  },
-  {
-    "tipo": "presidio",
     "titolo": "Presidio per lo sciopero nazionale dei call center",
     "data": "2026-11-11",
     "ora_inizio": null,
@@ -1472,6 +1331,33 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "Intera giornata; treni 21 del 3-21 del 4; autostrade 22 del 3-22 del 4. Anche USI 1912: precari e atipici, escluso trasporti"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Manifestazione nazionale della sanità pubblica",
+    "data": "2026-12-05",
+    "ora_inizio": "15:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza Vittorio Emanuele II (arrivo in via dei Fori Imperiali)",
+    "lat": 41.8945,
+    "lng": 12.5054,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Anaao Assomed",
+      "Cimo-Fesmed",
+      "Aaroi-Emac",
+      "FP CGIL",
+      "CISL Medici",
+      "Nursind",
+      "Nursing Up",
+      "UDU",
+      "Rete della Conoscenza - Link"
+    ],
+    "fonte": "https://www.ilpoliticoweb.it/sanita-piazza-5-dicembre-manovra/",
+    "note": "Sciopero sanità con corteo nazionale contro la Manovra (26 sigle). Adesione UIL discordante tra fonti; vedi anche quifinanza.it sciopero-sanita-5-dicembre-2026"
   },
   {
     "tipo": "corteo",
