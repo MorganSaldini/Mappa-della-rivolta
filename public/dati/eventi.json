@@ -257,7 +257,7 @@
       "aggiornato_il": "2026-11-11T17:49:20",
       "gruppo": "g-1d4d14d64c5a",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-13-roma-assemblea-01",
@@ -541,7 +541,7 @@
       "aggiornato_il": "2026-11-12T00:03:29",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-14-parma-corteo-02",
@@ -2375,6 +2375,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-20-padova-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale CGIL",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Padova",
+      "provincia": "PD",
+      "regione": "Veneto",
+      "luogo": "Piazza Garibaldi",
+      "lat": 45.40928,
+      "lng": 11.87791,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.instagram.com/reel/DfmRpVgFA8s/?utm_source=ig_web_copy_link&psln=NTc4MTIwNjQ2YQ==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-12T09:31:36",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-rimini-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo per lo sciopero generale CGIL",
@@ -2599,11 +2624,11 @@
       ],
       "fonte": "https://www.instagram.com/p/DfhRRsZju7p/?srtk=MXhxbXFlbjEwMWs4Ng==",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-11T01:55:27",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 0
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-pescara-corteo-02",
@@ -3563,7 +3588,7 @@
       "aggiornato_il": "2026-11-11T17:51:02",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-12-09-torino-assemblea-01",
@@ -3876,8 +3901,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-12T00:29:52",
+  "ultimo_aggiornamento": "2026-11-12T09:31:36",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-12T02:50:19Z"
+  "copia_del": "2026-11-12T10:53:35Z"
 }
