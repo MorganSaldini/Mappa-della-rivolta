@@ -106,7 +106,7 @@
       "aggiornato_il": "2026-11-11T17:49:20",
       "gruppo": "g-1d4d14d64c5a",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-12-pisa-altro-01",
@@ -410,7 +410,7 @@
       ],
       "fonte": "https://www.facebook.com/share/p/19pMHm1ViR/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-11T01:51:12",
       "gruppo": null,
       "sottotipo": null,
@@ -440,6 +440,31 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-14-milano-corteo-03",
+      "tipo": "corteo",
+      "titolo": "Corteo contro Carovita/riarmo/repressione/genocidio",
+      "data": "2026-11-14",
+      "ora_inizio": "14:00",
+      "ora_fine": "18:00",
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazza Leonardo da vinci",
+      "lat": 45.47814,
+      "lng": 9.2248,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Milanoinpiazza"
+      ],
+      "fonte": "https://www.instagram.com/p/DfmbMtfgGm4/?dlrf=MWQyYzQ2amFqa2RjNQ==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-12T17:08:02",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-14-verona-corteo-01",
@@ -616,7 +641,7 @@
       "aggiornato_il": "2026-11-11T17:49:20",
       "gruppo": "g-1d4d14d64c5a",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-15-torino-presidio-01",
@@ -1340,6 +1365,29 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-11-20-lucca-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo per il caroviga di guerra",
+      "data": "2026-11-20",
+      "ora_inizio": "08:30",
+      "ora_fine": "11:40",
+      "comune": "Lucca",
+      "provincia": "LU",
+      "regione": "Toscana",
+      "luogo": "Piazza San Michele",
+      "lat": 43.84302,
+      "lng": 10.50258,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/Dfo2ntvoWhW/?vrfl=MXBrYXBtdTVucmM5Ng==",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-12T12:40:34",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-reggio-emilia-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero Generale Nazionale",
@@ -1460,6 +1508,59 @@
       "stato": "da_verificare",
       "conferme": 0,
       "aggiornato_il": "2026-11-12T00:29:52",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-ravenna-corteo-02",
+      "tipo": "corteo",
+      "titolo": "sciopero studentesco internazionale contro guerra, riarmo e leva",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Ravenna",
+      "provincia": "RA",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza San Francesco",
+      "lat": 44.41575,
+      "lng": 12.20005,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA (Opposizione Studentesca d'Alternativa)",
+        "Cambiare Rotta"
+      ],
+      "fonte": "https://www.instagram.com/p/De1sBLIAisI/?psln=OXJhcXV1ZWc3NnVx",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-12T14:35:10",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-palermo-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Sciopero Studentesco Internazionale Indipendente",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Palermo",
+      "provincia": "PA",
+      "regione": "Sicilia",
+      "luogo": "Piazza Crispi (Croci)",
+      "lat": 38.13034,
+      "lng": 13.3526,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Osa (Opposizione studentesca d’Alternativa)",
+        "Cambiare Rotta",
+        "Usb Scuola"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhlbZ3N7RK/?srtk=eW1kbXJqOWtpZHFv",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-12T15:37:14",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -2393,11 +2494,11 @@
       ],
       "fonte": "https://www.instagram.com/reel/DfmRpVgFA8s/?utm_source=ig_web_copy_link&psln=NTc4MTIwNjQ2YQ==",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-12T09:31:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -2496,7 +2597,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DfakWGhO_Pa/?dlrf=MTRzMnFtZzh6YjNmaw==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-11T01:55:03",
       "gruppo": null,
       "sottotipo": null,
@@ -3901,8 +4002,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-12T09:31:36",
+  "ultimo_aggiornamento": "2026-11-12T17:08:02",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-12T10:53:35Z"
+  "copia_del": "2026-11-12T18:48:35Z"
 }
