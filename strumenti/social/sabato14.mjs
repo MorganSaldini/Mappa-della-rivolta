@@ -1,26 +1,27 @@
-import fs from 'node:fs'; import { chromium } from 'playwright-core'; import { cssBase } from './motore.mjs';
+import fs from 'node:fs'; import { chromium } from 'playwright-core'; import { cssBase } from './motore.mjs'; import { ill } from './citta-svg.mjs';
 const bg = 'data:image/jpeg;base64,' + fs.readFileSync('foto30/brescia.jpg').toString('base64');
 const css = cssBase.replace('height:1920px', 'height:1350px') + `.m{top:70px}.k{font:700 34px T;letter-spacing:.12em;text-transform:uppercase;color:#c8322a}
 .tl{position:relative;margin-top:30px;padding-left:200px}.tl:before{content:'';position:absolute;left:150px;top:10px;bottom:10px;width:6px;background:#c8322a;border-radius:3px}
 .h{position:relative;margin-bottom:58px}.h u{position:absolute;left:-215px;top:4px;width:140px;text-align:right;font:800 62px T;text-decoration:none;color:#c8322a}
 .h:before{content:'';position:absolute;left:-63px;top:16px;width:26px;height:26px;border-radius:50%;background:#f6f3ee;border:6px solid #c8322a}
 .h b{display:block;font:800 80px/.95 T;text-transform:uppercase}.h span{display:block;font:600 42px/1.25 C;margin-top:6px}.h small{display:block;font:600 33px/1.3 C;color:#6b6770;margin-top:4px}
-.g{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}.c{background:#fff;border-radius:22px;padding:40px 34px;min-height:270px;border-left:10px solid #c8322a}.c b{display:block;font:800 74px/.95 T;text-transform:uppercase}.c span{display:block;font:600 37px/1.25 C;margin-top:10px}.c small{display:block;font:600 31px/1.3 C;color:#6b6770;margin-top:6px}`;
+.g{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}.c{background:#fff;border-radius:22px;overflow:hidden}.c .tx{padding:22px 28px 26px}.rw{display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:center;margin-bottom:34px}.rw .im{border-radius:20px;overflow:hidden}.rw u{display:block;font:800 52px T;color:#c8322a;text-decoration:none}.rw b{display:block;font:800 74px/.95 T;text-transform:uppercase}.rw span{display:block;font:600 36px/1.25 C;margin-top:6px}.rw small{display:block;font:600 29px/1.3 C;color:#6b6770;margin-top:4px}.c b{display:block;font:800 62px/.95 T;text-transform:uppercase}.c span{display:block;font:600 32px/1.2 C;margin-top:6px}.c small{display:block;font:600 27px/1.3 C;color:#6b6770;margin-top:6px}`;
 const paper = (k, tit, body) => `<div style="position:absolute;inset:0;background:#f6f3ee;color:#1c1b1f;padding:165px 80px 0"><p class="k">${k}</p><p style="font:800 104px/.9 T;text-transform:uppercase;margin-top:12px">${tit}</p>${body}</div>`;
+const riga = (k, o, c, l, n) => `<div class="rw"><div class="im">${ill(k, 250)}</div><div><u>${o}</u><b>${c}</b><span>${l}</span><small>${n}</small></div></div>`;
 const h = (o, c, l, n) => `<div class="h"><u>${o}</u><b>${c}</b><span>${l}</span>${n ? `<small>${n}</small>` : ''}</div>`;
 const S = [
 `<div style="position:absolute;inset:0;background:url(${bg}) center/cover"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,22,.3),rgba(20,18,22,.1) 30%,rgba(20,18,22,.94) 70%)"></div>
 <div style="position:absolute;left:80px;right:80px;bottom:110px;color:#fff"><p style="font:700 40px T;letter-spacing:.12em;text-transform:uppercase;color:#ff8f86">Domani, sabato 14</p><p style="font:800 156px/.86 T;text-transform:uppercase;margin-top:14px">Ora per<br>ora.</p><p style="font:600 44px/1.3 C;margin-top:26px">Dalle 10 del mattino a sera, 9 città in piazza. Scorri e scegli la tua.</p></div>`,
-paper('Mattina', 'Si parte presto', `<div class="tl" style="margin-top:56px">
-${h('10:00', 'Perugia', 'Piazza Grimana, fino alle 20', 'Costruiamo la città che vogliamo: associazioni, studenti, produttori locali')}
-${h('10:30', 'Piacenza', 'Stazione FS', 'Staffetta antifascista con il Coro Infrangibile')}
-${h('13:00', 'Bologna', 'Piazza del Nettuno, fino alle 15', 'Presidio di chi lavora nelle farmacie private (FILCAMS-CGIL)')}</div>`),
+paper('Mattina', 'Si parte presto', `<div style="margin-top:44px">
+${riga('perugia', '10:00', 'Perugia', 'Piazza Grimana, fino alle 20', 'Costruiamo la città che vogliamo')}
+${riga('piacenza', '10:30', 'Piacenza', 'Stazione FS', 'Staffetta antifascista con il Coro Infrangibile')}
+${riga('bologna', '13:00', 'Bologna', 'Piazza del Nettuno, fino alle 15', 'Presidio dei lavoratori delle farmacie private')}</div>`),
 paper('Le 14:00', 'Quattro cortei<br>alla stessa ora', `<div class="g">
-<div class="c"><b>Milano</b><span>Piazza Leonardo da Vinci</span><small>Contro il carovita</small></div>
-<div class="c"><b>Brescia</b><span>Largo Formentone</span><small>Contro il carovita</small></div>
-<div class="c"><b>Verona</b><span>Piazza Bra, fino alle 19</span><small>Corteo silenzioso per Gaza</small></div>
-<div class="c"><b>Roma</b><span>Piazza Vittorio, poi Circo Massimo</span><small>Climate Pride</small></div></div>
-<p style="font:600 42px/1.35 C;margin-top:48px">Il carovita è lo stesso motivo dello sciopero di venerdì 20. Sabato è un primo assaggio.</p>`),
+<div class="c"><div class="im">${ill('milano', 150)}</div><div class="tx"><b>Milano</b><span>Piazza Leonardo da Vinci</span><small>Contro il carovita</small></div></div>
+<div class="c"><div class="im">${ill('brescia', 150)}</div><div class="tx"><b>Brescia</b><span>Largo Formentone</span><small>Contro il carovita</small></div></div>
+<div class="c"><div class="im">${ill('verona', 150)}</div><div class="tx"><b>Verona</b><span>Piazza Bra, fino alle 19</span><small>Corteo silenzioso per Gaza</small></div></div>
+<div class="c"><div class="im">${ill('colosseo', 150)}</div><div class="tx"><b>Roma</b><span>Piazza Vittorio, poi Circo Massimo</span><small>Climate Pride</small></div></div></div>
+<p style="font:600 36px/1.35 C;margin-top:30px">Il carovita è lo stesso motivo dello sciopero di venerdì 20. Sabato è un primo assaggio.</p>`),
 paper('Pomeriggio', 'Fino a sera', `<div class="tl" style="margin-top:56px">
 ${h('15:00', 'Bolzano', 'Parco della Stazione', 'Corteo "Rivolta degli alberi"')}
 ${h('16:00', 'Torino', 'Piazza Castello, fino alle 19:30', 'Casa del popolo in piazza')}</div>
@@ -33,6 +34,6 @@ ${h('16:00', 'Torino', 'Piazza Castello, fino alle 19:30', 'Casa del popolo in p
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--lang=it-IT'] });
 const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
 for (let i = 0; i < S.length; i++) { const dk = i === 0 || i === 4; await p.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${S[i]}<div class="m" style="color:${dk ? '#fff' : '#1c1b1f'}"><i style="${i === 4 ? 'background:#fff' : ''}"></i>Mappa della Rivolta</div></body></html>`); await p.evaluate(() => document.fonts.ready);
-  const f = await p.evaluate(() => Math.max(...[...document.querySelectorAll('p,div.h,div.c,small')].map((e) => e.getBoundingClientRect().bottom))); if (f > 1330) console.log('FUORI', i + 1, f);
+  const f = await p.evaluate(() => Math.max(...[...document.querySelectorAll('p,div.h,div.c,div.rw,small')].map((e) => e.getBoundingClientRect().bottom))); if (f > 1330) console.log('FUORI', i + 1, f);
   await p.screenshot({ path: `out/s14-0${i + 1}.png` }); }
 await b.close(); console.log('ok');
