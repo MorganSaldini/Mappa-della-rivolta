@@ -22,9 +22,9 @@ paper('Le 14:00', 'Quattro cortei<br>alla stessa ora', `<div class="g">
 <div class="c"><div class="im">${ill('verona', 150)}</div><div class="tx"><b>Verona</b><span>Piazza Bra, fino alle 19</span><small>Corteo silenzioso per Gaza</small></div></div>
 <div class="c"><div class="im">${ill('colosseo', 150)}</div><div class="tx"><b>Roma</b><span>Piazza Vittorio, poi Circo Massimo</span><small>Climate Pride</small></div></div></div>
 <p style="font:600 36px/1.35 C;margin-top:30px">Il carovita è lo stesso motivo dello sciopero di venerdì 20. Sabato è un primo assaggio.</p>`),
-paper('Pomeriggio', 'Fino a sera', `<div class="tl" style="margin-top:56px">
-${h('15:00', 'Bolzano', 'Parco della Stazione', 'Corteo "Rivolta degli alberi"')}
-${h('16:00', 'Torino', 'Piazza Castello, fino alle 19:30', 'Casa del popolo in piazza')}</div>
+paper('Pomeriggio', 'Fino a sera', `<div style="margin-top:44px">
+${riga('bolzano', '15:00', 'Bolzano', 'Parco della Stazione', 'Corteo "Rivolta degli alberi"')}
+${riga('torino', '16:00', 'Torino', 'Piazza Castello, fino alle 19:30', 'Casa del popolo in piazza')}</div>
 <div style="margin-top:40px;background:#1c1b1f;color:#fff;border-radius:22px;padding:40px 42px"><p style="font:700 30px T;letter-spacing:.1em;text-transform:uppercase;color:#ffd23f">Possibili disagi</p><p style="font:600 40px/1.3 C;margin-top:10px">Bari: sciopero del trasporto urbano AMTAB per tutta la giornata.</p></div>`),
 `<div style="position:absolute;inset:0;background:#c8322a;color:#fff;padding:190px 80px 0"><p class="k" style="color:#ffd5d1">Sabato 14 · poi venerdì 20</p><p style="font:800 140px/.88 T;text-transform:uppercase;margin-top:16px">Condividi<br>con chi vuole<br>scioperare.</p>
 <div style="display:inline-flex;align-items:center;gap:22px;margin-top:44px;background:#fff;color:#1c1b1f;padding:20px 34px;border-radius:60px;font:800 50px T"><span style="background:#c8322a;color:#fff;border-radius:40px;padding:4px 22px;font-size:38px">+ Segui</span>@mappadellarivolta</div>
