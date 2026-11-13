@@ -329,7 +329,7 @@
       ],
       "fonte": "https://www.instagram.com/bresciainpiazza17/p/DfW1BlttJhn/",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-11-06T12:30:35",
       "gruppo": null,
       "sottotipo": null,
@@ -404,11 +404,11 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/DfZ8Kn8jTg-/?exln=eGIxbjJ5OXBlano=",
       "stato": "verificato",
-      "conferme": 4,
+      "conferme": 6,
       "aggiornato_il": "2026-11-07T14:38:17",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-14-bolzano-corteo-01",
@@ -1114,6 +1114,33 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-20-treviso-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale Il Futuro è Adesso",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Treviso",
+      "provincia": "TV",
+      "regione": "Veneto",
+      "luogo": "Porta Altinia",
+      "lat": 45.66139,
+      "lng": 12.247,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL",
+        "UGS TREVISO",
+        "RETE DEGLI STUDENTI MEDI"
+      ],
+      "fonte": "https://www.instagram.com/p/DfKWb9stkR5/?srtk=ZHNiY2l1bGU2N2Z4",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-13T21:12:21",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Studentesco",
@@ -1384,6 +1411,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-20-modica-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Modica",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Piazzale Baden powell",
+      "lat": 36.84469,
+      "lng": 14.76261,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA modica"
+      ],
+      "fonte": "https://www.instagram.com/p/DfsMo_qg6GM/?cplk=MXh5NDliZm1kMG5tcQ==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-13T19:36:13",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-milao-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale Cgil",
@@ -1406,7 +1458,7 @@
       "aggiornato_il": "2026-11-11T01:46:17",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 10
+      "ci_saro": 11
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -1477,7 +1529,7 @@
       ],
       "fonte": "https://www.cgil.it/campagne-e-iniziative/sciopero-generale-20-novembre-2026-materiali-grafici-qldcqxmp",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-11T01:45:58",
       "gruppo": null,
       "sottotipo": null,
@@ -1666,7 +1718,7 @@
       "aggiornato_il": "2026-11-10T19:10:48",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-salerno-corteo-01",
@@ -2391,7 +2443,7 @@
       "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-bari-corteo-01",
@@ -2494,7 +2546,7 @@
       "aggiornato_il": "2026-11-10T02:21:57",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-ravenna-corteo-01",
@@ -2854,7 +2906,7 @@
       "aggiornato_il": "2026-10-20T10:02:14",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-21-arezzo-sciopero_categoria-01",
@@ -3421,7 +3473,7 @@
       "aggiornato_il": "2026-11-10T19:10:46",
       "gruppo": "g-dfbff6e9740c",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-12-03-milano-altro-01",
@@ -3872,8 +3924,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-13T14:30:03",
+  "ultimo_aggiornamento": "2026-11-13T21:12:21",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-13T15:38:37Z"
+  "copia_del": "2026-11-13T21:54:29Z"
 }
