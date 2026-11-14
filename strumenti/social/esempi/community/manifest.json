@@ -1,0 +1,6 @@
+{"giorno":"Sabato 14","titolo":"Oggi in piazza","n20":58,"durata_clip":2.6,
+ "contenuti":[
+  {"file":"brescia1.jpg","citta":"Brescia"},
+  {"file":"roma1.mp4","citta":"Roma","credito":"@pagina-che-ha-dato-il-permesso","da":3.0},
+  {"file":"torino1.jpg","citta":"Torino","centro":[0.5,0.45],"sfoca":[[0,1500,1080,200]]}
+ ]}
