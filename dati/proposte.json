@@ -1,340 +1,5 @@
 [
   {
-    "tipo": "presidio",
-    "titolo": "Presidio per lo sciopero nazionale dei call center",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 41.1171,
-    "lng": 16.8719,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sciopero nazionale CRM/BPO; presidio annunciato a Bari, luogo e orario non indicati.",
-    "gruppo": "sciopero-call-center-2026-11-11"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio per lo sciopero nazionale dei call center",
-    "data": "2026-11-11",
-    "ora_inizio": "10:30",
-    "ora_fine": "13:00",
-    "comune": "Cagliari",
-    "provincia": "CA",
-    "regione": "Sardegna",
-    "luogo": "Piazza Palazzo, davanti alla Prefettura",
-    "lat": 39.2186,
-    "lng": 9.1153,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL"
-    ],
-    "fonte": "https://sardiniapost.it/economia/call-center-a-rischio-un-lavoratore-su-tre-in-sardegna-i-sindacati-proclamano-lo-sciopero",
-    "note": "Sciopero nazionale CRM/BPO di intera giornata; presidio regionale a Cagliari.",
-    "gruppo": "sciopero-call-center-2026-11-11"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio per lo sciopero nazionale dei call center",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Catanzaro",
-    "provincia": "CZ",
-    "regione": "Calabria",
-    "luogo": "",
-    "lat": 38.9098,
-    "lng": 16.5877,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sciopero nazionale CRM/BPO; presidio annunciato a Catanzaro, luogo e orario non indicati.",
-    "gruppo": "sciopero-call-center-2026-11-11"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio davanti alla Prefettura per la vertenza CallMat",
-    "data": "2026-11-11",
-    "ora_inizio": "10:00",
-    "ora_fine": "13:00",
-    "comune": "Matera",
-    "provincia": "MT",
-    "regione": "Basilicata",
-    "luogo": "Prefettura di Matera",
-    "lat": 40.6664,
-    "lng": 16.6043,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC CGIL",
-      "FISTEL CISL",
-      "UILFPC UIL",
-      "UGL Telecomunicazioni"
-    ],
-    "fonte": "https://cavalierenews.it/matera-sciopero-ed-emergenza-lavoro-nei-call-center-presidio-in-prefettura-lundici-novembre-per-la-vertenza-callmat/",
-    "note": "Nella giornata di sciopero nazionale CRM/BPO (call center). Indirizzo della Prefettura non indicato: posizione indicativa."
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "presidio",
-    "titolo": "Manifestazione dei tassisti a Milano",
-    "data": "2026-11-11",
-    "comune": "Milano",
-    "provincia": "MI",
-    "regione": "Lombardia",
-    "lat": 45.4642,
-    "lng": 9.19,
-    "organizzatori": [
-      "Agci",
-      "Ati Taxi",
-      "Associazione Tutela Legale Taxi",
-      "Claai",
-      "Consultaxi",
-      "Fast Confsal Taxi",
-      "Federtaxi Cisal",
-      "Unica Filt Cgil Taxi",
-      "Satam",
-      "Sitan",
-      "Or.s.a. Taxi",
-      "Sul Taxi",
-      "Tam",
-      "Uiltrasporti",
-      "Usb Taxi",
-      "Ugl Taxi",
-      "Unimpresa",
-      "Unione Artigiani",
-      "Uritaxi",
-      "Uti"
-    ],
-    "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
-    "gruppo": "taxi-mobilitazione-2026",
-    "note": "Prima tappa della mobilitazione taxi verso lo sciopero nazionale del 15/12; luogo, orario e forma non ancora indicati"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio per lo sciopero nazionale dei call center",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Palermo",
-    "provincia": "PA",
-    "regione": "Sicilia",
-    "luogo": "",
-    "lat": 38.1157,
-    "lng": 13.3615,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sciopero nazionale CRM/BPO; presidio annunciato a Palermo, luogo e orario non indicati.",
-    "gruppo": "sciopero-call-center-2026-11-11"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale delle telecomunicazioni e dei call center (CRM/BPO)",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL",
-      "UGL Telecomunicazioni"
-    ],
-    "fonte": "https://www.uilfpc.it/news/comunicato-sciopero-crm-bpo-11nov26/",
-    "note": "Intera giornata, tutto il comparto CRM/BPO. Nessun presidio indicato; posizione indicativa (sciopero nazionale)."
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei sindacati della scuola contro i tagli agli organici",
-    "data": "2026-11-11",
-    "ora_inizio": "14:00",
-    "ora_fine": "17:00",
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "Piazza Vidoni",
-    "lat": 41.8975,
-    "lng": 12.474,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "CISL Scuola",
-      "UIL Scuola RUA",
-      "SNALS Confsal",
-      "ANIEF"
-    ],
-    "fonte": "https://www.lapresse.it/cronaca/2026/11/05/manovra-tagli-alla-scuola-i-sindacati-lanciano-una-manifestazione-a-roma-l11-novembre/",
-    "note": "Sit-in vicino al ministero della Funzione Pubblica. Il 16/11 previste assemblee nelle scuole in tutta Italia."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero dei dipendenti del Comune di Taormina",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Taormina",
-    "provincia": "ME",
-    "regione": "Sicilia",
-    "luogo": "",
-    "lat": 37.8516,
-    "lng": 15.2853,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "UIL FPL",
-      "FP CGIL",
-      "CSA",
-      "UGL"
-    ],
-    "fonte": "https://www.vaitaormina.com/taormina-i-sindacati-l11-novembre-2026-sciopero-del-personale-dipendente-del-comune/",
-    "note": "Intera giornata; contro il trasferimento del personale comunale a società partecipate. Nessun presidio indicato."
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio per lo sciopero nazionale dei call center",
-    "data": "2026-11-11",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Torino",
-    "provincia": "TO",
-    "regione": "Piemonte",
-    "luogo": "",
-    "lat": 45.0703,
-    "lng": 7.6869,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SLC-CGIL",
-      "FISTEL-CISL",
-      "UILFPC-UIL"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Sciopero nazionale CRM/BPO; presidio annunciato a Torino, luogo e orario non indicati.",
-    "gruppo": "sciopero-call-center-2026-11-11"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio regionale della sanità pubblica e privata",
-    "data": "2026-11-12",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "Prefettura, piazza Libertà",
-    "lat": 41.1255,
-    "lng": 16.869,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FP-CGIL Puglia",
-      "CISL-FP Puglia",
-      "UIL-FPL Puglia"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Carenza di personale e risorse in Legge di Bilancio; chieste assunzioni e stabilizzazioni."
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Sit-in e corteo dei vigili del fuoco",
-    "data": "2026-11-12",
-    "ora_inizio": "10:00",
-    "ora_fine": null,
-    "comune": "Bergamo",
-    "provincia": "BG",
-    "regione": "Lombardia",
-    "luogo": "Comando provinciale VVF, via Codussi (arrivo in Prefettura)",
-    "lat": 45.6983,
-    "lng": 9.6773,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FP-CGIL VVF",
-      "FNS-CISL",
-      "UIL-FPL VVF"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Carenza di personale, squadre ridotte e sedi inadeguate. Coordinate indicative (centro città)."
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale ATM di Milano",
-    "data": "2026-11-13",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Milano",
-    "provincia": "MI",
-    "regione": "Lombardia",
-    "luogo": "",
-    "lat": 45.4642,
-    "lng": 9.19,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "AL-COBAS"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore con varie modalità, ambito provinciale"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale Net (gruppo ATM) a Monza e Brianza",
-    "data": "2026-11-13",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Monza",
-    "provincia": "MB",
-    "regione": "Lombardia",
-    "luogo": "",
-    "lat": 45.5845,
-    "lng": 9.2744,
-    "posizione_approssimativa": true,
-    "organizzatori": [],
-    "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
-    "note": "Urbano Monza 9-11:50 e dalle 14 a fine servizio; extraurbano Trezzo 8:45-15 e dalle 18. Sigle non indicate dalla fonte"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale ATVO",
-    "data": "2026-11-13",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Venezia",
-    "provincia": "VE",
-    "regione": "Veneto",
-    "luogo": "",
-    "lat": 45.4408,
-    "lng": 12.3155,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "SGB",
-      "FAST Mobilità"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto pubblico locale; posizione indicativa"
-  },
-  {
     "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale AMTAB di Bari",
     "data": "2026-11-14",
@@ -482,6 +147,46 @@
     "data": "2026-11-20",
     "ora_inizio": "09:30",
     "ora_fine": null,
+    "comune": "Avellino",
+    "provincia": "AV",
+    "regione": "Campania",
+    "luogo": "Via De Conciliis",
+    "lat": 40.915,
+    "lng": 14.793,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL Napoli e Campania"
+    ],
+    "fonte": "https://www.cgilnapolicampania.it/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo-ricci-manovra-che-mette-in-ginocchio-il-paese-se-non-ce-dialogo-con-il-governo-il-sinda/",
+    "note": "Corteo fino a piazza della Libertà; la pagina regionale indica le 9:00, quella nazionale le 9:30",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Bergamo",
+    "provincia": "BG",
+    "regione": "Lombardia",
+    "luogo": "Piazzale della Stazione",
+    "lat": 45.691,
+    "lng": 9.675,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza Vittorio Veneto",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
     "comune": "Bologna",
     "provincia": "BO",
     "regione": "Emilia-Romagna",
@@ -495,6 +200,67 @@
     "fonte": "https://www.cgilbo.it/tutte-le-news/20-novembre-tutte-le-ragioni-dello-sciopero-generale.html",
     "gruppo": "sciopero-generale-2026-11-20",
     "note": "Concentramento in piazza dei Martiri, corteo fino a piazza Maggiore con comizio conclusivo. La pagina non indica l'anno: verificare"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Brescia",
+    "provincia": "BS",
+    "regione": "Lombardia",
+    "luogo": "San Faustino",
+    "lat": 45.543,
+    "lng": 10.219,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Brescia",
+      "CGIL Valle Camonica Sebino"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza Paolo VI",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Cagliari",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "luogo": "Piazza Giovanni XXIII",
+    "lat": 39.2295,
+    "lng": 9.121,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://sintony.it/news/2026-11-12/sciopero-generale-cgil-il-20-novembre-cento-manifestazioni-in-tutta-italia-corteo-anche-a-cagliari",
+    "note": "Manifestazione regionale con corteo; arrivo non indicato",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Caserta",
+    "provincia": "CE",
+    "regione": "Campania",
+    "luogo": "Piazzale della Stazione FS",
+    "lat": 41.069,
+    "lng": 14.329,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Napoli e Campania"
+    ],
+    "fonte": "https://www.cgilnapolicampania.it/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo-ricci-manovra-che-mette-in-ginocchio-il-paese-se-non-ce-dialogo-con-il-governo-il-sinda/",
+    "note": "Corteo fino a piazza della Prefettura",
+    "gruppo": "sciopero-generale-2026-11-20"
   },
   {
     "tipo": "corteo",
@@ -514,6 +280,26 @@
     ],
     "fonte": "https://www.lametino.it/eventi/cgil-proclama-lo-sciopero-generale-il-20-novembre-cinque-le-piazze-in-calabria.html",
     "note": "Una delle 5 piazze calabresi annunciate dalla CGIL; luogo, orario e forma (corteo o presidio) non ancora indicati: posizione al centro città.",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "08:45",
+    "ora_fine": null,
+    "comune": "Como",
+    "provincia": "CO",
+    "regione": "Lombardia",
+    "luogo": "Porta Torre",
+    "lat": 45.809,
+    "lng": 9.084,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza San Fedele",
     "gruppo": "sciopero-generale-2026-11-20"
   },
   {
@@ -600,6 +386,46 @@
     "tipo": "corteo",
     "titolo": "Corteo per lo sciopero generale CGIL",
     "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Frosinone",
+    "provincia": "FR",
+    "regione": "Lazio",
+    "luogo": "Piazzale Vittorio Veneto",
+    "lat": 41.64,
+    "lng": 13.346,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino al Parco Matusa; coordinate indicative",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "luogo": "Stazione Marittima (via Fanti d'Italia angolo via Adua)",
+    "lat": 44.4148,
+    "lng": 8.923,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione provinciale con corteo; arrivo non indicato",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
     "ora_inizio": "09:00",
     "ora_fine": null,
     "comune": "Imola",
@@ -615,6 +441,126 @@
     "fonte": "https://www.fpcgilemiliaromagna.it/sciopero-generale-20-novembre-2026-emilia-romagna/",
     "gruppo": "sciopero-generale-2026-11-20",
     "note": "Partenza corteo 9:30, arrivo in Piazza Matteotti."
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "L'Aquila",
+    "provincia": "AQ",
+    "regione": "Abruzzo",
+    "luogo": "Colle Sapone",
+    "lat": 42.354,
+    "lng": 13.391,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione provinciale con corteo; arrivo non indicato; coordinate indicative",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "La Spezia",
+    "provincia": "SP",
+    "regione": "Liguria",
+    "luogo": "Piazza Brin",
+    "lat": 44.11,
+    "lng": 9.82,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino alla Prefettura",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Lamezia Terme",
+    "provincia": "CZ",
+    "regione": "Calabria",
+    "luogo": "Via Leonardo Da Vinci",
+    "lat": 38.966,
+    "lng": 16.309,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Corso Nicotera; coordinate indicative",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Latina",
+    "provincia": "LT",
+    "regione": "Lazio",
+    "luogo": "Piazza del Popolo",
+    "lat": 41.4676,
+    "lng": 12.9036,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino al Parco Falcone e Borsellino",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Matera",
+    "provincia": "MT",
+    "regione": "Basilicata",
+    "luogo": "Piazza Giacomo Matteotti",
+    "lat": 40.666,
+    "lng": 16.607,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza Vittorio Veneto",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Milano",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "Piazza Cadorna",
+    "lat": 45.468,
+    "lng": 9.176,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione provinciale con corteo; percorso e arrivo non ancora ufficializzati (anche milanobiz.it)",
+    "gruppo": "sciopero-generale-2026-11-20"
   },
   {
     "tipo": "corteo",
@@ -660,6 +606,26 @@
     "tipo": "corteo",
     "titolo": "Corteo per lo sciopero generale CGIL",
     "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Piazza Mancini",
+    "lat": 40.8513,
+    "lng": 14.2706,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Napoli e Campania"
+    ],
+    "fonte": "https://www.cgilnapolicampania.it/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo-ricci-manovra-che-mette-in-ginocchio-il-paese-se-non-ce-dialogo-con-il-governo-il-sinda/",
+    "note": "Corteo da piazza Mancini a piazza Matteotti con comizio",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
     "ora_inizio": "09:30",
     "ora_fine": null,
     "comune": "Parma",
@@ -682,6 +648,26 @@
     "data": "2026-11-20",
     "ora_inizio": "09:00",
     "ora_fine": null,
+    "comune": "Pescara",
+    "provincia": "PE",
+    "regione": "Abruzzo",
+    "luogo": "Stazione Porta Nuova",
+    "lat": 42.4552,
+    "lng": 14.2203,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza Italia",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
     "comune": "Piacenza",
     "provincia": "PC",
     "regione": "Emilia-Romagna",
@@ -695,6 +681,26 @@
     "fonte": "https://www.fpcgilemiliaromagna.it/sciopero-generale-20-novembre-2026-emilia-romagna/",
     "gruppo": "sciopero-generale-2026-11-20",
     "note": "Corteo fino a Piazza Cavalli."
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Potenza",
+    "provincia": "PZ",
+    "regione": "Basilicata",
+    "luogo": "Piazza XVIII Agosto",
+    "lat": 40.6393,
+    "lng": 15.803,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Corteo fino a Piazza Matteotti",
+    "gruppo": "sciopero-generale-2026-11-20"
   },
   {
     "tipo": "corteo",
@@ -821,6 +827,86 @@
     "tipo": "corteo",
     "titolo": "Corteo per lo sciopero generale CGIL",
     "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazza Vittorio Emanuele II",
+    "lat": 41.8946,
+    "lng": 12.5056,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione con corteo; arrivo non indicato dalla fonte",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Salerno",
+    "provincia": "SA",
+    "regione": "Campania",
+    "luogo": "Piazza Vittorio Veneto (Stazione FS)",
+    "lat": 40.6757,
+    "lng": 14.772,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL Napoli e Campania"
+    ],
+    "fonte": "https://www.cgilnapolicampania.it/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo-ricci-manovra-che-mette-in-ginocchio-il-paese-se-non-ce-dialogo-con-il-governo-il-sinda/",
+    "note": "Corteo fino a piazza Amendola",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "08:30",
+    "ora_fine": null,
+    "comune": "Savona",
+    "provincia": "SV",
+    "regione": "Liguria",
+    "luogo": "Piazza Sandro Pertini",
+    "lat": 44.308,
+    "lng": 8.48,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione provinciale con corteo; arrivo non indicato; coordinate indicative",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:30",
+    "ora_fine": null,
+    "comune": "Torino",
+    "provincia": "TO",
+    "regione": "Piemonte",
+    "luogo": "Piazza XVIII Dicembre",
+    "lat": 45.0745,
+    "lng": 7.67,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/agenda/appuntamenti/sciopero-generale-20-novembre-manifestazione-a-torino-k2ii4pxl",
+    "note": "Manifestazione; la pagina indica sia 8:30 sia 9:30: verificare orario",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
     "ora_inizio": "09:00",
     "ora_fine": null,
     "comune": "Trento",
@@ -835,6 +921,26 @@
     ],
     "fonte": "https://www.vitatrentina.it/2026/11/04/sciopero-generale-proclamato-dalla-cgil-venerdi-20-novembre/",
     "note": "Concentramento in via Verdi, corteo nel centro storico; sciopero generale di 24 ore «Il futuro è adesso» (anche ladige.it)",
+    "gruppo": "sciopero-generale-2026-11-20"
+  },
+  {
+    "tipo": "corteo",
+    "titolo": "Corteo per lo sciopero generale CGIL",
+    "data": "2026-11-20",
+    "ora_inizio": "09:00",
+    "ora_fine": null,
+    "comune": "Trieste",
+    "provincia": "TS",
+    "regione": "Friuli-Venezia Giulia",
+    "luogo": "Via Giulia",
+    "lat": 45.645,
+    "lng": 13.786,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CGIL"
+    ],
+    "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
+    "note": "Manifestazione regionale con corteo; arrivo non indicato; coordinate indicative",
     "gruppo": "sciopero-generale-2026-11-20"
   },
   {
@@ -981,6 +1087,25 @@
     "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
     "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
     "gruppo": "sciopero-ferrovie-locali-2026-11-21"
+  },
+  {
+    "tipo": "presidio",
+    "titolo": "Presidio per la sanità pubblica nel Cervignanese",
+    "data": "2026-11-21",
+    "ora_inizio": "11:00",
+    "ora_fine": "12:30",
+    "comune": "Cervignano del Friuli",
+    "provincia": "UD",
+    "regione": "Friuli-Venezia Giulia",
+    "luogo": "Piazza Indipendenza, porticato del Municipio",
+    "lat": 45.8235,
+    "lng": 13.336,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "Coordinamento Salute del Cervignanese"
+    ],
+    "fonte": "https://friulisera.it/sabato-21-novembre-a-cervignano-presidio-di-protesta-sul-peggioramento-del-servizio-sanitario/",
+    "note": "Presidio contro il peggioramento del servizio sanitario locale"
   },
   {
     "ora_inizio": null,
@@ -1333,6 +1458,25 @@
     "note": "Intera giornata; treni 21 del 3-21 del 4; autostrade 22 del 3-22 del 4. Anche USI 1912: precari e atipici, escluso trasporti"
   },
   {
+    "tipo": "presidio",
+    "titolo": "Presidio davanti al Ministero dei Trasporti per lo sciopero dei trasporti",
+    "data": "2026-12-04",
+    "ora_inizio": "11:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Piazzale di Porta Pia",
+    "lat": 41.9093,
+    "lng": 12.5014,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "USB Lavoro Privato"
+    ],
+    "fonte": "https://pubblicoimpiego.usb.it/leggi-notizia/usb-trasporti-rilancia-la-battaglia-decisiva-contro-la-legge-anti-sciopero-il-comparto-torna-a-scioperare-il-4-dicembre-ore-1100-presidio-davanti-al-ministero-dei-trasporti-1620-1.html",
+    "note": "Comparto trasporti USB in sciopero il 4/12; presidio contro la legge sugli scioperi"
+  },
+  {
     "tipo": "corteo",
     "titolo": "Manifestazione nazionale della sanità pubblica",
     "data": "2026-12-05",
@@ -1415,6 +1559,25 @@
     ],
     "fonte": "https://mit.gov.it/node/124",
     "note": "24 ore, trasporto aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMC di Casale Monferrato",
+    "data": "2026-12-15",
+    "ora_inizio": "09:00",
+    "ora_fine": "11:30",
+    "comune": "Casale Monferrato",
+    "provincia": "AL",
+    "regione": "Piemonte",
+    "luogo": "",
+    "lat": 45.1335,
+    "lng": 8.4527,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL Alessandria"
+    ],
+    "fonte": "https://radiogold.it/news-alessandria/cronaca/451919-sciopero-amc-casale-monferrato-15-dicembre-2026-autobus-orari/",
+    "note": "4 ore bus urbani: autisti 9-11:30, impianti fissi 8:30-12:30; garantite 6-9 e 11:30-14:30 e trasporto scolastico"
   },
   {
     "ora_inizio": null,
