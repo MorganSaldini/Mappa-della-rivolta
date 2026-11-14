@@ -1254,7 +1254,7 @@
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 11
+      "ci_saro": 10
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -1461,7 +1461,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-napoli-corteo-01",
@@ -2265,7 +2265,7 @@
       "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 5
+      "ci_saro": 6
     },
     {
       "id": "2026-11-20-bari-corteo-01",
@@ -3749,5 +3749,5 @@
   "ultimo_aggiornamento": "2026-11-14T01:55:48",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-14T02:14:42Z"
+  "copia_del": "2026-11-14T09:19:19Z"
 }
