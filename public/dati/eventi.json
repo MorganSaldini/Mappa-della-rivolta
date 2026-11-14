@@ -936,6 +936,31 @@
       "ci_saro": 0
     },
     {
+      "id": "2026-11-20-fermo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero Internazionale Studentesco",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": "12:00",
+      "comune": "Fermo",
+      "provincia": "FM",
+      "regione": "Marche",
+      "luogo": "Terminal Dondero",
+      "lat": 43.16353,
+      "lng": 13.71784,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Collettivo Autonomo Studentesco Argali - Studenti Autorganiz"
+      ],
+      "fonte": "https://www.instagram.com/collettivoargali?psln=MTMwaDVnNjhjajhueQ==",
+      "stato": "da_verificare",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-14T19:03:04",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 2
+    },
+    {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Studentesco",
@@ -1075,11 +1100,11 @@
       ],
       "fonte": "https://www.cgilfe.it/sciopero-generale-cgil-venerdi-20-novembre-a-ferrara-manifestazione-con-corteo/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-10T02:21:56",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-modena-corteo-01",
@@ -2441,7 +2466,7 @@
       "aggiornato_il": "2026-11-14T01:55:38",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -3125,6 +3150,32 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-11T17:49:21",
       "gruppo": "g-1d4d14d64c5a",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-arezzo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro il caro vita",
+      "data": "2026-11-20",
+      "ora_inizio": "20:30",
+      "ora_fine": null,
+      "comune": "Arezzo",
+      "provincia": "AR",
+      "regione": "Toscana",
+      "luogo": "Parco Filippo Corridoni",
+      "lat": 43.51714,
+      "lng": 11.76393,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CGIL",
+        "Arezzo REV"
+      ],
+      "fonte": "https://www.instagram.com/arezzo.rev?srtk=b2p2dGhmbWowbXE4",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-14T19:45:21",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -4297,8 +4348,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-14T11:00:31",
+  "ultimo_aggiornamento": "2026-11-14T19:45:21",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-14T16:00:37Z"
+  "copia_del": "2026-11-14T20:36:20Z"
 }
