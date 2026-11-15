@@ -1144,7 +1144,7 @@
       "aggiornato_il": "2026-11-10T19:10:46",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-trento-corteo-01",
@@ -2311,7 +2311,7 @@
       "aggiornato_il": "2026-11-11T01:55:03",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-forli-presidio-01",
@@ -4068,5 +4068,5 @@
   "ultimo_aggiornamento": "2026-11-15T14:18:10",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-15T14:41:14Z"
+  "copia_del": "2026-11-15T20:18:11Z"
 }
