@@ -2,33 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-15-torino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Casa del popolo in piazza",
-      "data": "2026-11-15",
-      "ora_inizio": "16:03",
-      "ora_fine": "19:30",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Piazza Castello",
-      "lat": 45.07067,
-      "lng": 7.68623,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Assemblea di collettivi",
-        "sindacati di base",
-        "realtà del territorio contro il riarmo e per la giistizia so"
-      ],
-      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-11T17:49:20",
-      "gruppo": "g-1d4d14d64c5a",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-16-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale delle cooperative della sanità pubblica e privata",
@@ -1017,7 +990,7 @@
       ],
       "fonte": "https://www.cgil.milano.it/284037-2/",
       "stato": "verificato",
-      "conferme": 15,
+      "conferme": 16,
       "aggiornato_il": "2026-11-11T01:46:17",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
@@ -1169,7 +1142,7 @@
       "aggiornato_il": "2026-11-06T12:32:45",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-roma-corteo-01",
@@ -4068,5 +4041,5 @@
   "ultimo_aggiornamento": "2026-11-15T14:18:10",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-15T20:18:11Z"
+  "copia_del": "2026-11-16T00:18:30Z"
 }
