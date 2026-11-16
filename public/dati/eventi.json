@@ -722,31 +722,6 @@
       "ci_saro": 2
     },
     {
-      "id": "2026-11-20-arezzo-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Sciopero Generale per Carovita e No Guerra",
-      "data": "2026-11-20",
-      "ora_inizio": "08:30",
-      "ora_fine": null,
-      "comune": "Arezzo",
-      "provincia": "AR",
-      "regione": "Toscana",
-      "luogo": "Parco Filippo Corridoni (parcheggio Baldaccio)",
-      "lat": 43.4659,
-      "lng": 11.87347,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Federazione Aretina del FGC"
-      ],
-      "fonte": "https://www.instagram.com/p/DfxVkKtsDjG/?cplk=MXNhbnV0czlhZXN1cw==",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-16T08:10:54",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-20-reggio-emilia-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero Generale Nazionale",
@@ -947,6 +922,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-arezzo-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale per Carovita e No Guerra",
+      "data": "2026-11-20",
+      "ora_inizio": "08:30",
+      "ora_fine": null,
+      "comune": "Arezzo",
+      "provincia": "AR",
+      "regione": "Toscana",
+      "luogo": "Parco Filippo Corridoni (parcheggio Baldaccio)",
+      "lat": 43.4659,
+      "lng": 11.87347,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Federazione Aretina del FGC"
+      ],
+      "fonte": "https://www.instagram.com/p/DfxVkKtsDjG/?cplk=MXNhbnV0czlhZXN1cw==",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-16T16:22:42",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-20-mantova-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo CGIL contro carovita e guerre",
@@ -993,62 +993,6 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-15T14:17:31",
       "gruppo": "ag-sciopero-generale-2026-11-20",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-20-siracusa-corteo-02",
-      "tipo": "corteo",
-      "titolo": "Sciopero Studentesco Internazionale Indipendente",
-      "data": "2026-11-20",
-      "ora_inizio": "09:00",
-      "ora_fine": "12:30",
-      "comune": "Siracusa",
-      "provincia": "SR",
-      "regione": "Sicilia",
-      "luogo": "Piazza Euripide",
-      "lat": 37.06912,
-      "lng": 15.28758,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "OSA(Opposizione Studentesca d'Alternativa)",
-        "Cambiare Rotta",
-        "USB Scuola",
-        "We do not enlist!"
-      ],
-      "fonte": "https://www.instagram.com/p/DfkrHJqxpQi/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-16T07:34:00",
-      "gruppo": "g-41c70b4fd111",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-20-palermo-corteo-03",
-      "tipo": "corteo",
-      "titolo": "Sciopero Studentesco Internazionale Indipendente",
-      "data": "2026-11-20",
-      "ora_inizio": "09:00",
-      "ora_fine": "12:30",
-      "comune": "Palermo",
-      "provincia": "PA",
-      "regione": "Sicilia",
-      "luogo": "Piazza Crispi(Croci)",
-      "lat": 38.1305,
-      "lng": 13.35264,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "OSA(Opposizione Studentesca d'Alternativa)",
-        "Cambiare Rotta",
-        "USB Scuola",
-        "We do not enlist!"
-      ],
-      "fonte": "https://www.instagram.com/p/DfkrHJqxpQi/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-16T07:34:00",
-      "gruppo": "g-41c70b4fd111",
       "sottotipo": null,
       "ci_saro": null
     },
@@ -1391,7 +1335,7 @@
       "aggiornato_il": "2026-11-10T19:10:48",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-la-spezia-corteo-01",
@@ -1967,7 +1911,7 @@
       "titolo": "Sciopero Studentesco Internazionale Indipendente",
       "data": "2026-11-20",
       "ora_inizio": "09:00",
-      "ora_fine": null,
+      "ora_fine": "12:30",
       "comune": "Palermo",
       "provincia": "PA",
       "regione": "Sicilia",
@@ -1978,12 +1922,14 @@
       "organizzatori": [
         "Osa (Opposizione studentesca d’Alternativa)",
         "Cambiare Rotta",
-        "Usb Scuola"
+        "Usb Scuola",
+        "OSA(Opposizione Studentesca d'Alternativa)",
+        "USB Scuola"
       ],
       "fonte": "https://www.instagram.com/p/DfhlbZ3N7RK/?srtk=eW1kbXJqOWtpZHFv",
       "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-11-13T13:00:11",
+      "aggiornato_il": "2026-11-16T16:24:41",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -2158,11 +2104,11 @@
       ],
       "fonte": "https://www.cgilnapolicampania.it/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo-ricci-manovra-che-mette-in-ginocchio-il-paese-se-non-ce-dialogo-con-il-governo-il-sinda/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-15T14:17:32",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-pescara-corteo-03",
@@ -2236,6 +2182,34 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-15T14:17:32",
       "gruppo": "ag-sciopero-generale-2026-11-20",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-siracusa-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Sciopero Studentesco Internazionale Indipendente",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": "12:30",
+      "comune": "Siracusa",
+      "provincia": "SR",
+      "regione": "Sicilia",
+      "luogo": "Piazza Euripide",
+      "lat": 37.06912,
+      "lng": 15.28758,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "OSA(Opposizione Studentesca d'Alternativa)",
+        "Cambiare Rotta",
+        "USB Scuola",
+        "We do not enlist!"
+      ],
+      "fonte": "https://www.instagram.com/p/DfhlbZ3N7RK/?vrfl=ZnJna3JocGFjbXR5",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-16T16:24:06",
+      "gruppo": "g-41c70b4fd111",
       "sottotipo": null,
       "ci_saro": null
     },
@@ -4119,8 +4093,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-16T08:10:54",
+  "ultimo_aggiornamento": "2026-11-16T16:24:41",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-16T07:11:02Z"
+  "copia_del": "2026-11-16T17:21:55Z"
 }
