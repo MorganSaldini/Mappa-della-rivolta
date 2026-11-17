@@ -2,138 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-16-roma-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero nazionale delle cooperative della sanità pubblica e privata",
-      "data": "2026-11-16",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [],
-      "fonte": "https://quifinanza.it/info-utili/scioperi/scioperi-novembre-2026/1022157/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-04T23:31:54",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-16-roma-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Assemblee sindacali nelle scuole contro i tagli agli organici",
-      "data": "2026-11-16",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "Scuole di tutta Italia",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "CISL Scuola",
-        "UIL Scuola RUA",
-        "SNALS Confsal",
-        "ANIEF"
-      ],
-      "fonte": "https://lespresso.it/c/attualita/2026/11/5/scuola-sciopero-sit-in-quando-legge-di-bilancio-tagli-personale/65758",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T02:21:29",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-16-napoli-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero del personale ANM di Napoli",
-      "data": "2026-11-16",
-      "ora_inizio": "11:00",
-      "ora_fine": "15:00",
-      "comune": "Napoli",
-      "provincia": "NA",
-      "regione": "Campania",
-      "luogo": "",
-      "lat": 40.8518,
-      "lng": 14.2681,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILT-CGIL",
-        "FIT-CISL",
-        "UILT-UIL",
-        "UGL-FNA",
-        "FAISA-CISAL"
-      ],
-      "fonte": "https://mit.gov.it/node/124",
-      "stato": "annullato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-29T00:44:21",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-16-volterra-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Sciopero delle educatrici Basta sfruttamento",
-      "data": "2026-11-16",
-      "ora_inizio": "15:00",
-      "ora_fine": "18:00",
-      "comune": "Volterra",
-      "provincia": "PI",
-      "regione": "Toscana",
-      "luogo": "Via Giuseppe Del Papa Empoli",
-      "lat": 43.43497,
-      "lng": 10.86864,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "USB"
-      ],
-      "fonte": "https://www.usb.it/leggi-notizia/appello-per-una-manifestazione-nazionale-a-roma-il-12-dicembre-contro-il-carovita-contro-il-riarmo-e-per-le-dimissioni-del-governo-meloni-1237.html?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAVgSNdleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2Nz",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-11-13T12:56:11",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-16-torino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Casa del popolo in piazza",
-      "data": "2026-11-16",
-      "ora_inizio": "16:03",
-      "ora_fine": "19:30",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Piazza Castello",
-      "lat": 45.07067,
-      "lng": 7.68623,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Assemblea di collettivi",
-        "sindacati di base",
-        "realtà del territorio contro il riarmo e per la giistizia so"
-      ],
-      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-11T17:49:21",
-      "gruppo": "g-1d4d14d64c5a",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-17-napoli-presidio-01",
       "tipo": "presidio",
       "titolo": "Manifestazione dei tassisti a Napoli",
@@ -395,7 +263,7 @@
       "aggiornato_il": "2026-11-11T01:46:08",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 5
+      "ci_saro": 6
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -740,11 +608,11 @@
       ],
       "fonte": "https://www.cgilreggioemilia.it/2026/sciopero-generale-nazionale-venerdi-20-novembre/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-ferrara-corteo-02",
@@ -819,7 +687,7 @@
       "aggiornato_il": "2026-11-13T12:58:42",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-lucca-corteo-02",
@@ -944,7 +812,7 @@
       "aggiornato_il": "2026-11-16T16:22:42",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-mantova-corteo-01",
@@ -1163,11 +1031,11 @@
       ],
       "fonte": "https://www.vitatrentina.it/2026/11/04/sciopero-generale-proclamato-dalla-cgil-venerdi-20-novembre/",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-06T12:32:45",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-roma-corteo-01",
@@ -1503,7 +1371,7 @@
       "aggiornato_il": "2026-11-10T19:10:50",
       "gruppo": "g-170bb72f0d2e",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-perugia-corteo-01",
@@ -1639,11 +1507,11 @@
       ],
       "fonte": "https://www.instagram.com/p/DcgL-PtIG1J/",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-10T19:10:52",
       "gruppo": "g-acc1f6ad0ec3",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-trieste-corteo-01",
@@ -2133,7 +2001,7 @@
       "aggiornato_il": "2026-11-15T14:17:32",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-salerno-corteo-03",
@@ -2210,6 +2078,29 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-16T16:24:06",
       "gruppo": "g-41c70b4fd111",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-imperia-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "SCIOPERO CONTRO CARO VITA, RIARMO E LEVA OBBLIGATORIA",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Imperia",
+      "provincia": "IM",
+      "regione": "Liguria",
+      "luogo": "Piazza Calvi",
+      "lat": 43.88902,
+      "lng": 8.04547,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/1CeFrZhR97/?mibextid=wwXIfr",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-16T22:46:02",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -2494,7 +2385,7 @@
       "aggiornato_il": "2026-11-11T01:48:36",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-agrigento-corteo-01",
@@ -2544,7 +2435,7 @@
       "aggiornato_il": "2026-11-11T01:49:00",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-pavia-corteo-01",
@@ -2617,11 +2508,11 @@
       ],
       "fonte": "https://www.instagram.com/reel/DfmRpVgFA8s/?utm_source=ig_web_copy_link&psln=NTc4MTIwNjQ2YQ==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-13T13:02:06",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -2922,7 +2813,7 @@
       "aggiornato_il": "2026-11-15T14:17:02",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-roma-sciopero_categoria-01",
@@ -3208,7 +3099,7 @@
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-21-udine-sciopero_categoria-01",
@@ -4093,8 +3984,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-16T16:24:41",
+  "ultimo_aggiornamento": "2026-11-16T22:46:02",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-16T17:21:55Z"
+  "copia_del": "2026-11-17T01:00:09Z"
 }
