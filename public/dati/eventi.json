@@ -706,7 +706,7 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/Dfo2ntvoWhW/?vrfl=MXBrYXBtdTVucmM5Ng==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-13T12:59:12",
       "gruppo": null,
       "sottotipo": null,
@@ -1847,11 +1847,11 @@
       ],
       "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026/il-20-novembre-litalia-si-ferma-100-piazze-per-lo-sciopero-generale-cgil-landini-a-roma-szprfl4b",
       "stato": "verificato",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-15T14:17:30",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-cagliari-corteo-01",
@@ -2512,7 +2512,7 @@
       "aggiornato_il": "2026-11-13T13:02:06",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -3386,6 +3386,31 @@
       "ci_saro": 0
     },
     {
+      "id": "2026-11-25-scicli-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo transfemminista contro i femminicidi",
+      "data": "2026-11-25",
+      "ora_inizio": "18:00",
+      "ora_fine": "21:00",
+      "comune": "Scicli",
+      "provincia": "RG",
+      "regione": "Sicilia",
+      "luogo": "Via malpinghi",
+      "lat": 36.79276,
+      "lng": 14.70145,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Casa Delle Donne scicli"
+      ],
+      "fonte": "https://www.instagram.com/p/DfuSf2hRiA9/?mdxt=ZmkzcGJhNHprMmIx",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-17T06:57:52",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-torino-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Incontro sulla \"Clown Army\", azione nonviolenta di piazza",
@@ -3749,6 +3774,34 @@
       "ci_saro": null
     },
     {
+      "id": "2026-12-14-crotone-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero del personale Autolinee Romano a Crotone",
+      "data": "2026-12-14",
+      "ora_inizio": "10:59",
+      "ora_fine": "14:59",
+      "comune": "Crotone",
+      "provincia": "KR",
+      "regione": "Calabria",
+      "luogo": "",
+      "lat": 39.0808,
+      "lng": 17.127,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILT-CGIL",
+        "UILT-UIL",
+        "FAISA-CISAL",
+        "UGL-FNA"
+      ],
+      "fonte": "https://scioperiitalia.it/calendario/2026-12",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-17T02:00:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-15-roma-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero nazionale dei taxi con manifestazione a Roma",
@@ -3984,8 +4037,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-16T22:46:02",
+  "ultimo_aggiornamento": "2026-11-17T06:57:52",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-17T01:00:09Z"
+  "copia_del": "2026-11-17T09:01:56Z"
 }
