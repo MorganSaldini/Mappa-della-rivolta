@@ -234,11 +234,11 @@
       ],
       "fonte": "https://www.ansa.it/sito/notizie/politica/2026/10/17/landini-in-piazza-a-roma-sciopero-generale-il-20-novembre_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html",
       "stato": "verificato",
-      "conferme": 9,
+      "conferme": 10,
       "aggiornato_il": "2026-10-18T10:55:52",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-torino-sciopero_generale-01",
@@ -465,7 +465,7 @@
       "aggiornato_il": "2026-11-11T01:50:26",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
@@ -583,7 +583,7 @@
       ],
       "fonte": "https://www.instagram.com/collettivoargali?psln=MTMwaDVnNjhjajhueQ==",
       "stato": "verificato",
-      "conferme": 3,
+      "conferme": 4,
       "aggiornato_il": "2026-11-15T00:58:34",
       "gruppo": null,
       "sottotipo": null,
@@ -762,7 +762,7 @@
       "aggiornato_il": "2026-11-14T01:55:48",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-savona-corteo-01",
@@ -808,7 +808,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DfxVkKtsDjG/?cplk=MXNhbnV0czlhZXN1cw==",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-16T16:22:42",
       "gruppo": null,
       "sottotipo": null,
@@ -985,7 +985,7 @@
       "aggiornato_il": "2026-11-04T23:33:54",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-venezia-sciopero_generale-01",
@@ -1035,7 +1035,7 @@
       "aggiornato_il": "2026-11-06T12:32:45",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-roma-corteo-01",
@@ -1091,7 +1091,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-bologna-corteo-02",
@@ -2082,27 +2082,54 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-20-imperia-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "SCIOPERO CONTRO CARO VITA, RIARMO E LEVA OBBLIGATORIA",
+      "id": "2026-11-20-saluzzo-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo e assemblea aperta (carovita, guerra, scuola, clima)",
       "data": "2026-11-20",
-      "ora_inizio": "09:30",
-      "ora_fine": null,
-      "comune": "Imperia",
-      "provincia": "IM",
-      "regione": "Liguria",
-      "luogo": "Piazza Calvi",
-      "lat": 43.88902,
-      "lng": 8.04547,
+      "ora_inizio": "09:00",
+      "ora_fine": "12:00",
+      "comune": "Saluzzo",
+      "provincia": "CN",
+      "regione": "Piemonte",
+      "luogo": "piazza Cavour",
+      "lat": 44.64639,
+      "lng": 7.49245,
       "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.facebook.com/share/p/1CeFrZhR97/?mibextid=wwXIfr",
-      "stato": "da_verificare",
+      "organizzatori": [
+        "Collettivi di Valle"
+      ],
+      "fonte": "https://www.corrieredisaluzzo.it/ita/dettaglio_news.aspx?id=47041&v=2&fbclid=IwY2xjawVpN71leHRuA2FlbQIxMQBwZG9mAWJyaWQRMWtIUUhxUzlRaThOVFo5YVhzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEf6etH0WKiLCpNL-obL1sR8JX1PgR5KsoRDCYz-NdRSCQwpGCfS4ZfxU0NcJE_aem_1_98lVYUDke8EOucrfCrUA",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-16T22:46:02",
+      "aggiornato_il": "2026-11-17T18:15:08",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-sassari-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero Studentesco Internazionale",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": "12:00",
+      "comune": "Sassari",
+      "provincia": "SS",
+      "regione": "Sardegna",
+      "luogo": "Piazza San Vincenzo",
+      "lat": 40.71604,
+      "lng": 8.55779,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Unione degli Studenti"
+      ],
+      "fonte": "https://www.instagram.com/p/Df0VI_-op3c/?srtk=MWFhMXo2eTBxdmR6cQ%3D%3D",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-17T18:15:18",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-firenze-sciopero_generale-01",
@@ -2127,7 +2154,7 @@
       "aggiornato_il": "2026-11-15T14:15:51",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 7
+      "ci_saro": 8
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -2202,7 +2229,7 @@
       "aggiornato_il": "2026-11-04T11:58:07",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 6
+      "ci_saro": 7
     },
     {
       "id": "2026-11-20-bari-corteo-01",
@@ -2512,7 +2539,7 @@
       "aggiornato_il": "2026-11-13T13:02:06",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -2612,7 +2639,7 @@
       "aggiornato_il": "2026-11-15T14:17:31",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-lamezia-terme-corteo-01",
@@ -2715,6 +2742,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-imperia-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "SCIOPERO CONTRO CARO VITA, RIARMO E LEVA OBBLIGATORIA",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Imperia",
+      "provincia": "IM",
+      "regione": "Liguria",
+      "luogo": "Piazza Calvi",
+      "lat": 43.88902,
+      "lng": 8.04547,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/1CeFrZhR97/?mibextid=wwXIfr",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-17T18:15:40",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-ascoli-piceno-corteo-01",
       "tipo": "corteo",
       "titolo": "Sciopero generale Cgil",
@@ -2749,15 +2799,17 @@
       "comune": "Bolzano",
       "provincia": "BZ",
       "regione": "Trentino-Alto Adige",
-      "luogo": "Piazza della Vittoria",
+      "luogo": "Piazza Mazzini",
       "lat": 46.49982,
       "lng": 11.34538,
       "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DfW6PXBiKtw/?mdxt=aHY1dDdoejBlZnhw",
+      "organizzatori": [
+        "Stc.Bolzano"
+      ],
+      "fonte": "https://www.instagram.com/p/Df0CqK0iIsF/?srtk=MTIzMDB6end6YzQyMA==",
       "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-11T17:51:20",
+      "aggiornato_il": "2026-11-17T18:16:33",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
@@ -3388,7 +3440,7 @@
     {
       "id": "2026-11-25-scicli-corteo-01",
       "tipo": "corteo",
-      "titolo": "Corteo transfemminista contro i femminicidi",
+      "titolo": "Facciamo rumore contro la violenza sulle donne",
       "data": "2026-11-25",
       "ora_inizio": "18:00",
       "ora_fine": "21:00",
@@ -3403,9 +3455,9 @@
         "Casa Delle Donne scicli"
       ],
       "fonte": "https://www.instagram.com/p/DfuSf2hRiA9/?mdxt=ZmkzcGJhNHprMmIx",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-17T06:57:52",
+      "aggiornato_il": "2026-11-17T18:16:20",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -3746,7 +3798,7 @@
       "aggiornato_il": "2026-11-03T16:36:55",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-12-14-fiumicino-sciopero_categoria-01",
@@ -3794,9 +3846,9 @@
         "UGL-FNA"
       ],
       "fonte": "https://scioperiitalia.it/calendario/2026-12",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-17T02:00:26",
+      "aggiornato_il": "2026-11-17T18:16:23",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -4037,8 +4089,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-17T06:57:52",
+  "ultimo_aggiornamento": "2026-11-17T18:16:33",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-17T09:01:56Z"
+  "copia_del": "2026-11-17T18:25:47Z"
 }
