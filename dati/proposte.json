@@ -1,47 +1,6 @@
 [
   {
     "tipo": "sciopero_categoria",
-    "titolo": "Sciopero del personale AMTAB di Bari",
-    "data": "2026-11-14",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "luogo": "",
-    "lat": 41.1171,
-    "lng": 16.8719,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "FIT-CISL",
-      "UILT-UIL",
-      "UGL Autoferro"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto pubblico locale"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio dei lavoratori delle farmacie private",
-    "data": "2026-11-14",
-    "ora_inizio": "13:00",
-    "ora_fine": "15:00",
-    "comune": "Bologna",
-    "provincia": "BO",
-    "regione": "Emilia-Romagna",
-    "luogo": "Piazza del Nettuno",
-    "lat": 44.4945,
-    "lng": 11.3428,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FILCAMS-CGIL Bologna"
-    ],
-    "fonte": "https://www.cgil.it/strumenti/scioperi-e-vertenze/calendario-scioperi-9-15-novembre-2026-vertenze-mobilitazioni-e-iniziative-cgil-hff6vqr7",
-    "note": "Per il rinnovo del CCNL farmacie private, scaduto ad agosto 2024. Presidio aperto alla cittadinanza."
-  },
-  {
-    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale ANM di Napoli",
     "data": "2026-11-16",
     "ora_inizio": "11:00",
@@ -1521,6 +1480,28 @@
     ],
     "fonte": "https://www.ilfattoquotidiano.it/2026/11/01/usb-manifestazione-12-dicembre-roma-notizie/8557106/",
     "note": "Annunciata all'assemblea nazionale USB del 1/11; luogo e orario non ancora comunicati: Roma centro"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale Autolinee Romano a Crotone",
+    "data": "2026-12-14",
+    "ora_inizio": "10:59",
+    "ora_fine": "14:59",
+    "comune": "Crotone",
+    "provincia": "KR",
+    "regione": "Calabria",
+    "luogo": "",
+    "lat": 39.0808,
+    "lng": 17.127,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "FILT-CGIL",
+      "UILT-UIL",
+      "FAISA-CISAL",
+      "UGL-FNA"
+    ],
+    "fonte": "https://scioperiitalia.it/calendario/2026-12",
+    "note": "4 ore, trasporto pubblico locale: personale Autolinee Romano Regionali e Fratelli Romano (dati MIT)"
   },
   {
     "tipo": "sciopero_categoria",
