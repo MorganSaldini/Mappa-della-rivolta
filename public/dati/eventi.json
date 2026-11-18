@@ -361,32 +361,6 @@
       "ci_saro": 1
     },
     {
-      "id": "2026-11-20-verona-corteo-02",
-      "tipo": "corteo",
-      "titolo": "Sciopero studentesco internazionale",
-      "data": "2026-11-20",
-      "ora_inizio": "08:00",
-      "ora_fine": "13:00",
-      "comune": "Verona",
-      "provincia": "VR",
-      "regione": "Veneto",
-      "luogo": "Piazzale XXV Aprile",
-      "lat": 45.43005,
-      "lng": 10.98202,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Rete degli Studenti Medi Verona",
-        "UDU - Unione degli Universitari Verona"
-      ],
-      "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
-      "stato": "da_verificare",
-      "conferme": 3,
-      "aggiornato_il": "2026-11-11T01:50:26",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 3
-    },
-    {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Studentesco",
@@ -408,6 +382,32 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-verona-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco internazionale",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": "13:00",
+      "comune": "Verona",
+      "provincia": "VR",
+      "regione": "Veneto",
+      "luogo": "Piazzale XXV Aprile",
+      "lat": 45.43005,
+      "lng": 10.98202,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Rete degli Studenti Medi Verona",
+        "UDU - Unione degli Universitari Verona"
+      ],
+      "fonte": "https://www.instagram.com/p/DermOKHDK4p/?exln=aGpldXF3NXY0Y2dh",
+      "stato": "verificato",
+      "conferme": 4,
+      "aggiornato_il": "2026-11-18T12:48:52",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-cesena-corteo-01",
@@ -581,7 +581,7 @@
       "aggiornato_il": "2026-11-10T02:21:57",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-macerata-sciopero_generale-01",
@@ -625,11 +625,11 @@
       "organizzatori": [],
       "fonte": "https://www.instagram.com/p/Dfo2ntvoWhW/?vrfl=MXBrYXBtdTVucmM5Ng==",
       "stato": "verificato",
-      "conferme": 2,
+      "conferme": 3,
       "aggiornato_il": "2026-11-13T12:59:12",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-vicenza-corteo-01",
@@ -806,7 +806,7 @@
       "aggiornato_il": "2026-11-11T01:46:17",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 13
+      "ci_saro": 15
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -831,7 +831,7 @@
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 10
+      "ci_saro": 11
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -954,7 +954,7 @@
       "aggiornato_il": "2026-11-06T12:32:45",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 5
+      "ci_saro": 6
     },
     {
       "id": "2026-11-20-roma-corteo-01",
@@ -1318,7 +1318,7 @@
       "aggiornato_il": "2026-11-10T19:10:50",
       "gruppo": "g-170bb72f0d2e",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-siena-corteo-01",
@@ -1744,7 +1744,7 @@
       "aggiornato_il": "2026-11-14T01:55:38",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-brescia-corteo-01",
@@ -1998,7 +1998,7 @@
       "aggiornato_il": "2026-11-16T16:24:06",
       "gruppo": "g-41c70b4fd111",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-saluzzo-corteo-01",
@@ -2165,7 +2165,7 @@
       "aggiornato_il": "2026-11-15T14:15:51",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 8
+      "ci_saro": 9
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -2550,7 +2550,7 @@
       "aggiornato_il": "2026-11-13T13:02:06",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 5
+      "ci_saro": 6
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -3702,6 +3702,29 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-12-04-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale dei Vigili del Fuoco",
+      "data": "2026-12-04",
+      "ora_inizio": "09:00",
+      "ora_fine": "13:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Roma centro",
+      "lat": 41.8931,
+      "lng": 12.4828,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://orizzonteinsegnanti.it/scioperi-nel-settore-scuola-e-pubblico-impiego-il-calendario-delle-mobilitazioni-per-novembre-e-dicembre-2026/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-18T18:20:09",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-04-roma-presidio-01",
       "tipo": "presidio",
       "titolo": "Presidio davanti al Ministero dei Trasporti per lo sciopero dei trasporti",
@@ -4075,6 +4098,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-12-18-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale della scuola",
+      "data": "2026-12-18",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "Roma centro",
+      "lat": 41.8931,
+      "lng": 12.4828,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "La Voce dei Giusti"
+      ],
+      "fonte": "https://orizzonteinsegnanti.it/sciopero-scuola-proclamato-per-il-18-dicembre-2026/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-18T18:20:17",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-22-cassino-altro-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: occupazione Rosso natale",
@@ -4148,8 +4196,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-18T07:41:48",
+  "ultimo_aggiornamento": "2026-11-18T18:20:17",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-18T09:01:48Z"
+  "copia_del": "2026-11-18T17:56:33Z"
 }
