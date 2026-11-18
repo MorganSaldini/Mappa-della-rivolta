@@ -531,7 +531,7 @@
       "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-ferrara-corteo-02",
@@ -706,7 +706,7 @@
       "aggiornato_il": "2026-11-15T14:17:32",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-arezzo-sciopero_generale-01",
@@ -806,7 +806,7 @@
       "aggiornato_il": "2026-11-11T01:46:17",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 12
+      "ci_saro": 13
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -929,7 +929,7 @@
       "aggiornato_il": "2026-11-10T19:10:46",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-trento-corteo-01",
@@ -1010,7 +1010,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 5
+      "ci_saro": 7
     },
     {
       "id": "2026-11-20-bologna-corteo-02",
@@ -1539,7 +1539,7 @@
       "aggiornato_il": "2026-11-06T12:32:27",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-imola-corteo-01",
@@ -2798,7 +2798,7 @@
       "aggiornato_il": "2026-11-18T00:19:35",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-ascoli-piceno-corteo-01",
@@ -3474,6 +3474,29 @@
       "ci_saro": 0
     },
     {
+      "id": "2026-11-25-monfalcone-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo contro la violenza sulle donne",
+      "data": "2026-11-25",
+      "ora_inizio": "17:00",
+      "ora_fine": null,
+      "comune": "Monfalcone",
+      "provincia": "GO",
+      "regione": "Friuli-Venezia Giulia",
+      "luogo": "via Matteotti (Liceo)",
+      "lat": 45.80495,
+      "lng": 13.53306,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://facebook.com/events/s/corteo-a-monfalcone-contro-la-/451062324325498/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-18T07:41:48",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-scicli-corteo-01",
       "tipo": "corteo",
       "titolo": "Facciamo rumore contro la violenza sulle donne",
@@ -4125,8 +4148,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-18T00:20:31",
+  "ultimo_aggiornamento": "2026-11-18T07:41:48",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-18T01:13:52Z"
+  "copia_del": "2026-11-18T09:01:48Z"
 }
