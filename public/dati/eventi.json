@@ -309,31 +309,6 @@
       "ci_saro": 1
     },
     {
-      "id": "2026-11-20-viareggio-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Manifestazione di studenti e lavoratori contro carovita, riarmo e governo Meloni",
-      "data": "2026-11-20",
-      "ora_inizio": "08:00",
-      "ora_fine": null,
-      "comune": "Viareggio",
-      "provincia": "LU",
-      "regione": "Toscana",
-      "luogo": "Piazza Mazzini",
-      "lat": 43.87083,
-      "lng": 10.24246,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Il Picchio Rosso Versilia"
-      ],
-      "fonte": "https://www.facebook.com/share/p/1HuXBbxGz4/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-18T23:13:25",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Studentesco",
@@ -480,6 +455,54 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-20-viareggio-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione di studenti e lavoratori contro carovita, riarmo e governo Meloni",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Viareggio",
+      "provincia": "LU",
+      "regione": "Toscana",
+      "luogo": "Piazza Mazzini",
+      "lat": 43.87083,
+      "lng": 10.24246,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Il Picchio Rosso Versilia"
+      ],
+      "fonte": "https://www.facebook.com/share/p/1HuXBbxGz4/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T17:49:13",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-valdagno-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero studentesco e cittadino er la difesa dell'ospedale e dei posti di lavoro in vallata",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Valdagno",
+      "provincia": "VI",
+      "regione": "Veneto",
+      "luogo": "",
+      "lat": 45.65068,
+      "lng": 11.28991,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.facebook.com/share/p/1YvY5Wy4xQ/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T17:50:22",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-asola-altro-01",
@@ -650,7 +673,7 @@
       "aggiornato_il": "2026-11-14T01:55:13",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-treviso-sciopero_generale-01",
@@ -730,6 +753,29 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-11-20-lucca-corteo-03",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": "08:30",
+      "ora_fine": "12:00",
+      "comune": "Lucca",
+      "provincia": "LU",
+      "regione": "Toscana",
+      "luogo": "Piazza Verdi + San Michele",
+      "lat": 44.01776,
+      "lng": 10.45443,
+      "posizione_approssimativa": 1,
+      "organizzatori": [],
+      "fonte": "https://toscana.usb.it/argomento/toscana.html",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T17:51:28",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-mantova-corteo-01",
       "tipo": "corteo",
       "titolo": "Corteo CGIL contro carovita e guerre",
@@ -780,6 +826,56 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-venezia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per sciopero 20/11",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Venezia",
+      "provincia": "VE",
+      "regione": "Veneto",
+      "luogo": "Campo santa Margherita",
+      "lat": 45.43429,
+      "lng": 12.32372,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "LISC (liberi saperi critici)"
+      ],
+      "fonte": "https://www.instagram.com/p/Dfy5x5niIeY/?dmpr=cjAzNXdybnptd2U=",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T18:11:34",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-mestre-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": "09:00",
+      "ora_fine": null,
+      "comune": "Mestre",
+      "provincia": "VE",
+      "regione": "Veneto",
+      "luogo": "Piazzale della stazione",
+      "lat": 45.49431,
+      "lng": 12.24181,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FGC (Fronte della Gioventù Comunista)"
+      ],
+      "fonte": "https://www.instagram.com/p/Df2cjh2ITPA/?cnvx=MTFid3RvMmp1bm9hNA==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T18:14:46",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-milao-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale Cgil",
@@ -802,7 +898,7 @@
       "aggiornato_il": "2026-11-11T01:46:17",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 15
+      "ci_saro": 16
     },
     {
       "id": "2026-11-20-bologna-sciopero_generale-01",
@@ -978,7 +1074,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-milano-corteo-01",
@@ -1535,7 +1631,7 @@
       "aggiornato_il": "2026-11-06T12:32:27",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-imola-corteo-01",
@@ -1585,7 +1681,7 @@
       "aggiornato_il": "2026-11-10T02:21:57",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-ragusa-corteo-01",
@@ -1686,7 +1782,7 @@
       "aggiornato_il": "2026-11-14T01:55:26",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-palermo-corteo-02",
@@ -1715,7 +1811,7 @@
       "aggiornato_il": "2026-11-16T16:24:41",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-modica-corteo-01",
@@ -2139,29 +2235,27 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-20-catania-sciopero_generale-01",
-      "tipo": "sciopero_generale",
-      "titolo": "Manifestazione con corteo indetta dalla CGIL. Il corteo partirà da Piazza Roma e finirà in Piazza Manganelli",
+      "id": "2026-11-20-varese-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per lo sciopero generale",
       "data": "2026-11-20",
-      "ora_inizio": "09:30",
+      "ora_inizio": "09:00",
       "ora_fine": null,
-      "comune": "Catania",
-      "provincia": "CT",
-      "regione": "Sicilia",
-      "luogo": "Piazza Roma",
-      "lat": 37.51327,
-      "lng": 15.08282,
+      "comune": "Varese",
+      "provincia": "VA",
+      "regione": "Lombardia",
+      "luogo": "Piazzale Trieste",
+      "lat": 45.8162,
+      "lng": 8.83295,
       "posizione_approssimativa": 0,
-      "organizzatori": [
-        "CGIL"
-      ],
-      "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-18T19:05:49",
+      "organizzatori": [],
+      "fonte": "https://www.cgil.lombardia.it/sciopero-generale-cgil-20-novembre-2026-lombardia/",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-19T17:52:17",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": null
     },
     {
       "id": "2026-11-20-firenze-sciopero_generale-01",
@@ -2186,7 +2280,7 @@
       "aggiornato_il": "2026-11-15T14:15:51",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 10
+      "ci_saro": 11
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -2440,7 +2534,7 @@
       ],
       "fonte": "https://www.instagram.com/p/DfhyyWvAb47/?vrfl=Y3d3eXR6NnBsMzlt",
       "stato": "verificato",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-11T01:48:36",
       "gruppo": null,
       "sottotipo": null,
@@ -2571,7 +2665,7 @@
       "aggiornato_il": "2026-11-13T13:02:06",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 6
+      "ci_saro": 7
     },
     {
       "id": "2026-11-20-avellino-corteo-01",
@@ -2817,6 +2911,82 @@
       "stato": "verificato",
       "conferme": 1,
       "aggiornato_il": "2026-11-18T00:19:35",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-catania-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Manifestazione con corteo indetta dalla CGIL. Il corteo partirà da Piazza Roma e finirà in Piazza Manganelli",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Piazza Roma",
+      "lat": 37.51327,
+      "lng": 15.08282,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T17:53:28",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-20-torino-sciopero_generale-03",
+      "tipo": "sciopero_generale",
+      "titolo": "Sciopero Generale Studentesco",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": "13:30",
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Arbarello",
+      "lat": 45.07399,
+      "lng": 7.67539,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CAU",
+        "Cambiare Rotta"
+      ],
+      "fonte": "https://www.instagram.com/p/Df12yrOkTvN/?img_index=1",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-19T17:53:45",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-20-novara-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Sciopero generale",
+      "data": "2026-11-20",
+      "ora_inizio": "09:45",
+      "ora_fine": null,
+      "comune": "Novara",
+      "provincia": "NO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Garibaldi",
+      "lat": 45.45079,
+      "lng": 8.62396,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.cgilnovaravco.it/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-19T17:54:41",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
@@ -3259,7 +3429,7 @@
       "aggiornato_il": "2026-11-01T15:11:14",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-21-cervignano-del-friuli-presidio-01",
@@ -3510,9 +3680,9 @@
       "posizione_approssimativa": 1,
       "organizzatori": [],
       "fonte": "https://facebook.com/events/s/corteo-a-monfalcone-contro-la-/451062324325498/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-18T07:41:48",
+      "aggiornato_il": "2026-11-19T17:55:00",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -4217,8 +4387,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-18T23:13:25",
+  "ultimo_aggiornamento": "2026-11-19T18:14:46",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-19T07:50:31Z"
+  "copia_del": "2026-11-19T17:16:08Z"
 }
