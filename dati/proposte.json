@@ -1029,26 +1029,6 @@
     "gruppo": "sciopero-ferrovie-locali-2026-11-21"
   },
   {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale del personale ENAV",
-    "data": "2026-11-21",
-    "ora_inizio": "13:00",
-    "ora_fine": "17:00",
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "FILT-CGIL",
-      "UGL-TA"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "4 ore, trasporto aereo; nazionale, posizione indicativa"
-  },
-  {
     "ora_inizio": null,
     "ora_fine": null,
     "luogo": "",
