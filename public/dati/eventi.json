@@ -2,58 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-18-milano-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Colazione antisfratto contro sfratti e sgomberi",
-      "data": "2026-11-18",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Milano",
-      "provincia": "MI",
-      "regione": "Lombardia",
-      "luogo": "Spazio anarchico Bruzzi Malatesta, via Torricelli 19",
-      "lat": 45.44449,
-      "lng": 9.17692,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Spazio anarchico Bruzzi Malatesta"
-      ],
-      "fonte": "https://puntello.org/event/colazione-antisfratto",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-10T19:10:45",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 2
-    },
-    {
-      "id": "2026-11-18-torino-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Casa del popolo in piazza",
-      "data": "2026-11-18",
-      "ora_inizio": "16:03",
-      "ora_fine": "19:30",
-      "comune": "Torino",
-      "provincia": "TO",
-      "regione": "Piemonte",
-      "luogo": "Piazza Castello",
-      "lat": 45.07067,
-      "lng": 7.68623,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Assemblea di collettivi",
-        "sindacati di base",
-        "realtà del territorio contro il riarmo e per la giistizia so"
-      ],
-      "fonte": "https://www.instagram.com/popoloinpiazza?xtok=MWZsdGM0ajI2dmw2YQ==",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-11T17:49:21",
-      "gruppo": "g-1d4d14d64c5a",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-19-bologna-presidio-01",
       "tipo": "presidio",
       "titolo": "Presidio in sostegno delle attrici e donne contro la violenza maschile",
@@ -361,6 +309,31 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-11-20-viareggio-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Manifestazione di studenti e lavoratori contro carovita, riarmo e governo Meloni",
+      "data": "2026-11-20",
+      "ora_inizio": "08:00",
+      "ora_fine": null,
+      "comune": "Viareggio",
+      "provincia": "LU",
+      "regione": "Toscana",
+      "luogo": "Piazza Mazzini",
+      "lat": 43.87083,
+      "lng": 10.24246,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Il Picchio Rosso Versilia"
+      ],
+      "fonte": "https://www.facebook.com/share/p/1HuXBbxGz4/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-18T23:13:25",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-10-30-bassano-del-grappa-corteo-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero Studentesco",
@@ -432,7 +405,7 @@
       "aggiornato_il": "2026-11-11T01:54:15",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-cesena-corteo-02",
@@ -455,7 +428,7 @@
       "aggiornato_il": "2026-11-11T01:54:29",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-11-20-aosta-sciopero_generale-01",
@@ -507,6 +480,29 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-11-20-asola-altro-01",
+      "tipo": "altro",
+      "titolo": "Sciopero degli studenti dell'IIS Giovanni Falcone",
+      "data": "2026-11-20",
+      "ora_inizio": "08:30",
+      "ora_fine": "12:00",
+      "comune": "Asola",
+      "provincia": "MN",
+      "regione": "Lombardia",
+      "luogo": "Strada Saccole Pignole",
+      "lat": 45.22528,
+      "lng": 10.42159,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://asola-20-novembre.netlify.app",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-18T22:05:18",
+      "gruppo": null,
+      "sottotipo": "Sciopero studentesco",
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-reggio-emilia-sciopero_generale-01",
@@ -681,7 +677,7 @@
       "aggiornato_il": "2026-11-14T01:55:48",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-11-20-savona-corteo-01",
@@ -1010,7 +1006,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 7
+      "ci_saro": 8
     },
     {
       "id": "2026-11-20-bologna-corteo-02",
@@ -2143,6 +2139,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-20-catania-sciopero_generale-01",
+      "tipo": "sciopero_generale",
+      "titolo": "Manifestazione con corteo indetta dalla CGIL. Il corteo partirà da Piazza Roma e finirà in Piazza Manganelli",
+      "data": "2026-11-20",
+      "ora_inizio": "09:30",
+      "ora_fine": null,
+      "comune": "Catania",
+      "provincia": "CT",
+      "regione": "Sicilia",
+      "luogo": "Piazza Roma",
+      "lat": 37.51327,
+      "lng": 15.08282,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "CGIL"
+      ],
+      "fonte": "https://www.cgil.it/speciali/2026/sciopero-generale-cgil-20-novembre-2026",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-18T19:05:49",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-11-20-firenze-sciopero_generale-01",
       "tipo": "sciopero_generale",
       "titolo": "Sciopero generale CGIL contro il caro vita, per casa, salute e istruzione",
@@ -2165,7 +2186,7 @@
       "aggiornato_il": "2026-11-15T14:15:51",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 9
+      "ci_saro": 10
     },
     {
       "id": "2026-11-20-rimini-corteo-01",
@@ -2450,7 +2471,7 @@
       "aggiornato_il": "2026-11-11T01:48:49",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-verbania-sciopero_generale-01",
@@ -2750,7 +2771,7 @@
       "aggiornato_il": "2026-11-15T14:17:32",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-imperia-sciopero_generale-01",
@@ -4196,8 +4217,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-18T18:20:17",
+  "ultimo_aggiornamento": "2026-11-18T23:13:25",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-18T17:56:33Z"
+  "copia_del": "2026-11-19T00:13:27Z"
 }
