@@ -2220,7 +2220,7 @@
       ],
       "fonte": "https://www.instagram.com/p/Df2bYROsL4I/?bqrl=enh6NWlvNXpwNngx",
       "stato": "da_verificare",
-      "conferme": 0,
+      "conferme": 1,
       "aggiornato_il": "2026-11-20T00:25:10",
       "gruppo": null,
       "sottotipo": null,
@@ -3965,7 +3965,7 @@
       "aggiornato_il": "2026-11-11T17:51:02",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 2
     },
     {
       "id": "2026-12-09-torino-assemblea-01",
@@ -4040,7 +4040,7 @@
       "aggiornato_il": "2026-11-03T16:36:55",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 2
+      "ci_saro": 3
     },
     {
       "id": "2026-12-14-fiumicino-sciopero_categoria-01",
@@ -4359,5 +4359,5 @@
   "ultimo_aggiornamento": "2026-11-20T00:25:10",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-19T23:45:06Z"
+  "copia_del": "2026-11-20T06:58:49Z"
 }
