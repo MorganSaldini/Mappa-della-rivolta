@@ -24,7 +24,7 @@
       "aggiornato_il": "2026-10-18T10:55:52",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-torino-sciopero_generale-01",
@@ -49,7 +49,7 @@
       "aggiornato_il": "2026-11-11T01:46:08",
       "gruppo": "g-8ba98c49cf13",
       "sottotipo": null,
-      "ci_saro": 7
+      "ci_saro": 8
     },
     {
       "id": "2026-11-20-torino-altro-01",
@@ -465,7 +465,7 @@
       "organizzatori": [],
       "fonte": "https://asola-20-novembre.netlify.app",
       "stato": "da_verificare",
-      "conferme": 1,
+      "conferme": 2,
       "aggiornato_il": "2026-11-18T22:05:18",
       "gruppo": null,
       "sottotipo": "Sciopero studentesco",
@@ -494,7 +494,7 @@
       "aggiornato_il": "2026-11-07T14:38:39",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 4
+      "ci_saro": 5
     },
     {
       "id": "2026-11-20-ferrara-corteo-02",
@@ -544,7 +544,7 @@
       "aggiornato_il": "2026-11-10T02:21:57",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-macerata-sciopero_generale-01",
@@ -867,7 +867,7 @@
       "aggiornato_il": "2026-10-21T17:06:07",
       "gruppo": "g-39fb7bfe7880",
       "sottotipo": null,
-      "ci_saro": 11
+      "ci_saro": 12
     },
     {
       "id": "2026-11-20-pisa-sciopero_generale-01",
@@ -1018,7 +1018,7 @@
       "aggiornato_il": "2026-11-10T19:10:47",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": 3
+      "ci_saro": 4
     },
     {
       "id": "2026-11-20-milano-corteo-01",
@@ -1242,7 +1242,7 @@
       "aggiornato_il": "2026-11-10T19:10:49",
       "gruppo": "g-905e670f5cb8",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-20-l-aquila-corteo-01",
@@ -2809,7 +2809,7 @@
       "aggiornato_il": "2026-11-15T14:17:31",
       "gruppo": "ag-sciopero-generale-2026-11-20",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-11-20-potenza-corteo-01",
@@ -2961,6 +2961,29 @@
       "ci_saro": 2
     },
     {
+      "id": "2026-11-20-bologna-sciopero_generale-02",
+      "tipo": "sciopero_generale",
+      "titolo": "Scuola Università Ricerca AFAM",
+      "data": "2026-11-20",
+      "ora_inizio": "10:00",
+      "ora_fine": null,
+      "comune": "Bologna",
+      "provincia": "BO",
+      "regione": "Emilia-Romagna",
+      "luogo": "Piazza Aldrovandi",
+      "lat": 44.4936,
+      "lng": 11.35168,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/Dfy0jbIjatF/?dmpr=MWZldGp5YXpqdWVtdw==",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-20T09:20:47",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-20-ascoli-piceno-corteo-01",
       "tipo": "corteo",
       "titolo": "Sciopero generale Cgil",
@@ -3087,7 +3110,7 @@
       "aggiornato_il": "2026-10-17T01:27:51",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-21-napoli-sciopero_categoria-01",
@@ -3373,7 +3396,7 @@
       "aggiornato_il": "2026-10-20T10:02:15",
       "gruppo": "ag-sciopero-ferrovie-locali-2026-11-21",
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-21-verona-sciopero_categoria-01",
@@ -4356,8 +4379,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-20T00:25:10",
+  "ultimo_aggiornamento": "2026-11-20T09:20:47",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-20T06:58:49Z"
+  "copia_del": "2026-11-20T16:01:48Z"
 }
