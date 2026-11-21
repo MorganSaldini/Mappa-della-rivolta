@@ -28,6 +28,33 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-21-roma-sciopero_categoria-02",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale ferroviario e merci su rotaia",
+      "data": "2026-11-21",
+      "ora_inizio": null,
+      "ora_fine": "20:00",
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "CUB Trasporti",
+        "SGB Ferrovie",
+        "CAT"
+      ],
+      "fonte": "https://www.quotidianomotori.com/mobilita-urbana/scioperi-novembre-2026-treni-aerei-tpl-calendario/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-21T12:00:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-21-adria-sciopero_categoria-01",
       "tipo": "sciopero_categoria",
       "titolo": "Sciopero ferrovie locali: Sistemi Territoriali",
@@ -569,6 +596,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-25-la-spezia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo cittadino contro la violenza di genere",
+      "data": "2026-11-25",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "La Spezia",
+      "provincia": "SP",
+      "regione": "Liguria",
+      "luogo": "Piazza Garibaldi",
+      "lat": 44.1069,
+      "lng": 9.8262,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Non Una Di Meno La Spezia"
+      ],
+      "fonte": "https://www.cittadellaspezia.com/2026/11/13/non-una-di-meno-questanno-niente-roma-i-prezzi-sono-diventati-proibitivi-ma-non-partire-non-significa-restare-a-casa-681241",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-21T12:00:29",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-scicli-corteo-01",
       "tipo": "corteo",
       "titolo": "Facciamo rumore contro la violenza sulle donne",
@@ -669,6 +721,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-28-roma-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo nazionale transfemminista",
+      "data": "2026-11-28",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Non Una Di Meno"
+      ],
+      "fonte": "https://www.casamadiba.net/post/28novembre2026-tutte-a-roma-corteo-nazionale-transfemminista-di-non-una-di-meno/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-21T12:00:30",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-28-roma-corteo-01",
       "tipo": "corteo",
       "titolo": "Stati generali dell'autodeterminazione",
@@ -694,6 +771,31 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-29-torre-del-greco-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Assemblea dei lavoratori contro carovita e guerra",
+      "data": "2026-11-29",
+      "ora_inizio": "10:30",
+      "ora_fine": "13:30",
+      "comune": "Torre del Greco",
+      "provincia": "NA",
+      "regione": "Campania",
+      "luogo": "Casa del Popolo “Pezzentelle Rosse” II Vico Abolitomonte 9 Torre del Greco (NA)",
+      "lat": 40.78792,
+      "lng": 14.36828,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Potere al Popolo!"
+      ],
+      "fonte": "https://www.instagram.com/p/Df7jgUGjbO-",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-21T12:01:05",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
+    },
+    {
       "id": "2026-12-03-milano-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass Milano",
@@ -715,6 +817,35 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-12-04-reggio-nell-emilia-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero dei lavoratori del gruppo Iren",
+      "data": "2026-12-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Reggio nell'Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "",
+      "lat": 44.6983,
+      "lng": 10.6312,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILCTEM-CGIL",
+        "FEMCA-CISL",
+        "FLAEI-CISL",
+        "UILTEC",
+        "FP-CGIL"
+      ],
+      "fonte": "https://www.cisl.it/sciopero-gruppo-iren-4-dicembre/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-21T12:00:31",
+      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -878,6 +1009,31 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-12-07-roma-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero nazionale di 24 ore dell'autotrasporto merci",
+      "data": "2026-12-07",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "USB Lavoro Privato"
+      ],
+      "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/usb-proclama-scioperi-dei-camionisti-a-dicembre-2026/",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-21T12:00:32",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-09-torino-assemblea-01",
@@ -1268,8 +1424,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-19T17:55:00",
+  "ultimo_aggiornamento": "2026-11-21T12:01:05",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-21T03:26:53Z"
+  "copia_del": "2026-11-21T11:39:54Z"
 }
