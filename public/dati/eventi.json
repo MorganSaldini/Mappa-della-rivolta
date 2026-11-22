@@ -332,31 +332,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-28-roma-corteo-02",
-      "tipo": "corteo",
-      "titolo": "Corteo nazionale transfemminista",
-      "data": "2026-11-28",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "Non Una Di Meno"
-      ],
-      "fonte": "https://www.casamadiba.net/post/28novembre2026-tutte-a-roma-corteo-nazionale-transfemminista-di-non-una-di-meno/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-21T12:00:30",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-28-roma-corteo-01",
       "tipo": "corteo",
       "titolo": "Stati generali dell'autodeterminazione",
@@ -382,6 +357,31 @@
       "ci_saro": 3
     },
     {
+      "id": "2026-11-28-roma-corteo-02",
+      "tipo": "corteo",
+      "titolo": "Corteo nazionale transfemminista",
+      "data": "2026-11-28",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Roma",
+      "provincia": "RM",
+      "regione": "Lazio",
+      "luogo": "",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Non Una Di Meno"
+      ],
+      "fonte": "https://www.casamadiba.net/post/28novembre2026-tutte-a-roma-corteo-nazionale-transfemminista-di-non-una-di-meno/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-22T00:58:06",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-29-torre-del-greco-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Assemblea dei lavoratori contro carovita e guerra",
@@ -399,9 +399,9 @@
         "Potere al Popolo!"
       ],
       "fonte": "https://www.instagram.com/p/Df7jgUGjbO-",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 1,
-      "aggiornato_il": "2026-11-21T12:01:05",
+      "aggiornato_il": "2026-11-22T00:58:16",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 1
@@ -428,35 +428,6 @@
       "conferme": 0,
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-12-04-reggio-nell-emilia-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero dei lavoratori del gruppo Iren",
-      "data": "2026-12-04",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Reggio nell'Emilia",
-      "provincia": "RE",
-      "regione": "Emilia-Romagna",
-      "luogo": "",
-      "lat": 44.6983,
-      "lng": 10.6312,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "FILCTEM-CGIL",
-        "FEMCA-CISL",
-        "FLAEI-CISL",
-        "UILTEC",
-        "FP-CGIL"
-      ],
-      "fonte": "https://www.cisl.it/sciopero-gruppo-iren-4-dicembre/",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-21T12:00:31",
-      "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
     },
@@ -514,6 +485,35 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": 2
+    },
+    {
+      "id": "2026-12-04-reggio-nell-emilia-sciopero_categoria-01",
+      "tipo": "sciopero_categoria",
+      "titolo": "Sciopero dei lavoratori del gruppo Iren",
+      "data": "2026-12-04",
+      "ora_inizio": null,
+      "ora_fine": null,
+      "comune": "Reggio nell'Emilia",
+      "provincia": "RE",
+      "regione": "Emilia-Romagna",
+      "luogo": "",
+      "lat": 44.6983,
+      "lng": 10.6312,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "FILCTEM-CGIL",
+        "FEMCA-CISL",
+        "FLAEI-CISL",
+        "UILTEC",
+        "FP-CGIL"
+      ],
+      "fonte": "https://www.cisl.it/sciopero-gruppo-iren-4-dicembre/",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-22T00:58:24",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
     },
     {
       "id": "2026-12-04-roma-sciopero_categoria-01",
@@ -639,9 +639,9 @@
         "USB Lavoro Privato"
       ],
       "fonte": "https://www.trasportoeuropa.it/notizie/autotrasporto/usb-proclama-scioperi-dei-camionisti-a-dicembre-2026/",
-      "stato": "da_verificare",
+      "stato": "verificato",
       "conferme": 0,
-      "aggiornato_il": "2026-11-21T12:00:32",
+      "aggiornato_il": "2026-11-22T00:58:34",
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
@@ -1035,8 +1035,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-21T12:01:05",
+  "ultimo_aggiornamento": "2026-11-22T00:58:34",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-21T23:45:05Z"
+  "copia_del": "2026-11-22T06:29:45Z"
 }
