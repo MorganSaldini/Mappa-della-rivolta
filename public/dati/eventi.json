@@ -155,6 +155,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-23-firenze-presidio-01",
+      "tipo": "presidio",
+      "titolo": "Piantedosi a Firenze",
+      "data": "2026-11-23",
+      "ora_inizio": "10:02",
+      "ora_fine": null,
+      "comune": "Firenze",
+      "provincia": "FI",
+      "regione": "Toscana",
+      "luogo": "Piazza San Lorenzo",
+      "lat": 43.77507,
+      "lng": 11.25457,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://www.instagram.com/p/DgA8AFMjdld/?evlk=M3VoOWxtaDBieGo3",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-22T20:05:11",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-firenze-presidio-01",
       "tipo": "presidio",
       "titolo": "Manifestazione dei tassisti a Firenze",
@@ -280,6 +303,31 @@
       "gruppo": null,
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-25-lecce-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Come combattere la destra?",
+      "data": "2026-11-25",
+      "ora_inizio": "19:30",
+      "ora_fine": "22:00",
+      "comune": "Lecce",
+      "provincia": "LE",
+      "regione": "Puglia",
+      "luogo": "Circolo Arci Zei, via dei Chiaramonte, 2",
+      "lat": 40.35397,
+      "lng": 18.17084,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/DgAAldqN2ut/",
+      "stato": "da_verificare",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-22T18:52:26",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-25-torino-assemblea-01",
@@ -1060,8 +1108,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-22T10:56:51",
+  "ultimo_aggiornamento": "2026-11-22T20:05:11",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-22T14:50:57Z"
+  "copia_del": "2026-11-22T20:59:26Z"
 }
