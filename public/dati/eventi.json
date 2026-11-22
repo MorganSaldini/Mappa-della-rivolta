@@ -232,6 +232,31 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-25-milano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per la giornata mondiale contro la violenza sulle donne e di genere",
+      "data": "2026-11-25",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazzale Loreto",
+      "lat": 45.48625,
+      "lng": 9.2169,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Non Una Di Meno"
+      ],
+      "fonte": "https://www.instagram.com/p/Df7O9rVs87z/?lqvp=Z3BqMTFrM3ZkaGRw",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-22T10:56:51",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-scicli-corteo-01",
       "tipo": "corteo",
       "titolo": "Facciamo rumore contro la violenza sulle donne",
@@ -1035,8 +1060,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-22T00:58:34",
+  "ultimo_aggiornamento": "2026-11-22T10:56:51",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-22T06:29:45Z"
+  "copia_del": "2026-11-22T14:50:57Z"
 }
