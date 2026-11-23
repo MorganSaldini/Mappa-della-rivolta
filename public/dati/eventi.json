@@ -105,56 +105,6 @@
       "ci_saro": null
     },
     {
-      "id": "2026-11-25-la-spezia-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo cittadino contro la violenza di genere",
-      "data": "2026-11-25",
-      "ora_inizio": "18:00",
-      "ora_fine": null,
-      "comune": "La Spezia",
-      "provincia": "SP",
-      "regione": "Liguria",
-      "luogo": "Piazza Garibaldi",
-      "lat": 44.1069,
-      "lng": 9.8262,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "Non Una Di Meno La Spezia"
-      ],
-      "fonte": "https://www.cittadellaspezia.com/2026/11/13/non-una-di-meno-questanno-niente-roma-i-prezzi-sono-diventati-proibitivi-ma-non-partire-non-significa-restare-a-casa-681241",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-21T12:00:29",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-25-milano-corteo-01",
-      "tipo": "corteo",
-      "titolo": "Corteo per la giornata mondiale contro la violenza sulle donne e di genere",
-      "data": "2026-11-25",
-      "ora_inizio": "18:00",
-      "ora_fine": null,
-      "comune": "Milano",
-      "provincia": "MI",
-      "regione": "Lombardia",
-      "luogo": "Piazzale Loreto",
-      "lat": 45.48625,
-      "lng": 9.2169,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Non Una Di Meno"
-      ],
-      "fonte": "https://www.instagram.com/p/Df7O9rVs87z/?lqvp=Z3BqMTFrM3ZkaGRw",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-22T10:56:51",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-25-scicli-corteo-01",
       "tipo": "corteo",
       "titolo": "Facciamo rumore contro la violenza sulle donne",
@@ -180,6 +130,56 @@
       "ci_saro": null
     },
     {
+      "id": "2026-11-25-la-spezia-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo cittadino contro la violenza di genere",
+      "data": "2026-11-25",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "La Spezia",
+      "provincia": "SP",
+      "regione": "Liguria",
+      "luogo": "Piazza Garibaldi",
+      "lat": 44.1069,
+      "lng": 9.8262,
+      "posizione_approssimativa": 1,
+      "organizzatori": [
+        "Non Una Di Meno La Spezia"
+      ],
+      "fonte": "https://www.cittadellaspezia.com/2026/11/13/non-una-di-meno-questanno-niente-roma-i-prezzi-sono-diventati-proibitivi-ma-non-partire-non-significa-restare-a-casa-681241",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T17:11:05",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-25-milano-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Corteo per la giornata mondiale contro la violenza sulle donne e di genere",
+      "data": "2026-11-25",
+      "ora_inizio": "18:00",
+      "ora_fine": null,
+      "comune": "Milano",
+      "provincia": "MI",
+      "regione": "Lombardia",
+      "luogo": "Piazzale Loreto",
+      "lat": 45.48625,
+      "lng": 9.2169,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Non Una Di Meno"
+      ],
+      "fonte": "https://www.instagram.com/p/Df7O9rVs87z/?lqvp=Z3BqMTFrM3ZkaGRw",
+      "stato": "verificato",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T17:11:18",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": null
+    },
+    {
       "id": "2026-11-25-lecce-assemblea-01",
       "tipo": "assemblea",
       "titolo": "Come combattere la destra?",
@@ -197,12 +197,12 @@
         "Partito Comunista Rivoluzionario"
       ],
       "fonte": "https://www.instagram.com/p/DgAAldqN2ut/",
-      "stato": "da_verificare",
-      "conferme": 1,
-      "aggiornato_il": "2026-11-22T18:52:26",
+      "stato": "verificato",
+      "conferme": 2,
+      "aggiornato_il": "2026-11-23T17:12:17",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": 1
+      "ci_saro": 4
     },
     {
       "id": "2026-11-25-torino-assemblea-01",
@@ -228,6 +228,31 @@
       "gruppo": "g-3babbc14dce7",
       "sottotipo": null,
       "ci_saro": null
+    },
+    {
+      "id": "2026-11-26-bari-assemblea-01",
+      "tipo": "assemblea",
+      "titolo": "Come combattere la destra?",
+      "data": "2026-11-26",
+      "ora_inizio": "16:45",
+      "ora_fine": null,
+      "comune": "Bari",
+      "provincia": "BA",
+      "regione": "Puglia",
+      "luogo": "Parco Rossani",
+      "lat": 41.11627,
+      "lng": 16.87022,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Partito Comunista Rivoluzionario"
+      ],
+      "fonte": "https://www.instagram.com/p/DfuXr7-CLpF/?knvt=cXZ0dDl5bjlnMWxh",
+      "stato": "verificato",
+      "conferme": 1,
+      "aggiornato_il": "2026-11-23T17:12:52",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-26-milano-altro-01",
@@ -277,6 +302,29 @@
       "aggiornato_il": "2026-10-21T02:46:00",
       "gruppo": "g-29b479924aaa",
       "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-11-27-genova-altro-02",
+      "tipo": "altro",
+      "titolo": "L'Europa brucia?",
+      "data": "2026-11-27",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Fratellanza Artigiana Genovese, Vico Chiuso dei Cinque Santi 14",
+      "lat": 44.42008,
+      "lng": 8.92066,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://gancio.invegendo.org/event/leuropa-brucia-2-germania-e-svizzera",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T22:52:22",
+      "gruppo": "g-6427d8844cb7",
+      "sottotipo": "Ciclo d'incontri",
       "ci_saro": null
     },
     {
@@ -355,6 +403,29 @@
       "ci_saro": 1
     },
     {
+      "id": "2026-12-01-genova-altro-01",
+      "tipo": "altro",
+      "titolo": "L'Europa brucia?",
+      "data": "2026-12-01",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Fratellanza Artigiana Genovese, Vico Chiuso dei Cinque Santi 14",
+      "lat": 44.42008,
+      "lng": 8.92066,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://gancio.invegendo.org/event/leuropa-brucia-2-germania-e-svizzera",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T22:52:23",
+      "gruppo": "g-6427d8844cb7",
+      "sottotipo": "Ciclo d'incontri",
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-03-milano-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass Milano",
@@ -406,7 +477,7 @@
       "aggiornato_il": "2026-10-17T01:27:55",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-12-04-genova-sciopero_categoria-01",
@@ -538,7 +609,7 @@
       "aggiornato_il": "2026-11-03T16:36:20",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 0
     },
     {
       "id": "2026-12-05-roma-corteo-02",
@@ -642,6 +713,29 @@
       "aggiornato_il": "2026-11-02T17:20:43",
       "gruppo": "g-eaf2ac60a0ee",
       "sottotipo": null,
+      "ci_saro": null
+    },
+    {
+      "id": "2026-12-11-genova-altro-01",
+      "tipo": "altro",
+      "titolo": "L'Europa brucia?",
+      "data": "2026-12-11",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Fratellanza Artigiana Genovese, Vico Chiuso dei Cinque Santi 14",
+      "lat": 44.42008,
+      "lng": 8.92066,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://gancio.invegendo.org/event/leuropa-brucia-2-germania-e-svizzera",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T22:52:23",
+      "gruppo": "g-6427d8844cb7",
+      "sottotipo": "Ciclo d'incontri",
       "ci_saro": null
     },
     {
@@ -910,6 +1004,29 @@
       "ci_saro": null
     },
     {
+      "id": "2026-12-18-genova-altro-01",
+      "tipo": "altro",
+      "titolo": "L'Europa brucia?",
+      "data": "2026-12-18",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Fratellanza Artigiana Genovese, Vico Chiuso dei Cinque Santi 14",
+      "lat": 44.42008,
+      "lng": 8.92066,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://gancio.invegendo.org/event/leuropa-brucia-2-germania-e-svizzera",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T22:52:23",
+      "gruppo": "g-6427d8844cb7",
+      "sottotipo": "Ciclo d'incontri",
+      "ci_saro": null
+    },
+    {
       "id": "2026-12-22-cassino-altro-01",
       "tipo": "altro",
       "titolo": "Possibili disagi: occupazione Rosso natale",
@@ -958,6 +1075,29 @@
       "ci_saro": null
     },
     {
+      "id": "2027-01-09-genova-altro-01",
+      "tipo": "altro",
+      "titolo": "L'Europa brucia?",
+      "data": "2027-01-09",
+      "ora_inizio": "18:30",
+      "ora_fine": "20:30",
+      "comune": "Genova",
+      "provincia": "GE",
+      "regione": "Liguria",
+      "luogo": "Fratellanza Artigiana Genovese, Vico Chiuso dei Cinque Santi 14",
+      "lat": 44.42008,
+      "lng": 8.92066,
+      "posizione_approssimativa": 0,
+      "organizzatori": [],
+      "fonte": "https://gancio.invegendo.org/event/leuropa-brucia-2-germania-e-svizzera",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-23T22:52:23",
+      "gruppo": "g-6427d8844cb7",
+      "sottotipo": "Ciclo d'incontri",
+      "ci_saro": null
+    },
+    {
       "id": "2027-01-29-genova-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass (CM) genovese",
@@ -983,8 +1123,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-22T20:05:11",
+  "ultimo_aggiornamento": "2026-11-23T22:52:23",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-23T01:31:59Z"
+  "copia_del": "2026-11-23T21:59:10Z"
 }
