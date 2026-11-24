@@ -126,7 +126,33 @@
       "aggiornato_il": "2026-11-23T17:11:18",
       "gruppo": null,
       "sottotipo": null,
-      "ci_saro": null
+      "ci_saro": 1
+    },
+    {
+      "id": "2026-11-25-torino-corteo-01",
+      "tipo": "corteo",
+      "titolo": "Contro la violenza di genere",
+      "data": "2026-11-25",
+      "ora_inizio": "18:30",
+      "ora_fine": null,
+      "comune": "Torino",
+      "provincia": "TO",
+      "regione": "Piemonte",
+      "luogo": "Piazza Carlo Felice, torino",
+      "lat": 45.06419,
+      "lng": 7.68011,
+      "posizione_approssimativa": 0,
+      "organizzatori": [
+        "Non una di meno",
+        "Arci"
+      ],
+      "fonte": "https://www.arcitorino.it/notizie/9960/verso-il-25-novembre-gli-appuntamenti-della-rete-di-arci-torino.html",
+      "stato": "da_verificare",
+      "conferme": 0,
+      "aggiornato_il": "2026-11-24T10:13:10",
+      "gruppo": null,
+      "sottotipo": null,
+      "ci_saro": 1
     },
     {
       "id": "2026-11-25-lecce-assemblea-01",
@@ -274,7 +300,7 @@
       "aggiornato_il": "2026-11-23T22:52:22",
       "gruppo": "g-6427d8844cb7",
       "sottotipo": "Ciclo d'incontri",
-      "ci_saro": null
+      "ci_saro": 1
     },
     {
       "id": "2026-11-28-roma-corteo-01",
@@ -1072,8 +1098,8 @@
       "ci_saro": null
     }
   ],
-  "ultimo_aggiornamento": "2026-11-23T22:52:23",
+  "ultimo_aggiornamento": "2026-11-24T10:13:10",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-24T05:53:37Z"
+  "copia_del": "2026-11-24T17:28:55Z"
 }
