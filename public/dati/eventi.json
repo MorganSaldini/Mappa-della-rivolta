@@ -2,57 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-23-roma-sciopero_categoria-01",
-      "tipo": "sciopero_categoria",
-      "titolo": "Sciopero nazionale dei lavoratori del gruppo Iren",
-      "data": "2026-11-23",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Roma",
-      "provincia": "RM",
-      "regione": "Lazio",
-      "luogo": "",
-      "lat": 41.9028,
-      "lng": 12.4964,
-      "posizione_approssimativa": 1,
-      "organizzatori": [
-        "Filctem Cgil",
-        "Femca Cisl",
-        "Flaei Cisl",
-        "Uiltec Uil"
-      ],
-      "fonte": "https://www.adnkronos.com/economia/scioperi-novembre-calendario-date_5woOoWREizgG7m0j0qlibD",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-01T15:11:19",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
-      "id": "2026-11-23-firenze-presidio-01",
-      "tipo": "presidio",
-      "titolo": "Piantedosi a Firenze",
-      "data": "2026-11-23",
-      "ora_inizio": "10:02",
-      "ora_fine": null,
-      "comune": "Firenze",
-      "provincia": "FI",
-      "regione": "Toscana",
-      "luogo": "Piazza San Lorenzo",
-      "lat": 43.77507,
-      "lng": 11.25457,
-      "posizione_approssimativa": 0,
-      "organizzatori": [],
-      "fonte": "https://www.instagram.com/p/DgA8AFMjdld/?evlk=M3VoOWxtaDBieGo3",
-      "stato": "da_verificare",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-22T20:05:11",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-25-firenze-presidio-01",
       "tipo": "presidio",
       "titolo": "Manifestazione dei tassisti a Firenze",
@@ -1126,5 +1075,5 @@
   "ultimo_aggiornamento": "2026-11-23T22:52:23",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-23T21:59:10Z"
+  "copia_del": "2026-11-24T05:53:37Z"
 }
