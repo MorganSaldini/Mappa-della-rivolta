@@ -2,56 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-26-bari-assemblea-01",
-      "tipo": "assemblea",
-      "titolo": "Come combattere la destra?",
-      "data": "2026-11-26",
-      "ora_inizio": "16:45",
-      "ora_fine": null,
-      "comune": "Bari",
-      "provincia": "BA",
-      "regione": "Puglia",
-      "luogo": "Parco Rossani",
-      "lat": 41.11627,
-      "lng": 16.87022,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Partito Comunista Rivoluzionario"
-      ],
-      "fonte": "https://www.instagram.com/p/DfuXr7-CLpF/?knvt=cXZ0dDl5bjlnMWxh",
-      "stato": "verificato",
-      "conferme": 1,
-      "aggiornato_il": "2026-11-23T17:12:52",
-      "gruppo": null,
-      "sottotipo": null,
-      "ci_saro": 1
-    },
-    {
-      "id": "2026-11-26-milano-altro-01",
-      "tipo": "altro",
-      "titolo": "Critical Mass Milano",
-      "data": "2026-11-26",
-      "ora_inizio": "22:05",
-      "ora_fine": "00:00",
-      "comune": "Milano",
-      "provincia": "MI",
-      "regione": "Lombardia",
-      "luogo": "Piazza mercanti",
-      "lat": 45.46463,
-      "lng": 9.18769,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "Autonomi"
-      ],
-      "fonte": "https://www.facebook.com/share/g/1GmPLvQ1jo/",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-11-02T17:20:43",
-      "gruppo": "g-eaf2ac60a0ee",
-      "sottotipo": null,
-      "ci_saro": 0
-    },
-    {
       "id": "2026-11-27-genova-altro-01",
       "tipo": "altro",
       "titolo": "Critical Mass (CM) genovese",
@@ -898,5 +848,5 @@
   "ultimo_aggiornamento": "2026-11-23T22:52:23",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-26T02:46:35Z"
+  "copia_del": "2026-11-27T04:05:40Z"
 }
