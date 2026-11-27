@@ -1,453 +1,5 @@
 [
   {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Sistemi Territoriali",
-    "data": "2026-11-21",
-    "comune": "Adria",
-    "provincia": "RO",
-    "regione": "Veneto",
-    "lat": 45.0547,
-    "lng": 12.0566,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Linea Adria-Mestre. Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Trasporto Ferroviario Toscano",
-    "data": "2026-11-21",
-    "comune": "Arezzo",
-    "provincia": "AR",
-    "regione": "Toscana",
-    "lat": 43.4633,
-    "lng": 11.8797,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Ferrovie del Sud Est e Ferrotramviaria",
-    "data": "2026-11-21",
-    "comune": "Bari",
-    "provincia": "BA",
-    "regione": "Puglia",
-    "lat": 41.1177,
-    "lng": 16.8697,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Ferrovie del Sud Est e Ferrotramviaria. Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: SAD",
-    "data": "2026-11-21",
-    "comune": "Bolzano",
-    "provincia": "BZ",
-    "regione": "Trentino-Alto Adige",
-    "lat": 46.4983,
-    "lng": 11.3548,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Ferrovie della Calabria",
-    "data": "2026-11-21",
-    "comune": "Catanzaro",
-    "provincia": "CZ",
-    "regione": "Calabria",
-    "lat": 38.9098,
-    "lng": 16.5877,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "tipo": "presidio",
-    "titolo": "Presidio per la sanità pubblica nel Cervignanese",
-    "data": "2026-11-21",
-    "ora_inizio": "11:00",
-    "ora_fine": "12:30",
-    "comune": "Cervignano del Friuli",
-    "provincia": "UD",
-    "regione": "Friuli-Venezia Giulia",
-    "luogo": "Piazza Indipendenza, porticato del Municipio",
-    "lat": 45.8235,
-    "lng": 13.336,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "Coordinamento Salute del Cervignanese"
-    ],
-    "fonte": "https://friulisera.it/sabato-21-novembre-a-cervignano-presidio-di-protesta-sul-peggioramento-del-servizio-sanitario/",
-    "note": "Presidio contro il peggioramento del servizio sanitario locale"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Ferrovie del Gargano",
-    "data": "2026-11-21",
-    "comune": "Foggia",
-    "provincia": "FG",
-    "regione": "Puglia",
-    "lat": 41.4622,
-    "lng": 15.5446,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Ferrovia Adriatico Sangritana (TUA)",
-    "data": "2026-11-21",
-    "comune": "Lanciano",
-    "provincia": "CH",
-    "regione": "Abruzzo",
-    "lat": 42.2306,
-    "lng": 14.3903,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: EAV",
-    "data": "2026-11-21",
-    "comune": "Napoli",
-    "provincia": "NA",
-    "regione": "Campania",
-    "lat": 40.8518,
-    "lng": 14.2681,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale ferroviario e merci su rotaia",
-    "data": "2026-11-21",
-    "ora_inizio": null,
-    "ora_fine": "20:00",
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "luogo": "",
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie",
-      "CAT"
-    ],
-    "fonte": "https://www.quotidianomotori.com/mobilita-urbana/scioperi-novembre-2026-treni-aerei-tpl-calendario/",
-    "note": "Treni: dalle 21 del 20/11 alle 20 del 21/11. Merci su rotaia (CAT) 9-17 in varie imprese. Nazionale, nessun luogo: posizione a Roma centro"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: GTT",
-    "data": "2026-11-21",
-    "comune": "Torino",
-    "provincia": "TO",
-    "regione": "Piemonte",
-    "lat": 45.0703,
-    "lng": 7.6869,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Trentino Trasporti",
-    "data": "2026-11-21",
-    "comune": "Trento",
-    "provincia": "TN",
-    "regione": "Trentino-Alto Adige",
-    "lat": 46.0679,
-    "lng": 11.1211,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ferrovie locali: Ferrovia Udine-Cividale",
-    "data": "2026-11-21",
-    "comune": "Udine",
-    "provincia": "UD",
-    "regione": "Friuli-Venezia Giulia",
-    "lat": 46.0626,
-    "lng": 13.2348,
-    "organizzatori": [
-      "CUB Trasporti",
-      "SGB Ferrovie"
-    ],
-    "fonte": "https://www.qualitytravel.it/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-tutte-le-date-da-segnare/194038",
-    "note": "Sciopero CUB Trasporti/SGB Ferrovie: intera prestazione del 21/11 nel TPL ferroviario; posizione indicativa",
-    "gruppo": "sciopero-ferrovie-locali-2026-11-21"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero manutenzione RFI a Verona",
-    "data": "2026-11-21",
-    "ora_inizio": "09:01",
-    "ora_fine": "17:00",
-    "comune": "Verona",
-    "provincia": "VR",
-    "regione": "Veneto",
-    "luogo": "",
-    "lat": 45.4384,
-    "lng": 10.9916,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "ORSA Ferrovie"
-    ],
-    "fonte": "https://scioperiitalia.it/sciopero/2026-11-21-treni-personale-manutenzione-ed-ingegneria-soc-8625",
-    "note": "8 ore, personale manutenzione e ingegneria RFI, unità territoriale Sud di Verona; proclamato il 28/10/2026"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero ENAV all'aeroporto di Milano Malpensa",
-    "data": "2026-11-22",
-    "ora_inizio": "00:01",
-    "ora_fine": "23:59",
-    "comune": "Ferno",
-    "provincia": "VA",
-    "regione": "Lombardia",
-    "luogo": "Aeroporto di Milano Malpensa",
-    "lat": 45.6306,
-    "lng": 8.7281,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FAST-CONFSAL-AV"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto aereo"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "data": "2026-11-22",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "regione": "Toscana",
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB Lavoro Privato"
-    ],
-    "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
-    "gruppo": "toscana-aeroporti-2026-11-22",
-    "note": "24 ore, trasporto aereo: personale Toscana Aeroporti, GH Toscana e Consulta negli scali di Pisa e Firenze",
-    "titolo": "Sciopero del personale Toscana Aeroporti all'aeroporto di Firenze",
-    "comune": "Firenze",
-    "provincia": "FI",
-    "luogo": "Aeroporto Amerigo Vespucci",
-    "lat": 43.81,
-    "lng": 11.2051
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "data": "2026-11-22",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "regione": "Toscana",
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "USB Lavoro Privato"
-    ],
-    "fonte": "https://www.sicurauto.it/news/traffico-e-viabilita/sciopero-trasporti-novembre-2026-stop-di-bus-treni-e-aerei/",
-    "gruppo": "toscana-aeroporti-2026-11-22",
-    "note": "24 ore, trasporto aereo: personale Toscana Aeroporti, GH Toscana e Consulta negli scali di Pisa e Firenze",
-    "titolo": "Sciopero del personale Toscana Aeroporti all'aeroporto di Pisa",
-    "comune": "Pisa",
-    "provincia": "PI",
-    "luogo": "Aeroporto Galileo Galilei",
-    "lat": 43.6839,
-    "lng": 10.3927
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero vigilanza Sicuritalia IVRI all'aeroporto Marco Polo",
-    "data": "2026-11-22",
-    "ora_inizio": "00:00",
-    "ora_fine": "23:59",
-    "comune": "Venezia",
-    "provincia": "VE",
-    "regione": "Veneto",
-    "luogo": "Aeroporto Marco Polo",
-    "lat": 45.5053,
-    "lng": 12.3519,
-    "posizione_approssimativa": false,
-    "organizzatori": [
-      "FISASCAT-CISL"
-    ],
-    "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto aereo"
-  },
-  {
-    "tipo": "sciopero_categoria",
-    "titolo": "Sciopero nazionale dei lavoratori del gruppo Iren",
-    "data": "2026-11-23",
-    "ora_inizio": null,
-    "ora_fine": null,
-    "comune": "Roma",
-    "provincia": "RM",
-    "regione": "Lazio",
-    "luogo": "",
-    "lat": 41.9028,
-    "lng": 12.4964,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Filctem Cgil",
-      "Femca Cisl",
-      "Flaei Cisl",
-      "Uiltec Uil"
-    ],
-    "fonte": "https://www.adnkronos.com/economia/scioperi-novembre-calendario-date_5woOoWREizgG7m0j0qlibD",
-    "note": "Settore energia/utility, orari non indicati. La CISL (18/11) indica sciopero gruppo Iren il 4/12: verificare se differito"
-  },
-  {
-    "ora_inizio": null,
-    "ora_fine": null,
-    "luogo": "",
-    "posizione_approssimativa": true,
-    "tipo": "presidio",
-    "titolo": "Manifestazione dei tassisti a Firenze",
-    "data": "2026-11-25",
-    "comune": "Firenze",
-    "provincia": "FI",
-    "regione": "Toscana",
-    "lat": 43.7696,
-    "lng": 11.2558,
-    "organizzatori": [
-      "Agci",
-      "Ati Taxi",
-      "Associazione Tutela Legale Taxi",
-      "Claai",
-      "Consultaxi",
-      "Fast Confsal Taxi",
-      "Federtaxi Cisal",
-      "Unica Filt Cgil Taxi",
-      "Satam",
-      "Sitan",
-      "Or.s.a. Taxi",
-      "Sul Taxi",
-      "Tam",
-      "Uiltrasporti",
-      "Usb Taxi",
-      "Ugl Taxi",
-      "Unimpresa",
-      "Unione Artigiani",
-      "Uritaxi",
-      "Uti"
-    ],
-    "fonte": "https://www.ansa.it/sito/notizie/cronaca/2026/10/27/sciopero-nazionale-dei-taxi-il-15-dicembre_0693e19f-1d49-4414-a09e-43c4a39a5777.html",
-    "gruppo": "taxi-mobilitazione-2026",
-    "note": "Tappa della mobilitazione taxi verso lo sciopero nazionale del 15/12; luogo, orario e forma non ancora indicati"
-  },
-  {
-    "tipo": "corteo",
-    "titolo": "Corteo cittadino contro la violenza di genere",
-    "data": "2026-11-25",
-    "ora_inizio": "18:00",
-    "ora_fine": null,
-    "comune": "La Spezia",
-    "provincia": "SP",
-    "regione": "Liguria",
-    "luogo": "Piazza Garibaldi",
-    "lat": 44.1069,
-    "lng": 9.8262,
-    "posizione_approssimativa": true,
-    "organizzatori": [
-      "Non Una Di Meno La Spezia"
-    ],
-    "fonte": "https://www.cittadellaspezia.com/2026/11/13/non-una-di-meno-questanno-niente-roma-i-prezzi-sono-diventati-proibitivi-ma-non-partire-non-significa-restare-a-casa-681241",
-    "note": "Ritrovo in piazza Garibaldi alle 18; coordinate indicative della piazza da controllare"
-  },
-  {
     "tipo": "corteo",
     "titolo": "Corteo nazionale transfemminista",
     "data": "2026-11-28",
@@ -465,6 +17,47 @@
     ],
     "fonte": "https://www.casamadiba.net/post/28novembre2026-tutte-a-roma-corteo-nazionale-transfemminista-di-non-una-di-meno/",
     "note": "Corteo nazionale a Roma; luogo e ora di partenza non indicati dalle fonti. Confermato anche da cittadellaspezia.com (13/11)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero dei trasporti merci Vincenzo Miele Trasporti",
+    "data": "2026-11-30",
+    "ora_inizio": "07:00",
+    "ora_fine": "11:00",
+    "comune": "Volla",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Volla centro",
+    "lat": 40.88,
+    "lng": 14.341,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CSE-FNILT",
+      "UGL Viabilità e Logistica"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, trasporto merci, azienda di Volla"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale ferroviario (sciopero generale del 4 dicembre)",
+    "data": "2026-12-03",
+    "ora_inizio": "21:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma centro",
+    "lat": 41.8931,
+    "lng": 12.4828,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB",
+      "SGB",
+      "SI Cobas"
+    ],
+    "fonte": "https://www.qualitytravel.it/scioperi-dicembre-2026-calendario-completo-tutte-le-date-di-treni-aerei-autostrade-e-mezzi-pubblici/194572",
+    "note": "Treni dalle 21:00 del 3 alle 21:00 del 4/12; autostrade dalle 22:00 del 3 alle 22:00 del 4. Nazionale, nessun luogo indicato"
   },
   {
     "ora_inizio": null,
@@ -571,7 +164,7 @@
       "USI 1912"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "Intera giornata; treni 21 del 3-21 del 4; autostrade 22 del 3-22 del 4. Anche USI 1912: precari e atipici, escluso trasporti"
+    "note": "Intera giornata; treni 21 del 3-21 del 4; autostrade 22 del 3-22 del 4. Anche USI 1912: precari e atipici, escluso trasporti | Unito: USI 1912 sciopero generale precari e atipici, trasporti esclusi (q"
   },
   {
     "tipo": "corteo",
@@ -677,7 +270,24 @@
       "FAST-CONFSAL"
     ],
     "fonte": "https://mit.gov.it/node/124",
-    "note": "24 ore, trasporto aereo; anche aeroporto di Ciampino"
+    "note": "24 ore, trasporto aereo; anche aeroporto di Ciampino | Unito: ADR Security Fiumicino e Ciampino 10-18 (money.it 25/11)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero bus Fasa a Rende",
+    "data": "2026-12-14",
+    "ora_inizio": "10:59",
+    "ora_fine": "14:59",
+    "comune": "Rende",
+    "provincia": "CS",
+    "regione": "Calabria",
+    "luogo": "Rende centro",
+    "lat": 39.3313,
+    "lng": 16.183,
+    "posizione_approssimativa": true,
+    "organizzatori": [],
+    "fonte": "https://www.money.it/scioperi-dicembre-2026-il-calendario-di-treni-aerei-e-metro-il-4-dicembre-si-ferma-tutto",
+    "note": "Bus Autolinee Romano e Fasa, 4 ore 10:59-14:59 (scioperiitalia.it). Sigle non indicate"
   },
   {
     "tipo": "sciopero_categoria",
@@ -778,6 +388,25 @@
   },
   {
     "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMT di Genova",
+    "data": "2026-12-16",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Genova",
+    "provincia": "GE",
+    "regione": "Liguria",
+    "luogo": "Genova centro",
+    "lat": 44.4072,
+    "lng": 8.9339,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UGL Autoferrotranvieri"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, modalità variabili (scioperiitalia.it); citato anche da money.it"
+  },
+  {
+    "tipo": "sciopero_categoria",
     "titolo": "Sciopero del personale ferroviario FS Sud Est nel bacino di Lecce",
     "data": "2026-12-16",
     "ora_inizio": "08:30",
@@ -819,7 +448,46 @@
       "FAISA-CISAL"
     ],
     "fonte": "https://scioperiitalia.it/prossimi-scioperi",
-    "note": "4 ore, trasporto pubblico locale (metro, funicolari, bus); posizione indicativa"
+    "note": "4 ore, trasporto pubblico locale (metro, funicolari, bus); posizione indicativa | money.it 25/11 dà ANM revocato, scioperiitalia lo elenca 11-15: verificare. Unito: Air Campania 24 ore (money.it)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale Italo",
+    "data": "2026-12-16",
+    "ora_inizio": "09:01",
+    "ora_fine": "16:59",
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma centro",
+    "lat": 41.8931,
+    "lng": 12.4828,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "Filt CGIL",
+      "Fit CISL",
+      "UGL Ferrovieri",
+      "Uiltrasporti"
+    ],
+    "fonte": "https://www.money.it/scioperi-dicembre-2026-il-calendario-di-treni-aerei-e-metro-il-4-dicembre-si-ferma-tutto",
+    "note": "Filt, Fit, Ugl: 8 ore 9:01-16:59. Uiltrasporti: equipaggi dalle 3:00 del 16 alle 2:00 del 17. Nazionale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale degli appalti ferroviari",
+    "data": "2026-12-17",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma centro",
+    "lat": 41.8931,
+    "lng": 12.4828,
+    "posizione_approssimativa": true,
+    "organizzatori": [],
+    "fonte": "https://www.money.it/scioperi-dicembre-2026-il-calendario-di-treni-aerei-e-metro-il-4-dicembre-si-ferma-tutto",
+    "note": "Nazionale; orari e sigle non indicati dalla fonte"
   },
   {
     "tipo": "sciopero_categoria",
@@ -840,5 +508,162 @@
     "lat": 41.8931,
     "lng": 12.4828,
     "posizione_approssimativa": true
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero dei trasporti merci Vincenzo Miele Trasporti",
+    "data": "2026-12-18",
+    "ora_inizio": "07:00",
+    "ora_fine": "11:00",
+    "comune": "Volla",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Volla centro",
+    "lat": 40.88,
+    "lng": 14.341,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CSE-FNILT",
+      "UGL Viabilità e Logistica"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, trasporto merci, azienda di Volla; confermato da skuola.net"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero del personale AMAT di Palermo",
+    "data": "2027-01-10",
+    "ora_inizio": "09:30",
+    "ora_fine": "17:30",
+    "comune": "Palermo",
+    "provincia": "PA",
+    "regione": "Sicilia",
+    "luogo": "Palermo centro",
+    "lat": 38.1157,
+    "lng": 13.3615,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "CUB Trasporti"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "8 ore, trasporto pubblico locale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale del personale SBB Cargo Italia",
+    "data": "2027-01-12",
+    "ora_inizio": "06:00",
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma centro",
+    "lat": 41.8931,
+    "lng": 12.4828,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "ORSA Ferrovie"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "Merci su rotaia, 24 ore dalle 06:00 del 12 alle 05:59 del 13/01. Nazionale"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV all'aeroporto di Bari",
+    "data": "2027-01-15",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Bari",
+    "provincia": "BA",
+    "regione": "Puglia",
+    "luogo": "Aeroporto di Bari Palese",
+    "lat": 41.1389,
+    "lng": 16.7606,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "UILT-UIL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "24 ore, controllo del traffico aereo"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV a Capodichino e metro ANM a Napoli",
+    "data": "2027-01-15",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Napoli",
+    "provincia": "NA",
+    "regione": "Campania",
+    "luogo": "Napoli centro",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UILT-UIL",
+      "Filt CGIL",
+      "Fit CISL",
+      "UGL FNA",
+      "Faisa CISAL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "ENAV aeroporto Napoli 24 ore (UILT). ANM metro linee 1 e 6, 4 ore 11-15 (Filt, Fit, Uilt, Ugl, Faisa)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV al centro di controllo di Padova",
+    "data": "2027-01-15",
+    "ora_inizio": "13:00",
+    "ora_fine": "17:00",
+    "comune": "Padova",
+    "provincia": "PD",
+    "regione": "Veneto",
+    "luogo": "Padova",
+    "lat": 45.4064,
+    "lng": 11.8768,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UILT-UIL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "4 ore, ACC Padova (controllo d'area)"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero nazionale ENAV e Techno Sky",
+    "data": "2027-01-15",
+    "ora_inizio": null,
+    "ora_fine": null,
+    "comune": "Roma",
+    "provincia": "RM",
+    "regione": "Lazio",
+    "luogo": "Roma centro",
+    "lat": 41.8931,
+    "lng": 12.4828,
+    "posizione_approssimativa": true,
+    "organizzatori": [
+      "UILT-UIL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "Trasporto aereo, 24 ore. Scioperi locali lo stesso giorno a Napoli, Bari, Linate, ACC Padova"
+  },
+  {
+    "tipo": "sciopero_categoria",
+    "titolo": "Sciopero ENAV all'aeroporto di Milano Linate",
+    "data": "2027-01-15",
+    "ora_inizio": "00:00",
+    "ora_fine": "23:59",
+    "comune": "Segrate",
+    "provincia": "MI",
+    "regione": "Lombardia",
+    "luogo": "Aeroporto di Milano Linate",
+    "lat": 45.4451,
+    "lng": 9.2767,
+    "posizione_approssimativa": false,
+    "organizzatori": [
+      "UILT-UIL"
+    ],
+    "fonte": "https://scioperiitalia.it/prossimi-scioperi",
+    "note": "24 ore, controllo del traffico aereo"
   }
 ]
