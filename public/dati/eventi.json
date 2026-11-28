@@ -2,31 +2,6 @@
   "ok": true,
   "eventi": [
     {
-      "id": "2026-11-27-genova-altro-01",
-      "tipo": "altro",
-      "titolo": "Critical Mass (CM) genovese",
-      "data": "2026-11-27",
-      "ora_inizio": null,
-      "ora_fine": null,
-      "comune": "Genova",
-      "provincia": "GE",
-      "regione": "Liguria",
-      "luogo": "Piazza della Vittoria",
-      "lat": 44.40307,
-      "lng": 8.94499,
-      "posizione_approssimativa": 0,
-      "organizzatori": [
-        "autonomo"
-      ],
-      "fonte": "https://gancio.invegendo.org/event/critical-mass-cm-16",
-      "stato": "verificato",
-      "conferme": 0,
-      "aggiornato_il": "2026-10-21T02:46:00",
-      "gruppo": "g-29b479924aaa",
-      "sottotipo": null,
-      "ci_saro": null
-    },
-    {
       "id": "2026-11-28-roma-corteo-01",
       "tipo": "corteo",
       "titolo": "Stati generali dell'autodeterminazione",
@@ -1230,5 +1205,5 @@
   "ultimo_aggiornamento": "2026-11-27T16:07:27",
   "giorni_conservazione": 30,
   "giorni_archivio": 365,
-  "copia_del": "2026-11-27T22:37:48Z"
+  "copia_del": "2026-11-28T04:41:16Z"
 }
